@@ -117,7 +117,7 @@
     .pill:hover{border-color:rgba(243,165,49,.6);transform:translateY(-1px)}
     .hero{
       min-height:73vh;display:grid;grid-template-columns:1.18fr .82fr;
-      gap:68px;align-items:center;padding-top:80px;padding-bottom:82px;
+      gap:68px;align-items:center;padding-top:56px;padding-bottom:64px;
     }
     .eyebrow{
       margin:0 0 20px;color:var(--topaz);font-family:"DM Mono",monospace;
@@ -125,14 +125,19 @@
     }
     h1,h2,h3,p{overflow-wrap:break-word}
     h1{
-      margin:0;font-size:clamp(54px,7.4vw,106px);line-height:.91;
+      margin:0;font-size:clamp(54px,6.2vw,84px);line-height:1.02;
       letter-spacing:-.056em;font-weight:800;max-width:830px;
       animation:rise .6s ease both;
     }
-    h1 span{color:var(--topaz)}
+    h1 span{display:block;color:var(--topaz)}
+    .hero-message{
+      margin:24px 0 0;max-width:600px;font-size:clamp(20px,2.2vw,26px);
+      line-height:1.4;font-weight:600;letter-spacing:-.025em;
+    }
+    .hero-message span{color:var(--topaz)}
     .lede{
-      margin:30px 0 28px;max-width:760px;color:#c7cbd1;
-      font-size:20px;line-height:1.62;
+      margin:16px 0 24px;max-width:760px;color:#c7cbd1;
+      font-size:18px;line-height:1.62;
     }
     .actions{display:flex;gap:11px;flex-wrap:wrap}
     .button{
@@ -296,8 +301,8 @@
   <main id="top">
     <section class="hero wrap">
       <div>
-        <p class="eyebrow">WEB PRESENCE REPAIR</p>
-        <h1>Customers won’t tell you what’s wrong. <span>They’ll just choose someone else.</span></h1>
+        <h1>Web Presence <span>Repair</span></h1>
+        <p class="hero-message">Customers won’t tell you what’s wrong. <span>They’ll just choose someone else.</span></p>
         <p class="lede">
           We spot the red flags before they cost you their business.
         </p>
