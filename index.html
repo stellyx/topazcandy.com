@@ -178,10 +178,13 @@
     .fixbar{padding:18px;border-top:1px solid var(--line);display:flex;gap:14px;align-items:center;justify-content:space-between}
     .fixbar p{margin:0;color:#8e96a0;font-size:12px;line-height:1.5}
     .fix-button{
-      flex:none;border:0;border-radius:8px;background:#fff;color:#12151a;
-      padding:10px 14px;font-weight:800;cursor:pointer;transition:.2s ease;
+      flex:none;border:0;border-radius:8px;background:var(--topaz);color:#17120b;
+      padding:12px 17px;font-weight:900;letter-spacing:.045em;cursor:pointer;transition:.2s ease;
+      box-shadow:0 0 0 0 rgba(243,165,49,.35);animation:button-pulse 2.8s ease-out infinite;
     }
-    .fix-button:hover{background:var(--topaz2);transform:translateY(-1px)}
+    .fix-button:hover{background:var(--topaz2);transform:translateY(-2px)}
+    .fixbar strong{color:#e8ebef}
+
     .proofstrip{
       border-top:1px solid var(--line);border-bottom:1px solid var(--line);
       display:grid;grid-template-columns:repeat(3,1fr);
@@ -246,6 +249,7 @@
     }
     @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
     @keyframes gem{0%,86%,100%{filter:drop-shadow(0 0 0 rgba(243,165,49,0))}91%{filter:drop-shadow(0 0 8px rgba(243,165,49,.28))}}
+    @keyframes button-pulse{0%{box-shadow:0 0 0 0 rgba(243,165,49,.35)}60%,100%{box-shadow:0 0 0 10px rgba(243,165,49,0)}}
     @media(max-width:920px){
       .hero{grid-template-columns:1fr;gap:44px;padding-top:54px}
       .flag-card{max-width:680px}
@@ -311,26 +315,26 @@
           <span class="cardlabel">quick scan</span>
         </div>
         <div class="flag-list">
-          <div class="flag" data-before="Page title still says “My Site 5”" data-after="Business title is accurate">
+          <div class="flag" data-before="Quote button fails on mobile" data-after="Quote path works">
             <span class="status" aria-hidden="true"></span>
-            <div><strong>Page title still says “My Site 5”</strong><small>Looks unfinished before the customer even starts reading.</small></div>
+            <div><strong>Quote button fails on mobile</strong><small>They were ready to buy. The next step did nothing.</small></div>
           </div>
-          <div class="flag" data-before="Old city still shows on Contact" data-after="Service area is consistent">
+          <div class="flag" data-before="Tap-to-call goes to the wrong number" data-after="Tap-to-call reaches the business">
             <span class="status" aria-hidden="true"></span>
-            <div><strong>Old city still shows on Contact</strong><small>Customers have to guess which information is current.</small></div>
+            <div><strong>Tap-to-call goes to the wrong number</strong><small>One tap can send a ready lead somewhere else.</small></div>
           </div>
-          <div class="flag" data-before="Template email is still public" data-after="Contact details are cleaned up">
+          <div class="flag" data-before="Lead form lands in an old inbox" data-after="Leads reach the right inbox">
             <span class="status" aria-hidden="true"></span>
-            <div><strong>Template email is still public</strong><small>A tiny leftover creates a very avoidable trust problem.</small></div>
+            <div><strong>Lead form lands in an old inbox</strong><small>Inquiry submitted. Nobody sees it.</small></div>
           </div>
-          <div class="flag" data-before="High-value service is buried" data-after="Important service is easy to find">
+          <div class="flag" data-before="High-ticket service is buried" data-after="High-ticket service is easy to find">
             <span class="status" aria-hidden="true"></span>
-            <div><strong>High-value service is buried</strong><small>The business offers it. The customer should not have to hunt for it.</small></div>
+            <div><strong>High-ticket service is buried</strong><small>You sell it. Your customer never finds it.</small></div>
           </div>
         </div>
         <div class="fixbar">
-          <p id="fixNote">These are the kinds of details we look for.</p>
-          <button class="fix-button" id="fixButton" type="button">Fix them</button>
+          <p id="fixNote"><strong>Try it:</strong> press the button to see the leaks fixed.</p>
+          <button class="fix-button" id="fixButton" type="button" aria-label="Press to fix the example revenue leaks">PRESS TO FIX →</button>
         </div>
       </div>
     </section>
@@ -488,10 +492,10 @@
         title.textContent = fixed ? row.dataset.after : row.dataset.before;
       });
 
-      button.textContent = fixed ? "Show red flags" : "Fix them";
-      note.textContent = fixed
-        ? "Same business. Cleaner story."
-        : "These are the kinds of details we look for.";
+      button.textContent = fixed ? "SHOW THE LEAKS" : "PRESS TO FIX →";
+      note.innerHTML = fixed
+        ? "<strong>Same business.</strong> Fewer places for a customer to disappear."
+        : "<strong>Try it:</strong> press the button to see the leaks fixed.";
     });
   </script>
 </body>
