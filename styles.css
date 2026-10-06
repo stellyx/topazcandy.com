@@ -148,3 +148,11 @@ footer{
 @keyframes weak-pulse{0%{box-shadow:0 0 0 0 rgba(243,165,49,.35)}60%,100%{box-shadow:0 0 0 8px rgba(243,165,49,0)}}
 @keyframes gem-breathe{0%,86%,100%{filter:drop-shadow(0 0 0 rgba(243,165,49,0))}91%{filter:drop-shadow(0 0 8px rgba(243,165,49,.24))}}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+.capability-line{
+  max-width:var(--max);margin:0 auto;padding:0 24px 22px;
+  color:#555d68;font-family:"DM Mono",monospace;font-size:10px;
+  line-height:1.8;letter-spacing:.035em;text-transform:lowercase;
+}
+.capability-line span{color:#7a828d;text-transform:uppercase;letter-spacing:.12em;margin-right:8px}
+@media(max-width:600px){.capability-line{padding-left:18px;padding-right:18px}}
