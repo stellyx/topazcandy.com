@@ -1,6 +1,6 @@
 {
   "date": "2026-10-10",
-  "status": "reviewed; ready to publish",
+  "status": "published; user approved all repairs",
   "feedback": [
     "Mower must travel in the stripe direction and create a new stripe behind it; grass ahead must be unstriped.",
     "Edger must contact the boundary with visible spinning/cutting and displaced clippings.",
@@ -267,7 +267,28 @@
       "composition": "One-second 662x720 center-crop samples inspected across finished film; all four duties stay in the hero crop.",
       "decode": "Complete finished-file ffmpeg decode passed without errors.",
       "playback_controller": "Unchanged from V1; existing explicit pause/reduced-motion/data-saver behavior retained.",
-      "live": "Pending deployment verification."
+      "live": {
+        "page": "https://topazcandy.com/showcase/lab/garden/#top",
+        "source": "https://topazcandy.com/showcase/lab/assets/garden-care-loop-v2.mp4",
+        "duration_seconds": 18.125,
+        "readyState": 4,
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "media_error": null,
+        "desktop_horizontal_overflow": false,
+        "pause_control": "Explicit pause held at 3.564466 seconds during verification; Play resumed successfully without a media error.",
+        "mobile": "Centered crop reviewed; no live mobile-browser test."
+      }
     }
+  },
+  "user_approval": {
+    "date": "2026-10-10",
+    "text": "Yeah all look good approval complete"
+  },
+  "deployment": {
+    "commit": "f511c06386ecaa5523a73e2c0dd3406bfa8297f0",
+    "pages_run_id": 38061548328,
+    "conclusion": "success"
   }
 }
