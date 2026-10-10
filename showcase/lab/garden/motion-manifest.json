@@ -1,0 +1,102 @@
+{
+  "project": "Stillfield landscaping concept",
+  "page": "https://topazcandy.com/showcase/lab/garden/",
+  "purpose": "Illustrative garden-care montage; fictional concept, not client footage.",
+  "created": "2026-10-10",
+  "opening": {
+    "file": "showcase/lab/assets/lawn-loop.mp4",
+    "source": "Existing accepted lawn-striping film retained from repository",
+    "repository_commit": "fbfbfd536f36afd06751528fe533e4de916d3a21"
+  },
+  "new_footage": {
+    "provider": "Runway",
+    "task_id": "e9e6af84-a7e0-463f-a059-c31c820902d0",
+    "parameters": {
+      "mode": "custom",
+      "duration": 15,
+      "aspectRatio": "16:9",
+      "resolution": "720p",
+      "sound": false,
+      "rationale": "Extend Stillfield landscaping's lawn-striping website loop with satisfying edging, tree pruning, and leaf-clearing closeups.",
+      "shots": [
+        {
+          "prompt": "Photoreal cinematic landscaping in a formal garden: striped deep-green lawn, pale limestone path, clipped hedges, mature olive tree, warm late-afternoon light. Low closeup of a groundskeeper's gloved hands guiding a string trimmer along the lawn/path edge. Tool held correctly; trim thin grass overhangs into one crisp line. Track the edge slowly; tiny clippings fall naturally. Calm premium garden film, realistic anatomy and tools. Keep action centered for phone cropping. No text or logos."
+        },
+        {
+          "prompt": "Same formal olive-tree garden, warm sunlight and moss greens. Tight closeup of two gardening-gloved hands using bypass pruning shears on one thin low olive twig. One hand holds the twig beyond the cut; the shears close once and cleanly sever it. The held clipping lowers out of frame, leaving the branch tidy. Crisp leaf texture, subtle camera push, shallow depth of field. Realistic hand anatomy and tool geometry. All action in central third. No faces, text, logos or large tree removal."
+        },
+        {
+          "prompt": "Same garden and warm light. Closeup along a pale limestone walkway beside dark-green lawn and clipped hedge. A groundskeeper offscreen holds a leaf-blower nozzle angled low from upper right. Dry scattered leaves slide and swirl forward in a narrow controlled sweep, revealing a clean stone path behind. Camera glides gently along the cleared path; finish on the tidy lawn edge, greenery and warm stone. Realistic leaves and motion. Keep main action central for phone crop. No text or logos."
+        }
+      ]
+    },
+    "effective_prompts": [
+      "Photoreal cinematic landscaping in a formal garden: striped deep-green lawn, pale limestone path, clipped hedges, mature olive tree, warm late-afternoon light. Low closeup of a groundskeeper's gloved hands guiding a string trimmer along the lawn/path edge. Tool held correctly; trim thin grass overhangs into one crisp line. Track the edge slowly; tiny clippings fall naturally. Calm premium garden film, realistic anatomy and tools. Keep action centered for phone cropping. No text or logos.",
+      "Same formal olive-tree garden, warm sunlight and moss greens. Tight closeup of two gardening-gloved hands using bypass pruning shears on one thin low olive twig. One hand holds the twig beyond the cut; the shears close once and cleanly sever it. The held clipping lowers out of frame, leaving the branch tidy. Crisp leaf texture, subtle camera push, shallow depth of field. Realistic hand anatomy and tool geometry. All action in central third. No faces, text, logos or large tree removal.",
+      "Same garden and warm light. Closeup along a pale limestone walkway beside dark-green lawn and clipped hedge. A groundskeeper offscreen holds a leaf-blower nozzle angled low from upper right. Dry scattered leaves slide and swirl forward in a narrow controlled sweep, revealing a clean stone path behind. Camera glides gently along the cleared path; finish on the tidy lawn edge, greenery and warm stone. Realistic leaves and motion. Keep main action central for phone crop. No text or logos."
+    ],
+    "credits_before": 4233,
+    "credits_after_submission": 4094,
+    "observed_credit_debit": 139,
+    "source_sha256": "99337eae7086cffe79f349c403cea488bfaa423aebef007ea3db7a6c15576992",
+    "metadata": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "avg_frame_rate": "24/1",
+          "nb_frames": "361"
+        }
+      ],
+      "format": {
+        "duration": "15.041667",
+        "size": "16581574"
+      }
+    },
+    "visual_notes": "Edging shot uses a small wheeled edger rather than the requested string trimmer. Pruning and leaf-clearing actions are visible. Warm green/limestone palette matches the lawn study; new closeups are independently generated garden views."
+  },
+  "final": {
+    "file": "showcase/lab/assets/garden-care-loop.mp4",
+    "metadata": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "avg_frame_rate": "24/1",
+          "nb_frames": "529"
+        }
+      ],
+      "format": {
+        "duration": "22.041667",
+        "size": "3677673"
+      }
+    },
+    "sha256": "4522f372512af9d7964c32690ba9d27ccf3c67d36763369b6d73dc320db6960f",
+    "finishing": {
+      "opening_trim_frames": [
+        14,
+        192
+      ],
+      "loop_tail_frames": [
+        0,
+        14
+      ],
+      "fps": 24,
+      "cross_dissolve_seconds": 0.5,
+      "filter_graph": "[0:v]fps=24,split=2[open][tail];[open]trim=start_frame=14:end_frame=192,settb=AVTB,setpts=PTS-STARTPTS,setsar=1[o];[tail]trim=start_frame=0:end_frame=14,settb=AVTB,setpts=PTS-STARTPTS,setsar=1[t];[1:v]fps=24,scale=1280:720,format=yuv420p,settb=AVTB,setpts=PTS-STARTPTS,setsar=1[c];[o][c]xfade=transition=fade:duration=0.5:offset=6.916666667[oc];[oc][t]xfade=transition=fade:duration=0.5:offset=21.458333667,format=yuv420p[v]",
+      "encoding": "libx264 CRF 24, yuv420p, faststart, silent"
+    },
+    "quality_review": {
+      "source_visual": "Inspected quarter-second samples across all 15 seconds for tools, hands, actions and continuity.",
+      "final_visual": "Inspected half-second samples across finished loop, and one-second center-crop samples.",
+      "decode": "Complete ffmpeg decode passed without errors.",
+      "playback_controller": "Passed autoplay, explicit pause persistence, viewport/tab pause, reduced-motion and data-saver opt-in, blocked autoplay and error fallback checks."
+    }
+  }
+}

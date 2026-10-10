@@ -1,0 +1,6 @@
+.garden-video-toggle[hidden]{display:none}
+.garden__video{object-position:center;filter:saturate(.86) sepia(.04)}
+body[data-design=garden] .hero__image img{object-position:center;filter:saturate(.86) sepia(.04)}
+body[data-design=garden] .hero__image .caption{max-width:calc(100% - 48px);font-size:10px;line-height:1.65;letter-spacing:.07em}
+@media(max-width:500px){body[data-design=garden] .hero__image .caption{bottom:18px;left:22px;font-size:9px;max-width:calc(100% - 44px)}}
+@media(prefers-reduced-motion:reduce){.garden__video.requested{display:block}}
