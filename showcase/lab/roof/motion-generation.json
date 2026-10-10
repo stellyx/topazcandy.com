@@ -1,0 +1,38 @@
+{
+  "project": "UPPERHAND roofing concept",
+  "page": "https://topazcandy.com/showcase/lab/roof/",
+  "status": "generation submitted; candidate not reviewed or published",
+  "provider": "Runway",
+  "task_id": "8998355b-be4b-4dbc-bf78-bc0f58878ecf",
+  "parameters": {
+    "mode": "custom",
+    "duration": 15,
+    "aspectRatio": "16:9",
+    "resolution": "720p",
+    "sound": false,
+    "rationale": "User requested starting generation for the next unfinished GitHub portfolio site. Upperhand roofing is the next Concept Lab page without a service film. Create a review candidate matching its charcoal, cream and oxide-orange design.",
+    "shots": [
+      {
+        "prompt": "Photoreal premium roofing craft film, charcoal architectural asphalt shingles, pale timber and subdued oxide-orange work gloves, soft overcast daylight, crisp practical editorial composition. One continuous tight shot on a low-pitch residential roof, no faces. Start with an unfinished upper course: exposed gray underlayment above a correctly installed lower shingle row. Two anatomically correct orange-gloved hands lower ONE charcoal asphalt shingle flat into that upper course, overlap the lower course correctly, align it parallel with adjacent shingles and press it into place. The shingle remains where laid; the row advances by exactly one piece, with visible unfinished area still above it. No tools in this shot, no morphing geometry. Camera gently pushes toward the contact point. Keep hands and the changing surface in the central third for a narrow website hero crop. No lettering, logos or dramatic effects."
+      },
+      {
+        "prompt": "Same charcoal asphalt-shingle roof, subdued oxide-orange gloves and soft daylight. Continuous macro shot of the newly placed shingle's exposed manufacturer nail zone BEFORE the next course covers it. One gloved hand stays well away to the side. The other holds a compact correctly scaled pneumatic roofing nailer perpendicular to the roof. The nailer's safety nose makes firm contact with the shingle at one nail point; one brief mechanical pulse seats a nail flush; tool lifts 2 centimeters, slides a short distance to the next fastening point and contacts the roof again. No nails fired into the air, no hand under the tool, no huge nail heads or sparks. Stable roof geometry, realistic tool and anatomy, calm camera with no cuts. Keep contact point centered and clearly visible."
+      },
+      {
+        "prompt": "Same finished dark-charcoal asphalt-shingle roof, a neat dark-metal gutter at the eave, pale-timber exterior below, soft moody overcast daylight. No workers or tools. Single continuous close shot across roof texture toward the edge: a gentle rain falls diagonally, tiny droplets contact the granules, water collects in realistic thin rivulets flowing DOWN the slope over overlapping shingle courses into the open gutter. Water follows gravity, no flooding or synchronized beads. A slow controlled camera glide reveals the clean roof edge and gutter collecting the runoff. Central action remains visible in the middle third for phone crop. Premium quiet roofing film, restrained contrast, no text or logos."
+      }
+    ]
+  },
+  "credits_before": 2865,
+  "credits_after_submission": 2726,
+  "observed_debit": 139,
+  "review_requirements": [
+    "Watch at normal speed before acceptance",
+    "Shingle adds one real piece over an unfinished starting state",
+    "Nailer contacts exposed nail zone, tool geometry stays coherent",
+    "Runoff follows roof slope into the gutter",
+    "Review centered desktop and phone hero crops",
+    "Reject faulty takes; no automatic deployment"
+  ],
+  "created": "2026-10-10"
+}
