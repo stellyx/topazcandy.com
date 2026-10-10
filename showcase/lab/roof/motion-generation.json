@@ -1,7 +1,7 @@
 {
   "project": "UPPERHAND roofing concept",
   "page": "https://topazcandy.com/showcase/lab/roof/",
-  "status": "generation submitted; candidate not reviewed or published",
+  "status": "generation completed; candidate not reviewed or published",
   "provider": "Runway",
   "task_id": "8998355b-be4b-4dbc-bf78-bc0f58878ecf",
   "parameters": {
@@ -34,5 +34,24 @@
     "Review centered desktop and phone hero crops",
     "Reject faulty takes; no automatic deployment"
   ],
-  "created": "2026-10-10"
+  "created": "2026-10-10",
+  "result": {
+    "status": "SUCCEEDED",
+    "assetUrl": "https://dnznrvs05pmza.cloudfront.net/kling-3-0-standard/937976362102169695/untitled.mp4?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMjg4NjNkOGI2MjcxYzdmNSIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MTc2NzgxOX0.L2G2g-Sts-f7zljIQW4Nt3YIrpr9OKU18-hyAq8NQTo",
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 15.041,
+    "hasAudio": false,
+    "completedAt": "2026-10-10T19:14:48.607Z",
+    "savedSource": {
+      "libraryFileId": "libfile_301f050182ec8191b8451fea02a2d6b0",
+      "fileName": "upperhand-roof-candidate-v1.mp4",
+      "sha256": "cf04c169eec85731c96fa7e75129ea05c50529aeeb3fb8cb360ec769c58dabaf"
+    }
+  },
+  "review": {
+    "status": "initial still-frame inspection only; normal playback review required before publishing",
+    "finding": "Shingle placement and rain compositions look promising. Nailer appears near a covered-course seam rather than a visible manufacturer nail zone; do not deploy this shot without resolving its action/placement.",
+    "published": false
+  }
 }
