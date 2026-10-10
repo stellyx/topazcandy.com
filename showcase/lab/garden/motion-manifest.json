@@ -5,7 +5,7 @@
   "created": "2026-10-10",
   "opening": {
     "file": "showcase/lab/assets/lawn-loop.mp4",
-    "source": "Existing accepted lawn-striping film retained from repository",
+    "source": "Original repository lawn film; rejected because existing stripes and mower path do not match.",
     "repository_commit": "fbfbfd536f36afd06751528fe533e4de916d3a21"
   },
   "new_footage": {
@@ -96,7 +96,10 @@
       "source_visual": "Inspected quarter-second samples across all 15 seconds for tools, hands, actions and continuity.",
       "final_visual": "Inspected half-second samples across finished loop, and one-second center-crop samples.",
       "decode": "Complete ffmpeg decode passed without errors.",
-      "playback_controller": "Passed autoplay, explicit pause persistence, viewport/tab pause, reduced-motion and data-saver opt-in, blocked autoplay and error fallback checks."
+      "playback_controller": "Passed autoplay, explicit pause persistence, viewport/tab pause, reduced-motion and data-saver opt-in, blocked autoplay and error fallback checks.",
+      "action_review_correction": "Earlier visual sampling missed action errors. User identified pre-existing stripes, mower direction conflict, hovering/static edger and overly perfect leaf motion. Those shots are rejected; only pruning is reused in V2. See motion-repair.json."
     }
-  }
+  },
+  "status": "superseded; user rejected mowing, edging and blower action in V1",
+  "replacement_manifest": "motion-repair.json"
 }

@@ -1,0 +1,273 @@
+{
+  "date": "2026-10-10",
+  "status": "reviewed; ready to publish",
+  "feedback": [
+    "Mower must travel in the stripe direction and create a new stripe behind it; grass ahead must be unstriped.",
+    "Edger must contact the boundary with visible spinning/cutting and displaced clippings.",
+    "Leaf blower needs a small irregular scatter, with leaves rolling and tumbling independently."
+  ],
+  "retain": {
+    "shot": "pruning",
+    "file": "pruning-kept.mp4",
+    "source": "published garden-care-loop.mp4",
+    "trim_seconds": [
+      12,
+      16.7
+    ]
+  },
+  "tests": [
+    {
+      "shot": "mowing",
+      "arguments": {
+        "model": "gemini-omni-flash",
+        "promptText": "Photoreal garden maintenance film in soft warm afternoon light: deep moss-green lawn, pale limestone border, clipped hedges, olive tree in background. One continuous fixed elevated rear three-quarter shot. The lawn's long straight axis runs bottom-to-top. A groundskeeper pushes an unbranded walk-behind mower with a rear striping roller slowly AWAY from camera, bottom toward top, in one straight lane. At the start the entire center lane AHEAD of the mower is uniform, unstriped green grass. Only two previously cut straight parallel bands sit to its LEFT, aligned with its direction of travel. The center lane has no pre-existing stripe or track. As the mower advances, its wheels visibly roll and the rear roller contacts the grass. A single fresh darker, mower-width band progressively appears ONLY directly BEHIND the roller, growing from the mower's starting position along the exact path it has traveled. Grass ahead stays uniform until the mower actually reaches it. The newly made stripe is parallel to the two neighboring stripes, never crossing them. Show the physical cause and effect clearly in real time. Realistic mower geometry, natural walking, steady speed, no sideways motion or turns. Keep mower, roller and forming stripe in the middle of the image for a narrow website crop. Calm editorial realism, no scene cuts, captions, logos or graphic overlays.",
+        "duration": 6,
+        "ratio": "16:9",
+        "resolution": "720p",
+        "rationale": "Repair the user's rejected lawn shot: mower travels along the stripe direction on uniform unstriped grass and visibly creates one new stripe behind its roller."
+      },
+      "task_id": "c68f4f3c-92f6-45ff-9dbe-cd51f0b5d5f5",
+      "credits_before": 488,
+      "credits_after_submission": 428,
+      "observed_debit": 60,
+      "status": "rejected",
+      "review": "Mower follows stripe direction but finished stripe patterns remain ahead; rejected."
+    },
+    {
+      "shot": "mowing",
+      "arguments": {
+        "model": "gemini-omni-flash",
+        "duration": 6,
+        "ratio": "16:9",
+        "resolution": "720p",
+        "promptText": "A photoreal horizontal 16:9 garden maintenance shot, locked-off high rear view in warm afternoon light. An immaculate rectangular lawn is a single UNIFORM MATTE GREEN color everywhere, with natural fine grass texture. Pale limestone paths, clipped hedges and an olive tree at the distant edge. At the bottom center a gardener pushes a walk-behind cylinder mower with a heavy rear striping roller straight AWAY from camera toward the top center. Wheels and rear roller roll on the ground. The lawn ahead of the mower remains completely uniform green. Directly behind the contacting rear roller, newly bent grass makes ONE distinctly darker mower-width stripe. This dark stripe lengthens gradually as the mower travels forward; its far end is always exactly under the roller. The first frame has no stripes anywhere. By the last frame there is exactly one dark straight stripe on the entire lawn, solely where this mower has just passed, from the bottom center up to the mower. There are no light or dark bands elsewhere, no tracks ahead, no crossing or sideways travel. Natural slow walking, visible rotating wheels, grounded machine, fixed camera, continuous single shot. Keep mower and its newly forming stripe centered for a tall website crop. No graphics, captions, logos or cuts.",
+        "rationale": "The first action test was rejected for pre-existing stripes. This replacement must begin with a wholly unstriped lawn and create one stripe only behind the moving rear roller."
+      },
+      "task_id": "d8943212-59bf-46fd-9578-405243f92b90",
+      "credits_after_submission": 368,
+      "status": "rejected",
+      "review": "Even the unstriped text-only request generated pre-existing stripes. Rejected; use edited unstriped start frame."
+    },
+    {
+      "shot": "edging",
+      "arguments": {
+        "model": "gemini-omni-flash",
+        "duration": 5,
+        "ratio": "16:9",
+        "resolution": "720p",
+        "promptText": "Photoreal horizontal 16:9 garden maintenance film, warm soft afternoon light, deep green grass beside pale limestone paving and clipped hedges. A continuous locked-off LOW CLOSE-UP of a real powered wheeled lawn EDGER working exactly along the grass/paving boundary. The center of the frame shows the edger's vertical metal cutting disc under its semicircular safety guard, its lower arc visibly buried in the narrow soil seam. The steel disc spins rapidly with natural radial motion blur; small loose grass clippings and tiny soil grains visibly flick backward ONLY from its contact with the grass. The guide wheel rolls on the paving while the operator's boots step slowly behind and the machine advances along the boundary. Ahead of the blade, a small irregular fringe of grass overhangs the stone. Behind the moving blade, that fringe has actually been cut away, leaving a crisp straight grass edge and clean narrow soil groove. Show real cause and effect: continuous powered rotation, contact, cutting and displaced clippings. Tool stays grounded and never hovers. Keep the cutter, contact point and edge centered for a narrow website crop. Authentic restrained gardening, steady camera, realistic machinery, no logos, text, cuts or decorative particle effects.",
+        "rationale": "Repair the hovering, motionless edger in the website loop by showing a rotating vertical blade actually cutting at the grass/paving seam."
+      },
+      "task_id": "9ab769ec-44f5-4e25-ac93-4b21d78d6908",
+      "credits_after_submission": 318,
+      "status": "rejected",
+      "review": "Rotation and cutting are visible, but generated saw disc is oversized; replace with compact stick edger."
+    },
+    {
+      "shot": "blower",
+      "arguments": {
+        "model": "gemini-omni-flash",
+        "duration": 5,
+        "ratio": "16:9",
+        "resolution": "720p",
+        "promptText": "Photoreal horizontal 16:9 garden maintenance film in soft warm afternoon light, pale limestone path beside deep moss-green grass and clipped hedges. One continuous locked-off LOW close shot of a groundskeeper gently clearing a small sparse patch of dry leaves with a leaf blower. The short blower nozzle enters from the upper right, angled downward toward twelve to eighteen tan and brown leaves. Leaves are varied in size, shape and starting angle, initially scattered unevenly with gaps, never a neat row. A brief gentle sweep of the nozzle sends the leaves mostly forward along the path but with a SMALL IRREGULAR SIDEWAYS SCATTER. Each leaf moves independently: some slide, some rotate and roll onto their side, two lighter leaves flutter just a few inches up then settle, one heavier leaf lags and two leaves remain briefly still. Natural unequal speeds, staggered starts, slight random tumbling and small changes of direction, with contact and friction on the stone. Most travel only a short distance, then settle in a loose untidy cluster. No synchronized moving wall, perfect straight line, spiral, huge gust, storm or overly tidy arrangement. Keep the nozzle and leaf action in the center of the picture for a narrow website crop. Calm controlled landscaping work, steady camera, authentic leaf physics, no captions, logos or cuts.",
+        "rationale": "Repair overly perfect leaf motion: the user wants a restrained irregular scatter with individual rolling and tumbling, not a uniform tidy line."
+      },
+      "task_id": "0517a154-5b6b-4cd8-8fff-170776ffe254",
+      "credits_after_submission": 268,
+      "status": "selected",
+      "review": "Leaves begin at irregular angles; independently lift, roll and slide by differing amounts, then settle in a loose cluster. Modest localized scatter, no uniform sweeping wall."
+    },
+    {
+      "shot": "mowing",
+      "arguments": {
+        "model": "gemini-omni-flash",
+        "duration": 6,
+        "ratio": "16:9",
+        "resolution": "720p",
+        "startImageFile": "/workspace/scratch/5bf8291a8997/generated_images/exec-ffabf0c8-649f-4ec9-98f4-4afd176a9eaa.png",
+        "promptText": "Animate this exact starting frame as one horizontal 16:9 fixed-camera continuous shot. The gardener walks slowly straight forward AWAY from the camera, pushing the lawn mower up the center of the image. As the mower emerges into view, its wheels and heavy rear grass roller rotate in contact with the ground. A single noticeably DARKER mower-width strip of freshly bent cut grass is created immediately behind the rear roller, growing longer along the center as the gardener advances. This stripe is a physical result of the roller pressing the grass. Its leading end follows the roller exactly, never extending in front of the mower. The grass ahead and on both sides retains the starting image's uniform natural green texture throughout. No other mowing bands appear. The final image contains just the one new straight darker stripe from the bottom center to the mower, and completely unstriped grass beyond and beside it. Consistent warm light and tree shadows, realistic slow walking and rolling machine, all motion centered for a tall website crop. Camera remains fixed, no zoom, cuts, text or logos.",
+        "rationale": "Use a verified unstriped start frame so the mower creates one new band behind it, addressing the user's repeated cause/effect criticism."
+      },
+      "task_id": "d9f80829-6b71-48d9-8545-f33d62b34dac",
+      "credits_after_submission": 207,
+      "start_image": {
+        "tool": "built-in image_gen",
+        "file": "generated_images/exec-ffabf0c8-649f-4ec9-98f4-4afd176a9eaa.png",
+        "review": "Uniform lawn verified; original stripes removed."
+      },
+      "status": "selected",
+      "review": "Verified uniform unstriped opening and grass ahead. Mower travels straight away from camera; one lighter freshly cut band grows only behind it. Generated band is lighter rather than the darker band specified in the prompt."
+    },
+    {
+      "shot": "edging",
+      "arguments": {
+        "model": "gemini-omni-flash",
+        "duration": 5,
+        "ratio": "16:9",
+        "resolution": "720p",
+        "promptText": "Photoreal horizontal 16:9 low closeup of a professional landscaper using an ordinary HANDHELD BATTERY STICK LAWN EDGER along a limestone walkway. Realistically small cutting head, about the size of a boot: orange semicircular safety guard, a narrow vertical steel BAR BLADE about 20 centimeters across, and one small plastic guide wheel. The long shaft extends diagonally up out of frame to the operator. There is no large circular saw disc and no wheeled motor cart. The powered bar blade spins rapidly inside its guard, producing a small translucent vertical blur. Its lower tip stays continuously in the narrow soil seam at the lawn/stone boundary. The operator guides the tool slowly forward with the guide wheel rolling on the limestone. A fringe of grass slightly overlaps the paving ahead of the blade. Tiny fresh clippings visibly kick backward from the exact contact point as the fringe is cut away, revealing a straight edged grass line and narrow dark soil groove behind the tool. Natural boots step along the path. Show actual cutting contact, visibly powered rotation and removed overhang, never hovering. Warm afternoon light, deep moss green lawn, pale limestone, clipped hedge background. Fixed camera, action at center for a tall crop, authentic ordinary garden tool proportions. Single continuous shot, no logos or text.",
+        "rationale": "Improve the repair edger's tool geometry while retaining visible powered cutting: replace the oversized saw disc with a correctly scaled stick edger working at the actual boundary."
+      },
+      "task_id": "763e2f1f-e3ac-441c-901d-c9f2e9dcea6a",
+      "credits_after_submission": 157,
+      "status": "selected",
+      "review": "Compact guarded stick edger stays at the seam; rotating blade blur and changing blade position are visible, with clippings displaced from contact and a cut edge left behind."
+    }
+  ],
+  "credits": {
+    "before": 488,
+    "after_submissions": 157,
+    "observed_total_debit": 331,
+    "notes": "Includes three rejected action tests and one start-image upload. No credit purchase."
+  },
+  "start_image_prompt": "Change ONLY the grass pattern: remove every existing alternating mowing stripe, light/dark band, wheel track and straight cut line from the entire lawn. Replace with natural evenly colored moss-green grass with fine random texture. Preserve gardener, mower, camera, limestone paths, tree shadows and sunlight. Built-in image_gen edit.",
+  "source_files": [
+    {
+      "name": "garden-mowing-final-source.mp4",
+      "sha256": "ea790d52b33bb58808234a1a04a179852932348ecd1785cda67d9dcf2aec146a",
+      "metadata": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "avg_frame_rate": "24/1",
+            "nb_frames": "144"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "avg_frame_rate": "0/0",
+            "nb_frames": "283"
+          }
+        ],
+        "format": {
+          "duration": "6.037333",
+          "size": "2560899"
+        }
+      }
+    },
+    {
+      "name": "garden-edging-final-source.mp4",
+      "sha256": "2adccdccfb236b8f340a5eb0cebf966286398c6ad417232ffda587e728fa296f",
+      "metadata": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "avg_frame_rate": "24/1",
+            "nb_frames": "120"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "avg_frame_rate": "0/0",
+            "nb_frames": "236"
+          }
+        ],
+        "format": {
+          "duration": "5.034667",
+          "size": "2375115"
+        }
+      }
+    },
+    {
+      "name": "pruning-kept.mp4",
+      "sha256": "9ad5d9ade1d2a04c287b2fde580f8e341c7fe90c73e1a8646e4f17716d61da7b",
+      "metadata": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "avg_frame_rate": "24/1",
+            "nb_frames": "113"
+          }
+        ],
+        "format": {
+          "duration": "4.708333",
+          "size": "1656395"
+        }
+      }
+    },
+    {
+      "name": "garden-blower-v2-source.mp4",
+      "sha256": "10963a764d5c4f88cbf07ddc6fc60e69e361dcc0ea97fb65e737243882b82efc",
+      "metadata": {
+        "programs": [],
+        "streams": [
+          {
+            "codec_name": "h264",
+            "codec_type": "video",
+            "width": 1280,
+            "height": 720,
+            "avg_frame_rate": "24/1",
+            "nb_frames": "120"
+          },
+          {
+            "codec_name": "aac",
+            "codec_type": "audio",
+            "avg_frame_rate": "0/0",
+            "nb_frames": "236"
+          }
+        ],
+        "format": {
+          "duration": "5.034667",
+          "size": "2133068"
+        }
+      }
+    }
+  ],
+  "final": {
+    "file": "showcase/lab/assets/garden-care-loop-v2.mp4",
+    "sha256": "32a960b21f3e502d94be94f2e8cbfdeceaca53285c190f3c03b88b4bfa44e38b",
+    "metadata": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720,
+          "avg_frame_rate": "24/1",
+          "nb_frames": "435"
+        }
+      ],
+      "format": {
+        "duration": "18.125000",
+        "size": "4411138"
+      }
+    },
+    "poster": "showcase/lab/assets/garden-care-poster-v2.jpg",
+    "finishing": {
+      "frames": [
+        132,
+        120,
+        113,
+        90,
+        12
+      ],
+      "fps": 24,
+      "cross_dissolve_seconds": 0.3333333333333333,
+      "duration_seconds": 18.125,
+      "filter_graph": "[0:v]fps=24,scale=1280:720,split=2[open][tail];[open]trim=start_frame=12:end_frame=144,settb=AVTB,setpts=PTS-STARTPTS,setsar=1[o];[tail]trim=start_frame=0:end_frame=12,settb=AVTB,setpts=PTS-STARTPTS,setsar=1[t];[1:v]fps=24,scale=1280:720,trim=end_frame=120,settb=AVTB,setpts=PTS-STARTPTS,setsar=1[e];[2:v]fps=24,scale=1280:720,trim=end_frame=113,settb=AVTB,setpts=PTS-STARTPTS,setsar=1[p];[3:v]fps=24,scale=1280:720,trim=start_frame=18:end_frame=108,settb=AVTB,setpts=PTS-STARTPTS,setsar=1[b];[o][e]xfade=transition=fade:duration=0.333333333:offset=5.166666667[x0];[x0][p]xfade=transition=fade:duration=0.333333333:offset=9.833333333[x1];[x1][b]xfade=transition=fade:duration=0.333333333:offset=14.208333333[x2];[x2][t]xfade=transition=fade:duration=0.333333333:offset=17.625000000[x3];[x3]format=yuv420p[v]",
+      "encoding": "libx264 CRF 24, yuv420p, faststart, no audio",
+      "poster": "First frame of finished V2 loop"
+    },
+    "review": {
+      "actions": "Quarter-second samples inspected across each replacement with specific cause/effect checks. Unstriped lawn anchor, new stripe behind mower, edger contact/rotation/cut and irregular independent leaf motion confirmed.",
+      "composition": "One-second 662x720 center-crop samples inspected across finished film; all four duties stay in the hero crop.",
+      "decode": "Complete finished-file ffmpeg decode passed without errors.",
+      "playback_controller": "Unchanged from V1; existing explicit pause/reduced-motion/data-saver behavior retained.",
+      "live": "Pending deployment verification."
+    }
+  }
+}
