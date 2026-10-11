@@ -9,3 +9,7 @@ Motion update: silent 9.5 second illustrative hair film at 85% opacity, quiet pa
 First screen update: compact mobile film before the headline, descriptive service guides and profile-specific color support. The generic palette stays ivory/plum; MJ has her own black/gold/lavender adaptation. Audit and color references are attached through template.json.
 
 Booking follow-up: advice-first finder paths for new color or uncertain services, corrected visit notes, and enlarged phone touch controls. Source checks pass; visual/device QA remains pending.
+
+## Website purchase
+
+A palette-matched footer banner and mobile bottom dock link to the shared $450 USD website cart. The package includes setup and launch, SEO setup, eligible Maps setup and three months of website maintenance. AI services are separate. Current personal PayPal and email behavior is documented in `/checkout/README.md`; automatic payment confirmation and notifications are not installed.

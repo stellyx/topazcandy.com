@@ -1,4 +1,4 @@
-import { CONFIG } from './config.js?v=3';
+import { CONFIG } from './config.js?v=4';
 import { calculateQuote, cleanName, money, requestBrief } from './quote.js';
 
 const $ = selector => document.querySelector(selector);
@@ -14,7 +14,7 @@ $$('[data-descriptor]').forEach(el => { el.textContent = CONFIG.businessDescript
 $$('[data-brand-home]').forEach(el => { el.setAttribute('aria-label', `${businessName} home`); });
 $$('[data-library]').forEach(el => { el.href = CONFIG.templateLibraryUrl; });
 $$('[data-website-inquiry]').forEach(el => { el.href = CONFIG.websiteInquiryUrl; });
-$$('[data-website-purchase]').forEach(el => { el.href = CONFIG.websitePayPalUrl; });
+$$('[data-website-purchase]').forEach(el => { el.href = CONFIG.websiteCheckoutUrl; });
 $('[data-year]').textContent = new Date().getFullYear();
 $('[data-room-rate]').textContent = money(CONFIG.rates.room, CONFIG);
 $('[data-room-note]').textContent = CONFIG.roomSizeNote;

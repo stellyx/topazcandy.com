@@ -1,12 +1,12 @@
 {
   "name": "Softstep",
   "industry": "Carpet cleaning",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "entry": "index.html",
   "config": "config.js",
   "demo": true,
   "personalization": "Query string or business-name preview form",
   "public_url": "https://topazcandy.com/showcase/lab/carpet/",
   "assets": "Original illustrative image; see README.md",
-  "purchase": "Footer Buy with PayPal opens the supplied payment link; price and scope are agreed by email before purchase"
+  "purchase": "Shared $450 USD website cart; current PayPal QR requires entered amount and emailed business details"
 }

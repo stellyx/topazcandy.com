@@ -4,11 +4,13 @@ Softstep is a fictional carpet care concept for Topaz Candy. It has a responsive
 
 ## Website purchase path
 
-This preview sells the website through the footer. The large opening sales headline and purchase panel have been removed. A compact Topaz Candy preview bar identifies the demo; the approved carpet content leads the page. The footer and mobile bottom bar offer Buy with PayPal, using the exact destination decoded from the owner-provided QR: `https://www.paypal.com/qrcodes/p2pqrc/ZGLFN3MZMZ2J8`. A separate email action confirms price, scope, customisation, launch and handover. Buyers enter the agreed website price in PayPal. There is no invented fixed price, automated payment confirmation or automatic ownership release. The carpet estimates remain sample service prices.
+The approved carpet content leads the page with a compact Topaz Candy preview bar. The footer and mobile bottom dock buy actions open the shared cart at `https://topazcandy.com/checkout/?template=carpet`. The coordinated purchase banner quotes the owner-approved $450 USD website package: website setup and launch, SEO setup, eligible Google Business Profile and Maps setup, checked business information and links, plus three months of website service and maintenance from launch. Website care covers the agreed website; AI services and new features are separate.
 
-The payment URL was decoded from the provided QR image using a barcode reader. The screenshot and its account-name text are not published. Web inspection could not open the destination, and a direct HTTP check encountered a redirect/security page. Checkout behavior has not been independently tested. No payment was made.
+The cart currently opens the exact owner-provided PayPal QR destination: `https://www.paypal.com/qrcodes/p2pqrc/ZGLFN3MZMZ2J8`. Buyers must enter $450 USD and then email their business details and transaction ID. The email button opens a draft; it does not send automatically. No automatic payment verification, receipt or notification integration is installed. PayPal checkout and account notification settings have not been tested or verified. No payment was made. The screenshot and its account-name text are not published.
 
-Buyers may try a business name in the page. It uses the same 80-codepoint sanitization and text-content rendering as the query-string preview, with no persistence or metadata changes. Client mode hides the preview bar, footer purchase area, business-name tool and buyer dock, and exposes the cleaner’s own mobile quote action.
+The cart describes launch-day sitemap/indexing submission, with no guarantee of Google's indexing timing or ranking. The fictional preview remains noindex. The maintenance period does not include AI agents, automation or their ongoing operation.
+
+The business-name preview uses the same 80-codepoint sanitization and text-content rendering as the query-string preview, with no persistence or metadata changes. Client mode hides the preview bar, footer purchase area, business-name tool and buyer dock, and exposes the cleaner's own mobile quote action.
 
 ## Reuse
 

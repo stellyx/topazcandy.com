@@ -11,3 +11,7 @@ The fictional roofing concept uses a local 9.42-second, silent, two-scene loop: 
 Validation before deployment: syntax check, HTML/assets/anchors/noindex checks, media metadata, and regression checks for autoplay, manual pause, viewport/tab suspension, preference opt-in, blocked playback, and error fallback. Live browser checks follow deployment.
 
 Keep all changes in `showcase/lab/roof/`. The concept planner remains browser-local and does not send inquiries, book work, or collect payments.
+
+## Website purchase
+
+A palette-matched footer banner and mobile bottom dock link to the shared $450 USD website cart. The package includes setup and launch, SEO setup, eligible Maps setup and three months of website maintenance. AI services are separate. Current personal PayPal and email behavior is documented in `/checkout/README.md`; automatic payment confirmation and notifications are not installed.

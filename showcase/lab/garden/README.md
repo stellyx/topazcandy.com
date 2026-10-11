@@ -17,3 +17,7 @@ https://topazcandy.com/showcase/lab/garden/?business=Price%20Lawn%20%26%20Landsc
 Replace the parameter value with the URL-encoded name for the next prospect. The same page and assets are reused. Omitting the parameter keeps the original Stillfield concept. Personalization only changes visible page copy and the copied sample brief; the document title, metadata, canonical URL and noindex policy stay unchanged.
 
 `personalize.js` runs before the shared planner script. It uses text content, normalizes whitespace, removes invisible control characters and caps names at 80 Unicode characters. The personalized page remains a Topaz Candy concept; images are illustrative and the planner does not send requests to the prospect.
+
+## Website purchase
+
+A palette-matched footer banner and mobile bottom dock link to the shared $450 USD website cart. The package includes setup and launch, SEO setup, eligible Maps setup and three months of website maintenance. AI services are separate. Current personal PayPal and email behavior is documented in `/checkout/README.md`; automatic payment confirmation and notifications are not installed.

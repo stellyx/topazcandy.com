@@ -8,6 +8,7 @@ const safeJson=x=>JSON.stringify(x).replaceAll('<','\\u003c');
 const money=p=>p===0?'Complimentary':'$'+p;
 const minutes=n=>n>=60?(Math.floor(n/60)+' hr'+(n>=120?'s':'')+(n%60?' '+n%60+' min':'')):n+' min';
 const arrow='<span aria-hidden="true">↗</span>';
+const templatePurchase = "<section class=\"topaz-purchase\" data-purchase-theme=\"hair\" id=\"website-purchase\" aria-labelledby=\"footer-purchase-title\" data-demo-only><div class=\"topaz-purchase__inner\"><div><p class=\"topaz-purchase__eyebrow\">TOPAZ CANDY / FOR YOUR BUSINESS</p><h2 id=\"footer-purchase-title\">Make this website yours.</h2><p class=\"topaz-purchase__copy\">Your business, this design and a proper launch. Website setup, SEO setup and Google Maps connection, with three months of website service and maintenance.</p><ul class=\"topaz-purchase__scope\"><li>Your branding and content</li><li>SEO and launch checks</li><li>Three months of website care</li></ul></div><div class=\"topaz-purchase__actions\"><a class=\"topaz-purchase__button\" href=\"https://topazcandy.com/checkout/?template=hair\" data-website-purchase><span>Buy this website</span><strong>$450 <span aria-hidden=\"true\">↗</span></strong></a><p class=\"topaz-purchase__note\">One-time website package. Maintenance covers the website; AI services are separate. See the cart for the full scope.</p><a class=\"topaz-purchase__more\" href=\"https://topazcandy.com/services/\">We do other things. Want to spend more money? <span aria-hidden=\"true\">↗</span></a></div></div></section><div class=\"topaz-buy-dock\" data-purchase-theme=\"hair\" data-demo-only><span class=\"topaz-buy-dock__copy\">Like the design?<br><strong>Your website. Properly launched.</strong></span><a class=\"topaz-buy-dock__button\" href=\"https://topazcandy.com/checkout/?template=hair\" data-website-purchase>Buy this website · $450 ↗</a></div>";
 const motionIcon='<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="motion-play" d="M8 5v14l11-7z"/><g class="motion-pause"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></g></svg>';
 function page(p){
  const mj=p.mode==='mj';
@@ -37,7 +38,7 @@ ${proof}
 <footer class="footer"><div class="wrap"><div class="footer-inner"><span>© 2026 ${esc(p.name)}</span><div><a href="${p.giftUrl}">Gift cards ${arrow}</a><a href="mailto:${p.email}">${mj?'Email MJ':'Email Topaz Candy'} ${arrow}</a><a href="https://topazcandy.com/showcase/lab/">${mj?'Design by Topaz Candy':'Explore more templates'} ${arrow}</a></div></div><p class="footer-note">${esc(p.imageCredit)} ${mj?'This is a proposed website design. MJ’s current booking site handles appointments and gift card purchases.':'This template has no live salon calendar or customer intake. Its booking buttons demonstrate the connection point for your own scheduler.'}</p></div></footer>
 <div class="mobile-book">${a('Book a visit',p.bookingUrl,'button','booking','mobile')}<a class="text-link" href="${sms}" data-event="text" data-placement="mobile">${mj?'Text MJ':'Ask us'} ${arrow}</a></div>
 <dialog id="booking-preview" aria-labelledby="preview-title"><button class="dialog-close" id="close-preview" type="button" aria-label="Close booking preview">×</button><p class="eyebrow">A template you can make your own</p><h2 id="preview-title">Your calendar.<br>Your clients.</h2><p>This is the place where your existing booking menu, gift card checkout or map connects. The template doesn’t accept real salon appointments yet.</p>${a('Ask about a site for your salon',sms,'button','inquiry','demo-dialog')}</dialog>
-<script id="profile-data" type="application/json">${safeJson(p)}</script><script id="service-data" type="application/json">${safeJson(services)}</script><script type="module" src="assets/app.mjs"></script></body></html>`;
+<script id="profile-data" type="application/json">${safeJson(p)}</script><script id="service-data" type="application/json">${safeJson(mj?services:services.map(service=>({...service,description:service.description.replaceAll('MJ','your stylist')})))}</script><script type="module" src="assets/app.mjs"></script></body></html>`;
 }
 function servicePage(p,group){
  const mj=p.mode==='mj';
@@ -59,10 +60,19 @@ for(const [profile,folder] of [[mj,'dist'],[template,'dist/template']]){
  let html=page(profile);
  const links='<div class="menu-footer" aria-label="Detailed service guides"><a class="text-link" href="haircuts/">Haircuts & finishing ↗</a><a class="text-link" href="color/">Color & balayage ↗</a><a class="text-link" href="scalp-care/">Scalp & hair care ↗</a><a class="text-link" href="extensions/">Extensions & consultations ↗</a></div>';
  html=html.replace('<span class="sr-only" id="menu-live"',links+'<span class="sr-only" id="menu-live"');
+ if(profile.mode==='template'){
+  html=html.replace('</head>','<link rel="stylesheet" href="https://topazcandy.com/assets/topaz/purchase.css?v=1"></head>').replace('<body data-profile="template">','<body data-profile="template" data-topaz-template="hair">');
+  html=html.replace('<footer class="footer">',templatePurchase+'<footer class="footer">');
+ }
  await writeFile(path.join(root,folder,'index.html'),html);
  for(const [group,slug] of [['cut','haircuts'],['color','color'],['care','scalp-care'],['consult','extensions']]){
   await mkdir(path.join(root,folder,slug),{recursive:true});
-  await writeFile(path.join(root,folder,slug,'index.html'),servicePage(profile,group));
+  let guide=servicePage(profile,group);
+  if(profile.mode==='template'){
+   guide=guide.replace('</head>','<link rel="stylesheet" href="https://topazcandy.com/assets/topaz/purchase.css?v=1"></head>').replace('<body data-profile="template">','<body data-profile="template" data-topaz-template="hair">');
+   guide=guide.replace('<footer class="footer">',templatePurchase+'<footer class="footer">');
+  }
+  await writeFile(path.join(root,folder,slug,'index.html'),guide);
  }
 }
 for(const f of ['style.css','motion.css','brand.css','app.mjs','motion.mjs','finder.mjs','hair-editorial.webp','hair-poster.webp','hair-loop.mp4','mark.svg'])await cp(path.join(root,'dist/assets',f),path.join(root,'dist/template/assets',f));

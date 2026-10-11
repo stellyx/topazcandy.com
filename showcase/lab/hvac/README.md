@@ -19,3 +19,7 @@ The new concept lives entirely in this directory. The only shared-page change is
 ## Media provenance and verification
 
 See `motion-generation.json` for the generation prompt, task receipt and final asset metadata. Media acceptance and live deployment checks are recorded after review.
+
+## Website purchase
+
+A palette-matched footer banner and mobile bottom dock link to the shared $450 USD website cart. The package includes setup and launch, SEO setup, eligible Maps setup and three months of website maintenance. AI services are separate. Current personal PayPal and email behavior is documented in `/checkout/README.md`; automatic payment confirmation and notifications are not installed.

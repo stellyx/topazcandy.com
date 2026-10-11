@@ -70,3 +70,7 @@ The motion controller passed checks for viewport/tab suspension, explicit pause 
 ## Booking and phone control follow-up
 
 New color guests and visitors who are unsure now get a message action first, with the full booking menu available beside it. Their copied notes ask for service guidance and no longer suggest a color correction appointment. Known-service paths retain booking as the primary action. The latest service wording cleanup is preserved. Finder guest choices, text actions, service links, FAQ controls and dialog close targets have a 44px minimum height. Source and decision checks passed; actual browser/phone layout and playback remain unverified.
+
+## Template purchase banner
+
+The generic Crown & Calm homepage and service guides include the coordinated $450 website purchase banner and buyer dock. They link to the shared Topaz Candy cart. The separate MJ client pages and their booking routes are unchanged. Generic menu data replaces client-name references before being embedded in the page. Payment and notification limitations are recorded in `/checkout/README.md`.
