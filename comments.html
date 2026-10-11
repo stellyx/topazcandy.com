@@ -217,34 +217,27 @@
     }
   
 .header nav{display:flex;gap:10px;flex-wrap:wrap}.feedback{padding-top:52px;padding-bottom:72px}.feedback h1{font-size:clamp(42px,6vw,76px);max-width:950px}.feedback h1 span{color:var(--topaz)}.feedback .lede{max-width:760px}.feedback-grid{display:grid;grid-template-columns:1fr;gap:28px;align-items:start;margin-top:38px;max-width:760px}.review-form,.sample{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:28px}.review-form h2,.examples h2{font-size:28px;line-height:1.15;margin:0 0 20px}.field{display:block;margin-bottom:22px;font-size:16px;font-weight:600}.field input,.field select,.field textarea{display:block;width:100%;margin-top:9px;padding:13px;background:var(--ink);color:#fff;border:1px solid #626b78;border-radius:8px;font:400 16px Manrope,system-ui,sans-serif}.field textarea{min-height:170px;resize:vertical}.permission{display:flex;gap:10px;align-items:start;font-size:14px;line-height:1.6;margin-bottom:20px;color:#c7cbd1}.permission input{width:20px;height:20px;flex:none;accent-color:var(--topaz)}.help{color:#bac1ca;font-size:14px;line-height:1.65}.sample{margin-bottom:14px;padding:22px}.sample-label{font:500 14px "DM Mono",monospace;color:var(--topaz);margin:0 0 12px}.sample blockquote{margin:0;font-size:16px;line-height:1.7;color:#e4e7ec}.sample .stars{color:var(--topaz);letter-spacing:.12em;margin-bottom:12px;font-size:20px}.status-message{margin:18px 0 0;color:#c7cbd1;font-size:14px;line-height:1.6}.fallback{margin-top:20px}.fallback textarea{display:block;width:100%;min-height:160px;background:var(--ink);color:white;border:1px solid #626b78;padding:12px;font:inherit;margin:12px 0}.feedback a:not(.button):not(.pill):not(.brand){text-decoration:underline;text-underline-offset:3px}@media(max-width:800px){.feedback-grid{grid-template-columns:1fr}.header{gap:18px;flex-wrap:wrap}}@media(max-width:620px){.review-form{padding:22px}.feedback{padding-top:30px}.feedback h1{letter-spacing:-.035em}}
-</style><link rel="stylesheet" href="/assets/topaz/brand.css?v=1"><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,650;1,500&display=swap" rel="stylesheet"></head><body><header class="header">
+.review-form [hidden]{display:none!important}.status-message[data-state=error]{color:#ff9690}.status-message[data-state=success]{color:#70d6a6}.review-form [aria-invalid=true]{border-color:#ff6961}.review-form button:disabled{opacity:.7;cursor:default}</style><link rel="stylesheet" href="/assets/topaz/brand.css?v=1"><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,650;1,500&display=swap" rel="stylesheet"></head><body><header class="header">
     <a class="topaz-brand" href="/" aria-label="Topaz Candy home"><img class="brand-emblem" src="/assets/topaz/logo-mark.svg" width="66" height="66" alt="" aria-hidden="true" fetchpriority="high"><span class="brand-type"><span class="brand-wordmark">topaz <em>candy</em></span><span class="brand-signature">Ideas with a spark</span></span></a>
-    <nav aria-label="Main navigation"><a class="pill" href="/">Home</a><a class="pill" href="sms:+15125532552" aria-label="Text Topaz Candy">Text us</a>
+    <nav aria-label="Main navigation"><a class="pill" href="/">Home</a><a class="pill" href="/contact/?service=web-presence#contact-form" aria-label="Contact Topaz Candy">Contact us</a>
   </nav></header>
 <main class="feedback wrap">
 <p class="eyebrow">COMMENTS &amp; FEEDBACK</p><h1>Please tell us why we suck <span>so that we may learn from it and better serve you.</span></h1>
 <p class="lede">What worked? What annoyed you? What should we do better? Tell Topaz Candy directly.</p>
 <div class="feedback-grid">
-<form class="review-form" id="reviewForm" action="mailto:andrew@topazcandy.com" method="post" enctype="text/plain">
+<form class="review-form" id="reviewForm" action="https://formsubmit.co/2dbdde9ca207c74c11f854daf548a85b" method="post" novalidate>
 <h2>Leave your feedback</h2>
 <label class="field" for="reviewName">Name or nickname (optional)<input id="reviewName" name="name" autocomplete="name" maxlength="80"></label>
+<label class="field" for="reviewEmail">Reply email (optional)<input id="reviewEmail" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="none" maxlength="200"></label>
 <label class="field" for="reviewRating">Your rating (optional)<select id="reviewRating" name="rating"><option value="">No rating</option><option value="5">5 stars</option><option value="4">4 stars</option><option value="3">3 stars</option><option value="2">2 stars</option><option value="1">1 star</option></select></label>
 <label class="field" for="reviewComment">Your comments<textarea id="reviewComment" name="comments" required maxlength="3000" placeholder="Be honest. The good, the bad, and the thing we missed."></textarea></label>
 <label class="permission"><input type="checkbox" id="publishPermission" name="publication_permission" value="yes"><span>You may publish my comments and display name on this website. My email address stays private.</span></label>
-<button class="button primary" type="submit">Prepare feedback email</button>
-<p class="help">Opens your email app with your feedback filled in. Press Send there to deliver it to <a href="mailto:andrew@topazcandy.com">Email Topaz Candy</a>. Your feedback goes to Topaz Candy privately. Critical feedback is welcome.</p>
-<p class="status-message" id="feedbackStatus" role="status"></p>
-<details class="fallback"><summary>No email app opened?</summary><p class="help">Copy the message below, then <a href="mailto:andrew@topazcandy.com">email Topaz Candy</a>.</p><textarea id="emailCopy" aria-label="Prepared feedback to copy" readonly></textarea><button class="button secondary" id="copyFeedback" type="button">Copy feedback</button></details>
+<label hidden aria-hidden="true">Leave this empty<input name="_honey" tabindex="-1" autocomplete="off"></label><button class="button primary" type="submit" disabled>Send feedback</button>
+<p class="help">Your feedback is sent directly to Topaz Candy. Critical feedback is welcome. We only publish your comments and display name if you give permission above.</p>
+<p class="status-message" id="feedbackStatus" data-form-status role="status" aria-live="polite"></p>
+<noscript><p class="help">Enable JavaScript to send this form.</p></noscript>
 </form>
 
 </div></main>
 <footer><span>© <span id="year"></span> Topaz Candy LLC</span><a href="/">Web presence repair</a></footer>
-<script>
-document.getElementById('year').textContent=new Date().getFullYear();
-const form=document.getElementById('reviewForm');
-function buildMessage(){const name=document.getElementById('reviewName').value.trim()||'Anonymous';const rating=document.getElementById('reviewRating').value;return 'Name: '+name+'\nRating: '+(rating?rating+' / 5':'Not rated')+'\nPermission to publish comments and display name: '+(document.getElementById('publishPermission').checked?'Yes':'No')+'\n\nComments:\n'+document.getElementById('reviewComment').value.trim();}
-form.addEventListener('input',()=>{document.getElementById('emailCopy').value=buildMessage();});
-form.addEventListener('submit',event=>{event.preventDefault();if(!document.getElementById('reviewComment').value.trim()){document.getElementById('reviewComment').setCustomValidity('Please enter your comments.');document.getElementById('reviewComment').reportValidity();return;}const body=buildMessage();document.getElementById('emailCopy').value=body;document.getElementById('feedbackStatus').textContent='Your feedback email is ready. Send it in your email app to deliver it. If nothing opens, use the copy option below.';window.location.href='mailto:andrew@topazcandy.com?subject='+encodeURIComponent('Topaz Candy feedback')+'&body='+encodeURIComponent(body);});
-document.getElementById('reviewComment').addEventListener('input',event=>event.target.setCustomValidity(''));
-document.getElementById('copyFeedback').addEventListener('click',async()=>{const field=document.getElementById('emailCopy');field.value=buildMessage();try{await navigator.clipboard.writeText(field.value);document.getElementById('feedbackStatus').textContent='Copied. Use the Email Topaz Candy link, paste your feedback into the message, and send.';}catch(error){field.focus();field.select();document.getElementById('feedbackStatus').textContent='Select and copy the prepared message, then use the Email Topaz Candy link to send it.';}});
-</script></body></html>
+<script type="module" src="/assets/topaz/feedback.mjs?v=1"></script></body></html>

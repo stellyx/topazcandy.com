@@ -1,4 +1,4 @@
-import { WEBSITE_PACKAGE, cleanDetail, templateKey } from './config.mjs?v=3';
+import { WEBSITE_PACKAGE, cleanDetail, templateKey } from './config.mjs?v=4';
 
 export const INTAKE_URL = 'https://formsubmit.co/ajax/2dbdde9ca207c74c11f854daf548a85b';
 export const COUNTRY_CODES = 'AD AE AF AG AI AL AM AO AQ AR AS AT AU AW AX AZ BA BB BD BE BF BG BH BI BJ BL BM BN BO BQ BR BS BT BV BW BY BZ CA CC CD CF CG CH CI CK CL CM CN CO CR CU CV CW CX CY CZ DE DJ DK DM DO DZ EC EE EG EH ER ES ET FI FJ FK FM FO FR GA GB GD GE GF GG GH GI GL GM GN GP GQ GR GS GT GU GW GY HK HM HN HR HT HU ID IE IL IM IN IO IQ IR IS IT JE JM JO JP KE KG KH KI KM KN KP KR KW KY KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MF MG MH MK ML MM MN MO MP MQ MR MS MT MU MV MW MX MY MZ NA NC NE NF NG NI NL NO NP NR NU NZ OM PA PE PF PG PH PK PL PM PN PR PS PT PW PY QA RE RO RS RU RW SA SB SC SD SE SG SH SI SJ SK SL SM SN SO SR SS ST SV SX SY SZ TC TD TF TG TH TJ TK TL TM TN TO TR TT TV TW TZ UA UG UM US UY UZ VA VC VE VG VI VN VU WF WS YE YT ZA ZM ZW'.split(' ');
@@ -23,18 +23,31 @@ function regionCode(value, country) {
 export function addressRules(country) {
   return { regionRequired: !!regions[country], postalRequired: !!POSTAL_PATTERNS[country] };
 }
-export function validateIntake(raw) {
+export function postalInputMode(country) {
+  return ['US','AU'].includes(country) ? 'numeric' : 'text';
+}
+export function normalizeWebsite(value) {
+  const text = cleanDetail(value, 300);
+  if (!text) return '';
+  return /^[a-z][a-z\d+.-]*:/i.test(text) || text.startsWith('//') ? text : `https://${text}`;
+}
+export function validateContact(raw, { requireBusiness = false } = {}) {
   const details = {}, errors = {};
-  const field = (key, limit = 160) => details[key] = cleanDetail(raw[key], limit);
-  for (const key of ['business', 'contact', 'email', 'phone', 'website', 'notes']) field(key, { email:200, phone:40, website:300, notes:1200 }[key] || 160);
-  if (!details.business) errors.business = 'Enter your business name.';
-  if (!details.contact) errors.contact = 'Enter your contact name.';
+  for (const key of ['business','contact','email','phone','website','notes']) details[key] = cleanDetail(raw[key], {email:200,phone:40,website:300,notes:1200}[key] || 160);
+  details.website = normalizeWebsite(details.website);
+  if (requireBusiness && !details.business) errors.business = 'Enter your business name.';
+  if (!details.contact) errors.contact = 'Enter your name.';
   if (!/^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]+$/u.test(details.email)) errors.email = 'Enter a valid email address.';
   if (details.phone && (!/^[+\d\s().-]+$/.test(details.phone) || !/^\d{7,15}$/.test(details.phone.replace(/\D/g, '')))) errors.phone = 'Enter a phone number with 7 to 15 digits, or leave it blank.';
   if (details.website) {
-    try { const url = new URL(details.website); if (!['http:','https:'].includes(url.protocol) || !url.hostname.includes('.')) throw Error(); }
-    catch { errors.website = 'Enter a complete website address starting with https://, or leave it blank.'; }
+    try { const url = new URL(details.website); if (!['http:','https:'].includes(url.protocol) || !url.hostname.includes('.') || url.username || url.password) throw Error(); }
+    catch { errors.website = 'Enter a website such as example.com, or leave it blank.'; }
   }
+  return { details, errors, valid: Object.keys(errors).length === 0 };
+}
+export function validateIntake(raw) {
+  const { details, errors } = validateContact(raw, { requireBusiness: true });
+  const field = (key, limit = 160) => details[key] = cleanDetail(raw[key], limit);
   details.billing_same = raw.billing_same === 'on' || raw.billing_same === true;
   const address = prefix => {
     const values = {};

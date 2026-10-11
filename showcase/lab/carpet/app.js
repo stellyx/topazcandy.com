@@ -1,4 +1,4 @@
-import { CONFIG } from './config.js?v=4';
+import { CONFIG } from './config.js?v=5';
 import { calculateQuote, cleanName, money, requestBrief } from './quote.js';
 
 const $ = selector => document.querySelector(selector);
@@ -28,9 +28,10 @@ if (!CONFIG.demoMode) {
   if (/^\+?[\d ()-]{7,25}$/.test(CONFIG.phone)) {
     const link = document.createElement('a'); link.href = `tel:${CONFIG.phone.replace(/[^+\d]/g, '')}`; link.textContent = CONFIG.phone; contact.append(link);
   }
-  if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(CONFIG.quoteEmail)) {
-    const link = document.createElement('a'); link.href = `mailto:${CONFIG.quoteEmail}`; link.textContent = CONFIG.quoteEmail; contact.append(link);
-  }
+  try {
+    const url = new URL(CONFIG.contactUrl);
+    if (url.protocol === 'https:') { const link = document.createElement('a'); link.href = url.href; link.textContent = 'Contact us'; contact.append(link); }
+  } catch { /* A verified contact form is required before a client launch. */ }
   if (CONFIG.serviceAreas.length) { const area = document.createElement('span'); area.textContent = CONFIG.serviceAreas.join(' · '); contact.append(area); }
   contact.hidden = !contact.children.length;
 }
@@ -131,9 +132,9 @@ form.addEventListener('submit', event => {
   modal.setAttribute('aria-labelledby', 'result-title');
   if (!CONFIG.demoMode) {
     $('[data-result-status]').textContent = 'REQUEST PREPARED · NOT SENT';
-    $('[data-result-message]').textContent = 'Review the details, then open your email request or the booking page. Your appointment is confirmed separately.';
-    if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(CONFIG.quoteEmail)) { const link = $('#send-brief'); link.href = `mailto:${CONFIG.quoteEmail}?subject=${encodeURIComponent('Carpet cleaning quote request')}&body=${encodeURIComponent(brief)}`; link.hidden = false; }
-    try { const url = new URL(CONFIG.bookingUrl); if (url.protocol === 'https:') { const link = $('#book-brief'); link.href = url.href; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.hidden = false; } } catch { /* No verified booking route configured. */ }
+    $('[data-result-message]').textContent = 'Review the details, then continue to the contact form or booking page. Your appointment is confirmed separately.';
+    try { const url = new URL(CONFIG.contactUrl); if (url.protocol === 'https:') { url.hash = new URLSearchParams({notes:brief}).toString(); const link = $('#send-brief'); link.href = url.href; link.hidden = false; } } catch { /* No verified contact form configured. */ }
+    try { const url = new URL(CONFIG.bookingUrl); if (url.protocol === 'https:') { const link = $('#book-brief'); link.href = url.href; link.target = '_self'; link.rel = 'noopener noreferrer'; link.hidden = false; } } catch { /* No verified booking route configured. */ }
   }
   $('#request-brief').focus();
 });

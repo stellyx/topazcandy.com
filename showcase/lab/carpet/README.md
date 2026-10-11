@@ -20,7 +20,7 @@ Use `?business=Company%20Name` for a sales preview. The value is sanitized, limi
 
 The default form is a demonstration. It produces a brief in browser memory only, with explicit NOT SENT wording. It does not post to an endpoint, collect payment, save lead details, send email or reserve appointments. No personal details are retained across reloads. The visitor may copy or download the brief intentionally.
 
-For a client launch, replace illustrative media with approved business media as appropriate; verify the service descriptions and rates; supply genuine reviews or job photographs only when approved; set the client's metadata and canonical URL; review indexing and privacy; connect the chosen authorized booking or lead system. Turning `demoMode` off changes the copy, but does not create an email backend: `quoteEmail` opens the visitor's email application and `bookingUrl` goes to a verified HTTPS booking provider. Keep demo mode on until those routes are ready.
+For a client launch, replace illustrative media with approved business media as appropriate; verify the service descriptions and rates; supply genuine reviews or job photographs only when approved; set the client's metadata and canonical URL; review indexing and privacy; connect the chosen authorized booking or lead system. Turning `demoMode` off changes the copy, but does not create an email backend: `contactUrl` must point to a verified contact form and `bookingUrl` goes to a verified HTTPS booking provider. Neither creates a backend by itself. Contact and booking links stay in the same tab. Keep demo mode on until those routes are ready.
 
 ## Design and claims
 
@@ -37,3 +37,7 @@ The carpet care note is grounded in The Carpet and Rug Institute's cleaning and 
 ## Verification
 
 The source project checks pricing boundaries, empty selection, minimum charges, pet eligibility, commercial wording, brand sanitization, required form controls, headings and internal links/assets. Browser interaction QA is unavailable in this managed environment because the supported browser-control skill is not present. No alternate browser or preview server is used.
+
+## Website enquiry and compact checkout
+
+Website-enquiry buttons now open the Topaz Candy contact form with the carpet design selected. Visitors can send their enquiry directly on the website. The paid cart remains a separate $450 package: one form shown in three compact steps (contact, addresses, review/payment), with optional details collapsed and billing defaulting to the business address. The distracting extra-services purchase link has been removed. Topaz Candy's main site and services directory present the wider offer before checkout.

@@ -24,7 +24,7 @@ for(const goal of ['cut','color','care','extensions','unsure'])for(const guest o
  const link=messageLink(mj,goal,guest);
  assert.ok(link.startsWith('sms:+15127169236?body='));
  assert.match(decodeURIComponent(link),/Hi MJ!/);
- assert.ok(messageLink(template,goal,guest).startsWith('mailto:andrew@topazcandy.com'));
+ assert.ok(messageLink(template,goal,guest).startsWith('https://topazcandy.com/contact/?service=website&template=hair#contact-form'));
  assert.ok(visitNotes(mj,goal,guest,services).includes(mj.bookingUrl));
  assert.ok(!visitNotes(template,goal,guest,services).includes('mjholisticstudiollc'));
  assert.ok(visitNotes(mj,goal,guest,services).includes('No appointment has been reserved.'));

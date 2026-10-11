@@ -11,7 +11,7 @@ export function recommendation(goal, guest, services) {
 export function messageLink(profile, goal, guest) {
   const goals={cut:'a haircut',color:'color or balayage',care:'scalp care',extensions:'hair extensions',unsure:'help choosing the right service'};
   const text=`Hi MJ! ${guest==='new'?'This would be my first visit.':'I am a returning guest.'} I am interested in ${goals[goal]||goals.unsure}. Could you help me choose the right appointment?`;
-  if(profile.mode==='template')return 'mailto:andrew@topazcandy.com?subject='+encodeURIComponent('A hairstylist website for my business');
+  if(profile.mode==='template')return 'https://topazcandy.com/contact/?service=website&template=hair#contact-form';
   return 'sms:'+profile.phone+'?body='+encodeURIComponent(text);
 }
 

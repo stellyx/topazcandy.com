@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 import vm from 'node:vm';
 import { WEBSITE_PACKAGE, templateKey, templateFromPayPalOption, paypalDetails, cleanDetail } from '../checkout/config.mjs';
-import { INTAKE_URL, COUNTRY_CODES, validateIntake, intakePayload, intakeAccepted } from '../checkout/intake.mjs';
+import { INTAKE_URL, COUNTRY_CODES, validateIntake, intakePayload, intakeAccepted, addressRules, addressText, postalInputMode } from '../checkout/intake.mjs';
 
 assert.equal(WEBSITE_PACKAGE.price, 450);
 assert.equal(WEBSITE_PACKAGE.currency, 'USD');
@@ -36,7 +36,7 @@ for (const key of Object.keys(WEBSITE_PACKAGE.templates)) {
   assert.equal(purchases.length, 2, `${key}: footer and bottom-dock buying actions`);
   for (const tag of purchases) assert.ok(tag.includes(`href="https://topazcandy.com/checkout/?template=${key}"`));
   assert.ok(html.includes(`data-purchase-theme="${key}"`));
-  assert.ok(html.includes('Want to spend more money?'));
+  assert.ok(!html.includes('Want to spend more money?'));
   assert.ok(!html.slice(0, html.indexOf('<main')).includes('>Buy this website'));
 }
 for (const [field,value] of [['email','bad-address'],['business',''],['contact',''],['business_line1',''],['business_city',''],['business_country','XX'],['business_region','No State'],['business_postal','wrong'],['phone','phone'],['website','javascript:alert(1)']]) assert.ok(validateIntake({...base,[field]:value}).errors[field],field);
@@ -82,28 +82,51 @@ assert.ok(!/localStorage|sessionStorage|innerHTML|paid=true|payment=success|mail
 
 // Run the actual submit handler against a controlled email service and PayPal
 // form. Network rejection must preserve the details and block payment.
-async function checkoutFixture({result={success:'true'},reject=false}={}) {
+async function checkoutFixture({result={success:'true'},reject=false,atReview=true}={}) {
   const events={}, choiceEvents={}, fields={...base}; let sends=0, submissions=0, sentPayload;
-  const control=()=>({value:'',disabled:false,required:false,hidden:false,attrs:{},addEventListener(){},setCustomValidity(v){this.validity=v;},setAttribute(k,v){this.attrs[k]=v;},removeAttribute(k){delete this.attrs[k];}});
+  const control=()=>({value:'',disabled:false,required:false,hidden:false,attrs:{},events:{},dataset:{},addEventListener(n,f){this.events[n]=f;},setCustomValidity(v){this.validity=v;},setAttribute(k,v){this.attrs[k]=v;},removeAttribute(k){delete this.attrs[k];},focus(){},reportValidity(){return !this.validity;},closest(){return null;}});
+  const steps=Array.from({length:3},(_,i)=>Object.assign(control(),{dataset:{checkoutStep:String(i)},querySelector(){return control();}}));
   const controls={};
-  for(const name of ['business','contact','email','phone','website','notes','business_line1','business_line2','business_city','business_region','business_postal','business_country','billing_line1','billing_line2','billing_city','billing_region','billing_postal','billing_country']) controls[name]=control();
+  for(const name of ['business','contact','email','phone','website','notes','business_line1','business_line2','business_city','business_region','business_postal','business_country','billing_line1','billing_line2','billing_city','billing_region','billing_postal','billing_country']) {
+    controls[name]=control();
+    controls[name].closest=selector=>selector==='[data-checkout-step]'?steps[name.startsWith('business_')||name.startsWith('billing_')?1:0]:null;
+  }
   controls.business_country.value='US'; controls.billing_country.value='US';
   const choice=Object.assign(control(),{addEventListener(n,f){choiceEvents[n]=f;}});
   const formElements=Object.assign(Object.values(controls),controls);
   formElements.push(choice);
   const form={elements:formElements,reportValidity(){return !Object.values(controls).some(c=>c.validity);},addEventListener(n,f){events[n]=f;},setAttribute(){}};
   const payment={elements:{hosted_button_id:control(),os0:control(),os1:control(),os2:control(),custom:control()},submit(){submissions++;}};
-  const preview=control(),status=Object.assign(control(),{dataset:{}}),button=control(),billingSame=Object.assign(control(),{checked:true}),billingFields=control();
-  const nodes={'template-choice':choice,'website-details':form,'design-preview':preview,'paypal-checkout':payment,'billing-same':billingSame,'billing-fields':billingFields,'checkout-status':status,'checkout-submit':button};
+  const preview=control(),status=control(),button=control(),billingSame=Object.assign(control(),{checked:true}),billingFields=control(),next=control(),back=control();
+  formElements.push(button,next,back,billingSame,billingFields);
+  const nodes={'template-choice':choice,'website-details':form,'design-preview':preview,'paypal-checkout':payment,'billing-same':billingSame,'billing-fields':billingFields,'checkout-status':status,'checkout-submit':button,'checkout-next':next,'checkout-back':back};
+  for(const id of ['checkout-review-design','checkout-review','checkout-review-notes','checkout-review-notes-text','checkout-progress'])nodes[id]=control();
   for(const prefix of ['business','billing'])for(const part of ['region','postal'])nodes[`${prefix}-${part}-optional`]=control();
   vm.runInNewContext(app.replace(/^import .*;\n/gm,''),{
-    WEBSITE_PACKAGE,templateKey,templateFromPayPalOption,paypalDetails,INTAKE_URL,addressRules: (country)=>({regionRequired:country==='US',postalRequired:country==='US'}),validateIntake,intakePayload,intakeAccepted,
-    document:{getElementById(id){return nodes[id];}},location:{search:'?template=roof&amount=1',href:'https://topazcandy.com/checkout/?template=roof&amount=1'},history:{replaceState(){}},
+    WEBSITE_PACKAGE,templateKey,templateFromPayPalOption,paypalDetails,INTAKE_URL,addressRules,addressText,postalInputMode,validateIntake,intakePayload,intakeAccepted,
+    document:{getElementById(id){return nodes[id];},querySelectorAll(){return steps;}},location:{search:'?template=roof&amount=1',href:'https://topazcandy.com/checkout/?template=roof&amount=1'},history:{replaceState(){}},
     FormData:class{*[Symbol.iterator](){yield* Object.entries(fields);}},URL,URLSearchParams,AbortSignal,Date,crypto:{randomUUID(){return '12345678-1234-1234-1234-123456789012';}},
     fetch:async(url,options)=>{sends++;assert.equal(url,INTAKE_URL);assert.equal(options.credentials,'omit');assert.equal(options.headers['Content-Type'],undefined);sentPayload=Object.fromEntries(options.body);if(reject)throw Error('Network unavailable');return{ok:true,json:async()=>result};}
   });
-  return{events,choice,fields,payment,status,button,get sends(){return sends;},get submissions(){return submissions;},get sentPayload(){return sentPayload;}};
+  if(atReview){next.events.click();next.events.click();}
+  return{events,choice,fields,controls,payment,status,button,next,back,steps,nodes,get sends(){return sends;},get submissions(){return submissions;},get sentPayload(){return sentPayload;}};
 }
+const staged=await checkoutFixture({atReview:false});
+assert.equal(staged.steps[0].hidden,false);assert.equal(staged.button.hidden,true);
+staged.fields.business_line1='';
+await staged.events.submit({preventDefault(){}});
+assert.equal(staged.steps[1].hidden,false);assert.equal(staged.sends,0,'Enter in the first step does not send intake');
+staged.next.events.click();assert.equal(staged.steps[1].hidden,false,'Address errors stop the next step');assert.equal(staged.sends,0);
+staged.fields.business_line1=base.business_line1;staged.next.events.click();assert.equal(staged.steps[2].hidden,false);assert.equal(staged.sends,0,'Review does not send intake');
+assert.ok(staged.nodes['checkout-review'].textContent.includes(base.business_line1));
+staged.back.events.click();assert.equal(staged.steps[1].hidden,false);assert.equal(staged.fields.email,base.email);
+assert.equal(staged.controls.business_postal.attrs.inputmode,'numeric');
+staged.controls.business_country.value='CA';staged.controls.business_country.events.change();assert.equal(staged.controls.business_postal.attrs.inputmode,'text');
+for(const country of ['US','AU'])assert.equal(postalInputMode(country),'numeric');
+for(const country of ['CA','GB','DE','HK'])assert.equal(postalInputMode(country),'text');
+assert.equal(validateIntake({...base,website:'example.com/services'}).details.website,'https://example.com/services');
+assert.equal(validateIntake({...base,website:'javascript:alert(1)'}).valid,false);
+assert.ok(!cart.includes('cart-other'));assert.ok(!cart.includes('href="/services/"'));
 for (const option of [{result:{success:'false'}},{reject:true}]) {
   const failed=await checkoutFixture(option);await failed.events.submit({preventDefault(){}});
   assert.equal(failed.submissions,0);assert.equal(failed.status.dataset.state,'error');assert.equal(failed.button.disabled,false);assert.equal(failed.fields.business,base.business);
@@ -163,4 +186,4 @@ for (const preferences of [{ reduced: true }, { saveData: true }]) {
 const blocked = await motionFixture({ blocked: true }); blocked.observe([{ isIntersecting: true }]); await blocked.settle();
 assert.equal(blocked.button.dataset.playing, 'false');
 assert.ok(blocked.videos.every(v => !v.dataset.loaded));
-console.log(JSON.stringify({ passed: true, checks: 'six fixed-price cart routes, one automatic intake, validated contacts and addresses, email-before-payment handoff, failure preservation, duplicate protection, five films and motion fallbacks' }));
+console.log(JSON.stringify({ passed: true, checks: 'six fixed-price cart routes, one automatic intake, validated contacts and addresses, email-before-payment handoff, failure preservation, duplicate protection, compact three-step checkout, correct keyboard hints, five films and motion fallbacks' }));

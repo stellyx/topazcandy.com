@@ -1,4 +1,4 @@
-import {recommendation,messageLink,visitNotes} from './finder.mjs';
+import {recommendation,messageLink,visitNotes} from './finder.mjs?v=2';
 import {initSalonMotion,initSalonReveals} from './motion.mjs';
 const profile=JSON.parse(document.getElementById('profile-data').textContent);
 const services=JSON.parse(document.getElementById('service-data').textContent);

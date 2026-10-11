@@ -1,5 +1,5 @@
-import { WEBSITE_PACKAGE, templateKey, templateFromPayPalOption, paypalDetails } from './config.mjs?v=3';
-import { INTAKE_URL, addressRules, validateIntake, intakePayload, intakeAccepted } from './intake.mjs?v=1';
+import { WEBSITE_PACKAGE, templateKey, templateFromPayPalOption, paypalDetails } from './config.mjs?v=4';
+import { INTAKE_URL, addressRules, postalInputMode, addressText, validateIntake, intakePayload, intakeAccepted } from './intake.mjs?v=2';
 const choice = document.getElementById('template-choice');
 const form = document.getElementById('website-details');
 const preview = document.getElementById('design-preview');
@@ -8,6 +8,10 @@ const billingSame = document.getElementById('billing-same');
 const billingFields = document.getElementById('billing-fields');
 const status = document.getElementById('checkout-status');
 const button = document.getElementById('checkout-submit');
+const next = document.getElementById('checkout-next');
+const back = document.getElementById('checkout-back');
+const steps = Array.from(document.querySelectorAll('[data-checkout-step]'));
+let step = 0;
 let submitting = false;
 let accepted = null;
 choice.value = WEBSITE_PACKAGE.templates[templateKey(new URLSearchParams(location.search).get('template'))].paypalOption;
@@ -18,9 +22,11 @@ function updateDesign() {
   preview.href = WEBSITE_PACKAGE.templates[key].url;
 }
 function updateAddress(prefix) {
-  const rules = addressRules(form.elements[`${prefix}_country`].value);
+  const country = form.elements[`${prefix}_country`].value;
+  const rules = addressRules(country);
   form.elements[`${prefix}_region`].required = rules.regionRequired;
   form.elements[`${prefix}_postal`].required = rules.postalRequired;
+  form.elements[`${prefix}_postal`].setAttribute('inputmode', postalInputMode(country));
   document.getElementById(`${prefix}-region-optional`).hidden = rules.regionRequired;
   document.getElementById(`${prefix}-postal-optional`).hidden = rules.postalRequired;
 }
@@ -36,8 +42,59 @@ function clearErrors() {
   status.textContent = '';
   status.dataset.state = '';
 }
+function reviewOrder() {
+  const {details, valid} = validateIntake(Object.fromEntries(new FormData(form)));
+  if (!valid) return;
+  const design = WEBSITE_PACKAGE.templates[templateFromPayPalOption(choice.value)];
+  document.getElementById('checkout-review-design').textContent = `${design.paypalOption} · $450 USD`;
+  document.getElementById('checkout-review').textContent = `${details.business}\n${details.contact} · ${details.email}\n\nBusiness address\n${addressText(details.business_address)}\n\nBilling address\n${details.billing_same ? 'Same as business address' : addressText(details.billing_address)}`;
+  document.getElementById('checkout-review-notes').hidden = !details.notes;
+  document.getElementById('checkout-review-notes-text').textContent = details.notes;
+}
+function showStep(index, focus = true) {
+  step = index;
+  steps.forEach((section, i) => { section.hidden = i !== step; });
+  back.hidden = step === 0;
+  next.hidden = step === 2;
+  button.hidden = step !== 2;
+  next.textContent = step === 0 ? 'Continue to addresses ↗' : 'Review order ↗';
+  document.getElementById('checkout-progress').textContent = `Step ${step + 1} of 3 · ${['About you','Addresses','Review and pay'][step]}`;
+  if (step === 2) reviewOrder();
+  if (focus) steps[step].querySelector('[data-step-title]').focus();
+}
+function highlightErrors(errors) {
+  const entries = Object.entries(errors);
+  if (!entries.length) return false;
+  const first = form.elements[entries[0][0]];
+  const section = first.closest('[data-checkout-step]');
+  if (section) showStep(Number(section.dataset.checkoutStep));
+  for (const [name,message] of entries) {
+    const field = form.elements[name];
+    field.setCustomValidity(message);
+    field.setAttribute('aria-invalid','true');
+    const optional = field.closest('details');
+    if (optional) optional.open = true;
+  }
+  status.textContent = 'Check the highlighted details to continue.';
+  status.dataset.state = 'error';
+  first.reportValidity();
+  return true;
+}
+function advance() {
+  if (submitting) return;
+  clearErrors();
+  const validation = validateIntake(Object.fromEntries(new FormData(form)));
+  const errors = Object.fromEntries(Object.entries(validation.errors).filter(([name]) => Number(form.elements[name].closest('[data-checkout-step]')?.dataset.checkoutStep) === step));
+  if (highlightErrors(errors)) return;
+  const invalid = Array.from(form.elements).find(field => !field.disabled && Number(field.closest?.('[data-checkout-step]')?.dataset.checkoutStep) === step && field.checkValidity && !field.checkValidity());
+  if (invalid) { const optional = invalid.closest('details'); if (optional) optional.open = true; invalid.reportValidity(); return; }
+  showStep(Math.min(step + 1, 2));
+}
+next.addEventListener('click', advance);
+back.addEventListener('click', () => { if (!submitting) { clearErrors(); showStep(Math.max(0, step - 1)); } });
 choice.addEventListener('change', () => {
   updateDesign(); clearErrors();
+  if (step === 2) reviewOrder();
   const url = new URL(location.href);
   url.searchParams.set('template', templateFromPayPalOption(choice.value));
   history.replaceState(null, '', url);
@@ -52,17 +109,13 @@ form.addEventListener('change', clearErrors);
 form.addEventListener('submit', async event => {
   event.preventDefault();
   if (submitting) return;
+  if (step < 2) { advance(); return; }
   clearErrors();
   const raw = Object.fromEntries(new FormData(form));
   const validation = validateIntake(raw);
   if (raw._honey || !validation.valid) {
-    for (const [name,message] of Object.entries(validation.errors)) {
-      form.elements[name].setCustomValidity(message);
-      form.elements[name].setAttribute('aria-invalid','true');
-    }
-    status.textContent = raw._honey ? 'Please reload checkout and try again.' : 'Check the highlighted details to continue.';
-    status.dataset.state = 'error';
-    form.reportValidity();
+    if (raw._honey) { status.textContent = 'Please reload checkout and try again.'; status.dataset.state = 'error'; }
+    else highlightErrors(validation.errors);
     return;
   }
   if (!form.reportValidity()) return;
@@ -110,4 +163,4 @@ form.addEventListener('submit', async event => {
     button.textContent = 'Continue to PayPal · $450';
   }
 });
-updateDesign(); updateBilling(); button.disabled = false;
+updateDesign(); updateBilling(); showStep(0, false); next.disabled = false; button.disabled = false;
