@@ -1,0 +1,16 @@
+{
+  "id": "HAIR-01",
+  "name": "Crown & Calm",
+  "industry": "Hair styling and salon care",
+  "template_url": "https://topazcandy.com/showcase/lab/hair/",
+  "client_preview_url": "https://topazcandy.com/showcase/clients/mj-holistic-studio/",
+  "client_name": "MJ Holistic Studio",
+  "source_path": "templates/hair-stylist",
+  "package_path": "templates/hair-stylist/docs/MJ_Holistic_Studio_Package.md",
+  "created_at": "2026-10-11",
+  "status": "preview",
+  "indexable": false,
+  "live_customer_scheduler": false,
+  "verified_customer_booking_url": "https://www.mjholisticstudiollc.com/s/appointments",
+  "notes": "Template buttons preview integration and route inquiries to Topaz. MJ preview connects to her existing booking site. Final domain launch and browser QA remain pending."
+}

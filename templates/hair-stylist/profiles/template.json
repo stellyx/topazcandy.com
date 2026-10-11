@@ -1,0 +1,20 @@
+{
+  "mode": "template",
+  "name": "Crown & Calm",
+  "subtitle": "A little care for your crown",
+  "location": "Independent hairstylist website template",
+  "bookingUrl": "#booking-preview",
+  "giftUrl": "#booking-preview",
+  "phone": "",
+  "displayPhone": "",
+  "email": "andrew@topazcandy.com",
+  "address": "Your salon address belongs here",
+  "suite": "Your studio · Your neighborhood",
+  "mapUrl": "#booking-preview",
+  "reviewsUrl": "",
+  "origin": "https://topazcandy.com/showcase/lab/hair",
+  "banner": "Hairstylist template preview · Branding and menu are illustrative",
+  "imageCredit": "Generated editorial photography. This is a design concept, not a client portfolio.",
+  "priceNote": "Illustrative menu for this template. Replace services, prices and times with the salon’s approved menu before launch.",
+  "visitNote": "Adapt the address, suite, arrival notes and map to the salon. Add verified hours and directions before launch."
+}
