@@ -14,4 +14,4 @@ Keep all changes in `showcase/lab/roof/`. The concept planner remains browser-lo
 
 ## Website purchase
 
-A palette-matched footer banner and mobile bottom dock link to the shared $450 USD website cart. The package includes setup and launch, SEO setup, eligible Maps setup and three months of website maintenance. AI services are separate. Current personal PayPal and email behavior is documented in `/checkout/README.md`; automatic payment confirmation and notifications are not installed.
+A palette-matched footer banner and mobile bottom dock link to the shared $450 USD website cart. The package includes setup and launch, SEO setup, eligible Maps setup and three months of website maintenance. AI services are separate. Current personal PayPal and email behavior is documented in `/checkout/README.md`; PayPal receives the selected design and optional business summaries. Native payment email and SMS alerts are enabled; website-side automatic payment verification is not installed.
