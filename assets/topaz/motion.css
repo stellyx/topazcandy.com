@@ -1,0 +1,45 @@
+/* Motion stays inside the approved art direction. Labels remain upright. */
+[data-gem-motion]{perspective:900px;overflow:visible}
+[data-gem-motion]>.gem-art{position:absolute;inset:3%;width:94%;height:94%;max-width:none;animation:gem-drift 22s ease-in-out infinite;pointer-events:none}
+.gem-core{transform-box:view-box;transform-origin:50% 47.4%;animation:gem-turn 140s linear infinite}
+.service-orbit{position:absolute;inset:20%;z-index:3;transform:rotate(var(--phase));animation:service-orbit 96s linear infinite;pointer-events:none}
+.orbit-anchor{position:absolute;left:50%;top:0;transform:translate(-50%,-50%)}
+.orbit-link{display:flex;align-items:center;gap:7px;padding:5px 9px 5px 5px;background:#fffaf2e8;border:1px solid #bda78980;border-radius:40px;white-space:nowrap;pointer-events:auto;transform:rotate(calc(-1 * var(--phase)));animation:service-counter 96s linear infinite;box-shadow:0 2px 10px #4b28510c}
+.orbit-link:hover{background:#fffaf2;border-color:#4b2851}
+.orbit-label{font:700 11px/1.4 'Manrope',Arial,sans-serif;color:#302133}
+.orbit-star{display:block;width:25px;height:25px;flex-shrink:0;animation:star-turn 18s linear infinite}
+.orbit-star svg{display:block;width:100%;height:100%;fill:#4b2851}
+.orbit-star-1 svg,.orbit-star-3 svg{fill:#384cb2}
+.orbit-star-2 svg,.orbit-star-4 svg{fill:#a76124}
+[data-gem-motion][data-motion-paused=true] *,[data-gem-motion]:has(.orbit-link:hover) *,[data-gem-motion]:has(.orbit-link:focus-visible) *{animation-play-state:paused}
+.motion-toggle{width:44px;height:44px;min-width:44px;min-height:44px;padding:0;display:grid;place-items:center;border:0;border-radius:50%;background:transparent;opacity:.78;color:#fffaf2;cursor:pointer;z-index:5;line-height:1;transition:opacity .15s}
+.motion-toggle:hover{opacity:1;background:transparent}
+.motion-toggle:focus-visible{outline:2px solid currentColor;outline-offset:2px;opacity:1}
+.motion-toggle[hidden]{display:none!important}
+.motion-toggle svg{width:14px;height:14px;display:block;fill:currentColor;pointer-events:none}.preview-toggle svg{filter:drop-shadow(0 1px 2px #000b)}
+.motion-toggle .motion-pause{display:none}
+.motion-toggle[data-playing=true] .motion-play{display:none}
+.motion-toggle[data-playing=true] .motion-pause{display:block}
+.hero-animation-toggle{position:absolute;left:20px;top:24px;color:#4b2851}
+/* Exactly 85% on the media itself: no tint, gradient, or color above it. */
+[data-motion-preview]{position:relative}
+.work-card-link{display:block}
+.work-image{background:#111515}
+[data-motion-preview] .template-preview-video{display:block;width:100%;height:100%;object-fit:cover;opacity:.85!important;filter:none!important;mix-blend-mode:normal!important;pointer-events:none;transform:none!important}
+.work-image::before,.work-image::after,[data-motion-preview] .direction__photo::before,[data-motion-preview] .direction__photo::after,[data-motion-preview].direction__preview::before,[data-motion-preview].direction__preview::after{content:none!important;display:none!important;background:none!important}
+.work-image .template-preview-video{position:absolute;inset:0}
+.work-image .work-word{z-index:2;pointer-events:none}
+.preview-toggle{position:absolute;top:12px;right:12px;text-shadow:none}
+.direction__preview{position:relative;min-height:530px;background:#111515;overflow:hidden}
+.direction__preview .direction__photo{display:block;position:absolute;inset:0;width:100%;height:100%;min-height:0;background:#111515!important}
+.direction__preview .template-preview-video{position:absolute;inset:0}
+.direction--garden .direction__preview{order:1}
+@keyframes gem-turn{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes gem-drift{0%,100%{transform:translateY(0) rotateY(-7deg)}50%{transform:translateY(-9px) rotateY(7deg)}}
+@keyframes service-orbit{from{transform:rotate(var(--phase))}to{transform:rotate(calc(var(--phase) + 360deg))}}
+@keyframes service-counter{from{transform:rotate(calc(-1 * var(--phase)))}to{transform:rotate(calc(-1 * var(--phase) - 360deg))}}
+@keyframes star-turn{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@media(max-width:900px){.direction__preview{min-height:370px}.direction--garden .direction__preview{order:2}}
+@media(max-width:760px){[data-gem-motion]>.gem-art{inset:5%;width:90%;height:90%}.service-orbit{inset:22%}.orbit-label{font-size:10px}.orbit-star{width:21px;height:21px}.orbit-link{gap:5px;padding:4px 8px 4px 4px}.hero-animation-toggle{left:15px;top:18px}}
+@media(max-width:480px){.service-orbit{inset:23%}.orbit-label{font-size:9px}.orbit-star{width:19px;height:19px}.orbit-link{gap:4px}}
+@media(prefers-reduced-motion:reduce){[data-gem-motion] *,[data-gem-motion]>.gem-art{animation:none!important;transition:none!important}.motion-toggle{transition:none}}

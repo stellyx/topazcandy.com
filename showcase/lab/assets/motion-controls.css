@@ -1,0 +1,17 @@
+/* Small visible icons with comfortable pointer and keyboard targets. */
+body .hero button.motion-control,
+body[data-design] .hero button.motion-control{width:44px;height:44px;min-width:44px;min-height:44px;display:grid;place-items:center;padding:0;border:0;border-radius:50%;color:var(--motion-color,#193d32);background:transparent;backdrop-filter:none;letter-spacing:normal;line-height:1;opacity:.72;cursor:pointer;transition:opacity .18s,background .18s}
+body .hero button.motion-control:hover,
+body[data-design] .hero button.motion-control:hover{background:var(--motion-hover,#f4f5ed66);color:var(--motion-color,#193d32);opacity:1}
+body .hero button.motion-control:focus-visible,
+body[data-design] .hero button.motion-control:focus-visible{outline:2px solid var(--motion-focus,currentColor);outline-offset:3px;opacity:1}
+.motion-control[hidden]{display:none!important}
+.motion-control svg{display:block;width:14px;height:14px;fill:currentColor;pointer-events:none}
+.motion-control .motion-pause{display:none}
+.motion-control[data-playing=true] .motion-play{display:none}
+.motion-control[data-playing=true] .motion-pause{display:block}
+body[data-design=garden] .motion-control{--motion-color:#243a32;--motion-hover:#ebe6d866}
+body[data-design=roof] .motion-control{--motion-color:#f0ede5;--motion-hover:#171a1b66;--motion-focus:#ffad96}
+body[data-design=auto] .motion-control{--motion-color:#f7faf8;--motion-hover:#0a101266;--motion-focus:#ff8c75}
+.motion-toggle.motion-control{--motion-color:#d5d9dd;--motion-hover:#080a0c66;--motion-focus:#ff5c51}
+@media(prefers-reduced-motion:reduce){.motion-control{transition:none!important}}

@@ -1,0 +1,25 @@
+/* Garden-care motion is a quiet, full-bleed layer behind the editorial content. */
+.garden-video-toggle[hidden]{display:none}
+body[data-design=garden] .hero{position:relative;isolation:isolate;display:block;min-height:0;overflow:hidden}
+body[data-design=garden] .hero__writing{position:relative;z-index:2;display:flex;min-height:680px;padding:64px clamp(25px,5vw,82px) 68px;max-width:1600px;margin:auto}
+body[data-design=garden] .hero__writing .eyebrow{color:#40513f;max-width:none;line-height:1.7}
+body[data-design=garden] .hero__writing h1{font-size:clamp(100px,11vw,170px);line-height:.86;margin:32px 0 32px;white-space:normal;max-width:780px}
+body[data-design=garden] .hero__writing h1 i{color:#72634e;margin-left:7%}
+body[data-design=garden] .hero__desc{grid-template-columns:45px 1fr;gap:20px;max-width:445px}
+body[data-design=garden] .hero__desc p{color:#30443a;font-size:15px;line-height:1.8}
+body[data-design=garden] .hero__link{margin-top:24px;color:#243a32}
+body[data-design=garden] .hero__image{position:absolute;inset:0;width:100%;height:100%;min-height:0;grid-row:auto;margin:0;z-index:0;pointer-events:none;background:var(--paper)}
+body[data-design=garden] .hero__image img,body[data-design=garden] .hero__image .garden__video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:none;opacity:.45;pointer-events:none;transform:none}
+body[data-design=garden] .hero__image .garden__video{opacity:0}
+body[data-design=garden] .hero__image .garden__video.ready{opacity:.45}
+body[data-design=garden] .hero__image:hover img{transform:none}
+body[data-design=garden] .hero__image:after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#ebe6d899 0%,#ebe6d873 34%,#ebe6d826 58%,#ebe6d800 76%),linear-gradient(0deg,#ebe6d8 0%,#ebe6d800 15%)}
+body[data-design=garden] .hero>.garden-video-toggle{top:auto;left:auto;right:clamp(25px,5vw,82px);bottom:18px;z-index:3;min-height:44px;padding:10px 12px;color:#243a32;background:#ebe6d8b8;border:1px solid #243a3238;font:500 9px 'IBM Plex Mono',monospace;backdrop-filter:blur(6px)}
+body[data-design=garden] .hero>.garden-video-toggle:hover{background:var(--paper)}
+body[data-design=garden] .preview-label{font-size:12px;line-height:1.55;margin:14px 0 0;max-width:550px;color:#30443a}
+body[data-design=garden].has-business-preview .header__word{font-family:'DM Sans',sans-serif;font-size:clamp(15px,1.6vw,23px);line-height:1.4;max-width:40vw;font-weight:500}
+@media(max-width:950px){body[data-design=garden] .hero__writing{grid-row:auto;min-height:640px;padding:50px 25px 68px}body[data-design=garden] .hero__writing h1{font-size:clamp(92px,16vw,140px);margin:30px 0;line-height:.9}body[data-design=garden] .hero__image{grid-row:auto;position:absolute;inset:0;margin:0;min-height:0}body[data-design=garden] .hero__desc{grid-template-columns:1fr;max-width:390px}body[data-design=garden] .hero__desc:before{display:none}body[data-design=garden] .hero>.garden-video-toggle{right:25px;bottom:16px}body[data-design=garden].has-business-preview .header__word{max-width:50vw;font-size:clamp(13px,2.5vw,20px)}}
+@media(max-width:500px){body[data-design=garden] .hero__writing{min-height:0;padding:38px 24px 80px}body[data-design=garden] .hero__writing .eyebrow{font-size:9px;letter-spacing:.08em;max-width:100%}body[data-design=garden] .hero__writing h1{font-size:clamp(85px,23vw,116px);line-height:.9;margin:28px 0}body[data-design=garden] .hero__desc p{font-size:14px;line-height:1.8}body[data-design=garden] .hero__link{margin-top:20px}body[data-design=garden] .hero__image img,body[data-design=garden] .hero__image .garden__video{object-position:58% center;opacity:.45}body[data-design=garden] .hero__image .garden__video{opacity:0}body[data-design=garden] .hero__image .garden__video.ready{opacity:.45}body[data-design=garden] .hero__image:after{background:linear-gradient(90deg,#ebe6d88c,#ebe6d84d),linear-gradient(0deg,#ebe6d8,#ebe6d800 22%)}body[data-design=garden] .hero>.garden-video-toggle{right:24px}body[data-design=garden] .preview-label{font-size:11px;max-width:100%}}
+@media(prefers-reduced-motion:reduce){.garden__video.requested{display:block}}
+
+body[data-design=garden] .hero__image:has(.garden__video.ready) img{opacity:0}

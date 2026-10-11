@@ -1,0 +1,42 @@
+{
+  "taskId": "9a59abf1-1750-4dd3-9048-839344c6b8c1",
+  "status": "SUCCEEDED",
+  "createdDate": "2026-10-10",
+  "provider": "Runway",
+  "submission": {
+    "model": "seedance-2",
+    "resolution": "720p",
+    "ratio": "16:9",
+    "generateAudio": false,
+    "rationale": "Build the next distinctive HVAC concept website with a matching silent hero film.",
+    "promptText": "A photorealistic premium architectural film for a residential heating and cooling website, one continuous ten-second shot. A real outdoor central air-conditioning condenser sits on a level pale concrete pad beside a refined warm-white stucco house, with a tall deep forest-green louvered privacy screen and a few restrained green plants in the background. The complete condenser remains centered and fully visible with useful space above and beside it. Its cabinet is muted sage-grey, rectangular with conventional vertical metal coil fins, intact protective top grille, a believable circular fan spinning steadily underneath the grille; no spinning outer cabinet. Pipes and wiring are safely contained in fixed conduits leading into the wall. Slow precise camera dolly from a three-quarter angle toward the unit, keeping a realistic straight architectural perspective and generous framing. Soft late-afternoon natural light, warm ivory highlights, deep green shadows, a very subtle movement of nearby leaves. Authentic equipment proportions, stable grille geometry and physically continuous fan rotation. Calm, clean, confident residential service mood, editorial architecture cinematography, restrained contrast. No people, no hands, no logos, no readable lettering, no text, no water spray, no fog, no vapor, no floating particles, no repair action, no dramatic VFX, no cuts, no sound. Final framing stays wide enough for a landscape website hero."
+  },
+  "creditsRemainingAfterSubmission": 2316,
+  "scope": "Fictional HVAC website concept. Illustrative film, not completed client work.",
+  "original": {
+    "library_file_id": "libfile_8b89b10b7f10819187a631df6ed497b8",
+    "bytes": 7097118,
+    "width": 1280,
+    "height": 720,
+    "durationSeconds": 10.041667,
+    "sha256": "ff31c50e9db50b266e6c13990e0f8b4ecda2b64e24e2613d45ab1b5e15ae42f4"
+  },
+  "acceptance": "Reviewed normal browser playback and eight sampled frames. Stable condenser cabinet and grille, continuous camera movement, no repair gestures, vapor or floating effects. Illustrative fictional site media, not customer work.",
+  "websiteAssets": {
+    "climate-loop.mp4": {
+      "bytes": 988740,
+      "sha256": "9772b775f4f405d5a9648d534cb6476abab356d9275a180330094b1d3b8d1fe8",
+      "width": 960,
+      "height": 540,
+      "durationSeconds": 10.041667,
+      "fps": 24,
+      "audio": false,
+      "codec": "H.264",
+      "faststart": true
+    },
+    "climate-poster.webp": {
+      "bytes": 41596,
+      "sha256": "6275a238b4b3b1e6b48beb3ee93a221bc04641437900a55b9969eff0cd73d99d"
+    }
+  }
+}
