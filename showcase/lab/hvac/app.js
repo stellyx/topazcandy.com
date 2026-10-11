@@ -1,4 +1,14 @@
 (() => {
+  const rawBusiness = new URLSearchParams(location.search).get('business') || '';
+  const business = Array.from(rawBusiness.normalize('NFKC').replace(/[\u0000-\u001f\u007f-\u009f\u200e\u200f\u202a-\u202e\u2066-\u2069]/g, '').trim()).slice(0, 80).join('');
+  if (business) {
+    const header = document.querySelector('.header .brand span');
+    header.firstChild.textContent = business;
+    document.querySelector('.header .brand').setAttribute('aria-label', business + ' home');
+    const footer = document.querySelector('.brand--footer');
+    footer.firstChild.textContent = business;
+    document.querySelector('.concept-bar > span').textContent = business + ' / WEBSITE CONCEPT';
+  }
   const dialog = document.querySelector('.planner');
   const form = document.querySelector('#service-form');
   const brief = document.querySelector('.brief');
@@ -29,7 +39,7 @@
     event.preventDefault();
     const data = new FormData(form);
     const services = {repair:'Repair', replacement:'System replacement', maintenance:'Seasonal care'};
-    text.textContent = `TEMPER / SAMPLE SERVICE BRIEF\n\nService: ${services[data.get('service')]}\nStarting point: ${data.get('concern')}\nPreferred conversation: ${data.get('timing')}\n${data.get('notes').trim() ? `Notes: ${data.get('notes').trim()}\n` : ''}\nAsk the HVAC team about the visit scope, availability and any fees before booking.\n\nDesign concept only. No appointment booked or request submitted.`;
+    text.textContent = `${business || 'TEMPER'} / SAMPLE SERVICE BRIEF\n\nService: ${services[data.get('service')]}\nStarting point: ${data.get('concern')}\nPreferred conversation: ${data.get('timing')}\n${data.get('notes').trim() ? `Notes: ${data.get('notes').trim()}\n` : ''}\nAsk the HVAC team about the visit scope, availability and any fees before booking.\n\nDesign concept only. No appointment booked or request submitted.`;
     form.hidden = true;
     brief.hidden = false;
     status.textContent = 'Saved here for this visit. Nothing submitted.';
