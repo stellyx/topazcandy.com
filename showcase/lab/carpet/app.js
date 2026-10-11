@@ -1,11 +1,15 @@
-import { CONFIG } from './config.js';
+import { CONFIG } from './config.js?v=2';
 import { calculateQuote, cleanName, money, requestBrief } from './quote.js';
 
 const $ = selector => document.querySelector(selector);
 const $$ = selector => [...document.querySelectorAll(selector)];
 const requestedName = cleanName(new URLSearchParams(location.search).get('business'));
-const businessName = requestedName || CONFIG.businessName;
-$$('[data-business-name]').forEach(el => { el.textContent = businessName; });
+let businessName = requestedName || CONFIG.businessName;
+function applyBusinessName() {
+  $$('[data-business-name]').forEach(el => { el.textContent = businessName; });
+  $$('[data-brand-home]').forEach(el => { el.setAttribute('aria-label', `${businessName} home`); });
+}
+applyBusinessName();
 $$('[data-descriptor]').forEach(el => { el.textContent = CONFIG.businessDescriptor.toUpperCase(); });
 $$('[data-brand-home]').forEach(el => { el.setAttribute('aria-label', `${businessName} home`); });
 $$('[data-library]').forEach(el => { el.href = CONFIG.templateLibraryUrl; });
@@ -17,6 +21,7 @@ $('[data-minimum-note]').textContent = `Minimum visit: ${money(CONFIG.rates.mini
 $$('[data-rate]').forEach(el => { el.textContent = `+${money(CONFIG.rates[el.dataset.rate], CONFIG)}${el.dataset.rate === 'pet' ? ' allowance' : ''}`; });
 if (!CONFIG.demoMode) {
   $$('[data-demo-only]').forEach(el => { el.hidden = true; });
+  $$('[data-client-only]').forEach(el => { el.hidden = false; });
   $('[data-form-submit]').textContent = 'Prepare quote request ↗';
   const contact = $('[data-live-contact]');
   if (/^\+?[\d ()-]{7,25}$/.test(CONFIG.phone)) {
@@ -28,6 +33,21 @@ if (!CONFIG.demoMode) {
   if (CONFIG.serviceAreas.length) { const area = document.createElement('span'); area.textContent = CONFIG.serviceAreas.join(' · '); contact.append(area); }
   contact.hidden = !contact.children.length;
 }
+
+const previewForm = $('#brand-preview');
+const previewToggle = $('[data-personalize-toggle]');
+previewForm.elements.previewBusiness.value = businessName;
+previewToggle.addEventListener('click', () => {
+  const open = previewToggle.getAttribute('aria-expanded') !== 'true';
+  previewToggle.setAttribute('aria-expanded', String(open)); previewForm.hidden = !open;
+  if (open) previewForm.elements.previewBusiness.focus();
+});
+previewForm.addEventListener('submit', event => {
+  event.preventDefault();
+  businessName = cleanName(previewForm.elements.previewBusiness.value) || CONFIG.businessName;
+  previewForm.elements.previewBusiness.value = businessName; applyBusinessName();
+  $('#brand-preview-status').textContent = `Previewing ${businessName} in the website below.`;
+});
 
 let state = { rooms: 3, stairs: false, pet: false, rug: false, sofa: false };
 let quote = calculateQuote(state, CONFIG);
