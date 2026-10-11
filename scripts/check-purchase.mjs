@@ -37,7 +37,7 @@ for (const key of Object.keys(WEBSITE_PACKAGE.templates)) {
   for (const tag of purchases) assert.ok(tag.includes(`href="https://topazcandy.com/checkout/?template=${key}"`));
   assert.ok(html.includes(`data-purchase-theme="${key}"`));
   assert.ok(!html.includes('Want to spend more money?'));
-  assert.ok(!html.slice(0, html.indexOf('<main')).includes('>Buy this website'));
+  assert.ok(!html.slice(0, html.indexOf('<main')).includes('data-website-purchase'));
 }
 for (const [field,value] of [['email','bad-address'],['business',''],['contact',''],['business_line1',''],['business_city',''],['business_country','XX'],['business_region','No State'],['business_postal','wrong'],['phone','phone'],['website','javascript:alert(1)']]) assert.ok(validateIntake({...base,[field]:value}).errors[field],field);
 assert.equal(validateIntake({...base,billing_same:false}).valid,false);
