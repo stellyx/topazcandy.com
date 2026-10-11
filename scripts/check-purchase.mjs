@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 import vm from 'node:vm';
-import { WEBSITE_PACKAGE, templateKey, templateFromPayPalOption, paypalDetails, cleanDetail, orderEmail } from '../checkout/config.mjs';
+import { WEBSITE_PACKAGE, templateKey, templateFromPayPalOption, paypalDetails, cleanDetail } from '../checkout/config.mjs';
+import { INTAKE_URL, COUNTRY_CODES, validateIntake, intakePayload, intakeAccepted } from '../checkout/intake.mjs';
 
 assert.equal(WEBSITE_PACKAGE.price, 450);
 assert.equal(WEBSITE_PACKAGE.currency, 'USD');
@@ -9,20 +10,27 @@ assert.equal(WEBSITE_PACKAGE.maintenanceMonths, 3);
 assert.equal(WEBSITE_PACKAGE.paypalUrl, 'https://www.paypal.com/cgi-bin/webscr');
 assert.equal(WEBSITE_PACKAGE.paypalMode, 'hosted-button');
 assert.equal(WEBSITE_PACKAGE.paypalButtonId, 'H48437LCHWWFQ');
+assert.equal(INTAKE_URL, 'https://formsubmit.co/ajax/2dbdde9ca207c74c11f854daf548a85b');
+assert.equal(new Set(COUNTRY_CODES).size, 249);
 for (const input of ['__proto__', '../clients/mj-holistic-studio', 'https://example.com', null]) assert.equal(templateKey(input), 'carpet');
 assert.equal(cleanDetail('  Good\u202e  Name\nHere '), 'Good NameHere');
 assert.equal(Array.from(cleanDetail('🏡'.repeat(300), 80)).length, 80);
+const base = {business:'Example Cleaning',contact:'Example Contact',email:'buyer@example.com',phone:'+1 (202) 555-0100',website:'https://example.com',notes:'Website setup',business_line1:'100 Example Street',business_line2:'Suite 1',business_city:'Example City',business_region:'Texas',business_postal:'78701',business_country:'US',billing_same:'on'};
+const valid = validateIntake(base);
+assert.equal(valid.valid,true);
+assert.equal(valid.details.business_address.region,'TX');
+assert.deepEqual(valid.details.billing_address, valid.details.business_address);
 for (const key of Object.keys(WEBSITE_PACKAGE.templates)) {
   assert.equal(templateFromPayPalOption(WEBSITE_PACKAGE.templates[key].paypalOption), key);
   assert.ok(WEBSITE_PACKAGE.templates[key].paypalOption.length <= 64);
-  const url = new URL(orderEmail(key, { business: 'Business\r\nBcc: victim@example.com', notes: '<script>bad()</script>', transaction: 'example-transaction' }));
-  assert.equal(url.protocol, 'mailto:');
-  assert.equal(url.pathname, WEBSITE_PACKAGE.email);
-  assert.match(url.searchParams.get('body'), /\$450 USD/);
-  assert.match(url.searchParams.get('body'), /three months of website service and maintenance/);
-  assert.match(url.searchParams.get('body'), /AI agents, automation and ongoing AI services are separate/);
-  assert.match(url.searchParams.get('body'), /not proof of payment/);
-  assert.equal(url.searchParams.has('bcc'), false);
+  const payload = intakePayload(key,valid.details,'TC-TEST-01');
+  assert.equal(payload['Website design'],WEBSITE_PACKAGE.templates[key].paypalOption);
+  assert.equal(payload['Order reference'],'TC-TEST-01');
+  assert.equal(payload['Billing address'],payload['Business address']);
+  assert.ok(payload['Business address'].includes('Suite 1'));
+  assert.ok(payload['Payment status'].includes('not yet verified'));
+  assert.equal(payload.email, 'buyer@example.com');
+  assert.ok(!('_cc' in payload));
   const html = readFileSync(`showcase/lab/${key}/index.html`, 'utf8');
   const purchases = [...html.matchAll(/<a\b[^>]*data-website-purchase[^>]*>/g)].map(m => m[0]);
   assert.equal(purchases.length, 2, `${key}: footer and bottom-dock buying actions`);
@@ -31,65 +39,86 @@ for (const key of Object.keys(WEBSITE_PACKAGE.templates)) {
   assert.ok(html.includes('Want to spend more money?'));
   assert.ok(!html.slice(0, html.indexOf('<main')).includes('>Buy this website'));
 }
-const cart = readFileSync('checkout/index.html', 'utf8');
-assert.match(cart, /<form id="paypal-checkout" action="https:\/\/www\.paypal\.com\/cgi-bin\/webscr" method="post" target="_blank" rel="noopener noreferrer">/);
+for (const [field,value] of [['email','bad-address'],['business',''],['contact',''],['business_line1',''],['business_city',''],['business_country','XX'],['business_region','No State'],['business_postal','wrong'],['phone','phone'],['website','javascript:alert(1)']]) assert.ok(validateIntake({...base,[field]:value}).errors[field],field);
+assert.equal(validateIntake({...base,billing_same:false}).valid,false);
+const different = validateIntake({...base,billing_same:false,billing_line1:'200 Sample Road',billing_line2:'',billing_city:'Sample Town',billing_region:'California',billing_postal:'90210',billing_country:'US'});
+assert.equal(different.valid,true);
+assert.notDeepEqual(different.details.billing_address,different.details.business_address);
+assert.ok(intakePayload('carpet',different.details,'TC-TEST-02')['Billing address'].includes('200 Sample Road'));
+for (const address of [
+  {business_country:'CA',business_region:'Ontario',business_postal:'K1A 0B1'},
+  {business_country:'GB',business_region:'',business_postal:'SW1A 1AA'},
+  {business_country:'AU',business_region:'New South Wales',business_postal:'2000'},
+  {business_country:'HK',business_region:'',business_postal:''}
+]) assert.equal(validateIntake({...base,...address}).valid,true);
+assert.equal(intakeAccepted({success:'false'}),false);
+assert.equal(intakeAccepted({success:true}),true);
+assert.equal(intakeAccepted({success:'true'}),true);
+assert.equal(intakeAccepted({message:'Submitted'}),false);
+assert.equal(paypalDetails(valid.details,'TC-TEST-01').os2.startsWith('Order TC-TEST-01 / '),true);
+const long = paypalDetails({business:'🏡'.repeat(200),email:'buyer@example.com',notes:'n'.repeat(1200)},'TC-TEST-01');
+assert.ok(long.os1.length<=200 && long.os1.isWellFormed());
+assert.ok(long.os2.length<=200);
+
+const cart = readFileSync('checkout/index.html','utf8');
+assert.match(cart, /<form id="paypal-checkout" action="https:\/\/www\.paypal\.com\/cgi-bin\/webscr" method="post" target="_top" hidden>/);
 assert.match(cart, /name="cmd" value="_s-xclick"/);
 assert.match(cart, /name="hosted_button_id" value="H48437LCHWWFQ"/);
 assert.match(cart, /name="currency_code" value="USD"/);
+assert.match(cart, /<select id="template-choice" name="os0" form="website-details">/);
 assert.ok(!/name="(?:amount|business|undefined_amount|undefined_quantity)"/.test(cart.slice(cart.indexOf('<form id="paypal-checkout"'))));
-assert.match(cart, /<select id="template-choice" name="os0" form="paypal-checkout">/);
-for (const template of Object.values(WEBSITE_PACKAGE.templates)) assert.ok(cart.includes(`<option value="${template.paypalOption}"`));
-for (const [name, value] of [['on0', 'Website design'], ['on1', 'Business name / reply email'], ['on2', 'Current website / project notes']]) assert.ok(cart.includes(`name="${name}" value="${value}"`));
-assert.equal(templateFromPayPalOption('https://bad.example'), 'carpet');
-const short = paypalDetails({business:'Example Cleaning', email:'buyer@example.com', website:'https://example.com', notes:'Morning setup'});
-assert.deepEqual(short, {os1:'buyer@example.com / Example Cleaning', os2:'https://example.com / Morning setup'});
-const long = paypalDetails({business:'🏡'.repeat(200), email:'buyer@example.com', website:'x'.repeat(300), notes:'n'.repeat(1200)});
-assert.ok(long.os1.startsWith('buyer@example.com / '));
-assert.ok(long.os1.length <= 200);
-assert.ok(long.os1.isWellFormed());
-assert.equal(long.os2.length, 200);
-assert.equal(paypalDetails({email:'buyer@example.com',business:'b'.repeat(160)}).os1.length, 180);
-assert.equal(paypalDetails({email:'e'.repeat(200),business:'Business'}).os1, 'e'.repeat(200));
-assert.deepEqual(paypalDetails(), {os1:'',os2:''});
-assert.equal(paypalDetails({business:'Good\u202e Name\nHere'}).os1, 'Good NameHere');
+assert.ok(!/order-email|Send my business|Email my website|transaction ID|email us|email them|email draft/.test(cart));
 assert.ok(cart.includes('first-day indexing or ranking is not guaranteed'));
 assert.ok(cart.includes('AI agents, automation and ongoing AI services are separate'));
 assert.ok(cart.includes('three months'));
-assert.equal((cart.match(/<video\b/g) || []).length, 5);
+assert.equal((cart.match(/<video\b/g)||[]).length,5);
 for (const m of cart.matchAll(/<video\b([^>]*)>/g)) {
-  assert.match(m[1], /muted/); assert.match(m[1], /loop/); assert.match(m[1], /playsinline/);
-  assert.ok(!/\ssrc=/.test(m[1]), 'Film loading waits for visibility and motion preference');
-  const src = m[1].match(/data-src="([^"]+)"/)[1];
-  assert.ok(existsSync('.' + src));
+  assert.match(m[1],/muted/); assert.match(m[1],/loop/); assert.match(m[1],/playsinline/);
+  assert.ok(!/\ssrc=/.test(m[1]),'Film loading waits for visibility and motion preference');
+  assert.ok(existsSync('.'+m[1].match(/data-src="([^"]+)"/)[1]));
 }
-assert.ok(!/localStorage|sessionStorage|\bfetch\(|innerHTML|paid=true|payment=success/.test(readFileSync('checkout/app.mjs', 'utf8')));
+const app = readFileSync('checkout/app.mjs','utf8');
+assert.ok(!/localStorage|sessionStorage|innerHTML|paid=true|payment=success|mailto:/.test(app));
 
-// The checkout must submit the selected design and refreshed details, and block
-// malformed optional email/URL fields without inventing a payment-success state.
-const choiceEvents = {}, formEvents = {}, paymentEvents = {};
-const choice = { value:'', addEventListener(n,f) { choiceEvents[n]=f; } };
-const fields = { business:'Example Cleaning',email:'buyer@example.com' };
-let valid = true;
-const form = { addEventListener(n,f) { formEvents[n]=f; }, reportValidity() { return valid; } };
-const payment = { action:'', elements:{ hosted_button_id:{value:''},os1:{value:''},os2:{value:''} }, addEventListener(n,f) { paymentEvents[n]=f; } };
-const emailEvents = {}, email = {href:'',addEventListener(n,f) {emailEvents[n]=f;},focus() {}};
-const preview = {href:''};
-const elements = {'template-choice':choice,'website-details':form,'order-email':email,'design-preview':preview,'paypal-checkout':payment};
-let replacedUrl;
-vm.runInNewContext(readFileSync('checkout/app.mjs','utf8').replace(/^import .*;\n/,''), {
-  WEBSITE_PACKAGE,templateKey,templateFromPayPalOption,paypalDetails,orderEmail,URL,URLSearchParams,
-  document:{getElementById(id) {return elements[id];}}, location:{search:'?template=roof&amount=1',href:'https://topazcandy.com/checkout/?template=roof&amount=1'},
-  history:{replaceState(_a,_b,url) {replacedUrl=url;}}, FormData:class { *[Symbol.iterator]() {yield* Object.entries(fields);} }
-});
-assert.equal(choice.value, WEBSITE_PACKAGE.templates.roof.paypalOption);
-assert.equal(payment.action, WEBSITE_PACKAGE.paypalUrl);
-assert.equal(payment.elements.hosted_button_id.value, WEBSITE_PACKAGE.paypalButtonId);
-assert.equal(preview.href, WEBSITE_PACKAGE.templates.roof.url);
-choice.value=WEBSITE_PACKAGE.templates.hair.paypalOption; choiceEvents.change();
-assert.equal(replacedUrl.searchParams.get('template'), 'hair');
-fields.business='Updated Business'; paymentEvents.submit({preventDefault() {assert.fail('Valid details should submit');}});
-assert.equal(payment.elements.os1.value, 'buyer@example.com / Updated Business');
-valid=false; let prevented=false; paymentEvents.submit({preventDefault() {prevented=true;}}); assert.equal(prevented,true);
+// Run the actual submit handler against a controlled email service and PayPal
+// form. Network rejection must preserve the details and block payment.
+async function checkoutFixture({result={success:'true'},reject=false}={}) {
+  const events={}, choiceEvents={}, fields={...base}; let sends=0, submissions=0, sentPayload;
+  const control=()=>({value:'',disabled:false,required:false,hidden:false,attrs:{},addEventListener(){},setCustomValidity(v){this.validity=v;},setAttribute(k,v){this.attrs[k]=v;},removeAttribute(k){delete this.attrs[k];}});
+  const controls={};
+  for(const name of ['business','contact','email','phone','website','notes','business_line1','business_line2','business_city','business_region','business_postal','business_country','billing_line1','billing_line2','billing_city','billing_region','billing_postal','billing_country']) controls[name]=control();
+  controls.business_country.value='US'; controls.billing_country.value='US';
+  const choice=Object.assign(control(),{addEventListener(n,f){choiceEvents[n]=f;}});
+  const formElements=Object.assign(Object.values(controls),controls);
+  formElements.push(choice);
+  const form={elements:formElements,reportValidity(){return !Object.values(controls).some(c=>c.validity);},addEventListener(n,f){events[n]=f;},setAttribute(){}};
+  const payment={elements:{hosted_button_id:control(),os0:control(),os1:control(),os2:control(),custom:control()},submit(){submissions++;}};
+  const preview=control(),status=Object.assign(control(),{dataset:{}}),button=control(),billingSame=Object.assign(control(),{checked:true}),billingFields=control();
+  const nodes={'template-choice':choice,'website-details':form,'design-preview':preview,'paypal-checkout':payment,'billing-same':billingSame,'billing-fields':billingFields,'checkout-status':status,'checkout-submit':button};
+  for(const prefix of ['business','billing'])for(const part of ['region','postal'])nodes[`${prefix}-${part}-optional`]=control();
+  vm.runInNewContext(app.replace(/^import .*;\n/gm,''),{
+    WEBSITE_PACKAGE,templateKey,templateFromPayPalOption,paypalDetails,INTAKE_URL,addressRules: (country)=>({regionRequired:country==='US',postalRequired:country==='US'}),validateIntake,intakePayload,intakeAccepted,
+    document:{getElementById(id){return nodes[id];}},location:{search:'?template=roof&amount=1',href:'https://topazcandy.com/checkout/?template=roof&amount=1'},history:{replaceState(){}},
+    FormData:class{*[Symbol.iterator](){yield* Object.entries(fields);}},URL,URLSearchParams,AbortSignal,Date,crypto:{randomUUID(){return '12345678-1234-1234-1234-123456789012';}},
+    fetch:async(url,options)=>{sends++;assert.equal(url,INTAKE_URL);assert.equal(options.credentials,'omit');assert.equal(options.headers['Content-Type'],undefined);sentPayload=Object.fromEntries(options.body);if(reject)throw Error('Network unavailable');return{ok:true,json:async()=>result};}
+  });
+  return{events,choice,fields,payment,status,button,get sends(){return sends;},get submissions(){return submissions;},get sentPayload(){return sentPayload;}};
+}
+for (const option of [{result:{success:'false'}},{reject:true}]) {
+  const failed=await checkoutFixture(option);await failed.events.submit({preventDefault(){}});
+  assert.equal(failed.submissions,0);assert.equal(failed.status.dataset.state,'error');assert.equal(failed.button.disabled,false);assert.equal(failed.fields.business,base.business);
+}
+const success=await checkoutFixture();
+const first=success.events.submit({preventDefault(){}});const duplicate=success.events.submit({preventDefault(){}});await Promise.all([first,duplicate]);
+assert.equal(success.sends,1);assert.equal(success.submissions,1);
+assert.equal(success.sentPayload['Website design'],WEBSITE_PACKAGE.templates.roof.paypalOption);
+assert.equal(success.payment.elements.custom.value,success.sentPayload['Order reference']);
+assert.equal(success.payment.elements.os0.value,WEBSITE_PACKAGE.templates.roof.paypalOption);
+assert.equal(success.payment.elements.hosted_button_id.value,WEBSITE_PACKAGE.paypalButtonId);
+await success.events.submit({preventDefault(){}});assert.equal(success.sends,1,'Returning to PayPal reuses the accepted details');
+success.fields.business='Changed Business';await success.events.submit({preventDefault(){}});assert.equal(success.sends,2,'Changed details are sent again');
+const invalid=await checkoutFixture();invalid.fields.email='bad';await invalid.events.submit({preventDefault(){}});assert.equal(invalid.sends,0);assert.equal(invalid.submissions,0);
+const spam=await checkoutFixture();spam.fields._honey='bot';await spam.events.submit({preventDefault(){}});assert.equal(spam.sends,0);assert.equal(spam.submissions,0);
 
 // Exercise motion behavior with a simulated document, including late play resolution.
 const motion = readFileSync('checkout/motion.mjs', 'utf8');
@@ -134,4 +163,4 @@ for (const preferences of [{ reduced: true }, { saveData: true }]) {
 const blocked = await motionFixture({ blocked: true }); blocked.observe([{ isIntersecting: true }]); await blocked.settle();
 assert.equal(blocked.button.dataset.playing, 'false');
 assert.ok(blocked.videos.every(v => !v.dataset.loaded));
-console.log(JSON.stringify({ passed: true, checks: 'six fixed-price cart routes, package scope, safe email drafts, allowlisted selections, five films, motion and poster fallbacks' }));
+console.log(JSON.stringify({ passed: true, checks: 'six fixed-price cart routes, one automatic intake, validated contacts and addresses, email-before-payment handoff, failure preservation, duplicate protection, five films and motion fallbacks' }));

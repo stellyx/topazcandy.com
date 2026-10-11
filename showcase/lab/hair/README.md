@@ -12,4 +12,4 @@ Booking follow-up: advice-first finder paths for new color or uncertain services
 
 ## Website purchase
 
-A palette-matched footer banner and mobile bottom dock link to the shared $450 USD website cart. The package includes setup and launch, SEO setup, eligible Maps setup and three months of website maintenance. AI services are separate. Current personal PayPal and email behavior is documented in `/checkout/README.md`; PayPal receives the selected design and optional business summaries. Native payment email and SMS alerts are enabled; website-side automatic payment verification is not installed.
+A palette-matched footer banner and mobile bottom dock link to the shared $450 USD website cart. The package includes setup and launch, SEO setup, eligible Maps setup and three months of website maintenance. AI services are separate. Current personal PayPal and email behavior is documented in `/checkout/README.md`; One validated checkout form automatically emails contact details plus business and billing addresses before the PayPal handoff. Native PayPal payment email and SMS alerts remain enabled; website-side automatic payment verification is not installed.
