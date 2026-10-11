@@ -9,6 +9,7 @@ No framework or installed dependencies are required. Use Node 18 or later.
 ```
 node scripts/build.mjs
 node scripts/check.mjs
+node scripts/check-motion.mjs
 ```
 
 Static output: `dist/` for MJ; `dist/template/` for the generic template. Each includes a homepage and four service guides.
@@ -23,6 +24,9 @@ Static output: `dist/` for MJ; `dist/template/` for the generic template. Each i
 | `scripts/build.mjs` | Deterministic static generation for the two separate profiles |
 | `dist/assets/finder.mjs` | Appointment suggestions and correctly encoded SMS links |
 | `dist/assets/app.mjs` | Filters, finder, mobile navigation and preview dialog |
+| `dist/assets/motion.mjs` | Quiet film, visibility suspension and motion preference handling |
+| `dist/assets/motion.css` | Natural 85% media opacity, small pause/play icons and restrained accents |
+| `docs/motion-generation.json` | Media provenance, delivery metadata and verification limits |
 | `docs/MJ_Holistic_Studio_Package.md` | Audit, research, funnel and launch package |
 
 ## Adapt for a stylist
@@ -40,14 +44,22 @@ The MJ version opens her existing booking and gift card pages, makes call and SM
 
 The generic template never calls or texts MJ. Booking and gift buttons open an explanatory preview dialog, followed by a legitimate Topaz Candy inquiry route. The service guides lead to the homepage finder and template inquiry route.
 
+The arched hero now uses a silent 9.5 second hair film at 85% opacity, with natural colors and no tint overlay. A transparent 44px pause/play target contains a 14px icon, matching the existing Topaz template controls. The film and decorative accent pause offscreen, in hidden tabs and on explicit pause. Reduced motion and data saver prevent automatic media download; visitors can deliberately opt in. The still poster remains available when playback fails. Gentle content reveals never hide content when JavaScript is absent.
+
+Quick hero links set a matching appointment goal. Visitors can copy their current visit notes, or manually copy the selected text if clipboard access is unavailable. The notes explicitly say no appointment has been reserved. These actions do not store data or send messages.
+
 `salon:conversion` browser events are integration hooks, not installed analytics or confirmed booking events. Booking completion must come from authorized scheduler reporting. No prospect or visitor personal information is stored by this static site.
 
 ## Assets and evidence
 
 `hair-editorial.webp` is generated conceptual editorial photography. It does not depict MJ's completed work. Prompt: flowing chestnut brunette waves with soft honey balayage, cream linen blouse, softly blurred lavender salon wall, warm window light, no visible face, tools, logos or text. Generated with the built-in image generation tool and optimized for the website.
 
+`hair-loop.mp4` animates that concept with a slow camera glide and a small shoulder adjustment. `hair-poster.webp` matches the film's opening. The media are illustrative, not customer results or footage of MJ's salon. Generation, encoding and frame review evidence are recorded in `docs/motion-generation.json`.
+
 `mj-logo.png` was retrieved from MJ's current website and resized for this adaptation. It is not part of the generic template. Two short attributed review excerpts come from the public Birdeye page reflecting Google reviews; no numeric rating or aggregate review schema is invented.
 
 ## Verification
 
 Source and asset references, appointment decision logic, encoded contact routes, template identity isolation and main text color contrast were checked. Full visual and browser interaction QA remains pending because the supported browser-control plugin was unavailable. No customer appointment was placed. MJ's original domain, Square account, Google Business Profile and DNS have not been changed.
+
+The motion controller passed checks for viewport/tab suspension, explicit pause persistence, reduced motion, data saver, blocked autoplay, media failure and a delayed-play visibility race. The final film fully decodes and source/delivery frames and the narrow hero crop were inspected. Frame review is not full browser or real-device playback QA.

@@ -113,3 +113,8 @@ All reviewed October 11, 2026 unless a listing crawl age is explicitly mentioned
 - [Mayra Janeth public professional profile](https://www.linkedin.com/in/mayra-janeth-a0177b245)
 
 Dot Memory and the Topaz operating record were read for guidance. Dot Memory was not changed.
+# Motion and feature update · October 11, 2026
+
+MJ and the reusable HAIR-01 template now include a silent, illustrative hair film in the arched hero; natural 85% opacity; small pause/play icons; a slow decorative sparkle; gentle content reveals; quick appointment-goal links; and copyable visit notes. The Topaz homepage and Concept Lab hair cards use the same film and existing gallery motion controls. The visit notes remain planning guidance and do not reserve or send an appointment request.
+
+The existing Square booking path and verified menu are preserved. Reduced motion and data saver prevent automatic film download. Explicit pause survives viewport and tab changes, and a matching poster provides fallback. Media source and verification evidence are in `motion-generation.json`. Source/logic checks and frame review passed; full browser and phone-device QA remain pending. The launch package proposal is unchanged.

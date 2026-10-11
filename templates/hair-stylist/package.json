@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "scripts": {"build": "node scripts/build.mjs", "check": "node scripts/check.mjs"}
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs && node scripts/check-motion.mjs"
+  }
 }

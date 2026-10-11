@@ -1,4 +1,5 @@
-import {recommendation,messageLink} from './finder.mjs';
+import {recommendation,messageLink,visitNotes} from './finder.mjs';
+import {initSalonMotion,initSalonReveals} from './motion.mjs';
 const profile=JSON.parse(document.getElementById('profile-data').textContent);
 const services=JSON.parse(document.getElementById('service-data').textContent);
 let goal='color',guest='new';
@@ -6,6 +7,8 @@ const result=document.getElementById('finder-result');
 const title=document.getElementById('finder-title');
 const note=document.getElementById('finder-note');
 const message=document.getElementById('finder-message');
+const copyStatus=document.getElementById('copy-status');
+const notesField=document.getElementById('visit-notes');
 function updateFinder(announce=true){
   const r=recommendation(goal,guest,services);
   title.textContent=r.title;
@@ -13,12 +16,28 @@ function updateFinder(announce=true){
   message.href=messageLink(profile,goal,guest);
   message.textContent=profile.mode==='template'?'Ask about this template ↗':'Text MJ about this ↗';
   result.dataset.goal=goal;
+  copyStatus.textContent='';
+  notesField.hidden=true;
   if(announce)document.getElementById('finder-live').textContent='Recommendation updated: '+r.title;
   document.querySelectorAll('[data-goal]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.goal===goal)));
 }
 document.querySelectorAll('[data-goal]').forEach(b=>b.addEventListener('click',()=>{goal=b.dataset.goal;updateFinder();}));
 document.querySelectorAll('input[name="guest"]').forEach(r=>r.addEventListener('change',()=>{guest=r.value;updateFinder();}));
+document.querySelectorAll('[data-finder-goal]').forEach(a=>a.addEventListener('click',()=>{
+ goal=a.dataset.finderGoal;updateFinder();
+}));
 updateFinder(false);
+document.getElementById('copy-visit').addEventListener('click',async()=>{
+ const notes=visitNotes(profile,goal,guest,services);
+ try {
+  if(!navigator.clipboard?.writeText)throw new Error('Clipboard unavailable');
+  await navigator.clipboard.writeText(notes);
+  copyStatus.textContent='Copied. Add your hair history or inspiration before sharing.';
+ } catch {
+  notesField.value=notes;notesField.hidden=false;notesField.focus();notesField.select();
+  copyStatus.textContent='Your notes are selected below. Copy them using your device’s copy command.';
+ }
+});
 const filters=document.querySelectorAll('[data-filter]');
 const rows=document.querySelectorAll('[data-service-group]');
 filters.forEach(b=>b.addEventListener('click',()=>{
@@ -39,3 +58,5 @@ dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close();});
 document.querySelectorAll('[data-event]').forEach(a=>a.addEventListener('click',()=>{
  window.dispatchEvent(new CustomEvent('salon:conversion',{detail:{action:a.dataset.event,placement:a.dataset.placement||'content'}}));
 }));
+initSalonMotion();
+initSalonReveals();

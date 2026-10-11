@@ -1,0 +1,36 @@
+/* Film and fallback share the same natural 85% opacity. No tint layers. */
+.hero-media{position:relative;isolation:isolate;border-radius:46% 46% 0 0;overflow:hidden;background:var(--paper)}
+.hero-media .hero-image{border-radius:0;opacity:.85;filter:none;mix-blend-mode:normal;transition:none}
+.hair-film{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% center;opacity:0;filter:none;mix-blend-mode:normal;pointer-events:none}
+[data-film-ready=true] .hair-film{opacity:.85}
+[data-film-ready=true] .hero-image{opacity:0}
+.hero-media>.motion-control{position:absolute;right:8px;bottom:8px;z-index:3;width:44px;height:44px;min-width:44px;min-height:44px;display:grid;place-items:center;padding:0;border:0;border-radius:50%;background:transparent;color:var(--plum);cursor:pointer;opacity:.85;transition:opacity .18s,background .18s}
+.hero-media>.motion-control:hover{opacity:1;background:#35293833}
+.hero-media>.motion-control:focus-visible{outline:2px solid var(--plum);outline-offset:2px}
+.motion-control[hidden]{display:none!important}
+.motion-control svg{display:block;width:14px;height:14px;fill:currentColor;pointer-events:none}
+.motion-control .motion-pause{display:none}
+.motion-control[data-playing=true] .motion-play{display:none}
+.motion-control[data-playing=true] .motion-pause{display:block}
+.hero-tag{animation:salon-drift 7s ease-in-out infinite;animation-play-state:paused}
+.hero-spark{position:absolute;top:-15px;left:50%;width:29px;height:29px;margin-left:-14.5px;color:#80643f;animation:salon-turn 38s linear infinite;animation-play-state:paused}
+[data-motion-paused=false] .hero-tag,[data-motion-paused=false] .hero-spark{animation-play-state:running}
+.hero-quick a{padding-block:5px;border-bottom:1px solid transparent;transition:border-color .2s}
+.hero-quick a:hover{border-color:var(--gold)}
+.hero-quick strong span{display:inline-block;font-size:11px;transition:transform .2s}
+.hero-quick a:hover strong span{transform:translate(2px,-2px)}
+.button,.text-link,.menu-filters button,.goal-options button{transition:background .2s,color .2s,border-color .2s}
+.text-link>span,.button>span{transition:transform .2s}
+.text-link:hover>span,.button:hover>span{transform:translate(2px,-2px)}
+.finder-tools{margin-top:21px;padding-top:17px;border-top:1px solid var(--line)}
+.finder-copy{font-size:10px;color:var(--plum);background:transparent;border:0;border-bottom:1px solid currentColor;min-height:44px;padding:9px 0;cursor:pointer}
+.finder-copy:focus-visible{outline-color:#806287}
+.copy-status{font-size:10px!important;line-height:1.6;min-height:16px;margin:6px 0 0!important;color:var(--muted)}
+.visit-notes{width:100%;height:180px;margin-top:10px;padding:12px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:11px/1.6 var(--sans);resize:vertical}
+.visit-notes[hidden]{display:none}
+.revealed{animation:salon-arrive .65s ease-out both}
+@keyframes salon-drift{0%,100%{transform:translateY(0) rotate(10deg)}50%{transform:translateY(-6px) rotate(7deg)}}
+@keyframes salon-turn{to{transform:rotate(360deg)}}
+@keyframes salon-arrive{from{opacity:.3;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media(max-width:760px){.hero-media{border-radius:43% 43% 0 0}.hero-media>.motion-control{bottom:6px;right:6px}.hero-spark{width:24px;height:24px;top:-13px;margin-left:-12px}}
+@media(prefers-reduced-motion:reduce){.hero-tag,.hero-spark,.revealed{animation:none!important}.hair-film,.hero-image,.button,.text-link,.hero-quick a,.hero-quick strong span{transition:none!important}}

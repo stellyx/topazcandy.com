@@ -12,5 +12,18 @@
   "indexable": false,
   "live_customer_scheduler": false,
   "verified_customer_booking_url": "https://www.mjholisticstudiollc.com/s/appointments",
-  "notes": "Template buttons preview integration and route inquiries to Topaz. MJ preview connects to her existing booking site. Final domain launch and browser QA remain pending."
+  "notes": "Template buttons preview integration and route inquiries to Topaz. MJ preview connects to her existing booking site. Final domain launch and browser QA remain pending.",
+  "features": [
+    "silent illustrative hair film",
+    "natural 85% video opacity",
+    "small pause/play icons",
+    "motion preferences and poster fallback",
+    "appointment finder",
+    "copyable visit notes",
+    "service filters",
+    "first visit guidance",
+    "existing scheduler integration"
+  ],
+  "motion_manifest_path": "templates/hair-stylist/docs/motion-generation.json",
+  "updated_at": "2026-10-11"
 }

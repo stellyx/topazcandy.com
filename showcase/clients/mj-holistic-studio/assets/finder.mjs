@@ -12,3 +12,17 @@ export function messageLink(profile, goal, guest) {
   if(profile.mode==='template')return 'mailto:andrew@topazcandy.com?subject='+encodeURIComponent('A hairstylist website for my business');
   return 'sms:'+profile.phone+'?body='+encodeURIComponent(text);
 }
+
+export function visitNotes(profile, goal, guest, services) {
+  const goals={cut:'a haircut',color:'color or balayage',care:'scalp care',extensions:'hair extensions',unsure:'help choosing a service'};
+  const r=recommendation(goal,guest,services);
+  return [
+    profile.name+' · My visit notes',
+    guest==='new'?'This would be my first visit.':'I am a returning guest.',
+    'I am interested in '+goals[goal]+'.',
+    'A possible starting point: '+r.service.name+'.',
+    'Questions to discuss: my hair history, inspiration, appointment length, total price and home care.',
+    profile.mode==='mj'?'Current booking menu: '+profile.bookingUrl:'Template preview: connect your stylist’s booking menu before reserving a visit.',
+    'These are planning notes. No appointment has been reserved.'
+  ].join('\n');
+}

@@ -1,0 +1,71 @@
+{
+  "project": "HAIR-01 and MJ Holistic Studio",
+  "created_at": "2026-10-11",
+  "purpose": "Illustrative silent salon editorial background; not MJ client work or salon footage.",
+  "provider": "Runway",
+  "task_id": "8f0a6e1e-87f3-4832-adf0-4425f0ce3a73",
+  "input": "Existing generated hair-editorial.webp at the published MJ preview",
+  "requested": {
+    "model": "seedance-2",
+    "mode": "image-to-video",
+    "duration_seconds": 10,
+    "aspect_ratio": "16:9",
+    "resolution": "720p",
+    "audio": false
+  },
+  "observed_credit_debit": 360,
+  "source": {
+    "sha256": "03a46865570354bcc4c86f9f99c4639d14584b09d0999d71d54501ab589d128b",
+    "metadata": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1112,
+          "height": 834,
+          "avg_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "10.041667",
+        "size": "5363487"
+      }
+    },
+    "aspect_ratio_note": "Provider output is 1112 by 834 despite the 16:9 request. Delivery preserves that 4:3 geometry."
+  },
+  "delivery": {
+    "video": "hair-loop.mp4",
+    "poster": "hair-poster.webp",
+    "metadata": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 960,
+          "height": 720,
+          "avg_frame_rate": "24/1"
+        }
+      ],
+      "format": {
+        "duration": "9.500000",
+        "size": "852683"
+      }
+    },
+    "sha256": "5e79d79d8db065fd62a347404fa06a911bc7c1b898547227dc5a02ed3a2aa979",
+    "poster_sha256": "defd1cb726966c0700b8831f5a8770fa9ef09bd423fdeaf877d867d14e965527",
+    "poster_bytes": 57318,
+    "encoding": "H.264, 960 by 720, 24 fps, yuv420p, CRF 27, silent, faststart",
+    "loop": "Source 0.5 to 10 seconds with the last 0.5 seconds cross-dissolved into source 0 to 0.5 seconds.",
+    "css_opacity": 0.85,
+    "filters": "none",
+    "tint_overlay": false
+  },
+  "review": {
+    "source": "40 quarter-second time-indexed frames inspected for coherent hair, clothing, scene and restrained motion. No face, hands, tools or text introduced.",
+    "delivery": "Half-second time-indexed frames and equivalent narrow hero cover crop inspected. Complete ffmpeg decode passed.",
+    "controller": "Viewport/tab suspension, user pause persistence, reduced motion, data saver opt-in, autoplay denial, media error and asynchronous play race checks passed.",
+    "limits": "Supported browser-control plugin unavailable. Full browser, real-device and normal-speed playback QA remain unverified."
+  }
+}

@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {recommendation,messageLink} from '../dist/assets/finder.mjs';
+import {recommendation,messageLink,visitNotes} from '../dist/assets/finder.mjs';
 const services=JSON.parse(await readFile(new URL('../content/services.json',import.meta.url),'utf8'));
 const mj=JSON.parse(await readFile(new URL('../profiles/mj.json',import.meta.url),'utf8'));
 const template=JSON.parse(await readFile(new URL('../profiles/template.json',import.meta.url),'utf8'));
@@ -15,6 +15,9 @@ for(const goal of ['cut','color','care','extensions','unsure'])for(const guest o
  assert.ok(link.startsWith('sms:+15127169236?body='));
  assert.match(decodeURIComponent(link),/Hi MJ!/);
  assert.ok(messageLink(template,goal,guest).startsWith('mailto:andrew@topazcandy.com'));
+ assert.ok(visitNotes(mj,goal,guest,services).includes(mj.bookingUrl));
+ assert.ok(!visitNotes(template,goal,guest,services).includes('mjholisticstudiollc'));
+ assert.ok(visitNotes(mj,goal,guest,services).includes('No appointment has been reserved.'));
 }
 const html=await readFile(new URL('../dist/index.html',import.meta.url),'utf8');
 const demo=await readFile(new URL('../dist/template/index.html',import.meta.url),'utf8');
