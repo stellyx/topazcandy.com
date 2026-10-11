@@ -1,0 +1,11 @@
+{
+  "name": "Softstep",
+  "industry": "Carpet cleaning",
+  "version": "1.0.0",
+  "entry": "index.html",
+  "config": "config.js",
+  "demo": true,
+  "personalization": "?business=Company%20Name",
+  "public_url": "https://topazcandy.com/showcase/lab/carpet/",
+  "assets": "Original illustrative image; see README.md"
+}
