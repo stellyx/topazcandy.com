@@ -11,10 +11,10 @@ The background photograph contains many shades. A six-color sample included `#51
 | Role | Color | Use |
 | --- | --- | --- |
 | Primary | `#000000` | Booking buttons and finder, matching the saved Square primary |
-| Paper | `#f8f4ed` | Warm ivory content and logo caption |
+| Paper | `#e9e2ec` | Muted lavender paper, content panels and logo caption |
 | Body text | `#1d1920` | Near black for reading |
 | Lavender | `#e3d9ed` | Light sections inspired by the flower photograph |
-| Soft lavender | `#f0eaf4` | Care background |
+| Soft lavender | `#e1d7e7` | Deeper soft lavender care background |
 | Purple accent | `#6e4d83` | Expressive headline wording |
 | Gold | `#c9a554` | Decorative details alongside the original multicolor gold mark |
 | Muted text | `#5e5365` | Supporting copy |
@@ -34,3 +34,9 @@ The generic Crown & Calm template retains its ivory and plum identity. MJ's pale
 - Implementation: `dist/assets/brand.css`.
 
 The existing Square account has not been edited. This palette is implemented in the separate MJ preview.
+
+## Background tint update
+
+October 11, 2026: softened the bright paper background at Andrew’s request. The body, panels and sticky header now use muted lavender paper `#e9e2ec`; care sections use `#e1d7e7`. Existing black buttons, gold logo and lavender accents remain. No color-wheel graphic was added. Media colors and 85% opacity remain unchanged.
+
+The updated backgrounds passed 14 principal text-contrast checks, with a minimum ratio of 4.94:1. Browser/device visual review remains unavailable in this environment.

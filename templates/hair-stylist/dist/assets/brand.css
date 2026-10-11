@@ -1,5 +1,7 @@
 /* MJ's black setting, gold logo and lavender-flower background inform this palette. */
-body[data-profile="mj"]{--ink:#1d1920;--plum:#000000;--lavender:#e3d9ed;--gold:#c9a554;--muted:#5e5365;--line:#d8cddd;--soft:#f0eaf4;--accent-ink:#6e4d83;--button-hover:#36233f}
+body[data-profile="mj"]{--paper:#e9e2ec;--ink:#1d1920;--plum:#000000;--lavender:#e3d9ed;--gold:#c9a554;--muted:#5e5365;--line:#d8cddd;--soft:#e1d7e7;--accent-ink:#6e4d83;--button-hover:#36233f}
+/* Lavender paper reduces glare while keeping the existing gold, black and lavender identity. */
+body[data-profile="mj"] .header{background:#e9e2ecf5}
 body[data-profile="mj"] .button:hover{background:var(--button-hover)}
 body[data-profile="mj"] .button.light:hover{background:var(--lavender)}
 .hero{padding-block:40px 54px;min-height:680px}
