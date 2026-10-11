@@ -18,7 +18,7 @@
  {"id":"extensions-consult","group":"consult","name":"Extensions consultation","sourceName":"extension consultant","price":0,"minutes":15,"description":"Discuss your goals, options, maintenance, cost and timing before an extension service."},
  {"id":"extensions-removal","group":"consult","name":"Extensions removal","sourceName":"Hair extensions removal","price":60,"minutes":30,"description":"The removal service from the current booking menu."},
  {"id":"scalp-therapy","group":"care","name":"Scalp therapy","sourceName":"Scalp Therapy","price":200,"minutes":60,"description":"A scalp care appointment with massage, conditioning, aromatherapy and warm towel or steam care."},
- {"id":"conditioning","group":"care","name":"Deep conditioning","sourceName":"Deep conditioning treatment","price":40,"minutes":30,"description":"Give your hair a little extra care. Ask how to pair it with your visit."},
+ {"id":"conditioning","group":"care","name":"Deep conditioning","sourceName":"Deep conditioning treatment","price":40,"minutes":30,"description":"Conditioning for your hair. Ask how to pair it with your visit."},
  {"id":"scalp-massage","group":"care","name":"Scalp massage","sourceName":"Scalp massage 15min","price":15,"minutes":15,"description":"A short scalp massage appointment."},
  {"id":"smoothing","group":"care","name":"GK smoothing treatment","sourceName":"GK smoothing treatment","price":300,"minutes":120,"description":"Discuss your texture, hair history and expectations before booking a smoothing service."},
  {"id":"express-facial","group":"beauty","name":"Express facial","sourceName":"Express facial","price":80,"minutes":45,"description":"A facial care appointment from MJ’s current service menu."},
