@@ -4,9 +4,11 @@ Softstep is a fictional carpet care concept for Topaz Candy. It has a responsive
 
 ## Website purchase path
 
-This preview sells the website. A Buy this website action appears at entry, again after the interactive demo and in the mobile dock. Each opens a prefilled email to the verified Topaz Candy business mailbox so price, customisation, launch work and handover can be agreed. No website price, checkout transaction or purchase confirmation is invented. The carpet estimates remain clearly labeled sample service prices.
+This preview sells the website through the footer. The large opening sales headline and purchase panel have been removed. A compact Topaz Candy preview bar identifies the demo; the approved carpet content leads the page. The footer and mobile bottom bar offer Buy with PayPal, using the exact destination decoded from the owner-provided QR: `https://www.paypal.com/qrcodes/p2pqrc/ZGLFN3MZMZ2J8`. A separate email action confirms price, scope, customisation, launch and handover. Buyers enter the agreed website price in PayPal. There is no invented fixed price, automated payment confirmation or automatic ownership release. The carpet estimates remain sample service prices.
 
-Buyers may try a business name in the page. It uses the same 80-codepoint sanitization and text-content rendering as the query-string preview, with no persistence or metadata changes. Client mode hides the entire sale offer, business-name tool and buyer dock, and exposes the cleaner’s own mobile quote action.
+The payment URL was decoded from the provided QR image using a barcode reader. The screenshot and its account-name text are not published. Web inspection could not open the destination, and a direct HTTP check encountered a redirect/security page. Checkout behavior has not been independently tested. No payment was made.
+
+Buyers may try a business name in the page. It uses the same 80-codepoint sanitization and text-content rendering as the query-string preview, with no persistence or metadata changes. Client mode hides the preview bar, footer purchase area, business-name tool and buyer dock, and exposes the cleaner’s own mobile quote action.
 
 ## Reuse
 
@@ -20,7 +22,7 @@ For a client launch, replace illustrative media with approved business media as 
 
 ## Design and claims
 
-The page opens with a Topaz Candy website purchase offer in ivory, plum and topaz, followed by a carpet demo in deep green, linen, sage and warm clay. The demo uses a larger editorial hero, an arch-shaped image, textile service drawings and a receipt-style estimator. Original cleaning photography and woven details give it its own identity. The photo has gentle CSS camera motion, a pause control, reduced-motion handling and data-saving handling. It is not footage of cleaning in progress or a verified customer project. There are no fabricated reviews, customer counts, certifications, fixed drying promises or stain-removal guarantees.
+The page opens with a compact Topaz Candy preview bar followed by a carpet demo in deep green, linen, sage and warm clay. The demo uses a larger editorial hero, an arch-shaped image, textile service drawings and a receipt-style estimator. Original cleaning photography and woven details give it its own identity. The photo has gentle CSS camera motion, a pause control, reduced-motion handling and data-saving handling. It is not footage of cleaning in progress or a verified customer project. There are no fabricated reviews, customer counts, certifications, fixed drying promises or stain-removal guarantees.
 
 The sample estimator uses $50 per standard room, a $120 minimum visit, $35 per staircase, $45 pet treatment allowance, $65 per area rug and $90 per standard sofa. These are illustrative configuration values, not verified business rates. Pet treatment is disabled without carpeted rooms. An empty selection returns zero; minimum-visit adjustments are itemized. Commercial requests do not reuse residential pricing.
 
