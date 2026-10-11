@@ -126,3 +126,7 @@ The preview now follows MJ’s current black theme setting, gold logo and lavend
 The follow-up audit verifies the 57-product sitemap, title/identity mismatch, conflicting hours and locations, missing Phenix booking link, and Fresha’s internally inconsistent location records. A canonical is present in the rendered homepage; no missing-canonical claim is made from the raw source alone. Final-domain routing must preserve the existing Square booking/gift paths.
 
 See [MJ color scheme](MJ_Color_Scheme.md) and [detailed SEO and funnel audit](MJ_SEO_and_Funnel_Audit_2026-10-11.md). The launch package proposal is unchanged. Code, route, asset and contrast checks passed; full visual and phone playback QA remains pending.
+
+## Booking and phone control follow-up
+
+New color guests and visitors who are unsure now get a message action first, with the full booking menu available beside it. Their copied notes ask for service guidance and no longer suggest a color correction appointment. Known-service paths retain booking as the primary action. The latest service wording cleanup is preserved. Finder guest choices, text actions, service links, FAQ controls and dialog close targets have a 44px minimum height. Source and decision checks passed; actual browser/phone layout and playback remain unverified.

@@ -149,3 +149,7 @@ Full browser and phone-device QA remains pending because the supported browser-c
 - Google: [local visibility](https://support.google.com/business/answer/7091?hl=en), [booking links](https://support.google.com/business/answer/6218037?hl=en), [titles](https://developers.google.com/search/docs/appearance/title-link), [JavaScript SEO](https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics), [canonicals](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls), [LocalBusiness data](https://developers.google.com/search/docs/appearance/structured-data/local-business)
 
 The earlier package retains salon feature research and Austin structural comparisons. This report adds source-level colors, technical checks and a more specific funnel plan.
+
+## Follow-up implementation
+
+The finder now leads with contacting MJ for a new color change or an uncertain service, while keeping the booking menu available. It does not choose a color correction consultation for these paths, and their copied notes ask which service and length fit. Known-service paths continue to lead with booking. Mobile action targets were enlarged to a 44px minimum height. This is verified in source and regression checks, not in a rendered phone session. The provider reservation sequence and original Square/profile settings remain outside these changes.

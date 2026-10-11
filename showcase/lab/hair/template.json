@@ -25,7 +25,9 @@
     "existing scheduler integration",
     "mobile first screen with visible film",
     "profile-specific brand colors",
-    "descriptive service guides"
+    "descriptive service guides",
+    "advice-first appointment guidance",
+    "44px phone controls"
   ],
   "motion_manifest_path": "templates/hair-stylist/docs/motion-generation.json",
   "updated_at": "2026-10-11",

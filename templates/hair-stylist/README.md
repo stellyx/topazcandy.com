@@ -66,3 +66,7 @@ Quick hero links set a matching appointment goal. Visitors can copy their curren
 Source and asset references, appointment decision logic, encoded contact routes, template identity isolation and main text color contrast were checked. Full visual and browser interaction QA remains pending because the supported browser-control plugin was unavailable. No customer appointment was placed. MJ's original domain, Square account, Google Business Profile and DNS have not been changed.
 
 The motion controller passed checks for viewport/tab suspension, explicit pause persistence, reduced motion, data saver, blocked autoplay, media failure and a delayed-play visibility race. The final film fully decodes and source/delivery frames and the narrow hero crop were inspected. Frame review is not full browser or real-device playback QA.
+
+## Booking and phone control follow-up
+
+New color guests and visitors who are unsure now get a message action first, with the full booking menu available beside it. Their copied notes ask for service guidance and no longer suggest a color correction appointment. Known-service paths retain booking as the primary action. The latest service wording cleanup is preserved. Finder guest choices, text actions, service links, FAQ controls and dialog close targets have a 44px minimum height. Source and decision checks passed; actual browser/phone layout and playback remain unverified.

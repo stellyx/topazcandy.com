@@ -7,6 +7,7 @@ const result=document.getElementById('finder-result');
 const title=document.getElementById('finder-title');
 const note=document.getElementById('finder-note');
 const message=document.getElementById('finder-message');
+const booking=document.getElementById('finder-booking');
 const copyStatus=document.getElementById('copy-status');
 const notesField=document.getElementById('visit-notes');
 function updateFinder(announce=true){
@@ -15,6 +16,12 @@ function updateFinder(announce=true){
   note.textContent=profile.mode==='template'?r.note.replaceAll('MJ','your stylist'):r.note;
   message.href=messageLink(profile,goal,guest);
   message.textContent=profile.mode==='template'?'Ask about this template ↗':'Text MJ about this ↗';
+  const ask=r.action==='ask';
+  result.dataset.action=r.action;
+  message.className=ask?'button':'text-link';
+  booking.className=ask?'text-link':'button';
+  booking.textContent=ask?'Browse the booking menu ↗':'Open the booking menu ↗';
+  booking.parentElement.prepend(ask?message:booking);
   result.dataset.goal=goal;
   copyStatus.textContent='';
   notesField.hidden=true;

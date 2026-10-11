@@ -13,6 +13,12 @@ body[data-profile="mj"] .button.light:hover{background:var(--lavender)}
 .hero-caption .caption-copy>span{font-size:24px}
 .hero-caption small{line-height:1.6}
 .hero-quick a{min-height:44px}
+.guest-options label,.text-link,.faq summary{min-height:44px;align-items:center}
+.service-row a{min-height:44px;display:inline-flex;align-items:center;justify-content:flex-end;gap:8px}
+.visit-panel .minor-links a,.footer-inner a{min-height:44px;display:inline-flex;align-items:center}
+dialog .dialog-close{width:44px;height:44px;min-width:44px;min-height:44px}
+.header .brand{min-width:0}
+.header>.header-inner>.button{flex-shrink:0;gap:12px;padding-inline:16px}
 .service-hero h1{margin-top:25px;font-size:clamp(46px,7vw,96px);max-width:880px}
 .service-location{display:block;margin-top:22px;font:12px/1.6 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 @media(min-width:1450px){.hero{min-height:720px}.hero-visual .hero-image{height:590px}}

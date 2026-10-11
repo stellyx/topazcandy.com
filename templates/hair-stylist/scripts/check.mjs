@@ -6,11 +6,21 @@ const mj=JSON.parse(await readFile(new URL('../profiles/mj.json',import.meta.url
 const template=JSON.parse(await readFile(new URL('../profiles/template.json',import.meta.url),'utf8'));
 // Verify decisions that matter: new guests are not routed to a color transformation,
 // and no template preview ever sends messages to the real business.
-assert.equal(recommendation('color','new',services).service.id,'correction-consult');
+assert.equal(recommendation('color','new',services).action,'ask');
+assert.equal(recommendation('color','new',services).service,null);
 assert.equal(recommendation('color','returning',services).service.id,'root-color');
 assert.equal(recommendation('extensions','new',services).service.price,0);
 for(const goal of ['cut','color','care','extensions','unsure'])for(const guest of ['new','returning']){
- assert.ok(recommendation(goal,guest,services).service);
+ const r=recommendation(goal,guest,services);
+ if(goal==='unsure'||(goal==='color'&&guest==='new')){
+  assert.equal(r.action,'ask');
+  assert.equal(r.service,null);
+  assert.ok(!visitNotes(mj,goal,guest,services).includes(services.find(s=>s.id==='correction-consult').name));
+  assert.ok(visitNotes(mj,goal,guest,services).includes('Next step: ask which service'));
+ }else{
+  assert.equal(r.action,'book');
+  assert.ok(r.service);
+ }
  const link=messageLink(mj,goal,guest);
  assert.ok(link.startsWith('sms:+15127169236?body='));
  assert.match(decodeURIComponent(link),/Hi MJ!/);
@@ -25,6 +35,7 @@ assert.equal((html.match(/<h1>/g)||[]).length,1);
 assert.equal((demo.match(/<h1>/g)||[]).length,1);
 assert.ok(html.includes(mj.bookingUrl));
 assert.ok(html.includes('noindex,nofollow'));
+assert.ok(html.includes('id="finder-booking"'));
 assert.ok(!demo.includes('15127169236'));
 assert.ok(!demo.includes('mjanethdu'));
 assert.ok(!demo.includes('mjholisticstudiollc'));
