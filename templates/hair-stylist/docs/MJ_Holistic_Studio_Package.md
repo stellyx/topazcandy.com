@@ -64,7 +64,7 @@ The custom site reaches a meaningful next action in one or two taps. Full bookin
 
 ## What is delivered
 
-MJ homepage plus four service guides: haircuts and finishing, color and balayage, scalp and hair care, extensions and consultations. The design uses warm ivory, lavender, plum and the existing gold logo. It includes a service filter, guest/goal finder, first visit section, FAQs, review sources, directions, call and SMS paths, gift card link, social metadata and a basic verified business identity schema. Structured hours, ratings and medical claims are omitted.
+MJ homepage plus four service guides: haircuts and finishing, color and balayage, scalp and hair care, extensions and consultations. The design uses warm ivory, lavender, black and the existing gold logo. It includes a service filter, guest/goal finder, first visit section, FAQs, review sources, directions, call and SMS paths, gift card link, social metadata and a basic verified business identity schema. Structured hours, ratings and medical claims are omitted.
 
 The reusable Crown & Calm template has its own generic identity and Topaz inquiry path. MJ's logo, phone, email, reviews and local information do not enter the generic output. Its prices are explicitly illustrative. The source includes separate profiles, a build script, menu data, checks and an adaptation guide. The editorial photograph is generated and visibly labeled; it is not presented as MJ's work.
 
@@ -118,3 +118,11 @@ Dot Memory and the Topaz operating record were read for guidance. Dot Memory was
 MJ and the reusable HAIR-01 template now include a silent, illustrative hair film in the arched hero; natural 85% opacity; small pause/play icons; a slow decorative sparkle; gentle content reveals; quick appointment-goal links; and copyable visit notes. The Topaz homepage and Concept Lab hair cards use the same film and existing gallery motion controls. The visit notes remain planning guidance and do not reserve or send an appointment request.
 
 The existing Square booking path and verified menu are preserved. Reduced motion and data saver prevent automatic film download. Explicit pause survives viewport and tab changes, and a matching poster provides fallback. Media source and verification evidence are in `motion-generation.json`. Source/logic checks and frame review passed; full browser and phone-device QA remain pending. The launch package proposal is unchanged.
+
+# First screen, color scheme and deeper audit update
+
+The preview now follows MJ’s current black theme setting, gold logo and lavender-flower identity. Mobile CSS brings the hair visual before the headline, and the gold logo appears in its caption. Service wording and the four guide headings/descriptions are clearer. The generic template keeps its own palette.
+
+The follow-up audit verifies the 57-product sitemap, title/identity mismatch, conflicting hours and locations, missing Phenix booking link, and Fresha’s internally inconsistent location records. A canonical is present in the rendered homepage; no missing-canonical claim is made from the raw source alone. Final-domain routing must preserve the existing Square booking/gift paths.
+
+See [MJ color scheme](MJ_Color_Scheme.md) and [detailed SEO and funnel audit](MJ_SEO_and_Funnel_Audit_2026-10-11.md). The launch package proposal is unchanged. Code, route, asset and contrast checks passed; full visual and phone playback QA remains pending.

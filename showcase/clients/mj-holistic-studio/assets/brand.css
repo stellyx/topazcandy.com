@@ -1,0 +1,40 @@
+/* MJ's black setting, gold logo and lavender-flower background inform this palette. */
+body[data-profile="mj"]{--ink:#1d1920;--plum:#000000;--lavender:#e3d9ed;--gold:#c9a554;--muted:#5e5365;--line:#d8cddd;--soft:#f0eaf4;--accent-ink:#6e4d83;--button-hover:#36233f}
+body[data-profile="mj"] .button:hover{background:var(--button-hover)}
+body[data-profile="mj"] .button.light:hover{background:var(--lavender)}
+.hero{padding-block:40px 54px;min-height:680px}
+.hero h1{font-size:clamp(65px,6.6vw,108px)}
+.hero h1 em{color:var(--accent-ink,#78617d)}
+.hero .lede{max-width:400px}
+.hero-visual .hero-image{height:540px}
+.hero-caption{display:flex;align-items:center;gap:16px;width:285px;bottom:44px;padding:16px 18px}
+.hero-caption .caption-logo{width:38px;height:73px;object-fit:contain;flex:none}
+.hero-caption .caption-copy{min-width:0}
+.hero-caption .caption-copy>span{font-size:24px}
+.hero-caption small{line-height:1.6}
+.hero-quick a{min-height:44px}
+.service-hero h1{margin-top:25px;font-size:clamp(46px,7vw,96px);max-width:880px}
+.service-location{display:block;margin-top:22px;font:12px/1.6 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+@media(min-width:1450px){.hero{min-height:720px}.hero-visual .hero-image{height:590px}}
+@media(max-width:1050px){.hero{min-height:620px}.hero h1{font-size:clamp(58px,7.4vw,78px)}.hero-visual .hero-image{height:490px}.hero-caption{width:250px;gap:12px}.hero-caption .caption-copy>span{font-size:22px}}
+@media(max-width:760px){
+ .hero{min-height:0;padding-block:18px 35px;gap:22px}
+ .hero-visual{order:-1;padding:0;margin:0}
+ .hero-media{border-radius:110px 110px 8px 8px}
+ .hero-visual .hero-image{height:210px;object-position:62% 44%}
+ .hair-film{object-position:62% 44%}
+ .hero-tag{top:3px;right:0;width:66px;height:66px;border-width:4px;font-size:14px}
+ .hero-caption{left:10px;bottom:38px;width:240px;padding:10px 13px;gap:12px}
+ .hero-caption .caption-logo{width:28px;height:54px}
+ .hero-caption .caption-copy>span{font-size:20px}
+ .hero-caption small{font-size:7px;margin-top:4px}
+ .image-note{max-width:100%;font-size:8px;margin-top:9px;line-height:1.5}
+ .hero-copy .eyebrow{margin-bottom:11px}
+ .hero h1{font-size:clamp(48px,10.5vw,72px);line-height:1}
+ .hero .lede{font-size:13px;margin-block:15px 19px;max-width:420px}
+ .hero-quick{margin-top:20px}
+ .hero .actions>.button{padding:13px 18px;gap:18px}
+ .hero .actions>.text-link{gap:12px}
+ .hero-copy{max-width:none}
+}
+@media(max-width:360px){.hero-visual .hero-image{height:185px}.hero h1{font-size:45px}.hero-caption{width:215px}.hero-caption .caption-copy>span{font-size:18px}.hero-caption .caption-logo{width:25px;height:48px}.hero .actions{gap:12px}.hero .actions>.button{width:auto}.hero-quick strong{font-size:12px}}

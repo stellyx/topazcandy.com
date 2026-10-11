@@ -26,8 +26,11 @@ Static output: `dist/` for MJ; `dist/template/` for the generic template. Each i
 | `dist/assets/app.mjs` | Filters, finder, mobile navigation and preview dialog |
 | `dist/assets/motion.mjs` | Quiet film, visibility suspension and motion preference handling |
 | `dist/assets/motion.css` | Natural 85% media opacity, small pause/play icons and restrained accents |
+| `dist/assets/brand.css` | MJ palette, mobile first screen and service-guide heading layout |
 | `docs/motion-generation.json` | Media provenance, delivery metadata and verification limits |
 | `docs/MJ_Holistic_Studio_Package.md` | Audit, research, funnel and launch package |
+| `docs/MJ_Color_Scheme.md` | Current color settings, image identity and adapted palette |
+| `docs/MJ_SEO_and_Funnel_Audit_2026-10-11.md` | Detailed SEO, listing consistency and booking funnel audit |
 
 ## Adapt for a stylist
 

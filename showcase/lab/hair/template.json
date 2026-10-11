@@ -22,8 +22,13 @@
     "copyable visit notes",
     "service filters",
     "first visit guidance",
-    "existing scheduler integration"
+    "existing scheduler integration",
+    "mobile first screen with visible film",
+    "profile-specific brand colors",
+    "descriptive service guides"
   ],
   "motion_manifest_path": "templates/hair-stylist/docs/motion-generation.json",
-  "updated_at": "2026-10-11"
+  "updated_at": "2026-10-11",
+  "audit_path": "templates/hair-stylist/docs/MJ_SEO_and_Funnel_Audit_2026-10-11.md",
+  "color_reference_path": "templates/hair-stylist/docs/MJ_Color_Scheme.md"
 }
