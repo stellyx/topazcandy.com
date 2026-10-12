@@ -188,7 +188,7 @@ const sender=createEnrollmentSender({
   referenceFactory:()=> 'TC-AI-'+new Date().toISOString().slice(0,10).replaceAll('-','')+'-'+crypto.randomUUID().slice(0,8).toUpperCase()
 });
 form.elements.language.addEventListener('change',()=>{languageChosen=true;});
-const dirty=()=>{if(!sender.busy){clearFormErrors();setFormState('');submit.disabled=false;}};
+const dirty=()=>{languageChosen=true;if(!sender.busy){clearFormErrors();setFormState('');submit.disabled=false;}};
 form.addEventListener('input',dirty);form.addEventListener('change',dirty);
 form.addEventListener('submit',async event=>{
   event.preventDefault();if(sender.busy)return;
