@@ -3,7 +3,7 @@ import {FAVORITES_LIMIT,escapeHTML,cleanName,sanitizeFavorites,saveFavorite,shar
 
 const byId=id=>document.getElementById(id),SHELF_KEY='form-modular-favorites-v1';
 const DIALOGS=['review-dialog','favorites-dialog','compare-dialog','share-dialog'];
-export const isAnyDialogOpen=()=>DIALOGS.some(id=>byId(id).open);
+export const isAnyDialogOpen=()=>[...DIALOGS,'shop-product-dialog','shop-bag-dialog'].some(id=>Boolean(byId(id)?.open));
 function illustratedPreview(build){
   return '<div class="mini-composition" aria-label="Component illustrations">'+PARTS.filter(p=>build.parts[p.id].enabled).map(p=>'<span style="color:'+colorFor(build,p.id).hex+'">'+thumbnail(optionFor(build,p.id).kind)+'</span>').join('')+'</div><span class="saved-view-label">Component illustration</span>';
 }

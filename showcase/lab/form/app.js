@@ -5,8 +5,9 @@ import {createIdleRotation,IDLE_DELAY} from './motion.js';
 import {createWelcomeSequence,WELCOME_DELAY,EXHALE_DELAY,PUFF_DURATION,PUFF_REPEAT_DELAY} from './welcome.js';
 import {createDesignHistory} from './history.js';
 import {decodeBuild} from './studio.js';
-import {initStudioTools,isAnyDialogOpen} from './studio-ui.js';
+import {initStudioTools,isAnyDialogOpen} from './studio-ui.js?v=2';
 
+let studioVisible=true;
 const byId=id=>document.getElementById(id),STORAGE='form-modular-build-v2',WELCOME_STORAGE='form-beach-welcome-v1',BEACH_STORAGE='form-beach-background-v1';
 const motionPreference=window.matchMedia('(prefers-reduced-motion: reduce)');
 const mobilePreference=window.matchMedia('(max-width: 800px)');
@@ -37,7 +38,7 @@ function announce(message) {
 function persist(captureView=true) {if(captureView&&viewer)state.view=viewer.getView();try{localStorage.setItem(STORAGE,JSON.stringify(state))}catch {}}
 function markWelcomeSeen(){welcomeSeen=true;try{localStorage.setItem(WELCOME_STORAGE,'seen')}catch{}}
 function hideCustomizeHint(){const hint=byId('customize-hint');hint.hidden=true;delete hint.dataset.positioned;byId('stage').dataset.customizeHint='false';}
-function canPuff(){return !!viewer&&!viewerFailed&&beachEnabled&&!reducedMotion&&!dataSaver&&!document.hidden&&!isAnyDialogOpen()&&!state.exploded&&!assemblyPending&&(welcome?.active?welcome.phase==='puff':state.spin);}
+function canPuff(){return !!viewer&&!viewerFailed&&beachEnabled&&!reducedMotion&&!dataSaver&&!document.hidden&&studioVisible&&!isAnyDialogOpen()&&!state.exploded&&!assemblyPending&&(welcome?.active?welcome.phase==='puff':state.spin);}
 function showCustomizeHint(){
   if(!canPuff())return;
   byId('customize-hint').hidden=false;byId('stage').dataset.customizeHint='true';
@@ -61,7 +62,7 @@ function queueIdlePuff(delayMs=EXHALE_DELAY){
 }
 function syncBackdrop(){
   byId('beach-backdrop').hidden=!beachEnabled;
-  const play=beachEnabled&&!reducedMotion&&!dataSaver&&!document.hidden&&!isAnyDialogOpen()&&!viewerFailed&&(welcome?.active||(state.spin&&!state.exploded&&!assemblyPending));
+  const play=beachEnabled&&!reducedMotion&&!dataSaver&&!document.hidden&&studioVisible&&!isAnyDialogOpen()&&!viewerFailed&&(welcome?.active||(state.spin&&!state.exploded&&!assemblyPending));
   const video=byId('beach-video');
   if(play&&!videoPlaying&&!videoBlocked){videoPlaying=true;try{const attempt=video.play();attempt?.catch?.(()=>{videoPlaying=false;videoBlocked=true;});}catch{videoPlaying=false;videoBlocked=true;}}
   else if(!play&&videoPlaying){video.pause();videoPlaying=false;}
@@ -185,15 +186,23 @@ function startShowroom(){
 }
 function finishShowroomAssembly(){
   if(!assemblyPending)return;assemblyPending=false;
-  if(reducedMotion||document.hidden||isAnyDialogOpen()||viewerFailed){state.spin=false;renderMotionControls();idle.refresh();persist();return;}
+  if(reducedMotion||document.hidden||!studioVisible||isAnyDialogOpen()||viewerFailed){state.spin=false;renderMotionControls();idle.refresh();persist();return;}
   state.spin=true;renderMotionControls();viewer?.update(state,false);persist();queueIdlePuff();
 }
 const idle=createIdleRotation({
   isPaused:()=>!state.spin,
-  isBlocked:()=>welcome?.active||assemblyPending||reducedMotion||document.hidden||isAnyDialogOpen()||viewerFailed,
+  isBlocked:()=>welcome?.active||assemblyPending||reducedMotion||document.hidden||!studioVisible||isAnyDialogOpen()||viewerFailed,
   onPause:()=>{hideCustomizeHint();markWelcomeSeen();welcome?.activity();hidePuff();const changing=state.spin||assemblyPending;assemblyPending=false;if(changing){state.spin=false;renderMotionControls();viewer?.update(state,false);persist();}else renderMotionControls();},
   onResume:startShowroom
 });
+document.addEventListener('headshop:activity',()=>{idle.activity();syncBackdrop();});
+if('IntersectionObserver' in window){
+  const observer=new IntersectionObserver(entries=>{
+    studioVisible=entries[0].isIntersecting;
+    idle.activity({pause:!studioVisible});syncBackdrop();idle.refresh();
+  },{threshold:.08});
+  observer.observe(byId('studio'));
+}
 function changeGeometry({record=true}={}) {idle.activity();if(record)history.commit(state);render();viewer?.update(state,true);persist();}
 function stepHistory(direction){
   const next=history[direction](state);if(!next)return;
@@ -306,7 +315,7 @@ byId('save-image').addEventListener('click',async()=>{
 });
 byId('beach-video').addEventListener('error',()=>{videoPlaying=false;videoBlocked=true;});
 welcome=createWelcomeSequence({
-  isBlocked:()=>reducedMotion||dataSaver||document.hidden||isAnyDialogOpen()||viewerFailed||!beachEnabled,
+  isBlocked:()=>reducedMotion||dataSaver||document.hidden||!studioVisible||isAnyDialogOpen()||viewerFailed||!beachEnabled,
   onStart:()=>{if(!viewer?.startWelcome())return false;markWelcomeSeen();renderMotionControls();idle.refresh();return true;},
   onGrab:()=>viewer?.grabWelcome(),onPuff:showPuff,
   onFinish:reason=>{viewer?.stopWelcome();hidePuff();renderMotionControls();idle.refresh();if(reason==='finished')queueIdlePuff(PUFF_REPEAT_DELAY);}

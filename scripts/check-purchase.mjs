@@ -111,11 +111,12 @@ async function checkoutFixture({result={success:'true'},reject=false,atReview=tr
   if(atReview){next.events.click();next.events.click();}
   return{events,choice,fields,controls,payment,status,button,next,back,steps,nodes,get sends(){return sends;},get submissions(){return submissions;},get sentPayload(){return sentPayload;}};
 }
-// The FORM purchase must retain its website design through the shared cart.
+// The Head Shop purchase must retain its website design through the shared cart.
+assert.equal(templateFromPayPalOption('FORM - Glass configurator website'),'form');
 const formWebsite=await checkoutFixture({template:'form'});
 assert.equal(formWebsite.choice.value,WEBSITE_PACKAGE.templates.form.paypalOption);
 assert.equal(formWebsite.nodes['design-preview'].href,'/showcase/lab/form/');
-assert.ok(formWebsite.nodes['checkout-review-design'].textContent.includes('FORM'));
+assert.ok(formWebsite.nodes['checkout-review-design'].textContent.includes('Head Shop'));
 await formWebsite.events.submit({preventDefault(){}});
 assert.equal(formWebsite.sentPayload['Website design'],WEBSITE_PACKAGE.templates.form.paypalOption);
 assert.equal(formWebsite.payment.elements.os0.value,WEBSITE_PACKAGE.templates.form.paypalOption);

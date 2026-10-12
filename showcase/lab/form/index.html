@@ -4,28 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0c100e">
-  <meta name="description" content="A configurable website demo for glass retailers. Rotate real modular catalog designs, customize parts and artwork, compare favorites, and share exact builds.">
+  <meta name="description" content="Explore Head Shop: glass, everyday essentials, a live custom glass studio, product details and a demo shopping bag. A complete head shop website design by Topaz Candy.">
   <meta name="robots" content="noindex,nofollow">
-  <title>FORM Glass Configurator Website | Topaz Candy</title>
+  <title>Head Shop | Glass, Goods &amp; Custom Builds</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://topazcandy.com/showcase/lab/form/">
   <link rel="stylesheet" href="./styles.css">
   <link rel="stylesheet" href="/assets/topaz/purchase.css?v=1">
-  <link rel="stylesheet" href="./website-purchase.css?v=1">
+  <link rel="stylesheet" href="./website-purchase.css?v=2">
+  <link rel="stylesheet" href="./shop.css?v=1">
   <script src="/assets/topaz/seasonal.js?v=1" defer></script>
   <script type="importmap">{"imports":{"three":"./vendor/three.module.min.js","three/addons/":"./vendor/addons/"}}</script>
 </head>
 <body data-topaz-template="form">
   <header class="header">
-    <a class="wordmark" href="./" aria-label="FORM design studio home">f<span class="brand-orb">o</span>rm<span class="wordmark-dot">.</span></a>
-    <div class="header-divider"></div><span class="header-caption">Glass configurator website demo</span>
-    <span class="mobile-demo-label">Website demo</span>
-    <a class="concept-label template-return" href="https://topazcandy.com/#work">← Topaz Candy templates</a>
-    <button class="header-button" id="reset-build" type="button">Start fresh <span aria-hidden="true">↗</span></button>
+    <a class="wordmark" href="#studio" aria-label="Head Shop home">head <em>shop</em><span class="wordmark-dot">.</span></a>
+    <div class="header-divider"></div><span class="header-caption">Glass, goods &amp; good taste.</span>
+    <nav class="shop-nav" id="shop-nav" aria-label="Shop navigation"><a href="#shop">Glass &amp; goods</a><a href="#studio">Build your own</a><a href="#our-shop">The shop</a><a href="#shop-contact">Say hello</a></nav>
+    <div class="header-actions">
+      <button class="header-button" id="reset-build" type="button" title="Start a new glass design" aria-label="Start a new glass design"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7v5h5M5.7 7.2A8 8 0 1 1 4 16"/></svg></button>
+      <button class="shop-icon-button" id="shop-bag-open" type="button" aria-label="Open demo bag, 0 items"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14l1 14H4L5 7Zm3 0V5a4 4 0 0 1 8 0v2"/></svg><span class="shop-bag-count" id="shop-bag-count" aria-hidden="true">0</span></button>
+      <button class="shop-icon-button shop-menu-toggle" id="shop-menu-toggle" type="button" aria-label="Shop menu" aria-controls="shop-nav" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
   </header>
   <main class="studio" id="studio">
     <section class="stage" id="stage" aria-label="Interactive 3D pipe viewer">
-      <div class="stage-title"><p class="eyebrow">BUILT BY YOU</p><h1>Your piece.<br><em>Your rules.</em></h1><p class="stage-caption">Real parts. Endless personality.</p><span class="preview-label">Website demo · illustrated 3D</span></div>
+      <div class="stage-title"><p class="eyebrow">BUILT BY YOU</p><h1>Your piece.<br><em>Your rules.</em></h1><p class="stage-caption">Good glass. Your kind of personality.</p><span class="preview-label">Website demo · illustrated 3D</span></div>
       <div class="mobile-guide" id="mobile-guide"><strong id="mobile-guide-title">Drag to rotate. Tap a part to edit.</strong><span id="mobile-guide-detail">Pinch to zoom · choose a part below</span></div>
       <div class="viewer-surface">
       <div class="beach-backdrop" id="beach-backdrop" hidden><video id="beach-video" muted playsinline loop preload="none" poster="./assets/beach-poster.jpg" aria-hidden="true"><source src="./assets/beach-loop.mp4" type="video/mp4"></video></div>
@@ -37,7 +41,7 @@
       <div id="viewport" class="viewport" tabindex="0" role="img" aria-label="Your modular glass piece. Drag to rotate, scroll or pinch to zoom. Use arrow keys to rotate. Click empty space or press Escape to clear a selection.">
         <div class="selection-cue" id="selection-cue" aria-hidden="true" hidden><span class="selection-label"><span class="selection-dot"></span><span class="selection-name" id="selection-name"></span><small>Selected</small></span></div>
         <div class="loading" id="loading"><span class="loading-orb"></span><span>Setting the stage</span></div>
-        <div class="fallback" id="fallback" hidden><span class="fallback-mark">form.</span><p>The 3D viewer needs WebGL.</p><span>You can still build and save your piece below.</span></div>
+        <div class="fallback" id="fallback" hidden><span class="fallback-mark">head shop.</span><p>The 3D viewer needs WebGL.</p><span>You can still build and save your piece below.</span></div>
       </div>
       <video id="smoke-letter-video" class="media-source" muted playsinline preload="none" aria-hidden="true" tabindex="-1"><source src="./assets/smoke-tap-packed.mp4" type="video/mp4"></video>
       <button type="button" id="customize-hint" class="customize-hint" aria-label="Customize your pipe: change the base color, shape and artwork" hidden></button>
@@ -98,15 +102,45 @@
       </div></details>
       </div>
       <div class="builder-footer"><div class="total-row"><div><span class="total-label" id="total-label">Catalog parts subtotal</span><strong id="total">—</strong></div><span class="total-tag">SHOP CONFIRMS</span></div>
-      <button id="review-build" class="primary-button" type="button">Review this design <span aria-hidden="true">↗</span></button><p class="demo-note" id="pricing-note">Reference pricing. Assembly, art, shipping & tax quoted by shop.</p><p class="website-demo-note">Configurator website demo for retailers. Catalog references illustrate the experience.</p></div>
+      <button id="review-build" class="primary-button" type="button">Review this design <span aria-hidden="true">↗</span></button><p class="demo-note" id="pricing-note">Reference pricing. Assembly, art, shipping & tax quoted by shop.</p><p class="website-demo-note">Head Shop website demo. Catalog references illustrate the custom glass experience.</p></div>
     </aside>
   </main>
+  <div class="shop-discovery"><div><strong>Your design desk is just the beginning.</strong><span>Head Shop website demo · illustrated products</span></div><a href="#shop">Browse glass &amp; goods <span aria-hidden="true">↘</span></a></div>
+  <div class="headshop-storefront">
+    <section class="shop-section" id="shop" aria-labelledby="shop-title">
+      <div class="shop-section-heading"><div><p class="shop-kicker">GLASS / GOODS / A LITTLE CHARACTER</p><h2 id="shop-title">The daily <em>lineup.</em></h2></div><p>A little glass, a few essentials, and something that feels like you. Explore the collection or take a modular piece back to the design desk.</p></div>
+      <div class="shop-controls"><div class="shop-filters" id="shop-filters" role="group" aria-label="Browse product categories"><button type="button" data-shop-category="all" aria-pressed="true">All goods</button><button type="button" data-shop-category="modular" aria-pressed="false">Modular glass</button><button type="button" data-shop-category="hand" aria-pressed="false">Hand pipes</button><button type="button" data-shop-category="glass" aria-pressed="false">Statement glass</button><button type="button" data-shop-category="essentials" aria-pressed="false">Everyday essentials</button></div><label class="shop-search-label" for="shop-search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg><input id="shop-search" type="search" placeholder="Find your thing" aria-label="Search the collection" maxlength="100"></label></div>
+      <div class="shop-grid-status"><span id="shop-result-count" role="status" aria-live="polite">8 pieces</span><span>Illustrated sample products &amp; prices</span></div>
+      <div class="shop-products" id="shop-products"></div>
+      <div class="shop-empty" id="shop-empty" hidden><p>Nothing here just yet. Try another name or category.</p><button type="button" id="shop-clear-search">See all goods</button></div>
+      <noscript><div class="shop-nojs"><p>The collection includes modular glass, hand pipes, statement glass, trays and everyday essentials. Enable JavaScript to explore product illustrations, color studies and the demo bag.</p></div></noscript>
+    </section>
+    <div class="shop-story-wrap" id="our-shop">
+      <section class="shop-section shop-story" aria-labelledby="our-shop-title"><div class="shop-story-copy"><p class="shop-kicker">COUNTERCULTURE, CONSIDERED.</p><h2 id="our-shop-title">Good glass.<br><em>Good company.</em></h2><p>A small daily piece. A setup that comes together one part at a time. Something colorful that catches your eye. There is room for all of it here.</p><p>Head Shop pairs a browsable collection with a place to experiment. Look around, find your favorite silhouette, then give a modular piece your own colors and artwork.</p><a href="#studio">Make your own piece <span aria-hidden="true">↗</span></a></div><div class="shop-story-art"><div id="shop-about-illustration"></div><span>HEAD SHOP / A WARM GLOW</span></div></section>
+      <div class="shop-story-strip"><div><strong>Find your silhouette.</strong><p>Browse glass and accessories by category. Open a piece for its details and color studies.</p></div><div><strong>Put your spin on it.</strong><p>The modular collection connects to the live design desk. Try parts, colors and original artwork in place.</p></div><div><strong>Keep the good ideas.</strong><p>Save a favorite glass build, share an exact design or download the pieces in your demo bag.</p></div></div>
+    </div>
+    <section class="shop-section shop-help" id="shop-faq" aria-labelledby="shop-faq-title"><div><p class="shop-kicker">A LITTLE HELP AT THE COUNTER</p><h2 id="shop-faq-title">Good <em>questions.</em></h2><p class="shop-help-lede">From finding your shape to keeping your design, here are a few things to know before you get carried away.</p></div><div class="shop-faq-list">
+      <details><summary>Can I design my own modular piece?</summary><p>Yes. Use <a href="#studio">the design desk</a> to choose a compatible system, swap components and explore colors and artwork. Click a part to edit it. Click empty space or press Escape to return to the whole piece.</p></details>
+      <details><summary>Do all the modular parts fit together?</summary><p>Parts stay within their connection family. The studio keeps compatible choices together and shows a fit summary. A retailer still confirms the actual product variant, finish and final fit before an order.</p></details>
+      <details><summary>Can I keep or share a design?</summary><p>Save it to My shelf in this browser, compare two favorites, copy an exact-build link or download a shop brief from Review this design. A link carries the configuration; it does not place an order.</p></details>
+      <details><summary>Are these products available to buy?</summary><p>This is a Head Shop website demo. The collection uses illustrated sample products, color studies and prices. The bag lets you explore the shopping experience and save a list. It does not take product orders or payments.</p></details>
+      <details><summary>What about stock, delivery and custom finishes?</summary><p>A real retailer confirms available stock, finishes, lead times, shipping and the final quote. The design desk shows catalog references and visual studies to help that conversation.</p></details>
+    </div></section>
+    <div class="shop-contact-wrap"><section class="shop-section shop-contact" id="shop-contact" aria-labelledby="shop-contact-title"><div class="shop-contact-copy"><p class="shop-kicker">ASK AT THE COUNTER</p><h2 id="shop-contact-title">Say <em>hello.</em></h2><p>Wondering about a piece, a custom build or something on your list? Put your question together here.</p><p class="shop-demo-label">This is a demo message preview. Your details stay on this page; nothing is sent to a shop.</p></div><div><form class="shop-contact-form" id="shop-enquiry-form" action="#shop-contact" method="post">
+      <label for="shop-name">Your name<input id="shop-name" name="name" autocomplete="name" maxlength="80" placeholder="What should we call you?" required></label><label for="shop-email">Email<input id="shop-email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="254" placeholder="you@example.com" required></label>
+      <label class="shop-contact-full" for="shop-enquiry-topic">What is it about?<select id="shop-enquiry-topic" name="topic"><option value="collection">A piece in the collection</option><option value="custom">A custom glass build</option><option value="general">A general question</option></select></label>
+      <label class="shop-contact-full" for="shop-message">Your message<textarea id="shop-message" name="message" rows="4" minlength="5" maxlength="1600" placeholder="Tell us what caught your eye." required></textarea></label>
+      <div class="shop-contact-full shop-contact-submit"><button class="shop-solid-button" id="shop-preview-message" type="submit" disabled>Preview message <span aria-hidden="true">↗</span></button><span>Demo preview · no message is sent</span></div>
+    </form><div class="shop-message-result" id="shop-message-result" tabindex="-1" hidden><h3>Your message, ready to review.</h3><pre id="shop-message-preview"></pre><div><button class="shop-solid-button" id="shop-save-message" type="button">Download message ↓</button><button class="shop-outline-button" id="shop-edit-message" type="button">Keep editing</button></div></div></div></section></div>
+  </div>
+  <span class="sr-only" id="shop-status" role="status" aria-live="polite"></span>
+
   <section class="topaz-purchase" data-purchase-theme="form" id="website-purchase" aria-labelledby="footer-purchase-title">
     <div class="topaz-purchase__inner">
       <div>
         <p class="topaz-purchase__eyebrow">TOPAZ CANDY / FOR YOUR BUSINESS</p>
-        <h2 id="footer-purchase-title">FORM. A website for your business.</h2>
-        <p class="topaz-purchase__copy">Your branding and approved content in this design, with the interactive glass configurator, website setup, SEO setup, an eligible Google Maps connection and three months of website service and maintenance.</p>
+        <h2 id="footer-purchase-title">Head Shop. A website for your business.</h2>
+        <p class="topaz-purchase__copy">Your branding and approved content in this design, with a complete storefront, illustrated collection, demo bag, contact area, interactive glass configurator, website setup, SEO setup, an eligible Google Maps connection and three months of website service and maintenance.</p>
         <ul class="topaz-purchase__scope"><li>Your branding and content</li><li>SEO and launch checks</li><li>Three months of website care</li></ul>
       </div>
       <div class="topaz-purchase__actions">
@@ -115,7 +149,7 @@
       </div>
     </div>
   </section>
-  <aside class="topaz-buy-dock" data-purchase-theme="form" aria-label="Website purchase"><span class="topaz-buy-dock__copy"><strong>FORM website</strong><br>Website launch package · $450</span><a class="topaz-buy-dock__button" href="https://topazcandy.com/checkout/?template=form" data-website-purchase>Buy now ↗</a></aside>
+  <aside class="topaz-buy-dock" data-purchase-theme="form" aria-label="Website purchase"><span class="topaz-buy-dock__copy"><strong>Head Shop website</strong><br>Website launch package · $450</span><a class="topaz-buy-dock__button" href="https://topazcandy.com/checkout/?template=form" data-website-purchase>Buy now ↗</a></aside>
   <footer class="form-template-footer"><a href="https://topazcandy.com/">Topaz Candy</a><nav aria-label="Template navigation"><a href="https://topazcandy.com/#work">More templates</a><a href="https://topazcandy.com/services/">Everything we do</a><a href="https://topazcandy.com/contact/?service=website&amp;template=form#contact-form">Ask about this website</a></nav></footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
@@ -136,6 +170,9 @@
   <dialog id="favorites-dialog" class="studio-dialog favorites-dialog" aria-labelledby="favorites-title"><div class="review-top"><span class="eyebrow">KEEP THE GOOD ONES</span><button class="close-dialog" id="close-favorites" aria-label="Close favorites" type="button">×</button></div><h2 id="favorites-title">Your shelf.</h2><p class="dialog-caption">Keep up to eight designs in this browser. Load one, or compare any two.</p><form id="favorite-form" class="favorite-form"><label for="favorite-name">Name this design</label><div><input id="favorite-name" type="text" maxlength="40" placeholder="After hours, version 01" autocomplete="off"><button class="small-primary" id="favorite-save" type="submit">Save current</button></div><span id="favorite-capacity" class="finish-note"></span></form><div id="favorites-list" class="favorites-list"></div><p class="demo-note">Favorites stay on this device. A build link or downloaded brief lets you keep a separate copy.</p></dialog>
   <dialog id="compare-dialog" class="studio-dialog compare-dialog" aria-labelledby="compare-title"><div class="review-top"><span class="eyebrow">THE SIDE BY SIDE</span><button class="close-dialog" id="close-compare" aria-label="Close comparison" type="button">×</button></div><h2 id="compare-title">Find your favorite.</h2><p class="dialog-caption">Compare saved views and exact design choices. Differences are highlighted.</p><div class="compare-choices"><label>First design<select id="compare-left"></select></label><label>Second design<select id="compare-right"></select></label></div><div id="compare-previews" class="compare-previews"></div><div class="compare-table-wrap"><table class="compare-table"><caption class="sr-only">Design choices and catalog subtotals</caption><thead><tr><th scope="col">Choice</th><th scope="col" id="compare-left-name"></th><th scope="col" id="compare-right-name"></th></tr></thead><tbody id="compare-rows"></tbody></table></div><p id="compare-note" class="compare-note"></p><div class="compare-load"><button id="compare-load-left" class="secondary-button" type="button">Use first design</button><button id="compare-load-right" class="secondary-button" type="button">Use second design</button></div></dialog>
   <dialog id="share-dialog" class="studio-dialog share-dialog" aria-labelledby="share-title"><div class="review-top"><span class="eyebrow">PASS THE IDEA ALONG</span><button class="close-dialog" id="close-share" aria-label="Close share options" type="button">×</button></div><h2 id="share-title">This exact piece.</h2><p class="dialog-caption">The link carries your parts, colors, art and saved view. Opening it starts with no part selected.</p><div id="share-qr" class="share-qr" role="img" aria-label="QR code for this exact design"></div><label class="share-label" for="share-link">Your build link</label><textarea id="share-link" rows="3" readonly spellcheck="false" aria-describedby="share-access"></textarea><div class="share-actions"><button id="copy-share" class="small-primary" type="button">Copy link</button><button id="download-qr" class="secondary-button" type="button">Download QR</button><button id="native-share" class="secondary-button" type="button" hidden>Share…</button></div><p id="share-access" class="finish-note">Anyone with this link can open the public studio. You can also download the shop brief from Review this design.</p></dialog>
-  <script type="module" src="./app.js"></script>
+  <dialog class="shop-dialog" id="shop-product-dialog" aria-labelledby="shop-product-name"><div class="shop-dialog-top"><span>HEAD SHOP / TAKE A CLOSER LOOK</span><button class="shop-dialog-close" id="shop-product-close" type="button" aria-label="Close product details">×</button></div><div class="shop-product-detail"><div class="shop-detail-picture" id="shop-product-picture"></div><div class="shop-detail-copy"><span class="shop-product-category" id="shop-product-category"></span><h2 id="shop-product-name"></h2><div class="shop-detail-price"><span id="shop-product-price"></span><small>sample price</small></div><p id="shop-product-description"></p><ul id="shop-product-details"></ul><div class="shop-color-heading"><span>Color study</span><span id="shop-color-name"></span></div><div class="shop-product-colors" id="shop-product-colors" role="group" aria-label="Product color study"></div><div class="shop-detail-actions"><button class="shop-solid-button" id="shop-add-product" type="button">Add to demo bag <span aria-hidden="true">+</span></button><button class="shop-outline-button" id="shop-customize-product" type="button" hidden>Customize in the design desk ↗</button></div><p class="shop-product-feedback" id="shop-product-feedback" role="status" aria-live="polite"></p></div></div></dialog>
+  <dialog class="shop-dialog shop-bag-dialog" id="shop-bag-dialog" aria-labelledby="shop-bag-title"><div class="shop-dialog-top"><span>HEAD SHOP / YOUR LITTLE LINEUP</span><button class="shop-dialog-close" id="shop-bag-close" type="button" aria-label="Close demo bag">×</button></div><div class="shop-bag-content"><h2 id="shop-bag-title">Your demo bag.</h2><p>Illustrated products and sample prices. No product orders or payments are taken.</p><div id="shop-bag-items"></div><div class="shop-bag-empty" id="shop-bag-empty"><span aria-hidden="true">✧</span><p>A little room for something good.</p><button class="shop-outline-button" id="shop-bag-browse" type="button">Browse the collection ↗</button></div><div class="shop-bag-summary" id="shop-bag-summary" hidden><div class="shop-bag-total"><span>Sample subtotal</span><strong id="shop-bag-total">$0</strong></div><p>Color, availability, delivery and final pricing need a retailer's confirmation.</p><div class="shop-bag-actions"><button class="shop-solid-button" id="shop-ask-bag" type="button">Ask about these pieces ↗</button><button class="shop-outline-button" id="shop-save-bag" type="button">Download shopping list ↓</button></div></div></div></dialog>
+  <script type="module" src="./app.js?v=2"></script>
+  <script type="module" src="./shop.mjs?v=1"></script>
 </body>
 </html>

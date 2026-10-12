@@ -7,4 +7,4 @@ Run `node scripts/check-contact.mjs` and `node scripts/check-purchase.mjs` from 
 
 The bilingual beginner course extension is in `30-day-ai/`, with a Spanish route at `/30-day-ai/es/`. See `30-day-ai/README.md` for enrollment, content updates and publication checks.
 
-FORM is the complete interactive modular glass configurator at `/showcase/lab/form/`, including its beach, grab, smoke-letter and customization loops. The homepage card opens it directly; its shared $450 website purchase panel and mobile Buy now bar use `/checkout/?template=form`. Physical glass, inventory and ordering integrations are separate.
+Head Shop is the complete storefront at /showcase/lab/form/: glass and accessory collections, product/color details, a bounded demo bag, shopping-list download, FAQs, a local-only message preview, and the preserved live glass configurator with its beach/grab/smoke loops. The homepage opens it directly; the shared $450 website purchase controls use /checkout/?template=form. Sample product orders are not enabled. Inventory, physical glass and ordering integrations are separate.

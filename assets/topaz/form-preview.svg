@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
- <title id="title">FORM modular glass website illustration</title><desc id="desc">A translucent blue modular glass piece on a small teak table beside a palm-lined beach, with color and component choices.</desc>
+ <title id="title">Head Shop glass and goods website illustration</title><desc id="desc">A translucent blue modular glass piece on a small teak table beside a palm-lined beach, with color and component choices.</desc>
  <defs>
   <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#bce8ef"/><stop offset="1" stop-color="#eff8ee"/></linearGradient>
   <linearGradient id="sea" x2="0" y2="1"><stop stop-color="#0676a4"/><stop offset=".5" stop-color="#0da5ba"/><stop offset="1" stop-color="#95dfce"/></linearGradient>
@@ -42,5 +42,5 @@
  <g fill="#eff9f4" opacity=".5" filter="url(#soft)"><ellipse cx="731" cy="135" rx="13" ry="22"/><ellipse cx="746" cy="94" rx="24" ry="27"/><ellipse cx="734" cy="50" rx="30" ry="25"/></g>
  <g transform="translate(945 379)"><rect width="165" height="226" rx="15" fill="#162b25" fill-opacity=".92" stroke="#7eaa86"/><text x="17" y="30" fill="#c7dec5" font-family="Arial,sans-serif" font-size="12" letter-spacing="1.2">YOUR PIECE</text><g fill="#d8efd7" font-family="Arial,sans-serif" font-size="13"><text x="17" y="64">BASE</text><text x="17" y="106">CHAMBER</text><text x="17" y="148">MOUTHPIECE</text><text x="17" y="190">BOWL</text></g><g stroke="#cee8cc" stroke-width="2"><circle cx="138" cy="59" r="10" fill="#5ea7d0"/><circle cx="138" cy="101" r="10" fill="#c2dabc"/><circle cx="138" cy="143" r="10" fill="#9b80a5"/><circle cx="138" cy="185" r="10" fill="#b7dae1"/></g></g>
  <rect x="48" y="653" width="276" height="79" rx="12" fill="#16382c" fill-opacity=".9"/>
- <text x="69" y="686" fill="#eff7e8" font-family="Arial,sans-serif" font-size="21" letter-spacing="4">FORM / STUDIO</text><text x="70" y="713" fill="#bdd5b4" font-family="Arial,sans-serif" font-size="13">Pick a part. Make it yours.</text>
+ <text x="69" y="686" fill="#eff7e8" font-family="Arial,sans-serif" font-size="21" letter-spacing="4">HEAD SHOP / STUDIO</text><text x="70" y="713" fill="#bdd5b4" font-family="Arial,sans-serif" font-size="13">Pick a part. Make it yours.</text>
 </svg>

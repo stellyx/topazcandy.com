@@ -15,7 +15,7 @@ export const WEBSITE_PACKAGE = Object.freeze({
     carpet: { name: 'Softstep', industry: 'Carpet cleaning', url: '/showcase/lab/carpet/', paypalOption: 'Softstep - Carpet cleaning' },
     wonderbranch: { name: 'Wonderbranch', industry: 'Creative learning and story worlds', url: '/showcase/lab/wonderbranch/', paypalOption: 'Wonderbranch - Creative learning' },
     signal: { name: 'Signal', industry: 'Creative studios and portfolios', url: '/showcase/lab/signal/', paypalOption: 'Signal - Creative studio' },
-    form: { name: 'FORM', industry: 'Modular glass retailers', url: '/showcase/lab/form/', paypalOption: 'FORM - Glass configurator website' }
+    form: { name: 'Head Shop', industry: 'Head shop storefront and custom glass', url: '/showcase/lab/form/', paypalOption: 'Head Shop - Storefront website' }
   })
 });
 
@@ -23,6 +23,7 @@ export function templateKey(value) {
   return Object.hasOwn(WEBSITE_PACKAGE.templates, value) ? value : 'carpet';
 }
 export function templateFromPayPalOption(value) {
+  if(value==='FORM - Glass configurator website')return 'form';
   return Object.keys(WEBSITE_PACKAGE.templates).find(key => WEBSITE_PACKAGE.templates[key].paypalOption === value) || 'carpet';
 }
 export function cleanDetail(value, limit = 200) {
