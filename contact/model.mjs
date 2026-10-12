@@ -2,6 +2,7 @@ import { WEBSITE_PACKAGE, cleanDetail } from '../checkout/config.mjs?v=4';
 import { validateContact } from '../checkout/intake.mjs?v=2';
 
 export const SERVICES = Object.freeze({
+  'ai-work-session':'$99 AI work session · 60 minutes', 'small-website-repair':'One website repair · $99–$199', 'lead-response-setup':'Lead-response setup · request a quote',
   'ai-class':'30-day AI class',
   'web-presence':'Website evaluation and repair', website:'Website design and setup', seo:'SEO and search presence',
   automation:'AI and workflow automation', chat:'Website chat', 'email-automation':'Email automation', telephony:'Business telephony and AI voice',
