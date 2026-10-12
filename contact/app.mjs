@@ -1,6 +1,6 @@
-import { enquiryContext, SERVICES, prepareEnquiry } from './model.mjs?v=4';
-import { cleanDetail } from '../checkout/config.mjs?v=5';
-import { WEBSITE_PACKAGE } from '../checkout/config.mjs?v=5';
+import { enquiryContext, SERVICES, prepareEnquiry } from './model.mjs?v=5';
+import { cleanDetail } from '../checkout/config.mjs?v=7';
+import { WEBSITE_PACKAGE } from '../checkout/config.mjs?v=7';
 import { bindMessageForm } from '../assets/topaz/form.mjs?v=1';
 
 const params = new URLSearchParams(location.search);
@@ -35,7 +35,13 @@ const defaultCopy = {
 };
 function showServiceContext() {
   const service = form.elements.service.value;
-  const copy = offerCopy[service] || defaultCopy;
+  const siteRequest=service==='web-presence'&&params.get('intent')==='show-site';
+  const copy=siteRequest?{
+    title:'Let’s take a look at your site.',
+    intro:'Share the page you want us to check and what you want customers to do there. We’ll discuss the issue and the useful next step with you.',
+    label:'What would you like us to check?',
+    placeholder:'Tell us which page, button or customer step needs attention.'
+  }:offerCopy[service]||defaultCopy;
   document.getElementById('contact-interest').textContent = context.template ? `Your enquiry · ${WEBSITE_PACKAGE.templates[context.template].paypalOption} · ${SERVICES[service]}` : SERVICES[service];
   document.getElementById('contact-title').textContent = copy.title;
   document.getElementById('contact-intro').textContent = copy.intro;

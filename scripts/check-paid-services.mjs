@@ -12,7 +12,7 @@ const raw = {contact:'Example Contact', email:'example@example.com', notes:'Help
 for (const service of offers) {
   const context = enquiryContext(new URLSearchParams({service, amount:'1', recipient:'elsewhere'}));
   assert.deepEqual(context, {service, template:''});
-  assert.ok(page.includes(`href="/contact/?service=${service}#contact-form"`));
+  assert.ok(page.includes(`href="https://topazcandy.com/contact/?service=${service}#contact-form"`));
   assert.ok(contact.includes(`<option value="${service}">`));
   const {errors,payload} = prepareEnquiry({...raw,service}, 'TC-TEST-OFFER', context);
   assert.deepEqual(errors,{});
@@ -53,7 +53,7 @@ for (const service of offers) {
 assert.match(page,/\$99/);assert.match(page,/60 minutes/);assert.match(page,/\$99–\$199 USD/);
 assert.match(page,/Software costs|software costs/);
 assert.match(page,/Custom integrations/);
-assert.ok(!/target=|mailto:|paypal|<form|<video|localStorage|sessionStorage/.test(page));
+assert.ok(!/target="(?!_self")|mailto:|paypal|<form|<video|localStorage|sessionStorage/.test(page));
 assert.match(readFileSync('index.html','utf8'),/id="ai-work-session"/);
 assert.match(readFileSync('services/index.html','utf8'),/href="\/services\/ai-work-session\/"/);
 assert.match(readFileSync('sitemap.xml','utf8'),/https:\/\/topazcandy.com\/services\/ai-work-session\//);

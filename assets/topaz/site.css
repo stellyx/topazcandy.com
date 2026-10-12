@@ -9,3 +9,8 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
 @media(max-width:760px){.nav{flex-wrap:wrap;gap:8px 16px;justify-content:flex-start}.nav a{min-height:44px;display:inline-flex;align-items:center}.nav-contact{margin-left:auto}}
+
+/* Keep email beneath the main enquiry action without expanding it on phones. */
+.contact-options .button.contact-email-button{width:auto;min-height:44px;padding:9px 13px;font-size:11px;gap:9px;background:transparent;color:var(--plum);border:1px solid var(--line);justify-content:center;align-self:flex-start}
+.contact-options .button.contact-email-button:hover{background:#f1e7d9;border-color:var(--plum)}
+.contact-email-button svg{flex-shrink:0}

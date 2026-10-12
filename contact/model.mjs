@@ -1,4 +1,4 @@
-import { WEBSITE_PACKAGE, cleanDetail } from '../checkout/config.mjs?v=5';
+import { WEBSITE_PACKAGE, cleanDetail } from '../checkout/config.mjs?v=7';
 import { validateContact } from '../checkout/intake.mjs?v=3';
 
 export const SERVICES = Object.freeze({

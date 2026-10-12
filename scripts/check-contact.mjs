@@ -4,6 +4,8 @@ import vm from 'node:vm';
 import { enquiryContext, prepareEnquiry, SERVICES } from '../contact/model.mjs';
 import { prepareFeedback } from '../assets/topaz/feedback.mjs';
 import { INTAKE_URL, intakeAccepted } from '../checkout/intake.mjs';
+import { WEBSITE_PACKAGE, cleanDetail } from '../checkout/config.mjs';
+import { messageLink } from '../showcase/clients/mj-holistic-studio/assets/finder.mjs';
 
 const context = enquiryContext(new URLSearchParams('service=seo&template=hair&recipient=elsewhere&amount=1'));
 assert.deepEqual(context,{service:'seo',template:'hair'});
@@ -75,10 +77,47 @@ for (const path of files('.').filter(p=>p.endsWith('.html'))) {
   assert.ok(!html.includes('Want to spend more money?'),path);
   for(const link of html.matchAll(/<a\b[^>]*href="[^"]*\/contact\/[^>]*>/g))assert.ok(!/target="_blank"/.test(link[0]),path);
 }
-const home=readFileSync('index.html','utf8');assert.match(home,/Show us your site/);assert.match(home,/href="\/contact\/\?service=web-presence#contact-form"/);
+const home=readFileSync('index.html','utf8');
+const siteLinks=[...home.matchAll(/<a\b[^>]*>Show us your site[\s\S]*?<\/a>/g)].map(match=>match[0]);
+assert.equal(siteLinks.length,2);
+for(const link of siteLinks){
+  assert.match(link,/href="https:\/\/topazcandy\.com\/contact\/\?service=web-presence&amp;intent=show-site#contact-form"/);
+  assert.match(link,/target="_self"/);
+}
+assert.match(home,/class="button contact-email-button"[^>]*>[\s\S]*?Email Topaz Candy<\/a>/);
+assert.ok(!home.includes('class="email-link"'));
+for(const path of files('.').filter(path=>path.endsWith('.html')&&!path.startsWith('./templates/'))){
+  for(const match of readFileSync(path,'utf8').matchAll(/<a\b[^>]*href="[^"]*\/contact\/[^>]*>/g)){
+    assert.match(match[0],/href="https:\/\/topazcandy\.com\/contact\//,path);
+    assert.match(match[0],/target="_self"/,path);
+  }
+}
+assert.equal(messageLink({mode:'template'},'cut','new'),'https://topazcandy.com/contact/?service=website&template=hair#contact-form');
+assert.ok(messageLink({mode:'mj',phone:'+15127169236'},'cut','new').startsWith('sms:+15127169236'));
 assert.ok(home.indexOf('id="everything-we-do"')<home.indexOf('id="work"'));
 assert.match(home,/class="button light" href="\/services\/">Everything we do/);
 const contact=readFileSync('contact/index.html','utf8');assert.match(contact,/inputmode="url"/);assert.match(contact,/inputmode="email"/);assert.match(contact,/inputmode="tel"/);
 assert.equal((contact.match(/<form\b/g)||[]).length,1);
 assert.ok(!/localStorage|sessionStorage|window\.open|location\.(?:href|assign)\s*=|innerHTML/.test(readFileSync('contact/app.mjs','utf8')));
-console.log(JSON.stringify({passed:true,pages,checks:'all information routes stay on the website, short enquiry, automatic feedback, input validation, fixed recipient, delivery failures, duplicate blocking and retry preservation'}));
+// Run the real contact-page initialization for a site-review arrival and a
+// template enquiry. Both bind the existing sender without opening an app.
+function enquiryFixture(search){
+  const controls={service:{value:'',addEventListener(){}},notes:{placeholder:'Tell us about your project.',value:''}};
+  const form={elements:controls};
+  const nodes={'contact-form':form,'contact-title':{textContent:'Let’s talk about your project.'},'contact-intro':{textContent:'Send us a message.'},'contact-notes-label':{textContent:'What would you like help with?'},'contact-interest':{textContent:''}};
+  let bound;
+  vm.runInNewContext(readFileSync('contact/app.mjs','utf8').replace(/^import .*;\n/gm,''),{
+    enquiryContext,SERVICES,prepareEnquiry,cleanDetail,WEBSITE_PACKAGE,URLSearchParams,
+    location:{search,hash:'#contact-form'},document:{getElementById:id=>nodes[id]},history:{replaceState(){}},
+    bindMessageForm:(form,options)=>{bound=options;}
+  });
+  return {controls,nodes,bound};
+}
+const site=enquiryFixture('?service=web-presence&intent=show-site');
+assert.equal(site.nodes['contact-title'].textContent,'Let’s take a look at your site.');
+assert.equal(site.controls.service.value,'web-presence');
+assert.equal(site.bound.prepare({...base,service:'web-presence'},'TC-SITE-TEST').payload['Current website'],'https://example.com/services');
+const shop=enquiryFixture('?service=website&template=form');
+assert.ok(shop.nodes['contact-interest'].textContent.includes('Head Shop'));
+assert.ok(shop.bound.prepare({...base,service:'website'},'TC-SHOP-TEST').payload['Website template'].includes('Head Shop'));
+console.log(JSON.stringify({passed:true,pages,checks:'canonical same-tab enquiry routes, small secondary email button, direct site-review form, template/legacy inquiry paths, automatic feedback, validated input, fixed recipient, failures and duplicate/retry protection'}));
