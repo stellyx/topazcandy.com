@@ -61,7 +61,7 @@ for(const [profile,folder] of [[mj,'dist'],[template,'dist/template']]){
  const links='<div class="menu-footer" aria-label="Detailed service guides"><a class="text-link" href="haircuts/">Haircuts & finishing ↗</a><a class="text-link" href="color/">Color & balayage ↗</a><a class="text-link" href="scalp-care/">Scalp & hair care ↗</a><a class="text-link" href="extensions/">Extensions & consultations ↗</a></div>';
  html=html.replace('<span class="sr-only" id="menu-live"',links+'<span class="sr-only" id="menu-live"');
  if(profile.mode==='template'){
-  html=html.replace('</head>','<link rel="stylesheet" href="https://topazcandy.com/assets/topaz/purchase.css?v=1"></head>').replace('<body data-profile="template">','<body data-profile="template" data-topaz-template="hair">');
+  html=html.replace('</head>','<link rel="stylesheet" href="https://topazcandy.com/assets/topaz/purchase.css?v=1"><script src="https://topazcandy.com/assets/topaz/seasonal.js?v=1" defer></script></head>').replace('<body data-profile="template">','<body data-profile="template" data-topaz-template="hair">');
   html=html.replace('<footer class="footer">',templatePurchase+'<footer class="footer">');
  }
  await writeFile(path.join(root,folder,'index.html'),html);
@@ -69,7 +69,7 @@ for(const [profile,folder] of [[mj,'dist'],[template,'dist/template']]){
   await mkdir(path.join(root,folder,slug),{recursive:true});
   let guide=servicePage(profile,group);
   if(profile.mode==='template'){
-   guide=guide.replace('</head>','<link rel="stylesheet" href="https://topazcandy.com/assets/topaz/purchase.css?v=1"></head>').replace('<body data-profile="template">','<body data-profile="template" data-topaz-template="hair">');
+   guide=guide.replace('</head>','<link rel="stylesheet" href="https://topazcandy.com/assets/topaz/purchase.css?v=1"><script src="https://topazcandy.com/assets/topaz/seasonal.js?v=1" defer></script></head>').replace('<body data-profile="template">','<body data-profile="template" data-topaz-template="hair">');
    guide=guide.replace('<footer class="footer">',templatePurchase+'<footer class="footer">');
   }
   await writeFile(path.join(root,folder,slug,'index.html'),guide);

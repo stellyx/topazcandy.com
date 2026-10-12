@@ -1,6 +1,6 @@
 import { enquiryContext, SERVICES, prepareEnquiry } from './model.mjs?v=3';
-import { cleanDetail } from '../checkout/config.mjs?v=4';
-import { WEBSITE_PACKAGE } from '../checkout/config.mjs?v=4';
+import { cleanDetail } from '../checkout/config.mjs?v=5';
+import { WEBSITE_PACKAGE } from '../checkout/config.mjs?v=5';
 import { bindMessageForm } from '../assets/topaz/form.mjs?v=1';
 
 const params = new URLSearchParams(location.search);

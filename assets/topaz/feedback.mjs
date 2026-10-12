@@ -1,4 +1,4 @@
-import { cleanDetail } from '../../checkout/config.mjs?v=4';
+import { cleanDetail } from '../../checkout/config.mjs?v=5';
 import { validateContact } from '../../checkout/intake.mjs?v=2';
 import { bindMessageForm } from './form.mjs?v=1';
 

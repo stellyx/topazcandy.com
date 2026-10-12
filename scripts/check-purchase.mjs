@@ -186,4 +186,4 @@ for (const preferences of [{ reduced: true }, { saveData: true }]) {
 const blocked = await motionFixture({ blocked: true }); blocked.observe([{ isIntersecting: true }]); await blocked.settle();
 assert.equal(blocked.button.dataset.playing, 'false');
 assert.ok(blocked.videos.every(v => !v.dataset.loaded));
-console.log(JSON.stringify({ passed: true, checks: 'six fixed-price cart routes, one automatic intake, validated contacts and addresses, email-before-payment handoff, failure preservation, duplicate protection, compact three-step checkout, correct keyboard hints, five films and motion fallbacks' }));
+console.log(JSON.stringify({ passed: true, checks: 'eight fixed-price cart routes, one automatic intake, validated contacts and addresses, email-before-payment handoff, failure preservation, duplicate protection, compact three-step checkout, correct keyboard hints, five films and motion fallbacks' }));

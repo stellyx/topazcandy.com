@@ -12,7 +12,9 @@ export const WEBSITE_PACKAGE = Object.freeze({
     roof: { name: 'Upperhand', industry: 'Roofing', url: '/showcase/lab/roof/', paypalOption: 'Upperhand - Roofing' },
     hvac: { name: 'Temper', industry: 'Heating and cooling', url: '/showcase/lab/hvac/', paypalOption: 'Temper - Heating and cooling' },
     hair: { name: 'Crown & Calm', industry: 'Hair styling', url: '/showcase/lab/hair/', paypalOption: 'Crown and Calm - Hair styling' },
-    carpet: { name: 'Softstep', industry: 'Carpet cleaning', url: '/showcase/lab/carpet/', paypalOption: 'Softstep - Carpet cleaning' }
+    carpet: { name: 'Softstep', industry: 'Carpet cleaning', url: '/showcase/lab/carpet/', paypalOption: 'Softstep - Carpet cleaning' },
+    wonderbranch: { name: 'Wonderbranch', industry: 'Creative learning and story worlds', url: '/showcase/lab/wonderbranch/', paypalOption: 'Wonderbranch - Creative learning' },
+    signal: { name: 'Signal', industry: 'Creative studios and portfolios', url: '/showcase/lab/signal/', paypalOption: 'Signal - Creative studio' }
   })
 });
 
