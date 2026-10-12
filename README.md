@@ -6,3 +6,5 @@ Run `node scripts/check-contact.mjs` and `node scripts/check-purchase.mjs` from 
 
 
 The bilingual beginner course extension is in `30-day-ai/`, with a Spanish route at `/30-day-ai/es/`. See `30-day-ai/README.md` for enrollment, content updates and publication checks.
+
+FORM is listed in the homepage work gallery and the 12-direction demo library. Its template page is `showcase/lab/form/`; the completed live configurator is served by Sites at `https://form-modular-glass.stellyx.chatgpt.site/`. FORM uses the existing website enquiry form with a prefilled, editable project note. The retailer’s product data, stock, ordering and fulfillment requirements are scoped separately; the existing eight-design $450 checkout is unchanged. The preview is an original SVG illustration, not a browser screenshot.
