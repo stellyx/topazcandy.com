@@ -29,9 +29,16 @@ const history=fixture({type:'back_forward'});await history.settle();assert.equal
 const home=readFileSync('index.html','utf8');assert.match(home,/href="\/services\/ai-work-session\/#session-includes">See what’s included/);
 const offer=readFileSync('services/ai-work-session/index.html','utf8');assert.match(offer,/<aside[^>]+id="session-includes" data-center-anchor tabindex="-1"/);assert.match(offer,/anchors\.mjs/);
 const brand=readFileSync('assets/topaz/brand.css','utf8');assert.match(brand,/topaz-brand-shimmer 17s/);assert.match(brand,/prefers-reduced-motion/);
+assert.match(brand,/background-clip:text/,'Wordmark shimmer is clipped to actual glyphs');
+assert.ok(!brand.includes('.topaz-brand::after'),'No lockup-wide rectangle overlay');
+assert.match(brand,/@supports/,'Unsupported clipping keeps ordinary text readable');
 const motion=readFileSync('assets/topaz/motion.css','utf8');
 assert.ok(!/animation:service-(orbit|counter)/.test(motion),'Navigation labels do not move');
 assert.match(motion,/topaz-prism-drift/);assert.match(motion,/data-motion-paused/);
 for (const page of ['30-day-ai/index.html','30-day-ai/es/index.html']) assert.match(readFileSync(page,'utf8'),/class="stage-gem-core"/);
 const svg=readFileSync('assets/topaz/logo-mark.svg','utf8');assert.match(svg,/prefers-reduced-motion/);assert.match(svg,/mark-tumble/);
+assert.match(svg,/<clipPath id="gem-silhouette"><path d="m47 14 23 15 2 28-24 22-24-17-4-29Z"\/>/);
+assert.match(svg,/<g clip-path="url\(#gem-silhouette\)" stroke="none"><rect class="mark-glint"/,'Gem shimmer is clipped inside its silhouette');
+assert.match(svg,/\.mark-glint\{opacity:0!important\}/,'Reduced motion hides the glint');
+assert.equal(readFileSync('showcase/lab/carpet/assets/topaz-mark.svg','utf8'),svg);
 console.log(JSON.stringify({passed:true,checks:'centered deep link, short viewport/sticky inset, repeated clicks, Back restoration, reduced-motion instant scrolling, fixed navigation labels, shared prism motion and bilingual generated markup'}));
