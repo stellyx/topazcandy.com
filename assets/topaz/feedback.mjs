@@ -1,5 +1,5 @@
 import { cleanDetail } from '../../checkout/config.mjs?v=5';
-import { validateContact } from '../../checkout/intake.mjs?v=2';
+import { validateContact } from '../../checkout/intake.mjs?v=3';
 import { bindMessageForm } from './form.mjs?v=1';
 
 export function prepareFeedback(raw, reference) {

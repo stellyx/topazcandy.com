@@ -1,5 +1,5 @@
 import { WEBSITE_PACKAGE, cleanDetail } from '../checkout/config.mjs?v=5';
-import { validateContact } from '../checkout/intake.mjs?v=2';
+import { validateContact } from '../checkout/intake.mjs?v=3';
 
 export const SERVICES = Object.freeze({
   'ai-work-session':'$99 AI work session · 60 minutes', 'small-website-repair':'One website repair · $99–$199', 'lead-response-setup':'Lead-response setup · request a quote',

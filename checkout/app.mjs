@@ -1,5 +1,5 @@
 import { WEBSITE_PACKAGE, templateKey, templateFromPayPalOption, paypalDetails } from './config.mjs?v=5';
-import { INTAKE_URL, addressRules, postalInputMode, addressText, validateIntake, intakePayload, intakeAccepted } from './intake.mjs?v=2';
+import { INTAKE_URL, addressRules, postalInputMode, addressText, validateIntake, intakePayload, intakeAccepted } from './intake.mjs?v=3';
 const choice = document.getElementById('template-choice');
 const form = document.getElementById('website-details');
 const preview = document.getElementById('design-preview');

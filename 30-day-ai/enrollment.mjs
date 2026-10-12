@@ -1,4 +1,4 @@
-import { validateContact } from '../checkout/intake.mjs?v=2';
+import { validateContact } from '../checkout/intake.mjs?v=3';
 import { COURSE, COPY } from './content.mjs?v=1';
 
 export function prepareEnrollment(raw, reference, uiLanguage='en') {

@@ -1,4 +1,4 @@
-import { INTAKE_URL, intakeAccepted } from '../../checkout/intake.mjs?v=2';
+import { INTAKE_URL, intakeAccepted } from '../../checkout/intake.mjs?v=3';
 
 export async function sendMessage(payload) {
   const response = await fetch(INTAKE_URL, {

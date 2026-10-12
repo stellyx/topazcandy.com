@@ -13,7 +13,7 @@
     const active = isActive();
     document.documentElement.classList.toggle('tc-halloween', active);
     if (!active) { document.getElementById('tc-season-decor')?.remove(); document.querySelectorAll('.tc-season-mark,.tc-season-note').forEach(node => node.remove()); document.getElementById('tc-season-style')?.remove(); return; }
-    if (!document.getElementById('tc-season-style')) { const link = document.createElement('link'); link.id = 'tc-season-style'; link.rel = 'stylesheet'; link.href = '/assets/topaz/seasonal.css?v=1'; document.head.appendChild(link); }
+    if (!document.getElementById('tc-season-style')) { const link = document.createElement('link'); link.id = 'tc-season-style'; link.rel = 'stylesheet'; link.href = 'https://topazcandy.com/assets/topaz/seasonal.css?v=1'; document.head.appendChild(link); }
     if (!document.getElementById('tc-season-decor')) {
       const decor = document.createElement('div'); decor.id = 'tc-season-decor'; decor.setAttribute('aria-hidden','true');
       decor.innerHTML = '<svg class="tc-season-bats" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60" aria-hidden="true"><path d="M5 27q14-22 27-7l5-5 4 5q13-15 28 7-13-2-15 9-7-9-15-1-8-8-15 1Q20 25 5 27Z" fill="currentColor"/><path d="M65 9q11-12 20-3l3-3 3 4q9-9 22 4-9-1-12 7-5-7-12-2-6-5-11 0-2-8-13-7Z" fill="currentColor"/></svg><span class="tc-season-pumpkin">' + pumpkin + '</span>';
