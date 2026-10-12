@@ -1,0 +1,2 @@
+three 0.180.0
+qrcode-generator 2.0.4

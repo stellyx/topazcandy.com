@@ -82,7 +82,7 @@ assert.ok(!/localStorage|sessionStorage|innerHTML|paid=true|payment=success|mail
 
 // Run the actual submit handler against a controlled email service and PayPal
 // form. Network rejection must preserve the details and block payment.
-async function checkoutFixture({result={success:'true'},reject=false,atReview=true}={}) {
+async function checkoutFixture({result={success:'true'},reject=false,atReview=true,template='roof'}={}) {
   const events={}, choiceEvents={}, fields={...base}; let sends=0, submissions=0, sentPayload;
   const control=()=>({value:'',disabled:false,required:false,hidden:false,attrs:{},events:{},dataset:{},addEventListener(n,f){this.events[n]=f;},setCustomValidity(v){this.validity=v;},setAttribute(k,v){this.attrs[k]=v;},removeAttribute(k){delete this.attrs[k];},focus(){},reportValidity(){return !this.validity;},closest(){return null;}});
   const steps=Array.from({length:3},(_,i)=>Object.assign(control(),{dataset:{checkoutStep:String(i)},querySelector(){return control();}}));
@@ -104,13 +104,23 @@ async function checkoutFixture({result={success:'true'},reject=false,atReview=tr
   for(const prefix of ['business','billing'])for(const part of ['region','postal'])nodes[`${prefix}-${part}-optional`]=control();
   vm.runInNewContext(app.replace(/^import .*;\n/gm,''),{
     WEBSITE_PACKAGE,templateKey,templateFromPayPalOption,paypalDetails,INTAKE_URL,addressRules,addressText,postalInputMode,validateIntake,intakePayload,intakeAccepted,
-    document:{getElementById(id){return nodes[id];},querySelectorAll(){return steps;}},location:{search:'?template=roof&amount=1',href:'https://topazcandy.com/checkout/?template=roof&amount=1'},history:{replaceState(){}},
+    document:{getElementById(id){return nodes[id];},querySelectorAll(){return steps;}},location:{search:`?template=${template}&amount=1`,href:`https://topazcandy.com/checkout/?template=${template}&amount=1`},history:{replaceState(){}},
     FormData:class{*[Symbol.iterator](){yield* Object.entries(fields);}},URL,URLSearchParams,AbortSignal,Date,crypto:{randomUUID(){return '12345678-1234-1234-1234-123456789012';}},
     fetch:async(url,options)=>{sends++;assert.equal(url,INTAKE_URL);assert.equal(options.credentials,'omit');assert.equal(options.headers['Content-Type'],undefined);sentPayload=Object.fromEntries(options.body);if(reject)throw Error('Network unavailable');return{ok:true,json:async()=>result};}
   });
   if(atReview){next.events.click();next.events.click();}
   return{events,choice,fields,controls,payment,status,button,next,back,steps,nodes,get sends(){return sends;},get submissions(){return submissions;},get sentPayload(){return sentPayload;}};
 }
+// The FORM purchase must retain its website design through the shared cart.
+const formWebsite=await checkoutFixture({template:'form'});
+assert.equal(formWebsite.choice.value,WEBSITE_PACKAGE.templates.form.paypalOption);
+assert.equal(formWebsite.nodes['design-preview'].href,'/showcase/lab/form/');
+assert.ok(formWebsite.nodes['checkout-review-design'].textContent.includes('FORM'));
+await formWebsite.events.submit({preventDefault(){}});
+assert.equal(formWebsite.sentPayload['Website design'],WEBSITE_PACKAGE.templates.form.paypalOption);
+assert.equal(formWebsite.payment.elements.os0.value,WEBSITE_PACKAGE.templates.form.paypalOption);
+assert.equal(formWebsite.payment.elements.hosted_button_id.value,WEBSITE_PACKAGE.paypalButtonId);
+assert.equal(formWebsite.sends,1);assert.equal(formWebsite.submissions,1);
 const staged=await checkoutFixture({atReview:false});
 assert.equal(staged.steps[0].hidden,false);assert.equal(staged.button.hidden,true);
 staged.fields.business_line1='';
@@ -186,4 +196,4 @@ for (const preferences of [{ reduced: true }, { saveData: true }]) {
 const blocked = await motionFixture({ blocked: true }); blocked.observe([{ isIntersecting: true }]); await blocked.settle();
 assert.equal(blocked.button.dataset.playing, 'false');
 assert.ok(blocked.videos.every(v => !v.dataset.loaded));
-console.log(JSON.stringify({ passed: true, checks: 'eight fixed-price cart routes, one automatic intake, validated contacts and addresses, email-before-payment handoff, failure preservation, duplicate protection, compact three-step checkout, correct keyboard hints, five films and motion fallbacks' }));
+console.log(JSON.stringify({ passed: true, checks: 'nine fixed-price cart routes, one automatic intake, validated contacts and addresses, email-before-payment handoff, failure preservation, duplicate protection, compact three-step checkout, correct keyboard hints, five films and motion fallbacks' }));

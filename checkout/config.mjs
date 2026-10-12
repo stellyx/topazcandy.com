@@ -14,7 +14,8 @@ export const WEBSITE_PACKAGE = Object.freeze({
     hair: { name: 'Crown & Calm', industry: 'Hair styling', url: '/showcase/lab/hair/', paypalOption: 'Crown and Calm - Hair styling' },
     carpet: { name: 'Softstep', industry: 'Carpet cleaning', url: '/showcase/lab/carpet/', paypalOption: 'Softstep - Carpet cleaning' },
     wonderbranch: { name: 'Wonderbranch', industry: 'Creative learning and story worlds', url: '/showcase/lab/wonderbranch/', paypalOption: 'Wonderbranch - Creative learning' },
-    signal: { name: 'Signal', industry: 'Creative studios and portfolios', url: '/showcase/lab/signal/', paypalOption: 'Signal - Creative studio' }
+    signal: { name: 'Signal', industry: 'Creative studios and portfolios', url: '/showcase/lab/signal/', paypalOption: 'Signal - Creative studio' },
+    form: { name: 'FORM', industry: 'Modular glass retailers', url: '/showcase/lab/form/', paypalOption: 'FORM - Glass configurator website' }
   })
 });
 
