@@ -2,6 +2,7 @@ import { WEBSITE_PACKAGE, cleanDetail } from '../checkout/config.mjs?v=4';
 import { validateContact } from '../checkout/intake.mjs?v=2';
 
 export const SERVICES = Object.freeze({
+  'ai-class':'30-day AI class',
   'web-presence':'Website evaluation and repair', website:'Website design and setup', seo:'SEO and search presence',
   automation:'AI and workflow automation', chat:'Website chat', 'email-automation':'Email automation', telephony:'Business telephony and AI voice',
   'customer-service':'Customer service systems', apps:'Custom apps and operations', youtube:'YouTube management', 'social-media':'Social media',
@@ -28,3 +29,4 @@ export function prepareEnquiry(raw, reference, context) {
     _subject:`Topaz Candy enquiry ${reference} · ${SERVICES[service]}`, _url:'https://topazcandy.com/contact/', _template:'table'
   }};
 }
+
