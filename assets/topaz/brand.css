@@ -16,3 +16,24 @@
 
 /* The class remains a quiet secondary destination. */
 .nav a.course-nav-link{font-size:11px;color:var(--muted,#665c63);font-weight:650;white-space:nowrap}.footer-links a.course-nav-link{font-size:11px}
+
+/* Shared prism motion: deliberate paths, independent timing, no moving text. */
+@keyframes topaz-gem-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes topaz-prism-drift{
+  0%,100%{transform:translate3d(0,0,0) rotateX(8deg) rotateY(-22deg) rotateZ(-4deg)}
+  23%{transform:translate3d(-5px,-8px,0) rotateX(-15deg) rotateY(25deg) rotateZ(11deg)}
+  48%{transform:translate3d(5px,-3px,0) rotateX(19deg) rotateY(34deg) rotateZ(-8deg)}
+  74%{transform:translate3d(-3px,6px,0) rotateX(11deg) rotateY(-31deg) rotateZ(16deg)}
+}
+@keyframes topaz-star-drift{
+  0%{transform:translate(0,0) rotate(0deg) scale(1)}
+  22%{transform:translate(3px,-4px) rotate(-85deg) scale(.92)}
+  49%{transform:translate(-3px,-2px) rotate(-175deg) scale(1.07)}
+  76%{transform:translate(-2px,4px) rotate(-280deg) scale(.97)}
+  100%{transform:translate(0,0) rotate(-360deg) scale(1)}
+}
+@keyframes topaz-ring-orbit{from{transform:rotate(-18deg) scaleX(.9)}to{transform:rotate(-378deg) scaleX(.9)}}
+.topaz-brand{position:relative;isolation:isolate;overflow:hidden}
+.topaz-brand::after{content:'';position:absolute;inset:-18% -35%;pointer-events:none;z-index:2;background:linear-gradient(108deg,transparent 38%,#f5cb7350 44%,#fff9e9dd 50%,#f5cb7370 56%,transparent 62%);mix-blend-mode:screen;opacity:0;transform:translateX(-95%);animation:topaz-brand-shimmer 17s ease-in-out infinite}
+@keyframes topaz-brand-shimmer{0%,72%{opacity:0;transform:translateX(-95%)}76%{opacity:.94}87%{opacity:.94}91%,100%{opacity:0;transform:translateX(95%)}}
+@media(prefers-reduced-motion:reduce){.topaz-brand::after{animation:none!important;opacity:0!important}.brand-emblem{animation:none!important}}
