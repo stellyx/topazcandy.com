@@ -2,3 +2,50 @@
 .concept-sales{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:15px 0;font-size:11px;color:#d9c8d8}.concept-sales>a:first-child{padding:12px 0;min-height:44px}.concept-buy{display:inline-flex;align-items:center;justify-content:space-between;gap:22px;padding:12px 17px;min-height:44px;background:#efc37d;color:#38233f;border:1px solid #efc37d;border-radius:4px;font-size:11px;font-weight:700;text-decoration:none}.concept-buy:hover{background:#ffe0a7}.concept-buy span{font-size:13px;white-space:nowrap}.work-card--wonderbranch .work-word{color:#2b432e;text-shadow:0 1px 12px #fff1ce}.work-card--signal .work-image{background:#101911}.work-card--signal .work-image img{object-fit:contain}.work-card--signal .work-word{color:#d5ff9a}.direction--wonderbranch{background:#f1e5c9;color:#2b432e}.direction--wonderbranch .direction__text{border-top:6px solid #bc8c3d}.direction--wonderbranch .direction__text h2{font:400 clamp(49px,6.1vw,96px)/1 Georgia,serif;letter-spacing:-.065em}.direction--wonderbranch .direction__photo{background:#f1e5c9}.direction--signal{background:#101911;color:#d9e9cb}.direction--signal .direction__text{border-top:6px solid #c9f078}.direction--signal .direction__text h2{font-family:Arial,sans-serif;letter-spacing:-.06em;color:#d7fb91}.direction--signal .direction__photo{background:#101911}.direction--signal .direction__photo img{object-fit:contain}.direction .concept-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.direction .concept-buy{background:#efc37d;color:#38233f;border-color:#efc37d}.concept-details{min-height:44px;display:flex;align-items:center}.concept-product{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center;padding-block:60px}.concept-product h1{font-size:clamp(46px,6.5vw,87px);line-height:1.08}.concept-product h1 em{display:block;font-size:.42em;letter-spacing:-.03em;color:var(--plum);margin-top:18px}.concept-product .lede{font-size:15px;max-width:500px}.concept-product .actions{flex-wrap:wrap}.concept-product .button{font-size:11px;gap:12px;padding:14px 17px}.concept-product-art{display:block;overflow:hidden;border-radius:3px;background:#eee5d2}.concept-product-art img{width:100%;height:100%;min-height:320px;object-fit:cover;display:block}.concept-features{padding-block:15px 70px}.concept-features h2{font-size:33px}.concept-features ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 35px;padding:0;margin:25px 0}.concept-features li{padding:18px 0;border-top:1px solid var(--line);font-size:13px}.concept-features li:before{content:'↗';color:var(--plum);margin-right:12px}.concept-features .micro{max-width:650px}.topaz-purchase[data-purchase-theme="signal"],.topaz-buy-dock[data-purchase-theme="signal"]{--tp-paper:#101911;--tp-ink:#e3eed9;--tp-muted:#aabd96;--tp-line:#567041;--tp-accent:#c9f078;--tp-button-ink:#16230e}.topaz-purchase[data-purchase-theme="wonderbranch"],.topaz-buy-dock[data-purchase-theme="wonderbranch"]{--tp-paper:#f1e5c9;--tp-ink:#2b432e;--tp-muted:#566143;--tp-line:#acb08b;--tp-accent:#344f36;--tp-button-ink:#fff8e8}
 @media(max-width:900px){.direction--wonderbranch .direction__text h2{font-size:clamp(44px,11vw,85px)}.direction--signal .direction__text h2{font-size:clamp(70px,16vw,118px)}.concept-product{grid-template-columns:1fr;padding-block:40px;gap:32px}.concept-product-art img{min-height:260px}.concept-features{padding-bottom:50px}.concept-features ul{grid-template-columns:1fr}}
 @media(max-width:480px){.concept-sales{gap:10px;font-size:10px}.concept-buy{padding:12px 14px;gap:13px;font-size:10px}.concept-product h1{font-size:52px}.concept-product h1 em{font-size:25px}.concept-product .actions{gap:10px}.direction .concept-actions{gap:10px}.direction .concept-actions a{font-size:10px;padding:13px 14px}}
+
+/* SHIRO, Dusk & Dice and Waypoint: public demos with a scoped project enquiry. */
+.work-card[data-concept="shiro"],.work-card[data-concept="dusk"],.work-card[data-concept="waypoint"]{min-width:0;max-width:100%}
+.concept-preview{position:relative;isolation:isolate;overflow:hidden;min-width:0;max-width:100%}
+.concept-preview img,.concept-preview svg{display:block;max-width:100%}
+.concept-preview--shiro{background:#fffdfb}
+.concept-brush{position:absolute;z-index:0;inset:17% 12% 21% 29%;border-radius:44% 56% 38% 52%;background:#bd2130;transform:rotate(-15deg);box-shadow:-27px 22px 0 -18px #bd2130,20px -25px 0 -19px #bd2130}
+.concept-brush:before,.concept-brush:after{content:"";position:absolute;background:#bd2130;border-radius:50%}
+.concept-brush:before{width:12px;height:12px;left:-35px;top:62%;box-shadow:10px 22px 0 -3px #bd2130,-15px -40px 0 -2px #bd2130}
+.concept-brush:after{width:8px;height:8px;right:-24px;top:12%;box-shadow:18px 20px 0 -2px #bd2130}
+.work-card--shiro .work-image .concept-samurai,.direction--shiro .direction__photo .concept-samurai{position:absolute;inset:0 0 0 auto;width:75%;height:100%;object-fit:contain;object-position:right bottom;z-index:1}
+.work-card--shiro .work-word{z-index:2;color:#252327;text-shadow:0 1px 16px #fff;left:6%;bottom:9%}
+.work-card--dusk .work-image{background:#261638}
+.work-card--dusk .work-word{color:#e6f7cc;text-shadow:0 2px 22px #1b1327}
+.work-card--dusk .work-word{z-index:1}
+.work-card--waypoint .work-image{background:#edf4ff}
+.work-card--waypoint .concept-classroom{width:100%;height:100%;object-fit:cover}
+.work-card--waypoint .work-word{font-size:clamp(28px,3.1vw,43px);color:#193a9f;text-shadow:0 1px 14px #fff;bottom:4%;left:5%;padding:4px 11px;background:#edf4ffed;border-radius:3px}
+.concept-sales--custom{align-items:center;flex-wrap:wrap;gap:10px 15px;color:var(--plum,#53354b)}
+.concept-sales--custom>span{flex:1 1 140px;line-height:1.6;min-width:0}
+.concept-configure{display:inline-flex;align-items:center;justify-content:space-between;gap:18px;min-height:44px;max-width:100%;padding:12px 15px;border:1px solid currentColor;border-radius:4px;font-size:11px;font-weight:700;text-decoration:none}
+.concept-configure:hover{background:#f1e5d2}
+.concept-configure:focus-visible{outline:3px solid #bd713a;outline-offset:4px}
+.direction--shiro{background:#fffdfb;color:#28252a}
+.direction--shiro .direction__text{border-top:6px solid #bd2130}
+.direction--shiro .direction__text h2{font-family:'Archivo Black',Arial,sans-serif;font-size:clamp(72px,8.8vw,138px);font-weight:400;letter-spacing:-.075em}
+.direction--shiro .direction__link{border-color:#bd2130;color:#a51828}
+.direction--shiro .direction__link:hover{background:#bd2130;color:#fff}
+.direction--shiro .direction__photo{background:#fffdfb}
+.direction--dusk{background:#251635;color:#eaf1df}
+.direction--dusk .direction__text{border-top:6px solid #b5d18b}
+.direction--dusk .direction__text h2{font-family:Georgia,serif;font-weight:400;color:#d8ecb9;font-size:clamp(64px,8.7vw,136px)}
+.direction--dusk .direction__link{border-color:#bdd895;color:#d8ecb9}
+.direction--dusk .direction__link:hover{background:#d8ecb9;color:#251635}
+.direction--dusk .direction__photo{background:#251635}
+.direction--waypoint{background:#edf4ff;color:#172c51}
+.direction--waypoint .direction__text{border-top:6px solid #254fc0}
+.direction--waypoint .direction__text h2{font-family:'DM Sans',Arial,sans-serif;font-weight:700;letter-spacing:-.075em;color:#193a9f;font-size:clamp(52px,6.8vw,103px)}
+.direction--waypoint .direction__link{border-color:#254fc0;color:#193a9f}
+.direction--waypoint .direction__link:hover{background:#254fc0;color:#fff}
+.direction--waypoint .direction__photo{background:#edf4ff;display:flex;align-items:center}
+.direction--waypoint .concept-classroom{width:100%;height:auto}
+.direction--shiro .direction__photo,.direction--dusk .direction__photo,.direction--waypoint .direction__photo{display:flex;min-width:0;max-width:100%}
+.direction--shiro .concept-actions a,.direction--dusk .concept-actions a,.direction--waypoint .concept-actions a{min-height:44px;max-width:100%;white-space:normal;line-height:1.5;gap:14px}
+.direction .concept-scope-note{font-size:12px;line-height:1.6;margin:17px 0 0;opacity:.82}
+@media(max-width:900px){.direction--shiro .direction__text h2{font-size:clamp(72px,20vw,120px)}.direction--dusk .direction__text h2{font-size:clamp(66px,16vw,112px)}.direction--waypoint .direction__text h2{font-size:clamp(48px,12vw,94px)}.direction--shiro .direction__photo,.direction--dusk .direction__photo,.direction--waypoint .direction__photo{min-height:370px}}
+@media(max-width:480px){.concept-sales--custom>span{flex-basis:100%}.concept-sales--custom .concept-configure{width:100%;font-size:11px;justify-content:space-between}.work-card--dusk .work-word{font-size:clamp(28px,8vw,42px)}.direction--waypoint .direction__photo{min-height:280px}.direction--shiro .direction__photo .concept-samurai{width:84%}.direction--shiro .concept-actions,.direction--dusk .concept-actions,.direction--waypoint .concept-actions{align-items:stretch}.direction--shiro .concept-actions a,.direction--dusk .concept-actions a,.direction--waypoint .concept-actions a{flex:1 1 100%;justify-content:space-between}}
