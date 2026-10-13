@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 540" preserveAspectRatio="none" aria-hidden="true">
+<defs>
+<linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#cab38e"/><stop offset=".32" stop-color="#b89c76"/><stop offset=".54" stop-color="#cbb18b"/><stop offset="1" stop-color="#a58662"/></linearGradient>
+<pattern id="grain" width="58" height="160" patternUnits="userSpaceOnUse"><path d="M5-20C17 30-3 94 12 180M23-20C10 47 40 108 26 180M44-20C63 55 34 105 49 180" fill="none" stroke="#7d603f" stroke-width=".8" opacity=".17"/><path d="M11-20C24 52 9 125 19 180M36-20C25 52 50 109 39 180" fill="none" stroke="#e7d4b2" stroke-width="1.1" opacity=".35"/></pattern>
+<path id="rim" fill-rule="evenodd" d="M1 539V260C1 117 117 1 260 1S519 117 519 260V539ZM15 525H505V260C505 125 395 15 260 15S15 125 15 260Z"/>
+</defs>
+<use href="#rim" fill="url(#wood)"/><use href="#rim" fill="url(#grain)"/>
+<path d="M1 539V260C1 117 117 1 260 1S519 117 519 260V539Z" fill="none" stroke="#9b805d" stroke-width="2"/>
+<path d="M5 535V260C5 119 119 5 260 5S515 119 515 260V535Z" fill="none" stroke="#dec5a1" stroke-width="1.8" opacity=".85"/>
+<path d="M12 528V260C12 123 123 12 260 12S508 123 508 260V528Z" fill="none" stroke="#957856" stroke-width="1.5"/>
+<path d="M15 525H505V260C505 125 395 15 260 15S15 125 15 260Z" fill="none" stroke="#76674e" stroke-width="1" opacity=".72"/>
+<path d="M2 538L15 525M518 538L505 525" stroke="#8d704d" stroke-width="1" opacity=".65"/>
+</svg>
