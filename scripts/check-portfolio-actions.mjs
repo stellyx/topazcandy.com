@@ -16,5 +16,5 @@ for(const card of cards){
 }
 assert.equal(buyCount,8);assert.equal(customCount,4);
 for(const key of ['garden','hvac','auto','roof','hair','wonderbranch','signal','form'])assert.match(home,new RegExp(`class="concept-buy" href="/checkout/\\?template=${key}"`));
-assert.match(home,/seasonal.js\?v=3/);assert.match(home,/motion.js\?v=3/);assert.match(home,/artwork-motion.js\?v=1/);
+assert.match(home,/seasonal.js\?v=3/);assert.match(home,/motion.js\?v=4/);assert.match(home,/artwork-motion.js\?v=2/);
 console.log('PASS: all 12 identities inside previews, 12 direct preview links, 8 existing $450 checkout products, 4 preserved customization routes; motion and pumpkin wiring preserved.');

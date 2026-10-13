@@ -5,7 +5,7 @@
   const states = [...document.querySelectorAll('[data-artwork-preview]')].map(card => {
     const button = card.querySelector('.artwork-toggle');
     const state = {visible: !('IntersectionObserver' in window), userPaused: false, userRequested: false, ready: card.dataset.artworkPreview !== 'tree', loading: false, failed: false};
-    const wantsMotion = () => state.visible && !document.hidden && !state.userPaused && (!lowMotion() || state.userRequested);
+    const wantsMotion = () => !card.hidden && state.visible && !document.hidden && !state.userPaused && (!lowMotion() || state.userRequested);
     function sync() {
       const playing = wantsMotion() && state.ready;
       card.dataset.artworkPaused = String(!playing);
@@ -61,6 +61,7 @@
     reconcileAll();
   }
   document.addEventListener('visibilitychange', reconcileAll);
+  document.addEventListener('portfoliochange', reconcileAll);
   reduced.addEventListener('change', preferencesChanged);
   connection?.addEventListener?.('change', preferencesChanged);
 })();

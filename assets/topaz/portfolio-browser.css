@@ -1,0 +1,40 @@
+/* One selected design; the full catalog stays in a small, native-scroll rail. */
+.portfolio-browser{display:flex;flex-direction:column;max-width:1120px;margin-inline:auto;min-width:0}
+.portfolio-filters{order:0;display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.portfolio-filter,.portfolio-step{font:700 11px/1.2 'Manrope',Arial,sans-serif;min-height:44px;border:1px solid #b49ab780;border-radius:30px;background:transparent;color:#f6eee9;padding:11px 17px;cursor:pointer}
+.portfolio-filter[aria-pressed=true]{background:#f8d991;border-color:#f8d991;color:#352338}
+.portfolio-filter:hover,.portfolio-step:hover{border-color:#f8d991}
+.portfolio-filter:focus-visible,.portfolio-step:focus-visible,.portfolio-tab:focus-visible{outline:3px solid #f8d991;outline-offset:3px}
+.home-page .work-grid.portfolio-stage{order:1;display:block;margin:0;min-width:0}
+.home-page .portfolio-stage>.work-card{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(240px,1fr);grid-template-rows:1fr 1fr;gap:0 30px;min-width:0}
+.home-page .portfolio-stage>.work-card[hidden],.portfolio-tab[hidden]{display:none!important}
+.portfolio-media{grid-column:1;grid-row:1/3;position:relative;min-width:0;overflow:hidden;border-radius:3px}
+.home-page .portfolio-media .work-card-link{display:block}
+.home-page .portfolio-media .work-image{aspect-ratio:16/10;margin:0}
+.home-page .portfolio-stage .work-meta{grid-column:2;grid-row:1;align-self:end;min-height:0;padding:0 0 16px;margin:0;display:block}
+.home-page .portfolio-stage .work-meta h3{font-family:'Fraunces',Georgia,serif;font-size:clamp(23px,2.6vw,34px);font-weight:450;line-height:1.15;margin:0 0 12px}
+.home-page .portfolio-stage .work-meta p{font-size:12px;line-height:1.65;margin:0}
+.home-page .portfolio-stage .work-meta>.arrow,.home-page .portfolio-stage .work-meta>svg{display:none}
+.home-page .portfolio-stage .concept-sales{grid-column:2;grid-row:2;align-self:start;min-height:60px;margin:0;padding:5px 0;display:flex;flex-wrap:wrap;gap:10px 16px}
+.home-page .portfolio-stage .concept-sales>a:first-child{font-size:12px}
+.home-page .portfolio-stage .concept-buy,.home-page .portfolio-stage .concept-configure{min-height:44px;font-size:11px;max-width:100%}
+.portfolio-toolbar{order:2;display:flex;align-items:center;justify-content:space-between;gap:12px;margin:20px 0 12px}
+.portfolio-status{font-size:12px;line-height:1.4;margin:0;color:#e8d9e7;min-width:0}
+.portfolio-navigation{display:flex;gap:8px;flex-shrink:0}
+.portfolio-step{width:44px;padding:0;font-size:18px}.portfolio-step:disabled{opacity:.35;cursor:default}
+.portfolio-rail{order:3;position:relative;display:flex;gap:10px;overflow-x:auto;max-width:100%;min-width:0;scroll-snap-type:x proximity;overscroll-behavior-x:contain;touch-action:pan-x pan-y;padding:5px 3px 13px;scrollbar-width:thin;scrollbar-color:#b79cba #39283e}
+.portfolio-tab{flex:0 0 112px;width:112px;scroll-snap-align:start;border:1px solid #b49ab74d;border-radius:5px;background:#39283e;color:#f6eee9;padding:5px;cursor:pointer;text-align:left;min-height:94px}
+.portfolio-tab[aria-selected=true]{border-color:#f8d991;box-shadow:0 0 0 1px #f8d991;background:#534053}
+.portfolio-thumb{display:block;width:100%;height:60px;object-fit:cover;border-radius:2px;background:#edf4ff;pointer-events:none}
+.portfolio-tab-label{display:block;font:600 10px/1.3 'Manrope',Arial,sans-serif;padding:7px 2px 1px;white-space:nowrap}
+@media(max-width:760px){
+ .portfolio-filters{gap:6px;margin-bottom:14px}.portfolio-filter{font-size:10px;padding-inline:13px}
+ .home-page .portfolio-stage>.work-card{display:flex;flex-direction:column;gap:0}
+ .portfolio-media{width:100%}.home-page .portfolio-media .work-image{aspect-ratio:16/10}
+ .home-page .portfolio-stage .work-meta{align-self:stretch;min-height:144px;padding:18px 0 10px;box-sizing:border-box}
+ .home-page .portfolio-stage .work-meta h3{font-size:23px;margin-bottom:7px}.home-page .portfolio-stage .work-meta p{font-size:11px}
+ .home-page .portfolio-stage .concept-sales{align-self:stretch;min-height:60px;padding:4px 0;flex-wrap:nowrap}
+ .portfolio-toolbar{margin-top:14px}.portfolio-status{font-size:11px}
+ .portfolio-tab{flex-basis:104px;width:104px}.portfolio-thumb{height:56px}
+}
+@media(prefers-reduced-motion:reduce){.portfolio-rail{scroll-behavior:auto}}
