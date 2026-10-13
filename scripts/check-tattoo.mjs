@@ -12,10 +12,16 @@ assert.ok(!/butterfly-flight|flying-butterfly|small-butterfly/.test(html+app));
 assert.ok(html.includes('moth-wing-left')&&html.includes('moth-wing-right'));
 assert.ok(css.includes('prefers-reduced-motion:reduce')||css.includes('prefers-reduced-motion: reduce'));
 assert.ok(css.includes('.hero-art-plane .moth-body{position:relative;z-index:2}'));
-assert.ok(css.includes('large-wing-left 9.6s ease-in-out infinite'));
-assert.ok(css.includes('large-wing-right 9.6s ease-in-out infinite'));
-assert.ok(css.includes('moth-hover 12s ease-in-out infinite'));
-assert.ok(css.includes('.wings-paused .hero-art-plane{animation-play-state:paused}'));
+assert.ok(css.includes('.hero-art-plane .moth-body{z-index:3}'));
+assert.ok(css.includes('large-wing-left 6.4s ease-in-out infinite'));
+assert.ok(css.includes('large-wing-right 6.4s ease-in-out infinite'));
+assert.ok(css.includes('moth-walk 12.8s cubic-bezier(.42,0,.58,1) infinite'));
+assert.ok(css.includes('petal-unfurl 6.4s'));
+assert.ok(html.includes('class="moth-moon"'));
+assert.equal((html.match(/class="bloom-petal"/g)||[]).length,8);
+assert.equal((html.match(/class="moth-leg moth-leg-/g)||[]).length,6);
+assert.ok(css.includes('.wings-paused .moth-walker'));
+assert.ok(css.includes('.motion-paused .bloom-petal'));
 assert.ok(!/fetch\(|localStorage|sessionStorage|mailto:|window\.open/.test(app));
 for(const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)){
  const href=match[1]; if(/^(https?:|\/)/.test(href))continue;
@@ -28,7 +34,7 @@ assert.ok(home.includes('href="/showcase/lab/tattoo/"'));
 assert.equal((lab.match(/<section class="direction /g)||[]).length,13);
 assert.ok(lab.includes('THIRTEEN DISTINCT WEBSITE DIRECTIONS'));
 assert.ok(lab.includes('href="tattoo/"'));
-for(const document of [html,home,lab])assert.ok(document.includes('https://topazcandy.com/contact/?service=website#notes=I%20would%20like%20to%20customize%20the%20Tinta'));
+for(const document of [html,home,lab])assert.ok(document.includes('https://topazcandy.com/contact/?service=website#notes=I%20would%20like%20to%20customize%20the%20InkMaster'));
 
 function fixture(reduced=false){
  class Element {
@@ -65,7 +71,43 @@ await f.get('#stage-open').emit('pointerdown',{clientX:180,clientY:100});await f
 await f.get('#idea-form').emit('submit');assert.ok(f.get('#idea-text').validity);
 f.get('#idea-text').value='Una rosa';f.get('#style').value='Botánico';f.get('#placement').value='Antebrazo';await f.get('#idea-text').emit('input');await f.get('#idea-form').emit('submit');assert.ok(f.get('#brief-output').value.includes('Una rosa'));assert.equal(f.get('#brief-result').hidden,false);
 await f.get('#copy-brief').emit('click');assert.equal(f.context.copied,f.get('#brief-output').value);
-await f.get('#wing-toggle').emit('click');assert.equal(f.get('#hero-art-window').classList.contains('wings-paused'),true);assert.equal(f.get('#wing-toggle').attrs['aria-pressed'],'true');
+await f.get('#wing-toggle').emit('click');assert.equal(f.get('#hero-art-window').classList.contains('wings-paused'),true);assert.equal(f.get('#wing-toggle').attrs['aria-pressed'],'true');assert.equal(f.doc.documentElement.classList.contains('motion-paused'),true);
 await f.get('#wing-toggle').emit('click');assert.equal(f.get('#hero-art-window').classList.contains('wings-paused'),false);
-const r=fixture(true);assert.equal(r.get('#hero-art-window').classList.contains('wings-paused'),true);r.pref.change({matches:false});assert.equal(r.get('#hero-art-window').classList.contains('wings-paused'),false);
+const r=fixture(true);assert.equal(r.get('#hero-art-window').classList.contains('wings-paused'),true);assert.equal(r.doc.documentElement.classList.contains('motion-paused'),true);r.pref.change({matches:false});assert.equal(r.get('#hero-art-window').classList.contains('wings-paused'),false);
 console.log(JSON.stringify({passed:true,checks:'13 gallery concepts, direct Topaz routes, local assets, filters, next/previous, modal open/close, keyboard/swipe, local brief/copy, wing pause/resume and reduced-motion initialization'}));
+
+// Source-level loop closure and conservative frame bounds, without a browser.
+function keyframeBody(name){
+ const start=css.indexOf('@keyframes '+name+'{');assert.ok(start>=0,name);
+ let depth=1,end=css.indexOf('{',start)+1,index=end;
+ for(;depth&&index<css.length;index++){if(css[index]==='{')depth++;if(css[index]==='}')depth--;}
+ return css.slice(end,index-1);
+}
+for(const name of ['large-wing-left','large-wing-right','petal-unfurl','leaf-unfurl','bloom-heart','moth-walk','moth-footfall','leg-step']){
+ const frames=[...keyframeBody(name).matchAll(/([^{}]+)\{([^{}]*)\}/g)];
+ const at=p=>frames.find(m=>m[1].split(',').map(s=>s.trim()).includes(p))?.[2].trim();
+ assert.ok(at('0%'),name+' starts explicitly');assert.equal(at('0%'),at('100%'),name+' has identical loop endpoints');
+}
+assert.equal(12.8/6.4,2,'wing and bloom poses reset twice per walking loop');
+assert.equal(12.8/.8,16,'exactly sixteen complete step cycles per walking loop');
+const path=[[0,0,0],[.032,-.012,1.3],[0,-.03,0],[-.032,-.012,-1.3],[0,0,0]];
+for(const h of [270,295,480,540]){
+ const w=h*2/3;
+ for(let segment=0;segment<4;segment++)for(let i=0;i<=100;i++){
+  const t=i/100,p=path[segment].map((v,n)=>v+(path[segment+1][n]-v)*t),angle=p[2]*Math.PI/180;
+  for(const x of [-w/2,w/2])for(const y of [-h/2,h/2]){
+   const yy=y-h*.0015;
+   const xx=w/2+w*p[0]+.9*(x*Math.cos(angle)-yy*Math.sin(angle));
+   const py=h/2+h*p[1]+.9*(x*Math.sin(angle)+yy*Math.cos(angle));
+   assert.ok(xx>=0&&xx<=w&&py>=0&&py<=h,`Walking canvas stays inside ${w}x${h} frame`);
+  }
+ }
+}
+console.log(JSON.stringify({passed:true,checks:'eight matching 0/100 keyframes, synchronized full-loop poses, 270/295/480/540px frame bounds, shared bloom/walking pause'}));
+
+assert.ok(html.includes('<title>InkMaster Pedro ·'));
+assert.ok(html.includes('InkMaster <em>Pedro</em>'));
+assert.ok(html.includes('RAÍCES EN TOLUCA'));
+assert.ok(!/Tinta|Umbría|umbría|TAMAULIPAS|NOMBRE DEL ARTISTA/.test(html));
+assert.ok(!html.includes('assets/social-cover.png'));
+assert.ok(home.includes('InkMaster Pedro')&&lab.includes('InkMaster'));

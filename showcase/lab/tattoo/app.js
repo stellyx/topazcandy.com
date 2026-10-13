@@ -39,7 +39,7 @@ if('IntersectionObserver'in window&&!reduceMotion.matches){document.documentElem
 const wingToggle=document.querySelector('#wing-toggle');
 const largeMoth=document.querySelector('#hero-art-window');
 let wingsPaused=reduceMotion.matches;
-function setWingState(paused){wingsPaused=paused;largeMoth.classList.toggle('wings-paused',paused);wingToggle.setAttribute('aria-pressed',String(paused));wingToggle.textContent=paused?'Activar alas':'Pausar alas';wingToggle.setAttribute('aria-label',paused?'Activar el aleteo de la mariposa grande':'Pausar el aleteo de la mariposa grande');}
+function setWingState(paused){wingsPaused=paused;largeMoth.classList.toggle('wings-paused',paused);document.documentElement.classList.toggle('motion-paused',paused);wingToggle.setAttribute('aria-pressed',String(paused));wingToggle.textContent=paused?'Activar movimiento':'Pausar movimiento';wingToggle.setAttribute('aria-label',paused?'Activar las animaciones de la mariposa y la flor':'Pausar las animaciones de la mariposa y la flor');}
 wingToggle.addEventListener('click',()=>setWingState(!wingsPaused));
 if(reduceMotion.matches)setWingState(true);
 reduceMotion.addEventListener?.('change',e=>setWingState(e.matches));
