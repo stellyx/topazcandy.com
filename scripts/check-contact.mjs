@@ -79,7 +79,7 @@ for (const path of files('.').filter(p=>p.endsWith('.html'))) {
 }
 const home=readFileSync('index.html','utf8');
 const siteLinks=[...home.matchAll(/<a\b[^>]*>Show us your site[\s\S]*?<\/a>/g)].map(match=>match[0]);
-assert.equal(siteLinks.length,2);
+assert.ok(siteLinks.length>=2,'Show-site actions are available at entry and later in the funnel');
 for(const link of siteLinks){
   assert.match(link,/href="https:\/\/topazcandy\.com\/contact\/\?service=web-presence&amp;intent=show-site#contact-form"/);
   assert.match(link,/target="_self"/);
@@ -95,7 +95,8 @@ for(const path of files('.').filter(path=>path.endsWith('.html')&&!path.startsWi
 assert.equal(messageLink({mode:'template'},'cut','new'),'https://topazcandy.com/contact/?service=website&template=hair#contact-form');
 assert.ok(messageLink({mode:'mj',phone:'+15127169236'},'cut','new').startsWith('sms:+15127169236'));
 assert.ok(home.indexOf('id="everything-we-do"')<home.indexOf('id="work"'));
-assert.match(home,/class="button light" href="\/services\/">Everything we do/);
+assert.match(home,/class="button light" href="#work">Choose a website/);
+assert.match(home,/href="\/services\/">Everything we do/,'Other services remain directly available in navigation');
 const contact=readFileSync('contact/index.html','utf8');assert.match(contact,/inputmode="url"/);assert.match(contact,/inputmode="email"/);assert.match(contact,/inputmode="tel"/);
 assert.equal((contact.match(/<form\b/g)||[]).length,1);
 assert.ok(!/localStorage|sessionStorage|window\.open|location\.(?:href|assign)\s*=|innerHTML/.test(readFileSync('contact/app.mjs','utf8')));

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow+Condensed:wght@800&family=Cormorant+Garamond:wght@500&family=DM+Sans:wght@500;700&family=Italiana&family=Space+Grotesk:wght@500;700&display=swap');
+
+/* Each preview carries its own identity. The film remains untinted at 85%. */
+.preview-title{position:absolute!important;inset:auto 22px 22px!important;z-index:2;max-width:calc(100% - 44px);margin:0!important;padding:0!important;background:none!important;border-radius:0!important;pointer-events:none;font:500 clamp(33px,3.8vw,58px)/.93 'Fraunces',Georgia,serif!important;letter-spacing:-.045em!important;color:#fffaf2!important;text-shadow:0 2px 12px #0008;overflow-wrap:normal}
+.preview-title em{font-weight:inherit}.preview-title--auto{font-family:'Barlow Condensed',Arial,sans-serif!important;font-weight:800!important;text-transform:uppercase;letter-spacing:-.015em!important;font-size:clamp(44px,4.7vw,74px)!important}
+.preview-title--garden{font-family:'Italiana',Georgia,serif!important;font-weight:400!important;font-size:clamp(40px,4.6vw,73px)!important;letter-spacing:-.065em!important}
+.preview-title--roof{font-family:'Archivo Black',Arial,sans-serif!important;text-transform:uppercase;font-size:clamp(32px,3.5vw,55px)!important;letter-spacing:-.065em!important}
+.preview-title--hvac,.preview-title--waypoint{font-family:'DM Sans',Arial,sans-serif!important;letter-spacing:-.065em!important;font-weight:500!important}
+.preview-title--hair{font-family:'Cormorant Garamond',Georgia,serif!important;font-size:clamp(41px,4.6vw,70px)!important;font-weight:500!important}
+.preview-title--wonderbranch,.preview-title--dusk,.preview-title--form{font-family:Georgia,serif!important;font-weight:400!important;letter-spacing:-.05em!important}
+.preview-title--wonderbranch{font-size:clamp(30px,3.2vw,47px)!important;color:#253f2e!important;text-shadow:0 1px 15px #fff4d8}
+.preview-title--signal{font-family:Arial,Helvetica,sans-serif!important;font-size:clamp(45px,5vw,76px)!important;letter-spacing:-.065em!important;font-weight:500!important;color:#cbfa72!important}
+.preview-title--shiro{font-family:'Space Grotesk',Arial,sans-serif!important;font-weight:700!important;font-size:clamp(43px,4.8vw,73px)!important;letter-spacing:-.075em!important;color:#222220!important;text-shadow:0 1px 12px #f8f7f3}
+.preview-seal{display:block;width:24px;height:26px;margin-bottom:9px;border:1px solid #bd2130;color:#bd2130;font:19px/24px Georgia,serif;letter-spacing:0;transform:rotate(-5deg)}
+.preview-title--waypoint{color:#193a9f!important;text-shadow:0 1px 10px #edf4ff}
+.preview-title--tattoo{width:min(82%,400px)}
+.preview-title--tattoo .preview-wordmark{position:static!important;width:100%!important;height:auto!important;min-height:0!important;object-fit:contain!important;filter:drop-shadow(0 1px 5px #e6dfd2)!important;transform:none!important}
+.preview-caption{position:absolute;left:22px;top:22px;z-index:2;color:#fffaf2;font:700 9px/1.5 Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;text-shadow:0 1px 7px #000b;pointer-events:none}
+.work-card--shiro .template-preview-video{object-fit:contain;object-position:80% center}.work-card--signal .template-preview-video{object-fit:cover;object-position:center}.preview-title--form em{color:#e5f4d5}
+.home-page .concept-sales--custom{color:#d9c8d8}.home-page .concept-configure:hover{background:#503853}
+.home-page .work-card{display:flex;flex-direction:column;min-width:0}.home-page .work-card-link{flex:1}.home-page .work-meta{min-height:95px;gap:12px}.home-page .work-meta h3{font-size:15px;line-height:1.4}.home-page .concept-sales{min-height:76px;gap:10px}.home-page .concept-sales--custom>span{font-size:10px;flex-basis:120px}.home-page .concept-configure{font-size:10px;padding-inline:12px;gap:12px;flex-shrink:0}
+.home-page .work-package-link{display:inline-flex;align-items:center;gap:10px;color:#f8d991;font-size:12px;font-weight:700;border-bottom:1px solid #f8d99180;padding:10px 0;margin-top:8px;min-height:44px}
+
+/* Use the desktop width for choices and useful next steps. */
+.home-page{--max:1420px}.home-page .hero{padding-block:48px 42px;gap:48px}.home-page .hero-art{max-width:550px;justify-self:end;width:100%}.home-page .section{padding-block:76px}.home-page .section-heading{gap:40px;margin-bottom:32px}.home-page .work-grid{gap:20px 26px}.home-page .repair-layout,.home-page .about-layout,.home-page .capability-layout{gap:50px}
+.funnel-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-block:1px solid var(--line)}
+.funnel-paths a{padding:23px 22px;min-height:100px;display:grid;grid-template-columns:25px 1fr;gap:10px;align-content:center;border-right:1px solid var(--line);transition:background .2s}
+.funnel-paths a:first-child{padding-left:0}.funnel-paths a:last-child{border-right:0}.funnel-paths a:hover{background:#eee5d67a}.funnel-paths .number{font-size:10px;color:var(--plum);padding-top:5px}.funnel-paths strong{font-size:14px;line-height:1.6;font-weight:750}.funnel-paths small{display:block;color:var(--muted);font-size:11px;line-height:1.65;font-weight:400;margin-top:3px}
+.example-next{font-size:11px;line-height:1.7;margin:17px 0 0;padding-top:16px;border-top:1px solid var(--line);color:var(--muted)}.example-next a{display:inline-flex;align-items:center;min-height:44px;font-weight:800;color:var(--plum);text-decoration:underline;text-underline-offset:4px}
+.next-step-card{border:1px solid var(--line);padding:26px 28px;margin-top:32px;background:var(--white);max-width:470px}.next-step-card h3{font-family:var(--serif);font-size:27px;font-weight:500;line-height:1.2;margin-bottom:14px}.next-step-card p{font-size:13px;line-height:1.75;color:var(--muted);margin-bottom:20px}.next-step-card .button{font-size:12px}
+@media(min-width:1120px){.home-page .work-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.home-page .work-image{aspect-ratio:16/11}.home-page .preview-title{font-size:40px!important}.home-page .preview-title--auto,.home-page .preview-title--garden,.home-page .preview-title--hair{font-size:51px!important}.home-page .preview-title--roof{font-size:36px!important}.home-page .preview-title--shiro,.home-page .preview-title--signal{font-size:53px!important}.home-page .preview-title--wonderbranch{font-size:32px!important}.home-page .about-layout>div:first-child{position:sticky;top:35px}}
+
+/* The demo library headings now belong to the preview, with copy alongside. */
+.portfolio-library .intro{padding-block:60px 48px}.portfolio-library .intro h1{font-size:clamp(54px,7.7vw,118px)}
+.portfolio-library .direction{min-height:0;grid-template-columns:.85fr 1.15fr;max-width:1480px;margin-inline:auto}
+.portfolio-library .direction__text{padding:34px clamp(24px,3vw,48px);gap:22px;justify-content:space-between;min-height:0}
+.portfolio-library .direction__text p{margin:0 0 23px;max-width:460px;font-size:14px}.portfolio-library .direction__text .concept-scope-note{font-size:11px;margin:16px 0 0}
+.portfolio-library .direction__media{position:relative;overflow:hidden;min-height:360px;aspect-ratio:16/10;background:var(--preview-paper,#111515)}
+.portfolio-library .direction__media .direction__photo{display:block;position:absolute;inset:0;width:100%;height:100%;min-height:0;background:none!important;overflow:hidden}
+.portfolio-library .direction__media .direction__photo::after{display:none!important}
+.portfolio-library .direction__media .preview-title{font-size:clamp(44px,5.4vw,78px)!important;line-height:.9!important}
+.portfolio-library .direction__media .preview-title--wonderbranch{font-size:clamp(35px,4.3vw,65px)!important}.portfolio-library .direction__media .preview-title--auto{font-size:clamp(62px,7vw,105px)!important}.portfolio-library .direction__media .preview-title--roof{font-size:clamp(42px,5.4vw,75px)!important}
+.portfolio-library .direction--shiro .template-preview-video{object-fit:contain;object-position:80% center}.portfolio-library .direction--signal .template-preview-video{object-fit:cover}.portfolio-library .direction--garden .direction__media{order:1}
+.portfolio-library .direction--tattoo .template-preview-video{object-fit:contain}.portfolio-library .direction--tattoo .direction__media{--preview-paper:#e6dfd2}
+.portfolio-library .direction--shiro .direction__media{--preview-paper:#f8f7f3}.portfolio-library .direction--signal .direction__media{--preview-paper:#101911}
+.portfolio-library .direction--carpet .preview-title{color:#f8f3e8!important}.portfolio-library .direction--carpet .direction__media .direction__photo img{opacity:.85}
+@media(max-width:1119px){.home-page .hero{gap:30px}.home-page .work-meta{min-height:85px}}
+@media(max-width:900px){.portfolio-library .direction{grid-template-columns:1fr}.portfolio-library .direction__text{padding:28px 24px;gap:16px}.portfolio-library .direction__text .concept-actions{margin-top:18px}.portfolio-library .direction__media{min-height:0;aspect-ratio:16/10;order:2!important}.portfolio-library .direction__text{order:1!important}.portfolio-library .direction__media .preview-title{font-size:clamp(40px,8vw,72px)!important}.portfolio-library .direction__media .preview-title--wonderbranch{font-size:clamp(30px,6.5vw,54px)!important}}
+@media(max-width:760px){.home-page .hero{padding-block:36px 32px}.home-page .section{padding-block:56px}.home-page .hero-art{justify-self:center}.home-page .work-meta{min-height:0}.home-page .work-grid{gap:28px}.home-page .section-heading{gap:24px}.funnel-paths{grid-template-columns:1fr}.funnel-paths a,.funnel-paths a:first-child{padding:16px 0;min-height:76px;border-right:0;border-bottom:1px solid var(--line)}.funnel-paths a:last-child{border-bottom:0}.funnel-paths small{font-size:11px}.next-step-card{padding:23px;margin-top:25px}.home-page .repair-layout,.home-page .about-layout,.home-page .capability-layout{gap:32px}}
+@media(max-width:480px){.preview-title{inset:auto 18px 20px!important;max-width:calc(100% - 36px);font-size:37px!important}.preview-title--shiro,.preview-title--signal,.preview-title--auto{font-size:48px!important}.preview-title--garden,.preview-title--hair{font-size:47px!important}.preview-title--wonderbranch{font-size:30px!important}.preview-caption{top:18px;left:18px;font-size:8px}.home-page .concept-sales--custom>span{flex-basis:140px}.home-page .concept-sales--custom .concept-configure{width:auto}.portfolio-library .direction__media .preview-title--roof{font-size:40px!important}}
+@media(prefers-reduced-motion:reduce){.funnel-paths a{transition:none}}
+
+.preview-title--waypoint{font-weight:700!important}
+
+.work-card--tattoo .template-preview-video{object-fit:contain}
+
+.portfolio-library .direction--waypoint .direction__media{--preview-paper:#edf4ff}.portfolio-library .direction--waypoint .direction__media .concept-classroom{inset:0;width:100%;height:100%;object-fit:contain}

@@ -38,7 +38,9 @@
 .topaz-brand .brand-wordmark em{--shimmer-ink:var(--brand-accent,#4b2851)}
 .topaz-brand:hover .brand-wordmark em{--shimmer-ink:var(--brand-hover,#99521e)}
 @supports ((background-clip:text) or (-webkit-background-clip:text)){
-  .topaz-brand .brand-wordmark,.topaz-brand .brand-wordmark em{background-image:linear-gradient(108deg,var(--shimmer-ink) 0%,var(--shimmer-ink) 41%,#fff6dc 47%,#f2b544 51%,var(--shimmer-ink) 57%,var(--shimmer-ink) 100%);background-size:300% 100%;background-position:100% 50%;background-repeat:no-repeat;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:topaz-brand-shimmer 17s ease-in-out infinite}
+  .topaz-brand .brand-wordmark,.topaz-brand .brand-wordmark em{background-image:linear-gradient(108deg,var(--shimmer-ink) 0%,var(--shimmer-ink) 41%,var(--shimmer-lit,var(--shimmer-ink)) 47%,var(--shimmer-core,var(--shimmer-ink)) 51%,var(--shimmer-ink) 57%,var(--shimmer-ink) 100%);background-size:300% 100%;background-position:100% 50%;background-repeat:no-repeat;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:topaz-brand-shimmer 17s ease-in-out infinite}
 }
 @keyframes topaz-brand-shimmer{0%,72%{background-position:100% 50%}91%,100%{background-position:0% 50%}}
 @media(prefers-reduced-motion:reduce){.topaz-brand .brand-wordmark,.topaz-brand .brand-wordmark em{animation:none!important;background-image:none;-webkit-text-fill-color:currentColor}.brand-emblem{animation:none!important}}
+
+@supports (color:color-mix(in srgb,#000,#fff)){.topaz-brand .brand-wordmark,.topaz-brand .brand-wordmark em{--shimmer-lit:color-mix(in srgb,var(--shimmer-ink) 65%,#d7a456);--shimmer-core:color-mix(in srgb,var(--shimmer-ink) 75%,#d7a456)}}

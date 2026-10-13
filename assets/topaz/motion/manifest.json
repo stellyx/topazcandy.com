@@ -1,0 +1,28 @@
+{
+  "shiro": {
+    "provider": "Runway",
+    "task_id": "4f854d20-cc68-4998-8e03-527968f3ebfb",
+    "source_reference": "shiro-reference.png",
+    "output_file": "shiro-loop.mp4",
+    "poster_file": "shiro-poster.jpg",
+    "duration_seconds": 10.041667,
+    "width": 720,
+    "height": 720,
+    "audio": false,
+    "source_note": "Animation of original template art, inspected at six points through the clip.",
+    "playback": "Muted inline loop; lazy source; viewport and tab suspension; pause/play; motion and data preferences."
+  },
+  "signal": {
+    "provider": "Runway",
+    "task_id": "6b3a7a5d-fe81-4816-aad1-fed8b4195822",
+    "source_reference": "signal-reference.png",
+    "output_file": "signal-loop.mp4",
+    "poster_file": "signal-poster.jpg",
+    "duration_seconds": 10.041667,
+    "width": 720,
+    "height": 720,
+    "audio": false,
+    "source_note": "Animation of original template art, inspected at six points through the clip.",
+    "playback": "Muted inline loop; lazy source; viewport and tab suspension; pause/play; motion and data preferences."
+  }
+}

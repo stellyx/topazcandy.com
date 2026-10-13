@@ -1,3 +1,4 @@
+import { createRipple } from './ripple.mjs?v=1';
 import { COPY, COURSE, WEEKS, makePrompt } from './content.mjs?v=1';
 import { createEnrollmentSender } from './enrollment.mjs?v=1';
 import { sendMessage } from '../assets/topaz/form.mjs?v=1';
@@ -11,6 +12,7 @@ const form = $('#enrollment-form');
 const status = $('#enrollment-status');
 const submit = $('#enrollment-submit');
 const wave = $('#wave-displacement');
+const ripple = createRipple(wave);
 const promptResult = $('#prompt-result');
 const promptGoal = $('#prompt-goal');
 const progressKey='topaz-ai-practice-v1';
@@ -86,15 +88,14 @@ async function switchLanguage(next) {
       el.classList.add('translation-wave');
       animations.push(el.animate([
         {opacity:1,transform:'translateX(0) skewX(0deg)'},
-        {opacity:.5,transform:'translateX(3px) skewX(-2deg)',offset:.5},
-        {opacity:0,transform:'translateX(-3px) skewX(2deg)'}
-      ],{duration:270,delay:Math.min(index*4,70),fill:'forwards',easing:'ease-in-out'}));
+        {opacity:.5,transform:'translateX(2px) skewX(-1deg)',offset:.5},
+        {opacity:0,transform:'translateX(-2px) skewX(1deg)'}
+      ],{duration:240,delay:Math.min(index*3,40),fill:'forwards',easing:'ease-in-out'}));
     });
-    const began=performance.now();
-    const ripple=now=>{const p=Math.min(1,(now-began)/340);wave.setAttribute('scale',String(13*p));if(p<1)requestAnimationFrame(ripple);};
-    requestAnimationFrame(ripple);
+    ripple.ramp(7,280);
     await Promise.all(animations.map(a=>a.finished.catch(()=>{})));
-    wave.setAttribute('scale','13');
+    ripple.stop();
+    wave.setAttribute('scale','7');
   } else if(animate) {
     animated.forEach(el=>animations.push(el.animate([{opacity:1},{opacity:0}],{duration:120,fill:'forwards'})));
     await Promise.all(animations.map(a=>a.finished.catch(()=>{})));
@@ -110,13 +111,11 @@ async function switchLanguage(next) {
   animations=[];
   if(!reducedMotion.matches&&animate) {
     animated.forEach((el,index)=>animations.push(el.animate([
-      {opacity:0,transform:'translateX(4px) skewX(-2deg)'},
+      {opacity:0,transform:'translateX(2px) skewX(-1deg)'},
       {opacity:.6,transform:'translateX(-2px) skewX(1deg)',offset:.55},
       {opacity:1,transform:'translateX(0) skewX(0deg)'}
-    ],{duration:330,delay:Math.min(index*3,55),fill:'forwards',easing:'ease-out'})));
-    const started=performance.now();
-    const settle=now=>{const p=Math.min(1,(now-started)/380);wave.setAttribute('scale',String(13*(1-p)));if(p<1)requestAnimationFrame(settle);};
-    requestAnimationFrame(settle);
+    ],{duration:310,delay:Math.min(index*2,40),fill:'forwards',easing:'ease-out'})));
+    ripple.ramp(0,350);
     await Promise.all(animations.map(a=>a.finished.catch(()=>{})));
   } else if(animate) {
     animated.forEach(el=>animations.push(el.animate([{opacity:0},{opacity:1}],{duration:120,fill:'forwards'})));
@@ -124,7 +123,7 @@ async function switchLanguage(next) {
   }
   animations.forEach(a=>a.cancel());
   animated.forEach(el=>el.classList.remove('translation-wave'));
-  wave.setAttribute('scale','0');
+  ripple.reset();
   document.body.dataset.translating='false';
   $('#language-announcement').textContent=COPY[next].languageAnnouncement;
   translating=false;
@@ -146,7 +145,7 @@ function updateMotion() {
 }
 $('[data-motion-toggle]').addEventListener('click',()=>{motionPaused=!motionPaused;updateMotion();});
 document.addEventListener('visibilitychange',updateMotion);
-reducedMotion.addEventListener('change',()=>{motionPaused=reducedMotion.matches;updateMotion();});
+reducedMotion.addEventListener('change',()=>{motionPaused=reducedMotion.matches;if(reducedMotion.matches)ripple.reset();updateMotion();});
 updateMotion();
 
 $('#prompt-build').addEventListener('click',()=>{

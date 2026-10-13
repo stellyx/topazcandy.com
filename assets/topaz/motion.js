@@ -44,7 +44,11 @@
         return;
       }
       if (!video.getAttribute('src')) video.src = video.dataset.src;
-      video.play().catch(sync);
+      video.play().then(() => {
+        // A pending play request may finish after the visitor scrolls away.
+        if (state.userPaused || !state.visible || document.hidden || (lowMotion() && !state.userRequested)) video.pause();
+        sync();
+      }).catch(sync);
     }
     button.addEventListener('click', () => {
       if (!video.paused && !video.ended) {
