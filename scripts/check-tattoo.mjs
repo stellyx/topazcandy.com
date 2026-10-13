@@ -12,9 +12,9 @@ assert.ok(!/butterfly-flight|flying-butterfly|small-butterfly/.test(html+app));
 assert.ok(!/moth-wing|moth-walker|moth-legs|moth-step|moth-moon/.test(html+app));
 assert.ok(html.includes('id="hero-image" src="assets/moth-art.webp"'));
 assert.ok(html.includes('id="bloom-toggle"'));
-assert.ok(css.includes('petal-unfurl 6.4s'));
-assert.equal((html.match(/class="bloom-petal"/g)||[]).length,8);
-assert.ok(css.includes('.motion-paused .bloom-petal'));
+assert.ok(!css.includes('petal-unfurl'));
+assert.equal((html.match(/class="bloom-petal"/g)||[]).length,0);
+assert.ok(!html.includes('word-bloom'));
 assert.ok(css.includes('.hero-art-window #hero-image{mix-blend-mode:normal;transform:none;animation:none}'));
 assert.ok(!/fetch\(|localStorage|sessionStorage|mailto:|window\.open/.test(app));
 for(const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)){
@@ -74,21 +74,15 @@ await f.get('#copy-brief').emit('click');assert.equal(f.context.copied,f.get('#b
 await f.get('#bloom-toggle').emit('click');assert.equal(f.doc.documentElement.classList.contains('motion-paused'),true);assert.equal(f.get('#bloom-toggle').attrs['aria-pressed'],'true');
 await f.get('#bloom-toggle').emit('click');assert.equal(f.doc.documentElement.classList.contains('motion-paused'),false);
 const r=fixture(true);assert.equal(r.doc.documentElement.classList.contains('motion-paused'),true);r.pref.change({matches:false});assert.equal(r.doc.documentElement.classList.contains('motion-paused'),false);
-console.log(JSON.stringify({passed:true,checks:'13 gallery concepts, direct Topaz routes, local assets, filters, next/previous, modal open/close, keyboard/swipe, local brief/copy, flower pause/resume and reduced-motion initialization'}));
+console.log(JSON.stringify({passed:true,checks:'13 gallery concepts, direct Topaz routes, local assets, filters, next/previous, modal open/close, keyboard/swipe, local brief/copy, effects pause/resume and reduced-motion initialization'}));
 
-// Source-level loop closure and conservative frame bounds, without a browser.
-function keyframeBody(name){
- const start=css.indexOf('@keyframes '+name+'{');assert.ok(start>=0,name);
- let depth=1,end=css.indexOf('{',start)+1,index=end;
- for(;depth&&index<css.length;index++){if(css[index]==='{')depth++;if(css[index]==='}')depth--;}
- return css.slice(end,index-1);
-}
-for(const name of ['petal-unfurl','leaf-unfurl','bloom-heart']){
- const frames=[...keyframeBody(name).matchAll(/([^{}]+)\{([^{}]*)\}/g)];
- const at=p=>frames.find(m=>m[1].split(',').map(s=>s.trim()).includes(p))?.[2].trim();
- assert.ok(at('0%'),name+' starts explicitly');assert.equal(at('0%'),at('100%'),name+' has identical loop endpoints');
-}
-console.log(JSON.stringify({passed:true,checks:'three matching flower-loop endpoints; original butterfly fallback intact and all walking/wing layers removed'}));
+// The accessible morphing tagline is the single hero heading; the old flower is gone.
+assert.equal((html.match(/<h1\b/g)||[]).length,1);
+assert.ok(html.includes('<h1 id="hero-title" class="ink-tagline">'));
+assert.ok(!/Darkness|blooms\.|bloom-word|word-bloom/.test(html));
+assert.ok(css.includes('grid-template-columns:max-content minmax(0,1fr)'));
+assert.ok(css.includes('aspect-ratio:2/1'));
+console.log(JSON.stringify({passed:true,checks:'single accessible imagination headline; obsolete flower removed; responsive 2:1 morph geometry retained'}));
 
 assert.ok(html.includes('<title>InkMaster Pedro ·'));
 assert.ok(html.includes('assets/inkmaster-pedro-wordmark.svg'));

@@ -43,7 +43,7 @@ for(const width of [320,375,390,768,1440]) {
 }
 assert.notEqual(JSON.stringify(core.pose(shapes.butterfly,'butterfly',0).black),JSON.stringify(core.pose(shapes.butterfly,'butterfly',335).black));
 assert.notEqual(JSON.stringify(core.pose(shapes.caterpillar,'caterpillar',0).black),JSON.stringify(core.pose(shapes.caterpillar,'caterpillar',300).black));
-const css=read('styles.css'),html=read('index.html').match(/<p class="ink-tagline">[\s\S]*?<\/p>/)[0];
+const css=read('styles.css'),html=read('index.html').match(/<h1 id="hero-title" class="ink-tagline">[\s\S]*?<\/h1>/)[0];
 assert.ok(css.includes('position: fixed')&&css.includes('overflow: clip')&&css.includes('contain: strict'));
 assert.ok(css.includes('prefers-reduced-motion: reduce'));
 assert.ok(html.includes('My imagination on your skin.'));assert.equal((html.match(/aria-hidden="true"/g)||[]).length,3);

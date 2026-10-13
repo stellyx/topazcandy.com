@@ -133,7 +133,7 @@
   const canvas = element.querySelector('canvas');
   const context = canvas?.getContext('2d');
   if (!context) return;
-  const art = document.createElement('canvas'); art.width = 720; art.height = 360;
+  const art = document.createElement('canvas'); art.width = 960; art.height = 480;
   const brush = art.getContext('2d');
   if (!brush) return;
   const flight = document.createElement('canvas');
@@ -175,7 +175,7 @@
   }
 
   function drawArtwork(frame) {
-    brush.setTransform(3, 0, 0, 3, 0, 0);
+    brush.setTransform(4, 0, 0, 4, 0, 0);
     brush.clearRect(0, 0, 240, 120);
     brush.globalCompositeOperation = 'source-over'; brush.globalAlpha = 1;
     brush.fillStyle = '#342d31'; trace(frame.black); brush.fill();
