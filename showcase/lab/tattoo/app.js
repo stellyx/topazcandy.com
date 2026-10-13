@@ -47,8 +47,39 @@ const form=$('#idea-form');form.addEventListener('submit',e=>{e.preventDefault()
 const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
 if('IntersectionObserver'in window&&!reduceMotion.matches){document.documentElement.classList.add('js-reveal');const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.03,rootMargin:'0px 0px 50px 0px'});$$('.reveal').forEach(el=>observer.observe(el));}
 const bloomToggle=document.querySelector('#bloom-toggle');
+const heroVideo=document.querySelector('#hero-video');
 let bloomPaused=reduceMotion.matches;
-function setBloomState(paused){bloomPaused=paused;document.documentElement.classList.toggle('motion-paused',paused);bloomToggle.setAttribute('aria-pressed',String(paused));bloomToggle.textContent=paused?'Activar efectos':'Pausar efectos';bloomToggle.setAttribute('aria-label',paused?'Activar los efectos decorativos':'Pausar los efectos decorativos');}
+let videoFailed=false;
+function videoAllowed(){return !bloomPaused&&!reduceMotion.matches&&!document.hidden&&!videoFailed;}
+function syncHeroVideo(){
+ if(!heroVideo)return;
+ if(!videoAllowed()){
+  heroVideo.pause();
+  if(reduceMotion.matches||videoFailed)heroVideo.classList.remove('is-playing');
+  return;
+ }
+ if(!heroVideo.getAttribute('src')){
+  heroVideo.muted=true;
+  heroVideo.defaultMuted=true;
+  heroVideo.setAttribute('src',heroVideo.dataset.src);
+ }
+ try{heroVideo.play()?.catch(()=>heroVideo.classList.remove('is-playing'));}
+ catch{heroVideo.classList.remove('is-playing');}
+}
+heroVideo?.addEventListener('playing',()=>{
+ if(videoAllowed())heroVideo.classList.add('is-playing');
+ else heroVideo.pause();
+});
+heroVideo?.addEventListener('error',()=>{videoFailed=true;syncHeroVideo();});
+document.addEventListener('visibilitychange',syncHeroVideo);
+function setBloomState(paused){
+ bloomPaused=paused;
+ document.documentElement.classList.toggle('motion-paused',paused);
+ bloomToggle.setAttribute('aria-pressed',String(paused));
+ bloomToggle.textContent=paused?'Activar efectos':'Pausar efectos';
+ bloomToggle.setAttribute('aria-label',paused?'Activar la mariposa y los efectos decorativos':'Pausar la mariposa y los efectos decorativos');
+ syncHeroVideo();
+}
 bloomToggle.addEventListener('click',()=>setBloomState(!bloomPaused));
-if(reduceMotion.matches)setBloomState(true);
+setBloomState(bloomPaused);
 reduceMotion.addEventListener?.('change',e=>setBloomState(e.matches));

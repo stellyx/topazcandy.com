@@ -30,7 +30,7 @@ assert.ok(lab.includes('THIRTEEN DISTINCT WEBSITE DIRECTIONS'));
 assert.ok(lab.includes('href="tattoo/"'));
 for(const document of [html,home,lab])assert.ok(document.includes('https://topazcandy.com/contact/?service=website#notes=I%20would%20like%20to%20customize%20the%20InkMaster'));
 
-function fixture(reduced=false){
+function fixture(reduced=false, playbackBlocked=false){
  class Element {
   constructor(dataset={}){this.dataset=dataset;this.events={};this.attrs={};this.animations=[];this.value='';this.hidden=false;this.disabled=false;this.classes=new Set();this.classList={add:c=>this.classes.add(c),remove:c=>this.classes.delete(c),toggle:(c,on)=>{if(on??!this.classes.has(c))this.classes.add(c);else this.classes.delete(c);},contains:c=>this.classes.has(c)};}
   animate(frames,options){const a={frames,options,canceled:false,cancel(){this.canceled=true;}};this.animations.push(a);return a;}
@@ -38,6 +38,9 @@ function fixture(reduced=false){
   addEventListener(n,f){(this.events[n]??=[]).push(f);}
   emit(n,e={}){return Promise.all((this.events[n]||[]).map(f=>f({preventDefault(){},target:this,...e})));}
   setAttribute(k,v){this.attrs[k]=v;}
+  getAttribute(k){return this.attrs[k]??null;}
+  play(){this.playCalls=(this.playCalls||0)+1;this.paused=false;return playbackBlocked?Promise.reject(new Error('autoplay blocked')):Promise.resolve();}
+  pause(){this.pauseCalls=(this.pauseCalls||0)+1;this.paused=true;}
   setCustomValidity(v){this.validity=v;}
   reportValidity(){return !this.validity;}
   focus(){this.focused=true;}
@@ -48,8 +51,9 @@ function fixture(reduced=false){
  }
  const nodes=new Map(), works=Array.from({length:4},(_,i)=>new Element({work:String(i)})), filters=['all','nocturno','botanico','ornamental'].map(filter=>new Element({filter}));
  const get=s=>{if(!nodes.has(s))nodes.set(s,new Element());return nodes.get(s);};
- const pref={matches:reduced,addEventListener(n,f){this.change=f;}};
- const doc={querySelector:get,querySelectorAll:s=>s==='[data-work]'?works:s==='[data-filter]'?filters:[],body:new Element(),documentElement:new Element()};
+ const pref={matches:reduced,addEventListener(n,f){this.change=e=>{this.matches=e.matches;f(e);};}};
+ get('#hero-video').dataset.src='assets/moth-calm-loop.mp4';
+ const doc={events:{},hidden:false,addEventListener(n,f){this.events[n]=f;},querySelector:get,querySelectorAll:s=>s==='[data-work]'?works:s==='[data-filter]'?filters:[],body:new Element(),documentElement:new Element()};
  const context=vm.createContext({document:doc,window:{matchMedia:()=>pref},navigator:{clipboard:{writeText:async s=>{context.copied=s;}}},Date,console});
  vm.runInContext(app,context);
  return{get,works,filters,pref,doc,context};
@@ -84,7 +88,7 @@ for(const name of ['petal-unfurl','leaf-unfurl','bloom-heart']){
  const at=p=>frames.find(m=>m[1].split(',').map(s=>s.trim()).includes(p))?.[2].trim();
  assert.ok(at('0%'),name+' starts explicitly');assert.equal(at('0%'),at('100%'),name+' has identical loop endpoints');
 }
-console.log(JSON.stringify({passed:true,checks:'three matching flower-loop endpoints; butterfly image static and all walking/wing layers removed'}));
+console.log(JSON.stringify({passed:true,checks:'three matching flower-loop endpoints; original butterfly fallback intact and all walking/wing layers removed'}));
 
 assert.ok(html.includes('<title>InkMaster Pedro ·'));
 assert.ok(html.includes('assets/inkmaster-pedro-wordmark.svg'));
@@ -115,3 +119,28 @@ assert.equal(rapid.get('#selected-title').textContent,'Reliquia');
 const still=fixture(true);await still.get('#next-work').emit('click');
 assert.equal(still.get('#stage-image').animations.length,0);
 console.log(JSON.stringify({passed:true,checks:'latest gallery selection wins, prior animation canceled, paused/reduced motion keeps interactions immediate'}));
+
+// Selected calm movie never requests bytes for reduced motion and fails back to original art.
+assert.ok(html.includes('autoplay muted playsinline loop preload="none"'));
+assert.ok(html.includes('data-src="assets/moth-calm-loop.mp4"'));
+assert.ok(!/<video[^>]*\ssrc=/.test(html));
+assert.ok(html.includes('poster="assets/moth-calm-poster.jpg"'));
+for(const name of ['moth-calm-loop.mp4','moth-calm-poster.jpg'])assert.ok(existsSync(base+'assets/'+name));
+assert.ok(css.includes('.hero-art-window .hero-video{display:none;transition:none}'));
+const movie=fixture();const video=movie.get('#hero-video');
+assert.equal(video.getAttribute('src'),'assets/moth-calm-loop.mp4');
+assert.equal(video.muted,true);assert.equal(video.defaultMuted,true);assert.ok(video.playCalls>0);
+assert.equal(video.classList.contains('is-playing'),false);
+await video.emit('playing');assert.equal(video.classList.contains('is-playing'),true);
+await movie.get('#bloom-toggle').emit('click');assert.equal(video.paused,true);
+await video.emit('playing');assert.equal(video.paused,true);
+await movie.get('#bloom-toggle').emit('click');assert.equal(video.paused,false);
+movie.doc.hidden=true;movie.doc.events.visibilitychange();assert.equal(video.paused,true);
+movie.doc.hidden=false;movie.doc.events.visibilitychange();assert.equal(video.paused,false);
+movie.pref.change({matches:true});assert.equal(video.paused,true);assert.equal(video.classList.contains('is-playing'),false);
+movie.pref.change({matches:false});await video.emit('playing');assert.equal(video.classList.contains('is-playing'),true);
+await video.emit('error');assert.equal(video.paused,true);assert.equal(video.classList.contains('is-playing'),false);
+const playCallsAfterError=video.playCalls;movie.doc.events.visibilitychange();assert.equal(video.playCalls,playCallsAfterError);
+const reduce=fixture(true);assert.equal(reduce.get('#hero-video').getAttribute('src'),null);assert.equal(reduce.get('#hero-video').playCalls,undefined);
+const blocked=fixture(false,true);await Promise.resolve();assert.equal(blocked.get('#hero-video').classList.contains('is-playing'),false);
+console.log(JSON.stringify({passed:true,checks:'calm video muted inline loop, lazy source, original fallback, pause/resume, hidden tab, dynamic reduced motion, blocked autoplay and media-error fallback'}));

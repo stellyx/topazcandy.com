@@ -1,9 +1,9 @@
-Copyright (c) 2010, j. 'mach' wust, with Reserved Font Name UnifrakturCook.
-Copyright (c) 2009, Peter Wiegel.
+Copyright 2011 The Bitter Project Authors (https://github.com/solmatas/BitterPro)
+with Reserved Font Name "Bitter Pro".
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
-http://scripts.sil.org/OFL
+https://openfontlicense.org
 
 
 -----------------------------------------------------------
