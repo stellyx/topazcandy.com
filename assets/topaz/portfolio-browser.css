@@ -28,13 +28,29 @@
 .portfolio-thumb{display:block;width:100%;height:60px;object-fit:cover;border-radius:2px;background:#edf4ff;pointer-events:none}
 .portfolio-tab-label{display:block;font:600 10px/1.3 'Manrope',Arial,sans-serif;padding:7px 2px 1px;white-space:nowrap}
 @media(max-width:760px){
- .portfolio-filters{gap:6px;margin-bottom:14px}.portfolio-filter{font-size:10px;padding-inline:13px}
+ /* Phone layout: one short filter strip, the picture, a concise summary, actions. */
+ .home-page .work-section>.section{padding-block:36px}
+ .home-page .work-section .section-heading{margin-bottom:18px}
+ .home-page .work-section .section-heading .eyebrow{margin-bottom:10px}
+ .home-page .work-section .section-heading h2{font-size:clamp(25px,6.7vw,30px);line-height:1.1}
+ .home-page .work-section .section-heading>p{font-size:12px;line-height:1.5;margin-top:10px;max-width:none}
+ .portfolio-filters{flex-wrap:nowrap;overflow-x:auto;max-width:100%;min-width:0;gap:6px;margin-bottom:12px;padding:2px 1px 6px;overscroll-behavior-x:contain;touch-action:auto;scrollbar-width:thin}
+ .portfolio-filter{flex:0 0 auto;white-space:nowrap;font-size:12px;padding:10px 12px;min-height:44px}
+ .portfolio-filter:focus-visible,.portfolio-tab:focus-visible{outline-offset:-3px}
  .home-page .portfolio-stage>.work-card{display:flex;flex-direction:column;gap:0}
  .portfolio-media{width:100%}.home-page .portfolio-media .work-image{aspect-ratio:16/10}
- .home-page .portfolio-stage .work-meta{align-self:stretch;min-height:144px;padding:18px 0 10px;box-sizing:border-box}
- .home-page .portfolio-stage .work-meta h3{font-size:23px;margin-bottom:7px}.home-page .portfolio-stage .work-meta p{font-size:11px}
- .home-page .portfolio-stage .concept-sales{align-self:stretch;min-height:60px;padding:4px 0;flex-wrap:nowrap}
- .portfolio-toolbar{margin-top:14px}.portfolio-status{font-size:11px}
- .portfolio-tab{flex-basis:104px;width:104px}.portfolio-thumb{height:56px}
+ .home-page .portfolio-media .preview-title{inset:auto 14px 14px!important;max-width:calc(100% - 28px);font-size:clamp(28px,8vw,34px)!important;line-height:1!important}
+ .home-page .portfolio-stage .work-meta{align-self:stretch;min-height:0;padding:10px 0 8px;box-sizing:border-box}
+ .home-page .portfolio-stage .work-meta h3{display:none}
+ .home-page .portfolio-stage .work-meta p{font-size:12px;line-height:1.45;min-height:2.9em;margin:0}
+ .home-page .portfolio-stage .concept-sales{align-self:stretch;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:8px;min-height:44px;padding:0}
+ .home-page .portfolio-stage .concept-sales>a:first-child{display:flex;align-items:center;justify-content:center;min-width:0;min-height:44px;padding:10px 8px;border:1px solid #b49ab780;border-radius:4px;font-size:12px;line-height:1.2;box-sizing:border-box;white-space:nowrap}
+ .home-page .portfolio-stage .concept-buy,.home-page .portfolio-stage .concept-configure{width:auto;min-width:0;min-height:44px;max-width:100%;justify-content:center;gap:8px;padding:10px 8px;font-size:12px;line-height:1.2;box-sizing:border-box;white-space:nowrap}
+ .home-page .portfolio-stage .concept-configure{background:#f8d991;border-color:#f8d991;color:#352338}
+ .portfolio-toolbar{gap:8px;margin:10px 0 7px}.portfolio-status{font-size:11px;line-height:1.3}
+ .portfolio-navigation{gap:6px}
+ .portfolio-rail{gap:8px;padding:3px 2px 9px;touch-action:auto}
+ .portfolio-tab{flex-basis:96px;width:96px;min-height:76px;padding:4px}
+ .portfolio-thumb{height:44px}.portfolio-tab-label{padding:5px 1px 1px;font-size:10px;line-height:1.2}
 }
 @media(prefers-reduced-motion:reduce){.portfolio-rail{scroll-behavior:auto}}
