@@ -1,0 +1,13 @@
+/* Native motion in the existing illustrations. Card titles and links stay still. */
+[data-artwork-preview]{position:relative}
+.artwork-tree{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.85;pointer-events:none}
+.artwork-tree #back-leaves,.artwork-tree #front-leaves{transform-box:view-box;transform-origin:655px 530px;animation:artwork-canopy-sway 9s ease-in-out infinite;animation-play-state:paused}
+.artwork-tree #front-leaves{animation-name:artwork-canopy-near;animation-duration:7s;animation-delay:-3s}
+.artwork-lights{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:hidden}
+.artwork-firefly{animation:artwork-firefly-drift var(--flight,11s) ease-in-out infinite;animation-delay:var(--delay,0s);animation-play-state:paused}
+[data-artwork-paused=false] .artwork-tree #back-leaves,[data-artwork-paused=false] .artwork-tree #front-leaves,[data-artwork-paused=false] .artwork-firefly{animation-play-state:running}
+@keyframes artwork-canopy-sway{0%,100%{transform:rotate(-.8deg) translateX(-2px)}50%{transform:rotate(.8deg) translateX(2px)}}
+@keyframes artwork-canopy-near{0%,100%{transform:rotate(.9deg)}50%{transform:rotate(-1.1deg)}}
+@keyframes artwork-firefly-drift{0%,100%{transform:translate(-15px,12px);opacity:.3}35%{transform:translate(21px,-29px);opacity:.85}70%{transform:translate(38px,-6px);opacity:.45}}
+/* Explicit Play can opt in; the controller otherwise keeps preference-safe stills. */
+@media(prefers-reduced-motion:reduce){[data-artwork-paused=true] .artwork-firefly,[data-artwork-paused=true] .artwork-tree #back-leaves,[data-artwork-paused=true] .artwork-tree #front-leaves{animation:none}}
