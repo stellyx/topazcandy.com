@@ -19,3 +19,8 @@ The latest identity correction changes only the name and origin: InkMaster Pedro
 
 ## Static butterfly restored — October 13
 At the user’s request, all hero butterfly wing deformation, walking, legs and body movement have been removed. The original full moth portrait and its existing frame are preserved. The separate “florece” blossom, studio presentation, InkMaster Pedro name, Toluca origin, gallery and contact routes remain unchanged. “Pausar flor” controls only the blossom. A later image-to-video comparison will be reviewed separately; no video generation or video replacement is part of this change.
+
+## Engraved tattoo identity — October 13
+The exact InkMaster Pedro name now has a locally served, outlined blackletter wordmark with custom engraved detail and original ornaments. The UnifrakturCook source typeface is under SIL OFL 1.1; attribution and license are included beside the SVG. No remote font is loaded. Fine thorn-and-needle linework, a flash-sheet gallery frame, short artwork-change reveals, stamped button feedback and stronger oxblood details add tattoo character while keeping the bone-paper layout.
+
+The hero moth image remains completely static and unchanged. The existing bloom and the new decorative line drawing share the effects pause control. Reduced-motion disables decorative and gallery animation; rapid gallery changes cancel the preceding reveal and retain the latest selected artwork. No personal facts, booking/contact destination, price or payment flow changed.

@@ -8,6 +8,15 @@ const works=[
 const $=s=>document.querySelector(s);const $$=s=>[...document.querySelectorAll(s)];
 let visible=[0,1,2,3],current=0,suppressClickUntil=0;
 const dialog=$('#art-dialog');
+function animateArtwork(){
+ const targets=[$('#stage-image'),$('.selected-info'),$('#dialog-img')];
+ for(const element of targets){
+  element.getAnimations?.().forEach(animation=>animation.cancel());
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches||document.documentElement.classList.contains('motion-paused'))continue;
+  element.animate?.([{opacity:.55,transform:'translateY(7px) scale(.995)'},{opacity:1,transform:'translateY(0) scale(1)'}],{duration:340,easing:'cubic-bezier(.2,.7,.2,1)'});
+ }
+}
+
 function labelFor(work){return work.label+' / ESTUDIO '+work.roman;}
 function renderWork(index){
  current=index;const work=works[index];const page=String(visible.indexOf(index)+1).padStart(2,'0')+' / '+String(visible.length).padStart(2,'0');
@@ -15,6 +24,7 @@ function renderWork(index){
  $$('[data-work]').forEach(button=>{const selected=Number(button.dataset.work)===index;button.classList.toggle('active',selected);button.setAttribute('aria-pressed',String(selected));});
  $('#previous-work').disabled=visible.length<2;$('#next-work').disabled=visible.length<2;
  $('#dialog-img').src='assets/'+work.file;$('#dialog-img').alt=work.alt;$('#dialog-category').textContent=labelFor(work);$('#dialog-title').textContent=work.title;$('#dialog-page').textContent=page;$('#dialog-prev').disabled=visible.length<2;$('#dialog-next').disabled=visible.length<2;
+ animateArtwork();
 }
 function step(delta){const position=visible.indexOf(current);renderWork(visible[(position+delta+visible.length)%visible.length]);}
 $$('[data-filter]').forEach(button=>button.addEventListener('click',()=>{
@@ -38,7 +48,7 @@ const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
 if('IntersectionObserver'in window&&!reduceMotion.matches){document.documentElement.classList.add('js-reveal');const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.03,rootMargin:'0px 0px 50px 0px'});$$('.reveal').forEach(el=>observer.observe(el));}
 const bloomToggle=document.querySelector('#bloom-toggle');
 let bloomPaused=reduceMotion.matches;
-function setBloomState(paused){bloomPaused=paused;document.documentElement.classList.toggle('motion-paused',paused);bloomToggle.setAttribute('aria-pressed',String(paused));bloomToggle.textContent=paused?'Activar flor':'Pausar flor';bloomToggle.setAttribute('aria-label',paused?'Activar la flor junto a florece':'Pausar la flor junto a florece');}
+function setBloomState(paused){bloomPaused=paused;document.documentElement.classList.toggle('motion-paused',paused);bloomToggle.setAttribute('aria-pressed',String(paused));bloomToggle.textContent=paused?'Activar efectos':'Pausar efectos';bloomToggle.setAttribute('aria-label',paused?'Activar los efectos decorativos':'Pausar los efectos decorativos');}
 bloomToggle.addEventListener('click',()=>setBloomState(!bloomPaused));
 if(reduceMotion.matches)setBloomState(true);
 reduceMotion.addEventListener?.('change',e=>setBloomState(e.matches));

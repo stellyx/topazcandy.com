@@ -32,7 +32,9 @@ for(const document of [html,home,lab])assert.ok(document.includes('https://topaz
 
 function fixture(reduced=false){
  class Element {
-  constructor(dataset={}){this.dataset=dataset;this.events={};this.attrs={};this.value='';this.hidden=false;this.disabled=false;this.classes=new Set();this.classList={add:c=>this.classes.add(c),remove:c=>this.classes.delete(c),toggle:(c,on)=>{if(on??!this.classes.has(c))this.classes.add(c);else this.classes.delete(c);},contains:c=>this.classes.has(c)};}
+  constructor(dataset={}){this.dataset=dataset;this.events={};this.attrs={};this.animations=[];this.value='';this.hidden=false;this.disabled=false;this.classes=new Set();this.classList={add:c=>this.classes.add(c),remove:c=>this.classes.delete(c),toggle:(c,on)=>{if(on??!this.classes.has(c))this.classes.add(c);else this.classes.delete(c);},contains:c=>this.classes.has(c)};}
+  animate(frames,options){const a={frames,options,canceled:false,cancel(){this.canceled=true;}};this.animations.push(a);return a;}
+  getAnimations(){return this.animations.filter(a=>!a.canceled);}
   addEventListener(n,f){(this.events[n]??=[]).push(f);}
   emit(n,e={}){return Promise.all((this.events[n]||[]).map(f=>f({preventDefault(){},target:this,...e})));}
   setAttribute(k,v){this.attrs[k]=v;}
@@ -85,8 +87,31 @@ for(const name of ['petal-unfurl','leaf-unfurl','bloom-heart']){
 console.log(JSON.stringify({passed:true,checks:'three matching flower-loop endpoints; butterfly image static and all walking/wing layers removed'}));
 
 assert.ok(html.includes('<title>InkMaster Pedro ·'));
-assert.ok(html.includes('InkMaster <em>Pedro</em>'));
+assert.ok(html.includes('assets/inkmaster-pedro-wordmark.svg'));
+assert.equal((html.match(/class="brand-engraving"/g)||[]).length,2);
 assert.ok(html.includes('RAÍCES EN TOLUCA'));
 assert.ok(!/Tinta|Umbría|umbría|TAMAULIPAS|NOMBRE DEL ARTISTA/.test(html));
 assert.ok(!html.includes('assets/social-cover.png'));
 assert.ok(home.includes('InkMaster Pedro')&&lab.includes('InkMaster'));
+
+assert.ok(css.includes('.motion-paused .ink-line{animation-play-state:paused}'));
+assert.ok(css.includes('@media(prefers-reduced-motion:reduce){.ink-line{animation:none'));
+assert.ok(app.includes('element.getAnimations?.().forEach(animation=>animation.cancel())'));
+assert.ok(existsSync(base+'assets/wordmark-typeface-OFL.txt'));
+assert.ok(readFileSync(base+'assets/inkmaster-pedro-wordmark.svg','utf8').includes('<title id="brand-title">InkMaster Pedro</title>'));
+
+const rapid=fixture();
+await rapid.get('#next-work').emit('click');
+const firstReveal=rapid.get('#stage-image').animations[0];
+assert.equal(firstReveal.options.duration,340);
+await rapid.get('#next-work').emit('click');
+assert.equal(firstReveal.canceled,true);
+assert.equal(rapid.get('#selected-title').textContent,'La vigilia');
+await rapid.get('#bloom-toggle').emit('click');
+const beforePaused=rapid.get('#stage-image').animations.length;
+await rapid.get('#next-work').emit('click');
+assert.equal(rapid.get('#stage-image').animations.length,beforePaused);
+assert.equal(rapid.get('#selected-title').textContent,'Reliquia');
+const still=fixture(true);await still.get('#next-work').emit('click');
+assert.equal(still.get('#stage-image').animations.length,0);
+console.log(JSON.stringify({passed:true,checks:'latest gallery selection wins, prior animation canceled, paused/reduced motion keeps interactions immediate'}));
