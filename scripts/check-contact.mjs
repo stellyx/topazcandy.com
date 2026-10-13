@@ -94,8 +94,9 @@ for(const path of files('.').filter(path=>path.endsWith('.html')&&!path.startsWi
 }
 assert.equal(messageLink({mode:'template'},'cut','new'),'https://topazcandy.com/contact/?service=website&template=hair#contact-form');
 assert.ok(messageLink({mode:'mj',phone:'+15127169236'},'cut','new').startsWith('sms:+15127169236'));
-assert.ok(home.indexOf('id="everything-we-do"')<home.indexOf('id="work"'));
-assert.match(home,/class="button light" href="#work">Choose a website/);
+// The approved direction moves buying directly beneath the hero.
+assert.ok(home.indexOf('id="work"')<home.indexOf('id="everything-we-do"'));
+assert.match(home,/class="button" href="#work">Browse websites/);
 assert.match(home,/href="\/services\/">Everything we do/,'Other services remain directly available in navigation');
 const contact=readFileSync('contact/index.html','utf8');assert.match(contact,/inputmode="url"/);assert.match(contact,/inputmode="email"/);assert.match(contact,/inputmode="tel"/);
 assert.equal((contact.match(/<form\b/g)||[]).length,1);

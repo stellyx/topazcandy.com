@@ -1,0 +1,99 @@
+/* Home-only review direction. Shared service/demo/checkout styles stay intact. */
+.home-page.glass-redesign{--paper:#f2eee5;--paper-deep:#e7dfd1;--ink:#181916;--muted:#585951;--plum:#6f3c21;--amber:#de8628;--amber-light:#f5c06a;--line:#cbc5b9;--max:1400px;background:var(--paper)}
+.glass-redesign .site-header{min-height:88px;padding-block:15px;gap:28px;border-color:var(--line)}
+.glass-redesign .topaz-brand{gap:9px;--brand-ink:#181916;--brand-accent:#181916}
+.glass-redesign .topaz-brand .brand-emblem{width:42px;height:42px;flex-basis:42px}
+.glass-redesign .topaz-brand .brand-wordmark{font-family:var(--sans);font-weight:800;letter-spacing:-1.8px;font-size:29px;animation:none;background:none;-webkit-text-fill-color:currentColor}
+.glass-redesign .topaz-brand .brand-wordmark em{font-style:normal;font-weight:800;animation:none;background:none;-webkit-text-fill-color:currentColor}
+.glass-redesign .topaz-brand .brand-signature{display:none}
+.glass-redesign .nav{gap:30px;font-size:12px}
+.glass-redesign .nav-contact{background:var(--ink);color:var(--paper);border-radius:0;min-height:44px}
+.glass-redesign .glass-mobile-nav{display:none}
+.glass-redesign .eyebrow::before{display:none}
+.glass-redesign .hero.glass-hero{position:relative;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:20px;padding-block:38px 30px;align-items:center;overflow:hidden}
+.glass-redesign .glass-copy{position:relative;z-index:1;min-width:0}
+.glass-redesign .glass-copy .eyebrow{font-size:10px;letter-spacing:.18em;margin-bottom:15px}
+.glass-redesign .glass-copy h1{font-family:var(--sans);font-weight:800;font-size:clamp(40px,4.45vw,65px);line-height:1.02;letter-spacing:-.065em;max-width:630px;margin-bottom:20px}
+.glass-redesign .glass-copy h1 span{display:block}
+.glass-redesign .glass-copy .lede{font-size:16px;line-height:1.5;max-width:435px;color:var(--ink);margin-bottom:21px}
+.glass-redesign .glass-copy .actions{gap:10px}
+.glass-redesign .glass-copy .button{border-radius:0;font-size:12px;min-height:48px;padding:14px 20px;gap:18px}
+.glass-redesign .glass-copy .button.light{border-color:var(--ink)}
+.glass-redesign .glass-copy .micro{font-size:11px;line-height:1.5;margin-block:15px 0;color:var(--muted)}
+.glass-redesign .glass-copy .micro a{text-decoration:underline;text-underline-offset:3px;display:inline-flex;align-items:center;min-height:24px}
+.living-glass{position:relative;display:block;isolation:isolate;aspect-ratio:1.2/1;min-width:0;width:100%;max-height:408px;margin:0;overflow:hidden}
+.living-glass .glass-poster,.living-glass canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;pointer-events:none}
+.living-glass canvas{opacity:0}
+.living-glass[data-glass-state=live] canvas{opacity:1}
+.living-glass[data-glass-state=live] .glass-poster{opacity:0}
+.living-glass::before{content:'';position:absolute;z-index:-1;width:65%;height:17%;left:17.5%;bottom:8%;background:radial-gradient(ellipse,#bd773243,transparent 70%);transform:rotate(-10deg)}
+.living-glass .glass-toggle{position:absolute;right:5px;bottom:0;background:var(--paper);color:var(--ink);border:1px solid var(--line);padding:10px 13px;min-height:44px;font:650 10px/1.2 var(--sans);border-radius:0;z-index:2}
+.living-glass [hidden]{display:none!important}
+.glass-redesign .work-section{background:var(--ink);color:var(--paper)}
+.glass-redesign .work-section>.section{padding-block:35px 38px}
+.glass-redesign .work-section .section-heading{margin-bottom:24px;gap:30px;align-items:center}
+.glass-redesign .work-section .eyebrow{color:#f5c06a;margin-bottom:10px;font-size:10px}
+.glass-redesign .work-section .section-heading h2{font-family:var(--sans);font-size:clamp(28px,3.1vw,43px);font-weight:800;line-height:1.08;letter-spacing:-.055em}
+.glass-redesign .work-section .section-heading>p{max-width:315px;color:#d0d0c5;font-size:12px;line-height:1.6}
+.glass-redesign .work-package-link{color:#f5c06a;padding:4px 0;margin-top:2px}
+.glass-redesign .portfolio-browser{max-width:none}
+.glass-redesign .portfolio-filter,.glass-redesign .portfolio-step{border-color:#66675b;border-radius:2px;color:#f2eee5}
+.glass-redesign .portfolio-filter[aria-pressed=true]{background:#f5c06a;border-color:#f5c06a;color:#181916}
+.glass-redesign .portfolio-filter:hover,.glass-redesign .portfolio-step:hover{border-color:#f5c06a}
+.glass-redesign .portfolio-status,.glass-redesign .work-meta p{color:#d0d0c5}
+.glass-redesign .portfolio-tab{background:#24251f;color:#f2eee5;border-color:#55564a;border-radius:2px}
+.glass-redesign .portfolio-tab[aria-selected=true]{border-color:#f5c06a;box-shadow:0 0 0 1px #f5c06a;background:#36362a}
+.glass-redesign .portfolio-rail{scrollbar-color:#999b86 #24251f}
+.glass-redesign .portfolio-stage .work-meta{border-color:#54554b}
+.glass-redesign .portfolio-stage .work-meta h3{font-family:var(--sans);font-weight:750;letter-spacing:-.045em;font-size:clamp(23px,2.5vw,33px)}
+.glass-redesign .portfolio-stage .concept-buy,.glass-redesign .portfolio-stage .concept-configure{background:#f5c06a;color:#181916;border-color:#f5c06a;border-radius:0}
+.glass-redesign .portfolio-stage .concept-buy:hover,.glass-redesign .portfolio-stage .concept-configure:hover{background:#ffcf81}
+.glass-redesign .work-foot{margin-top:20px}
+.glass-redesign .work-foot p{color:#d0d0c5}
+.glass-redesign .work-foot .text-link{color:#f5c06a}
+.glass-redesign .glass-support .eyebrow{color:var(--muted)}
+.glass-redesign .glass-support h2{font-family:var(--sans);font-size:clamp(32px,3.8vw,52px);font-weight:750}
+.glass-redesign .section{padding-block:64px}
+.glass-redesign .capability-section{background:#e7dfd1}
+.glass-redesign .site-footer .course-nav-link{color:var(--muted)}
+@media(max-width:1050px){
+ .glass-redesign .nav{gap:17px;font-size:11px}
+ .glass-redesign .hero.glass-hero{gap:12px}
+ .glass-redesign .glass-copy h1{font-size:clamp(39px,5.3vw,52px)}
+ .glass-redesign .glass-copy .button{padding-inline:15px;font-size:11px;gap:12px}
+}
+@media(max-width:760px){
+ .glass-redesign .wrap{padding-inline:22px}
+ .glass-redesign .site-header{min-height:74px;padding-block:13px;flex-wrap:nowrap;gap:12px}
+ .glass-redesign .site-header>.nav{display:none}
+ .glass-redesign .topaz-brand .brand-emblem{width:33px;height:33px;flex-basis:33px}
+ .glass-redesign .topaz-brand .brand-wordmark{font-size:25px;letter-spacing:-1.5px}
+ .glass-redesign .glass-mobile-nav{display:block;position:relative}
+ .glass-mobile-nav summary{list-style:none;display:flex;align-items:center;justify-content:center;width:44px;min-height:44px;font-size:11px;border:1px solid var(--line);cursor:pointer}
+ .glass-mobile-nav summary::-webkit-details-marker{display:none}
+ .glass-mobile-nav nav{position:absolute;right:0;top:calc(100% + 8px);width:220px;background:var(--paper);border:1px solid var(--line);padding:10px;z-index:5;box-shadow:0 12px 24px #18191615;display:grid}
+ .glass-mobile-nav nav a{display:flex;align-items:center;min-height:44px;padding:10px;font-size:13px}
+ .glass-redesign .hero.glass-hero{grid-template-columns:1fr;padding-block:25px 15px;gap:3px}
+ .glass-redesign .glass-copy .eyebrow{font-size:9px;margin-bottom:12px}
+ .glass-redesign .glass-copy h1{font-size:clamp(33px,8.8vw,48px);max-width:540px;line-height:1.04;margin-bottom:15px}
+ .glass-redesign .glass-copy .lede{font-size:14px;line-height:1.5;margin-bottom:16px;max-width:420px}
+ .glass-redesign .glass-copy .actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+ .glass-redesign .glass-copy .button{padding:12px 10px;font-size:11px;gap:7px;min-height:48px;white-space:normal;text-align:center}
+ .glass-redesign .glass-copy .button .arrow{font-size:17px}
+ .glass-redesign .glass-copy .micro{font-size:10px;margin-top:11px;line-height:1.5}
+ .living-glass{height:148px;aspect-ratio:auto;max-width:440px;justify-self:end;overflow:visible}
+ .living-glass .glass-poster,.living-glass canvas{object-fit:contain}
+ .living-glass .glass-toggle{right:0;bottom:0;font-size:9px;min-height:44px;padding:9px}
+ .glass-redesign .work-section>.section{padding-block:26px}
+ .glass-redesign .work-section .section-heading{margin-bottom:15px}
+ .glass-redesign .work-section .eyebrow{font-size:9px;margin-bottom:8px}
+ .glass-redesign .work-section .section-heading h2{font-size:28px}
+ .glass-redesign .work-section .section-heading>p{font-size:11px;line-height:1.5;margin-top:10px;max-width:none}
+ .glass-redesign .portfolio-filters{margin-bottom:10px}
+ .glass-redesign .portfolio-stage .concept-sales>a:first-child{border-color:#66675b;border-radius:0}
+ .glass-redesign .portfolio-stage .work-meta p{color:#d0d0c5}
+ .glass-redesign .work-foot{gap:16px}
+ .glass-redesign .work-foot p{font-size:10px}
+}
+@media(max-width:380px){.glass-redesign .wrap{padding-inline:18px}.glass-redesign .topaz-brand .brand-wordmark{font-size:23px}.glass-redesign .glass-copy h1{font-size:33px}.living-glass{height:124px}.glass-redesign .glass-copy .button{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.glass-redesign .button{transition:none}.living-glass canvas{opacity:0!important}.living-glass .glass-poster{opacity:1!important}}

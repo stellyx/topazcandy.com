@@ -1,0 +1,19 @@
+{
+  "base_commit": "8721177dccd222564cf3eb928ee0be4f42608503",
+  "branch": "design/living-glass-review-v1-20261013",
+  "status": "preview only; live replacement awaits creative review",
+  "catalog_sha256": "bca56a3946f898e015c5965211185ca2b0910b235b07e21c75515c1ec7666789",
+  "checkout_hashes": {
+    "checkout/README.md": "c37edaba4dbe5933be0db2d994dbebba8e10aec81d8b34a6288e5551d1fa4595",
+    "checkout/app.mjs": "e430992f689d2c837aba1a4637636ad6b9afe9e4b0c46cbf08db63313d118ad5",
+    "checkout/checkout.css": "9a1bb605a0c5fdd57fda42a343d95b9cabd5c7fc0e3ebb87999f92ddd83c2397",
+    "checkout/config.mjs": "a6394c082a59d1f740d2d1206b7818588bb9c842f5f798995780cf279065aa5c",
+    "checkout/index.html": "6d54a2167e387a1497db015e0584e1aa9450de1fd073d8ceb5f0ea075291bb7e",
+    "checkout/intake.mjs": "9a0cf8164f79501135ea4341842ca94e92240f92c414dcaa9c2f7c5ed5e742ec",
+    "checkout/motion.mjs": "5857bbad1a72f91a337e308c8403c85044294b731a44858ad116de53addfbf88"
+  },
+  "reference_sha256": "33296f5044d376469f35b3ecea384fbfb17b8a53a296a68371470a0eee8b847a",
+  "reference_library_file_id": "libfile_0cd28a60a0808191b1875e0235b54de4",
+  "extra_media_cost_usd": 0,
+  "concurrent_work": "Latest published Dusk and Dice and Wonderbranch loop integration retained from main 8721177."
+}
