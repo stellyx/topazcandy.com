@@ -41,7 +41,7 @@ Passed:
 - All 12 current card blocks match the fresh base by SHA-256. All seven checkout files match the manifest hashes; prices, selected-template routes and the existing PayPal product are preserved.
 - Numerical checks for finite closed geometry, sampled noncollapsed tangents, and pose/velocity agreement at the loop seam. Maximum velocity seam difference was approximately 1.1e-11.
 - Simulated pause/resume, offscreen/hidden-page suspension, back/forward cache events, reduced motion, data saving, resize/profile changes, disposal, context loss and slow-render fallback.
-- Actual shaders compiled and rendered through EGL/Mesa. All 768 frames in the 64-second, 12-fps motion review exported successfully. Software render throughput is not device performance evidence.
+- Actual shaders compiled and rendered through EGL/Mesa under both desktop OpenGL and OpenGL ES. Varying precision is explicit and matched between shader stages. All 768 frames in the 64-second, 12-fps motion review exported successfully. Software render throughput is not device performance evidence.
 
 Not exercised: browser desktop/mobile layout, native keyboard interactions in a rendered browser, real device performance, live checkout submission and physical payment completion. Browser QA was unavailable in this workspace. The in-conversation desktop/mobile review uses the actual homepage components and motion code, with embedded static catalog posters instead of its movie downloads.
 
@@ -58,4 +58,5 @@ node scripts/check-portfolio-actions.mjs
 node scripts/check-portfolio-browser.mjs
 node scripts/check-living-glass.mjs
 python3 scripts/render-living-glass.py --poster assets/topaz/glass/amber-ribbon-poster.webp
+python3 scripts/render-living-glass.py --gles --poster /absolute/scratch/gles-check.webp
 ```

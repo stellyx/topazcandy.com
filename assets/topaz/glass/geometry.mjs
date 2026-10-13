@@ -54,8 +54,8 @@ precision highp float;
 attribute vec2 aParam;
 uniform float uPhase;
 uniform float uAspect;
-varying vec3 vPosition;
-varying vec3 vNormal;
+varying mediump vec3 vPosition;
+varying mediump vec3 vNormal;
 vec3 center(float u){
  float gather=(1.0+cos(uPhase*2.0))*.5;
  float radius=1.06+(.32+.08*(1.0-gather))*cos(u*3.0);
@@ -90,8 +90,8 @@ void main(){
 export const FRAGMENT = `
 precision mediump float;
 uniform float uReflection;
-varying vec3 vPosition;
-varying vec3 vNormal;
+varying mediump vec3 vPosition;
+varying mediump vec3 vNormal;
 vec3 studio(vec3 d){
  vec3 color=mix(vec3(.045,.026,.012),vec3(.94,.91,.83),smoothstep(-.48,.22,d.y));
  float band=exp(-pow((d.x+.26*d.y-.13)/.085,2.0));

@@ -13,32 +13,33 @@ Int=C.c_int;UInt=C.c_uint;Float=C.c_float;Void=C.c_void_p
 def function(lib,name,result,args):
     fn=getattr(lib,name);fn.restype=result;fn.argtypes=args;return fn
 
-def context(width,height):
+def context(width,height,gles=False):
     getproc=function(EGL,'eglGetProcAddress',Void,[C.c_char_p])
     getdisplay=C.CFUNCTYPE(Void,UInt,Void,C.POINTER(Int))(getproc(b'eglGetPlatformDisplayEXT'))
     display=getdisplay(0x31DD,None,None)
     initialize=function(EGL,'eglInitialize',UInt,[Void,C.POINTER(Int),C.POINTER(Int)])
     major,minor=Int(),Int();assert initialize(display,C.byref(major),C.byref(minor)),'EGL initialization'
-    assert function(EGL,'eglBindAPI',UInt,[UInt])(0x30A2),'OpenGL binding'
+    assert function(EGL,'eglBindAPI',UInt,[UInt])(0x30A0 if gles else 0x30A2),'OpenGL binding'
     choose=function(EGL,'eglChooseConfig',UInt,[Void,C.POINTER(Int),C.POINTER(Void),Int,C.POINTER(Int)])
-    attributes=(Int*17)(0x3033,1,0x3040,8,0x3024,8,0x3023,8,0x3022,8,0x3021,8,0x3025,24,0x3026,0,0x3038)
+    attributes=(Int*17)(0x3033,1,0x3040,4 if gles else 8,0x3024,8,0x3023,8,0x3022,8,0x3021,8,0x3025,24,0x3026,0,0x3038)
     config=Void();count=Int();assert choose(display,attributes,C.byref(config),1,C.byref(count)) and count.value,'EGL configuration'
     surface=function(EGL,'eglCreatePbufferSurface',Void,[Void,Void,C.POINTER(Int)])(display,config,(Int*5)(0x3057,width,0x3056,height,0x3038))
-    ctx=function(EGL,'eglCreateContext',Void,[Void,Void,Void,C.POINTER(Int)])(display,config,None,(Int*1)(0x3038))
+    context_attributes=(Int*3)(0x3098,2,0x3038) if gles else (Int*1)(0x3038)
+    ctx=function(EGL,'eglCreateContext',Void,[Void,Void,Void,C.POINTER(Int)])(display,config,None,context_attributes)
     assert ctx and surface,'EGL surface/context'
     assert function(EGL,'eglMakeCurrent',UInt,[Void,Void,Void,Void])(display,surface,surface,ctx),'EGL current context'
     return display,surface,ctx
 
 class RibbonRenderer:
-    def __init__(self,width,height,data):
-        self.context=context(width,height);self.width=width;self.height=height;self.data=data
+    def __init__(self,width,height,data,gles=False):
+        self.context=context(width,height,gles);self.width=width;self.height=height;self.data=data
         self.shader_source=function(GL,'glShaderSource',None,[UInt,Int,C.POINTER(C.c_char_p),C.POINTER(Int)])
         self.compile=function(GL,'glCompileShader',None,[UInt])
         self.shader_status=function(GL,'glGetShaderiv',None,[UInt,UInt,C.POINTER(Int)])
         self.shader_log=function(GL,'glGetShaderInfoLog',None,[UInt,Int,C.POINTER(Int),C.c_char_p])
         def shader(kind,source):
             handle=function(GL,'glCreateShader',UInt,[UInt])(kind)
-            source='#version 120\n'+'\n'.join(s for s in source.splitlines() if not s.strip().startswith('precision '))
+            if not gles:source='#version 120\n'+'\n'.join(s.replace('mediump ','') for s in source.splitlines() if not s.strip().startswith('precision '))
             encoded=source.encode();text=C.c_char_p(encoded)
             self.shader_source(handle,1,C.byref(text),None);self.compile(handle)
             status=Int();self.shader_status(handle,0x8B81,C.byref(status))
@@ -73,7 +74,7 @@ class RibbonRenderer:
         self.read=function(GL,'glReadPixels',None,[Int,Int,Int,Int,UInt,UInt,Void])
         self.error=function(GL,'glGetError',UInt,[])
         function(GL,'glGetString',C.c_char_p,[UInt])
-        self.backend=GL.glGetString(0x1F01).decode()
+        self.backend=GL.glGetString(0x1F01).decode();self.api=GL.glGetString(0x1F02).decode()
     def frame(self,seconds):
         phase=(seconds%self.data['config']['period'])/self.data['config']['period']*math.tau
         self.uniform(self.phase,phase);self.clear(0x4000|0x0100)
@@ -90,15 +91,15 @@ class RibbonRenderer:
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--poster',type=Path);parser.add_argument('--frames',type=Path)
-    parser.add_argument('--width',type=int,default=960);parser.add_argument('--height',type=int,default=720);parser.add_argument('--fps',type=int,default=12)
+    parser.add_argument('--width',type=int,default=960);parser.add_argument('--height',type=int,default=720);parser.add_argument('--fps',type=int,default=12);parser.add_argument('--gles',action='store_true')
     args=parser.parse_args();root=Path(__file__).resolve().parent.parent
     data=json.loads(subprocess.check_output(['node',str(root/'scripts/export-glass.mjs')],text=True))
-    renderer=RibbonRenderer(args.width,args.height,data);started=time.monotonic()
+    renderer=RibbonRenderer(args.width,args.height,data,args.gles);started=time.monotonic()
     if args.poster:
         args.poster.parent.mkdir(parents=True,exist_ok=True)
         image=renderer.frame(data['config']['stillTime']).convert('RGB');image.save(args.poster,quality=90,method=6)
         assert image.getbbox(),'Nonempty glass poster'
-        print(json.dumps({'poster':str(args.poster),'size':image.size,'renderer':renderer.backend,'seconds':round(time.monotonic()-started,3)}),flush=True)
+        print(json.dumps({'poster':str(args.poster),'size':image.size,'renderer':renderer.backend,'api':renderer.api,'seconds':round(time.monotonic()-started,3)}),flush=True)
     if args.frames:
         args.frames.mkdir(parents=True,exist_ok=True)
         count=int(data['config']['period']*args.fps)
