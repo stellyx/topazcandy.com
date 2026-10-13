@@ -1,23 +1,7 @@
-/* Crisp, opaque silhouettes. Muted pigment, never blurred/translucent smudges.
-   A negative layer inside the body stacking context keeps all page content above it. */
-.tc-halloween body{isolation:isolate}
-#tc-season-decor{position:fixed;inset:0;pointer-events:none!important;z-index:-1;overflow:hidden;contain:layout style;user-select:none}
+/* One still, natural-toned pumpkin in the page margin, below the header. */
+.tc-halloween body{position:relative;isolation:isolate}
+#tc-season-decor{position:absolute;right:5px;width:32px;height:34px;z-index:-1;pointer-events:none!important;user-select:none}
 #tc-season-decor *{pointer-events:none!important}
-.tc-season-moon{position:absolute;right:24px;top:106px;width:76px;height:76px;border-radius:50%;background:#e2d2b7;border:1px solid #cfba99}
-.tc-season-pair{position:absolute;left:0;top:0;width:108px;height:66px;color:#a18c9a;will-change:transform}
-.tc-season-pair[hidden]{display:none!important}
-.tc-season-bat{position:absolute;left:0;top:0;width:55px;height:30px}
-.tc-season-bat svg{display:block;width:100%;height:100%;fill:currentColor;overflow:visible}
-.tc-season-companion{left:57px;top:27px;width:40px;height:23px;transform:rotate(-8deg)}
-.tc-bat-wings{transform-origin:40px 22px;animation:tc-bat-flap .48s ease-in-out infinite alternate}
-.tc-season-companion .tc-bat-wings{animation-duration:.39s;animation-delay:-.2s}
-.tc-season-mark{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:21px;height:24px;margin-left:2px;pointer-events:none}
-.tc-season-mark svg{display:block;width:21px;height:24px}
-.tc-halloween .site-header,.tc-halloween .head{border-bottom-color:#bc8b5540}
-#tc-season-toggle{align-self:center;flex-shrink:0;font:inherit;font-size:11px;color:inherit;background:transparent;border:1px solid currentColor;border-radius:3px;padding:6px 9px;min-height:32px;cursor:pointer}
-#tc-season-toggle[hidden]{display:none!important}
-#tc-season-toggle:focus-visible{outline:2px solid currentColor;outline-offset:4px}
-@keyframes tc-bat-flap{from{transform:scaleY(1)}to{transform:scaleY(.56)}}
-@media(max-width:760px){.tc-season-moon{right:14px;top:154px;width:56px;height:56px}.tc-season-bat{width:43px;height:25px}.tc-season-companion{left:43px;top:24px;width:34px;height:20px}.tc-season-mark{width:17px;height:20px;margin-left:0}.tc-season-mark svg{width:17px;height:20px}}
-@media(prefers-reduced-motion:reduce){.tc-season-pair{display:none!important}.tc-bat-wings{animation:none!important}}
-@media print{#tc-season-decor,.tc-season-mark,.tc-season-note,#tc-season-toggle{display:none!important}}
+#tc-season-decor svg{display:block;width:100%;height:100%}
+@media(max-width:760px){#tc-season-decor{right:2px;width:23px;height:25px}}
+@media print{#tc-season-decor{display:none!important}}
