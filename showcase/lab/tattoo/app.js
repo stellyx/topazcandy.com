@@ -36,10 +36,9 @@ addSwipe($('#stage-open'));addSwipe($('#dialog-image-area'));
 const form=$('#idea-form');form.addEventListener('submit',e=>{e.preventDefault();const idea=$('#idea-text').value.trim();if(!idea){$('#idea-text').setCustomValidity('Cuéntanos un poco de tu idea.');$('#idea-text').reportValidity();return;}const style=$('#style').value,placement=$('#placement').value.trim()||'Por definir';$('#brief-output').value=`Hola, me gustaría platicar contigo sobre una idea para un tatuaje.\n\nEstilo: ${style}\nZona: ${placement}\nMi idea: ${idea}\n\n¿Podemos conversar sobre el diseño, el tamaño y la disponibilidad?`;$('#brief-result').hidden=false;$('#copy-status').textContent='';$('#brief-output').focus();});$('#idea-text').addEventListener('input',e=>e.target.setCustomValidity(''));$('#copy-brief').addEventListener('click',async()=>{const output=$('#brief-output');try{await navigator.clipboard.writeText(output.value);$('#copy-status').textContent='Mensaje copiado.';}catch{output.focus();output.select();$('#copy-status').textContent='Seleccionado. Usa Copiar en tu dispositivo.';}});
 const reduceMotion=window.matchMedia('(prefers-reduced-motion: reduce)');
 if('IntersectionObserver'in window&&!reduceMotion.matches){document.documentElement.classList.add('js-reveal');const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.03,rootMargin:'0px 0px 50px 0px'});$$('.reveal').forEach(el=>observer.observe(el));}
-const wingToggle=document.querySelector('#wing-toggle');
-const largeMoth=document.querySelector('#hero-art-window');
-let wingsPaused=reduceMotion.matches;
-function setWingState(paused){wingsPaused=paused;largeMoth.classList.toggle('wings-paused',paused);document.documentElement.classList.toggle('motion-paused',paused);wingToggle.setAttribute('aria-pressed',String(paused));wingToggle.textContent=paused?'Activar movimiento':'Pausar movimiento';wingToggle.setAttribute('aria-label',paused?'Activar las animaciones de la mariposa y la flor':'Pausar las animaciones de la mariposa y la flor');}
-wingToggle.addEventListener('click',()=>setWingState(!wingsPaused));
-if(reduceMotion.matches)setWingState(true);
-reduceMotion.addEventListener?.('change',e=>setWingState(e.matches));
+const bloomToggle=document.querySelector('#bloom-toggle');
+let bloomPaused=reduceMotion.matches;
+function setBloomState(paused){bloomPaused=paused;document.documentElement.classList.toggle('motion-paused',paused);bloomToggle.setAttribute('aria-pressed',String(paused));bloomToggle.textContent=paused?'Activar flor':'Pausar flor';bloomToggle.setAttribute('aria-label',paused?'Activar la flor junto a florece':'Pausar la flor junto a florece');}
+bloomToggle.addEventListener('click',()=>setBloomState(!bloomPaused));
+if(reduceMotion.matches)setBloomState(true);
+reduceMotion.addEventListener?.('change',e=>setBloomState(e.matches));
