@@ -37,6 +37,6 @@ The existing Square account has not been edited. This palette is implemented in 
 
 ## Background tint update
 
-October 11, 2026: softened the bright paper background at Andrew’s request. The body, panels and sticky header now use muted lavender paper `#e9e2ec`; care sections use `#e1d7e7`. Existing black buttons, gold logo and lavender accents remain. No color-wheel graphic was added. Media colors and 85% opacity remain unchanged.
+October 11, 2026: softened the bright paper background. The body, panels and sticky header now use muted lavender paper `#e9e2ec`; care sections use `#e1d7e7`. Existing black buttons, gold logo and lavender accents remain. No color-wheel graphic was added. Media colors and 85% opacity remain unchanged.
 
 The updated backgrounds passed 14 principal text-contrast checks, with a minimum ratio of 4.94:1. Browser/device visual review remains unavailable in this environment.
