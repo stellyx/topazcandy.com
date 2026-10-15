@@ -146,7 +146,7 @@ function render() {
   byId('build-counter').textContent=String(parts.length).padStart(2,'0');
   const price=totalFor(state).toFixed(2).split('.');byId('total').innerHTML='$'+price[0]+'<span>.'+price[1]+'</span>';
   byId('total-label').textContent=family.concept?'Sample concept total':'Catalog parts subtotal';
-  byId('pricing-note').textContent=family.concept?'Sample components & prices. Design concept only.':'Reference pricing · '+(family.id==='stax'?'clamps, ':'')+'art, assembly, shipping & tax quoted by shop.';
+  byId('pricing-note').textContent=family.concept?'Choose your components and colors.':'Reference pricing · '+(family.id==='stax'?'clamps, ':'')+'art, assembly, shipping & tax quoted by shop.';
   byId('review-build').disabled=!parts.length;
   byId('stage').classList.toggle('light',state.background==='light');
   byId('stage').classList.toggle('beach',beachEnabled);

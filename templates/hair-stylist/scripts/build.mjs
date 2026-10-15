@@ -9,6 +9,7 @@ const money=p=>p===0?'Complimentary':'$'+p;
 const minutes=n=>n>=60?(Math.floor(n/60)+' hr'+(n>=120?'s':'')+(n%60?' '+n%60+' min':'')):n+' min';
 const arrow='<span aria-hidden="true">↗</span>';
 const templatePurchase = "<section class=\"topaz-purchase\" data-purchase-theme=\"hair\" id=\"website-purchase\" aria-labelledby=\"footer-purchase-title\" data-demo-only><div class=\"topaz-purchase__inner\"><div><p class=\"topaz-purchase__eyebrow\">TOPAZ CANDY / FOR YOUR BUSINESS</p><h2 id=\"footer-purchase-title\">Make this website yours.</h2><p class=\"topaz-purchase__copy\">Your business, this design and a proper launch. Website setup, SEO setup and Google Maps connection, with three months of website service and maintenance.</p><ul class=\"topaz-purchase__scope\"><li>Your branding and content</li><li>SEO and launch checks</li><li>Three months of website care</li></ul></div><div class=\"topaz-purchase__actions\"><a class=\"topaz-purchase__button\" href=\"https://topazcandy.com/checkout/?template=hair\" data-website-purchase><span>Buy now</span><strong>$450 <span aria-hidden=\"true\">↗</span></strong></a><p class=\"topaz-purchase__note\">One-time website package. Maintenance covers the website; AI services are separate. See the cart for the full scope.</p></div></div></section><div class=\"topaz-buy-dock\" data-purchase-theme=\"hair\" data-demo-only><span class=\"topaz-buy-dock__copy\">Like the design?<br><strong>Your website. Properly launched.</strong></span><a class=\"topaz-buy-dock__button\" href=\"https://topazcandy.com/checkout/?template=hair\" data-website-purchase>Buy now · $450 ↗</a></div>";
+const cleanTemplateCopy = html => [["Hairstylist template preview · Branding and menu are illustrative", "Crown & Calm · Hair, color & scalp care"], ["Illustrative AI editorial image and film. This is a design concept, not a client portfolio.", ""], ["Illustrative menu for this template. Replace services, prices and times with the salon’s approved menu before launch.", "Explore services, prices and appointment lengths."], ["Illustrative template menu. Connect your own approved service menu and scheduler.", "Connect your salon’s service menu and scheduler."], ["Illustrative editorial image of chestnut waves with warm highlights", "Chestnut waves with warm highlights"], ["illustrative hair film and accents", "hair film and accents"], ["<figcaption class=\"image-note\"></figcaption>", ""], ["This template has no live salon calendar or customer intake. Its booking buttons demonstrate the connection point for your own scheduler.", "Connect your salon’s services and scheduler."], ["Illustrative template menu. Connect your own approved service menu and scheduler.", "Connect your salon’s service menu and scheduler."]].reduce((copy, [before, after]) => copy.replaceAll(before, after), html);
 const motionIcon='<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path class="motion-play" d="M8 5v14l11-7z"/><g class="motion-pause"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></g></svg>';
 function page(p){
  const mj=p.mode==='mj';
@@ -61,6 +62,7 @@ for(const [profile,folder] of [[mj,'dist'],[template,'dist/template']]){
  const links='<div class="menu-footer" aria-label="Detailed service guides"><a class="text-link" href="haircuts/">Haircuts & finishing ↗</a><a class="text-link" href="color/">Color & balayage ↗</a><a class="text-link" href="scalp-care/">Scalp & hair care ↗</a><a class="text-link" href="extensions/">Extensions & consultations ↗</a></div>';
  html=html.replace('<span class="sr-only" id="menu-live"',links+'<span class="sr-only" id="menu-live"');
  if(profile.mode==='template'){
+  html=cleanTemplateCopy(html);
   html=html.replace('</head>','<link rel="stylesheet" href="https://topazcandy.com/assets/topaz/purchase.css?v=1"><script src="https://topazcandy.com/assets/topaz/seasonal.js?v=1" defer></script></head>').replace('<body data-profile="template">','<body data-profile="template" data-topaz-template="hair">');
   html=html.replace('<footer class="footer">',templatePurchase+'<footer class="footer">');
  }
@@ -69,6 +71,7 @@ for(const [profile,folder] of [[mj,'dist'],[template,'dist/template']]){
   await mkdir(path.join(root,folder,slug),{recursive:true});
   let guide=servicePage(profile,group);
   if(profile.mode==='template'){
+   guide=cleanTemplateCopy(guide);
    guide=guide.replace('</head>','<link rel="stylesheet" href="https://topazcandy.com/assets/topaz/purchase.css?v=1"><script src="https://topazcandy.com/assets/topaz/seasonal.js?v=1" defer></script></head>').replace('<body data-profile="template">','<body data-profile="template" data-topaz-template="hair">');
    guide=guide.replace('<footer class="footer">',templatePurchase+'<footer class="footer">');
   }
@@ -76,5 +79,7 @@ for(const [profile,folder] of [[mj,'dist'],[template,'dist/template']]){
  }
 }
 for(const f of ['style.css','motion.css','brand.css','app.mjs','motion.mjs','finder.mjs','hair-editorial.webp','hair-poster.webp','hair-loop.mp4','mark.svg'])await cp(path.join(root,'dist/assets',f),path.join(root,'dist/template/assets',f));
+const genericMotion=path.join(root,'dist/template/assets/motion.mjs');
+await writeFile(genericMotion,(await readFile(genericMotion,'utf8')).replaceAll('illustrative hair film and accents','hair film and accents'));
 await writeFile(path.join(root,'dist/robots.txt'),'User-agent: *\nAllow: /\n');
 console.log(JSON.stringify({built:['dist/index.html','dist/template/index.html'],services:services.length,mode:'static',preview:'noindex'}));

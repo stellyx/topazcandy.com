@@ -10,10 +10,10 @@
   document.body.classList.add('has-business-preview');
   document.querySelector('[data-preview-name]').textContent = business;
   document.querySelector('[data-preview-symbol]').textContent = Array.from(business)[0].toLocaleLowerCase();
-  document.querySelector('[data-preview-home]').setAttribute('aria-label', business + ' website concept');
+  document.querySelector('[data-preview-home]').setAttribute('aria-label', business + ' website design');
   const label = document.querySelector('[data-preview-label]');
-  label.textContent = 'Website concept for ' + business;
+  label.textContent = 'Website design for ' + business;
   label.hidden = false;
-  document.querySelector('[data-preview-notice]').textContent = 'PERSONALIZED PREVIEW BY TOPAZ CANDY · WEBSITE CONCEPT';
-  document.querySelector('[data-preview-disclosure]').textContent = 'PERSONALIZED WEBSITE CONCEPT BY TOPAZ CANDY. AI-GENERATED GARDEN CARE FILM AND STOCK PHOTOS ARE ILLUSTRATIVE REFERENCES, NOT VERIFIED BUSINESS PROJECTS. NO BOOKINGS OR ESTIMATE REQUESTS ARE SENT FROM THIS PREVIEW.';
+  document.querySelector('[data-preview-notice]').textContent = 'WEBSITE DESIGN BY TOPAZ CANDY';
+  document.querySelector('[data-preview-disclosure]').textContent = 'WEBSITE BY TOPAZ CANDY · PHOTOGRAPHY: PEXELS.';
 })();
