@@ -7,7 +7,7 @@
     document.querySelector('.header .brand').setAttribute('aria-label', business + ' home');
     const footer = document.querySelector('.brand--footer');
     footer.firstChild.textContent = business;
-    document.querySelector('.concept-bar > span').textContent = business + ' / WEBSITE CONCEPT';
+    document.querySelector('.concept-bar > span').textContent = business + ' / HOME CLIMATE';
   }
   const dialog = document.querySelector('.planner');
   const form = document.querySelector('#service-form');
@@ -39,7 +39,7 @@
     event.preventDefault();
     const data = new FormData(form);
     const services = {repair:'Repair', replacement:'System replacement', maintenance:'Seasonal care'};
-    text.textContent = `${business || 'TEMPER'} / SAMPLE SERVICE BRIEF\n\nService: ${services[data.get('service')]}\nStarting point: ${data.get('concern')}\nPreferred conversation: ${data.get('timing')}\n${data.get('notes').trim() ? `Notes: ${data.get('notes').trim()}\n` : ''}\nAsk the HVAC team about the visit scope, availability and any fees before booking.\n\nDesign concept only. No appointment booked or request submitted.`;
+    text.textContent = `${business || 'TEMPER'} / SAMPLE SERVICE BRIEF\n\nService: ${services[data.get('service')]}\nStarting point: ${data.get('concern')}\nPreferred conversation: ${data.get('timing')}\n${data.get('notes').trim() ? `Notes: ${data.get('notes').trim()}\n` : ''}\nAsk the HVAC team about the visit scope, availability and any fees before booking.\n\nNo appointment booked or request submitted.`;
     form.hidden = true;
     brief.hidden = false;
     status.textContent = 'Saved here for this visit. Nothing submitted.';

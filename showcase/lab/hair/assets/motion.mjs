@@ -16,7 +16,7 @@ export function initSalonMotion({doc = document, win = window, connection = navi
     root.dataset.motionPaused = String(!playing);
     button.dataset.playing = String(playing);
     button.setAttribute('aria-pressed', String(playing));
-    button.setAttribute('aria-label', `${playing ? 'Pause' : 'Play'} illustrative hair film and accents`);
+    button.setAttribute('aria-label', `${playing ? 'Pause' : 'Play'} hair film and accents`);
     button.hidden = state.failed;
   }
   function reconcile() {

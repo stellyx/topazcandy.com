@@ -16,7 +16,7 @@
   function sync() {
     const playing = !video.paused && !video.ended;
     button.dataset.playing = String(playing);
-    button.setAttribute('aria-label', playing ? 'Pause illustrative roofing film' : 'Play illustrative roofing film');
+    button.setAttribute('aria-label', playing ? 'Pause roofing film' : 'Play roofing film');
     button.setAttribute('aria-pressed', String(playing));
   }
 
