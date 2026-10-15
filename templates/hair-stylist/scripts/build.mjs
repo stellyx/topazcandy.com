@@ -79,5 +79,7 @@ for(const [profile,folder] of [[mj,'dist'],[template,'dist/template']]){
  }
 }
 for(const f of ['style.css','motion.css','brand.css','app.mjs','motion.mjs','finder.mjs','hair-editorial.webp','hair-poster.webp','hair-loop.mp4','mark.svg'])await cp(path.join(root,'dist/assets',f),path.join(root,'dist/template/assets',f));
+const genericMotion=path.join(root,'dist/template/assets/motion.mjs');
+await writeFile(genericMotion,(await readFile(genericMotion,'utf8')).replaceAll('illustrative hair film and accents','hair film and accents'));
 await writeFile(path.join(root,'dist/robots.txt'),'User-agent: *\nAllow: /\n');
 console.log(JSON.stringify({built:['dist/index.html','dist/template/index.html'],services:services.length,mode:'static',preview:'noindex'}));
