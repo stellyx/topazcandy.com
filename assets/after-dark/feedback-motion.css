@@ -1,0 +1,17 @@
+.media video{display:block;width:100%;height:100%;object-fit:cover}
+.media:after{pointer-events:none}.media .project-name{bottom:55px;pointer-events:none}.media video{position:relative;z-index:0}.media .open{z-index:2}
+.film-fallback{display:inline-block;font-size:10px;margin-top:6px;color:#e9bf86;text-decoration:underline;text-underline-offset:3px}.film-status{font-size:10px;color:#ffcb93;margin:5px 0 0;max-width:320px}
+.hero-gem{animation:gem-floating-drift 9s ease-in-out infinite;will-change:transform}
+@keyframes gem-floating-drift{0%,100%{transform:translate(0,0)}25%{transform:translate(14px,-18px)}50%{transform:translate(-6px,-30px)}75%{transform:translate(-15px,-10px)}}
+.card{position:relative}.media .open{left:10px;right:auto}
+.card-motion-toggle{position:absolute;right:10px;top:10px;z-index:2;min-width:80px;min-height:36px;padding:7px 10px;border:1px solid #c09463;border-radius:20px;background:#160e1fe8;color:#f9e7d2;font-size:11px}
+.hero-motion-toggle{margin-top:10px;padding:5px 0;border:0;border-bottom:1px solid #735361;background:none;color:#d6becf;font-size:10px;min-height:30px}.hero-motion-toggle:disabled{opacity:.7;cursor:default}
+.butterfly img{transform-origin:50% 55%;animation:butterfly-flutter 3.2s ease-in-out infinite}
+.eclipse img{animation:eclipse-breathe 6s ease-in-out infinite;filter:drop-shadow(0 0 5px #fca44e99)}
+.eclipse:after{content:'';position:absolute;inset:15% 20%;border:1px solid #f8ba6b66;border-radius:50%;pointer-events:none;animation:corona-expand 6s ease-out infinite}
+@keyframes butterfly-flutter{0%,100%{transform:skewY(12deg) perspective(450px) rotateY(-12deg) rotate(-3deg) translateY(3px)}35%{transform:skewY(12deg) perspective(450px) rotateY(32deg) rotate(3deg) translateY(-5px)}65%{transform:skewY(12deg) perspective(450px) rotateY(-22deg) rotate(-1deg) translateY(-1px)}}
+@keyframes eclipse-breathe{0%,100%{transform:skewY(12deg) scale(.94);filter:drop-shadow(0 0 3px #fca44e88)}50%{transform:skewY(12deg) scale(1.03);filter:drop-shadow(0 0 12px #fca44edd)}}
+@keyframes corona-expand{0%{transform:scale(.8);opacity:0}25%{opacity:.6}100%{transform:scale(1.35);opacity:0}}
+.hero.motion-paused *,.hero.motion-paused *:after{animation-play-state:paused!important}
+@media(max-width:650px){.hero-art{position:relative;right:auto;bottom:auto;width:100%;height:110px;margin-top:14px;opacity:1}.hero-gem{left:12%;top:0;width:78px}.hero-art .art-fragment{display:block}.hero-art .butterfly{right:31%;top:8px;width:113px;padding:0 3px}.hero-art .butterfly img{width:104px;height:77px}.hero-art .eclipse{right:4%;top:12px;bottom:auto;width:75px;padding:5px}.hero-art .eclipse img{width:62px;height:62px}.hero .small{max-width:100%}.hero-motion-toggle{margin-top:6px}}
+@media(prefers-reduced-motion:reduce){.butterfly img,.eclipse img,.eclipse:after{animation:none!important}}
