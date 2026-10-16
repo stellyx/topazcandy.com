@@ -1,0 +1,99 @@
+/* Layout refinement for the approved After Dark homepage. */
+.wrap {
+  width: min(2200px, calc(100% - 2 * clamp(24px, 4.5vw, 120px)));
+}
+
+header { min-height: 88px; }
+header nav a { min-height: 44px; display: inline-flex; align-items: center; }
+
+.hero {
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: clamp(32px, 4vw, 100px);
+  min-height: clamp(540px, 35vw, 670px);
+  padding-block: clamp(42px, 3.6vw, 76px);
+}
+.hero-copy { max-width: 850px; }
+.hero h1 { font-size: clamp(54px, 4.65vw, 92px); }
+.intro { max-width: 660px; }
+.hero-art { width: 100%; height: min(36vw, 610px); min-height: 430px; }
+.hero-gem { width: clamp(230px, 20vw, 440px); left: 15%; top: 8%; }
+.orbit { left: 5%; top: 35%; width: 78%; height: 52%; }
+.butterfly { right: 0; top: 6%; }
+.eclipse { right: 4%; bottom: 7%; }
+.art-caption { left: 10%; bottom: 2%; }
+
+.work { padding-block: clamp(40px, 3.5vw, 72px) clamp(48px, 4vw, 80px); }
+.work-rail { gap: clamp(20px, 1.6vw, 34px); }
+.card { flex-basis: calc((100% - 2 * clamp(20px, 1.6vw, 34px))/3); }
+.media { height: auto; aspect-ratio: 1.7; }
+.media video, .media img { width: 100%; height: 100%; object-fit: cover; }
+.commission, .studio {
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: clamp(48px, 7vw, 180px);
+  padding-block: clamp(55px, 4.5vw, 92px);
+}
+.commission > div, .studio > div:first-child { max-width: 690px; }
+.commission form { width: 100%; max-width: 950px; justify-self: end; padding: clamp(24px, 2.2vw, 44px); }
+.studio .services { width: 100%; max-width: 950px; justify-self: end; }
+textarea, select { min-height: 48px; }
+
+@media (min-width: 1800px) {
+  .card { flex-basis: calc((100% - 3 * clamp(20px, 1.6vw, 34px))/4); }
+  .gallery-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  #design-gallery { width: min(1700px, calc(100% - 80px)); }
+}
+
+@media (max-width: 1050px) {
+  .hero { gap: 26px; min-height: 520px; }
+  .hero h1 { font-size: clamp(46px, 6vw, 72px); }
+  .hero-art { min-height: 340px; height: 36vw; }
+  .hero-gem { width: clamp(180px, 23vw, 245px); left: 3%; }
+  .card { flex-basis: calc((100% - 20px)/2); }
+  .commission, .studio { gap: 35px; }
+}
+
+@media (max-width: 700px) {
+  .wrap { width: calc(100% - 36px); }
+  header { min-height: 0; gap: 8px; }
+  header nav { width: 100%; gap: 4px; justify-content: space-between; }
+  header nav a { min-height: 44px; font-size: 13px; }
+  header nav .outline { padding: 8px 10px; gap: 4px; font-size: 12px; }
+  .hero { display: block; min-height: 0; padding-block: 34px 38px; }
+  .hero h1 { font-size: clamp(39px, 10vw, 68px); }
+  .intro { max-width: 36rem; }
+  .hero-art { position: relative; width: 100%; height: 175px; min-height: 0; right: auto; bottom: auto; margin-top: 24px; }
+  .hero-gem { width: 115px; left: 10%; top: 5px; }
+  .hero-art .butterfly { right: 26%; top: 12px; }
+  .hero-art .eclipse { right: 3%; top: 36px; }
+  .work { padding-block: 30px 50px; }
+  .card { flex-basis: min(84%, 400px); }
+  .media { aspect-ratio: 1.55; }
+  .filters button, .gallery-filters button { min-height: 44px; }
+  .commission, .studio { grid-template-columns: minmax(0, 1fr); gap: 28px; padding-block: 48px; }
+  .commission form, .studio .services { max-width: none; }
+  .commission > div > p:last-child, .studio > div > p:last-child { max-width: 38rem; }
+  .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 390px) {
+  header nav a { font-size: 12px; }
+  header nav .outline { font-size: 11px; padding-inline: 8px; }
+  .hero .actions { align-items: stretch; }
+  .hero .actions a { min-height: 44px; }
+  .gallery-card h3 { overflow-wrap: anywhere; }
+}
+
+/* Keep primary controls comfortable for touch without changing their behavior. */
+.card-motion-toggle, .media .open, .hero-motion-toggle, .gallery-filters button, .filters button { min-height: 44px; }
+.filters a, .work-foot a, footer nav a { display: inline-flex; align-items: center; min-height: 44px; }
+@media (max-width: 700px) { .film-fallback { display: inline-flex; align-items: center; min-height: 44px; } }
+
+/* Existing demo previews connect the wide hero to the work collection. */
+.hero-proof { max-width: 650px; margin-top: 28px; padding-top: 16px; border-top: 1px solid #604438; }
+.hero-proof .eyebrow { margin-bottom: 12px; }
+.hero-proof > div { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.hero-proof a { display: grid; grid-template-columns: 84px minmax(0, 1fr); align-items: center; gap: 11px; min-height: 58px; }
+.hero-proof img { display: block; width: 84px; height: 58px; object-fit: cover; border: 1px solid #705368; }
+.hero-proof strong { display: block; font: 17px/1.15 var(--serif); }
+.hero-proof small { display: block; margin-top: 4px; color: var(--muted); font-size: 10px; line-height: 1.35; }
+@media (max-width: 1050px) { .hero-proof { display: none; } }
