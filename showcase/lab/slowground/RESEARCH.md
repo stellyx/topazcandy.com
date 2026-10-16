@@ -1,6 +1,6 @@
-# Slowground research and content guardrails
+# The Wes Foundation research and content guardrails
 
-Slowground is a fictional Topaz Candy portfolio identity, not an environmental consultancy. The page makes no claim that the demo has permits, authorized staff, clients, government relationships, or field experience. Its only lead action goes to Topaz Candy's existing website enquiry form.
+The Wes Foundation is a fictional Topaz Candy portfolio identity, not an environmental consultancy or registered/tax-exempt nonprofit. The page makes no claim that the demo has permits, authorized staff, clients, government relationships, or field experience. Its only lead action goes to Topaz Candy's existing website enquiry form.
 
 ## Verified terminology and scope
 
@@ -14,7 +14,7 @@ The service language is deliberately conditional: protocol surveys, preactivity 
 
 ## Market evidence
 
-- [Southern Nevada Environmental, Inc.](https://www.snei.com/) identifies Las Vegas-based desert tortoise biologists and advertises surveys, clearance, construction monitoring, relocation and translocation. It lists utility, private-contractor and government work, plus solar, pipeline and transmission examples. This verifies a real specialist subcontractor niche and relevant buyer groups, without attributing any of that experience to Slowground.
+- [Southern Nevada Environmental, Inc.](https://www.snei.com/) identifies Las Vegas-based desert tortoise biologists and advertises surveys, clearance, construction monitoring, relocation and translocation. It lists utility, private-contractor and government work, plus solar, pipeline and transmission examples. This verifies a real specialist subcontractor niche and relevant buyer groups, without attributing any of that experience to The Wes Foundation.
 - [Huse Biological resources](https://www.husebiological.com/resources) lists construction monitoring and federally listed species surveys. It supports the field-biologist service pattern, without implying direct equivalence in location or qualifications.
 
 The demo's buyer questions follow from those project contexts: site and land control, applicable biological opinion/permit measures, disturbance footprint, schedule, staff authorizations and reporting expectations. These are discussion prompts, not regulatory advice.
@@ -23,4 +23,4 @@ The demo's buyer questions follow from those project contexts: site and land con
 
 The banner links to [KGW's own Jonathon Ware “I like turtles” clip page](https://www.kgw.com/video/life/zombie-kid-jonathon-ware-i-like-turtles/283-2618147). KGW was the original broadcaster. The page corrects the remembered phrase from “I love turtles” to “I like turtles.” It links externally and does not embed, autoplay, download, show the child's image, or claim an endorsement.
 
-The landscape and tortoise drawing are original SVG code in `landscape.svg`; no external visual assets were copied. Fonts load from Google Fonts with system fallbacks.
+The landscape, tracks, prominent tortoise, shell pattern and gallery composition are original SVG code in this directory; no external visual assets were copied. Fonts load from Google Fonts with system fallbacks.
