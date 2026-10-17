@@ -1,11 +1,11 @@
 # The Wes Foundation motion preview
 
-Status: prepared for the approved release on October 17, 2026. This pass adds CSS/SVG motion and inactive donation/volunteer concept sections. The user approved publication while accepting that desktop/mobile visual verification remains incomplete.
+Status: approved for publication on October 17, 2026. This pass adds CSS/SVG motion and inactive donation/volunteer concept sections. The user approved publication while accepting that desktop/mobile visual verification remains incomplete.
 
 ## Source and provenance
 
-- Existing original `landscape.svg`: 1600 × 1100 viewBox. The sun, mountains and tortoise tracks remain the still background.
-- Existing original `tortoise.svg`: 900 × 600 viewBox. The entire tortoise translates and rotates by less than a degree, so its anatomy and shell drawing do not deform.
+- Existing original `landscape.svg`: 1600 x 1100 viewBox. The sun, mountains and tortoise tracks remain the still background.
+- Existing original `tortoise.svg`: 900 x 600 viewBox. The entire tortoise translates and rotates by less than a degree, so its anatomy and shell drawing do not deform.
 - Existing original `shell-pattern.svg`: decorative support-section motif.
 - New `motion.css` and `motion.js`: lightweight loop and pause control. No generated video, stock footage, audio, paid asset, new dependency or animation export was used.
 
