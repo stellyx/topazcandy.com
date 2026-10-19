@@ -46,7 +46,9 @@
   const ordered=[...mapGraph.nodes].sort((a,b)=>(a.kind==='plus-room')-(b.kind==='plus-room')||a.row-b.row||a.start_column-b.start_column);
   const label=node=>node.kind==='plus-room'?`${node.short_name} - room`:node.name;
   for(const node of ordered){for(const select of [from,to]){const option=document.createElement('option');option.value=node.id;option.textContent=label(node);select.append(option)}}
-  const params=new URLSearchParams(location.search),defaultFrom='galadon.map.marker.m',defaultTo='galadon.map.eastern-road';from.value=params.get('from')||defaultFrom;to.value=params.get('to')||defaultTo;if(!from.value)from.value=defaultFrom;if(!to.value)to.value=defaultTo;
+  const params=new URLSearchParams(location.search),defaultFrom='galadon.map.marker.m',defaultTo='galadon.map.eastern-road';
+  function selectRequestedValue(select,value,fallback){if(!value){select.value=fallback;return}select.value=value;if(select.value)return;const option=document.createElement('option');option.value=value;option.textContent=`Unknown map node: ${value}`;option.dataset.temporary='true';select.prepend(option);select.value=value}
+  selectRequestedValue(from,params.get('from'),defaultFrom);selectRequestedValue(to,params.get('to'),defaultTo);
   const escapeHtml=value=>value.replace(/[&<>]/g,character=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[character]));
   function renderMap(plan){
     const route=new Set(plan.node_ids||[]),start=plan.from?.id,goal=plan.to?.id,positions=new Map(),routeCells=new Set(),nodesById=new Map(mapGraph.nodes.map(node=>[node.id,node]));
