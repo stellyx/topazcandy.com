@@ -1,4 +1,5 @@
 const normalize = value => String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const MAX_OBSERVATION_AGE_MS = 120000;
 
 export function resolveRoom(graph, name) {
   const query = normalize(name);
@@ -16,21 +17,54 @@ export function resolveRoom(graph, name) {
 
 const validateStartObservation = (graph, resolution, actualObservation) => {
   const node = graph.nodes.find(item => item.id === resolution.node_id);
-  const observedRoom = typeof actualObservation?.room === 'string' ? actualObservation.room.trim() : '';
-  const acceptedTitles = (node?.observed_room_titles?.length ? node.observed_room_titles : [node?.name]).filter(Boolean);
-  if (!observedRoom) return {
+  const fingerprint = node?.runtime_fingerprint;
+  if (!fingerprint) return {
+    status: 'UNVERIFIED_NODE',
+    reason: `The resolved start ${JSON.stringify(node?.name)} has no verified runtime fingerprint. A title match alone cannot localize a character.`
+  };
+  const required = ['observation_id', 'observed_at_utc', 'world', 'area', 'room', 'description_fingerprint', 'exits'];
+  const missing = required.filter(field => field === 'exits' ? !Array.isArray(actualObservation?.exits) : !actualObservation?.[field]);
+  if (missing.length) return {
     status: 'MISSING',
-    reason: 'No current room title observation was supplied. A requested start name is not proof of current character location.',
-    expected_room_titles: acceptedTitles
+    reason: `Current localization requires a fresh full room fingerprint; missing: ${missing.join(', ')}.`,
+    required_fields: required
   };
-  if (!acceptedTitles.some(title => normalize(title) === normalize(observedRoom))) return {
+  const observedAt = Date.parse(actualObservation.observed_at_utc);
+  const ageMs = Date.now() - observedAt;
+  if (!Number.isFinite(observedAt) || ageMs < -5000 || ageMs > MAX_OBSERVATION_AGE_MS) return {
+    status: 'STALE',
+    reason: 'The supplied room observation is invalid, from the future, or older than the two-minute execution window.',
+    observation_id: actualObservation.observation_id,
+    observed_at_utc: actualObservation.observed_at_utc,
+    max_age_ms: MAX_OBSERVATION_AGE_MS
+  };
+  const comparisons = {
+    world: normalize(actualObservation.world) === normalize(fingerprint.world),
+    area: normalize(actualObservation.area) === normalize(fingerprint.area),
+    room: normalize(actualObservation.room) === normalize(fingerprint.room),
+    description_fingerprint: String(actualObservation.description_fingerprint) === String(fingerprint.description_fingerprint)
+  };
+  if (Object.values(comparisons).some(match => !match)) return {
     status: 'MISMATCH',
-    reason: `Observed room title ${JSON.stringify(observedRoom)} does not match the resolved start ${JSON.stringify(node?.name)}.`,
-    observed_room_title: observedRoom,
-    expected_room_titles: acceptedTitles
+    reason: `Observed room fingerprint does not match the verified fingerprint for ${JSON.stringify(node?.name)}.`,
+    observation_id: actualObservation.observation_id,
+    comparisons
   };
-  return { status: 'MATCH', observed_room_title: observedRoom, matched_node_id: node.id };
+  const normalizedExits = [...new Set(actualObservation.exits.map(normalize).filter(Boolean))];
+  const missingRequiredExits = (fingerprint.required_exits || []).map(normalize).filter(exit => !normalizedExits.includes(exit));
+  if (missingRequiredExits.length) return {
+    status: 'MISMATCH',
+    reason: `Observed exits are missing verified fingerprint exits: ${missingRequiredExits.join(', ')}.`,
+    observation_id: actualObservation.observation_id
+  };
+  return { status: 'MATCH', observation_id: actualObservation.observation_id, observed_at_utc: actualObservation.observed_at_utc, matched_node_id: node.id, observed_exits: normalizedExits };
 };
+
+const edgeHasExecutableEvidence = edge => edge.directed && edge.validation === 'validated' && edge.executable === true
+  && Array.isArray(edge.commands) && edge.commands.length > 0
+  && Array.isArray(edge.expected_observations) && edge.expected_observations.length === edge.commands.length
+  && edge.expected_observations.every((observation, index) => observation?.after_command === edge.commands[index]
+    && observation?.room_fingerprint && observation?.provenance);
 
 const localizationFailure = (graph, fromResolution, toResolution, validation) => ({
   schema_version: graph.schema_version,
@@ -60,6 +94,19 @@ const compress = commands => {
 };
 
 export function planRoute(graph, from, to, { mode = 'tell', actualObservation = null } = {}) {
+  if (!['tell', 'take-me'].includes(mode)) return {
+    schema_version: graph.schema_version,
+    graph_id: graph.graph_id,
+    graph_version: graph.graph_version,
+    status: 'INVALID_MODE',
+    accepted_modes: ['tell', 'take-me'],
+    commands: [],
+    compressed_commands: '',
+    movement_count: 0,
+    plus_cells_crossed: null,
+    executable: false,
+    execution_policy: 'none'
+  };
   const fromResolution = resolveRoom(graph, from);
   if (fromResolution.status !== 'RESOLVED') return { schema_version: graph.schema_version, graph_id: graph.graph_id, graph_version: graph.graph_version, status: fromResolution.status === 'AMBIGUOUS_ENDPOINT' ? 'AMBIGUOUS_START' : fromResolution.status, endpoint: 'from', resolution: fromResolution, commands: [], movement_count: 0, plus_cells_crossed: null, executable: false };
   const toResolution = resolveRoom(graph, to);
@@ -70,7 +117,7 @@ export function planRoute(graph, from, to, { mode = 'tell', actualObservation = 
     return { schema_version: graph.schema_version, graph_id: graph.graph_id, graph_version: graph.graph_version, status: 'ALREADY_THERE', from: fromResolution, to: toResolution, observation_validation: validation, commands: [], compressed_commands: '', movement_count: 0, plus_cells_crossed: 0, edge_count: 0, executable: false, execution_policy: 'none' };
   }
 
-  const edges = graph.edges.filter(edge => edge.directed && edge.validation === 'validated' && edge.executable === true && Array.isArray(edge.commands) && edge.commands.length > 0);
+  const edges = graph.edges.filter(edgeHasExecutableEvidence);
   const queue = [{ node: fromResolution.node_id, path: [], cost: 0 }];
   const bestCost = new Map([[fromResolution.node_id, 0]]);
   let found = null;
@@ -98,10 +145,21 @@ export function planRoute(graph, from, to, { mode = 'tell', actualObservation = 
   const commands = found.flatMap(edge => edge.commands);
   const validation = validateStartObservation(graph, fromResolution, actualObservation);
   if (validation.status !== 'MATCH') return localizationFailure(graph, fromResolution, toResolution, validation);
+  const directionalCommands = new Set(['n', 's', 'e', 'w', 'u', 'd', 'ne', 'nw', 'se', 'sw']);
+  const firstCommand = normalize(commands[0]);
+  if (!directionalCommands.has(firstCommand)) return localizationFailure(graph, fromResolution, toResolution, {
+    status: 'UNRESOLVED_SPECIAL_EXIT',
+    reason: `The first command ${JSON.stringify(commands[0])} is not a plain observed direction. Doors and special exits require explicit state and handling evidence.`
+  });
+  if (!validation.observed_exits.includes(firstCommand)) return localizationFailure(graph, fromResolution, toResolution, {
+    status: 'CONTRADICTORY_EXITS',
+    reason: `The first planned direction ${JSON.stringify(firstCommand)} is absent from the fresh observed exits.`,
+    observation_id: validation.observation_id,
+    observed_exits: validation.observed_exits
+  });
   const allPlusKnown = found.every(edge => Number.isInteger(edge.plus_cells_crossed));
   const plusCells = allPlusKnown ? found.reduce((sum, edge) => sum + edge.plus_cells_crossed, 0) : null;
-  const policy = mode === 'tell' ? 'directions_only' : mode === 'take-me' ? 'announce_then_execute_by_separate_authorized_game_agent' : 'invalid_mode';
-  if (policy === 'invalid_mode') return { status: 'INVALID_MODE', accepted_modes: ['tell', 'take-me'], commands: [], movement_count: 0, executable: false };
+  const policy = mode === 'tell' ? 'directions_only' : 'announce_then_execute_by_separate_authorized_game_agent';
   return {
     schema_version: graph.schema_version,
     graph_id: graph.graph_id,
@@ -125,4 +183,3 @@ export function planRoute(graph, from, to, { mode = 'tell', actualObservation = 
     stop_conditions: ['stale localization', 'user takeover', 'movement failure', 'unexpected room output', 'unresolved special exit']
   };
 }
-

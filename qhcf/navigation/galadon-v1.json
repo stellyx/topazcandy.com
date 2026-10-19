@@ -1,7 +1,9 @@
 {
   "schema_version": "1.0.0",
-  "graph_id": "qhcf.galadon.validated.v1",
-  "graph_version": 1,
+  "graph_id": "qhcf.galadon.validated.v2",
+  "graph_version": 2,
+  "content_hash": "sha256:f6bcf1f2ec58d4ad151ed6fad2eb9190f17740731d4ad2d14ccf18be09a4d83b",
+  "content_hash_contract": "SHA-256 of UTF-8 JSON.stringify(graph with content_hash omitted)",
   "title": "Galadon validated navigation subset",
   "coverage": "Small evidence-backed subset only; not a complete Galadon routing graph.",
   "source_map": {
@@ -16,7 +18,7 @@
   },
   "contract": {
     "resolver": "resolve_room(name) returns one stable node ID or an explicit ambiguity/unknown result. Requested names never prove current character location.",
-    "planner": "plan_route(start_id, goal_id, graph_version, actual_observation) uses command-weighted shortest paths over directed edges with validation=validated and executable=true, and requires the observed current room title to match the resolved start before OK or ALREADY_THERE.",
+    "planner": "plan_route(start_id, goal_id, graph_version, actual_observation) uses command-weighted shortest paths only over directed edges with complete per-command expected observations and provenance. OK or ALREADY_THERE requires a fresh observation identifier and a verified world/area/title/description/exits fingerprint; title-only localization is rejected.",
     "counts": "movement_count counts emitted movement commands. plus_cells_crossed separately records literal + evidence when known. They are never substituted for one another.",
     "execution": "This rescue reference never controls a character. A separate authorized play agent may execute only an executable plan, after announcing it, verifying every movement, and stopping on stale localization, takeover, failure, or an unresolved special exit."
   },
@@ -194,4 +196,3 @@
     "Only validated executable edges with an observed-start contract participate in command-weighted routing."
   ]
 }
-
