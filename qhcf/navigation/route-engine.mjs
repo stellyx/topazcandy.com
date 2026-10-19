@@ -93,6 +93,165 @@ const compress = commands => {
   return result.map(item => item.count === 1 ? item.command : `${item.count}${item.command}`).join(' ');
 };
 
+const directionRuns = commands => {
+  const runs = [];
+  for (const command of commands) {
+    const prior = runs.at(-1);
+    if (prior?.direction === command) prior.count += 1;
+    else runs.push({ direction: command, count: 1 });
+  }
+  return runs;
+};
+
+const mapNodeId = (row, column) => `galadon.map.r${row}c${column}`;
+
+export function buildAsciiMapGraph(graph) {
+  const source = graph.map_route;
+  if (!source?.lines?.length) throw new Error('graph.map_route.lines is required');
+  const nodes = [];
+  source.lines.forEach((line, rowIndex) => {
+    [...line].forEach((character, columnIndex) => {
+      if (character !== '+') return;
+      const row = rowIndex + 1, column = columnIndex + 1;
+      nodes.push({
+        id: mapNodeId(row, column),
+        name: `Room + at row ${row}, column ${column}`,
+        short_name: `+ r${row}c${column}`,
+        aliases: [`r${row}c${column}`, `${row},${column}`],
+        kind: 'plus-room', row, start_column: column, end_column: column, port_column: column
+      });
+    });
+  });
+  for (const landmark of source.landmarks || []) {
+    nodes.push({
+      ...landmark,
+      kind: landmark.kind || 'map-landmark',
+      end_column: landmark.end_column || landmark.start_column,
+      port_column: landmark.port_column || landmark.start_column
+    });
+  }
+  const byId = new Map(nodes.map(node => [node.id, node]));
+  if (byId.size !== nodes.length) throw new Error('duplicate ASCII map node id');
+  const edges = [];
+  const addEdgePair = (left, right, forward, reverse) => {
+    edges.push({ from: left.id, to: right.id, direction: forward });
+    edges.push({ from: right.id, to: left.id, direction: reverse });
+  };
+  const byRow = new Map();
+  for (const node of nodes) {
+    const bucket = byRow.get(node.row) || [];
+    bucket.push(node);
+    byRow.set(node.row, bucket);
+  }
+  for (const [row, rowNodes] of byRow) {
+    rowNodes.sort((a, b) => a.start_column - b.start_column);
+    const line = source.lines[row - 1];
+    for (let index = 0; index < rowNodes.length - 1; index += 1) {
+      const left = rowNodes[index], right = rowNodes[index + 1];
+      const between = line.slice(left.end_column, right.start_column - 1);
+      if (/^-+$/.test(between)) addEdgePair(left, right, 'e', 'w');
+    }
+  }
+  const verticalCandidates = new Map();
+  for (const node of nodes) {
+    const bucket = verticalCandidates.get(node.port_column) || [];
+    bucket.push(node);
+    verticalCandidates.set(node.port_column, bucket);
+  }
+  for (const [column, columnNodes] of verticalCandidates) {
+    columnNodes.sort((a, b) => a.row - b.row);
+    for (let index = 0; index < columnNodes.length - 1; index += 1) {
+      const top = columnNodes[index], bottom = columnNodes[index + 1];
+      let connected = bottom.row > top.row;
+      for (let row = top.row + 1; connected && row < bottom.row; row += 1) {
+        connected = source.lines[row - 1]?.[column - 1] === '|';
+      }
+      if (connected) addEdgePair(top, bottom, 's', 'n');
+    }
+  }
+  return {
+    id: source.id,
+    title: source.title,
+    source_revision: graph.source_map?.revision_id,
+    lines: source.lines,
+    nodes,
+    edges,
+    ambiguities: source.ambiguities || []
+  };
+}
+
+export function resolveMapNode(mapGraph, value) {
+  const query = normalize(value);
+  const direct = mapGraph.nodes.find(node => node.id === value);
+  if (direct) return { status: 'RESOLVED', node: direct };
+  const matches = mapGraph.nodes.filter(node => [node.name, node.short_name, ...(node.aliases || [])].some(alias => normalize(alias) === query));
+  if (matches.length === 1) return { status: 'RESOLVED', node: matches[0] };
+  if (matches.length > 1) return { status: 'AMBIGUOUS_ENDPOINT', candidates: matches.map(node => ({ id: node.id, name: node.name })) };
+  return { status: 'UNKNOWN_ENDPOINT', candidates: [] };
+}
+
+export function planMapRoute(graph, from, to) {
+  const mapGraph = buildAsciiMapGraph(graph);
+  const fromResolution = resolveMapNode(mapGraph, from);
+  const toResolution = resolveMapNode(mapGraph, to);
+  if (fromResolution.status !== 'RESOLVED') return { status: fromResolution.status, endpoint: 'from', resolution: fromResolution, commands: [], movement_count: 0 };
+  if (toResolution.status !== 'RESOLVED') return { status: toResolution.status, endpoint: 'to', resolution: toResolution, commands: [], movement_count: 0 };
+  const start = fromResolution.node, goal = toResolution.node;
+  if (start.id === goal.id) return {
+    status: 'MAP_ROUTE', route_basis: 'published-ascii-map', live_verified: false,
+    from: { id: start.id, name: start.name }, to: { id: goal.id, name: goal.name },
+    node_ids: [start.id], commands: [], direction_runs: [], compressed_commands: '', movement_count: 0,
+    note: 'Start and destination are the same selected map node.'
+  };
+  const outgoing = new Map();
+  for (const edge of mapGraph.edges) {
+    const bucket = outgoing.get(edge.from) || [];
+    bucket.push(edge);
+    outgoing.set(edge.from, bucket);
+  }
+  const queue = [start.id], previous = new Map([[start.id, null]]), via = new Map();
+  while (queue.length && !previous.has(goal.id)) {
+    const current = queue.shift();
+    for (const edge of outgoing.get(current) || []) {
+      if (previous.has(edge.to)) continue;
+      previous.set(edge.to, current);
+      via.set(edge.to, edge);
+      queue.push(edge.to);
+    }
+  }
+  if (!previous.has(goal.id)) return {
+    status: 'AMBIGUOUS_OR_UNMAPPED_CONNECTION', route_basis: 'published-ascii-map', live_verified: false,
+    from: { id: start.id, name: start.name }, to: { id: goal.id, name: goal.name },
+    commands: [], direction_runs: [], compressed_commands: '', movement_count: 0,
+    ambiguities: mapGraph.ambiguities,
+    reason: 'No cardinal corridor path connects these selected nodes. Diagonal, crossing, and unclear map transitions are not guessed.'
+  };
+  const nodeIds = [], commands = [];
+  for (let cursor = goal.id; cursor; cursor = previous.get(cursor)) {
+    nodeIds.push(cursor);
+    if (via.has(cursor)) commands.push(via.get(cursor).direction);
+  }
+  nodeIds.reverse();
+  commands.reverse();
+  return {
+    status: 'MAP_ROUTE',
+    route_basis: 'published-ascii-map',
+    live_verified: false,
+    source_revision: mapGraph.source_revision,
+    from: { id: start.id, name: start.name },
+    to: { id: goal.id, name: goal.name },
+    node_ids: nodeIds,
+    commands,
+    direction_runs: directionRuns(commands),
+    compressed_commands: compress(commands),
+    movement_count: commands.length,
+    steps: commands.map((direction, index) => ({ number: index + 1, direction, from: nodeIds[index], to: nodeIds[index + 1] })),
+    executable: false,
+    execution_policy: 'directions-only; map calculation does not control the game',
+    note: 'Each transition between adjacent selected map rooms or landmarks counts as one movement. This is map-derived and not a live-game verification.'
+  };
+}
+
 export function planRoute(graph, from, to, { mode = 'tell', actualObservation = null } = {}) {
   if (!['tell', 'take-me'].includes(mode)) return {
     schema_version: graph.schema_version,
