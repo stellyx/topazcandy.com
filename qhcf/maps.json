@@ -1,0 +1,2945 @@
+{
+  "format_version": 1,
+  "generated_at_utc": "2026-10-19T19:06:56.811Z",
+  "caution": "This is a lossless row/column representation, not a routing graph. Do not infer connectivity across walls, gaps, diagonals, crossings, vertical transitions, or special exits.",
+  "maps": [
+    {
+      "title": "Galadon",
+      "source": "http://wiki.qhcf.net/index.php?title=Galadon",
+      "status": "Current capture (2026-10-19)",
+      "coordinate_system": "1-based row and Unicode character column in lines[]",
+      "user_rule": "Each + cell counts as one step.",
+      "routing_status": "Grid transcription only; connectivity has not been inferred.",
+      "lines": [
+        "                          NorthernRoads",
+        "                               |",
+        "                        GaladonOutskirts",
+        "                               |",
+        "                               |",
+        "                               +",
+        "                               | B",
+        "               X               |/",
+        "               |\\              N",
+        "            +--+--+            |",
+        "               |         +--+--+--+--+",
+        "            +--+--+  ^         |                  D",
+        "               |     |   +--+--+--+--+            |    New",
+        "               +-----+         |         21   22  +    Clerics",
+        "                               |   19   +    +    |    Guilds",
+        "                     X         |  +     |    |  h + Sh         Y",
+        "                      \\    @-+-+--+-----+----+  | | |          |",
+        "                 +--+--+       |  |   + |    |  +-+-+       Y--+--Y",
+        "                    |      Bk--+--K-+ | |20  +    |           /|",
+        "                    +----+  |  |  | | + +  Z      |  +  +--+ / Y",
+        "                    |    |  |  |  + + |    |      |  |  |  |/",
+        "           B GraveY +-+  +--+--+------+----+---+  |  +--+  +-Bd B",
+        "            \\   |        |            |    |   |  |  |     |   /",
+        "Feanwyyn--+-NW--+--+--+--+   PARK  +--+--+ +---+--+--+-----+-NE--+--Outsk--NorthernRoads",
+        "                |24 \\    |         |  |  | |   |     |     |",
+        "                +   Acad |   +--+--+  +--+ |   |     |     |18",
+        "                         |   |  |  |  |  | |   |     +--O  +",
+        "                         |   +--+--+  +--+ | J | Acd |",
+        "                         |      |          |/  |/    |",
+        "                         +------+--+--+----+---+--+  |",
+        "                                |  |H          |  |  |",
+        "                             +--+--+I +        +--H+ |",
+        "                             |  |  |G |           +  |",
+        "                             H--+--+--+              |",
+        "                                |  |H            23  |",
+        "                         9     P-+-+-Spire        +--+--V",
+        "                   10   8    7   6 |   5         28  |     4",
+        "               B  +    +    +   +--+--+  +     R  +--+--G +     B",
+        "              /   |    |    |TRADE | ROAD|     |     |    |    /",
+        "Feanwyyn--+--W----+----+----+------M-----+-----+-----+----+---E---+--Outsk--EasternRoad",
+        "                  | 12 |    |      |     |1    |2    |    |3",
+        "                  |11  T    |13 14 |R 17 +     +     |    +",
+        "                  +         +   +--+--+              |",
+        "                                   |O    +   25 26 TheCopehamInn",
+        "                                   |A  +-H-+  +  +",
+        "                                   |D    |    |  |",
+        "                                +--+--+--+    +--+",
+        "                        16  15  +  |  |\\   27 |  |",
+        "                     B +   +       |  | Acd +-+--+  I B",
+        "                      \\|   |   AP  |  |       |  |  |/",
+        "                       +---+---+---+--+-------+--+--+",
+        "                                   |\\         |",
+        "                                   | Sewers   +",
+        "                                   |          |",
+        "                 Feanwyyn--+--+----b-----+----+--+--Voralia'sTears",
+        "                            River  |",
+        "                                   +--Lumberyard",
+        "                                   |",
+        "                             s--+--+--+--c",
+        "                                   | B",
+        "                                   |/",
+        "                                   S",
+        "                                   |",
+        "                                   +",
+        "                                   |",
+        "                                   |",
+        "                            GaladonOutskirts",
+        "                                   |",
+        "                               Silverwood",
+        "1 - Small Room",
+        "2 - Attic",
+        "3 - Vault",
+        "4 - Large Room",
+        "5 - Cartographer's Store",
+        "6 - Vegetable Garden",
+        "7 - Bakery",
+        "8 - Upstairs Room",
+        "9 - Secret Lab",
+        "10 - Small Bedroom",
+        "11 - Small Room",
+        "12 - Brewing Room",
+        "13 - Butcher",
+        "14 - Training Room",
+        "15 - Small Chamber",
+        "16 - Small Loft",
+        "17 - General Store",
+        "18 - Upstairs Cellar",
+        "19 - A Spacious, Open Loft",
+        "20 - Work Room",
+        "21 - In a Coffee-Scented Apartment",
+        "22 - Within a Dimly-Lit Library",
+        "23 - Mercenary Office",
+        "24 - Coffin-Shaped Room",
+        "25 - Secret Room (Locked but can be picked)",
+        "26 - Secret Room (Ditto)",
+        "27 - Boatmaker's shop (Nicholas)",
+        "28 - Abandoned House",
+        "A - AP's Guild",
+        "B - Battlements",
+        "Bd - Bard's Guild",
+        "Bk - Bank",
+        "b - Bridge (n/s and e/w only)",
+        "c - Conjurer's Guild",
+        "D - Druid's guild",
+        "E - East gate",
+        "G - Assassin's Guild",
+        "H - Healer",
+        "h - Healer's guild",
+        "I - Thieves' Guild",
+        "J - Chain (To Arial city)",
+        "K - City Hall",
+        "N - North Gate",
+        "NE - Northeast Gate",
+        "NW - Northwest Gate",
+        "O - Necromancer's Guild",
+        "P - Paladin's Guild",
+        "R - Warrior's Guild",
+        "S - South Gate",
+        "Sh - Shaman's guild",
+        "s - Shapeshifters Guild",
+        "T - Transmuter's Guild",
+        "U - Musician's Guild",
+        "V - Invoker's Guild",
+        "W - West Gate",
+        "X - Stairs in the House",
+        "Y - Room in the Inn",
+        "Z - Training Yard",
+        "NOTE: This Map is slightly outdated. but its still good for",
+        "getting around."
+      ],
+      "plus_cells": [
+        {
+          "row": 6,
+          "column": 32
+        },
+        {
+          "row": 10,
+          "column": 13
+        },
+        {
+          "row": 10,
+          "column": 16
+        },
+        {
+          "row": 10,
+          "column": 19
+        },
+        {
+          "row": 11,
+          "column": 26
+        },
+        {
+          "row": 11,
+          "column": 29
+        },
+        {
+          "row": 11,
+          "column": 32
+        },
+        {
+          "row": 11,
+          "column": 35
+        },
+        {
+          "row": 11,
+          "column": 38
+        },
+        {
+          "row": 12,
+          "column": 13
+        },
+        {
+          "row": 12,
+          "column": 16
+        },
+        {
+          "row": 12,
+          "column": 19
+        },
+        {
+          "row": 13,
+          "column": 26
+        },
+        {
+          "row": 13,
+          "column": 29
+        },
+        {
+          "row": 13,
+          "column": 32
+        },
+        {
+          "row": 13,
+          "column": 35
+        },
+        {
+          "row": 13,
+          "column": 38
+        },
+        {
+          "row": 14,
+          "column": 16
+        },
+        {
+          "row": 14,
+          "column": 22
+        },
+        {
+          "row": 14,
+          "column": 51
+        },
+        {
+          "row": 15,
+          "column": 41
+        },
+        {
+          "row": 15,
+          "column": 46
+        },
+        {
+          "row": 16,
+          "column": 35
+        },
+        {
+          "row": 16,
+          "column": 51
+        },
+        {
+          "row": 17,
+          "column": 30
+        },
+        {
+          "row": 17,
+          "column": 32
+        },
+        {
+          "row": 17,
+          "column": 35
+        },
+        {
+          "row": 17,
+          "column": 41
+        },
+        {
+          "row": 17,
+          "column": 46
+        },
+        {
+          "row": 18,
+          "column": 18
+        },
+        {
+          "row": 18,
+          "column": 21
+        },
+        {
+          "row": 18,
+          "column": 24
+        },
+        {
+          "row": 18,
+          "column": 39
+        },
+        {
+          "row": 18,
+          "column": 49
+        },
+        {
+          "row": 18,
+          "column": 51
+        },
+        {
+          "row": 18,
+          "column": 53
+        },
+        {
+          "row": 18,
+          "column": 64
+        },
+        {
+          "row": 19,
+          "column": 32
+        },
+        {
+          "row": 19,
+          "column": 37
+        },
+        {
+          "row": 19,
+          "column": 46
+        },
+        {
+          "row": 20,
+          "column": 21
+        },
+        {
+          "row": 20,
+          "column": 26
+        },
+        {
+          "row": 20,
+          "column": 39
+        },
+        {
+          "row": 20,
+          "column": 41
+        },
+        {
+          "row": 20,
+          "column": 54
+        },
+        {
+          "row": 20,
+          "column": 57
+        },
+        {
+          "row": 20,
+          "column": 60
+        },
+        {
+          "row": 21,
+          "column": 35
+        },
+        {
+          "row": 21,
+          "column": 37
+        },
+        {
+          "row": 22,
+          "column": 21
+        },
+        {
+          "row": 22,
+          "column": 23
+        },
+        {
+          "row": 22,
+          "column": 26
+        },
+        {
+          "row": 22,
+          "column": 29
+        },
+        {
+          "row": 22,
+          "column": 32
+        },
+        {
+          "row": 22,
+          "column": 39
+        },
+        {
+          "row": 22,
+          "column": 44
+        },
+        {
+          "row": 22,
+          "column": 48
+        },
+        {
+          "row": 22,
+          "column": 54
+        },
+        {
+          "row": 22,
+          "column": 57
+        },
+        {
+          "row": 22,
+          "column": 60
+        },
+        {
+          "row": 24,
+          "column": 11
+        },
+        {
+          "row": 24,
+          "column": 17
+        },
+        {
+          "row": 24,
+          "column": 20
+        },
+        {
+          "row": 24,
+          "column": 23
+        },
+        {
+          "row": 24,
+          "column": 26
+        },
+        {
+          "row": 24,
+          "column": 36
+        },
+        {
+          "row": 24,
+          "column": 39
+        },
+        {
+          "row": 24,
+          "column": 42
+        },
+        {
+          "row": 24,
+          "column": 44
+        },
+        {
+          "row": 24,
+          "column": 48
+        },
+        {
+          "row": 24,
+          "column": 51
+        },
+        {
+          "row": 24,
+          "column": 54
+        },
+        {
+          "row": 24,
+          "column": 60
+        },
+        {
+          "row": 24,
+          "column": 66
+        },
+        {
+          "row": 26,
+          "column": 17
+        },
+        {
+          "row": 26,
+          "column": 30
+        },
+        {
+          "row": 26,
+          "column": 33
+        },
+        {
+          "row": 26,
+          "column": 36
+        },
+        {
+          "row": 26,
+          "column": 39
+        },
+        {
+          "row": 26,
+          "column": 42
+        },
+        {
+          "row": 27,
+          "column": 54
+        },
+        {
+          "row": 27,
+          "column": 60
+        },
+        {
+          "row": 28,
+          "column": 30
+        },
+        {
+          "row": 28,
+          "column": 33
+        },
+        {
+          "row": 28,
+          "column": 36
+        },
+        {
+          "row": 28,
+          "column": 39
+        },
+        {
+          "row": 28,
+          "column": 42
+        },
+        {
+          "row": 30,
+          "column": 26
+        },
+        {
+          "row": 30,
+          "column": 33
+        },
+        {
+          "row": 30,
+          "column": 36
+        },
+        {
+          "row": 30,
+          "column": 39
+        },
+        {
+          "row": 30,
+          "column": 44
+        },
+        {
+          "row": 30,
+          "column": 48
+        },
+        {
+          "row": 30,
+          "column": 51
+        },
+        {
+          "row": 32,
+          "column": 30
+        },
+        {
+          "row": 32,
+          "column": 33
+        },
+        {
+          "row": 32,
+          "column": 36
+        },
+        {
+          "row": 32,
+          "column": 39
+        },
+        {
+          "row": 32,
+          "column": 48
+        },
+        {
+          "row": 32,
+          "column": 52
+        },
+        {
+          "row": 33,
+          "column": 51
+        },
+        {
+          "row": 34,
+          "column": 33
+        },
+        {
+          "row": 34,
+          "column": 36
+        },
+        {
+          "row": 34,
+          "column": 39
+        },
+        {
+          "row": 36,
+          "column": 34
+        },
+        {
+          "row": 36,
+          "column": 36
+        },
+        {
+          "row": 36,
+          "column": 51
+        },
+        {
+          "row": 36,
+          "column": 54
+        },
+        {
+          "row": 38,
+          "column": 19
+        },
+        {
+          "row": 38,
+          "column": 24
+        },
+        {
+          "row": 38,
+          "column": 29
+        },
+        {
+          "row": 38,
+          "column": 33
+        },
+        {
+          "row": 38,
+          "column": 36
+        },
+        {
+          "row": 38,
+          "column": 39
+        },
+        {
+          "row": 38,
+          "column": 42
+        },
+        {
+          "row": 38,
+          "column": 51
+        },
+        {
+          "row": 38,
+          "column": 54
+        },
+        {
+          "row": 38,
+          "column": 59
+        },
+        {
+          "row": 40,
+          "column": 11
+        },
+        {
+          "row": 40,
+          "column": 19
+        },
+        {
+          "row": 40,
+          "column": 24
+        },
+        {
+          "row": 40,
+          "column": 29
+        },
+        {
+          "row": 40,
+          "column": 42
+        },
+        {
+          "row": 40,
+          "column": 48
+        },
+        {
+          "row": 40,
+          "column": 54
+        },
+        {
+          "row": 40,
+          "column": 59
+        },
+        {
+          "row": 40,
+          "column": 67
+        },
+        {
+          "row": 42,
+          "column": 42
+        },
+        {
+          "row": 42,
+          "column": 48
+        },
+        {
+          "row": 42,
+          "column": 59
+        },
+        {
+          "row": 43,
+          "column": 19
+        },
+        {
+          "row": 43,
+          "column": 29
+        },
+        {
+          "row": 43,
+          "column": 33
+        },
+        {
+          "row": 43,
+          "column": 36
+        },
+        {
+          "row": 43,
+          "column": 39
+        },
+        {
+          "row": 44,
+          "column": 42
+        },
+        {
+          "row": 45,
+          "column": 40
+        },
+        {
+          "row": 45,
+          "column": 44
+        },
+        {
+          "row": 45,
+          "column": 47
+        },
+        {
+          "row": 45,
+          "column": 50
+        },
+        {
+          "row": 47,
+          "column": 33
+        },
+        {
+          "row": 47,
+          "column": 36
+        },
+        {
+          "row": 47,
+          "column": 39
+        },
+        {
+          "row": 47,
+          "column": 42
+        },
+        {
+          "row": 47,
+          "column": 47
+        },
+        {
+          "row": 47,
+          "column": 50
+        },
+        {
+          "row": 48,
+          "column": 33
+        },
+        {
+          "row": 49,
+          "column": 24
+        },
+        {
+          "row": 49,
+          "column": 28
+        },
+        {
+          "row": 49,
+          "column": 45
+        },
+        {
+          "row": 49,
+          "column": 47
+        },
+        {
+          "row": 49,
+          "column": 50
+        },
+        {
+          "row": 51,
+          "column": 24
+        },
+        {
+          "row": 51,
+          "column": 28
+        },
+        {
+          "row": 51,
+          "column": 32
+        },
+        {
+          "row": 51,
+          "column": 36
+        },
+        {
+          "row": 51,
+          "column": 39
+        },
+        {
+          "row": 51,
+          "column": 47
+        },
+        {
+          "row": 51,
+          "column": 50
+        },
+        {
+          "row": 51,
+          "column": 53
+        },
+        {
+          "row": 53,
+          "column": 47
+        },
+        {
+          "row": 55,
+          "column": 28
+        },
+        {
+          "row": 55,
+          "column": 31
+        },
+        {
+          "row": 55,
+          "column": 42
+        },
+        {
+          "row": 55,
+          "column": 47
+        },
+        {
+          "row": 55,
+          "column": 50
+        },
+        {
+          "row": 57,
+          "column": 36
+        },
+        {
+          "row": 59,
+          "column": 33
+        },
+        {
+          "row": 59,
+          "column": 36
+        },
+        {
+          "row": 59,
+          "column": 39
+        },
+        {
+          "row": 64,
+          "column": 36
+        }
+      ]
+    },
+    {
+      "title": "RuinsOfTheDeep",
+      "source": "https://web.archive.org/web/20191022133619id_/http://wiki.qhcf.net/index.php?title=RuinsOfTheDeep",
+      "status": "Historical archive snapshot",
+      "coordinate_system": "1-based row and Unicode character column in lines[]",
+      "user_rule": "Each + cell counts as one step.",
+      "routing_status": "Grid transcription only; connectivity has not been inferred.",
+      "lines": [
+        "                                 SeaOfDespair    (From the dock in Ashes: 4n 1d 1s)",
+        "                                        |\t\t",
+        "                                        +",
+        "                                        |",
+        "                                        +",
+        "                                        |",
+        "                                        +--+       ",
+        "                                           |",
+        "                                           +",
+        "                                           |",
+        "                                           +                             Battlements",
+        "                                           |",
+        "                   +     +--+--+          U1 ----->      +--+--+--+--D1--+--+--+--+",
+        "                   |     |  |  |           |",
+        "                   +     +--+--+    *1*    +  2  +  +  +  +",
+        "                   |        |        |     |  |  |  |  |  |\t",
+        "                C--+--+--+--+--+--+--+--+--+--+--+--+--+--+",
+        "                         |           |     |  |  |  |",
+        "                   +--+--+--+  +--+  +     +  +  +  +",
+        "                            |  |  |  |     |",
+        "                   +--+--+--+  +--+--+     +      Streets and Houses",
+        "                                           |",
+        "                +  +  +  +  +  +  +  +  +  +  +  +  +  +  +",
+        "                |  |  |  |  |  |  |  |  |  |  |  |  |  |  |",
+        "                +--+--+--+--+--+--+--+--+--+--+--+--+--+--+",
+        "                |  |  |  |  |  |  |  |  |  |  |  |  |  |  |",
+        "                +  +  +  +  +  +  +  +  +  +  +  +  +  +  +",
+        "                                           |",
+        "                                           +  +  +",
+        "                                           |  |  |",
+        "                                        +  +--+--+--+--+  ",
+        "                                        |  |  |  |  |  ",
+        "                      +--+--+        +--+  +  +  +  +--+     C-|-4",
+        "                      |     |        |  |  |     |               |",
+        "                      + D2  +--+  +--+--+--+  +--+--+           U2",
+        "                      |  |  |  |        |  |     |",
+        "                      +--+  +--+--+--+--+  +  +--+--+",
+        "                       Altar      |        |     |",
+        "                      +--+--+--+--+        +  +--+--+",
+        "                      |  |  |  |  |        |     |",
+        "                      +  +  +  +  3        +  +--+--+ Inside the Temple",
+        "                                           |",
+        "                                           +",
+        "",
+        "\t",
+        "",
+        "1. saying Testing, Master, or Inventory takes you to different rooms. going north without saying anything puts you in a loop.",
+        "2. Electric Eel",
+        "3. Lobster",
+        "4. Eye of the Deep",
+        "C. Chests"
+      ],
+      "plus_cells": [
+        {
+          "row": 3,
+          "column": 41
+        },
+        {
+          "row": 5,
+          "column": 41
+        },
+        {
+          "row": 7,
+          "column": 41
+        },
+        {
+          "row": 7,
+          "column": 44
+        },
+        {
+          "row": 9,
+          "column": 44
+        },
+        {
+          "row": 11,
+          "column": 44
+        },
+        {
+          "row": 13,
+          "column": 20
+        },
+        {
+          "row": 13,
+          "column": 26
+        },
+        {
+          "row": 13,
+          "column": 29
+        },
+        {
+          "row": 13,
+          "column": 32
+        },
+        {
+          "row": 13,
+          "column": 58
+        },
+        {
+          "row": 13,
+          "column": 61
+        },
+        {
+          "row": 13,
+          "column": 64
+        },
+        {
+          "row": 13,
+          "column": 67
+        },
+        {
+          "row": 13,
+          "column": 74
+        },
+        {
+          "row": 13,
+          "column": 77
+        },
+        {
+          "row": 13,
+          "column": 80
+        },
+        {
+          "row": 13,
+          "column": 83
+        },
+        {
+          "row": 15,
+          "column": 20
+        },
+        {
+          "row": 15,
+          "column": 26
+        },
+        {
+          "row": 15,
+          "column": 29
+        },
+        {
+          "row": 15,
+          "column": 32
+        },
+        {
+          "row": 15,
+          "column": 44
+        },
+        {
+          "row": 15,
+          "column": 50
+        },
+        {
+          "row": 15,
+          "column": 53
+        },
+        {
+          "row": 15,
+          "column": 56
+        },
+        {
+          "row": 15,
+          "column": 59
+        },
+        {
+          "row": 17,
+          "column": 20
+        },
+        {
+          "row": 17,
+          "column": 23
+        },
+        {
+          "row": 17,
+          "column": 26
+        },
+        {
+          "row": 17,
+          "column": 29
+        },
+        {
+          "row": 17,
+          "column": 32
+        },
+        {
+          "row": 17,
+          "column": 35
+        },
+        {
+          "row": 17,
+          "column": 38
+        },
+        {
+          "row": 17,
+          "column": 41
+        },
+        {
+          "row": 17,
+          "column": 44
+        },
+        {
+          "row": 17,
+          "column": 47
+        },
+        {
+          "row": 17,
+          "column": 50
+        },
+        {
+          "row": 17,
+          "column": 53
+        },
+        {
+          "row": 17,
+          "column": 56
+        },
+        {
+          "row": 17,
+          "column": 59
+        },
+        {
+          "row": 19,
+          "column": 20
+        },
+        {
+          "row": 19,
+          "column": 23
+        },
+        {
+          "row": 19,
+          "column": 26
+        },
+        {
+          "row": 19,
+          "column": 29
+        },
+        {
+          "row": 19,
+          "column": 32
+        },
+        {
+          "row": 19,
+          "column": 35
+        },
+        {
+          "row": 19,
+          "column": 38
+        },
+        {
+          "row": 19,
+          "column": 44
+        },
+        {
+          "row": 19,
+          "column": 47
+        },
+        {
+          "row": 19,
+          "column": 50
+        },
+        {
+          "row": 19,
+          "column": 53
+        },
+        {
+          "row": 21,
+          "column": 20
+        },
+        {
+          "row": 21,
+          "column": 23
+        },
+        {
+          "row": 21,
+          "column": 26
+        },
+        {
+          "row": 21,
+          "column": 29
+        },
+        {
+          "row": 21,
+          "column": 32
+        },
+        {
+          "row": 21,
+          "column": 35
+        },
+        {
+          "row": 21,
+          "column": 38
+        },
+        {
+          "row": 21,
+          "column": 44
+        },
+        {
+          "row": 23,
+          "column": 17
+        },
+        {
+          "row": 23,
+          "column": 20
+        },
+        {
+          "row": 23,
+          "column": 23
+        },
+        {
+          "row": 23,
+          "column": 26
+        },
+        {
+          "row": 23,
+          "column": 29
+        },
+        {
+          "row": 23,
+          "column": 32
+        },
+        {
+          "row": 23,
+          "column": 35
+        },
+        {
+          "row": 23,
+          "column": 38
+        },
+        {
+          "row": 23,
+          "column": 41
+        },
+        {
+          "row": 23,
+          "column": 44
+        },
+        {
+          "row": 23,
+          "column": 47
+        },
+        {
+          "row": 23,
+          "column": 50
+        },
+        {
+          "row": 23,
+          "column": 53
+        },
+        {
+          "row": 23,
+          "column": 56
+        },
+        {
+          "row": 23,
+          "column": 59
+        },
+        {
+          "row": 25,
+          "column": 17
+        },
+        {
+          "row": 25,
+          "column": 20
+        },
+        {
+          "row": 25,
+          "column": 23
+        },
+        {
+          "row": 25,
+          "column": 26
+        },
+        {
+          "row": 25,
+          "column": 29
+        },
+        {
+          "row": 25,
+          "column": 32
+        },
+        {
+          "row": 25,
+          "column": 35
+        },
+        {
+          "row": 25,
+          "column": 38
+        },
+        {
+          "row": 25,
+          "column": 41
+        },
+        {
+          "row": 25,
+          "column": 44
+        },
+        {
+          "row": 25,
+          "column": 47
+        },
+        {
+          "row": 25,
+          "column": 50
+        },
+        {
+          "row": 25,
+          "column": 53
+        },
+        {
+          "row": 25,
+          "column": 56
+        },
+        {
+          "row": 25,
+          "column": 59
+        },
+        {
+          "row": 27,
+          "column": 17
+        },
+        {
+          "row": 27,
+          "column": 20
+        },
+        {
+          "row": 27,
+          "column": 23
+        },
+        {
+          "row": 27,
+          "column": 26
+        },
+        {
+          "row": 27,
+          "column": 29
+        },
+        {
+          "row": 27,
+          "column": 32
+        },
+        {
+          "row": 27,
+          "column": 35
+        },
+        {
+          "row": 27,
+          "column": 38
+        },
+        {
+          "row": 27,
+          "column": 41
+        },
+        {
+          "row": 27,
+          "column": 44
+        },
+        {
+          "row": 27,
+          "column": 47
+        },
+        {
+          "row": 27,
+          "column": 50
+        },
+        {
+          "row": 27,
+          "column": 53
+        },
+        {
+          "row": 27,
+          "column": 56
+        },
+        {
+          "row": 27,
+          "column": 59
+        },
+        {
+          "row": 29,
+          "column": 44
+        },
+        {
+          "row": 29,
+          "column": 47
+        },
+        {
+          "row": 29,
+          "column": 50
+        },
+        {
+          "row": 31,
+          "column": 41
+        },
+        {
+          "row": 31,
+          "column": 44
+        },
+        {
+          "row": 31,
+          "column": 47
+        },
+        {
+          "row": 31,
+          "column": 50
+        },
+        {
+          "row": 31,
+          "column": 53
+        },
+        {
+          "row": 31,
+          "column": 56
+        },
+        {
+          "row": 33,
+          "column": 23
+        },
+        {
+          "row": 33,
+          "column": 26
+        },
+        {
+          "row": 33,
+          "column": 29
+        },
+        {
+          "row": 33,
+          "column": 38
+        },
+        {
+          "row": 33,
+          "column": 41
+        },
+        {
+          "row": 33,
+          "column": 44
+        },
+        {
+          "row": 33,
+          "column": 47
+        },
+        {
+          "row": 33,
+          "column": 50
+        },
+        {
+          "row": 33,
+          "column": 53
+        },
+        {
+          "row": 33,
+          "column": 56
+        },
+        {
+          "row": 35,
+          "column": 23
+        },
+        {
+          "row": 35,
+          "column": 29
+        },
+        {
+          "row": 35,
+          "column": 32
+        },
+        {
+          "row": 35,
+          "column": 35
+        },
+        {
+          "row": 35,
+          "column": 38
+        },
+        {
+          "row": 35,
+          "column": 41
+        },
+        {
+          "row": 35,
+          "column": 44
+        },
+        {
+          "row": 35,
+          "column": 47
+        },
+        {
+          "row": 35,
+          "column": 50
+        },
+        {
+          "row": 35,
+          "column": 53
+        },
+        {
+          "row": 37,
+          "column": 23
+        },
+        {
+          "row": 37,
+          "column": 26
+        },
+        {
+          "row": 37,
+          "column": 29
+        },
+        {
+          "row": 37,
+          "column": 32
+        },
+        {
+          "row": 37,
+          "column": 35
+        },
+        {
+          "row": 37,
+          "column": 38
+        },
+        {
+          "row": 37,
+          "column": 41
+        },
+        {
+          "row": 37,
+          "column": 44
+        },
+        {
+          "row": 37,
+          "column": 47
+        },
+        {
+          "row": 37,
+          "column": 50
+        },
+        {
+          "row": 37,
+          "column": 53
+        },
+        {
+          "row": 39,
+          "column": 23
+        },
+        {
+          "row": 39,
+          "column": 26
+        },
+        {
+          "row": 39,
+          "column": 29
+        },
+        {
+          "row": 39,
+          "column": 32
+        },
+        {
+          "row": 39,
+          "column": 35
+        },
+        {
+          "row": 39,
+          "column": 44
+        },
+        {
+          "row": 39,
+          "column": 47
+        },
+        {
+          "row": 39,
+          "column": 50
+        },
+        {
+          "row": 39,
+          "column": 53
+        },
+        {
+          "row": 41,
+          "column": 23
+        },
+        {
+          "row": 41,
+          "column": 26
+        },
+        {
+          "row": 41,
+          "column": 29
+        },
+        {
+          "row": 41,
+          "column": 32
+        },
+        {
+          "row": 41,
+          "column": 44
+        },
+        {
+          "row": 41,
+          "column": 47
+        },
+        {
+          "row": 41,
+          "column": 50
+        },
+        {
+          "row": 41,
+          "column": 53
+        },
+        {
+          "row": 43,
+          "column": 44
+        }
+      ]
+    },
+    {
+      "title": "Silverwood",
+      "source": "http://wiki.qhcf.net/index.php?title=Silverwood",
+      "status": "Current capture (2026-10-19)",
+      "coordinate_system": "1-based row and Unicode character column in lines[]",
+      "user_rule": "Each + cell counts as one step.",
+      "routing_status": "Grid transcription only; connectivity has not been inferred.",
+      "lines": [
+        "                       Galadon",
+        "                          |",
+        "                   GaladonOutskirts",
+        "                          |",
+        "                      +-+-+-+-+",
+        "                      | | | | |",
+        "                   +--O-+-+-+-+",
+        "                   |  | | | | |",
+        "          Feanwyyn +--+-+-H-+-+-I",
+        "               |   |  | | | v | |",
+        "               +-+-+--P-+-+-C-+-+",
+        "               | | | /| | | | |",
+        "               | | |+ | | | | |",
+        "               +-+-+--+-+-+-+-+",
+        "               |        | | |",
+        "       Ravine  +        +-A-+",
+        "               |        | | |",
+        "           +-+ +      W-+-+-+",
+        "           |  \\|      |     |",
+        "           +   +      +     + Forest Edge",
+        " Emerald   |         /      |",
+        " Forest -+-+        + +     +-+-+-GoblinVillage",
+        "         | |       / /        | |",
+        "        Violet    +-+         | | Targeth's Manor",
+        "        Woodland  |           | |/",
+        "                  +           | +",
+        "                              |",
+        "                              +-+",
+        "                              | |",
+        "                            +-+-+     L-L",
+        "                            |   |     | |",
+        "                            +   +-+-+-L-L",
+        "                            |   |     | |",
+        "                     Aubade-+-+-+     L-L-+",
+        "                            |             |",
+        "                            +   E---E---E +",
+        "                            |  /         \\|",
+        "                            +-+           +",
+        "",
+        "",
+        "A - An unusual configuration of rocks (Altar)",
+        "",
+        "C - In front of a small cottage",
+        "",
+        "H - Heart of Silverwood",
+        "",
+        "E - Hidden Canopy",
+        "",
+        "I - Iron Statue",
+        "",
+        "O - Old fallen tree",
+        "",
+        "P - Pond",
+        "",
+        "v - Small cottage (also, room to north has an exit south that passes through the cottage right to the front)",
+        "",
+        "W - Cave of webs (barter-only shop)"
+      ],
+      "plus_cells": [
+        {
+          "row": 5,
+          "column": 23
+        },
+        {
+          "row": 5,
+          "column": 25
+        },
+        {
+          "row": 5,
+          "column": 27
+        },
+        {
+          "row": 5,
+          "column": 29
+        },
+        {
+          "row": 5,
+          "column": 31
+        },
+        {
+          "row": 7,
+          "column": 20
+        },
+        {
+          "row": 7,
+          "column": 25
+        },
+        {
+          "row": 7,
+          "column": 27
+        },
+        {
+          "row": 7,
+          "column": 29
+        },
+        {
+          "row": 7,
+          "column": 31
+        },
+        {
+          "row": 9,
+          "column": 20
+        },
+        {
+          "row": 9,
+          "column": 23
+        },
+        {
+          "row": 9,
+          "column": 25
+        },
+        {
+          "row": 9,
+          "column": 29
+        },
+        {
+          "row": 9,
+          "column": 31
+        },
+        {
+          "row": 11,
+          "column": 16
+        },
+        {
+          "row": 11,
+          "column": 18
+        },
+        {
+          "row": 11,
+          "column": 20
+        },
+        {
+          "row": 11,
+          "column": 25
+        },
+        {
+          "row": 11,
+          "column": 27
+        },
+        {
+          "row": 11,
+          "column": 31
+        },
+        {
+          "row": 11,
+          "column": 33
+        },
+        {
+          "row": 13,
+          "column": 21
+        },
+        {
+          "row": 14,
+          "column": 16
+        },
+        {
+          "row": 14,
+          "column": 18
+        },
+        {
+          "row": 14,
+          "column": 20
+        },
+        {
+          "row": 14,
+          "column": 23
+        },
+        {
+          "row": 14,
+          "column": 25
+        },
+        {
+          "row": 14,
+          "column": 27
+        },
+        {
+          "row": 14,
+          "column": 29
+        },
+        {
+          "row": 14,
+          "column": 31
+        },
+        {
+          "row": 16,
+          "column": 16
+        },
+        {
+          "row": 16,
+          "column": 25
+        },
+        {
+          "row": 16,
+          "column": 29
+        },
+        {
+          "row": 18,
+          "column": 12
+        },
+        {
+          "row": 18,
+          "column": 14
+        },
+        {
+          "row": 18,
+          "column": 16
+        },
+        {
+          "row": 18,
+          "column": 25
+        },
+        {
+          "row": 18,
+          "column": 27
+        },
+        {
+          "row": 18,
+          "column": 29
+        },
+        {
+          "row": 20,
+          "column": 12
+        },
+        {
+          "row": 20,
+          "column": 16
+        },
+        {
+          "row": 20,
+          "column": 23
+        },
+        {
+          "row": 20,
+          "column": 29
+        },
+        {
+          "row": 22,
+          "column": 10
+        },
+        {
+          "row": 22,
+          "column": 12
+        },
+        {
+          "row": 22,
+          "column": 21
+        },
+        {
+          "row": 22,
+          "column": 23
+        },
+        {
+          "row": 22,
+          "column": 29
+        },
+        {
+          "row": 22,
+          "column": 31
+        },
+        {
+          "row": 22,
+          "column": 33
+        },
+        {
+          "row": 24,
+          "column": 19
+        },
+        {
+          "row": 24,
+          "column": 21
+        },
+        {
+          "row": 26,
+          "column": 19
+        },
+        {
+          "row": 26,
+          "column": 33
+        },
+        {
+          "row": 28,
+          "column": 31
+        },
+        {
+          "row": 28,
+          "column": 33
+        },
+        {
+          "row": 30,
+          "column": 29
+        },
+        {
+          "row": 30,
+          "column": 31
+        },
+        {
+          "row": 30,
+          "column": 33
+        },
+        {
+          "row": 32,
+          "column": 29
+        },
+        {
+          "row": 32,
+          "column": 33
+        },
+        {
+          "row": 32,
+          "column": 35
+        },
+        {
+          "row": 32,
+          "column": 37
+        },
+        {
+          "row": 34,
+          "column": 29
+        },
+        {
+          "row": 34,
+          "column": 31
+        },
+        {
+          "row": 34,
+          "column": 33
+        },
+        {
+          "row": 34,
+          "column": 43
+        },
+        {
+          "row": 36,
+          "column": 29
+        },
+        {
+          "row": 36,
+          "column": 43
+        },
+        {
+          "row": 38,
+          "column": 29
+        },
+        {
+          "row": 38,
+          "column": 31
+        },
+        {
+          "row": 38,
+          "column": 43
+        }
+      ]
+    },
+    {
+      "title": "Udgaard",
+      "source": "http://wiki.qhcf.net/index.php?title=Udgaard",
+      "status": "Current capture (2026-10-19)",
+      "coordinate_system": "1-based row and Unicode character column in lines[]",
+      "user_rule": "Each + cell counts as one step.",
+      "routing_status": "Grid transcription only; connectivity has not been inferred.",
+      "lines": [
+        "                             NorthernTrails",
+        "                                   |",
+        "                                  +|  +",
+        "                                 +-+-+",
+        "                       TURQUOISE   |   AVENUE",
+        "                     +----+------+-+-+---+-------+",
+        "                     |    |      |   |   | Foot /|",
+        "                     |    +-Y    h   h +-+  |i++ |",
+        "                     |                      o || |",
+        "                     |           y   Z      ++++ |",
+        "                     +-+         |   |      ++++o|",
+        "                     | |         +-P-+           |",
+        "                  +  | N         | | |           |  +",
+        "                   + |   +--+--+ +-+-+ +--+--+ +-+ +",
+        "                   | |   |     |   |   |     | n | |",
+        "NorthernMountains--+-+---E-----E---+---E-----E---+-+--Udgaardian Plains",
+        "                  +| |   |     |   |   |     |   | |+",
+        "                   + |   h     h   |   h     h   | +",
+        "                     |           h-D-h           |",
+        "                     |     c  a h  |  h X  x     |",
+        "                     |     |  | |  |  | |  |     |",
+        "                   O |   O-+--S-S--+--S-S--+-V   | O",
+        "                   P |     |  | |  |  | |  |     | N",
+        "                   A |     |  h h  |  h h  |     | Y",
+        "                   L | C f-J-A   +-+-+   v-M-t l | X",
+        "                     | |   |     | | |     |   | |",
+        "                   R +-+ k-J-g   +-F-+   U-M-u +-+ R",
+        "                   O |     |     | | |     |     | O",
+        "                   A |   T-J-K   +-+-+   m-M-e   | A",
+        "                   D | w   |  h h  |  h h  |   W | D",
+        "                     | |   |  | |  |  | |  |   | |",
+        "                     +-+ b-+--B-B--D--B-B--+-d +-+",
+        "                     |     |  | |  |  | |  |     |",
+        "                     | I   G  s R  |  + H  z   p |",
+        "                     | |           |           | |",
+        "                     +-+         h-D-h         +-+",
+        "                     |   h    h    |    h    h   |",
+        "                     |   |    |    |    |    |   |",
+        "                     +---+----+----+----+----+---+",
+        "                         MARBLE    |    AVENUE",
+        "                                  +|  +",
+        "                                 +-+-+",
+        "                                   |",
+        "                                   +",
+        "                                   |",
+        "                                   +",
+        "                                   |",
+        "                                   +",
+        "                                   |",
+        "                               Traveller",
+        "",
+        "a - Saldria's Supplies",
+        "A - Scribing By Averius (Lots of scrolls)",
+        "b - Bank",
+        "B - Bloodstone Lane",
+        "c - Cartographer's Store",
+        "C - Conjurer Guild(Tunscol - black and white striped robe)",
+        "d - Udgaard's Apothecary",
+        "D - Diamond Boulevard",
+        "e - Crellun's House of Grog",
+        "E - Emerald Avenue",
+        "f - Branthu's Custom Footwear",
+        "F - Fountain",
+        "g - Ivy's Greenhouse",
+        "G - Jorgen's Elegant Gemstones (a silver necklace with a blue dragon pendant)",
+        "h - Inside a house (Thrown out immediately)",
+        "H - Halrilz's Bounty Office",
+        "i - Galladrin the Pious (huge mithril claymore)",
+        "I - Invoker Guild(Gelhardinia)",
+        "J - Jade Court",
+        "k - Krildul's Breads and Cakes",
+        "K - Kron's Spits",
+        "l - Thieves Guild",
+        "L - Lower Level",
+        "m - Magical Supplies of Udgaard",
+        "M - Marble Alley",
+        "n - Assassins guild (Tsintaro - Ivory-hilted wakizashi)",
+        "N - Necromancer Guild (Chrysilin - alligator-skin whip)",
+        "o - Underground River - Leads to Plains on River Nanthor outside",
+        "O - Ol' One-Eye's",
+        "p - Bards Guild (Rindyl - (Humming) the horn of a blue dragon)",
+        "P - Pit and healer",
+        "R - Registry(New Hometown) - Registrar (a pair of blue-tinted eyeglasses)",
+        "s - Scholar's Repose",
+        "S - Sapphire Lane",
+        "t - Torden's Finest Armor",
+        "T - Thorne's Armaments",
+        "u - Jhelrhia's Emporium",
+        "U - Alchemical Reagents and Essences(cure poison/cure disease)",
+        "v - Frilgor's Smithy(Knee-high leather boots)",
+        "V - The Paper Mill",
+        "W - Warriors Guild - (Galbrin - thin double-bladed axe)",
+        "w - Shapeshifter's Guild",
+        "x - Grilgoul's Mercenaries(Mercs)",
+        "X - Delvuir's Tannery",
+        "Y - AP Guild (Sword of Darkness)",
+        "y - Shaman's Guild",
+        "Z - Healer's Guild",
+        "z - The Court of Judgement(Judge - oak mallet)"
+      ],
+      "plus_cells": [
+        {
+          "row": 3,
+          "column": 35
+        },
+        {
+          "row": 3,
+          "column": 39
+        },
+        {
+          "row": 4,
+          "column": 34
+        },
+        {
+          "row": 4,
+          "column": 36
+        },
+        {
+          "row": 4,
+          "column": 38
+        },
+        {
+          "row": 6,
+          "column": 22
+        },
+        {
+          "row": 6,
+          "column": 27
+        },
+        {
+          "row": 6,
+          "column": 34
+        },
+        {
+          "row": 6,
+          "column": 36
+        },
+        {
+          "row": 6,
+          "column": 38
+        },
+        {
+          "row": 6,
+          "column": 42
+        },
+        {
+          "row": 6,
+          "column": 50
+        },
+        {
+          "row": 8,
+          "column": 27
+        },
+        {
+          "row": 8,
+          "column": 40
+        },
+        {
+          "row": 8,
+          "column": 42
+        },
+        {
+          "row": 8,
+          "column": 47
+        },
+        {
+          "row": 8,
+          "column": 48
+        },
+        {
+          "row": 10,
+          "column": 45
+        },
+        {
+          "row": 10,
+          "column": 46
+        },
+        {
+          "row": 10,
+          "column": 47
+        },
+        {
+          "row": 10,
+          "column": 48
+        },
+        {
+          "row": 11,
+          "column": 22
+        },
+        {
+          "row": 11,
+          "column": 24
+        },
+        {
+          "row": 11,
+          "column": 45
+        },
+        {
+          "row": 11,
+          "column": 46
+        },
+        {
+          "row": 11,
+          "column": 47
+        },
+        {
+          "row": 11,
+          "column": 48
+        },
+        {
+          "row": 12,
+          "column": 34
+        },
+        {
+          "row": 12,
+          "column": 38
+        },
+        {
+          "row": 13,
+          "column": 19
+        },
+        {
+          "row": 13,
+          "column": 53
+        },
+        {
+          "row": 14,
+          "column": 20
+        },
+        {
+          "row": 14,
+          "column": 26
+        },
+        {
+          "row": 14,
+          "column": 29
+        },
+        {
+          "row": 14,
+          "column": 32
+        },
+        {
+          "row": 14,
+          "column": 34
+        },
+        {
+          "row": 14,
+          "column": 36
+        },
+        {
+          "row": 14,
+          "column": 38
+        },
+        {
+          "row": 14,
+          "column": 40
+        },
+        {
+          "row": 14,
+          "column": 43
+        },
+        {
+          "row": 14,
+          "column": 46
+        },
+        {
+          "row": 14,
+          "column": 48
+        },
+        {
+          "row": 14,
+          "column": 50
+        },
+        {
+          "row": 14,
+          "column": 52
+        },
+        {
+          "row": 16,
+          "column": 20
+        },
+        {
+          "row": 16,
+          "column": 22
+        },
+        {
+          "row": 16,
+          "column": 36
+        },
+        {
+          "row": 16,
+          "column": 50
+        },
+        {
+          "row": 16,
+          "column": 52
+        },
+        {
+          "row": 17,
+          "column": 19
+        },
+        {
+          "row": 17,
+          "column": 53
+        },
+        {
+          "row": 18,
+          "column": 20
+        },
+        {
+          "row": 18,
+          "column": 52
+        },
+        {
+          "row": 22,
+          "column": 28
+        },
+        {
+          "row": 22,
+          "column": 36
+        },
+        {
+          "row": 22,
+          "column": 44
+        },
+        {
+          "row": 25,
+          "column": 34
+        },
+        {
+          "row": 25,
+          "column": 36
+        },
+        {
+          "row": 25,
+          "column": 38
+        },
+        {
+          "row": 27,
+          "column": 22
+        },
+        {
+          "row": 27,
+          "column": 24
+        },
+        {
+          "row": 27,
+          "column": 34
+        },
+        {
+          "row": 27,
+          "column": 38
+        },
+        {
+          "row": 27,
+          "column": 48
+        },
+        {
+          "row": 27,
+          "column": 50
+        },
+        {
+          "row": 29,
+          "column": 34
+        },
+        {
+          "row": 29,
+          "column": 36
+        },
+        {
+          "row": 29,
+          "column": 38
+        },
+        {
+          "row": 32,
+          "column": 22
+        },
+        {
+          "row": 32,
+          "column": 24
+        },
+        {
+          "row": 32,
+          "column": 28
+        },
+        {
+          "row": 32,
+          "column": 44
+        },
+        {
+          "row": 32,
+          "column": 48
+        },
+        {
+          "row": 32,
+          "column": 50
+        },
+        {
+          "row": 34,
+          "column": 39
+        },
+        {
+          "row": 36,
+          "column": 22
+        },
+        {
+          "row": 36,
+          "column": 24
+        },
+        {
+          "row": 36,
+          "column": 48
+        },
+        {
+          "row": 36,
+          "column": 50
+        },
+        {
+          "row": 39,
+          "column": 22
+        },
+        {
+          "row": 39,
+          "column": 26
+        },
+        {
+          "row": 39,
+          "column": 31
+        },
+        {
+          "row": 39,
+          "column": 36
+        },
+        {
+          "row": 39,
+          "column": 41
+        },
+        {
+          "row": 39,
+          "column": 46
+        },
+        {
+          "row": 39,
+          "column": 50
+        },
+        {
+          "row": 41,
+          "column": 35
+        },
+        {
+          "row": 41,
+          "column": 39
+        },
+        {
+          "row": 42,
+          "column": 34
+        },
+        {
+          "row": 42,
+          "column": 36
+        },
+        {
+          "row": 42,
+          "column": 38
+        },
+        {
+          "row": 44,
+          "column": 36
+        },
+        {
+          "row": 46,
+          "column": 36
+        },
+        {
+          "row": 48,
+          "column": 36
+        }
+      ]
+    },
+    {
+      "title": "WorldMap",
+      "source": "https://web.archive.org/web/20210129143325id_/http://wiki.qhcf.net/index.php?title=WorldMap",
+      "status": "Historical archive snapshot",
+      "coordinate_system": "1-based row and Unicode character column in lines[]",
+      "user_rule": "Each + cell counts as one step.",
+      "routing_status": "Grid transcription only; connectivity has not been inferred.",
+      "lines": [
+        "         MAP OF THERA                                            +------------------Road to----Goblin Outpost                      MAP OF THERA",
+        "                                                    Pine Forest-/                   the",
+        "                                                                  Northern Trail----Wastes-----Hillcrest",
+        "                                                                  |     +  ~        |",
+        "                                  +----Mount Calandaryl----Northern     U  ~ Udgaardian Plains**",
+        "                                  |                             Mounts--D  ~            |",
+        "          ########                |           Ruins of      **    |     G  ~~Nanthor~~  High",
+        "          InTheAir             Darsylon       Maethien        \\   |     A            ~     |",
+        "          ########                |             |     Ayr'   Abandoned  A--Plains of ~     P",
+        "                                  |  Abandoned -M      Trinil     Mines R     Udgaard~     a",
+        "                                  |  Siege Camp i         \\       |     D            ~~~~~~s",
+        "                                  |      |      s         The---Pass----+-Gamepath         s       Evermoon Hollow",
+        "                   Blackwater---Vale of  |      t  Cons-  | \\                    \\_TrogCav |          |",
+        "                      Swamp     Arendyl**|      s ortium  | Slave Mines of Sitran          |          |   Bandit                        UNDERGROUND",
+        "                        |              | |      |   |     |                         +------Aratouldain--Stronghold",
+        "                        Halfling Lands +------Open--+-North   +------GolGalath------+            |                                     Kteng's",
+        "                                     | |------------+++++-e---+                                 Velkyn                Abandoned Mines    Lab     Riverside Path",
+        "                                     | |------------+TIR+-r         Ruins              Castle   Oloth-**                          \\      |      /",
+        "                    Dranettie Wood   +++-----------N++TA+-n     +---Delar  AzureMain   of Akan                       Cragstone--The-Underdark(**)--Underdark",
+        "                            |         |-------P----o-+ L+-|     |   Tol        |              \\                                     /         |           Sea",
+        "         Enpolad's Game     |         |-------l----r-++A+-F   Redhorn-----Voralia's   Mortorn  \\  Stones                          The      TethAzeleth",
+        "          /  Garden         |         |-------a----t +TH+-o    |          tears   \\  /       \\  | Embrace    Imperial          Sewers(*)",
+        "      Hamsah  |           Dagdan      |-------i----h ++++-othills~~~~     ~        ** LochGry \\ |  |          Lands                       Forest of Prosimy",
+        "          Forgotten       |   |       |-------n----|   |  |||||||   ~~~~~~~~~~~~~       |      Akan-            |                               |  \\            ",
+        "             Island    Trails |       |-------s----| Shepherds-Row--~ VORALIAN  ~-SilverpineRd |           KoR--B                               F   Mansion of",
+        "               |       /  |   |       |------------R           |    ~   +---+   ~     |        /--Grinning      a                               o    Twilight",
+        "      Ysigrath-+------+   |   +-------+--WS---Rd---o----ES---Road---~           ~--EaststrideRd    Skull        l                               r",
+        "               |Sea of| South | CRAG  |            a           |    ~   +---+   ~     |                         a                               e",
+        "               |Despair Dairein STONE |      Mauso d------NS Road---~   CITY    ~--Bramblefield    Dark         t                  Dra'Melkhur--s--Basilica",
+        "               |~~~~\\~|       |       |      -leum |           |    ~~~~~~~~~~~~~     |            Wood~        o-FieldsOfBalator               t",
+        "               ++---Ruins of  +-----Azreth      |  |           |          ~     ~~~Road   TO PAST+     ~        r      |   |                    |--Village of",
+        "                |   the Deep  |     Forest  +---|--+------+    S          ~        |             |     ~        |      |   |                    R   Barovia",
+        " Eil Shaeria    |             |             |O+-|--+----+O|    S          ~        |             The   ~        |      |   |        V'dramir's--o       |",
+        "       |        |             |      Kobold |u|GY|  |Cpm|u| HW |   ~~~~~~~~        | Aldevari-+-Grove  K +--Outskirts--+   |  Is.       Cove    a     Keep of",
+        "       |     Ashes of NoWhere-+      Warrens|t|--+  +---|t+--Road  ~               |    |         |  ~~h |             |   | of Corte     |     d FC  Barovia",
+        "       |     |                |         |   |s|         |s|        ~               |    |         |  | a |   HAMSAH   Sea  |       \\      |     | /",
+        " Tower of    |       +--------+---------+---+k+ GALADON +k+------The---+---Eastern-+----+---Road--+--+-l-+   MU'TAZZ  Port----The----Dragon---Arkham---Outlying",
+        "High Sorcery |   Fean|    Feanwyyn        ~~|i|~~~~~~~~~|i|~~~~~~~~    |    |  |   |         |  |      i |             |  \\         S  +++  S           Villages",
+        "         |   |  Weald|         Weald      ~ |r|--+   +--|r|       ~    |    Ruins  D        +--Dr-H    d~+~River~~~~~~~|~~WotDeep~~~e  +++  e                    \\",
+        "Dragon--Shadow--+----+        ~~~~~~~~~~~~~ |t|S*|   |LY|t|       ~    |     of    w        |   o-i      +------+------+            a-------a  Valley of Veran    Evergrove Outpost",
+        "  Tower  Grove  |       ~~~~~~Feanwyyn      |s+----+----+s|      Blackclaw  Osta---a--LT Keep   g-l             |      M    Coral    ||||||| \\_/",
+        "          |     |       ~     |     Weald-+ +------+------+        Village   lag   r        |   r-l--Sands   Desert    t      Head---||The||  \\_Mt. Kiadana Rah",
+        "          |     Glauruk~~     |           |        |                         iah   v        +--an-s    of      of      s             |Aryth|\\",
+        "    Elemental   Spawning      |           +-----Silverwood----Goblin               e           |     Sorrow--Araile--Tahril          ||||||| \\__CoralPalace",
+        "      Temple  +-Ground        +Forest           |      |  |       Village          n-----F     |        |    |   |     |            O-c-e-a-n",
+        "              |    |                |           |      |  |                        |     o     |  Pyramid of |  Oryx   | Crystal Is  ||||||| \\_Kuo-Toa lair",
+        "              | High Lord's         R           |      |  |   _Moud Monastery     ++     r     |     Azhan   | Steppes |    |        ||S-I||            \\",
+        "  Whistlewood-+    Keep             d     Emerald      |  |  /                    |      e     |             |         |   Western---|||||||  Village    UDS",
+        "    Swamp          |                |      Forest      |  The Manor---Virgin Forest      s---A--Dry-Riverbed-+         |     A       Coastal  Lallenyha",
+        "           Village of          Loch-+-+-+    |  |      |        \\         |           FG-t                             |     r      -++++++   |",
+        "           Maltrakis       Terradian  | |    | VioletWoodland    \\        |              |        Mines------Talshidar-+   __y     / Plains---JadeMountains",
+        "                                      | |    |                  Keep of Fhalaugash    Frigid     Zakiim       Caves       /  t  Xvart  |                  |",
+        "                                      | +-Spiderhaunt                                  Wasteland                         /   h   Lair  |               Wastes of",
+        "                                      |    Woods                                         |                 ShipGraveyard     |         |                Nonviel",
+        "                                    Dhumlar                                             Felar                              Seantryn--SEANTRYN",
+        "                                     Ko                                             Encampment                Coastal---Harbor------MODAN \\_Sewers of SM",
+        "                                                                                                               Wetlands                 |",
+        "                                                                                                                                      Aturi--Caravans",
+        "                                                                                                                                        +----Keep of Ceawlin",
+        "                                                                                                                                        |",
+        "                                                                                                                                  Aturi Timberlands",
+        "THE PAST",
+        "",
+        "                            Maethien----Plains of Arendyl--Delar-Tol",
+        "       Forest of                |          |",
+        "       NoWhere                  |       Past Grove--Present Grove",
+        "Past       |                    |          |",
+        "Shadow--Hidden--Galadonian--A Wagon-Marked Road",
+        "Grove   Forest  Settlement        |  |",
+        "                                Citadel of",
+        "                                Ostalagiah",
+        "                               /",
+        "                    The Battlefield",
+        "",
+        "Original map by RobertDunn",
+        "Ported by Zendrac",
+        "Continued updates by Yhorian and DurNominator"
+      ],
+      "plus_cells": [
+        {
+          "row": 1,
+          "column": 66
+        },
+        {
+          "row": 4,
+          "column": 73
+        },
+        {
+          "row": 5,
+          "column": 35
+        },
+        {
+          "row": 12,
+          "column": 73
+        },
+        {
+          "row": 15,
+          "column": 85
+        },
+        {
+          "row": 16,
+          "column": 40
+        },
+        {
+          "row": 16,
+          "column": 53
+        },
+        {
+          "row": 16,
+          "column": 63
+        },
+        {
+          "row": 16,
+          "column": 85
+        },
+        {
+          "row": 17,
+          "column": 53
+        },
+        {
+          "row": 17,
+          "column": 54
+        },
+        {
+          "row": 17,
+          "column": 55
+        },
+        {
+          "row": 17,
+          "column": 56
+        },
+        {
+          "row": 17,
+          "column": 57
+        },
+        {
+          "row": 17,
+          "column": 63
+        },
+        {
+          "row": 18,
+          "column": 53
+        },
+        {
+          "row": 18,
+          "column": 57
+        },
+        {
+          "row": 19,
+          "column": 38
+        },
+        {
+          "row": 19,
+          "column": 39
+        },
+        {
+          "row": 19,
+          "column": 40
+        },
+        {
+          "row": 19,
+          "column": 53
+        },
+        {
+          "row": 19,
+          "column": 54
+        },
+        {
+          "row": 19,
+          "column": 57
+        },
+        {
+          "row": 19,
+          "column": 65
+        },
+        {
+          "row": 20,
+          "column": 54
+        },
+        {
+          "row": 20,
+          "column": 57
+        },
+        {
+          "row": 21,
+          "column": 54
+        },
+        {
+          "row": 21,
+          "column": 55
+        },
+        {
+          "row": 21,
+          "column": 57
+        },
+        {
+          "row": 22,
+          "column": 54
+        },
+        {
+          "row": 22,
+          "column": 57
+        },
+        {
+          "row": 23,
+          "column": 54
+        },
+        {
+          "row": 23,
+          "column": 55
+        },
+        {
+          "row": 23,
+          "column": 56
+        },
+        {
+          "row": 23,
+          "column": 57
+        },
+        {
+          "row": 26,
+          "column": 73
+        },
+        {
+          "row": 26,
+          "column": 77
+        },
+        {
+          "row": 27,
+          "column": 16
+        },
+        {
+          "row": 27,
+          "column": 23
+        },
+        {
+          "row": 27,
+          "column": 31
+        },
+        {
+          "row": 27,
+          "column": 39
+        },
+        {
+          "row": 28,
+          "column": 73
+        },
+        {
+          "row": 28,
+          "column": 77
+        },
+        {
+          "row": 31,
+          "column": 16
+        },
+        {
+          "row": 31,
+          "column": 17
+        },
+        {
+          "row": 31,
+          "column": 31
+        },
+        {
+          "row": 31,
+          "column": 98
+        },
+        {
+          "row": 32,
+          "column": 45
+        },
+        {
+          "row": 32,
+          "column": 52
+        },
+        {
+          "row": 32,
+          "column": 59
+        },
+        {
+          "row": 33,
+          "column": 47
+        },
+        {
+          "row": 33,
+          "column": 52
+        },
+        {
+          "row": 33,
+          "column": 57
+        },
+        {
+          "row": 34,
+          "column": 95
+        },
+        {
+          "row": 34,
+          "column": 106
+        },
+        {
+          "row": 34,
+          "column": 120
+        },
+        {
+          "row": 35,
+          "column": 31
+        },
+        {
+          "row": 35,
+          "column": 50
+        },
+        {
+          "row": 35,
+          "column": 53
+        },
+        {
+          "row": 35,
+          "column": 59
+        },
+        {
+          "row": 37,
+          "column": 22
+        },
+        {
+          "row": 37,
+          "column": 31
+        },
+        {
+          "row": 37,
+          "column": 41
+        },
+        {
+          "row": 37,
+          "column": 45
+        },
+        {
+          "row": 37,
+          "column": 47
+        },
+        {
+          "row": 37,
+          "column": 57
+        },
+        {
+          "row": 37,
+          "column": 59
+        },
+        {
+          "row": 37,
+          "column": 72
+        },
+        {
+          "row": 37,
+          "column": 84
+        },
+        {
+          "row": 37,
+          "column": 89
+        },
+        {
+          "row": 37,
+          "column": 99
+        },
+        {
+          "row": 37,
+          "column": 102
+        },
+        {
+          "row": 37,
+          "column": 106
+        },
+        {
+          "row": 38,
+          "column": 136
+        },
+        {
+          "row": 38,
+          "column": 137
+        },
+        {
+          "row": 38,
+          "column": 138
+        },
+        {
+          "row": 39,
+          "column": 50
+        },
+        {
+          "row": 39,
+          "column": 54
+        },
+        {
+          "row": 39,
+          "column": 93
+        },
+        {
+          "row": 39,
+          "column": 106
+        },
+        {
+          "row": 39,
+          "column": 136
+        },
+        {
+          "row": 39,
+          "column": 137
+        },
+        {
+          "row": 39,
+          "column": 138
+        },
+        {
+          "row": 40,
+          "column": 17
+        },
+        {
+          "row": 40,
+          "column": 22
+        },
+        {
+          "row": 40,
+          "column": 106
+        },
+        {
+          "row": 40,
+          "column": 113
+        },
+        {
+          "row": 40,
+          "column": 120
+        },
+        {
+          "row": 41,
+          "column": 47
+        },
+        {
+          "row": 41,
+          "column": 52
+        },
+        {
+          "row": 41,
+          "column": 57
+        },
+        {
+          "row": 42,
+          "column": 43
+        },
+        {
+          "row": 42,
+          "column": 45
+        },
+        {
+          "row": 42,
+          "column": 52
+        },
+        {
+          "row": 42,
+          "column": 59
+        },
+        {
+          "row": 43,
+          "column": 93
+        },
+        {
+          "row": 44,
+          "column": 43
+        },
+        {
+          "row": 45,
+          "column": 15
+        },
+        {
+          "row": 45,
+          "column": 31
+        },
+        {
+          "row": 47,
+          "column": 83
+        },
+        {
+          "row": 47,
+          "column": 84
+        },
+        {
+          "row": 48,
+          "column": 15
+        },
+        {
+          "row": 49,
+          "column": 110
+        },
+        {
+          "row": 50,
+          "column": 37
+        },
+        {
+          "row": 50,
+          "column": 39
+        },
+        {
+          "row": 50,
+          "column": 41
+        },
+        {
+          "row": 50,
+          "column": 134
+        },
+        {
+          "row": 50,
+          "column": 135
+        },
+        {
+          "row": 50,
+          "column": 136
+        },
+        {
+          "row": 50,
+          "column": 137
+        },
+        {
+          "row": 50,
+          "column": 138
+        },
+        {
+          "row": 50,
+          "column": 139
+        },
+        {
+          "row": 51,
+          "column": 120
+        },
+        {
+          "row": 53,
+          "column": 41
+        },
+        {
+          "row": 59,
+          "column": 137
+        }
+      ]
+    }
+  ]
+}
+

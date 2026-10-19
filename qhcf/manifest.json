@@ -1,0 +1,19 @@
+{
+  "name": "QHCF Carrion Fields Reference",
+  "built_at_utc": "2026-10-19T19:12:00Z",
+  "status": "incomplete preservation snapshot",
+  "verified_spatial_maps": 5,
+  "current_maps": 3,
+  "historical_maps": 2,
+  "missing_linked_map_candidates": 171,
+  "endpoints": {
+    "home_and_search": "/qhcf/",
+    "maps_index": "/qhcf/maps.html",
+    "single_text_reference": "/qhcf/reference.txt",
+    "machine_readable_map_grids": "/qhcf/maps.json",
+    "manifest": "/qhcf/manifest.json"
+  },
+  "attribution": "QHCF / DIKU-WIKI, its maintainers, map makers, and contributors",
+  "reuse_warning": "Source attribution is preserved. The original wiki license/About evidence was unavailable; resolve rights before broader reuse."
+}
+

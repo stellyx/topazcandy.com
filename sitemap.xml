@@ -29,5 +29,8 @@
   <url><loc>https://topazcandy.com/30-day-ai/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://topazcandy.com/30-day-ai/es/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://topazcandy.com/services/ai-work-session/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://topazcandy.com/qhcf/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://topazcandy.com/qhcf/maps.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 </urlset>
+
 
