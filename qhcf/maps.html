@@ -13,10 +13,11 @@
   <main>
     <h1>QHCF Carrion Fields Reference</h1>
     <p>A read-only preservation reference for the playerbase, assembled from public QHCF / DIKU-WIKI material.</p>
-    <aside class="notice"><strong>Incomplete preservation snapshot.</strong> Five spatial maps are currently verified: three current captures and two dated historical snapshots. The historical maps may not match the game at shutdown, and 171 linked candidates remain missing from the bounded inventory.</aside>
+    <aside class="notice"><strong>Incomplete preservation snapshot.</strong> Seven spatial maps are currently verified: five current captures and two dated historical snapshots. The historical maps may not match the game at shutdown, and 167 linked candidates remain missing from the bounded inventory.</aside>
     <h2>Using routes</h2>
     <p>Every literal <code>+</code> crossed on a map counts as one step. An authorized play agent should identify the current room from actual output, announce the destination and computed directional counts followed by "I am performing that now," then execute short verified movement segments. It must stop immediately if the user takes over, re-localize on unexpected movement, and confirm arrival from actual game output. Do not invent connections across walls, blank space, ambiguous crossings, diagonals, vertical transitions, or special exits.</p>
     <p><a href="reference.txt"><strong>Open the single self-contained play reference</strong></a> - instructions, index, all verified maps, sources, legends, coverage notes, and recovered item data in one readable file.</p>
+    <p><a href="navigation/"><strong>Open deterministic navigation</strong></a> - tested Galadon subset with stable node IDs, validated directed edges, explicit commands, and safe localization failures.</p>
     <p id="summary">Loading verified maps.</p>
     <div id="maps" aria-live="polite"></div>
     <footer><p>Thanks to QHCF / DIKU-WIKI, its maintainers, map makers, and contributors. Original source URLs and dates are retained. Public editability does not itself establish a reuse license; the original license/About evidence was unavailable during rescue.</p></footer>

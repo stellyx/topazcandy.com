@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0.0",
+  "graph_id": "qhcf.galadon.validated.v1",
+  "graph_version": 1,
+  "title": "Galadon validated navigation subset",
+  "coverage": "Small evidence-backed subset only; not a complete Galadon routing graph.",
+  "source_map": {
+    "title": "Galadon",
+    "url": "http://wiki.qhcf.net/index.php?title=Galadon",
+    "permalink": "http://wiki.qhcf.net/index.php?title=Galadon&oldid=5044",
+    "revision_id": 5044,
+    "last_modified_display": "This page was last modified on 9 October 2026, at 03:37.",
+    "capture_date": "2026-10-19",
+    "freshness_warning": "The source itself says the map is slightly outdated. Capture date is not geometry freshness.",
+    "coordinate_system": "1-based Unicode character row and column in the preserved preformatted map. Coordinates are evidence locators, not movement counts."
+  },
+  "contract": {
+    "resolver": "resolve_room(name, actual_observation) returns one stable node ID or an explicit ambiguity/unknown result.",
+    "planner": "plan_route(start_id, goal_id, graph_version) traverses only directed edges with validation=validated and executable=true.",
+    "counts": "movement_count counts emitted movement commands. plus_cells_crossed separately records literal + evidence when known. They are never substituted for one another.",
+    "execution": "This rescue reference never controls a character. A separate authorized play agent may execute only an executable plan, after announcing it, verifying every movement, and stopping on stale localization, takeover, failure, or an unresolved special exit."
+  },
+  "nodes": [
+    {
+      "id": "galadon.room.market-square",
+      "name": "Market Square",
+      "aliases": ["Market Square", "Galadon Market Square", "market"],
+      "kind": "room",
+      "localization_status": "named-in-text-source-unmapped-to-ascii",
+      "map_anchor": null,
+      "evidence": ["wayback:Radenecro:20191022132420"]
+    },
+    {
+      "id": "galadon.room.center-of-market-square",
+      "name": "Center of Market Square",
+      "aliases": ["Center of Market Square", "market"],
+      "kind": "room",
+      "localization_status": "user-reported-name-unmapped-to-ascii",
+      "map_anchor": null,
+      "evidence": ["user-screenshot-description:unverified-against-room-output"]
+    },
+    {
+      "id": "galadon.room.graveyard",
+      "name": "Galadon graveyard",
+      "aliases": ["Galadon graveyard", "graveyard"],
+      "kind": "room-or-area-entry",
+      "localization_status": "named-in-text-source",
+      "map_anchor": null,
+      "evidence": ["wayback:Radenecro:20191022132420"]
+    },
+    {
+      "id": "galadon.map.marker-m",
+      "name": "Undefined M marker",
+      "aliases": ["M marker", "Galadon M"],
+      "kind": "map-marker",
+      "localization_status": "unresolved-marker",
+      "map_anchor": {"row": 40, "column": 36},
+      "evidence": ["galadon-oldid-5044:row40-column36"]
+    },
+    {
+      "id": "galadon.map.node-south-of-m",
+      "name": "Map node south of M",
+      "aliases": ["node south of M"],
+      "kind": "map-plus-cell",
+      "localization_status": "unmapped-to-room-title",
+      "map_anchor": {"row": 43, "column": 36},
+      "evidence": ["galadon-oldid-5044:rows40-43-column36"]
+    },
+    {
+      "id": "galadon.gate.east",
+      "name": "East Gate",
+      "aliases": ["East Gate", "E gate"],
+      "kind": "legend-marker",
+      "localization_status": "map-marker-not-a-command",
+      "map_anchor": {"row": 40, "column": 63},
+      "evidence": ["galadon-oldid-5044:legend-E-East-gate"]
+    },
+    {
+      "id": "galadon.outskirts.east",
+      "name": "Eastern Outskirts marker",
+      "aliases": ["Eastern Outskirts", "Outsk"],
+      "kind": "map-label",
+      "localization_status": "map-label-not-a-command",
+      "map_anchor": {"row": 40, "column": 70},
+      "evidence": ["galadon-oldid-5044:row40-column70"]
+    },
+    {
+      "id": "galadon.region.eastern-road",
+      "name": "Eastern Road",
+      "aliases": ["Eastern Road", "EasternRoad"],
+      "kind": "linked-area-label",
+      "localization_status": "map-label-not-yet-linked-to-room-output",
+      "map_anchor": {"row": 40, "column": 77},
+      "evidence": ["galadon-oldid-5044:row40-column77"]
+    },
+    {
+      "id": "galadon.region.northern-roads",
+      "name": "Northern Roads",
+      "aliases": ["Northern Roads", "NorthernRoads"],
+      "kind": "linked-area-label",
+      "localization_status": "map-label-not-yet-linked-to-room-output",
+      "map_anchor": {"row": 24, "column": 84},
+      "evidence": ["galadon-oldid-5044:row24"]
+    }
+  ],
+  "edges": [
+    {
+      "id": "galadon.edge.market-square.to.graveyard.radenecro",
+      "from": "galadon.room.market-square",
+      "to": "galadon.room.graveyard",
+      "directed": true,
+      "validation": "validated",
+      "executable": true,
+      "commands": ["n", "n", "n", "n", "w", "w", "n", "w", "w", "w", "n"],
+      "movement_count": 11,
+      "plus_cells_crossed": null,
+      "expected_observations": ["Arrival should be the Galadon graveyard; stop if room output does not confirm a graveyard."],
+      "special_exit": false,
+      "source_evidence": [
+        {
+          "id": "wayback:Radenecro:20191022132420",
+          "url": "https://web.archive.org/web/20191022132420id_/http://wiki.qhcf.net/index.php?title=Radenecro",
+          "statement": "From market square, head 4n, 2w, n, 3w, and north."
+        }
+      ],
+      "reverse_edge_status": "not-added-without-independent-evidence"
+    }
+  ],
+  "localization_rules": [
+    {
+      "id": "galadon.localize.market-square-to-eastern-road",
+      "from": "galadon.room.market-square",
+      "to": "galadon.region.eastern-road",
+      "status": "NEEDS_LOCALIZATION",
+      "reason": "The preserved Galadon map has an undefined M marker and does not label Market Square or Center of Market Square. Literal + cells do not establish movement commands across E, Outsk, or the linked area boundary.",
+      "focused_step": "Obtain actual room output for Market Square and the result of one manually issued north command, including the exact next room title and exits. Do not have this rescue task issue the command.",
+      "forbidden_inference": "Do not route north through Academy. Do not equate M with Market Square until room evidence anchors it."
+    }
+  ],
+  "conditional_traces": [
+    {
+      "id": "galadon.trace.market-square-hypothesis.to-eastern-road",
+      "executable": false,
+      "validation": "conditional-map-geometry-only",
+      "hypothesis": "Only if actual room evidence maps Market Square to the plus cell south of M and maps the next north room to M.",
+      "geometry": {
+        "start_candidate": {"row": 43, "column": 36},
+        "north_to_undefined_m": {"row": 40, "column": 36},
+        "east_plus_cells": [
+          {"row": 40, "column": 42},
+          {"row": 40, "column": 48},
+          {"row": 40, "column": 54},
+          {"row": 40, "column": 59},
+          {"row": 40, "column": 67}
+        ],
+        "gate_marker": {"token": "E", "row": 40, "column": 63},
+        "outskirts_label": {"token": "Outsk", "row": 40, "column": 70},
+        "destination_label": {"token": "EasternRoad", "row": 40, "column": 77}
+      },
+      "plus_cells_crossed": 5,
+      "movement_count": null,
+      "commands": [],
+      "blockers": [
+        "M is absent from the Galadon legend.",
+        "Market Square and Center of Market Square are absent from the ASCII labels.",
+        "Plus-cell count is not proof of movement-command count.",
+        "E and Outsk are markers/labels, not automatically commands.",
+        "The Galadon page warns that the map is slightly outdated."
+      ]
+    }
+  ],
+  "invariants": [
+    "No automatic diagonal, crossing, bridge, whitespace-gap, or map-boundary connection.",
+    "No reverse edge without evidence.",
+    "No zero-command teleport between adjacent labels.",
+    "E, NE, NW, N, S, and W map tokens are landmarks unless an edge explicitly supplies commands.",
+    "Only validated executable edges participate in BFS."
+  ]
+}
+
