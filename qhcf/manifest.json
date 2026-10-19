@@ -1,11 +1,12 @@
 {
   "name": "QHCF Carrion Fields Reference",
-  "built_at_utc": "2026-10-19T19:12:00Z",
+  "built_at_utc": "2026-10-19T19:26:00Z",
   "status": "incomplete preservation snapshot",
-  "verified_spatial_maps": 5,
-  "current_maps": 3,
+  "verified_spatial_maps": 7,
+  "current_maps": 5,
   "historical_maps": 2,
-  "missing_linked_map_candidates": 171,
+  "restricted_private_captures": 2,
+  "missing_linked_map_candidates": 167,
   "endpoints": {
     "home_and_search": "/qhcf/",
     "maps_index": "/qhcf/maps.html",
@@ -14,6 +15,5 @@
     "manifest": "/qhcf/manifest.json"
   },
   "attribution": "QHCF / DIKU-WIKI, its maintainers, map makers, and contributors",
-  "reuse_warning": "Source attribution is preserved. The original wiki license/About evidence was unavailable; resolve rights before broader reuse."
+  "reuse_warning": "Source attribution is preserved. Hamsah Mu'tazz and Balator are excluded from public outputs because their pages require permission. The original wiki license/About evidence remains unavailable."
 }
-

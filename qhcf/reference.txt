@@ -23,18 +23,18 @@ The rescue project prepares these references only; it must not itself connect to
 
 ## Step counting and checked examples
 
-A player supplied this operational rule: **every `+` in every map counts as one step**. Preserve the start and destination labels separately: the count is the number of crossed `+` cells, not "start + rooms + destination."
+A player supplied this operational rule: **every `+` in every map counts as one step**. Preserve the start and destination labels separately: the count is the number of crossed `+` cells, not “start + rooms + destination.”
 
 ## Manually checked, deliberately small examples
 
 These examples verify the count against literal, uninterrupted horizontal source snippets. They do not validate a general route engine.
 
-| Map | Source snippet | From  to | Counted `+` cells |
+| Map | Source snippet | From → to | Counted `+` cells |
 |---|---|---|---:|
-| Galadon | `Feanwyyn--+-NW` | Feanwyyn  NW gate | 1 |
-| Galadon | `Feanwyyn--+--W` | Feanwyyn  West gate | 1 |
-| Galadon | `NE--+--Outsk` | Northeast gate  Outskirts marker | 1 |
-| Galadon | `Outsk--NorthernRoads` | Outskirts marker  Northern Roads label | 0 |
+| Galadon | `Feanwyyn--+-NW` | Feanwyyn → NW gate | 1 |
+| Galadon | `Feanwyyn--+--W` | Feanwyyn → West gate | 1 |
+| Galadon | `NE--+--Outsk` | Northeast gate → Outskirts marker | 1 |
+| Galadon | `Outsk--NorthernRoads` | Outskirts marker → Northern Roads label | 0 |
 
 The four counts above were checked directly against the saved Galadon grid. They demonstrate the counting convention and the important zero-step case. They do **not** prove that every visual line is traversable in both directions.
 
@@ -50,11 +50,13 @@ The four counts above were checked directly against the saved Galadon grid. They
 
 ## Map index and coverage
 
-Verified usable maps: 5. Saved title/reference pages without verified geometry: 2. Missing linked candidates: 171.
+Verified usable maps: 7. Saved title/reference pages without verified geometry: 4. Missing linked candidates: 167.
 
 | Area/map | Version | Source date | File |
 |---|---|---:|---|
+| EasternRoad | Current | 2026-10-19 | [maps/easternroad.md](maps/easternroad.md) |
 | Galadon | Current | 2026-10-19 | [maps/galadon.md](maps/galadon.md) |
+| HamsahOutskirts | Current | 2026-10-19 | [maps/hamsahoutskirts.md](maps/hamsahoutskirts.md) |
 | RuinsOfTheDeep | Historical | 20191022133619 | [maps/ruinsofthedeep.md](maps/ruinsofthedeep.md) |
 | Silverwood | Current | 2026-10-19 | [maps/silverwood.md](maps/silverwood.md) |
 | Udgaard | Current | 2026-10-19 | [maps/udgaard.md](maps/udgaard.md) |
@@ -64,6 +66,11 @@ Verified usable maps: 5. Saved title/reference pages without verified geometry: 
 
 - 5th Circle of Hell - saved historical page, but no verified spatial map block.
 - Graveyard Area List - saved historical page, but no verified spatial map block.
+
+## Preserved privately pending permission review
+
+- Balator - preserved privately; excluded pending permission review.
+- HamsahMutaz - preserved privately; excluded pending permission review.
 
 ## Missing map candidates
 
@@ -81,7 +88,6 @@ Verified usable maps: 5. Saved title/reference pages without verified geometry: 
 - Ayr'Trinil
 - AzrethForest
 - AzureMain
-- Balator
 - BanditEncampment
 - BaroviaForest
 - Basilica
@@ -113,7 +119,6 @@ Verified usable maps: 5. Saved title/reference pages without verified geometry: 
 - DranetyWoods
 - DurNominator
 - DwarfForest
-- EasternRoad
 - EaststrideRoad
 - Eil_Shaeria
 - ElementalTemple
@@ -136,8 +141,6 @@ Verified usable maps: 5. Saved title/reference pages without verified geometry: 
 - GolGalath
 - Graveyard
 - GrinningSkulls
-- HamsahMutaz
-- HamsahOutskirts
 - Haunted_Woods
 - HiddenForest
 - HighLords
@@ -242,6 +245,56 @@ Verified usable maps: 5. Saved title/reference pages without verified geometry: 
 This list is not authoritative completeness: the live Category:Maps and full namespace inventory were unavailable.
 
 ## All currently verified maps
+
+# EasternRoad
+
+- Status: Current capture (2026-10-19)
+- Snapshot/source date: 2026-10-19 live capture
+- Source: http://wiki.qhcf.net/index.php?title=EasternRoad
+- Credit: QHCF / DIKU-WIKI and its contributors
+- Step rule supplied by a player: every `+` in the map counts as one step.
+- Routing status: exact grid retained; general route finding is not yet validated.
+
+```text
+                                                              BramblefieldRoad
+ GaladonOutskirts                                                    |
+        |                           Voralia's Tears                  |   Aldevari
+        |             (13E)                |  (6E)     (10E)      (3)|      |
+Galadon-A-B-B--Along the Eastern Road--+-S-+-Eastern Road+-----+---+-C-(7E)-E-(5E)-1
+        |             |        (6E)        |       |  (3)|  (4)|   | |
+        |             +          Voralia's Tears   |     |     |   +-| 
+ GaladonOutskirts A Thick Copse             Blackclaw    |     |     |
+                    of Trees                           Ostalagiah    |
+                                                                  DwarfForest
+
+             TheGrove
+                 |
+                 1-E-E-E        TheGrove
+                       |         |
+                       E-E-E-E-E-E-E-E
+                       |       |     |
+                    Drogan Hills     E-(5E)-E
+                                            |               Hamsah
+                                            E-(12E)-+-I-+--Outskirts---HamsahMutaz
+```
+
+## Linked areas
+
+- BramblefieldRoad
+- GaladonOutskirts
+- Voralia'sTears
+- Aldevari
+- Galadon
+- Blackclaw
+- Ostalagiah
+- DwarfForest
+- TheGrove
+- DroganHills
+- HamsahOutskirts
+- HamsahMutaz
+
+
+---
 
 # Galadon
 
@@ -398,6 +451,88 @@ getting around.
 - Voralia'sTears
 - Lumberyard
 - Silverwood
+
+
+---
+
+# HamsahOutskirts
+
+- Status: Current capture (2026-10-19)
+- Snapshot/source date: 2026-10-19 live capture
+- Source: http://wiki.qhcf.net/index.php?title=HamsahOutskirts
+- Credit: QHCF / DIKU-WIKI and its contributors
+- Step rule supplied by a player: every `+` in the map counts as one step.
+- Routing status: exact grid retained; general route finding is not yet validated.
+
+```text
+                               Balator                         FieldsOfBalator
+
+                                  |                                   =
+              +---+---+---+---+---Y---+---+---+---+---+---+---+---+---+
+              |                   |
+              | 
+              +              Hamsah Mu'tazz               
+              |            (city gate closed
+              |                at night)
+          +---+
+          |
+          |
+          +
+          |
+          |
+          +
+          |
+          |
+          +
+          |
+Eastern   |        
+ Road  ---B---  Hamsah Mu'tazz
+          |   (city gate closed
+          |       at night)
+          +
+          |
+          |
+      +---+
+      |
+      |
+      +
+      |
+      |
+  ~ ~ K ~ ~ ~ ~ ~ Khalid River ~ ~ ~
+      |
+      |
+      +---+                 
+          |             Hamsah Mu'tazz
+          |           (city gate closed  
+          +---+---+       at night)
+                  |           
+                  |           |
+                  +---+---+---S---+---+---+---+
+                              |   |           |         R
+                                              |        /|
+                            Araile            +---+---+ |
+                            Desert            |         +
+                                            Araile      |     
+                                            Desert      +--+      
+                                                           | Goblin 
+                                                           + Outpost
+                                                           |
+                                                           +
+
+B - Outside the Bahiyaa Gate
+K - Over the Khalid River (Need to be flying)
+R - Where the Ocean Meets the Rocks
+S - Outside the Gate of Sihaam
+Y - Outside the Gate of Yasaar
+```
+
+## Linked areas
+
+- Balator
+- FieldsOfBalator
+- HamsahMutaz
+- EasternRoad
+- DesertOfAraile
 
 
 ---
@@ -976,6 +1111,21 @@ Continued updates by Yhorian and DurNominator
 
 These are links explicitly present in the saved map markup; they are not invented routes.
 
+## EasternRoad
+
+- BramblefieldRoad
+- GaladonOutskirts
+- Voralia'sTears
+- Aldevari
+- Galadon
+- Blackclaw
+- Ostalagiah
+- DwarfForest
+- TheGrove
+- DroganHills
+- HamsahOutskirts
+- HamsahMutaz
+
 ## Galadon
 
 - NorthernRoads
@@ -990,6 +1140,14 @@ These are links explicitly present in the saved map markup; they are not invente
 - Voralia'sTears
 - Lumberyard
 - Silverwood
+
+## HamsahOutskirts
+
+- Balator
+- FieldsOfBalator
+- HamsahMutaz
+- EasternRoad
+- DesertOfAraile
 
 ## RuinsOfTheDeep
 
@@ -1222,10 +1380,10 @@ These are links explicitly present in the saved map markup; they are not invente
 
 ## Missing-content and date warnings
 
-- Current captures: 3 verified maps, captured 2026-10-19.
+- Current captures: 5 verified maps, captured 2026-10-19.
 - Historical captures: 2 verified maps, with per-file archive timestamps.
-- Missing linked map candidates: 171.
-- Saved reference pages without verified spatial geometry: 2.
+- Missing linked map candidates: 167.
+- Saved reference pages without verified spatial geometry: 4.
 - The live Category:Maps page and authoritative namespace/file inventory remained behind repeated 502 responses.
 - Archive discovery was bounded to a 266-record digest-collapsed CDX response with no continuation key; uncrawled maps may exist.
 - The map-grid JSON is a faithful transcription aid, not a validated route graph.
@@ -2051,7 +2209,7 @@ firewalker boots                      L40, 8 9 9 5, arm -5, sbreath -5, move 20,
 fur lined boots                       L19, 5 7 6 0, move 10, w5
 fur-lined boots                       L36, 10 10 10 0, cha 5, move 30, leather, w5, Travelling Bard, Frigid Wasteland
 golden dragonscale boots -E           L28, 7 8 8 0, hit 1, arm -3, w10, GONE(?)
-gray leather boots                    L24, 7 5 7 7, move 50, leather, 7w, Moudrilar's Monastery 
+gray leather boots                    L24, 7 5 7 7, move 50, leather, 7w, Moudrilar’s Monastery 
 green boots -E                        L30, 10 9 8 0, dex -1, dam 2, w10, Giant Forest Guardians, 
 heavy black leather boots             L13, 4 3 4 1, elements 0, str 1, m-regen 5%, w1.13, 
 heavy leather boots                   L52, 3 3 3 1, hit 3, dam 2, move -25, dex -2, hp 15, arm -21, leather, w16

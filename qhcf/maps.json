@@ -1,8 +1,76 @@
 {
   "format_version": 1,
-  "generated_at_utc": "2026-10-19T19:06:56.811Z",
+  "generated_at_utc": "2026-10-19T19:23:47.643Z",
   "caution": "This is a lossless row/column representation, not a routing graph. Do not infer connectivity across walls, gaps, diagonals, crossings, vertical transitions, or special exits.",
   "maps": [
+    {
+      "title": "EasternRoad",
+      "source": "http://wiki.qhcf.net/index.php?title=EasternRoad",
+      "status": "Current capture (2026-10-19)",
+      "coordinate_system": "1-based row and Unicode character column in lines[]",
+      "user_rule": "Each + cell counts as one step.",
+      "routing_status": "Grid transcription only; connectivity has not been inferred.",
+      "lines": [
+        "                                                              BramblefieldRoad",
+        " GaladonOutskirts                                                    |",
+        "        |                           Voralia's Tears                  |   Aldevari",
+        "        |             (13E)                |  (6E)     (10E)      (3)|      |",
+        "Galadon-A-B-B--Along the Eastern Road--+-S-+-Eastern Road+-----+---+-C-(7E)-E-(5E)-1",
+        "        |             |        (6E)        |       |  (3)|  (4)|   | |",
+        "        |             +          Voralia's Tears   |     |     |   +-| ",
+        " GaladonOutskirts A Thick Copse             Blackclaw    |     |     |",
+        "                    of Trees                           Ostalagiah    |",
+        "                                                                  DwarfForest",
+        "",
+        "             TheGrove",
+        "                 |",
+        "                 1-E-E-E        TheGrove",
+        "                       |         |",
+        "                       E-E-E-E-E-E-E-E",
+        "                       |       |     |",
+        "                    Drogan Hills     E-(5E)-E",
+        "                                            |               Hamsah",
+        "                                            E-(12E)-+-I-+--Outskirts---HamsahMutaz"
+      ],
+      "plus_cells": [
+        {
+          "row": 5,
+          "column": 40
+        },
+        {
+          "row": 5,
+          "column": 44
+        },
+        {
+          "row": 5,
+          "column": 58
+        },
+        {
+          "row": 5,
+          "column": 64
+        },
+        {
+          "row": 5,
+          "column": 68
+        },
+        {
+          "row": 7,
+          "column": 23
+        },
+        {
+          "row": 7,
+          "column": 68
+        },
+        {
+          "row": 20,
+          "column": 53
+        },
+        {
+          "row": 20,
+          "column": 57
+        }
+      ]
+    },
     {
       "title": "Galadon",
       "source": "http://wiki.qhcf.net/index.php?title=Galadon",
@@ -825,6 +893,253 @@
         {
           "row": 64,
           "column": 36
+        }
+      ]
+    },
+    {
+      "title": "HamsahOutskirts",
+      "source": "http://wiki.qhcf.net/index.php?title=HamsahOutskirts",
+      "status": "Current capture (2026-10-19)",
+      "coordinate_system": "1-based row and Unicode character column in lines[]",
+      "user_rule": "Each + cell counts as one step.",
+      "routing_status": "Grid transcription only; connectivity has not been inferred.",
+      "lines": [
+        "                               Balator                         FieldsOfBalator",
+        "",
+        "                                  |                                   =",
+        "              +---+---+---+---+---Y---+---+---+---+---+---+---+---+---+",
+        "              |                   |",
+        "              | ",
+        "              +              Hamsah Mu'tazz               ",
+        "              |            (city gate closed",
+        "              |                at night)",
+        "          +---+",
+        "          |",
+        "          |",
+        "          +",
+        "          |",
+        "          |",
+        "          +",
+        "          |",
+        "          |",
+        "          +",
+        "          |",
+        "Eastern   |        ",
+        " Road  ---B---  Hamsah Mu'tazz",
+        "          |   (city gate closed",
+        "          |       at night)",
+        "          +",
+        "          |",
+        "          |",
+        "      +---+",
+        "      |",
+        "      |",
+        "      +",
+        "      |",
+        "      |",
+        "  ~ ~ K ~ ~ ~ ~ ~ Khalid River ~ ~ ~",
+        "      |",
+        "      |",
+        "      +---+                 ",
+        "          |             Hamsah Mu'tazz",
+        "          |           (city gate closed  ",
+        "          +---+---+       at night)",
+        "                  |           ",
+        "                  |           |",
+        "                  +---+---+---S---+---+---+---+",
+        "                              |   |           |         R",
+        "                                              |        /|",
+        "                            Araile            +---+---+ |",
+        "                            Desert            |         +",
+        "                                            Araile      |     ",
+        "                                            Desert      +--+      ",
+        "                                                           | Goblin ",
+        "                                                           + Outpost",
+        "                                                           |",
+        "                                                           +",
+        "",
+        "B - Outside the Bahiyaa Gate",
+        "K - Over the Khalid River (Need to be flying)",
+        "R - Where the Ocean Meets the Rocks",
+        "S - Outside the Gate of Sihaam",
+        "Y - Outside the Gate of Yasaar"
+      ],
+      "plus_cells": [
+        {
+          "row": 4,
+          "column": 15
+        },
+        {
+          "row": 4,
+          "column": 19
+        },
+        {
+          "row": 4,
+          "column": 23
+        },
+        {
+          "row": 4,
+          "column": 27
+        },
+        {
+          "row": 4,
+          "column": 31
+        },
+        {
+          "row": 4,
+          "column": 39
+        },
+        {
+          "row": 4,
+          "column": 43
+        },
+        {
+          "row": 4,
+          "column": 47
+        },
+        {
+          "row": 4,
+          "column": 51
+        },
+        {
+          "row": 4,
+          "column": 55
+        },
+        {
+          "row": 4,
+          "column": 59
+        },
+        {
+          "row": 4,
+          "column": 63
+        },
+        {
+          "row": 4,
+          "column": 67
+        },
+        {
+          "row": 4,
+          "column": 71
+        },
+        {
+          "row": 7,
+          "column": 15
+        },
+        {
+          "row": 10,
+          "column": 11
+        },
+        {
+          "row": 10,
+          "column": 15
+        },
+        {
+          "row": 13,
+          "column": 11
+        },
+        {
+          "row": 16,
+          "column": 11
+        },
+        {
+          "row": 19,
+          "column": 11
+        },
+        {
+          "row": 25,
+          "column": 11
+        },
+        {
+          "row": 28,
+          "column": 7
+        },
+        {
+          "row": 28,
+          "column": 11
+        },
+        {
+          "row": 31,
+          "column": 7
+        },
+        {
+          "row": 37,
+          "column": 7
+        },
+        {
+          "row": 37,
+          "column": 11
+        },
+        {
+          "row": 40,
+          "column": 11
+        },
+        {
+          "row": 40,
+          "column": 15
+        },
+        {
+          "row": 40,
+          "column": 19
+        },
+        {
+          "row": 43,
+          "column": 19
+        },
+        {
+          "row": 43,
+          "column": 23
+        },
+        {
+          "row": 43,
+          "column": 27
+        },
+        {
+          "row": 43,
+          "column": 35
+        },
+        {
+          "row": 43,
+          "column": 39
+        },
+        {
+          "row": 43,
+          "column": 43
+        },
+        {
+          "row": 43,
+          "column": 47
+        },
+        {
+          "row": 46,
+          "column": 47
+        },
+        {
+          "row": 46,
+          "column": 51
+        },
+        {
+          "row": 46,
+          "column": 55
+        },
+        {
+          "row": 47,
+          "column": 57
+        },
+        {
+          "row": 49,
+          "column": 57
+        },
+        {
+          "row": 49,
+          "column": 60
+        },
+        {
+          "row": 51,
+          "column": 60
+        },
+        {
+          "row": 53,
+          "column": 60
         }
       ]
     },
