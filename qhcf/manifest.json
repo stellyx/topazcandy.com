@@ -1,19 +1,27 @@
 {
-  "name": "QHCF Carrion Fields Reference",
-  "built_at_utc": "2026-10-19T19:26:00Z",
+  "name": "QHCF Carrion Fields Graphical Reference",
+  "built_at_utc": "2026-10-19T22:28:45.943Z",
   "status": "incomplete preservation snapshot",
-  "verified_spatial_maps": 7,
-  "current_maps": 5,
+  "verified_spatial_maps": 169,
+  "current_maps": 167,
   "historical_maps": 2,
-  "restricted_private_captures": 2,
-  "missing_linked_map_candidates": 167,
+  "missing_linked_map_candidates": 1,
+  "executable_navigation_edges": 0,
+  "navigation_warning": "The separate navigation graph is a limited evidence model, not a working automatic navigator.",
+  "permission_reviewed_maps": 47,
+  "reported_republication_permission": {
+    "recorded_at_utc": "2026-10-19T21:52:00Z",
+    "scope": "Hosting the recovered map data with a backlink to each original source, including maps previously held for permission review.",
+    "source_license_changed": false
+  },
   "endpoints": {
     "home_and_search": "/qhcf/",
-    "maps_index": "/qhcf/maps.html",
+    "maps_alias": "/qhcf/maps.html",
     "single_text_reference": "/qhcf/reference.txt",
-    "machine_readable_map_grids": "/qhcf/maps.json",
-    "manifest": "/qhcf/manifest.json"
+    "machine_readable_maps": "/qhcf/maps.json",
+    "manifest": "/qhcf/manifest.json",
+    "limited_navigation": "/qhcf/navigation/"
   },
   "attribution": "QHCF / DIKU-WIKI, its maintainers, map makers, and contributors",
-  "reuse_warning": "Source attribution is preserved. Hamsah Mu'tazz and Balator are excluded from public outputs because their pages require permission. The original wiki license/About evidence remains unavailable."
+  "source_notices": "Original author, credit, and use notices are retained within each map transcription where present."
 }
