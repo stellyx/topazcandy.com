@@ -63,8 +63,8 @@
   </section>
 </main>
 <script type="module">
-  import { buildAsciiMapGraph, planMapRoute } from './route-engine.mjs?v=20261019-market-hub';
-  const graph = await fetch('./galadon-v1.json?v=20261019-market-hub').then(response => { if (!response.ok) throw new Error('graph unavailable'); return response.json(); });
+  import { buildAsciiMapGraph, planMapRoute } from './route-engine.mjs?v=20261019-ap-crossroads';
+  const graph = await fetch('./galadon-v1.json?v=20261019-ap-crossroads').then(response => { if (!response.ok) throw new Error('graph unavailable'); return response.json(); });
   const mapGraph = buildAsciiMapGraph(graph);
   const form=document.querySelector('#route-form'),from=document.querySelector('#from'),to=document.querySelector('#to'),quickRoutes=document.querySelector('#quick-routes'),status=document.querySelector('#status'),summary=document.querySelector('#summary'),details=document.querySelector('#route-details'),copyOutput=document.querySelector('#copy-output'),copyButton=document.querySelector('#copy-button'),copyFeedback=document.querySelector('#copy-feedback'),runs=document.querySelector('#runs'),commands=document.querySelector('#commands'),count=document.querySelector('#count'),steps=document.querySelector('#steps'),map=document.querySelector('#map'),observations=document.querySelector('#observations');
   const ordered=[...mapGraph.nodes].sort((a,b)=>(a.kind==='plus-room')-(b.kind==='plus-room')||a.row-b.row||a.start_column-b.start_column);
