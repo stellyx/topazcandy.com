@@ -121,10 +121,11 @@ export function buildAsciiMapGraph(graph) {
         id,
         name: description?.label ? `${description.label} (+ r${row}c${column})` : `Unnamed map room (+ r${row}c${column})`,
         short_name: `+ r${row}c${column}`,
-        aliases: [`r${row}c${column}`, `${row},${column}`],
+        aliases: [`r${row}c${column}`, `${row},${column}`, ...(description?.aliases || [])],
         kind: 'plus-room', row, start_column: column, end_column: column, port_column: column,
-        name_kind: description ? 'descriptive-map-position' : 'unnamed-map-position',
-        description_basis: description?.basis || null
+        name_kind: description?.name_kind || (description ? 'descriptive-map-position' : 'unnamed-map-position'),
+        description_basis: description?.basis || null,
+        source_evidence: description?.source_evidence || []
       });
     });
   });

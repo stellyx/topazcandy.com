@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
   "graph_id": "qhcf.galadon.map-planner.v2",
-  "graph_version": 4,
-  "content_hash": "sha256:99c03a3d8550f260bc45b7daf916bbda7eada62ae7b68b968f7352b3a5fcf159",
+  "graph_version": 5,
+  "content_hash": "sha256:27f064c00a22aa097758fc060be236821077908812dd477ef9947849ea09ee55",
   "content_hash_contract": "SHA-256 of UTF-8 JSON.stringify(graph with content_hash omitted)",
   "title": "Galadon map route planner with legacy live-verification subset",
-  "coverage": "Complete literal + node inventory and cardinal corridor parsing for the published Galadon map, with source-legend landmarks and descriptive labels for priority unnamed rooms; diagonal and unclear special connections remain explicit ambiguities.",
+  "coverage": "Complete literal + node inventory and cardinal corridor parsing for the published Galadon map, with source-supported shop, guild, gate, Market Square, and priority-room labels; diagonal and unclear special connections remain explicit ambiguities.",
   "source_map": {
     "title": "Galadon",
     "url": "http://wiki.qhcf.net/index.php?title=Galadon",
@@ -29,9 +29,14 @@
       "name": "Market Square",
       "aliases": ["Market Square", "Galadon Market Square", "market"],
       "kind": "room",
-      "localization_status": "named-in-text-source-unmapped-to-ascii",
-      "map_anchor": null,
-      "evidence": ["wayback:Radenecro:20191022132420"]
+      "localization_status": "historically-triangulated-to-ascii-M-marker; not live-room-verified",
+      "map_anchor": {"row": 40, "column": 36, "map_node_id": "galadon.map.marker.m"},
+      "evidence": [
+        "wayback:Radenecro:20191022132420",
+        "galadon-oldid-5044:7-Bakery-north-and-13-Butcher-south-of-row40-column29",
+        "qhcf-log-805508:intersection-says-baker-north-butcher-south-market-square-east",
+        "user-report:Market-Square-one-south-of-central-shop-intersection"
+      ]
     },
     {
       "id": "galadon.room.center-of-market-square",
@@ -53,12 +58,15 @@
     },
     {
       "id": "galadon.map.marker-m",
-      "name": "Undefined M marker",
+      "name": "Historical M map marker",
       "aliases": ["M marker", "Galadon M"],
       "kind": "map-marker",
-      "localization_status": "unresolved-marker",
+      "localization_status": "historically-triangulated-market-square; not live-room-verified",
       "map_anchor": {"row": 40, "column": 36},
-      "evidence": ["galadon-oldid-5044:row40-column36"]
+      "evidence": [
+        "galadon-oldid-5044:row40-column36",
+        "qhcf-log-805508:intersection-says-baker-north-butcher-south-market-square-east"
+      ]
     },
     {
       "id": "galadon.map.node-south-of-m",
@@ -142,9 +150,9 @@
       "from": "galadon.room.market-square",
       "to": "galadon.region.eastern-road",
       "status": "NEEDS_LOCALIZATION",
-      "reason": "The preserved Galadon map has an undefined M marker and does not label Market Square or Center of Market Square. Literal + cells do not establish movement commands across E, Outsk, or the linked area boundary.",
-      "focused_step": "Obtain actual room output for Market Square and the result of one manually issued north command, including the exact next room title and exits. Do not have this rescue task issue the command.",
-      "forbidden_inference": "Do not route north through Academy. Do not equate M with Market Square until room evidence anchors it."
+      "reason": "Historical room descriptions triangulate Market Square to M for map-reference routing, but no fresh current room title/description/exits fingerprint exists for executable live navigation. Literal map geometry also does not prove live transitions across E, Outsk, or the linked-area boundary.",
+      "focused_step": "For later live-verification only, record the actual current Market Square room title, description, exits, and the result of one manually issued north command. This rescue task must not issue the command.",
+      "forbidden_inference": "Do not treat the historical map anchor as a current observed character location or as authorization to control the game."
     },
     {
       "id": "galadon.validate.market-square-to-graveyard",
@@ -162,10 +170,10 @@
       "id": "galadon.trace.market-square-hypothesis.to-eastern-road",
       "executable": false,
       "validation": "conditional-map-geometry-only",
-      "hypothesis": "Only if actual room evidence maps Market Square to the plus cell south of M and maps the next north room to M.",
+      "hypothesis": "Historical map-reference route using the triangulated Market Square M marker; remains non-executable until actual current room evidence validates the start and transitions.",
       "geometry": {
-        "start_candidate": {"row": 43, "column": 36},
-        "north_to_undefined_m": {"row": 40, "column": 36},
+        "start_candidate": {"row": 40, "column": 36},
+        "north_to_central_shop_intersection": {"row": 38, "column": 36},
         "east_plus_cells": [
           {"row": 40, "column": 42},
           {"row": 40, "column": 48},
@@ -181,8 +189,8 @@
       "movement_count": null,
       "commands": [],
       "blockers": [
-        "M is absent from the Galadon legend.",
-        "Market Square and Center of Market Square are absent from the ASCII labels.",
+        "M is absent from the printed legend and is assigned to Market Square by historical triangulation rather than a direct legend entry.",
+        "No fresh live room output confirms that the current world still matches the historical map.",
         "Plus-cell count is not proof of movement-command count.",
         "E and Outsk are markers/labels, not automatically commands.",
         "The Galadon page warns that the map is slightly outdated."
@@ -266,6 +274,16 @@
       "                               Silverwood"
     ],
     "descriptive_labels": {
+      "galadon.map.r38c24": {"label":"Wizard's Shop","aliases":["wizard shop","wizard's shop"],"name_kind":"source-room-name","basis":"Public QHCF combat-log room description says the wizard's shop is north and the Transmuters' Guild is south of this Trade Road intersection; the preserved map places T south at column 24.","source_evidence":["https://www.qhcf.net/phorum/read.php?3%2C830050%2Colder=","galadon-oldid-5044:T-Transmuters-Guild-row42-column24"]},
+      "galadon.map.r38c29": {"label":"Bakery","aliases":["baker","bakery"],"name_kind":"source-legend-room","basis":"Legend 7 is Bakery. A public QHCF room description places the baker north and Butcher south of the intersection immediately west of Market Square.","source_evidence":["galadon-oldid-5044:legend-7-Bakery","https://www.qhcf.net/phorum/read.php?3%2C805508%2Colder="]},
+      "galadon.map.r38c33": {"label":"Vegetable Shop (legend: Vegetable Garden)","aliases":["vegetable shop","vegetable garden"],"name_kind":"source-room-name-with-legend-alias","basis":"Legend 6 is Vegetable Garden. Public QHCF room descriptions call the west-side business the vegetable shop.","source_evidence":["galadon-oldid-5044:legend-6-Vegetable-Garden","https://www.qhcf.net/phorum/read.php?3%2C983060%2C983060="]},
+      "galadon.map.r38c36": {"label":"Central shop intersection (north of Market Square)","aliases":["central shop intersection"],"name_kind":"source-triangulated-position","basis":"The preserved shop numbers flank this north-south corridor: Vegetable Garden/Shop west and Cartographer's Store east. Market Square (M) is one transition south.","source_evidence":["galadon-oldid-5044:legends-5-and-6","user-report:Market-Square-one-south-of-center"]},
+      "galadon.map.r38c39": {"label":"Cartographer's Store","aliases":["cartographer","cartographer store","cartographer's store"],"name_kind":"source-legend-room","basis":"Legend 5 is Cartographer's Store; public QHCF room descriptions place it east of the vegetable shop.","source_evidence":["galadon-oldid-5044:legend-5-Cartographers-Store","https://www.qhcf.net/phorum/read.php?3%2C983060%2C983060="]},
+      "galadon.map.r43c29": {"label":"Butcher Shop","aliases":["butcher","butcher shop","galadon butcher"],"name_kind":"source-legend-room","basis":"Legend 13 is Butcher. A public QHCF room description places the butcher south of the intersection immediately west of Market Square.","source_evidence":["galadon-oldid-5044:legend-13-Butcher","https://www.qhcf.net/phorum/read.php?3%2C805508%2Colder="]},
+      "galadon.map.r43c33": {"label":"Pet Shop (legend 14: Training Room)","aliases":["pet shop","training room"],"name_kind":"current-room-description-with-outdated-legend-alias","basis":"The map warns it is slightly outdated. Legend 14 says Training Room, while multiple later public QHCF room descriptions place the pet shop west of the General Store at this intersection.","source_evidence":["galadon-oldid-5044:legend-14-Training-Room","https://www.qhcf.net/phorum/read.php?3%2C1033426%2C1033426="]},
+      "galadon.map.r43c36": {"label":"South road intersection (between Pet and General stores)","aliases":["pet and general store intersection"],"name_kind":"source-triangulated-position","basis":"Public QHCF room descriptions place the Pet Shop west, General Store east, and road continuing south.","source_evidence":["https://www.qhcf.net/phorum/read.php?3%2C1033426%2C1033426="]},
+      "galadon.map.r43c39": {"label":"General Store","aliases":["general store"],"name_kind":"source-legend-room","basis":"Legend 17 is General Store; later public QHCF room descriptions place it east of the Pet Shop.","source_evidence":["galadon-oldid-5044:legend-17-General-Store","https://www.qhcf.net/phorum/read.php?3%2C1033426%2C1033426="]},
+      "galadon.map.r47c47": {"label":"Boatmaker's Shop (Nicholas)","aliases":["boatmaker","boatmaker shop","Nicholas"],"name_kind":"source-legend-room","basis":"Legend 27 is Boatmaker's shop (Nicholas), printed immediately above this mapped room.","source_evidence":["galadon-oldid-5044:legend-27-Boatmakers-shop-Nicholas"]},
       "galadon.map.r30c33": {"label":"Central rectangle - northwest junction","basis":"Descriptive map position; not an official room title."},
       "galadon.map.r30c36": {"label":"Central rectangle - north junction","basis":"Descriptive map position; not an official room title."},
       "galadon.map.r30c39": {"label":"Central rectangle - northeast junction","basis":"Descriptive map position; not an official room title."},
@@ -287,6 +305,13 @@
       "galadon.map.r51c32": {"label":"AP Guild approach","basis":"Descriptive position directly below the published AP label; not an official room title."},
       "galadon.map.r51c36": {"label":"Southern road - AP approach junction","basis":"Descriptive map position beside the published AP label; not an official room title."}
     },
+    "named_room_mapping_notes": [
+      {"name":"Market Square","map_node_id":"galadon.map.marker.m","confidence":"historically triangulated","mapping":"The bakery/Butcher intersection is immediately west; legend 7 is north and legend 13 south. The only next named map marker east is M. This also reconciles the user's report: M is one movement south of the central intersection between the Vegetable and Cartographer shops.","live_room_verified":false},
+      {"name":"Wizard's Shop","map_node_id":"galadon.map.r38c24","confidence":"historically triangulated","mapping":"Public room descriptions put the Wizard's Shop north and Transmuters' Guild south of the same Trade Road intersection; T is mapped south at column 24.","live_room_verified":false},
+      {"name":"Bakery","map_node_id":"galadon.map.r38c29","confidence":"source legend plus room-description triangulation","mapping":"Legend 7; north of the intersection immediately west of Market Square.","live_room_verified":false},
+      {"name":"Butcher Shop","map_node_id":"galadon.map.r43c29","confidence":"source legend plus room-description triangulation","mapping":"Legend 13; south of the intersection immediately west of Market Square.","live_room_verified":false},
+      {"name":"General Store","map_node_id":"galadon.map.r43c39","confidence":"source legend plus room-description triangulation","mapping":"Legend 17; east of the Pet Shop at the south-road intersection.","live_room_verified":false}
+    ],
     "landmarks": [
       {"id":"galadon.map.northern-roads.north","name":"Northern Roads (north)","aliases":["north northern roads"],"row":1,"start_column":27,"end_column":39,"port_column":32,"kind":"linked-area"},
       {"id":"galadon.map.outskirts.north","name":"Galadon Outskirts (north)","aliases":["north outskirts"],"row":3,"start_column":25,"end_column":40,"port_column":32,"kind":"linked-area"},
@@ -298,7 +323,7 @@
       {"id":"galadon.map.northern-roads.east","name":"Northern Roads (east)","aliases":["east northern roads"],"row":24,"start_column":76,"end_column":88,"port_column":76,"kind":"linked-area"},
       {"id":"galadon.map.feanwyyn.west","name":"Feanwyyn (west)","aliases":["west Feanwyyn"],"row":40,"start_column":1,"end_column":8,"port_column":8,"kind":"linked-area"},
       {"id":"galadon.map.gate.west","name":"West Gate (W)","aliases":["W gate","west gate"],"row":40,"start_column":14,"kind":"gate"},
-      {"id":"galadon.map.marker.m","name":"M - central Trade Road marker","aliases":["M","central Trade Road"],"row":40,"start_column":36,"kind":"map-landmark"},
+      {"id":"galadon.map.marker.m","name":"Market Square (M)","aliases":["M","Market Square","Galadon Market Square","market"],"row":40,"start_column":36,"kind":"market-square","name_kind":"source-triangulated-room","source_evidence":["galadon-oldid-5044:row40-column36","https://www.qhcf.net/phorum/read.php?3%2C805508%2Colder=","user-report:Market-Square-one-south-of-central-shop-intersection"]},
       {"id":"galadon.map.gate.east","name":"East Gate (E)","aliases":["E gate","east gate"],"row":40,"start_column":63,"kind":"gate"},
       {"id":"galadon.map.outskirts.east","name":"Outskirts (east)","aliases":["Eastern Outskirts","east outskirts"],"row":40,"start_column":70,"end_column":74,"port_column":70,"kind":"linked-area"},
       {"id":"galadon.map.eastern-road","name":"Eastern Road","aliases":["EasternRoad"],"row":40,"start_column":77,"end_column":87,"port_column":77,"kind":"linked-area"},
@@ -320,7 +345,7 @@
       {"id":"galadon.map.silverwood","name":"Silverwood","aliases":["Silverwood south"],"row":69,"start_column":32,"end_column":41,"port_column":36,"kind":"linked-area"}
     ],
     "observation_priorities": [
-      {"priority":1,"area":"M and the central Trade Road","nodes":["galadon.map.marker.m","galadon.map.r40c29","galadon.map.r40c42"],"needed":"At each listed node, record the exact in-game room title and visible exits. One observation at M plus one step west and one step east is enough to determine whether any is Market Square."},
+      {"priority":1,"area":"Market Square (historical M anchor) and central Trade Road","nodes":["galadon.map.marker.m","galadon.map.r40c29","galadon.map.r40c42"],"needed":"For future live validation only, record exact room titles, descriptions, and visible exits at Market Square plus one step west and east. This confirms whether the historical triangulation still matches the current world."},
       {"priority":2,"area":"Central rectangle","nodes":["galadon.map.r30c33","galadon.map.r30c36","galadon.map.r32c36","galadon.map.r34c36","galadon.map.r34c39"],"needed":"Follow the short map route e, s, s, e and record the exact room title and exits after each single move. Five observations name the tested rectangle path."},
       {"priority":3,"area":"AP Guild approach","nodes":["galadon.map.r47c36","galadon.map.r51c32","galadon.map.r51c36"],"needed":"Record the exact title and exits at the room under the AP label and the adjacent southern-road junction; note which exit actually enters AP's Guild."},
       {"priority":4,"area":"East Gate transition","nodes":["galadon.map.r40c59","galadon.map.gate.east","galadon.map.r40c67"],"needed":"Record the exact room title and exits immediately west of E, at E, and immediately east. Three observations confirm the gate transition without mapping the district."}
@@ -328,7 +353,7 @@
     "ambiguities": [
       "Diagonal / and \\ links are displayed but not routed until their endpoints are manually traced.",
       "Crossings and special exits such as J are not inferred from character proximity.",
-      "The M landmark is selectable only as M or the central Trade Road marker. The preserved legend does not define M, so it is not aliased to an independently verified in-game Market Square name."
+      "The source legend does not define M directly. Market Square is assigned to M by independent historical room-description triangulation using the mapped Bakery, Butcher, Vegetable Shop, Cartographer's Store, and the user's one-south-of-center report. This is useful historical mapping evidence, not a current live-room fingerprint."
     ]
   },
   "invariants": [
