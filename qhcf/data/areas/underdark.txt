@@ -1,0 +1,86 @@
+Underdark
+=========
+
+Underdark
+Suggested Levels: 35 - 51
+
+This area was created by Shaidar Haran for the Carrion Fields MUD.
+Permission to use on any Merc MUD is granted provided this sign is not
+altered in anyway including placement&#160;:).
+You must also inform the author of your intent to use this area.
+
+A wee new section to the area added by Nepenthe, not that anyone ever
+reads these things. &#160;:P
+
+
+                                         RuinsOfDelarTol or
+                                           Jaette Watchtower
+                                                     \          VelkynOloth
+                                                      \            /
+ AbandonedMines                                        \          +
+           \                                            \         |
+            +-+-+-+-+                                    \  +-+   +
+                    |                                     v | |   |
+                    +---------+---------+---------+     +-+-+ L +-+-+
+                    |                             |     |   |   |
+                  +-+                             +--+--+   +-+-+
+                  |                               |     |
+              +-+-+                               +     +
+              |   |                              /      |
+              R   +                             A       +-+       +
+              ^   =                                       |      /|
+        Arendyl   =                                       +-+-+ / |
+                  =                                       |   |/ RiversidePath
+                  +                                       +   + 
+                  |                                       |   |
+                  +---------------------+-----------------+-+-+                                        
+                                                          |                  
+                                                          +                  
+                                                          |                  
+                                        +---------+--+--+-+               
+                                        =         |     |                 
+                                        H         |     |
+                         House of       =         |     |
+                        Nel'Zikahn   +||+||+      |     |
+                                        |         |     |
+                                     +||+||+      +     +
+                                         \        |     |
+                                       +||+       |     |
+                                          =       |     |
+                                          v       |     |
+              +-----+-----+-----+-----+---+-------+--+--+--+--+                                            *This area was written by Rogos exclusively for Carrion Fields LLC.          *
+              |                       |                 |     |                                            *No unauthorized distribution, copying, or use without approval from the     *
+              +                       +     Fungoid +   +     +-C                                          *author.  Written in 2018 with Special thanks to Ishuli, Whiysdan and        *
+              |                             Colony  |   |     |                                            *Daphedee for their support, encouragement and general listening skills&#160;:).  *
+              +---------+---------+       +-+-+-+-+-+-+ +     +                                                 +
+              |                   |       |     |     | |     |                                                 =
+              |                   +       |     |   + | |     +                                           +--+--+
+              |  Rothe Farm       |       |     |   = | |     |                                           |  |
+              |     +--+          +-+     +     + +-+ + +   +-+-+-+-+-----------------------+----+--+--+--+--+--+--+               
+              |     |  |            ^           | | | | |     |     |                            |        |  |      =              
+              |     +--+--+         |        M||+ +-+-+ +     +     +     D                      +        +--+--+    v|            
+              |     |  |  |     Sewers          |       |     |     |     |                      |        =          -L-<-B--+     L - Lost in the Murk, maze
+              |     +--+--+                     +-+-+-+-+     +-+   +-+-+-+-UnderdarkSea         |        +           |
+    Lower     |     |  |                          |   |         |                                |
+    Cragstone-+--+--+  +                          +   +         +                                |    A large round opening can be seen in a mound of debris                       -> UnderdarkSea 
+                                                                |                   F--+--+--G   |    A small crevice can be barely seen through the foggy depths.                 -> B
+                                                           TethAzeleth                       =   |    A wide opening into a tunnel of some kind is visible, pulling water through. -> F
+                                                                                               v |
+                                                                                                 E
+
+* Scan doesn't work in the underdark except for races native to the underdark (drow, svirf, duergar) and caverndweller rangers.
+* Transportation spells don't work.
+* Roaming aggro mobs (cavefishers, dark-elf patrols).
+
+H - Dark-elf house (key is hidden in a skeleton outside the door - once you attack one dark-elf, they're all aggro to you)
+C - Cavefisher
+R - Drider (spider axe)
+D - Debris (ghastly remains)
+M - Miggen the Svirfneblin Mycologist
+G - Guardian
+L - Kteng's Lab
+= - hidden tunnel, medium size or smaller only
+A - Aran'gird
+
+Source: http://wiki.qhcf.net/index.php?title=Underdark&oldid=4993
+Revision: 4993

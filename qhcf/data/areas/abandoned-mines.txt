@@ -1,0 +1,92 @@
+Abandoned Mines
+===============
+
+Abandoned Mines - no recall, no gate. Part of Underdark map.
+
+
+      mine entrance (4)
+        /
+       +                                           
+       | +--+                                      
+       | |                                         
+       Y +--+   The Red Lair                                   
+       | |   \  |                                   
+       +-+    +-+--+                               
+              |    |                               
+              |    +--Y                            
+              +       |                            
+              |       +   +                        
+              |       |   |\                       
+              +--+-F--+-+-+ Underdark
+                      |                            
+           +--+--+-S--+-+-+                        
+                      |   |                        
+                      +-+-+-+-+ +                  
+                              |/|                  
+                              + |    2             
+                                |   /              
+                             +--W  +               
+                                |  |               
+                                +--F               
+                                                   
+S - Shrieker mushroom (30 hours deafen)                            
+Y - Yellow Fungi (30 hours insanity)                               
+W - Giant purple worm (swallows people) (wandering) [random treasure]
+F - Red Fungus (30 hours forget)               
+                                               
+The Belly of the Worm                          
+  Slimy innards surround you as you find yourself in the belly of the worm.
+Several bits hang in your face, forcing you to brush them away in
+irritation.  Drawing your hand back quickly, you feel your skin burn
+from the slimy substance that covers everything.  With a start, you realize
+that it is beginning to eat away at your boots.
+                                               
+[Exits: none]                                  
+The slimy guts of the purple worm surround you.
+                                               
+<912hp 791m 566mv> gt Damnit, I was swalloed   
+Your message didn't get through.               
+                                               
+A massive shudder goes through the worm's body and you manage to crawl out!
+You hear the purple worm's death cry.          
+                                               
+                                               
+                          +--4                 
+                          |                    
+                          |                    
+                          +  3--+              
+                          |  |  |              
+                          +--+  +            1 
+                          |     |           /  
+                          +-+   +     +--+ /   
+                                |     |  |/    
+                                +--P--+  +--+  
+                                            |  
+                                            +  
+                                        2   |  
+                                        |   T  
+                                        |   |\  
+D - Deafen fungus (20 hrs deafen)       D-+-+ v 
+T - Weak floor trap (fly to avoid)             B 
+P - Poisongas
+                                       +-+-+       
+                                      /|           
+                                     + |           
+        NarrowGamepath--------------/--+           
+                       +-+--+-+    +   |           
+                       |\     |   /    +--Traveller
+                       + 3  +-+  +
+                       |    |   /                 
+                       |    |  /
+                       |    | /
+                       |    |/                  
+                       + +--+---+-+-+            
+                       | |  |       |            
+                       +-+  +-+     +            
+                              |     |
+                              +--+--1
+                                  
+B - Displacer beast (no way out)
+
+Source: http://wiki.qhcf.net/index.php?title=Abandoned_Mines&oldid=4991
+Revision: 4991

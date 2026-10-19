@@ -1,0 +1,47 @@
+A Virgin Forest
+===============
+
+                                                          DwarfForest
+                                                              |
+                                                           +--+
+                                                           |
+                                          +--+--+--+       +
+                                          |  |             |
+                                          B--+             +
+                                          |  |             |
+              +                     T  +--+--+          +--+
+ Targeth's   /|                     #  |  |  |          |
+ Manor --+--+ +                     +--+--+--+--+  K    +
+              |                     |  |  |  |  |  |    |
+              +--+               +--t--t--t--+--t--t--Maze
+                  \              |  |  |  |  |  |
+                   +-+--Maze--t--t--t--+--t--+--t
+                              |  |  |  |  |  |  |
+                              +--+--+--t--t--H--t
+                                 |  |  |  |  |  |
+                                 +--+--t--+--t--t
+                                       |  |  |  |
+                                       t--t--t--+
+
+B: Pool of blood (Poisons)
+H: Pool of water. Refreshes you when you drink.
+K: KeepoftheFhalaugash
+T: Trapper
+t: A trail within the virgin forest
+                                               
+Notes
+Three parts to the forest, two mazes at each end and the middle part that isn't a maze.
+
+Heading in towards the middle of the forest, look for:
+A thin animal trail leads further into the forest.
+The trail begins to widen in this direction.
+
+Heading out towards either edge of the forest, look for:
+The forest appears to be thinning.
+You can barely make out what appears to be the edge of this forest.
+The path seems to lead to the edge of the trees.
+
+If you get lost you only have to wander around until you can see them again.
+
+Source: http://wiki.qhcf.net/index.php?title=A_Virgin_Forest&oldid=5052
+Revision: 5052

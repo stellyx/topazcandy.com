@@ -1,0 +1,61 @@
+Aldevari
+========
+
+This area was created by Jullias for the Carrion Fields MUD. Any
+reproduction of this area without the authors permission is strictly
+prohibited. If you wish to use it elsewhere contact its author.
+Copyright 1994, 1998.
+
+
+                BramblefieldRoad
+                          \         +
+                           \       /|
+                            +--+--+ |
+                                    +--+--T--+  P              +--+--+
+                                       |  |  |  |              |  |  |
+                                       |  |  |  |              |  |  |
+                                    +--+  +  +--+     +--+--+--+--+--+
+                                    |     |     |     |  |  |  |  |  |
+                                    |     |     |     |  |  |  |  |  |
+                                    +  +--+--+  +--E--+--+--+--+--+--s
+                                    | U|  |  |  | I   |  |  |  |  |  |
+                                    |/ |  |  |  |/    |  |  |  |  |  |
+                                    +--+--+--+--+     +--+--+--+--+--+
+                                          |           |  |  |  |  |  |
+                                          |           |  |  |  |  |  |
+                                          S           J--+--+--O--+--+
+                                          |           |  |  |  |  |  |
+                                          |           |  |  |  |  |  |
+                                    +--+--+--+--+--+--+--V--+--+--+--+
+                                             |  |  |  |  |  |  |  |  |
+                                             |  |  |  |  |  |  |  |  |
+                                             +--+--+--+--A--+--+--+--+
+                                             |  |  |  |  |  |  |  |  |
+                                             |  |  |  |  |  |  |  |  |
+                                             +--+--+--+--+--+--+--+--+--The Grove
+                                             |        |  |  |  |  |  |
+                                             |        |  |  |  |  |  |
+                                             +        +--+--+--+--+--+
+                                             |
+                                             |
+                                             D
+                                             |
+                                             |
+                                       EasternRoad
+
+A - Gralan (pale white skull ring)
+D - Dwarf (water canteen)
+s - Sutton
+S - Southern gates
+P - princesses bedroom (Princess Renee is using: long white gown, rod of purity)
+T - Throne room
+J - Jousting Arena  (white-, blue-, silver- and black knight)
+E - Eastern gates
+U - southwest tower
+I - southeast tower
+O - Olgakar
+V - Vincent (merchant)
+* nobles - garnet rings (roaming)
+
+Source: http://wiki.qhcf.net/index.php?title=Aldevari&oldid=5026
+Revision: 5026

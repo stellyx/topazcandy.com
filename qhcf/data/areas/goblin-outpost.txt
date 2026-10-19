@@ -1,0 +1,30 @@
+Goblin Outpost
+==============
+
+                                      T
+                                      |
+                                      +  A
+                                      |  |
+                                   +--+--+
+                                   |     |
+                                +--+--+--+
+                                |  |  |
+                                +  D  p
+                                |     |   
+                             M--+--+--+--F
+                                   |
+                                   +
+                                   |
+                                +--+
+                                |
+ Ancient Road to the Wastes--+--+
+ 
+ A - Altar
+ T - Training Hall
+ D - Slaves Den
+ M - Meat Shack
+ F - Forge
+ p - drinkable pool
+
+Source: http://wiki.qhcf.net/index.php?title=Goblin_Outpost&oldid=3503
+Revision: 3503

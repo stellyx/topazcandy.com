@@ -1,0 +1,49 @@
+Ar'atouldain
+============
+
+ Ar'atouldain
+ Suggested Levels: 5 - 30
+ 
+ This sign reads: Area written by ShadowDancer, copyright 1994. For use
+ exclusively with Carrion Fields or by permission of author. Revised by
+ Poetry, copyright 2000.
+ Another revision by Mayesha, 2001-2002.
+
+                                             3 Evermoon Hollow
+                                             ^     |
+                 High Pass-+--+--+--        -+--+--+
+                           |  |              |  |  |
+              +=+          +-               -3--+--E    E - Elven King (flickering gem)
+                |          |                 |  |  |
+    Gol'Galath--T          +-                     -+    T - 3 Trolls
+                 \         |  |  |  |              |
+                  +--+--+--+--+--+--+--B--+--+--+--+    B - Bridge Over the Black River
+           Foothills       |  |  |  |              |
+                                             2     |    C - Hidden Centaur (with centaur equipment)
+                                             ^     |
+                                             +    -+_+-C
+                                             |  |  |
+                                          +--1--+--+
+                                             |  |  |
+                                       2<-+--2--+--+-Bandit Encampment
+                                          |  v
+                                          |  1
+                                          |
+                                     Velkyn Oloth
+
+
+Maze notes: It is broken up into 4 sectors, nw, sw, ne, se. If
+you are in the ne sector, head all east till you hit the edge and go
+south to get back to the path. If you are in the sw sector go all west
+then north to the path and so on and so forth.
+
+NOTES
+
+Only a maze if you stray from the path. If you head to
+Velkyn Oloth, use "Look" to find the right path.
+
+[false direction] but you can also hear the sound of running water
+from this direction.
+
+Source: http://wiki.qhcf.net/index.php?title=Ar%27atouldain&oldid=5001
+Revision: 5001

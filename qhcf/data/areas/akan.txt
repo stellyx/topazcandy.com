@@ -1,0 +1,62 @@
+Akan
+====
+
+                     Mortorn
+                        |
+                        +                       CastleAkan
+                        |                           |
+                        +                           +
+                        |                  +        |
+          +-+-+         +   +              |      +-f-+
+              |         |  /|            +-+-+      |
+              +         +-+ +               \ +   +-f-+        I
+              |             |                \|     |     Ba   |
+              +             +               + W G F-f-Bu+ |\   +
+              |             |              /  | | | | | | | w  |
++-+-+-+   +   +-b-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-M-+-+-+----+-+
+|     |   |   |             |               | | | | | | | |    |
++     +   +   +   +-+-+-+   +               S + B-A-+-+ + +    +
+|         |   |   |         |                 | |   |     |
++         +   +   +         +-C-+-+           T + +-+-+   Wo
+|         |   |   |         |   | |              /  |
++         +   +-+-+     +-+-+   +-+-+-+         w +-+-+
+|         |   |         |       |   | |             |
++         +   +         +       +   +-+             +
+|         |   |         |                           |
++-+-+-+-+-+-+-+         +                       H-+-+-+-Sh
+      |       |         |                           |\
+    +-+       +     +-+-+                           a \
+    |         |     |                                  \
++-O-+ @-+-+-+-+     +                                   StonesEmbrace
+                    |
+                    +--GrinningSkulls
+                    |
+                    +
+                    |
+  EaststrideRoad -R-+
+
+A  - Arkat's Ale Store
+a  - The Holy Altar
+B  - The brewery
+Ba - The barracks
+Bu - The butchery
+b  - Before the mines
+C  - A dark crevice in a mountain
+F  - The armorer's forge
+f  - Ferdiad Lane (Ferdiad, a dwarf rager)
+G  - The general store
+Gr - The Grog and Grub Tavern
+H  - The guild of healers
+I  - An empty invoker's guild
+M  - The center marketplace
+O  - Exit from Orc Passage
+R  - A rocky canyon
+S  - The stone collector's store
+Sh - The guild of shamans
+T  - An empty transmuter's guild
+W  - The Whispering Wind Inn
+w  - Wraith (agro)
+Wo - A warrior's guild
+
+Source: http://wiki.qhcf.net/index.php?title=Akan&oldid=5019
+Revision: 5019

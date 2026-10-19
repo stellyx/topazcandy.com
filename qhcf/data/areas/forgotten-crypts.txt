@@ -1,0 +1,67 @@
+Forgotten Crypts
+================
+
+ Forgotten Crypts
+ By Grurk
+ Suggested Levels: 1-30
+
+
+          /                     /
+         +---+---+---+         +
+                     |         |
+           Arkham    + Arkham  +
+          /          |/        |
+         +---+---+---+----+----+
+                     |
+                     +
+                     |
+                     +----+----+---------+     +--+--+--+
+                     |         |          \    |  |  |  |
+         +---+---+---+         +           C---+--+--+--+--+
+         |                      \           \  |  |  |  |   \
+         +                       +             +--+--+--+  (HARD fall if heavy and not flying)
+         =                        \            |  |  |  |    
+                                   +--+--V--+  +--+--+--+
+                                   |  |
+                                   +--+ +
+                                   |   \|
+                                   + +--+--+
+                                   |    |
+                                +--+--+ +
+                                   |
+                                +--+--+
+                                   |
+                                   +
+
+ V - Vestibule
+
+ C - Crypts
+     Below is a small outline of each level and where the ranking mobs stand.
+     "x" marks the skeleton or zombie
+
+ Level 1 on top
+  .x..
+ .x..x.
+  .x..
+  ..x.
+
+ level 2
+  ..x.
+ .x.xx.
+  x.x.
+  .x..
+
+ level 3
+  .x..
+ ....x.
+  x...
+  .x.x
+
+ level 4
+  ....
+ .x..x.
+  .x..
+  ..xx
+
+Source: http://wiki.qhcf.net/index.php?title=Forgotten_Crypts&oldid=5101
+Revision: 5101

@@ -1,0 +1,78 @@
+Galadonian Settlement
+=====================
+
+Galadonian Settlement
+Suggested Levels: All
+
+             Stinky and Stumpy - Best of Friends
+
+ "Bah! Dedicatin' this area te that no good, filthy, foul-breathed,
+Son O' a spineless bugbear, Grumorum.  Life ain't goin' te be the same
+     without yer.  It'll be a lot gooder smellin' mind yer."
+
+                   +                             +
+                  /             =               /
+                 +------+-------+-------y------+
+                 |      |       |       |      |
+                 +------G    Z--+-------+------+
+                 |              |        F     |
+                 |  +  +  +     |        =     |
+                 |  =  |  |     |        +     |
+                 |  +--+--+     +        |     |
+                 |  |           |     M==+==K  |
+                 |  +--+     W  +  +     |     |
+                 |  |  |     |  |  |  P==+==N  |
+                 |  +  +   A-+--+--+-+   |     |
+                 |  |        |  |  |     |     |
+HiddenForest--+==+--H--+--+--+--+--+--+--+--+--+==+--WagonMarkedRoad
+                 |     |     |  |  |  |     |  |
+                 |     +  +--+--Y--+--+    Inn |
+                 +     |     |  |  |           |
+                 | + +-+-+   +  S--+    +------+ +   Inn
+                 |/             |       |      |/     |
+                 +------+-------+-------+------+      +
+                                =                     |
+                                +                     +--+--+
+                                                      |  |  |
+                                                      +--V--R
+                                                         |  |
+                                                         +  J
+                                                         |
+                                                      +==+--+--+==+
+                                                            =  =
+                                                            C  +
+
+Wandering:
+The Enforcer of Justice (brilliant silver bracelet, brilliant silver bracelet, "Silver Justice" the Enforcer's longsword)
+The Slayer (long coat of velvet midnight, "Taisangu" the blade of a master assassin)
+Youthful Fruit Vendor (a bunch of rotted food for sale)
+
+A - Thralin Iron-Arm: pair of iron-knuckled gauntlets
+                      dented iron shield
+                      thick helm of iron
+C - A Grimy Mercenary
+F - Reflous the Butcher of Galadon [Hidden]*assassinate on entry*(ring studded with turquoise, belt of shimmering shadows)
+G - A Tiny Graveyard
+H - Stee Hoarns (hardened mithril breastplate, hardened mithril leggings, "Alabast" the legendary clabbard of Stee Hoarns)
+J - A Jolly Baker: dried, crusted pastry
+                   bag of nuts
+                   some stale bread
+K - Speaking-River (earth-stained evergreen robe)
+M - Murazaug the Merciless
+N - Morkaih the Bandit [Aggro]*Backstabs on entry!*(chipped stone sharpened at the edge)
+P - Berthgrah the Bold *hand to hand spec*(pelt of a mountain ram)
+R - Roger, the Tavern Owner
+V - Evansh the Elven Captain (stone necklace shaped like a griffon-face, talon of a griffon, corded griffon-maned whip)*Elf_only*
+    Droga the General of Delar-Tol (great double-bladed mithril axe named, "Droga's Desire")*dwarf_only*
+S - Stump
+W - Borgus the metalsmith: studded onyx flail
+                           lengthy iron-shod staff
+                           long iron-hafted wooden spear
+                           thin metal battleaxe
+                           blunt hammer wrought of iron
+Y - Mayor
+y - A young bladesman is here practicing the forms of his blades. (Warriors can practice here)
+Z - A Wizard's Shop
+
+Source: http://wiki.qhcf.net/index.php?title=Galadonian_Settlement&oldid=4980
+Revision: 4980

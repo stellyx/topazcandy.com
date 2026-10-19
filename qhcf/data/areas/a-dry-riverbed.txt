@@ -1,0 +1,29 @@
+A Dry Riverbed
+==============
+
+                                                                            DesertOfAraile	    
+                                                       Barren falls              | 
+                              Ugruk  +-+-+-+-+-+-+-+-+-+-+-+-+               +-+-+    
+                         (7)     |   |            (12)        \              |   
+                  +--+-+-+-+-+-+-+-+-+                    Dusty+-+-+-+-+-+-+-+        
+                  |         (9)                           basin      (7)
+                  +  In a dry river bed                               
+                  |
+                  +
+                  |
+                +-+
+                |                                
+                +                                
+                |                                
+                +                                
+                |                                
+                +                                
+                |                                
+              +-+                                  
+              |                                  
+              +                                  
+              |                                   
+DwarfForest-+-+
+
+Source: http://wiki.qhcf.net/index.php?title=A_Dry_Riverbed&oldid=5038
+Revision: 5038

@@ -1,0 +1,34 @@
+The Bandit Stronghold
+=====================
+
+This area created by Intronan in March of 2002.  Use for
+Carrion Fields only, please.
+
+                           +
+                           |
+                 +         +-+-+-+-+
+                 |         |   |   |
+ Aratouldain-+-+-+         +   +   +-+-+-+-+-+           + (Pile of copper)
+                 |         |   |   |         |          /
+                 +-+-+-+-+-+-+-+---+         +         F   d
+         Well traveled path    |             |         |   |\
+                               +             +     +   +   + +-+-G
+                               |             |     |   |   |
+                               +             +-+-+-+-+-+-+-+-+-+-+
+                                             |     |   |   |     |
+                                             +     +   +   +     +
+                                             |         |   |     |
+                                             |         D   T     +
+                                             +                   |
+                                             |                   +
+                                             |                   |
+                                             +---+---+---+---+---+
+
+G - Storm Giant Prisoner
+F - Fire Giant (giant steel battleaxe)
+T - Gnome Thief 
+D - Dwarf (large iron hammer)
+d - Dark-Elf (tiny iron dagger)
+
+Source: http://wiki.qhcf.net/index.php?title=The_Bandit_Stronghold&oldid=5003
+Revision: 5003

@@ -1,0 +1,42 @@
+Mount Calandaryl
+================
+
+The note reads
+
+This area was written for Carrion Fields MUD (LLC) by Ashaxreyn, August 2000,
+all rights reserved.  Use of this area or sections thereof in any capacity by
+anyone other than Carrion Fields is strictly prohibited without the express
+written consent of the author.
+
+                     Northern Mountains
+                             |
+                             T
+                             |
+                             T
+                \ \ \        |                          D-D-D
+                 +-+-+-+     T                          | |
+                \|    \|\ \  |                          D-+ U D-Z-D
+               +-+     +-+-+-T--+-+                     |   v   v |
+              \|             |1 | |                   D-U>U>+-U<U +-D-1
+               +            \| \| |                   | | | | v     | |
+              \|             T--T-+                   D-U>C>U>P<U<U +-2
+               +              2 | |                   | | | | ^     |
+              \|               \| |                   D-U>U>+-U<U +-D
+               +                T-+                     | | ^ ^ | | |
+               |\           \   | |                     Z>+-U-U-+<U-D
+               +-+           +--T-+                     | ^ ^ ^ ^ |
+                \|\ \ \ \ \ \|  | |                     D-Z-Z-Z-Z-D
+                 +-+-+-+-+-+-T--T-+
+                             |  | |
+                             T--+-+                  The Cave:
+                             |  |
+                          T--T--+                        C-+-B
+                          |
+                          T
+                          |
+                       T--T
+                       |
+                   Darsylon
+
+Source: http://wiki.qhcf.net/index.php?title=Mount_Calandaryl&oldid=4984
+Revision: 4984

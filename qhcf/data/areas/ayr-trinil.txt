@@ -1,0 +1,135 @@
+Ayr'Trinil
+==========
+
+                                                                                                        Shaman's Guild
+                                                                                                              |
+                                                                                                              |
+                                                                                                              +                                    
+                                                                                               H              |
+                                                                                               e              |         
+                                                                                               a----+----+----+         P         
+@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-                     l         |    |         aG
++Ayr'Trinil written by Rayihn for exclusive use by Carrion Fields, LLC.  +                     e         |    |         lu
++Reproduction in any form without prior written consent of the author    +                     r         +----+----+----ai
++is prohibited.  Special thank yous to all the players who contributed,  +                              /|              dl
++to Fjarn, Akresius, Reksah, and Valguarnera for their tireless review,  +                             / |              id
++and to Daevryn and Vilhazarog for their amazing code work.              +                            /  +              n
+@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-@-                           /   |
+                                                                                     Bard----+      /    |
+                                                                              +      Guild   |     /  Healer
+                                                                              =              |    /    Guild
+                                                                           +||+----+----+----+||+/
+                                                                              |              |  /
+                                                                              |              | /
+                                                                              |              |/
+                                                                              +              +
+                                                                              |   T          |
+                                                                              |  G h         |
+                                                                              |   u i        |
+                                                                              +||--i e       +
+                                                                              |    |l f      |
+                                                                              |    = d       |
+                                                                           +||+----+----+----+||+
+                                                                              =             /=
+                                                                              +            / +
+                                                                                          /
+                                                                                         /
+                                                                                    +   /
+                                                                                    =  /          Invoker
+                                                                             +---+--+-/-----+  +--Guild
+                                                                             |       /      |  |
+                                                                             |      /       |  |
+                                                                     W       +     /        +||+--+--+
+                                                                     a G     |    /         |  |
+                                                                     r u     |   /          |  |
+                                                                     r i--+--+  /           +  +--Conjurer
+                                                                     i l     | /            |     Guild
+                                                                     o d     |/             |
+                                                                     r       +----+----+----+
+                                                                                  |   /
+                                                                                  +  /
+                                                               Transmuter        =  /
+                                                                 Guild          +--/-+----+----+----+
+                                                                   |            | /                 |
+                                                                   |            |/                  |
+                                                            Bank and Potions    /        I          |
+                                                      Potions      |    Jeweler/|         m         |
+                                                   T G   |         |         |/ +          p  A     +
+                                                   h u-+-+----+----+----+----+B |           r  r    |
+                                                   i i   |   /|              |a |            i  i   |
+                                                   e l   |  / |              |r +----+----+   s  a  +----+----+
+                                                   f d   +----+              +            |    o  l           |
+                                                         |/                 /|            |     n  s          |
+                                                         |                 / |            +      e            +
+                                            Assassin--+--+                /  +----+       |       d           |
+                                              Guild    / |               /   |   /        |                   |
+                                                      /  |              /    |  /         +----+----+         +
+                                                     /   +             /+----+ /                    |         |
+                                                    /    |            / |    |/ S                   |         |
+                                                   /     |           /  |    |  t                   +----+----+
+                                                  /    +-+----+----+----+----+--u
+                                                 /       |         |       / |  f
+                                                /   Weaponsmith   /Armory /  |  f
+                                               /                 /       /   +
+                                              /                 /       /    |
+                                      +      /    +            /Ranger /     |
+                                      |     /     |           / Guild /      1
+                                      +----+------+-------+  /    +--/-+     =
+                                      |                  /| /     | /  |     v
+                                      |                 / |/      |/   |     2
+                                    +-+                /  +       +----+     |
+                                      |               /   |       |    |     v
+                                      |              /    |       |    |     3->4->5
+                                      +             /     +-+     +----+           |
+                                     /|            /      |            |           v
+                                    v |           /       |            |           6
+                                   D  +----+------+-------+            +           |
+                                          v     / |                    |           v
+                                         D     /  +                    |           7
+                                      +     + /                      Druid 
+                                      =     =/                       Guild
+                                   +--+--+--+
+                                   |        |
+                                   |        |     S
+                                +||+        +     h 
+                                   |        |     a
+                                   |        |     p G
+                                   +        +--+--e u
+                                   |        |     s i
+                                   |        |     h l
+                                   D--+--+--+     i d
+                                  /   = /         f
+                                 /    +/          t
+                                /     /           e
+                             + /     /            r
+                             =/     / 
+                             +--+--+--+
+                             |     |
+                             |     |
+                          +--+     +
+                    +     |
+                    =     |
+        +        +--+--+--+
+        |       /         |
+        |      /          |
+        +--+--+           +
+        |                /
+        |          Udgaard Mountains
+     +--+
+        |
+        |
+   Necromancer
+      Guild  
+
+1 - Arnahi Lhiltrill
+2 - Herald of Cruelty
+3 - spirit of zephyr
+4 - blasphemed angel
+5 - phased sword spider
+6 - great sky hunt
+7 -nomagic room monstrous skyflash ((Legendary) (Glowing) (Humming) the axe named 'Conquest')
+
+Old Arial City
+
+Source: http://wiki.qhcf.net/index.php?title=Ayr%27Trinil&oldid=5013
+Revision: 5013

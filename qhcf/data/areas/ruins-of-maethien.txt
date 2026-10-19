@@ -1,0 +1,62 @@
+Ruins of Maethien
+=================
+
+                                 +
+                                 |\
+                          *p==+--+ +
+                           |        \
+                           +         M
+                           |     
+                        +--+--+     
+                        |  |  |
+                  p--+--+--P--+--+--p
+                        |  |  |
+                        +--+--+     
+                        |  |  |
+                        +--+--+     
+                           |      
+                           +  
+                           |     
+                     +--+--+--+--+
+                     |  |  |  |  |
+                     +  +--+--+  +        +--+--+--+
+                     |           |        |
+   +--+--+--+  +-----+           +--+--+--+--+
+            |  |     |           |     |     |
+         +--+--+     +  +--+--+  +     +     +
+         |                 |                 |
+         +  +     +     C--C--C     +     +  +
+         |  |     |     |  |  |     |     |  |
+         +--+--+--+--+--C--C--C--+--+--+  +--+
+                        |  |  |         
+                        C--C--C     O--+
+                           "           |
+               +--+--+  L  W  N  +--+--+  
+                     |  |  |  |  |          
+                     +--+--+--+--+           
+                           |                
+                           +                
+                           |
+Abandoned Siege Encampment-m
+                           |
+                     Northern Roads
+
+Nhionil Fhiendias is using:
+<worn on finger>    (Magical) a small silver ring set with a chip of quartz
+<worn on body>      (Magical) robes of dull green silk
+<wielded>           (Magical) an ornate scepter of prismatic crystal
+You peek at the inventory:
+  a small stack of parchments
+
+Lienthi Mosienos is using:
+<worn on body>      a suit of battle-worn elvish chainmail
+<worn on head>      a delicate circlet of silver
+<worn on feet>      a pair of soft leather boots
+<worn about body>   a white tabard bearing the sigil of Darsylon
+<mainhand wielded>  (Glowing) an elven longsword named 'Valor'
+
+A massive nightwalker is using:
+<worn on head>      a circlet of flowing shadows
+
+Source: http://wiki.qhcf.net/index.php?title=Ruins_of_Maethien&oldid=5006
+Revision: 5006

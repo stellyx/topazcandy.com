@@ -1,0 +1,199 @@
+Seantryn Modan
+==============
+
+Seantryn Modan
+Suggested Levels: All
+
+       *** Seantryn Modan ***
+      by Vassagon and Radickon
+       for Carrion Fields MUD
+Copyright 1996, H. Beres and J. Mims
+
+                             CoastalPlains
+                                   |
+                     a             + An Opening           a
+                      \            |Through the          /
+                 Guard +--+--+     + a  Trees     +--+--+
+                 Tower |  |  |     |/             |  |  | Guard Tower
+        a              +--+  T  ni-N--+     G     T  +--+
+         \             |     |     |        |     |     |
+      SH--NW--W--W--W--W--W--W  9--N-10 11  G     T--T--+
+           |  |  |        |  |     |     |  |     |
+        + 19  1  R--+  2--+--D--D--+--D--D--D  p  T  +
+        |  |   + |     |  |4 |6 |8 |  |     |  |  |  |
+       18  + 17  R-16  +  3  5  7  N--+-HP  B--B--+--B--ne-+ - A Long Dirt Road to Veylirian Springs
+        |     |  |                 |        |  |  |  |
+        +-----+--R--+           MT-N  +-SG  X  X  C  bi
+       21-+      |                 |  |           |
+        a +  20  R--+  Y        +--P--P     X  X  C--+----+
+         \|   |  |     |        |  |  |     |  |  |    +  |
+      SH--WW--H--H--H--H--H--H--P--J--P--H--H--H--+--13  12
+          |   |  |     |        |  |  |     |  |  |    +
+          22 23  R--+  S  HP +--P--P--P 32 Z+--+--C--14
+                 |     |  |  |     |     |  |  |  |
+          25 24  R--+  S--29 15    N     +  X  X  C  + Guards' Barracks
+          |   |  |     |  |        |     |   \    |  |
+          +---+--R26 M-S--S--+--+  N--+  +-31 u X +--F--SE--+--+--+--+--+--+
+                 |     |  |     |  |     |      | |  |               |
+        a 28  TP R--27 +  S    -30 N--BD-BD-BD-BD-+  wi           Caravans
+         \|   |  |        |        |   + |      | |
+      SH--SW--K--K--K--K--K--K--+--N-34  RI +-+-+ T--T--+
+                       |     |     |     |  | | | |     |
+                     a +--+  T  dh-N--+  ++ +-+-+ T  +--+ a
+                      \|  |  |     |        |     |  |  |/
+                       +--+--+     SS       33-   +--+--+
+                    Guard Tower    |                   Guard Tower
+                                   |
+                                 Aturi
+
+          38--+ Stairs of Acid          + Altar of Light (healer)
+             /                                      |
+        37--+ Stairs of Faith                       +  C     Pa   C:  Chamber of Light (food, drink)
+           /                                       \|  |     |   Pa: Paladin guild
+      36--+ Stairs of Animals             Seantryn =u--+--+--+
+         /                                 Sewers         |  |
+    35--+ Stairs of Flame                                 +--+
+       /                                           An Underground Chamber
+   +--+ Tower of Sorcery
+   |  |
+   Y--+
+
+a &#160;:to Atop the Seantryn Modan Wall (battlements, DON'T go down unless you see a ladder)
+A &#160;:large moat of spikes (deathtrap (for real)
+p &#160;:Palace (!!!Needs invitation!!!)
+B &#160;:Black Widow Road
+BD&#160;:Black Dragon Street
+C &#160;:Copperhead Road
+D &#160;:Devil's Ivy Street
+F &#160;:Windflower Road
+G &#160;:Seantryn Modan Guard Headquarters -(captain w/fine black steel sword, black steel gauntlets, black steel girth)
+H &#160;:Hemlock Road
+J &#160;:Center of Seantryn Plaza (fountain)
+K &#160;:Blackthorn Road
+M &#160;:Shaman's guild
+MT&#160;:Minotaur temple (closed)
+N &#160;:Nightshade Road
+P &#160;:Seantryn Plaza
+R &#160;:Raven Street
+RI&#160;:Ruined Inn -(Goliath w/ half-moon axe *he wanders about this general spot*)
+S &#160;:Serpent Avenue
+SG&#160;:Seantryn Grove
+SH&#160;:Seantryn Harbor
+T &#160;:Tower Road
+TP&#160;:Trading Post
+U &#160;:An Underground Tunnel
+Y &#160;:Tower of Sorcery
+W &#160;:Whitethorn Road
+X &#160;:A Small House
+Z &#160;:Blood Tribunal spire pillar
+HP&#160;:Healer - pit
+WW&#160;:Inside the Western Gate
+NW&#160;:Inside the Northwestern Gate
+SW&#160;:Inside the Southhwestern Gate
+NE&#160;:Outside the Northeastern Gate
+SE&#160;:Outside the Southeastern Gate
+SS&#160;:Outside the Southern Gate
+1 &#160;:The Whitethorn Pub
+2 &#160;:Inn of the Black Rose
+3 &#160;:Elements of Wizardy (scrolls, wands and staves for sale)
+4 &#160;:A Wizard's Room
+5 &#160;:The Apothecary (potion shop)
+6 &#160;:Brewing Room
+7 &#160;:General Store
+8 &#160;:A Small Storage Room
+9 &#160;:Tavern of the Two Snakes (Thief's guild)
+10&#160;:The Nightshade Brothel
+11&#160;:The Guild of Mercenaries
+12&#160;:Meeting Hall of Warriors (Warrior's guild)
+13&#160;:The Armory
+14&#160;:The Weaponsmith
+15&#160;:A Druid Gathering (Druid's guild)
+16&#160;:The Whitethorn Brothel
+17&#160;:Butcher Shop
+18&#160;:Bakery
+19&#160;:Whitethorn Inn
+20&#160;:Seantryn Bank
+21&#160;:Meeting Hall of Assassins (assassins' guild)
+22&#160;:City Hall - registrery
+23&#160;:Hall of Enhancement - trainer
+24&#160;:Seantryn Maps
+25&#160;:Produce Stand
+26&#160;:Meeting Hall of Bards (bard's guild)
+27&#160;:Tavern of the Raven
+28&#160;:Seafood Stand
+29&#160;:Temple of Neutrality
+30&#160;:Meeting Hall of Healers (healer's guild)
+31&#160;:The Jeweller
+32&#160;:Meeting Tree of Rangers (ranger's guild)
+33&#160;:Meeting Hall of Anti-Paladins
+34&#160;:Garment Shop
+35&#160;:Meeting Chamber of Invokers
+36&#160;:Meeting Chamber of Shapeshifters
+37&#160;:Meeting Chamber of Transmuters
+38&#160;:Meeting Chamber of Necromancers
+ 
+ Room of the Nightshade                The Black Widow Inn
+      M  +                                      +  +
+      |  |                                      |  |
+      +--+                                 +-BI +--+--L
+       \                                      |/
+        +--+--NI                              +--+
+                                                 |
+ The Nightshade Inn                              + Black Widow Kitchen
+
+
+ The Windflower Inn
+         T  +                                 +  +
+         |  |                                 |  |
+    +-WI +--+--+                              +--+
+       |/                                      \
+       +--+                                     +--DH
+          |
+          + Windflower Kitchen            The Dragon's Head Inn
+
+T &#160;:merchant lady (tigerseye pendant, invitation)
+M &#160;:merchant lord (invitation)
+L &#160;:Lord Talenzan (invitation)
+
+
+                      Palace (no summon)
+ 
+                          + Private Altar
+                          |
+                       +--I
+                          |
+                        +-+-----+
+              Private   | |    /|
+            Dining hall | A   = + Royal Quarters
+                        +    /
+                       =    T
+                      +     |
+                     <|  +  H  + Guest Room
+                      |  |  |  |
+                      +--+--F--+--B
+                      |  |  |  |
+                      +  +  G  + Guest Room
+                            |
+                         +--+--+
+                         |     | Palace Garden
+                         +--P--+
+
+B &#160;:The Blademaster (aggro)- assassinates on entry
+ &#160;:a dragon embroidered red coat
+ &#160;:a pair of black suede boots
+ &#160;:(Humming) the blademaster's gloves
+ &#160;:the blademaster's sash
+ &#160;:the Eagle-Marked Sword
+A &#160;:hardwood box (Amulet of Clarity)
+I &#160;:Invoker Advisor (Crescent-Shaped Dagger)
+T &#160;:Palace Throne -
+&#160;:Empress (Seantryn Royal Signet Ring, Eagle Embroidered Silk Robe, Cuendillar Dagger of the Empress)
+&#160;:Lord Marshal-General (Seantryn Battle Helm, Eagle-Marked Sword, key)
+H &#160;:Hall of the Empress
+P &#160;:Entrance to the Palace Garden
+F &#160;:Palace Foyer (You get paralysed + guards attack if you don't have an invitation)
+&#160;:Lord Captain-Commander (Eagle Engraved Shield, an eagle inscribed staff)
+G &#160;:Palace gates - guards
+
+Source: http://wiki.qhcf.net/index.php?title=Seantryn_Modan&oldid=5111
+Revision: 5111

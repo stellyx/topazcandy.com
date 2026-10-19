@@ -1,0 +1,68 @@
+Feanwyyn Weald
+==============
+
+Area created by Kastellyn.
+
+                         SouthDairein
+                               |
+                            F--F
+                            |  |
+         AshesOfNoWhere--O--O--F--F                  Kobold
+                         |  |  |  |                    |
+             Rocky   Z   F--O--F--F--F--F              +--+--O--.
+              Vale  /       |  |  |  |  |              |  |
+                +--+        O--O--F--F--F        +--+--+--E--u--G
+                |  |           |                 |  |  |  |
+          D--D  +--+--+--+--+--b--+--+--+--+<-r--+--F--F--E--t--a
+          |  |                 |  ^  ^  ^  |        |  |  |
+          D--D--D--D--D--c--c--Wx-c--c--c->+--+--+--F--F--E--s--l
+  Shadow  |  |  |  |  |  |  |  |  |  |  |  ^  ^  |  |  |  |
+  Grove   D--D--D--c--c--c--D  LF M  M--c--c--c--c--c--F--E--k--a
+    |     |  |  |  |  |  |  |           |  |  |  |  |  |  |
+    C--c--D--D--c--c--D--D--D     M  M--+--F--F--+--c--c--c--i--d
+       |  |  |  |  |        |     |  |  |  |     |  |  |  |
+       c--c--c--c--D  +--+--D     R--R--b--R Cabin  F--F--E--r--o
+       |  |  |  |  |  T  |        |  |  |  |        |  |  |
+       |  |  |  |  |  |  +        |  |  |  |        |  |  |
+ Glauruk<-R--R--R--R--R        U  R--A--A--R--R--F--F--F--E--t--n
+                      |        |  |  |  |  |  |  |  |  |  |
+                      R--R--b--R--R--A--A--A--R--R--R--F--E--s--.
+                      |  |        |  |  |  |  |  |  |  |  |
+         Saurian Village |        A--A--A--+--A--F--R--R--R--R--Galadon/
+                        Forest                   |  |  |       Voralia'sTears
+                        Road                     F--F--F
+                                                 |  |  |
+                                                 F--F--F--F
+                                                    |  |  |
+                                                    F--F--F
+                                                    |     |
+                                                 d--F     F
+                                                          |
+                                                    Silverwood
+
+A - A Cleared Area in the Feanwyyn Weald
+b - Bridge 
+c - Crumbling Road
+C - Colossal Tree (opal ring)
+D - Deep within Feanwyyn Weald
+d - Druid's Guild
+E - The Edge of the Feanwyyn Weald
+F - The Feanwyyn Weald
+M - Marsh
+O - Forest Road
+R - Murky River
+r - Ranger's Guild (guilguard holds the Axe of the Executioner, orderly only)
+T - The Tower of the Masters
+U - End Underground River
+Z - To green dragon, need fly (e n n) (bloodstone ring, shield of pure light, burned mithril plaque, iron crown)
+
+Filthy Lumberjack - Flaming axe (roaming)
+
+Wandering traveler - bone lockpicks/bagpipes/colorful cloak with patches (limited)
+
+Flistnack the trader - aquamarine bracelet/malachite bracelet
+Svirfneblin thief - conical cap, bejeweled sacrificial dagger
+Fire Giant Warrior - (thief, warrior aggro when any of the three are attacked)
+
+Source: http://wiki.qhcf.net/index.php?title=Feanwyyn_Weald&oldid=5043
+Revision: 5043

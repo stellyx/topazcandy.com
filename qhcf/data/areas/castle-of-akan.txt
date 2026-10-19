@@ -1,0 +1,48 @@
+Castle of Akan
+==============
+
+                                 +
+                                 =
+               S  S           +--K--+
+               |  |              |
+            +--+--+--+     +  +--+--+
+               |  |  |     |     =
+               S  S  D--D--D--D--D--D
+                     |     |
+                  +--D     H
+                  |  |     |
+1  2  3        B  +  D--F  H
+=  =  =        |     |  |  |
+d--d--d--+--+==+--+--D  +  H
+=  =  =              |  |
+4  5  +           +--D  V  V
+                     =  |  |
+                     +  V--V
+                     |
+                   Akan
+
+Key:
+= or " is a door which is locked (= is e/w, " is n/s)
+B Blacksmith's Forge
+D Dark Corridor
+d Dungeon
+F Feasting Hall (free food)
+H Hall of Past Kings
+K King's Private Chamber
+S Small Bedchamber
+V Vast Underground Warren
+
+1 There is a duergar in chains sitting here.
+  A small duergar is here, whimpering in a corner.
+
+2 An one-eyed hobgoblin grins back at you.
+
+3 (White Aura) Glaring with hatred, a dark-elf is here looking at you.
+
+4 ( 4) Lying on the ground are a pair of chain manacles.
+  (Invis) An old dwarf in mage robes sits chained here.
+
+5 (Translucent) (Ghostly) There is a ghost here.
+
+Source: http://wiki.qhcf.net/index.php?title=Castle_of_Akan&oldid=5020
+Revision: 5020

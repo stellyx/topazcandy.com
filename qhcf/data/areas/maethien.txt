@@ -1,0 +1,88 @@
+Maethien
+========
+
+Maethien
+Suggested Levels: 35-51
+Written by Phaelim in 2004 for exclusive use by Carrion Fields LLC. No
+unauthorized distribution or copying in whole or part.
+
+E - earth elemental (a crude iron chest plate, a crude iron helm, a pair of crude iron leg plates, a pair of crude iron arm plates)
+A - furious magma para-elemental (an obsidian pike)
+G - gnomish conjurer (simple gray robes, a small pruning axe)
+K - Kiendosi (a malformed iron circlet - head, a knotted leather whip (the good one), a thick stack of stained parchments)
+L - Lenais (a stone pendant - if you request it, he gives it to you and tells you its best if you take it away.
+                              special properties when placed into a container, but what container?
+            a dark staff of crooked walnut - he decides to keep it if requested)
+M - Gates of Maethien
+P - telescope
+T - hearth
+X - summoning circle
+patrolling conjurer (simple gray robes, a studded leather girth, a long, coiled leather whip, a small round shield of gleaming steel)
+a patrolling conjurer (simple gray robes, a pair of studded leather boots, a long staff of polished oak)
+                            
+                  +     
+                  |     
+               +--+--+     
+               |  |  |
+         +--+--+--K--+--+--+
+               |  |  |
+               +--+--+     
+               |  |  |
+               +--+--+     
+                  |      
+                  +  +-+-L
+                  |     /
+            +--+--+--+-/+
+            |         / |
+            +  T--+--+  +        E
+            |     |     |        |
+   E  +-----+--+--+--+--+--+--+--+--+
+   |  |     |  |  |  |  |     |     |
++--+--+     +  +--+--+  +     P     +
+|                 |                 |
++  G     +     C--C--C     +     G  +
+|  |     |     |  |  |     |     |  |
++--+--+--+--+--C--C--C--+--+--+--+--+
+      |        |  |  |        |
+      A        C--X--C     +--+
+      |           |           |
+      +--+--+  +  +  +  +--+--+
+            |  |  |  |  |
+            +--+--+--+--+
+                  |
+                  M
+                  |
+                T + V
+                r | a
+                a + l
+                i | l
+                l + e
+                  | y
+                  +
+                  |
+                B +
+                o | C
+                x + a
+                  | n
+                  + y
+                  | o
+                  + n
+                  |
+                  +--PlainsOfArendyl
+                  |
+                  +
+                  |
+  Wide Hillock +--+
+                  | P
+                P + l
+                a | a
+                t + i
+                h | n
+                  + s
+                  |
+                  +--+--+
+                        |
+                   WagonMarkedRoad
+
+Source: http://wiki.qhcf.net/index.php?title=Maethien&oldid=4974
+Revision: 4974

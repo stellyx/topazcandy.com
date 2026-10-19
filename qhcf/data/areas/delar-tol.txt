@@ -1,0 +1,116 @@
+Delar-Tol
+=========
+
+Delar-Tol
+Suggested Levels: 25-51
+
+
+
+                                l 
+                                = 
+                    b     +  l-=h=-l     A    &#160;? 
+                    =     |     |        =     = 
+              g-=g  b=-C  +  l-=h=-l  +-=+=-+  f         +     + 
+                 =  |     =     =        =     =         =     = 
+PlainsOfArendyl--w=-w--w--w--w--w--w-----w--w--w---w--w--n--+--+--+--K
+                 =  |     =     =        =     =   |     =     = 
+              g-=g  b=-C  +  l-=h=-l     +     +   1     +     + 
+                    =           |        =        / 
+                    b        l-=h=-l     F       2 
+                                = 
+                                l 
+
+1 – Head of the Stairs
+w – A Wide Corridor 
+b – The Barracs
+g – A Guard Post
+l – The Living Quarters
+h – A Long Hallway
+f – The Guarded Foyer (locked vault door, no pick lock)
+
+C – A Captain’s Room 
+    Captain Gaerog (a wide mithril battle axe)
+F – A Laboratory
+    Fulnar the mage apprentice
+A – At the Altar
+    a temple guard x2 (a wide mithril battle axe)
+    High Priest Derthlin (a golden hammer and anvil pendant, (Glowing) gold embroidered gray silk robes, (Glowing) a ceremonial mace) 
+K – The Councilroom
+    General Forbrin (a dull suit of mithril platemail, a fluted mithril mace)
+    King Talenor (a golden signet ring, a jewel encrusted mithril crown) 
+                                                            
+                                                            
+                         s--s                               
+                         |  |                              
+                         s--s                               
+                         |                               
+             r--r--r     l 1   s--s                            
+             |  |  |     |/    |  |                           
+             r--r--r--l--2--l--s--s                                
+             |  |  |    /|                                
+             r--r--r   3 l                                
+                         |                                       
+                         s--s                                       
+                         |  |                                      
+                         s--s                                       
+                                                            
+                                                            
+                                                            
+2 – On the Stairs
+l – A Low Tunnel                                       
+s – The Smithy                                              
+r – The Refinery
+                   t--t--t
+                         |
+                         j--t--t--t               t--t
+                         |        |                  |
+                         t        t           t      t
+                         |        |           |      |
+                         t        t--t--t     t      t--t--t--t--t--t
+                         |              |     |            |        |
+                         j--t           t--t--A--@         t        t--t
+                         |  |           |        |         |
+                   t--t--t  t        t--t        t         t~~t--t
+                            |        |           |         |     |
+             t--t--t     t--t        |           t-t-t-t-t-t     t
+             |     |     |           |                           |
+             |     |     | 2         |                     t--t--j--t--t
+             |     |     |/          |                     |     |     |
+             b--t--t--t--3--t-----t--t--t--t               t     t     t--t--t
+                         |                 |               |     |           |
+                         t                 t               C--t--j           t
+                         |                 |                     ~
+                         t     t--t--t--t--t                     t
+                         |     |                                 |
+             t--t--t--t--j     t                                 t--D--Yzekon
+             |           |     |               
+          t--t           j--t--j               
+                         |     |               
+                   t--t--t     t--t            
+                   |              |            
+                   t              t            
+                   |              |
+                   t              t
+                                  |
+                                  t          
+                                            
+3 – The Base of the Stairs                                            
+b – The Bottom of the Ore Lift         
+t – A Tunnel in the Mines                   
+j – A Junction in the Mines
+@ - Tunnels continue. Aggro duergars (backstabbers)
+~ - hidden exits
+
+A – A Junction in the Mines
+    Archmage Julenmar ((Glowing) silver embroidered blue silk robes, (Glowing) a thin mithril wand)
+    Captain Balmin (a wide mithril battle axe x2)
+C - Chest with some wands
+D - Dexelez
+Daxelz the Sable Shaman of Yzekon is using:
+<worn on body>      black runed crimson robes
+<mainhand wielded>  (Humming) Rancor, the Black Blade of Yzekon
+<worn as shield>    a darkened shield
+<tattooed>          a black serpent coiled around an axe
+
+Source: http://wiki.qhcf.net/index.php?title=Delar-Tol&oldid=4975
+Revision: 4975

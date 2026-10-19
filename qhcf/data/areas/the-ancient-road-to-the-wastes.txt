@@ -1,0 +1,74 @@
+The Ancient Road to the Wastes
+==============================
+
+                                               +
+                                               |
+                   +--+--+----+----+----+------+
+                   |     |                     |
+                   +     +                     +
+                         |                     |
+                         +                     +
+                         |\                    |
+                         + +                +--+
+                           |                |
+                           +                +
+                           +                |
+                           +                +
+                           |                |
+                           +                +
+                           |                |
+                     Pine Forest            +
+                                            |
+                          +                 |
+                          |                 |
+                          +                 |
+                          =                 |
+                       +--+--+              |
+           Enchanters  |     |              |
+                    +||+  +  +||+           |
+                       |  |  |              |
+                       +||+||+        +-+ +-+                Hillcrest
+                       |  |  |        |  \|                   |
+                 +||+||+  +  +||+||+  +   +                   +
+                       |     |         \                      |
+                       +--+--+          +                     +
+                          =             |                     |
+                          +--+          +--Goblin Outpost     +=+=+=G
+                          |  |          |                     |
+                       +--+  M          +                     +
+                       |                |                     |
+                       +--+             +                     +
+                          |             |                     |
+                          +-----------+-+---------------------+
+                          |
+                          +
+                          |
+                          +
+                          |  +--+
+                          +  | /
+                          |  |/
+              +     +     +  |
+              |     |     | /|
+              |     |     |/ |
+              +--+--+--+--+  +
+              |     |        | 
+              |     |        |
+              +  +--+        +
+                            /
+                       +-+-+
+                       |   |
+                       +   +
+                      /   /
+      A Northern Trail   +
+                        /
+                       +
+                       |
+                       +--Jaette Watchtower
+                       |
+                Udgaardian Plains
+
+G - Gnagy the gnome
+H - Before the Wooden Gates of Hillcrest
+
+Source: http://wiki.qhcf.net/index.php?title=The_Ancient_Road_to_the_Wastes&oldid=4960
+Revision: 4960

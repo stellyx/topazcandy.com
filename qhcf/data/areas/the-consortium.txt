@@ -1,0 +1,54 @@
+The Consortium
+==============
+
+                   +--+
+                   |
+                   +
+                   |
+           D--M    +    +--A
+           |       |       |
+           +--+----+----+--+
+              |    |    |
+              +    E    |       +--+
+              |    |    |       |  |
+              +    F 2  |       2--+     
+              |     /   |      /|
+           +--+----+----+--C    +
+           |  |   /|    |  |
+           +--+  / +    +--+
+                /  |
+           +   /   +
+           |  /    |
+       +   + / +   +
+       |   |/  |   |
+       +---+---+   + Adamantine construct (won't let you pass if not a mage)
+       |       |   |
+       +       +  NorthernRoads
+
+
+ A - Festpath the Archmage
+
+ E - Eliana Vienthi the Curator is using:                                                            
+ <worn on head>      (Glowing) a halo of blue                                                    
+ <worn on arms>      (Glowing) bands of blue energy
+ <worn on wrist>     a bracelet of chained star rubies                                         
+
+ F - a felar shapeshifter is using:
+ <worn around neck>  (Magical) a moonstone choker
+
+ M - Myshrai Ar'tinuilin is using:
+ <worn on finger>    (Magical) (Noteworthy) a white gold band set with a fire opal
+ <mainhand wielded>  (Magical) (Famous) (Glowing) a knife of fire opal
+ <held in hand>      (Magical) (Glowing) a fire opal dancing on a platinum chain
+
+ C - a human conjurer is using:
+ <worn on body>      (Magical) black robes trimmed with onyx
+ <worn on head>      (Magical) (Glowing) a halo of clarity
+
+ D - Destanin the Archmage
+     Simshipple Fligliveryshins is using:
+     <worn on body>      green robes trimmed with peridot
+     <worn on head>      a wreathe of golden wire and lapis lazuli
+
+Source: http://wiki.qhcf.net/index.php?title=The_Consortium&oldid=5007
+Revision: 5007

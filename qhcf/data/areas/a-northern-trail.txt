@@ -1,0 +1,54 @@
+A Northern Trail
+================
+
+The Northern Trails was created by Uller, July 2001.  Use for CarrionFields only please.
+
+
+ NorthernMountains-+-+-+
+                       |
+                       + + +
+                       |/|/|
+                       + + +
+                            \
+                             +
+                              \
+                               +-R
+                                 |
+                                 R
+                                 |
+                                 R
+                                 |
+                                 R
+                                 |
+                                 +         P-P     P-P
+                                  \        | |     | |
+                                   +-P-P-P-P P-B-P-P P-P-F-F-F
+                                   |            \   N        |
+                                   P             \  |        P 
+                                   |              \ N        |
+                                   P-P-P-P-H-H     \|        P      The Ancient Road to the Wastes
+                                         |          U        |        /
+                                    Udgaard         |        P-R-R-R-R 
+                                                    N
+                                                    |
+                                                  N-N
+                                                  |
+                                                  N
+                                                  |
+                                                  N
+                                                  |
+                                             Udgaard
+
+
+
+ P - Path in the Plains
+ R - A Path Along a Ridgeline
+ F - A Path in the Foothills
+ B - Bridge over Nanthor
+ R - Deep Ravine
+ U - Under a brigde on river Nanthor
+ N - River Nanthor
+ H - A Hidden Path in the Plains
+
+Source: http://wiki.qhcf.net/index.php?title=A_Northern_Trail&oldid=4962
+Revision: 4962

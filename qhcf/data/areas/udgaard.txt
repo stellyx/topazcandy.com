@@ -1,0 +1,105 @@
+Udgaard
+=======
+
+                             NorthernTrails
+                                   |
+                                  +|  +
+                                 +-+-+
+                       TURQUOISE   |   AVENUE
+                     +----+------+-+-+---+-------+
+                     |    |      |   |   | Foot /|
+                     |    +-Y    h   h +-+  |i++ |
+                     |                      o || |
+                     |           y   Z      ++++ |
+                     +-+         |   |      ++++o|
+                     | |         +-P-+           |
+                  +  | N         | | |           |  +
+                   + |   +--+--+ +-+-+ +--+--+ +-+ +
+                   | |   |     |   |   |     | n | |
+NorthernMountains--+-+---E-----E---+---E-----E---+-+--Udgaardian Plains
+                  +| |   |     |   |   |     |   | |+
+                   + |   h     h   |   h     h   | +
+                     |           h-D-h           |
+                     |     c  a h  |  h X  x     |
+                     |     |  | |  |  | |  |     |
+                   O |   O-+--S-S--+--S-S--+-V   | O
+                   P |     |  | |  |  | |  |     | N
+                   A |     |  h h  |  h h  |     | Y
+                   L | C f-J-A   +-+-+   v-M-t l | X
+                     | |   |     | | |     |   | |
+                   R +-+ k-J-g   +-F-+   U-M-u +-+ R
+                   O |     |     | | |     |     | O
+                   A |   T-J-K   +-+-+   m-M-e   | A
+                   D | w   |  h h  |  h h  |   W | D
+                     | |   |  | |  |  | |  |   | |
+                     +-+ b-+--B-B--D--B-B--+-d +-+
+                     |     |  | |  |  | |  |     |
+                     | I   G  s R  |  + H  z   p |
+                     | |           |           | |
+                     +-+         h-D-h         +-+
+                     |   h    h    |    h    h   |
+                     |   |    |    |    |    |   |
+                     +---+----+----+----+----+---+
+                         MARBLE    |    AVENUE
+                                  +|  +
+                                 +-+-+
+                                   |
+                                   +
+                                   |
+                                   +
+                                   |
+                                   +
+                                   |
+                               Traveller
+
+a - Saldria's Supplies
+A - Scribing By Averius (Lots of scrolls)
+b - Bank
+B - Bloodstone Lane
+c - Cartographer's Store
+C - Conjurer Guild(Tunscol - black and white striped robe)
+d - Udgaard's Apothecary
+D - Diamond Boulevard
+e - Crellun's House of Grog
+E - Emerald Avenue
+f - Branthu's Custom Footwear
+F - Fountain
+g - Ivy's Greenhouse
+G - Jorgen's Elegant Gemstones (a silver necklace with a blue dragon pendant)
+h - Inside a house (Thrown out immediately)
+H - Halrilz's Bounty Office
+i - Galladrin the Pious (huge mithril claymore)
+I - Invoker Guild(Gelhardinia)
+J - Jade Court
+k - Krildul's Breads and Cakes
+K - Kron's Spits
+l - Thieves Guild
+L - Lower Level
+m - Magical Supplies of Udgaard
+M - Marble Alley
+n - Assassins guild (Tsintaro - Ivory-hilted wakizashi)
+N - Necromancer Guild (Chrysilin - alligator-skin whip)
+o - Underground River - Leads to Plains on River Nanthor outside
+O - Ol' One-Eye's
+p - Bards Guild (Rindyl - (Humming) the horn of a blue dragon)
+P - Pit and healer
+R - Registry(New Hometown) - Registrar (a pair of blue-tinted eyeglasses)
+s - Scholar's Repose
+S - Sapphire Lane
+t - Torden's Finest Armor
+T - Thorne's Armaments
+u - Jhelrhia's Emporium
+U - Alchemical Reagents and Essences(cure poison/cure disease)
+v - Frilgor's Smithy(Knee-high leather boots)
+V - The Paper Mill
+W - Warriors Guild - (Galbrin - thin double-bladed axe)
+w - Shapeshifter's Guild
+x - Grilgoul's Mercenaries(Mercs)
+X - Delvuir's Tannery
+Y - AP Guild (Sword of Darkness)
+y - Shaman's Guild
+Z - Healer's Guild
+z - The Court of Judgement(Judge - oak mallet)
+
+Source: http://wiki.qhcf.net/index.php?title=Udgaard&oldid=4963
+Revision: 4963

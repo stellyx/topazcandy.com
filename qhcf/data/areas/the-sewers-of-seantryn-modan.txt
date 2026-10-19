@@ -1,0 +1,56 @@
+The Sewers of Seantryn Modan
+============================
+
+ S e a n t r y n                               +
+                                               |        
+   S e w e r s                                 +  Dry   
+                                               |        
+                                               +  Passage
+                                               |        
+                                       s-s-s-+-+-+-+  Shallow Tunnel
+                                       |         |      
+                      Tight  +=T     +-+         +      
+                             |       |           |      
+                    Passage  +       +           +      
+Seantryn                     =       |           |      
+ Harbor =+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-t-+-j-+-+-+  Main Sewage Tunnel 
+ (north                  |         |                  \ 
+  exit)                  d     S u=+                   \
+                 Narrow  |     m   |                    \
+                         +-+   a   +-S-S           +->+->+-g
+                Passage    |   l   |               |   
+                           +   l   +  l--e-+-+=SM  |   
+                           |       |    /          |   
+                           +-+-+-+-+---e---+-+-+-+-+  Sewer Tunnel  
+          Secondary        |                       |     
+        Sewage Tunnel  +-+-+-+               +-----+     
+                       |     |               |            
+           Seantryn =+-+     +-+-+     m-+-+-+   Secondary           
+            Harbor               |     |       Sewage Tunnel     
+         (south exit)            +-+-+-+  
+                                     |
+                                     +  Side
+                                     | 
+                                     +  Tunnel
+                                     |
+                                     +-+
+                                       |
+                                       +
+                                       =
+                                     Aturi (Smuggler's Tunnel)   
+                               
+d - Stone debris                      
+e - Entrance to Sewers (use ladder to get up and down)
+g - Gulguthra (hidden mob - plagues)
+j - Janrick (Has invis ring which function as key to other parts of sewers)
+l - Ladder on ground                          
+m - Meegle the mini-taur
+s - spiders (flame blade)
+S - Water Snakes (Poisons)
+SM- Seantryn Modan
+t - Tangle of roots (push east or west to get free)
+T - Thieves guild (pass door, duo to get here)
+u - Undead rot-rat (deafens and spawn giant rats - good prac mob)
+
+Source: http://wiki.qhcf.net/index.php?title=The_Sewers_of_Seantryn_Modan&oldid=5112
+Revision: 5112

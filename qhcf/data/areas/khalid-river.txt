@@ -1,0 +1,53 @@
+Khalid River
+============
+
+                      +
+             Rope     |
+  DarkWoods-----+-----+   + Mausoleum 
+               bridge |   | 
+                      |   |
+                      +---+
+                     /
+          Cliffside /
+                   +
+                  /
+                 /
+        +---+---+  
+                |  -+
+                |  /
+                | / Uphill
+                |/    path
+                +  
+                |
+                |
+                |
+                +---+
+                    |
+                    |
+                    +
+                    |
+                    |
+                    +---+---+ Lofty Falls
+                            |
+                            |
+              The           +---+ Misty Falls
+                                |
+                Khalid          |
+                                +
+                     River      |
+                                |
+                                +---+
+                                    |
+                                    |
+                           +--------W
+                           |        |
+                           |        |
+                      EasternRoad   +
+                                    |     
+                                    |       
+                                    +---+---Hamsah (In the River Canal)
+ 
+W - Beneath the West Bridge
+
+Source: http://wiki.qhcf.net/index.php?title=Khalid_River&oldid=5131
+Revision: 5131

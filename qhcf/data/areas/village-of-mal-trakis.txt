@@ -1,0 +1,40 @@
+Village of Mal'trakis
+=====================
+
+TODO - MAP MAZES!!                           
+
+
+                           +                                           S    
+                           |                                           |
+                        +--A--+                                     +WWW (here south is cursed)
+                           |                                        | 
+                     +--+  +  +--+                             +--H--H--+ 
+                        |  |  |                                |T    |  |
+                     +--+--+--+--+                             +--+--H--+
+                     |           |                                   |  |
+                  B--+     C     +--+                                G--+
+                     |     |     |                                   |
+                     +--+--+--+--+                                E--+
+                     |     |                                      |
+                     D     +--E--+               <- to maltrakis--W 
+                           |                                 H: Headhunter(aggro,acute vision,camouflaged)
+                           +                                 T: Tibarus
+                           |                                 G: Gnoll
+            (To maze)<--+--F--+--+--+                        S: South entrance to High Lords keep
+                           |  |  |  |                        W: Well worn path
+                           +  +  +  +                        E: Elf corpse
+                           |
+                           +
+                           |
+                        (To exit)
+
+
+A: Queen (Freezes first to enter room)                     
+B: Jurkus                                                  
+C: General Turakis                                         
+D: Barracks                                                 
+E: Khraul                                                  
+F: Prophet
+
+Source: http://wiki.qhcf.net/index.php?title=Village_of_Mal%27trakis&oldid=5071
+Revision: 5071

@@ -1,0 +1,19 @@
+The Frozen Gorge
+================
+
+                    +
+                    |
+                    |
+     +--+--+     +  H
+     |  |  |     |  |
+     |  |  |     |  |
+  +--+--+--+--+--+--+--+--+--Dwarf Forest
+     |        |  |
+     |        |  |
+     +        +  +
+              |
+              |
+              +
+
+Source: http://wiki.qhcf.net/index.php?title=The_Frozen_Gorge&oldid=5129
+Revision: 5129

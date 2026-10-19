@@ -1,0 +1,57 @@
+Temple of Loch Grynmear
+=======================
+
+Temple of Loch Grynmear
+Suggested Levels: 1-20
+
+Etched into the side of the spear, in untarnished silver letters that glow 
+with an inner fire, is the following inscription:
+
+Loch Grynmear, copyright 2003 by Kastellyn.  Any use of this area or the 
+ideas and concepts from this area on any MUD other than Carrion Fields is 
+prohibited without the express written permission of the author.
+
+Special thanks go out to Uller, for his help with the concepts and 
+characters, to Sebeok and Valguarnera for their tireless walkthroughs 
+and amazing coding skills that turned my visions into reality, to all 
+the other Imms who helped with the testing and walkthroughs, to Heather, 
+for giving me the time to partake in this crazy habit, and finally, to 
+the players of CF.  Without you guys and gals, there'd be no reason for 
+the Temple to exist in the first place.  Enjoy!
+
+                                              +-+
+Beneath the                                     |
+ Surface of                             g-g + +-+ k K=+-V        +-+ 
+  Loch Grynmear                         | | | | | = = | |        | |
+                        ~-~             g-g-+-+-+ +-+ +-+        + +-+-+       3
+                        | |             | | = | | | |            = |   |      /
+  +-+-+-+-+       v-v-v-v-v           b-g-g + +-+ +-+ +-+      +&#160;? + + +     +
+  |       |       | |     |           | |   |   | =   | |      |   | | |    /
+  +       +     ~-v-2     v        /|/  +=+-+-+=+-+=+-+-+      +-+-+ +-+   +
+  |       |     | |       |       2 s   |   |   | =            |     |    /
+  +       +     ~-v       v-p           +-+ + +-+ + + + +      +-+-+ + +-+
+  |       |     | |       | |             | | | | | = = =          | | |
+  +-+   +-+-+   ~-v-v-v-1-v-v            =+ + +-+ +-+-+-+      +-+-+ +-+
+  | |   |   |     | | | |   |             | = | | = = = =          |   |
+  +-+-+-+   +     v-v-v-v   v             +-+-+-+ + Q + P          +-+-+ +-+
+                  |   | |   |               =                        |   |
+                  ~   ~-~-~-~              -+                        + +-+
+                  |   |                   /                          | | |
+                  ~-~-~                  +-                          +-+ +
+                      |                    \                           |
+                      +                     1                          +
+                     ++
+                     +    Q - Quarters (Apostle Peael)
+                  ++++    g - A Well Kept Garden (se - renellum)
+                 ++       V - A Vegetable Garden (ne - Trocum)
+                 +        P - A Privy 
+                ++        p - A Rocky Beach on the Shore of Loch Grynmear
+                +         k - The Prelate's Kitchen (Theresa)
+                +         K - The Order's Kitchen  
+                +         3 - Cellar under the kitchen
+                +
+                |
+          SilverpineRoad
+
+Source: http://wiki.qhcf.net/index.php?title=Temple_of_Loch_Grynmear&oldid=5017
+Revision: 5017

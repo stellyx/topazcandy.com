@@ -1,0 +1,51 @@
+The Lumberyard
+==============
+
+               Voralia's Tears (Galadon)
+
+        Docks       |  |
+              +--+--+--+--+----+  Docks
+              |  |  |  |  |    |
+   Galadon  --+--+--+--+--+----+
+                    |  |  |\   |
+              +--+--+--+--+ \  S--S
+The Workfloor |  |  |  |  |  U |  |
+              +--+--+--+--+    S--S
+    The Lumberyard  |
+              +--+--+--+--+  
+The Workfloor |  |  |  |  |
+              +--+--+--+--+--+ Small Alcove
+                    |
+        H--+--+--+--+--+--+--+--+
+        |  |  |  |  |  |  |  |  |
+        +--+  +  +  +  +  +  +--+
+              |  |  |  |  |      /
+              +  +  +  +  +--+--1
+
+
+     +--+--+--+--+                   +-U
+     |           |                   |   
+     +           +                *T + N
+     |           |                 | | |
+     +           +                 +-M-+
+     |  Catwalk  |                 | | |
+     +           +  +              C + D
+     |           |  |                | 
+     +           +  O                +-+
+     |           |  |                | |
+     +--+--+--+--+--+--+             B-L
+                      / 
+                   --1
+
+
+H - Healer                    N - Urchin - Skin(Potion)
+S - Small Marketplace         T - Thief - a stiletto & key to chest
+U - Under the Docks           M - Mongrel - Aggressive
+O - Tarus                     D - Drunk - a bottle (wielded as mace)
+    charred leather bracer    C - Pile of clothes (a cloak inside pile)
+    black leather sleeves     B - Bullies - Wooden Stick
+                              L - Leader of the Bullies - an ice pick
+                              * - Chest - packet of sulfur, bronze lockpicks
+
+Source: http://wiki.qhcf.net/index.php?title=The_Lumberyard&oldid=5143
+Revision: 5143

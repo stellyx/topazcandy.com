@@ -1,0 +1,51 @@
+Mausoleum
+=========
+
+               Graveyard
+                   |
+                   O
+                   =  (door locks behind you)
+      Foyer of the F
+        mausoleum  |
+                   = 
+                +  |  + 
+                =  |  =
+             J-=+--+--+=-J 		
+             =  |  |  |  =
+          +-=K  +--+--+  V
+                |  |  |
+          P--+-=+--C--+=-S--S
+                |  |  |
+          +=>R  +--+--+  D--+
+             =  |  |  |  =
+             J-=+--+--+=-+
+                =  |  |
+                +  +  +
+                   |
+              fog--E--fog
+                   |                  
+               Lost in the 
+              graveyard fog 
+                 (maze)
+
+Maus is no-gate, no-summon, no-recall, no-teleport
+Warning: Easy to enter; can be very difficult to leave!
+
+D - demon familiar (Ulrician Belt, Flail of Pestilance)
+E - The entrance into the undead barracks
+F - Foyer. You can summon from here
+J - Juju Zombies (keys to their doors)
+K - Kharzandra (cloak of wizardry, Shadow Dagger (Wielded=good), Libram of Gainful Conjuration)
+O - Outside the Mausoleum (no-magic)
+P - Dark priest vampire (Unholy Symbol of Lloth, Flaming Sceptre of Chaos)
+R - Rakshaka (Cloak of Death, Sleeves of Harrapia)
+S - dark spectre 
+V - Shadar Lunn, the vampire (Darkened Armor, Guardian Sword, Arkham Signet Ring)
+
+Somewhere in the maze:
+  Lord Siig (Flawless Silver Shield, silver longsword "Vampire Slayer")
+  Hellhounds [aggro < ca 50, hidden, EQ-BURNER]
+  The Ancient Dracolich [Bølle] (Ring of Fortitude, Claw of the Ancient Dracolich)
+
+Source: http://wiki.qhcf.net/index.php?title=Mausoleum&oldid=5046
+Revision: 5046

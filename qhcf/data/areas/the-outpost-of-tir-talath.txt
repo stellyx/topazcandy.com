@@ -1,0 +1,96 @@
+The Outpost of Tir-Talath
+=========================
+
+     +--S1-+                    P1
+     | /|  |                   /
+     +--+--+
+
+  +--+--+--+--+  +==+  +  +--+--+--+--+
+  |      /    |  |  |  |  |      /    |
+  +  W  S0 R  +  +  +==+  +  +  P0 d  +            K - Baron's Keep 
+  |  |  |  |  |     |     |  |  |  |  |            
+  +  +--+--+  +  +==+  +  +  +--z--+  +                          b
+  |  |  |  |  |  |  |  |  |     |     |             K2           |
+  +  A  +  w  +  +  +==+  +     +     +            /             |
+  |     |     |     |     |     |     |      B    K1   +    +    K2   +
+  +--+--+--+--D--+--+--+--u--+--+--+--+      |   /|    |    =   /|    =
+              |      /    |                  | K0 |    |    = K1 |    =
+  +--+  +--+  +  +  K0 +  +  +--+  +--+      +----+----+    +----+----+
+     =     =  |  |  |  |  |     =     =                     =    |    =
+  +--+--+--+--+  +--+--+  +--+--+--+--+                     =    |    =
+  =     =     |     |     |  =     =                        +    +    +
+  +--+  +--+  +     +     +  +--+  +--+                    
+              |     |     |
+  +--+--+--+--u--+--+--+--u--+--+--+--+    
+  |  |  |  |  |     |     |     |     |         t - Tower of Tir-Talath
+  +--f--v--c--+   E +     +     +     +       
+  |           |   | |     |     |/    |               I    2    T
+  +--e--a--g--+   L-+     +  Z--t--+  +              /    /    /
+  |           |     |     |     |     |             +----1----+  
+  +--i--M--h--+   +-+-s   +     +     +                 /| C     
+  |  |  |  |  |   | |     |           |                / |/  
+  +--+--+--+--+   F +     +--+--+--+--+               t  +
+                    |
+              NorthernRoads
+
+A - Armory
+a - Alanna (Flower stall)
+b - Bank
+B - Bard
+c - Dairy Shack
+C - Conjurer
+d - Druid
+D - Diana (Brass Gauntlets, Shield bearing the Insignia of Tir-Talath)& Well
+e - Spice Market
+E - Thieves Guild (Poisoness Stiletto)
+f - Fruit Stand
+F - Farrier (Centaur/Mino gear)
+g - Bakery
+h - Confectioner's (candy store)
+I - Invoker
+i - Basket Weaver's
+K - Baron's Keep
+L - The Laughing Dragon (Inn)
+M - The Meat Market
+P - Pit / Recall (Up to 'The Temple Arboretum')
+R - Ranger
+s - Supply Depot (general store)
+S - Sleeping Quarters
+t - Tower of Tir-Talath
+T - Transmuter
+u - Wells, 'use well' twice then 'drink well'
+v - Vegetable Stand
+W - Warrior Guild
+w - Weaponsmith's
+z - Free Wine!!! =]
+Z - Zardroff (Alchemist)
+
+0 - ground level  (can go up)
+1 - one level up  (can go down (and up if in tower or keep))
+2 - two levels up (can go down)
+
+Within the vast northern plains region south of the Udgaard Mountains, 
+several farms and agricultural communities are nestled. Rising up in 
+the midst of the vast, sweeping grasslands, is the Tir-Talath Outpost. 
+Serving as a common center of commerce, defense, and study, Tir-Talath 
+is a formidable fortress in a land often plagued by bandits, natural 
+disasters, and an aggressive neighboring territory. 
+
+Visitors are welcome in Tir-Talath, which boasts several amenities in a 
+region otherwise limited to rather rural conditions. A temple in service 
+to the wise and neutral gods of the Theran pantheon offers healing services 
+and sanctums for prayer, and the open barracks of the Tir-Talath militia 
+welcome any visitors who wish to study the art of war within. The majestic 
+Tower of Tir-Talath offers a place of magical study for both mages and 
+amateurs alike, while the sights and smells of the farmer's market are sure 
+to delight the sense of anyone seeking a unique farm grown gift or treat. 
+
+Order in Tir-Talath is kept by the local militia, who defend the northern 
+plains region and its people under the high command of Baron Telenius, a 
+reluctant, but well-trusted patron who rarely grants audiences to visitors. 
+His personal keep, however, is open to visitors, and stands proudly in the 
+heart of the outpost on top of a secure cistern from which the outpost draws 
+water into its four wells.
+
+Source: http://wiki.qhcf.net/index.php?title=The_Outpost_of_Tir-Talath&oldid=5008
+Revision: 5008

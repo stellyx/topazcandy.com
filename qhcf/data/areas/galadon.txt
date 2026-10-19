@@ -1,0 +1,135 @@
+Galadon
+=======
+
+                          NorthernRoads
+                               |
+                        GaladonOutskirts
+                               |
+                               |
+                               +
+                               | B
+               X               |/
+               |\              N
+            +--+--+            |
+               |         +--+--+--+--+
+            +--+--+  ^         |                  D
+               |     |   +--+--+--+--+            |    New
+               +-----+         |         21   22  +    Clerics
+                               |   19   +    +    |    Guilds
+                     X         |  +     |    |  h + Sh         Y
+                      \    @-+-+--+-----+----+  | | |          |
+                 +--+--+       |  |   + |    |  +-+-+       Y--+--Y
+                    |      Bk--+--K-+ | |20  +    |           /|
+                    +----+  |  |  | | + +  Z      |  +  +--+ / Y
+                    |    |  |  |  + + |    |      |  |  |  |/
+           B GraveY +-+  +--+--+------+----+---+  |  +--+  +-Bd B
+            \   |        |            |    |   |  |  |     |   /
+Feanwyyn--+-NW--+--+--+--+   PARK  +--+--+ +---+--+--+-----+-NE--+--Outsk--NorthernRoads
+                |24 \    |         |  |  | |   |     |     |
+                +   Acad |   +--+--+  +--+ |   |     |     |18
+                         |   |  |  |  |  | |   |     +--O  +
+                         |   +--+--+  +--+ | J | Acd |
+                         |      |          |/  |/    |
+                         +------+--+--+----+---+--+  |
+                                |  |H          |  |  |
+                             +--+--+I +        +--H+ |
+                             |  |  |G |           +  |
+                             H--+--+--+              |
+                                |  |H            23  |
+                         9     P-+-+-Spire        +--+--V
+                   10   8    7   6 |   5         28  |     4
+               B  +    +    +   +--+--+  +     R  +--+--G +     B
+              /   |    |    |TRADE | ROAD|     |     |    |    /
+Feanwyyn--+--W----+----+----+------M-----+-----+-----+----+---E---+--Outsk--EasternRoad
+                  | 12 |    |      |     |1    |2    |    |3
+                  |11  T    |13 14 |R 17 +     +     |    +
+                  +         +   +--+--+              |
+                                   |O    +   25 26 TheCopehamInn
+                                   |A  +-H-+  +  +
+                                   |D    |    |  |
+                                +--+--+--+    +--+
+                        16  15  +  |  |\   27 |  |
+                     B +   +       |  | Acd +-+--+  I B
+                      \|   |   AP  |  |       |  |  |/
+                       +---+---+---+--+-------+--+--+
+                                   |\         |
+                                   | Sewers   +
+                                   |          |
+                 Feanwyyn--+--+----b-----+----+--+--Voralia'sTears
+                            River  |
+                                   +--Lumberyard
+                                   |
+                             s--+--+--+--c
+                                   | B
+                                   |/
+                                   S
+                                   |
+                                   +
+                                   |
+                                   |
+                            GaladonOutskirts
+                                   |
+                               Silverwood
+1 - Small Room
+2 - Attic
+3 - Vault
+4 - Large Room
+5 - Cartographer's Store
+6 - Vegetable Garden
+7 - Bakery
+8 - Upstairs Room
+9 - Secret Lab
+10 - Small Bedroom
+11 - Small Room
+12 - Brewing Room
+13 - Butcher
+14 - Training Room
+15 - Small Chamber
+16 - Small Loft
+17 - General Store
+18 - Upstairs Cellar
+19 - A Spacious, Open Loft
+20 - Work Room
+21 - In a Coffee-Scented Apartment
+22 - Within a Dimly-Lit Library
+23 - Mercenary Office
+24 - Coffin-Shaped Room
+25 - Secret Room (Locked but can be picked)
+26 - Secret Room (Ditto)
+27 - Boatmaker's shop (Nicholas)
+28 - Abandoned House
+A - AP's Guild
+B - Battlements
+Bd - Bard's Guild
+Bk - Bank
+b - Bridge (n/s and e/w only)
+c - Conjurer's Guild
+D - Druid's guild
+E - East gate
+G - Assassin's Guild
+H - Healer
+h - Healer's guild
+I - Thieves' Guild
+J - Chain (To Arial city)
+K - City Hall
+N - North Gate
+NE - Northeast Gate
+NW - Northwest Gate
+O - Necromancer's Guild
+P - Paladin's Guild
+R - Warrior's Guild
+S - South Gate
+Sh - Shaman's guild
+s - Shapeshifters Guild
+T - Transmuter's Guild
+U - Musician's Guild
+V - Invoker's Guild
+W - West Gate
+X - Stairs in the House
+Y - Room in the Inn
+Z - Training Yard
+NOTE: This Map is slightly outdated. but its still good for
+getting around.
+
+Source: http://wiki.qhcf.net/index.php?title=Galadon&oldid=5044
+Revision: 5044

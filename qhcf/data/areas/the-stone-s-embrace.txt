@@ -1,0 +1,52 @@
+The Stone's Embrace
+===================
+
+The Stone's Embrace. Area made by Calradian intended for lvl 7-20. Map by Drenden.
+
+                +=-+                 +-=+
+                   |                 |  
+       Servants'   +        +        +  Priest's
+       quarters    |        =        |  quarters
+                   +=-+-=---W---=-+-=+ 
+                      |           |     
+                      +           +     
+                      |           |     The Halls of Rest
+                      +--+--+--+--+  +--+--+--+--+--+--+--+  The Chamber 
+                            |        |  |  |  |  |  |  |  |    of the
+                            |     +--+--+--+--+--+--+--+--D Honored Friend
+                      Akan  +     |
+                          \ =     +        +--+--+--+
+                           \|     |        |  |  |    Hall
+                            E-=+--+--+--+--+--+--A     of
+                            |     |        |  |  |  Remembrance
+                            =     +        +--+--+--+
+                            +     |
+                            |     +--+--+--+--+--+--+--+--P  The Chamber 
+                            |        |  |  |  |  |  |  |  |    of the
+                      +--+--+--+--+  +--+--+--+--+--+--+--+ Honored Friend
+                      |           |     The Halls of Rest
+                      +           +
+                      |           |
+                   +--+-----M-----+--+
+     Stone's       |        |        |   Mithril 
+     Brigade       G        +        G   Brigade
+                   |                 |
+                C--+                 +--C
+                   |                 |
+                   + Storage Closet  +
+
+E - The Entrance to the Stone's Embrace                  
+W - The Servant and Priest Mess Hall (water)
+P - Al'iskandar, the Paladin of Coreynal (silver locket)
+D - Desana Vo'del
+  a long, flowing linen gown of handspun cloth
+  Glowing) a diamond tiara
+A - The Altar of the Stone's Embrace, Drocktol
+   (Glowing) a flowing robe of silver and gold 
+   (Glowing) a shimmering ornate silver scepter  (attack: divine power)
+M - The Mess Hall of the Guardians of the Stone's Embrace (water)
+C - Captain's Quarters
+G - Guardian's Sleeping Quarters
+
+Source: http://wiki.qhcf.net/index.php?title=The_Stone%27s_Embrace&oldid=5021
+Revision: 5021

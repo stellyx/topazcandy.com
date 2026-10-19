@@ -1,0 +1,24 @@
+Evergrove Outpost
+=================
+
+                          Outlying
+                           Village
+                             |
+                          +--+
+                          |                                @================================================@
+                          +                                @                                                 @
+                          |                                @   Evergrove Outpost by Whildur Berrewellow.    @
+                    +||+  +     +                          @             Copyright 9-6-2017                 @
+                       |  |     =                          @                                                @
+                       +--+--+--+                          @================================================@                         
+                       |  |  |
+                       +--+--+
+                       |     |
+                       +  +  +
+                       |  |  |
+                    +--+--+--+--+
+                    =  |        |          
+                    +||+        +
+
+Source: http://wiki.qhcf.net/index.php?title=Evergrove_Outpost&oldid=5100
+Revision: 5100

@@ -1,0 +1,105 @@
+Balator
+=======
+
+It reads: 'Balator was written by Steve Pachter (Nepenthe) for 
+           Carrion Fields in December 1995.  Use only with permission.
+               Most recent revision: September 1997.
+
+           Special thanks to Jullias for writing the Balator
+           mob and object programs, which make the area live.
+
+           Thanks also to the many other CF immortals who helped
+           out with various aspects of this area.  Without the
+           efforts of many, Balator never would have been.
+
+
+                       ImperialLands
+                             |
+            KeepOfRighteous -+
+                             |
+                       +--+  | Entrance to the village of Balator
+                       |  |  |
+                       M--+--+--+ Stables
+                       |  |  |
+                 +=+=+ +--+  |
+                   |\        |
+          The Inn  | \       |
+                   |  \   P--+--B A blacksmith's forge
+                   |   \     |
+                 +=+=+  I----+--P
+                        |    |
+                        +    |  +  C  +
+                             |  |  |  |
+                          P--+--+--+--+
+                             |  |  |  |
+                             |  +--R! +
+                             |
+                          K--+--P
+                        +    |
+                         \   |
+                       T--+--+--P
+                             |
+                          +  |  +--+ Barracks
+                          |  |  |
+                       +--H--F--+--+
+                          |  |  |
+                          +  |  +--+
+                             |
+                             |     +  J  +  +
+                             |     |  |  |  | 
+                       g--+--+--+--+--+--+--+ Orphanage
+                             |     |  |  |  |
+                           S!|     +  +  +  +
+                           | |
+                           / |
+                       +--P--+--+
+                             |
+                          P--+--P  +  +
+                             |     |  |
+                          P--+--P--E!-U--+
+                        D    |     |  |
+                        I    |     +  +
+                        R    + Entrance to the village of Balator
+                        T    |
+                             + 
+                        R    |
+                        D    + 
+                        _    |
+                             +
+                        M    |
+                        E    + 
+                        R    |
+                        C    + 
+                        H    |
+                        A    + 
+                        N    |
+                        T    +--Fields of Balator
+                             |
+                        R    + 
+                        D    |
+                             + 
+                             |
+                             +
+                             |
+                      HamsahOutskirts
+                             |
+                        HamsahMutaz
+
+B - A blacksmith's forge hammer (iron)
+C - Closet (padded stuff)
+E - Ethereal Knight (Hold Person 5-7 ticks)
+F - fountain
+H - Inside the local temple (healer)
+I - The common room of the inn
+J - Jaragh (set of golden plate armor)
+K - Kryldor (the Chromatic Whip)
+M - Half-elven merchant (Amethyst ring)
+P - A private home
+R - Thrym [wandering aggro against magic! no mercy!]
+S - Sho's domain, deadly trap with hard aggressive monster, no_pass door and nospell room
+T - The elder's garden (train)
+U - Truck (leggings of Sorcery, boots of Electricity, sleeves of Alchemy, belt of Thermatology, bone breastplate)
+g - Graveyard
+
+Source: http://wiki.qhcf.net/index.php?title=Balator&oldid=4969
+Revision: 4969

@@ -1,0 +1,56 @@
+The Violet Woodland
+===================
+
+The Violet Woodland
+Suggested Levels: 5-15
+
+This area was written for the Carrion Fields Mud.  Any other
+use or reproduction without written authorization is prohibited.
+Copyright (c) 2000 Steven E. Helms (Jullias)  All rights reserved.
+
+                                  +
+                                  |\
+   Silverwood                     | +
+       | |                        |
+       +-+                +-+   X | +
+       | |                |  \  | | |
+     +-+-+   +            |   +-+-+-+--=
+     |   |  /             |     " | |
+     +-+-+-+              +-+-L S + W
+       | | |                |
+     +-+ +-+              +-+-+
+     | | | |                |
+   M-+-+-+-c-d=+-----+ L  y=+-+
+      / /            | | /: | |
+     +-+-C           + +  x=+ +
+       |             |/|//: |
+       +=D           + +  z=+-+
+ T     " |             |    |
+ O-+-+-+-+-----+       +    |
+   |   |       |      /     |
+ E-+-+-+       +   +-+      |
+ M |  \        |  /         +
+ E-+   \       +-+     \   /
+ R      \     /| |      +-+ 
+ A       +-+-+ +-+
+ L         | |
+ D         +-+
+
+Key:
+= or " or // is a door or something that is barring your way (= is e/w, " is n/s, // is u/d).
+This only applies to things that cannot be opened using the "open" command.
+C You can crawl north to c, a one way trip
+D You can crawl north to d, a one way trip 
+L is for Lever
+M is for Menhir
+x You can crawl north to y, or south to z from here
+y You can crawl south to x (Can crawl west when gnome sized)+
+z You can crawl north to x (Can crawl west when gnome sized)+
+W Gnome selling wands (invis).
+S Gnome selling scrolls.
+X Gnome selling maps.
+If too large get the echo:
+'You push with all your might, but still can't squeeze through the window'.
+
+Source: http://wiki.qhcf.net/index.php?title=The_Violet_Woodland&oldid=5076
+Revision: 5076

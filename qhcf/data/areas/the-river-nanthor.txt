@@ -1,0 +1,16 @@
+The River Nanthor
+=================
+
+                            --->
+                       +--+--+--+--+--+  The River Nanthor
+                       |              |
+                       +              +--W
+                       |                 | \
+Udgaardian Plains      +                 f  +--+--+     b--b
+           |           |                  \       |     |  |
+           +--+--+--+--+                    f--f  +--+--+--+     The High Pass
+                                               |  |  |  |  |      /
+                                               f--f  +--+--+--+--+
+
+Source: http://wiki.qhcf.net/index.php?title=The_River_Nanthor&oldid=5011
+Revision: 5011

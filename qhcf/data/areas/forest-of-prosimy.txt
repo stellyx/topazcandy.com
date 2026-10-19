@@ -1,0 +1,90 @@
+Forest of Prosimy
+=================
+
+* mislabeled, should be Forest of Prosimy
+   (see 'help prosimy')
+                        +
+                        |       
+                     +--+--+--+
+                     |  |     |
+                  +--+  +     +--+
+                  |     |        |
+                  +     +        +--+--+
+                  |     |        |     |
+                  +--+  +--+--+--+     +       O
+                     |        |        |     |/
+                     |        +        +--D--+-- Maze leads to Prosimy Village
+                     |        |        |     |
+                     +        +        +
+                     |        |        |
+                     |  +--+--+        |
+                     |  |     |        |     
+                     +--+     +--+--+--+
+                              |        |
+         +--+                 +    MansionofTwilight
+            |                 |   
+            +              +--+
+            |              |
+            +              +
+            |              |
+            +--+--+--+--+--+
+                     |     |
+                     +     +
+                     |     |
+                     +--+--+
+                           |
+                           +
+                           |
+                           +--+--+
+                                 |
+                                 +
+                                 |
+                                 +
+                                 |
+                                 +--+
+                                    |
+                                    +
+                                    |
+                                    +
+                                    |
+                                    +
+                                    |
+
+                                ForestRoad 
+f) Farms
+W) Water
+j) Jasten 
+t) Tranken 
+g) Granthis
+d) Dranta 
+b) Borthel
+y) Yarthel
+*) Upstairs- Wardrobe and chest with a couple of lower level clothing items in it.
+O) The Outlander Refuge
+                                            +--+
+                                            |f |
+                                            +--+
+                                            |
+                                            +     +--+
+                                            |     |f |
+                                            +--b  +--+
+                                            |     |
+Maze. leads to D       P--+--+--+--+--+--+--w--+--+
+                                            |
+                                         t--+--j
+                                         |  |
+                                         g* |
+                                            |
+                                         y--+--+--+
+                                            |
+                                            +--d
+                                            |
+                                      +--+--+
+                                      | f|
+                                      +--+      
+
+To get through the maze, look in all directions and walk towards
+The darkness seems to clear slightly off in the distance.
+
+Source: http://wiki.qhcf.net/index.php?title=Forest_of_Prosimy&oldid=5093
+Revision: 5093

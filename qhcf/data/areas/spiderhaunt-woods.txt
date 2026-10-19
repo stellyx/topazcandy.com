@@ -1,0 +1,84 @@
+Spiderhaunt Woods
+=================
+
+Spiderhaunt Woods
+Suggest Levels: 20-40
+
+                         by J. Fordham
+                   written for Carrion Fields
+                              1997
+
+         Thanks to all the immortals for their time and help
+                         (and patience&#160;;)
+
+Final revisions by Pico, Implementor of Thera, 1998.
+
+                                                                               Emerald (at the demon elf)
+                                                                               Forest
+                LightForest--+--+--+--B                                            |
+                                      |                                            |
+                                      |                                            |
+                                      B--B--B                                      +
+                                            |                                      |
+                                            |                                      |
+                                            +--+--+--+--+                       +--+
+                                                     |  | U                     |
+                                                     |  |/                      |
+                                   +--+--+--+--+     +--+                       +
+                                   |  |  |  |  |     |  |                       |
+                                   |  |  |  |  |     |  |                       |
+                                +--+--P--+--+--+--+--P--+--+           +--+--+--+
+                                |     |  |  |  | X|  |  |  |           |
+                                |     |  |  |  |/ |  |  |  |           |
+                                +     P--+--+--P--P--+--+--+--+--+--+--+
+                               /      |  |  |  |  |  |  |  |
+                              +       |  |  |  |  |  |  |  |
+                              | H--+  +--+--+--+--+--+--+--+
+                              |    | /         |  |  | O|
+                              +--+ |/          |  |  |/ |
+                                 | +           +--+--+--P
+                                 |                |  |  |
+                              +--+--N             |  |  |
+                              |                   P--+--+--+--+
+                              |                      |  |  |   \
+                              +                      |  |  |    C     +
+                                                     +--+--+          |
+                                                                      |
+                                                                      +
+                                                                      |
+                                                                      |
+                                                                   +--+--+--+
+                                                                   |        |
+                                                                   |        |
+                                                                   +--+     +
+                                                                            |
+                                                                            |
+                                                                            C
+
+                    +--w--@
+                    |
+                    |
+           @     f--+--U     +
+           |     |     |     |
+           |     |     |     |
+           w--+--f     f--+--+
+              |        |  |
+              |        |  |
+              X  +  +--w  f
+                 |  |    f|
+                 |  |   / |
+                 +--+  f  +--+--@
+                    |  |
+                    |  |
+                    O--f
+
+N - Ettercap Nest
+B - by a stream
+f - flying spiders (gossamer wings)
+H - The hatchery
+P - [hidden, camo, invis, duo, aggro] Phase spider
+w - wisper spiders one is visible 15 more will appear when you attack
+@ - no-exit rooms, can word from; spawns huge spiders to attack you repeatedly
+
+Source: http://wiki.qhcf.net/index.php?title=Spiderhaunt_Woods&oldid=5074
+Revision: 5074

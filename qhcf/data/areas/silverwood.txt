@@ -1,0 +1,63 @@
+Silverwood
+==========
+
+                       Galadon
+                          |
+                   GaladonOutskirts
+                          |
+                      +-+-+-+-+
+                      | | | | |
+                   +--O-+-+-+-+
+                   |  | | | | |
+          Feanwyyn +--+-+-H-+-+-I
+               |   |  | | | v | |
+               +-+-+--P-+-+-C-+-+
+               | | | /| | | | |
+               | | |+ | | | | |
+               +-+-+--+-+-+-+-+
+               |        | | |
+       Ravine  +        +-A-+
+               |        | | |
+           +-+ +      W-+-+-+
+           |  \|      |     |
+           +   +      +     + Forest Edge
+ Emerald   |         /      |
+ Forest -+-+        + +     +-+-+-GoblinVillage
+         | |       / /        | |
+        Violet    +-+         | | Targeth's Manor
+        Woodland  |           | |/
+                  +           | +
+                              |
+                              +-+
+                              | |
+                            +-+-+     L-L
+                            |   |     | |
+                            +   +-+-+-L-L
+                            |   |     | |
+                     Aubade-+-+-+     L-L-+
+                            |             |
+                            +   E---E---E +
+                            |  /         \|
+                            +-+           +
+
+
+A - An unusual configuration of rocks (Altar)
+
+C - In front of a small cottage
+
+H - Heart of Silverwood
+
+E - Hidden Canopy
+
+I - Iron Statue
+
+O - Old fallen tree
+
+P - Pond
+
+v - Small cottage (also, room to north has an exit south that passes through the cottage right to the front)
+
+W - Cave of webs (barter-only shop)
+
+Source: http://wiki.qhcf.net/index.php?title=Silverwood&oldid=5048
+Revision: 5048

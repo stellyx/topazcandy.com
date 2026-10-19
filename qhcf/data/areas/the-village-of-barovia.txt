@@ -1,0 +1,64 @@
+The Village of Barovia
+======================
+
+  ForestRoad --+
+               |
+               +--+  A
+                  |  |
+                  +  +
+                  |  |
+                  +--+
+                     |             MAZE NOTES: To leave, look for laughter. 
+                     +                         To enter, head towards the "darker mists" until you see a trail.
+                _____|_____
+               |           |
+               |   MAZE    |
+               |___________| +-+-+
+                     |       | |   vistani camp
+                     n       +-+
+       Dark          |      /
+       Cave    +--+--n--+--+  The dark
+               |  |  |  |  |  forest
+         +--+--+--+--n--+--R
+         |        |  |  |  |
+         +        +--n--+--+     +--B  Black Dragon
+                  |  |  |        |  |
+                  +--n--+     +--+--+
+                     |  |     |  |  | The murky swamp
+                     n--F--F--+--+--+
+                     |  |  |
+                     n--+--F
+       Large         |     |
+       House      n--n     F--F
+                  |           |
+  +   Sh H  H  P  G  X  W  H  +       + The Burgomaster's
+  |   |  =  |  |  |  |  |  |  |      /  House (aggro)
+N-+-p-+--+--+--+--w--+--+--+--+-=+--+
+  |   |  |  |  |  |  |  |  |  |
+  +   H  H  H  AP +  H  S  H  C
+        /         |
+       T   CastleofBarovia
+
+A - Altar to Yanoreth
+C - Conjurer Guild
+F - A fox trail
+G - North Gate of Barovia
+H - A small home
+N - Necromancers Guild
+n - North Svalich Rd
+P - Grundin's Pelts (containers)
+p - Pit
+R - [Wandering] Sir Tristain (Golden stuff)
+S - The Swan Song (food)
+Sh - Shaman Guild
+T - Thief Guild
+W - Warrior Guild
+w - Well (water)
+AP - Ap Guild
+X - Group of good adventurers (Mage, Assassin, and Warrior)
+
+Ghouls appear in forest at night.
+Most mobs eat corpses.
+
+Source: http://wiki.qhcf.net/index.php?title=The_Village_of_Barovia&oldid=5096
+Revision: 5096

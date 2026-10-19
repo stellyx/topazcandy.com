@@ -1,0 +1,110 @@
+NorthernRoads
+=============
+
+                                          Traveller's
+                                              / 
+                   Ruins of Maethien         •
+                             |               |
+    The Vale of Arendyl      u               • 
+                 |           |               |
+                 e-e-u-ASC   u-u       +-u   •-u 
+                 | | |       | |         |   | |
+                 e-e-u-u   u-u-u-u TC  u-u-u-•-u-u
+                 | | | |   | | | | |   | | | | |
+                 a-a-r-u-u-u-r-r-u-u-u-u>F-r-•-u       
+                 | | | | | | | | | | | | | | | |       
+                 a-a-r-r-r-r-r-r-r-r-r-r-r-1-•-u-u-u-+-GolGalath
+                 | | | | | | | | | | | | | | | | |     
+                 a-a-v-v-F<v-v-v-v-v-v-v-v-v-•-r-u     
+                 | | | | | | | | | | | | | | | | |     
+                 +-+-v-v-v-•-•-•-•-•-•-•-•-•-•-u-u     
+                 | | | | | |     (7)     | | | |                         
+               +-+-+-v-v-v-•             o-v-r-u   + - A Large Cave                    
+               | | | | | | |             | | | |   |                     
+               +-+-+-v-v-v-•             o-v-r-u-u-+      
+               | | | | | | |             | | | | |        
+               +-+-+-v-v-v-•   Tir-      o-v-r-r-u        
+               | | | | | | |   Talath    | | | | |        
+               +-+-+-v-v-v-•          (9)o-v-r-r-u-u      
+               | | | | | | |             | | | | |        
+  P - pit &    P-+-+-v-v-v-•-•           o-v-r-r-u        
+      menhir   | | | | | | | |           | | | | |        
+               +-+-+-+-v-v-v-•           o-v-r-u-u        
+               | | | | | | | |           | | | |
+             +-+-+-+-•-•-•-•-•           o-v-r-u         u-+ - Dark Cave
+             | | | | |       |           | | | |         |                   E - Dead End Canyon
+             +-+-+-+-•     +-o           o-v-r-u     u-u-u-u             E-c  (silver studded belt)
+             | | | | |       |       |   | | | |     | | | |               | 
+             +-+-+-+-•       o-o-o-o-S-o-o-v-r-u-u   u-r-r-u       Redhorn c-E
+             | | | | |               | | | | | | |   | | | |           |   |
+The Halfling +-+-+-+-•     Shepard's +-v-v-v-s-s-u-u-u-r>F-u-u       u |   c
+Lands      | | | | | | N      Row    | | | | | | | | | | | |         | |   |
+           + +-+-+-+-• o             +-v-v-v-s-s-s-r-r-r-r-u     u-u-u |   c
+           | | | | | | r             | | | | | | | | | | | |     | | | |   |
+         t +-+-+-+-+-• t             +-+-+-+-+-s-s-r-r-r-r-u-u-u-u-f-u-R-f-f   f
+         h | | | | | | h                (4)  | | | | | | | | | | | | | | | |   |
+       A r +-+-+-+-+-•                       +-s-s-s-s-s-r-r-r-r-f-f-r>F-f-f-f-f-+-Voralia'sTears
+       n o | | | | | | R                     | | | | | | | | | | | | | | | | | | |
+         u +-+-+-+-+-• o                     +-+-+-+-+-R-R-r-r-r-f-r-f-f-f-f-f-f-+-Voralia'sTears
+       O g | |The| | | a    F - Farmhouse       (4)  | | | | | | | | | | | | |
+       l h +-+-+-+-+-• d    s - small forest         +-R-R-R-R-R-R-R-f-f>F-f-f
+       d   | |Open | |      r - Roling Foothills     | | | | | | | | | | | | |         I - Sirine Inn
+         t +-+-+-+-+-• (15) u - Rugged Foothills     +-+-+-+-+-+-+-R-I-f-f-f-f
+       T h | |Plains |      f - Lush Farmland    Shepard's (6)   | | | | | | |
+       r e +-+-+-+-+-•      R - Rocky Plains        Row       (2)+-+-+-+-+-+-+
+       a   | | | | | |      c - Canyon                           | | | | | | |
+       i P +-+-+-+-+-•      e - Edge of Mountains                +-+-+-+-+-+-+-VoralianCity
+       l l | | | | | |      a - Approaching the Mountains        |             NW Bridge
+         a +-+-+-+-+-•      • - Northern Road                    +  
+     (11)i | | | | | |      S - Crossroads Outside Tir-Talath    | (4) 
+         n +-+-+-+-+-•      v - Vast Plains                      + O
+Dagdan   s | | | | | |                                           | l
+ |         +-+-+-+-+-•                                           + d
+ |         | | | | | |         East Sumner's Road (12)           |    (7)
+ +-+-+-+-+-+-+-+-+-+-Q-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-VoralianCity
+ |   C     | |       |         (10)      |                       |             W Bridge 
+ |        Azreth     •             InnOfTheEternalStar           + T
+ South               |                                           | r  
+ Dairein           N •  Q - The Sumners Crossroads            (4)+ a    
+                   o |  C - Cragstone                            | i
+                   r •  TC - The Consortium                      + l
+                   t | ASC - Abandoned Siege Encampment          |
+                   h •                               +-+-+-+-+-+-+-+-+-+-+-+-+-VoralianCity
+                     | (9)                           |    (6)    |    (7)      SW Bridge  
+                   R •                               +           +
+                   o |       North Sutherspring Road |           |
+                   a •                   +-+-+-+-+-+-+        (4)+
+                   d |                   |    (6)                |
+                     •       +-+-+-+-+-+-+                       +
+                     |       |    (6)                            |
+                     •       +                               +-+-+
+                     |       |                               | 
+                     •-•-+-+-+                               +
+                       |                                     | 
+                       •                             +-+-+-+-+
+                       |                             |  (4)   
+                       •                             +
+                       |                   South (4) |
+                       •                Sutherspring +   
+                       |                   Road      |  
+                       •         Haunted Woods       +
+                       |               |             |
+                       •               +-+-+-+-+-+-+-+
+                       |               |     (7)
+                   (10)•               +
+                       |               |
+                       •             +-+ 
+                       |             |
+                       •             +
+                       |          (4)+
+                       •             +
+                       |       (5)   |             
+                     Galadon-+-+-+-+-+
+                    Outskirts                      
+                        &            
+                     Galadon
+
+TODO: Add farm in NW
+
+Source: http://wiki.qhcf.net/index.php?title=NorthernRoads&oldid=4989
+Revision: 4989

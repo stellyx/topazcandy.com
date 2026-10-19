@@ -1,0 +1,51 @@
+The Kobold Warrens
+==================
+
+                         +-----+----+----+---+
+                         |                   |
+                         +                   |
+                        /|                   |
+                       / |                   +
+                      /  +--+--+--+          |
+                     /        /              |
+                    /        /      +----+---+
+                   /  +     /       |
+                  /  /|    /        |        M--+
+                 /  + +   /         |        |   \
+                /  /  |  /          +  +--R--C  Azreth Forest River
+               /  +   + /           | /|
+              /      /|/            |/ |
+             +      / +             +  |
+            /      /                   |
+           /      /                    + 
+          /      /  +                  |
+         /      /   |            +     |
+        /      +----+            |     |
+       /             +--+        T--+--+            +--F
+      /                 |     Fissure  |            |
+     /                  +              +----T----S--+
+    /                   |              |         | 
+   /                    |              |         +
+  /                     |              |         ^
+ /                      |              |        /
++-----------------------|---------+----|-------+
+                        +--+--+        T                     +--D
+                              =        |                     |
+                              +--T--+--+ +         +----+----+
+                              =        |/|         |
+                     +--+--+--+        +-|+--T--+--+  +
+                                         |      |     |
+                                         +      +--+--+
+                                         |      |     
+                                         |      +
+                                     Feanwyyn
+                                      Weald
+
+
+EQ list needed.
+
+F - kobold Taskmaster with (Ratskin cloak and sharp wooden stick.)
+C - Skeleton of the chief. (Ratskin half-gloves and shortsword.)
+
+Source: http://wiki.qhcf.net/index.php?title=The_Kobold_Warrens&oldid=5056
+Revision: 5056

@@ -1,0 +1,29 @@
+The High Pass
+=============
+
+                +  +---+--+    +--+
+                 \ |       \   |   \
+                   +        +--+    +--+    +--+--+--+
+                  /         |           \   |        |
+             +-+-+    Planar Sanctum     +--+        +
+ Plains     /                                        |
+ Of--+--+--+                                         +
+ Udgaard                                             |
+                                                     +
+                                                     |
+                                               +--+--+
+                                               |
+                                               +
+                                               |
+                                               +
+                                               |        
+                                               +        
+                                              /|       
+                                             / +
+                            The River Nanthor  |  
+                                               +
+                                               |
+                                               +--Ar'atouldain
+
+Source: http://wiki.qhcf.net/index.php?title=The_High_Pass&oldid=4965
+Revision: 4965

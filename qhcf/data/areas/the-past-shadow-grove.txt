@@ -1,0 +1,34 @@
+The Past Shadow Grove
+=====================
+
+                  4        +--+--+
+                  |        |  |  |
+                3-6-1   +--+--+--+--+--X
+                  |     |     |     |
+                4-5-2 1-+--S  +     +
+                  |     |     |     |
+                6-1-----+--+--+--+--+
+                  |     |  |  |  I  |
+                5-2-4 1-+--C--+  =  +
+                  |     |  |  |  O  |
+            L--E--3-6   |  |  |  |  |
+                  |     +--+--+--+--+--*--E--Forbidden
+                  4-5      |  |  |            Forest
+                           +--+--+
+
+
+Deeper into the Grove - The shadows of the forest seem to deepen.
+Pathway out - You think you can make out faint sounds of life in this direction.
+Exit to Forest - A small path leads back to the path.
+
+E - The Edge of The Shadow Grove
+O - Outside a Small Cottage
+I - Inside a Small Cottage
+    (Ghostly)Old Wizard (thin silver ring, strange sword of etched steel)
+X - Dead End Pathway
+C - A Small Clearing in the Shadow Grove
+S - A Smoke Filled Clearing
+L - At the Edge of Land's End
+
+Source: http://wiki.qhcf.net/index.php?title=The_Past_Shadow_Grove&oldid=4983
+Revision: 4983

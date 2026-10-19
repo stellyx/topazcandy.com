@@ -1,0 +1,52 @@
+Valley of Veran
+===============
+
+Veran
+Suggested levels 35 - 51
+
+                    p           a                  a: Jhariden (muddy white robe, black canvas beltpouch)   
+                   /            |                     Efaene (suit of mithril chainmail, a dirty blue surcoat, 
+                  +-+           +                     embroidered with the symbol of a phoenix, 
+                 /   \          |                     massive spiked mithril hammer)                     
+                +     +     +-+-+
+               /       \    | | |
+            +-+         +-+-+-+-+-+                                                
+           /              | |   | |                                                              
+          +               +-+   +-+-+                                                       
+         /                |     |   |                          
+Mount  -+                 +     +   +   + 
+Kiadana                   |     |   |   |
+                          +-+-+-+   +-+-+   b   +-c
+                            |   |   | | |   |   |                    |
+                   Murky    +   s-s-+-+-g-+-+-+-q   1<+-+-+-      -+-+-e
+                   Pool    /    | |   | |       |         ^        |
+                          /     +-+   +-+       +  -+-+-+>+        L-+-
+                         /     / /              |   ^     |          |
+                        +--+--+-+             +-+   1   l-e        @-l
+                           |                    |   |
+A: Gates to the Academy    +                    +-A-+
+b: Building                                     |   |                         
+c: Rainbow Runner                               +   2                        
+e: End of Hall                                      v
+g: By the ancient, collapsed Gateway              2<+
+l: Laboratory                                        \
+L: Soul of Veran                                     -+
+p: Highest Peak                                       |
+q: City Square                                        +
+s: On the shore of a Murky Pool                       |
+                                                     =+=
+                                                      |
+                                                      +
+                                                      =
+                                                      +-+
+
+Credits
+Luckily, the moss hasn't grown on the writing. It reads:
+Behold, the Valley of Veran...
+Made by Mayesha in 2001, for the Carrion Fields MUD only.
+Do not distribute or modify without the author's permission.
+
+Don't feed the plants.
+
+Source: http://wiki.qhcf.net/index.php?title=Valley_of_Veran&oldid=5103
+Revision: 5103

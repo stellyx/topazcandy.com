@@ -1,0 +1,107 @@
+Voralia's Tears
+===============
+
+                                                                               AzureMain
+                                                                                     |
+                                                                   the Headwaters    +
+                                                                    of the           |
+                                                                  Voralia's Tears  +-+-Riverside Path
+                                                                                   |
+                                                                                   +
+                                                                                   |
+                                                                                   +-----+
+                                                                                   |    /
+                                                                                   +   +
+                                                                           Falls  /   /
+                                           C - A water filled Cave               I C /
+                                           I - In front of some misty falls     /  |/
+                                                                             +-+---+
+                                                                             |
+                                                                           +-+
+                                                                           | On the Voralia's Tears
+                                                                           +
+                                                                           |
+                                                                           +
+                                                                           |
+                                                                           +
+                                                                           |
+                                                      RedhornMountains---+-+
+                                                                         |
+                                                                         + On the Voralia's Tears
+                                                                         |
+                                                                         +
+                                                                         |
+                                                                  .>+--+-+
+                                                                  | |
+                                                                  | |
+                                                  NorthernRoads---+-+ On the Voralia's Tears
+                                                                .>| |
+                                                                | | |
+                                                NorthernRoads---+-+-+<.
+                                                              .>| | | |
+                                                              | | | | |
+                                                            .>+-+-+-+-+<. On a Wide River
+                                                            | | | | | | |
+                                                        +---+-n-n-N<n-n-+---+ North of the docks
+                                                        |     | |   | |     |
+                                                        |     d-d-d-d-d     | 
+                                                        |                   |(15)
+                                                        |     Voralian      | 
+                                                    (12)|        city       | 
+                                                        |                   | Under a Bridge
+                                                        | |     | | |       |
+                                                        | d-d-d-d-d-d-d     | 
+                                                        | | | | | | | |     |
+                                                        +-s-s-s-s-s-s-s-s-+-+ South of the Docks
+                                                          | | | | | | | | |
+                                                          '>+-+-+-+-+-+-+---BramblefieldRoad
+                                                              | | | | | ^_|
+                                                              '>+-+-+<'
+                                                                | |\|
+                                                                +-+    An Expansive River
+                                                                |
+                                                                +
+                                                                |
+                                                       |        +
+                                 direction of          |        |
+                                 the river current     |        +     Voralia's Tears
+                                                       V        | 
+                                                                +
+                                                                |
+                                                                +
+                                                                |
+                                                              +-+
+                                                              |
+                                                              +
+                                                              |
+                                                          +-+-+
+                                                          |  A Bend in Voralia's Tears
+                                                    +-+-+-+
+                                                    |
+                                                +-+-+
+                                                |
+                                                +-EasternRoad
+                                                |
+                                                + Under a Bridge
+                                                |
+                                                +-EasternRoad
+                                                |
+                                            +-+-+
+F                       Voralia's Tears     |
+e      Galadon      +-+-+-+-b-b-b-+-+-+-+-+-+
+a         |         |       ^               |
+n-g-g-g-g-g-g-+-+-+-+       |             Blackclaw
+w                      The Mountain Stream
+y
+y
+n
+
+b &#160;:At the Base of a Bluff
+g &#160;:On The River (inside Galadon)
+N &#160;:North of the Docks, Below an Island of Magic
+
+Once the river gets to Feanwyyn it becomes part of Feanwyyn, so it is
+easier to just look at that map.
+
+Source: http://wiki.qhcf.net/index.php?title=Voralia%27s_Tears&oldid=4997
+Revision: 4997

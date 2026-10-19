@@ -1,0 +1,118 @@
+Desert of Araile
+================
+
+Desert                    HamsahMutaz
+  of                           |
+Araile                  HamsahOutskirts
+                               |  |        HamsahOutskirts
+                               C--+        |
+                               |           |  
+                   W--W--W--W--C--W--W--W--W--W--R
+                   |  |  |  |  |  |  |  |  |  |  |   
+                   W--W--W--W--C--             --R 
+                   |  |  |  |  |                 |
+                   W--B--W  W--C-+-+-+-+--TR     |  
+                   |  |  |  |  |                 |
+                   W->W- `--W--C--             --R
+                   |  |     |  |                 | 
+                   |  N      --C--             --R--Tahril Mountains     
+                   |  |        |                 |  
+                   |  V  |   | |  |  |  |  |  |  |   Talshidar Caves 
+   SandsOfSorrow-+-W-wVE-C-C-C-C--W--W--W--W--W--R /(west entrance)
+                   |  V  |     |           |  |  |/      (need flight) 
+                   W-         -W-         -W--W--R 
+                   |           |           |
+                   W-         -W-        Entering a Strange Oasis
+                   |           |         (Village of Thri-Keen)
+                   W-         -W-        (map below)
+                   |           |        
+          TheDryRiverBed    OryxSteppes  
+                                             
+                                  
+                                    
+                                         
+C - Caravan Road
+E - Eastern Watch of Village (map below)
+N - Northern Watch of Village (map below) 
+w - Western Watch of Village (map below)
+V - village location
+R - The Rocky Desert
+TR- The Temple of Red Sands (map below)
+W - Wandering in the desert
+B - Bandit leader
+
+Village
+                          |
+                          N
+                          |
+                       I--+--I
+                          |
+                    I     +     I
+                    |     |     |
+            --W--+--+--+--+--+--+--E--
+                    |     |     |
+                    I     |     I
+                          |
+                       L--+--I
+                          |
+                          +
+                          |
+                          + Inside the Elders' Tent
+
+I - Inside a Tent
+L - Inside the Leader's Tent
+W - The Western Watch
+N - The Northern Watch
+E - The Eastern Watch
+
+
+The Temple of Red Sands
+
+                            +  +  +
+                            |  |  |
+                         +--+--+--+  N - Nepenthe's Shrine
+                         |  |  |  |
+                         +  +  N  +    +
+                         |             |
+    The Temple Path --+--+--+--+-------+ An Open Round Chamber
+                         |             | 
+                         +  +  +  +    +  
+                         |  |  |  |
+                         +--+--+--+--+
+                            |  |  |  |
+                            +  +  +  +--+ The head priest of the Temple
+                                          ( (Glowing) a pendant of the swirling winds
+                                            dark red belt )
+
+The Thri-Keen Village
+
+                     |
+                     + Entering the Thri-Keen Village
+                     |
+                     |
+               +     |     +
+               |     |     |
+      W--+--+--+--+--+--+--+--+
+                  |  |  |  |
+                  +--+--+  +
+                     |     |
+                     +     + Gygax ((Glowing) a braided circlet of dusty red crystal)
+
+
+Notes
+* All things in Main Araille map are where things are located in relation to each other, the desert
+  itself has a lot of rooms that lead into each other and is not fun to map. If you walk along the
+  edge you can find everything except Nomad Village and the Temple, for those, just follow caravan 
+  road. A few steps south from the gate you'll see a temple path, and keep following the road down 
+  and west for the Village.
+
+Credits
+* a rather standard metal shield, it bears some writing, that seems completely untouched by the harsh 
+  desert winds....it reads:
+
+    Written by Shokai, for the use of Carrion Fields.
+    For levels 5-25, have fun...and consider these bones
+    testimony to the consequences of traveling unprepared....
+
+Source: http://wiki.qhcf.net/index.php?title=Desert_of_Araile&oldid=5032
+Revision: 5032

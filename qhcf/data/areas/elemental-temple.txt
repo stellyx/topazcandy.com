@@ -1,0 +1,52 @@
+Elemental Temple
+================
+
+                          R   F   E   P   W   X   I                             
+                          |   |   |   |   |   |   |                             
+                          +   +   +   +   +   +   +                             
+                          |   |   |   |   |   |   |                            
+                          +-+-+-+-+-+-+-+-+-+-+-+-+                                      
+                                      =                                     
+                              +   +-+-+-+-+   +                                       
+                              |   | | | | |   |                                  
+                            +-+-+ +-+-+-+-+ +-+-+                                      
+                              |   | | | | |   |                                
+                          +   +   +-+-+-+-+   +   +                                  
+                          |   |   | | | | |   |   |                            
+                        +-+-+-+-+-+-+-+-+-+-+-+-+-+-+                                     
+                          |   |       |       |   |                           
+                          +   +       +       +   +                           
+                              |       |       |                              
+                            +-+-+   F-+-F   +-+-+                                   
+                              |       |       |                              
+                              S       +       +                              
+                                      |                                     
+                                Shadow Grove      
+                                  
+Entrance found on the Shadow Grove map. From the edge of shadow grove
+look in each direction following "this way is darker", when you reach
+'north west east' intersection go west*2, north*3, east.  Looking east
+will confirm 'Something different in this direction.'
+
+Norecall after door to Arch-Bishops
+
+F - Fountain                                                                           
+S - Draconian spy (key in the robe)
+E - Arch-Bishop Merimar ((G)mace of earth, (G)mantle of earth)
+F - Arch-Bishop Magmus ((G)orb of fire, (G)mantle of fire)
+R - Arch-Bishop Shiamoor ((G)mantle of frost, (G)mace of frost, (G)orb of ice)
+P - Pope Medius (staff of Medius, (G)(H)mantle of Medius, (G)orb of Medius)
+W - Arch-Bishop Plantumau ((G)mantle of water, (G)mace of water)
+X - Arch-Bishop Czavko ((G)mantle of electricity, (G)mace of electricity, (G)orb of electricity)
+I - Arch-Bishop Aeristoma ((G)mantle of air, (G)mace of air, (G)orb of air)
+
+Notes
+orb of fire - say ferrinshilt - Grants resist heat.
+orb of air  - say aeriloshilt - Grants fly.
+
+Elemental blasts may dispel shields. Medius only seems to dispel.
+(G): Glowing
+(H): Humming
+
+Source: http://wiki.qhcf.net/index.php?title=Elemental_Temple&oldid=5126
+Revision: 5126

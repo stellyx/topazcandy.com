@@ -1,0 +1,74 @@
+The Talshidar Caves
+===================
+
+Talshidar             +                    K                                      
+                      |                    |                                       
+  Caves             +-+-+------------------+                                       
+                      |                   /|                                       
+                      +                  2 |                                       
+                      |                 /  |                                       
+                    +-+ the top: both  1   |                                       
+                     /|exits lead back down|                                       
+                    2 |        ^           |                                       
+                   /  |       +            |                                  
+                  1   |      ^             |                    the top            
+                      |   +-T              |                       /               
+                      |     |              +------------------+-+-+                
+                      |     +              |                     /                 
+           C=+=CX     |     =              +-+                  /                  
+             |        |   +-+-+            |                   /                   
+           C=+-C      |     | |            +                  /                    
+             =        | P   + +            |                 /                     
+             +        | |  /               |                /                      
+             | top  +-+ + /                |               /                       
+             + /    | | |/                 |              /                        
+             |+---+-+ +-+----------------+-+-+           /                         
+             /          |                    |          /                          
+            /|          H                    D         /                           
+           / |         +-G                            /                             
+          +  +-+-+-+   |                             /                               
+         /     +   +-+-+                            /                               
+        +--+-+-+ 2   +---------------------+-+     +                                
+       /       |/    |                       |    /                                 
+      /        1-+-+-+                       +-+-+                                    
+     +--Mines    |   |                          /                                   
+    /            +   +-+                       +                                    
+   N            /|                            /                                     
+  /      +-+-+-/-+                           N                                      
+Araile        /                             /                                       
+             +                       TahrilMountains                                              
+            /                                                                      
+           +   W                    
+           |   |                                                                   
+       F-+-+-+-+                                                                   
+         |   |
+         A   B
+
+G - The forge, duergar blacksmith (thick iron collar, pair of thick leather gloves, large forge hammer)
+C - dark cell
+CX- Zalnul the torturer (black leather jerkin, mask of sparkling ruby and caked blood,
+    a pair of black leather leggings, a hot steel poker)
+W - warded summoning chamber (Algholu)
+B - Alistin (amulet of protection, dark violet robe, black leather belt pouch, topaz encrusted bracelet,
+    titanium shod quarterstaff)
+A - An alcove (desk with papers)
+N - Near the base of a large mountain                                                                                
+F - Fulstil (ring set with a carved opal skull, black robe of Sorcery, black leather belt pouch, 
+    black adamantite shortsword)
+    Pile of corpses (single horned dragon skull, arm bone of a giant)
+D - Drelnarst (band of onyx, blood red leather jerkin, black leather leggings, studded black leather sleeves,
+    double blade pole-axe)
+H - Chamber of the High Priest, Kulsthil (obsidian symbol of Talshidirus, rune covered leather jerkin, two-balled battle 
+    flail, pair of black leather leggings)
+    a box (jewelled sacrificial dagger)
+K - Chamber of death, Kildara (necklace of fire opals, demonic looking mask, thin mithril staff) 
+    trophy case (pair of dark green gloves, shield emblazoned with a crimson cross, skull of an elf)
+P - Before a strange portal
+T - Throne room, Balthashmir (black and white striped heartstone ring, obsidian eye amulet, onyx-bladed spear)
+
+Notes
+* If you go all the way to the top after entering from the desert you will plummet to your death.
+  And then if you try to retrieve your corpse you will die again.
+
+Source: http://wiki.qhcf.net/index.php?title=The_Talshidar_Caves&oldid=5033
+Revision: 5033

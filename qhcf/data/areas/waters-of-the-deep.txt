@@ -1,0 +1,89 @@
+Waters of the Deep
+==================
+
+Waters of the Deep, suggested levels 15 - 50
+
+        DragonSea
+             \     
+              \
+            U--+   <----Here is the entrance under the docks, visible from HamsahMutaz
+             \          Another entrance is the Whirlpool in the ArythOcean
+              +          Note: Whirlpool and Waters of the Deep are the same area,
+               \               so I've consolidated them.
+                +
+                 \
+            S--+--+
+             \     \
+          C1--+     \              
+                    maze
+                      \
+                  The Landing
+
+
+                    +     +--+        +
+                    |     |  |        |\
+           +--+--+--+--+--+--+--G--+--K C2
+          /      =  |     |  |        |
+         /       +  +     +--+        +
+        /        |           |
+       +     A   +           +         
+       |     |               |
+       +--+--I--+--+--+      +
+             =        |
+          +--+--+     |
+             |        |
+             +        |
+             |        |
+             |        |
+             |        |
+             |      a |
+             |      ^\|
+             |      | +  ArythOcean
+             |      +          /
+             |      |         v      
+             |      M--+     +
+             |      |  ^    /
+             |      +  |   v
+             |         +  +
+             |         ^ /
+             |         |v
+             |         +        +--+
+             |                 /| /|
+             |/               +--+ |
+      +------+--------+  +    | +| +
+      |/     |        |/ |    |/ |/ Cage
+      +------+--------+--+--+=+--+ 
+      |      |/       |  |
+      +--The landing--+  +
+             |
+             |
+             |
+             |
+          T--+--W  Holding Pen  H  H
+             |     |            |  |
+             +--+--+------------+--+--H
+             |     |            |  |
+             |     Holding Pen  H  H
+             |
+   Chamber --+-- Unholy Chamber
+             |   Priest (a small pouch)
+             |
+         A Shrine
+
+U - under the docks, visible from HamsahMutaz
+S - An enormous sea serpent (Serpent-scale armor)
+C1 - Silver chest (treasures)
+T - Tailor sahuagin (a seashell dagger)
+W - weaponsmith (a bone-tipped spear, a coral dagger)
+H - A Common House
+a - Air chamber
+M - Muddy Intersection
+A - Altar/ Shrine. You can recall from here.
+I - An Intersection.
+G - Captain of the guards (in the pouch he wears, there is a key to unlock the door from whirlpool to waters of the deep).
+K - Sahuagin King (Cloak of the Deep, spear of sahuagin, fine coral necklace, talon of the Sahuagin King)
+    sahuagin priestess (ring of coral, shell necklace, small stone dagger).
+C2 - chest (bone bracelet, 15 gold)
+
+Source: http://wiki.qhcf.net/index.php?title=Waters_of_the_Deep&oldid=5089
+Revision: 5089

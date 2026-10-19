@@ -1,0 +1,94 @@
+The Dragon Sea
+==============
+
+Ding!  Ding!
+
+A sign on the buoy reads:
+
+The Dragon Sea was written by Sattanos for exclusive use on
+Carrion Fields.  Any use of this area is strictly forbidden without
+the writer's consent.
+
+The sea has many creatures who will leave you alone as long
+as you leave them alone.  The ships which sail the waves will
+welcome those who ask, "Permission to come aboard?" and
+hold a symbol the captain can recognize.
+
+Many thanks to the patience and creativity of Vassagon who put
+the wind in the sails of the ships.
+
+
+           Loop back in a confusing but consistent manner 
+                      >  v  <  <
+                      |  |  |  |
+                      O--O--O--O
+                      |  |  |  |
+                      O--O--O--O--O--O
+                      |  |  |  |  |  |
+                      O--O--N--O--O--O--VDramirsCove
+                      |  |  |  |  |  |
+                   O--O--C  H  C--O--O--O
+      Fields of    |  |   Is. of  |  |  |
+       Balator--O--O--C   Corte   C--O--O
+                |  |  |           |  |  |
+         +---O--O--O--O--C--C--C--O--O--O--B--Arkham
+         |   |  |  |  |  |  |  |  |  |  |
+    Seaport--O--O--O--O--O--O--O--O--O--O
+         |   |  |  |  |  |  |  |  |  |
+         1---O--O--O--O--O--1--O--O--O
+         v   |  |  |  |  |  |  |  |  |
+         M H-M--R--R--R--R--R--R--R  MountKiadanaRah
+             |  |  |  |  |  |  |  |
+             |  
+TahrilMountains 
+
+B - Before Arkham Harbor
+C - The Cliffs of Insanity
+H - The Harbor
+M - The mouth of the river (Hamsah map)
+N - North of a Harbor
+O - The Open Sea (with an exit down)
+R - The Great Reef
+1 - North from beneath links to here.
+
+One Level Down
+                             -x--x
+                     |  |  |  |  |
+                    -x--x--x--^--^
+                  |  |     |  |  |
+               x--^--^     ^--^--^--x
+               v  v           v  v  v
+               e  e          &#160;? &#160;?  e
+              &#160;? &#160;?           1 &#160;?  1
+               ^  ^           ^  ^  ^
+            ^- ^--^?          ^--^--^
+            |  |  |           |  |  |
+         ^--^--x-   -^--^--^--^--^--^--^
+         |  |  |  |  |  |  |  |  |  |
+   +--+--x--x--x--^--^--x--x--^--^--^
+    \    |  |  |  |  |  |  |  |  |
+WotDeep  ^--^--^--^--^--x--^--^--^
+
+e - South one way as expected to Beneath the Waves 
+^ - Beneath the Waves (up only) (Or one way north to Open Sea)
+x - Beneath the Waves (Up and down)
+? - Untested/unchecked
+
+Two Levels Down (The Depths)
+
+               ^
+               |
+               ^   
+               |
+               ^
+               |
+         ^--^--^     &#160;?-^--x
+                        |   \
+                        ^  UnderdarkSea
+
+TODO 
+
+* Rollup a stormie and test all links, finish Two levels down (The Depths)
+
+Source: http://wiki.qhcf.net/index.php?title=The_Dragon_Sea&oldid=5091
+Revision: 5091

@@ -1,0 +1,59 @@
+Village of Lallenyha
+====================
+
+Village of Lallenyha
+
+Suggested Levels: 1-20
+
+Village of Lallenyha written by Iunna, 2002 for Carrion Fields only.
+Unauthorized use is prohibited.
+
+                                        +--+--+
+                                        |     |
+                                  +--+--+     +  +
+                                  |      \    |  |
+         +--+--+--+--+--+      +--+       +   +--+
+         |     |     |  |                  \     |
+   +--+--+     +     s--J                   +    +--+
+   |           |        |                   |        \A
+  Jade         +--+     +--+--+             +--+  S
+Mountains         |     |     |                |  |
+               +--+     |     +             +--+--+--F
+               |  |     |     |             |        |
+               +--+--+--+     +          +--+--+--F  +--+
+                     |        |             |  |  |  |
+                     +--+--+--+       +--+--+  +--+--+--+
+                              |      /      |        |  |
+                              +--+--+       +--+--+--+  +--+
+                                               |  |   B\   |
+                                               +  H     +--+
+
+                      A\
+                        +
+                        |
+                     +--+
+                     |
+     +               F
+     |               |
+  +--+               +--+
+     |                  |
+     +                  +
+      \                 |
+       +  +             +
+       |  |\            |
+       +--+ +--+--+--+--+
+            |      \B
+            +--L
+
+
+L – Lakayila (hooded cape of bear fur)
+    Lallenyha (pendant set with several jade stones, hooded cape of
+               elk skin)
+    Vanyllal (headdress of porcupine quills, hooded cape of lion fur)
+H - Huntress
+s - Spring
+J - Jacob the Taint
+S - Shenanya
+
+Source: http://wiki.qhcf.net/index.php?title=Village_of_Lallenyha&oldid=5115
+Revision: 5115

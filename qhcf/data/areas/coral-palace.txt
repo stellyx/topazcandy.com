@@ -1,0 +1,79 @@
+Coral Palace
+============
+
+Trick 1:
+2s on ArythOcean
+Down to deep in the ocean
+South and east until down is 'too dark to see' (using exits)
+Down
+South until on the ocean floor
+East until down
+Down to kelp forest
+Look for 'You think you see a break in the forest.'
+
+Trick 2:
+Talitha tells the group 'all south, all east, and scan for sisters.'
+Talitha tells the group 'from sisters, it's u s d to kelp forest.'
+Swim around one room above the ocean floor,
+until you can swim down to 'The kelp forest'.
+Scan: You think you see a break in the forest.
+
+Trick 3:
+5e, 9s, all down from the reef just south of coral head.
+
+                        |
+            +--+        P        +--+
+            =  |        |        |  =
+            S  +--+--+--+--+--+--+  F
+               |        |        |
+               +        I        +
+               |        |        |
+            A--+     +--+--+     +--G
+               |     |   / |     |
+               +     +  X  +     +
+               |     |  |  |     |
+            R--+     +--+--+     +--W
+               |                 |
+               +                 +
+               |                 |  
+            E  +--+--+--+--+--+--+  +
+            =  |     |     |     |  |
+            +--+     +     +     +--+
+
+                                            Q
+                                            |
+                     +--Z--+        +---+   +
+                        |           |  /    |
+        L--+--+     Air + Chamber   +----+--M
+        |     |         |            /
+        +  +--+      +--U--+        O
+        |   \        |  |  |        |
+        K    \ +--+--U  x  U--+-----+
+              \|     | /   |
+               O     +--U--+
+                        |
+                  Water + Chamber
+                        |
+                     +--B--+
+
+A - Armorer
+B - Triton grand bishop (coral ring, coral amulet, mantle of the shark)
+E - Aquatic elf (wand of the sea)
+F - Reef giant (cirlet of the living seas)
+G - Grocer's
+I - Spring
+K - Triton King (pearl crown of the tritons)
+L - Electric eel [Agressive]
+M - Man-o-War [Agressive]
+O - Royal Bodyguard [Agressive] (R: staff of striking)
+P - Palace Gates
+Q - Triton Queen (Pearl of Power)
+R - Provisions Store
+S - Sahuagin Spy (Ring of the Sahuagin) [Agressive]
+U - Elite Triton Guard [Agressive]
+W - Weapon Shop
+Z - Triton Wizard [Aggressive] (bracers of defense, staff of wonders)
+    Holds you when you enter.
+
+Source: http://wiki.qhcf.net/index.php?title=Coral_Palace&oldid=5134
+Revision: 5134

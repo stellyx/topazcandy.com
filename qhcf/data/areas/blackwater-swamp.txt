@@ -1,0 +1,53 @@
+Blackwater Swamp
+================
+
+This area was written by Divox in the year 2002, for Carrionfields. 
+No unauthorized use allowed. Thanks Grum!
+
+                              +  
+                              |  
+                              +  Stream
+                              |
+            +-+-+--+-+-+-+-+-+-+
+            | | |  | | | | | |
+        +-O-+-+-+--+-+-+-+-+-+
+        | | | | |\ |     | | |
+        | | | | | B|     | | |
+     F  +-+-+-+-+--+ s-J +-+-+  F
+     r  | | | | |  | | | | | |  r
+     i  +-+-+-+-+--+ s-s +-+-+  i
+     n  | | | | |  | | | | | |  n
+     g  +-+-+-+-+--+ C-s +-+-+  g
+     e  | | | | |  |   = | | |  e
+        +-+-+-+-+--+-+-+-+-+-+
+        | | | | |  | | | | | |
+        +-+-+-+-+--+-+-E-+-+-+
+            | | |  | | | | | |
+            +-+-+--+-+-+-+-+-+   +
+                   |     |   |  /|
+                   +     q   + / +
+                D  |         |/  |
+                i  +         +   +
+                r  |             |
+                t  +             +
+                   |             |
+                T  +    TheValeofArendyl          
+                r  |                   
+                a  +    
+                i  |                   
+                l  +                   
+                   |
+                   +
+                   |
+             TheShire
+
+C: Cynyr - aggro, hidden assassin. (some felar only gear, steel tipped spear)
+E: Ekuar - camo ranger. spider-hilted steel sword
+J: Juzoch - aggro, hidden thief. (some arial only gear, obsidian kris)
+O: Orc warmonger - necklace of elven ears, large two-handed steel morningstar
+q: Quicksand             
+s: Shack
+B: The Black Lair
+
+Source: http://wiki.qhcf.net/index.php?title=Blackwater_Swamp&oldid=4987
+Revision: 4987

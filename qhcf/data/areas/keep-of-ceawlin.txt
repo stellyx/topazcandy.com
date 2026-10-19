@@ -1,0 +1,47 @@
+Keep of Ceawlin
+===============
+
+                               +--+---+---+---+--+      
+                               |  |              | 
+                               |  |              |
+                               +--+-+-+          +  +--+
+                               |  |              |  |  |
+                               |  |   +   +      |  |  |
+                +--+--+--+     +--+  /|   =      +=-+--+
+                |  |  |  |     |  | 2 | +=+=+-+  |  |  |
+                |  |  |  |     |  |   =   =      |  |  |
+         Aturi--+--+--+--+=-+--+--+=+-+---+-+=+  +  +--w      w: well 
+                |  |  |  |     |  |   |       =  |
+                |  |  |  |     |  |   | 3     +  |
+                +--+--+--+     +--+   |/         +
+                               |  |   +          |
+                               |  |              |
+                               +--+---+---+---+--+
+
+                         /                             +
+                        2                              |
+                        |                              DC     D: Duke (dagger of Betrayal)
+                      +-+-+-+                          =      C: Captain (embossed breastplate,                     
+                        |                            +=+=+          serrated halberd)
+                      +=+=+                            |
+                        =                            +=+=+
+                        +                              =
+                                             +         +  
+                                             =         |
+                                           +=+=+       +
+                                             |        /|
+                                           c=+=+     / +      c: chest (Ducal scepter)    
+                                             |      /
+                                           c=+=+   /          c: chest (training mace/sword)
+                                             |    +
+                                           +=+=+ /
+                                             |  / 
+                                             | /
+                                             |/ 
+                                             +    
+                                            /
+                                           3                   
+                                          /
+
+Source: http://wiki.qhcf.net/index.php?title=Keep_of_Ceawlin&oldid=5138
+Revision: 5138

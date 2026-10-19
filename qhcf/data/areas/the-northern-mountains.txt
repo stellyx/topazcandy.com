@@ -1,0 +1,102 @@
+The Northern Mountains
+======================
+
+The Northern Mountains
+
+This area re-written by Rogardian, 2003.  Original layout by ShaidarHaran.
+For use only on the Carrion Fields, unless permission is otherwise given by
+the Carrion Fields Implementors.
+
+Thanks to everyone that helped with the area, especially Vynmylak, Alysrith,
+Sevarecan and Blachmianan for their initial editing help, Thrakburzug, Arvam,
+and Valguarnera for their finishing touches, and Sebeok for the progs.
+
+               Healer
+                 |
+                 |  K - Cloud Giant King
+                 |  |
+              +--+--+
+                 |
+        Trainer--+--Spring
+                 |
+                 +--+
+                 |  |
+              +--+  C - Paladin Commander
+              |
+              +     +--+--+
+              |     |     |
+   +----------+--+--+     +
+   |             |        |
+   +             +        +--+
+   |             |        |  |
++--+             +        +--+
+|                |        |
+|                |        +
+|                |        |
++            +---+--------+
+|           /             |     
+|          +              +
+|          |              |
++--+--+    +--+--+        +--+--Northern Trails
+   |          |           |
+   +--+--+    +        +--+
+      |   \   |        |
+      +    +--+        +
+      |                |
+   B--+                |
+      |                |
+      +------+---------+
+             |
+             |
+             |
+             |         
+             |
+             | The White Lair
+             |/
+             +
+             |
+             +--+--+
+             |
+             +
+             |
+             +
+             |
+         +   +
+        /    |
+       +--+==+--+
+             |
+          +  +     +
+          |  |     |
+       +--+--+--+--+
+       |     |
+       b  +->+
+         /   |
+        +----+
+             |
+             +
+             |
+             +--+
+                |
+                +
+                |
+                +
+                |
+              +-+--+ The pass
+              |    |
+ Mount Calandaryl  +
+                   |
+                   +--+--+--Udgaard
+                      |
+              Narrow Gamepath
+
+Gorindos the Cloud King is using:
+<worn around neck>  the mantle of the cloud giants
+<worn on legs>      a pair of leggings studded with spikes
+<worn about body>   some heavy furs
+<mainhand wielded>  a massive acid-etched flamberge
+
+B&#160;: arctic bear (a crude bear skin cape)
+b&#160;: Blacksmith's shop
+
+Source: http://wiki.qhcf.net/index.php?title=The_Northern_Mountains&oldid=5085
+Revision: 5085

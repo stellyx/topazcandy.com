@@ -1,0 +1,142 @@
+The Galadon Sewers
+==================
+
+ This area written by Amaranthe in March of 2003. It is a complete cosmetic
+ and partial functional revamp of the stock ROM sewers area written by
+ Diku. For use by Carrion Fields only.
+
+== LEVEL 1 ==
+
+      +-----C----+--->+--->+--+--+
+      |     |    |         |     + The Watery sewer
+   +  +--+  |    H--+---+  +     +
+   |     |  |    |  |   |  |     |
+   +--+  +--|----+  +   +  +--+  +--+ A ledge by the dark pool
+   |  |  |  |    |      |  |  |  |  |
+   +  |  |  |    |      |  |  |  |  |
+  v   +--+  | +--+--+   +--+  A  +  |
+ 6    |     |  \    |         |  |  |
+      |     |   +   |         |  |  |
+      |     |       |         |  |  | A ledge by the dark pool
+      |  +--+----R--+   +     +  +--+
+      |  |       |     v|     |  |   \ The fissure
+    +-+--P     +-0-+  3 |     |  |    \  under the ledge
+   /  |  |    v  |  v   W  T  +  +     +
+  /   |  |   1   |   4  |  |  |  |      \
+ 2    +--+-------R------+--+--+--+       +
+                 |                The Edge of the Water
+          Galadon River
+
+# - Stairs
+
+0 - Below Large Intersection, Galadon
+A - Below Assassins Guild
+C - Below the Clerics Guild?
+D - Docks
+H - Another intersection
+M - Below the [mage] Guild?
+P - Below AP's Guild
+R - A Large Sewage Junction
+T - Below the Thieves Guild
+W - Below the warriors Guild
+
+== LEVEL 2 ==
+
+                                  L
+                                  |
+                            A--+--+
+                               |
+              +----+----+   +--+
+              |    |    |\  |
+              +-@  @  @-+ = |
+              |         |  \|
+              +-@     @-+   +
+              |         |
+              +-@     @-+    3
+              |         |   /
+              +-@  @  @-+--+
+              |    |    |
+              +----+----+
+             /|    |
+    6--+ U--+ |    +
+       |   /  |   /
+     2 |  @   |  5
+    /  |      |
+   +---+------1--4
+  /
+ 2
+
+A - A Strange Altar Room
+L - An Abandoned Laboratory
+U - Underdark
+
+== LEVEL 3A ==
+
+             Lloth's Shrine
+                   |
+                   |
+                   | The Entrance to
+    +---<----+--G--+ an Unholy place
+    |           |
+    +  +--+--+--+--+--+  Dark Cavern Tunnel
+    |  |        |     |
+    +--+        +-----R  A Massive Cavern
+    |  |
+ B--B  S--S-=+--+---+--+ Dark
+ |  |  |  |     |   |  |
+ B--B  +--S  A  + 2 +  + Cavern
+ |        |  =  |/  |  |
+ +        +--+  +   +--+ Tunnel
+ |        |         |
+ +--+     +----+----+
+ |  |     |
+ +--+--+--+
+ Pool  Spongy room
+
+A - A Primitive Altar Room
+B - Umber Hulk Lair
+G - Glittering Room
+R - Red Dragon
+S - Square lair
+
+== LEVEL 3B ==
+
+      +=M
+        |
+        +--+
+        |  |
+        +--+
+        |  |
+        +--+  +  +--+
+        |     |  |
+        +--+--+--+
+              |
+              +   +--G        +
+              |   |           |
+              +   +--+--+--+--+
+              |               |
+           +--+--+            |
+           |       /          |
+           +------5----+------+
+
+5 - To level 2
+G - Gigantic rat
+M - Master mindflayer
+G fra 3b
+
+                 +
+                 |
+                 +     +
+                 |     |
+              +--+--+--+
+                 |     |
+                 +     +--P
+                 |     |
+         --G--+--+--+--+
+
+P - Wererat prince (girdle of rats!)
+
+rundt omkring giant wererats (brass collar)
+
+Source: http://wiki.qhcf.net/index.php?title=The_Galadon_Sewers&oldid=5135
+Revision: 5135

@@ -1,0 +1,33 @@
+Silverpine Road
+===============
+
+                 R--R        R         LochGrynmear
+                 |  |        |              |
+                 R--R--R--R--R              + Thickly wooded hills
+                 |  |  |  |                 |
+              +--R--R--R--R        S--S--S--+ A field at the edge of town
+                 |     |  |        |        |
+              B--W--T  R--R--R--S--S        +--+--+--+--+--+ Windy hill top
+                 |     |  |  |  |                       |
+              B--W--B  R--S--S--S                       + +--+ Ring of stones
+                 |     |  |  |  |                       |/   | 
+              +--S--S--S--S--R--R                       +    + Druid guild
+              |  |  |
+  Voralian ---S--S  O-=F
+    City      |     |
+              +  F=-O-=F
+              |
+              +
+              |
+        EaststrideRoad
+
+B = A small shop (basketmaker, potter, candlemaker)
+F = An old farmhouse
+S = Silverpine Road
+O = Orchard Way
+R = Rolling fields
+T = The Trapper's house
+W = River Way
+
+Source: http://wiki.qhcf.net/index.php?title=Silverpine_Road&oldid=5016
+Revision: 5016

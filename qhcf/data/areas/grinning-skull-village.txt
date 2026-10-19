@@ -1,0 +1,42 @@
+Grinning Skull Village
+======================
+
+                                                                              + Chief's Slave Pen
+                                                                       Throne |
+                                                              Breeder      +--+ Lavish Den
+                                                                 Pen +    /
+                                                                     |   /
+                                                                     S--+--+--+  +  +  +
+                                                                     | /|  |  |  |  |  |
+                                                                     |+ |  |  |  |De|ns|
+                                   +---+                    +--+--+  +--+--+  +--+--+--+ Dark Hallway
+                                  /|   |                   /      |     |        |De|ns|
+                                 + |   +--+               +       +-----+        +  +  +
+                                T| |   |  |Barracks      /
+                                r| +   G--+             +
+                             +  e|/|   |  |     +      /
+                             |  n+ +   +--+     |\    +
+              +--------+     +  c|/|      |     | #-- | ---->      The Slave Pens
+              |        |     |  h+ |      |     |     |             
+              + Moun   +--+--P--+--+---+--+--+--+--+--+                 +--+--+       
+              |  tains |     |     |   |        |     |                 |  |  |
+              +        +     +     + OP+--+     +     +  Temple         +--+--+
+              |        |     |  T /|      |           |                 |  |  |
+Akan +--+--+--+--+--+--+     +  r+ +   T--+--B     +--+--+              +--#--+
+                                e|/|                  |                 
+                                n+ +               +--A--TF
+                                c|/                      |
+                                h+                       +
+
+
+A - Altar
+B - Blacksmith
+S - Apprentice Shaman (Sells orc-specialised equipment)
+G - Graag The Savage (Train, Practice, Discuss - Berserker Guildmaster)
+P - Palisade Gate
+T - Trading post
+TF- Tremblefist the Shaman (Holds Items of Power, oversees Chieftain rites, gifts Adaptations at lvl 35) 
+OP- The OrcPassage area
+
+Source: http://wiki.qhcf.net/index.php?title=Grinning_Skull_Village&oldid=5022
+Revision: 5022

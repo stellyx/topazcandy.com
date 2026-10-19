@@ -1,0 +1,86 @@
+Ruins of Delar-Tol
+==================
+
+                                             LEVEL 1
+                                           -----------
+
+                                                     
+                                                     
+                                                     
+                                +                     
+                                |                     
+                    +     +  +--+--+     +     K           
+                    |     |     |        |     |          
+           +--+     +--+  +  +--+--+  +--+--+  +           +           +    
+           |  |     |     |     |        |     |           |           |
+RHM--+--+--+--+--+--+--+--A-----+--+-----+--+--+--+--+--+--+--+--1-----+
+           |  |     |     |     |              |  |        |      \    |
+           +--+     +--+  +  +--+--+           +  5        +       2   C
+                    |           |                  \      
+                    +        +--+--+                4   
+                                |                     
+                                +                     
+          +--+--+                 
+                |                  
+                +--+--+--+                  
+                |        |                  BOTTOM LEVEL
+                +        +                 --------------
+                |        |          
+                +        +--+--+                       +--+--+--+
+                |        |     |                       |        |
+                +--+--+--X     +--+--+--+              +        +--+
+                |  |           |        |              |
+          +--+--+  +        +--+        +              +--+--+
+                   |        |           |              |     |
+    B--B--B   4 +--+        |   1       +--+--+--+--+--+     +
+    |     |    \|           |    \                           |
+    B--B--B--+--3-----+--+--+--+--2                          +--+--+
+                |                 |                          |     |
+                +                 +          MIDLEVEL        +     +--+--+
+                |                 |        ------------      |           |
+                +     +--+--+--+--+             R--+         +          Lair
+                |     |                         |  |         |
+    +--+--+--+--+     +                         +--+         S
+    |           |     |                         |            |
+ +--+           +--+--+             +--+--+   5 +     +--+   +--+
+                |     |             |  |  |    \|     |  |       \
+          +--+--+     +--+          F--+--+--+--4--L--+--+        v
+          |              |          |  |  |     |\                **
+          +              +          +--+--+     + 3
+          |              |                      |
+          +              +                      +--+
+                         |                      |  |
+                         +                      +--+
+                                                     
+
+X = Sleep trap (look in the corpse and you fall asleep)
+L = felar sentry (ivory tail ring, leather hindpaws with bone tipped claws,
+                  leather forepaws with bone tipped claws)
+F = fire giants (nacreous mask of lizard skin, glistening dagger, 
+                 decorated mask of lizard skin)
+R = Artifact room (gnome with robe covered in glowing runes)
+B = Bazaar
+A = Arial guard (wandering) (flail wing braces claws red armor)
+K = (invis) Khruvnil (long black robe,&#160;?)
+C = dwarven captain
+  a dwarven captain is using:
+  <worn on body>      a suit of mithril armor
+  <worn on legs>      a set of thick mithril leggings
+  <worn on feet>      a set of wide mithril boots
+  <worn as shield>    a burnished shield
+  <wielded>           a wide mithril battle axe
+
+S = Duergar scouts
+a duergar scout is using:
+<worn around neck>  a darkened mithril necklace
+<worn on body>      a chainmail shirt of darkened mithril
+<worn on head>      a darkened mithril helm
+<worn on legs>      a pair of darkened mithril leggings
+<worn on arms>      a pair of darkened mithril sleeves
+<worn as shield>    a darkened mithril buckler
+<wielded>           a bloody flail of darkened mithril
+<wielded>           (Glowing) the broken remains of a flaming sword
+<wielded>           a twin-bladed darkened mithril poleaxe
+
+Source: http://wiki.qhcf.net/index.php?title=Ruins_of_Delar-Tol&oldid=4995
+Revision: 4995

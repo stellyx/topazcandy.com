@@ -1,0 +1,47 @@
+The Plains of Arendyl
+=====================
+
+P l a i n s                                                     V--V--DelarTol  
+                                                                |  |
+        o f                                                     V--V               
+                                                                |  |          
+        A r e n d y l                            D--H--D--D  D--V--V         
+                                                 |        |  |
+         (Lvls 25-40)          I--I--I--I        D        D--D 
+                               |  |  |  |        |                                                 
+                               I--i--I--1     A--A
+                               |  |  |  |     |           A: Along the River/Banks of the River     
+                G--G  C--S--+--+--+--+--+--+--A           C: Cleared Brush       
+                |  |        |  |  |  |  |  |  |           D: Along the Dusty Road
+Maethien--G--G--G  G     +--+--+--+--+--+--+--A           G: Grassy Path
+                   |     |  |  |  |  |  |  |  |           H: Along the High Road
+                   G--G--+--+--+--+--+--+--+--A           I: In the Forest
+                         |  |  |  |  |  |  |              i: In the Forest Clearing
+                         +--+--+--+--+--+--A              S: The Stone Wall
+                            |  |  |  |  |                 T: Among the Tall Stones
+  The Ancient Plain Stones--T--+--+--+--A                 V: Edge of the Valley
+                               |  |  |  |
+                               +--+--+--A
+                               |        |
+                             The Past Grove
+
+
+1: Sneering Wood-elf - In the Forest
+<worn on finger>    a carved bone ring
+<worn on finger>    a carved bone ring
+<worn around neck>  (Glowing) a leather necklace with a moon pendant
+<worn on feet>      knee-high mukluks covered in snow-white fur
+<worn on arms>      scorched hard leather armguards
+<worn about body>   a baggy leather poncho fringed with strips of fur
+<worn around wrist> a beaded leather wrist wrap
+<worn around wrist> a beaded leather wrist wrap
+<mainhand wielded>  a makeshift yew spear
+
+Credits
+This area is copyright 1997 by Galadriel for Carrion Fields.  Use by any
+other mud must have prior approval by Galadriel.  Qaledus wandered through
+in 2005 and changed some things, but noted that the copyright still holds. 
+Historians suspect it was to cover some kind of theft.
+
+Source: http://wiki.qhcf.net/index.php?title=The_Plains_of_Arendyl&oldid=4973
+Revision: 4973

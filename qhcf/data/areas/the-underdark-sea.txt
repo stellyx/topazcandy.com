@@ -1,0 +1,92 @@
+The Underdark Sea
+=================
+
+THE UNDERDARK SEA
+Note: Level 1 is the top, Level 5 is the bottom
+      Each level is drawn directly in line with the level below it.
+                                     
+                  c                                
+Underdark         |                               
+ --+--+--e--c--c--c--c                    d       
+            |  |  |  |                    |       
+ LEVEL 1    c--c--c--c                 d--d--d    
+               |  |                       |    
+               c--c                       d   
+                  |                         
+                  c                        
+
+
+                           up 7 to
+                          DragonSea
+                            /
+ LEVEL 2                   +              d--d
+                           |              |  |
+                  B--d     +           d--d--d
+                  |  |     |           |  |  |
+            u--u--B--B--d--d        d--d--B--d--d    
+            |  |  |  |  |  |        |  |  |  |  |
+            u--u--B?-B--d--d        d--B--B--B--d--d
+               |  |  |  |           |  |  |  |  |
+               u--B--d--d           d--d--B--d--d
+                  |  |  |           |  |  |  |
+                  B--d--d        d--d--d--d--d
+                                 |             
+                                 d      
+ 
+                                          B--B--d    
+                                          |  |  |   
+ LEVEL 3          u--B                 B--B--B--d--d  
+                  |  |\t               |  |  |  |  |    
+                  u--u--B--B        B--B--B--B--B--d--d
+                  |  |  |  |        |  |  |  |  |  |  |      
+                  u--u--B--B--d--d--B--B--B--B?-B--B--d--d--d &#160;? - makes all east go north once
+                  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+                  u--B--B--d--d--d--B--B--B--B--B--d--d--d--d
+                  |  |  |  |  |  |  |  |  |  |   
+                  u--B--B--d--d?-B--B--B--B--B          
+                           |  |  |  |  |  |     
+                           d--d--B--d--d--d         
+                              |  |  |        
+                              d--2->d           
+                                    v      
+                                    2    
+
+                                          B--B--B      
+                                          |  |  |    
+ LEVEL 4                               B--B--B--B--B       
+                                       |  |  |  |  |  
+                        u--u        B--B--B--B--B--B--B
+                        |  |        |  |  |  |  |  |  |
+                        u--u--B--B--B--B--B--B--B--B--B--B--B--d
+                        |  |  |  |  |  |  |  |  |  |  |  |  |  |
+                     u--u--B--B--B--B--B--B--B--B--B--B--B--B--d
+                     |  |  |  |  |  |  |  |  |                 |
+                     u--u--B--B--B--B--B--B--B                 d-Aboleths/
+                           |  |  |  |  |  |                      Nizarrsh Datul
+                           B--B--B--B--B--B                     
+                              |  |  |                           
+                              B--B--B    
+
+                                          u--u--u      
+                                          |  |  |    
+ LEVEL 5                               u--u--u--u--u
+                                       |  |  |  |  |       
+                                    u--u--u--u--u--u--u
+                                    |  |  |  |  |  |  |
+                              u--u--u--u--u--u--u--u--u--u--u--u
+                              |  |  |  |  |  |  |  |  |  |  |  |
+                           u--u--u--u--u--u--u--u--u--u--u--u--u
+                           |  |  |  |  |  |  |                 |
+                           u--u--u--u--u--u--u                 u
+                           |  |  |  |  |  |                     
+                           u--u--u--u--u--u KuoToaLair                    
+                              |  |  |     |/                      
+                              u--u--u     u                     
+
+u - has an up exit
+d - has a down exit
+B - has both an up and a down exit
+t - Turtle (turtle shell items great hp bad dex)
+
+Source: http://wiki.qhcf.net/index.php?title=The_Underdark_Sea&oldid=5086
+Revision: 5086

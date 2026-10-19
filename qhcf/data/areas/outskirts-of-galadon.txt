@@ -1,0 +1,58 @@
+Outskirts of Galadon
+====================
+
+                     -=The Outskirts of Galadon=-
+                              by Vassagon
+                        for Carrion Fields MUD
+                       Copyright 1997, H. Beres
+
+Lying at the edge of the expanding city, the Outskirts of Galadon encompass
+the entire city.  With the old trail, it is possible to circumvent the city
+by walking around its outskirts.
+
+                 NorthernRoads
+                       |
+  NW--NW--NW--N--N--N--N--N--N--NE--NE--NE
+  |                    |                |
+  NW                Galadon             NE
+  |                                     |
+  NW                                    NE
+  |                                     |
+  NW                                    NE
+  |                                     |
+  W                                     E-The Arena
+  |                                     |
+  W                                     E
+  |                                     |
+F-W-Galadon                     Galadon-N-NorthernRoads
+  |                                     |
+e-W                                     E
+  |                                     |
+a-W                                     E
+  |                                     |
+n-W                                     E
+  |                                     |
+w-W                                     E
+  |                                     |
+y-W-Galadon                     Galadon-E-Crossroads
+  |                                     |
+y-W                                     E
+  |                                     |
+n-W                                     E
+  |                                     |
+.-W                                     E
+  |                                     |
+  W                                     E
+  |                                     |
+  W                                     E
+  |                                     |
+  SW                                    SE
+  |                                     |
+  SW                Galadon             SE
+  |                    |                |
+  SW--SW--SW--S--S--S--S--S--S--S--SE---SE
+                       |
+                   Silverwood
+
+Source: http://wiki.qhcf.net/index.php?title=Outskirts_of_Galadon&oldid=5047
+Revision: 5047

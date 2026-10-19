@@ -1,0 +1,63 @@
+Forest Road
+===========
+
+Notes: This area is 'forest road' but the area north of Arkham mistakenly went by that name.  It should have been Amaranthian Forest.
+
+
+The Forest Road - Original area design by ShaidarHaran with changes and
+expansion by Eshval in 2005.  For exclusive use by Carrion Fields LLC.  No
+unauthorized distribution or use in whole or part.
+                                                                    Feanwyyn
+                                                                         |
+                                                                       F +
+                                                                       o |
+                                                                       r +
+                                                                       e |
+                                                                       s +
+                                                                       t |
+                                                                      +--+
+                                                                      | R
+                                                             Feanwyyn + o
+                                                                   |  | a
+                                                  Saurian Village--+--+ d
+                                                                   |
+                                                                   +
+                                                                   |
+                                                             +--+--+
+                                                             |
+                                                          +--+
+                                                          |
+                                                       +--+--+
+                                                       |     |
+                                                       +     |
+                                                       |     +
+                            LochTerradian--+--+--+--+--+     |
+                                         The Forest Road     |
+                                                             |
+                                                             |
+                                   p--+-+                    |
+                                      | |                    |
+                                   c--+-+-+-+                |
+                                   =  | |    \               |
+                                   +  +-+     +--+--+--+--+--+--SpiderHauntwoods
+                                  =           |        |
+                                 +            +        +
+                                  \          /         |
+                                   +        +          +
+                                    \      /           |
+                                     +-o--z        Dhumlar
+                                       |
+                                       h
+                               
+                               
+                             
+                     
+
+c) cook
+p) privy
+h) Healer + pit
+o) Outfitter
+z) Herbalist
+
+Source: http://wiki.qhcf.net/index.php?title=Forest_Road&oldid=5077
+Revision: 5077

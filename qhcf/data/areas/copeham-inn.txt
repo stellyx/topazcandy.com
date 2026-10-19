@@ -1,0 +1,51 @@
+Copeham Inn
+===========
+
+            Galadon
+               |
+               + Entrance Hall
+               |
+               +--G--T--L
+               |  |  |  |
+               +--+--+--R
+               |  |  |  |
+         +--+  +--+--+--B
+         |  |  |  |  |  |
+         C--+--+--+--+--J    a
+               |            /
+               +--+--+--+--+ The Base of the Stairwell
+               |  |  |  |
+               S  W  D  O
+
+
+G - Gambler x2
+T - Twin x2
+L - Local
+R - Regular
+B - Barkeeper
+J - Juggler (sharp dagger)
+    musician (mandolin)
+C - Cook (long knife)
+S - Red Magician (invis)
+W - Merchant x2
+D - Dwarf x3 ([3rd Dwarf] small mithril axe)
+O - Ogier
+
+Happy Drunk (wandering)
+Drunk (wandering, aggro)
+Innkeeper (wandering)
+Servant x3 (wandering)
+
+                +  +  +  +
+                |  |  |  |
+             M--+--+--+--+--A The Top of the Stairwell
+                |  |  |  |
+                +  +  +  V 
+
+V - Valley Elves x2
+M - Mage and his demon (aggro)
+
+Maid (wandering)
+
+Source: http://wiki.qhcf.net/index.php?title=Copeham_Inn&oldid=5130
+Revision: 5130

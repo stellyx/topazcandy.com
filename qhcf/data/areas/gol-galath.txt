@@ -1,0 +1,66 @@
+Gol'Galath
+==========
+
+ Gol'Galath
+ Suggested Levels: 10-20
+
+                        P--P--+--P--P                             M--M--+--Aratouldain
+                       /      |      \                            |
+                      P       +       P                           M
+                      |       |       |                           |
+ NorthernRoads--P--P--P       +       P                           M
+                              |       |                           |
+                              +       P                           M
+                               \      |                           |
+                                S     T--P--P         P--P--P--P--+
+                                             \       /            |
+                                              P     P             M
+                                              |     |             |
+                                              T--P--T          T--T
+                                                               |
+                                                               1#
+
+                                                          E
+                                                          |
+                                                        +-+-+
+                                                          |
+                                                          +           1#
+                                                          |           |
+                                                       +--+--+--+     M
+                                  W                    |U1|  |  |     |
+                                  |                   *|/ |  |  |     |
+                                  +--+--+--+--+--+--+--+--+--+--+--+--T-G
+                                  |  |  |  |  |       *|  |  |  |
+                                  +--+--+--+--+        |  |  |  |
+                                  |  |                 +--+--+--+
+                                  +--+                    |
+                                                          C
+
+#&#160;:Leads to same number
+
+G&#160;:A Harvested Mountain Grove
+M&#160;:A Mountain Trail
+P&#160;:The Pass of Gol'Galath
+T&#160;:A Turn on the Mountain Trail
+E&#160;:Dwarven Engineer
+ &#160;:a hard leather breastplate
+ &#160;:some shimmering lapis beard braids
+ &#160;:an engineer's pouch-belt
+ &#160;:a sturdy bronze hammer
+C&#160;:Dwarven Captain
+ &#160;:a sturdy mithril helm
+ &#160;:(Humming) a shining mithril war axe
+U\D&#160;:Leads to the D\U of that number
+*&#160;:Gate beware the orcs west of here
+W&#160;:Globsard the warboss
+ &#160;:a spiked blackened breastplate
+ &#160;:a dented iron helmet
+ &#160;:a large iron earring
+ &#160;:a pair of boiled leather leggings
+ &#160;:a pair of boiled leather armguards
+ &#160;:a wicked leather whip
+ &#160;:(Glowing) a blackened copper axe
+S&#160;:Stagnant Pool
+
+Source: http://wiki.qhcf.net/index.php?title=Gol%27Galath&oldid=5004
+Revision: 5004

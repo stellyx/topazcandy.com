@@ -1,0 +1,49 @@
+Enpolad's Game Garden
+=====================
+
+Old area archived, can be found at OldChessmastersTower
+
+                                2
+                               /
+                  +--DL-+--a--D--DP-+--a
+                  |  |  |  |  |  |  |  |        Observation Deck
+                  a--DP-a--+--K--+--a--+
+                  |  |  |  |  |  |  |  |            u--u
+                  +--XQ-+--u--u--a--+--a            |  |
+                  |  |  |  |  |  |  |  |            u--u <--- Chessmaster and his Entourage
+                  a--P--a--u--u--+--K--+
+                  |  |  |  |  |  |  |  |
+            C--B--+--a--+--a--+--a--+--a--B--S                     +
+               |  |  |  |  |  |  |  |  |  |                        |
+               +  a--+--a--+--DL-+--a--+  +                        +
+               |  |  |  |  |  |  |  |  |  |                        |
+               F  +--a--+--Q--+--a--+--a  +                        +
+               |  |  |  |  |  |  |  |  |  |                        | Exhibition Halls
+               +  a--+--P--+--D--+--a--+  +                        +
+               |               \          |                        |
+               |                1 (up)    |                        |
+               |                          |                        |
+               +--+--+--+--+--+--+--+--L--+                      d +
+                        |         \                               \|
+                        |          d                               +
+             The Forgotten Island
+
+1 &#160;:Cell guarded by Storm giant
+2 &#160;:Cell guarded by Fire giant
+u &#160;:
+a &#160;:
+DL&#160;:Dreadlord
+DP&#160;:Duergar Priest
+K &#160;:Knight
+Q &#160;:Queen
+XQ&#160;:Xvart Queen
+P &#160;:Priest
+D &#160;:Dragon (Silver south, Crimson north. Both guard chests)
+B &#160;:Board (Both doors require keys)
+S &#160;:Flying Ship (To HamsahMutaz)
+C &#160;:Flying Chariot (To VoralianCity)
+F &#160;:Fountain
+L &#160;:Lemon Tree
+
+Source: http://wiki.qhcf.net/index.php?title=Enpolad%27s_Game_Garden&oldid=5064
+Revision: 5064
