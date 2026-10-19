@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>QHCF Carrion Fields Reference</title>
+  <title>QHCF Carrion Fields Graphical Reference</title>
   <style>
     :root{color-scheme:light dark;--bg:#f5f1e8;--ink:#242018;--card:#fffdf7;--line:#d3c8b6;--accent:#17675b}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,sans-serif}header{position:sticky;top:0;z-index:2;padding:.8rem max(1rem,calc((100% - 76rem)/2));background:#18342d;color:#fff;display:flex;gap:1rem;align-items:center;flex-wrap:wrap}header strong{margin-right:auto}header a{color:#fff}input{width:min(30rem,100%);padding:.65rem;border:1px solid #9fb6af;border-radius:.4rem}main{max-width:76rem;margin:auto;padding:1rem}.notice{padding:.8rem 1rem;border-left:.35rem solid #b86c20;background:#fff3dc;color:#3a2917}.map{margin:1.2rem 0;padding:1rem;background:var(--card);border:1px solid var(--line);border-radius:.5rem}.meta{font-size:.9rem}.badge{padding:.1rem .45rem;border:1px solid var(--line);border-radius:999px}pre{overflow:auto;white-space:pre;padding:1rem;background:var(--card);border:1px solid var(--line);font:13px/1.2 ui-monospace,Consolas,monospace}a{color:var(--accent)}footer{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line)}@media(prefers-color-scheme:dark){:root{--bg:#171a18;--ink:#ece8df;--card:#222724;--line:#424b46;--accent:#88d2c4}.notice{background:#392b1b;color:#f4dcc0}}
   </style>
 </head>
 <body>
-  <header><strong>QHCF Reference</strong><a href="reference.txt">One-file play reference</a><a href="maps.json">Map data</a><input id="search" type="search" placeholder="Search maps, landmarks, shops, or legends" aria-label="Search maps"></header>
+  <header><strong>QHCF Graphical Reference</strong><a href="reference.txt">Text Reference</a><a href="maps.json">Map data</a><input id="search" type="search" placeholder="Search maps, landmarks, shops, or legends" aria-label="Search maps"></header>
   <main>
-    <h1>QHCF Carrion Fields Reference</h1>
+    <h1>QHCF Carrion Fields Graphical Reference</h1>
     <p>A read-only preservation reference for the playerbase, assembled from public QHCF / DIKU-WIKI material.</p>
     <aside class="notice"><strong>Incomplete preservation snapshot.</strong> Seven spatial maps are currently verified: five current captures and two dated historical snapshots. The historical maps may not match the game at shutdown, and 167 linked candidates remain missing from the bounded inventory.</aside>
     <h2>Using routes</h2>
-    <p>Every literal <code>+</code> crossed on a map counts as one step. An authorized play agent should identify the current room from actual output, announce the destination and computed directional counts followed by "I am performing that now," then execute short verified movement segments. It must stop immediately if the user takes over, re-localize on unexpected movement, and confirm arrival from actual game output. Do not invent connections across walls, blank space, ambiguous crossings, diagonals, vertical transitions, or special exits.</p>
-    <p><a href="reference.txt"><strong>Open the single self-contained play reference</strong></a> - instructions, index, all verified maps, sources, legends, coverage notes, and recovered item data in one readable file.</p>
+    <p>Every literal <code>+</code> crossed on a map counts as one step. Identify the current room from actual output, use short verified movement segments, re-localize after unexpected movement, and confirm arrival from actual game output. Do not invent connections across walls, blank space, ambiguous crossings, diagonals, vertical transitions, or special exits.</p>
+    <p><a href="reference.txt"><strong>Open the Text Reference</strong></a> - instructions, index, all verified maps, sources, legends, coverage notes, and recovered item data in one plain-text file.</p>
     <p><a href="navigation/"><strong>Open deterministic navigation</strong></a> - tested Galadon subset with stable node IDs, validated directed edges, explicit commands, and safe localization failures.</p>
     <p id="summary">Loading verified maps.</p>
     <div id="maps" aria-live="polite"></div>
@@ -26,7 +26,7 @@
     const search=document.querySelector('#search'),container=document.querySelector('#maps'),summary=document.querySelector('#summary');let maps=[];
     const escapeHtml=value=>String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
     function render(){const q=search.value.trim().toLowerCase();const found=maps.filter(map=>!q||[map.title,map.status,...map.lines].join('\n').toLowerCase().includes(q));summary.textContent=`Showing ${found.length} of ${maps.length} verified maps${q?` for "${search.value.trim()}"`:''}.`;container.innerHTML=found.map(map=>`<article class="map"><h2>${escapeHtml(map.title)}</h2><p class="meta"><span class="badge">${escapeHtml(map.status)}</span> � <a href="${escapeHtml(map.source)}">Source</a> � ${map.plus_cells.length} indexed + cells</p><pre>${escapeHtml(map.lines.join('\n'))}</pre></article>`).join('')||'<p>No verified map matches that search.</p>'}
-    fetch('maps.json').then(response=>{if(!response.ok)throw new Error('map data unavailable');return response.json()}).then(data=>{maps=data.maps||[];render()}).catch(()=>{summary.textContent='Map data could not be loaded. Use the one-file play reference link above.'});search.addEventListener('input',render);
+    fetch('maps.json').then(response=>{if(!response.ok)throw new Error('map data unavailable');return response.json()}).then(data=>{maps=data.maps||[];render()}).catch(()=>{summary.textContent='Map data could not be loaded. Use the Text Reference link above.'});search.addEventListener('input',render);
   </script>
 </body>
 </html>
