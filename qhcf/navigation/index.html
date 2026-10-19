@@ -10,10 +10,10 @@
 </head>
 <body>
 <main>
-  <p><a href="../"> QHCF reference</a></p>
+  <p><a href="../">← QHCF reference</a></p>
   <h1>Deterministic navigation</h1>
   <p>This calculator traverses only manually validated, directed edges with observed-start evidence. It does not turn ASCII spacing, map letters, adjacent labels, old prose, or raw <code>+</code> counts into guessed movement.</p>
-  <aside class="warning"><strong>Small tested subset.</strong> Galadon revision 5044 says it is slightly outdated. "Market Square  Eastern Road" intentionally returns <code>NEEDS_LOCALIZATION</code> until actual room output anchors Market Square to the map. The conditional geometry is evidence, not an executable route.</aside>
+  <aside class="warning"><strong>Small tested subset.</strong> Galadon revision 5044 says it is slightly outdated. “Market Square → Eastern Road” intentionally returns <code>NEEDS_LOCALIZATION</code> until actual room output anchors Market Square to the map. The conditional geometry is evidence, not an executable route.</aside>
   <form id="route-form">
     <label>From<input id="from" value="Market Square" autocomplete="off"></label>
     <label>To<input id="to" value="Eastern Road" autocomplete="off"></label>
@@ -22,17 +22,17 @@
     <button type="submit">Plan validated route</button>
   </form>
   <section aria-live="polite">
-    <p id="status" class="status">Loading graph.</p>
+    <p id="status" class="status">Loading graph…</p>
     <p id="summary"></p>
     <pre id="result"></pre>
   </section>
   <h2>Stable agent interface</h2>
   <p>Graph: <a href="galadon-v1.json"><code>/qhcf/navigation/galadon-v1.json</code></a>. Required output fields include <code>status</code>, stable node IDs, graph version, explicit command list, compressed commands, movement count, separate plus-cell count, expected observations, evidence, execution policy, and stop conditions.</p>
-  <p>Directions-only mode never executes movement. "Take me / go" produces an execution policy only; this rescue reference does not control the game.</p>
+  <p>Directions-only mode never executes movement. “Take me / go” produces an execution policy only; this rescue reference does not control the game.</p>
 </main>
 <script type="module">
-  import { planRoute } from './route-engine.mjs';
-  const graph = await fetch('./galadon-v1.json').then(response => { if (!response.ok) throw new Error('graph unavailable'); return response.json(); });
+  import { planRoute } from './route-engine.mjs?v=20261019-observation-gate';
+  const graph = await fetch('./galadon-v1.json?v=20261019-observation-gate').then(response => { if (!response.ok) throw new Error('graph unavailable'); return response.json(); });
   const form=document.querySelector('#route-form'),from=document.querySelector('#from'),to=document.querySelector('#to'),observed=document.querySelector('#observed'),mode=document.querySelector('#mode'),status=document.querySelector('#status'),summary=document.querySelector('#summary'),result=document.querySelector('#result');
   const params=new URLSearchParams(location.search);if(params.has('from'))from.value=params.get('from');if(params.has('to'))to.value=params.get('to');if(params.has('mode'))mode.value=params.get('mode');
   function run(){const actualObservation=observed.value.trim()?{room:observed.value.trim()}:null;const plan=planRoute(graph,from.value,to.value,{mode:mode.value,actualObservation});status.textContent=plan.status;status.className=`status ${plan.status==='OK'?'ok':'blocked'}`;summary.textContent=plan.status==='OK'?`${plan.compressed_commands} - ${plan.movement_count} movement commands; plus count ${plan.plus_cells_crossed ?? 'not established'}.`:plan.candidate_compressed_commands?`Historical candidate only: ${plan.candidate_compressed_commands} (${plan.candidate_movement_count} movements). Not executable until localized and observed.`:plan.focused_localization_step||plan.reason||'No validated route is available.';result.textContent=JSON.stringify(plan,null,2);history.replaceState(null,'',`?from=${encodeURIComponent(from.value)}&to=${encodeURIComponent(to.value)}&mode=${encodeURIComponent(mode.value)}`)}
@@ -40,4 +40,3 @@
 </script>
 </body>
 </html>
-
