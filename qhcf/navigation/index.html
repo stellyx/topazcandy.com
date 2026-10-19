@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>QHCF Galadon Route Planner</title>
   <style>
-    :root{color-scheme:light dark;--bg:#f5f1e8;--ink:#242018;--card:#fffdf7;--line:#d3c8b6;--accent:#17675b;--route:#ffe56b;--start:#79d7b0;--goal:#ff9d7a;--muted:#6f675c}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,sans-serif}main{max-width:92rem;margin:auto;padding:1rem}a{color:var(--accent)}.notice{border-left:.35rem solid var(--accent);padding:.8rem 1rem;background:var(--card)}form{display:grid;grid-template-columns:1fr 1fr auto;gap:.7rem;margin:1rem 0}label{display:grid;gap:.25rem}select,button{font:inherit;padding:.65rem;border:1px solid var(--line);border-radius:.35rem;min-width:0}button{align-self:end;background:var(--accent);color:white;font-weight:700}.layout{display:grid;grid-template-columns:minmax(18rem,28rem) minmax(0,1fr);gap:1rem;align-items:start}section,.map-card{background:var(--card);border:1px solid var(--line);border-radius:.5rem;padding:1rem}.status{font-weight:800}.ok{color:var(--accent)}.blocked{color:#9a4f15}.runs{font-size:1.35rem;font-weight:800}.commands{word-break:break-word}.muted{color:var(--muted)}#map{overflow:auto;white-space:pre;font:14px/1.25 ui-monospace,SFMono-Regular,Consolas,monospace;margin:0;padding:.75rem;background:#161914;color:#d8ded3;border-radius:.35rem}.route{background:var(--route);color:#171500}.start{background:var(--start);color:#10261d}.goal{background:var(--goal);color:#2b120a}.start.goal{background:linear-gradient(90deg,var(--start) 50%,var(--goal) 50%)}ol{padding-left:1.4rem}@media(max-width:62rem){form,.layout{grid-template-columns:1fr}}
+    :root{color-scheme:light dark;--bg:#f5f1e8;--ink:#242018;--card:#fffdf7;--line:#d3c8b6;--accent:#17675b;--route:#ffe56b;--start:#79d7b0;--goal:#ff9d7a;--muted:#6f675c}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,sans-serif}main{max-width:92rem;margin:auto;padding:1rem}a{color:var(--accent)}.notice{border-left:.35rem solid var(--accent);padding:.8rem 1rem;background:var(--card)}form{display:grid;grid-template-columns:1fr 1fr auto;gap:.7rem;margin:1rem 0}label{display:grid;gap:.25rem}select,button,textarea{font:inherit;padding:.65rem;border:1px solid var(--line);border-radius:.35rem;min-width:0}button{align-self:end;background:var(--accent);color:white;font-weight:700}.layout{display:grid;grid-template-columns:minmax(20rem,31rem) minmax(0,1fr);gap:1rem;align-items:start}section,.map-card{background:var(--card);border:1px solid var(--line);border-radius:.5rem;padding:1rem}.status{font-weight:800}.ok{color:var(--accent)}.blocked{color:#9a4f15}.copy-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.55rem;align-items:stretch}.copybox{width:100%;resize:none;font:700 1.05rem/1.35 ui-monospace,SFMono-Regular,Consolas,monospace;background:#fff;color:#111}.copy-row button{min-width:6rem}.feedback{min-height:1.5em;margin:.35rem 0;color:var(--accent);font-weight:700}.runs{font-size:1.15rem;font-weight:800}.commands{word-break:break-word}.muted{color:var(--muted)}#map{overflow:auto;white-space:pre;font:14px/1.25 ui-monospace,SFMono-Regular,Consolas,monospace;margin:0;padding:.75rem;background:#161914;color:#d8ded3;border-radius:.35rem}.route{background:var(--route);color:#171500}.start{background:var(--start);color:#10261d}.goal{background:var(--goal);color:#2b120a}.start.goal{background:linear-gradient(90deg,var(--start) 50%,var(--goal) 50%)}ol{padding-left:1.4rem}.observations{margin-top:1rem}.observations li{margin:.65rem 0}@media(max-width:62rem){form,.layout,.copy-row{grid-template-columns:1fr}.copy-row button{width:100%}}
   </style>
 </head>
 <body>
@@ -23,7 +23,13 @@
       <p id="status" class="status">Loading Galadon map.</p>
       <p id="summary"></p>
       <div id="route-details" hidden>
-        <h2>Ordered directions</h2>
+        <h2>Copy commands</h2>
+        <div class="copy-row">
+          <textarea id="copy-output" class="copybox" rows="2" readonly spellcheck="false" aria-label="Commands separated by two semicolons"></textarea>
+          <button id="copy-button" type="button">Copy</button>
+        </div>
+        <p id="copy-feedback" class="feedback" role="status" aria-live="polite"></p>
+        <h3>Grouped directions <span class="muted">(human reference)</span></h3>
         <p id="runs" class="runs"></p>
         <p><strong>Individual commands:</strong> <span id="commands" class="commands"></span></p>
         <p><strong>Total movements:</strong> <span id="count"></span></p>
@@ -37,18 +43,24 @@
       <pre id="map" aria-label="Galadon ASCII map"></pre>
     </div>
   </div>
+  <section class="observations">
+    <h2>Small observations that would replace descriptive labels with room titles</h2>
+    <p>No whole-city mapping session is needed. These short checks are the highest-value gaps, in order:</p>
+    <ol id="observations"></ol>
+  </section>
 </main>
 <script type="module">
   import { buildAsciiMapGraph, planMapRoute } from './route-engine.mjs?v=20261019-map-planner';
   const graph = await fetch('./galadon-v1.json?v=20261019-map-planner').then(response => { if (!response.ok) throw new Error('graph unavailable'); return response.json(); });
   const mapGraph = buildAsciiMapGraph(graph);
-  const form=document.querySelector('#route-form'),from=document.querySelector('#from'),to=document.querySelector('#to'),status=document.querySelector('#status'),summary=document.querySelector('#summary'),details=document.querySelector('#route-details'),runs=document.querySelector('#runs'),commands=document.querySelector('#commands'),count=document.querySelector('#count'),steps=document.querySelector('#steps'),map=document.querySelector('#map');
+  const form=document.querySelector('#route-form'),from=document.querySelector('#from'),to=document.querySelector('#to'),status=document.querySelector('#status'),summary=document.querySelector('#summary'),details=document.querySelector('#route-details'),copyOutput=document.querySelector('#copy-output'),copyButton=document.querySelector('#copy-button'),copyFeedback=document.querySelector('#copy-feedback'),runs=document.querySelector('#runs'),commands=document.querySelector('#commands'),count=document.querySelector('#count'),steps=document.querySelector('#steps'),map=document.querySelector('#map'),observations=document.querySelector('#observations');
   const ordered=[...mapGraph.nodes].sort((a,b)=>(a.kind==='plus-room')-(b.kind==='plus-room')||a.row-b.row||a.start_column-b.start_column);
-  const label=node=>node.kind==='plus-room'?`${node.short_name} - room`:node.name;
+  const label=node=>node.name;
   for(const node of ordered){for(const select of [from,to]){const option=document.createElement('option');option.value=node.id;option.textContent=label(node);select.append(option)}}
   const params=new URLSearchParams(location.search),defaultFrom='galadon.map.marker.m',defaultTo='galadon.map.eastern-road';
   function selectRequestedValue(select,value,fallback){if(!value){select.value=fallback;return}select.value=value;if(select.value)return;const option=document.createElement('option');option.value=value;option.textContent=`Unknown map node: ${value}`;option.dataset.temporary='true';select.prepend(option);select.value=value}
   selectRequestedValue(from,params.get('from'),defaultFrom);selectRequestedValue(to,params.get('to'),defaultTo);
+  for(const item of graph.map_route.observation_priorities||[]){const entry=document.createElement('li');entry.innerHTML=`<strong>${item.area}:</strong> ${item.needed}`;observations.append(entry)}
   const escapeHtml=value=>value.replace(/[&<>]/g,character=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[character]));
   function renderMap(plan){
     const route=new Set(plan.node_ids||[]),start=plan.from?.id,goal=plan.to?.id,positions=new Map(),routeCells=new Set(),nodesById=new Map(mapGraph.nodes.map(node=>[node.id,node]));
@@ -61,13 +73,15 @@
     const plan=planMapRoute(graph,from.value,to.value);status.textContent=plan.status;status.className=`status ${plan.status==='MAP_ROUTE'?'ok':'blocked'}`;
     if(plan.status==='MAP_ROUTE'){
       summary.textContent=`${plan.from.name} to ${plan.to.name}: ${plan.movement_count} movement${plan.movement_count===1?'':'s'}.`;
+      copyOutput.value=plan.copy_commands;copyButton.disabled=!plan.copy_commands;copyFeedback.textContent=plan.copy_commands?'Click Copy, or click the box to select all.':'No movement commands to copy.';
       runs.textContent=plan.direction_runs.length?plan.direction_runs.map(run=>`${run.count}${run.direction}`).join('  '):'Already at the selected destination';
       commands.textContent=plan.commands.length?plan.commands.join(', '):'none';count.textContent=String(plan.movement_count);steps.replaceChildren();
       for(const step of plan.steps||[]){const item=document.createElement('li'),destination=mapGraph.nodes.find(node=>node.id===step.to);item.textContent=`${step.direction.toUpperCase()} to ${destination?.name||step.to}`;steps.append(item)}details.hidden=false;
-    }else{summary.textContent=plan.reason||'No unambiguous cardinal route connects these nodes.';details.hidden=true}
+    }else{summary.textContent=plan.reason||'No unambiguous cardinal route connects these nodes.';copyOutput.value='';copyFeedback.textContent='';details.hidden=true}
     renderMap(plan);history.replaceState(null,'',`?from=${encodeURIComponent(from.value)}&to=${encodeURIComponent(to.value)}`);
   }
   form.addEventListener('submit',event=>{event.preventDefault();run()});from.addEventListener('change',run);to.addEventListener('change',run);run();
+  copyOutput.addEventListener('click',()=>copyOutput.select());copyButton.addEventListener('click',async()=>{copyOutput.focus();copyOutput.select();try{if(!navigator.clipboard?.writeText)throw new Error('clipboard unavailable');await navigator.clipboard.writeText(copyOutput.value);copyFeedback.textContent='Copied to clipboard.'}catch{copyFeedback.textContent='Clipboard unavailable - commands are selected. Press Ctrl+C or use your device copy action.'}});
 </script>
 </body>
 </html>

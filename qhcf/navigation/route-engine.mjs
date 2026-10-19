@@ -103,6 +103,8 @@ const directionRuns = commands => {
   return runs;
 };
 
+export const formatCopyCommands = commands => commands.join(';;');
+
 const mapNodeId = (row, column) => `galadon.map.r${row}c${column}`;
 
 export function buildAsciiMapGraph(graph) {
@@ -113,12 +115,16 @@ export function buildAsciiMapGraph(graph) {
     [...line].forEach((character, columnIndex) => {
       if (character !== '+') return;
       const row = rowIndex + 1, column = columnIndex + 1;
+      const id = mapNodeId(row, column);
+      const description = source.descriptive_labels?.[id];
       nodes.push({
-        id: mapNodeId(row, column),
-        name: `Room + at row ${row}, column ${column}`,
+        id,
+        name: description?.label ? `${description.label} (+ r${row}c${column})` : `Unnamed map room (+ r${row}c${column})`,
         short_name: `+ r${row}c${column}`,
         aliases: [`r${row}c${column}`, `${row},${column}`],
-        kind: 'plus-room', row, start_column: column, end_column: column, port_column: column
+        kind: 'plus-room', row, start_column: column, end_column: column, port_column: column,
+        name_kind: description ? 'descriptive-map-position' : 'unnamed-map-position',
+        description_basis: description?.basis || null
       });
     });
   });
@@ -201,6 +207,7 @@ export function planMapRoute(graph, from, to) {
     status: 'MAP_ROUTE', route_basis: 'published-ascii-map', live_verified: false,
     from: { id: start.id, name: start.name }, to: { id: goal.id, name: goal.name },
     node_ids: [start.id], commands: [], direction_runs: [], compressed_commands: '', movement_count: 0,
+    copy_commands: '',
     note: 'Start and destination are the same selected map node.'
   };
   const outgoing = new Map();
@@ -242,6 +249,7 @@ export function planMapRoute(graph, from, to) {
     to: { id: goal.id, name: goal.name },
     node_ids: nodeIds,
     commands,
+    copy_commands: formatCopyCommands(commands),
     direction_runs: directionRuns(commands),
     compressed_commands: compress(commands),
     movement_count: commands.length,

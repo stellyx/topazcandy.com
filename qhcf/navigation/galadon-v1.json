@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
-  "graph_id": "qhcf.galadon.map-planner.v1",
-  "graph_version": 3,
-  "content_hash": "sha256:136c93bbbd55db956da2ba9c3ba6c73a89d43187354b3493d1bf1396671f0a54",
+  "graph_id": "qhcf.galadon.map-planner.v2",
+  "graph_version": 4,
+  "content_hash": "sha256:99c03a3d8550f260bc45b7daf916bbda7eada62ae7b68b968f7352b3a5fcf159",
   "content_hash_contract": "SHA-256 of UTF-8 JSON.stringify(graph with content_hash omitted)",
   "title": "Galadon map route planner with legacy live-verification subset",
-  "coverage": "Complete literal + node inventory and cardinal corridor parsing for the published Galadon map; diagonal and unclear special connections remain explicit ambiguities.",
+  "coverage": "Complete literal + node inventory and cardinal corridor parsing for the published Galadon map, with source-legend landmarks and descriptive labels for priority unnamed rooms; diagonal and unclear special connections remain explicit ambiguities.",
   "source_map": {
     "title": "Galadon",
     "url": "http://wiki.qhcf.net/index.php?title=Galadon",
@@ -21,7 +21,7 @@
     "planner": "plan_route(start_id, goal_id, graph_version, actual_observation) uses command-weighted shortest paths only over directed edges with complete per-command expected observations and provenance. OK or ALREADY_THERE requires a fresh observation identifier and a verified world/area/title/description/exits fingerprint; title-only localization is rejected.",
     "counts": "movement_count counts emitted movement commands. plus_cells_crossed separately records literal + evidence when known. They are never substituted for one another.",
     "execution": "This rescue reference never controls a character. A separate authorized play agent may execute only an executable plan, after announcing it, verifying every movement, and stopping on stale localization, takeover, failure, or an unresolved special exit.",
-    "map_planner": "planMapRoute(start_map_node, destination_map_node) calculates directions directly from the published ASCII map without requiring a live-game fingerprint. Each adjacent + room or named landmark transition counts as one movement; the result remains explicitly map-derived and directions-only."
+    "map_planner": "planMapRoute(start_map_node, destination_map_node) calculates directions directly from the published ASCII map without requiring a live-game fingerprint. Each adjacent + room or named landmark transition counts as one movement; copy_commands expands each command separated by exactly two semicolons with no trailing separator. The result remains explicitly map-derived and directions-only."
   },
   "nodes": [
     {
@@ -265,6 +265,28 @@
       "                                   |",
       "                               Silverwood"
     ],
+    "descriptive_labels": {
+      "galadon.map.r30c33": {"label":"Central rectangle - northwest junction","basis":"Descriptive map position; not an official room title."},
+      "galadon.map.r30c36": {"label":"Central rectangle - north junction","basis":"Descriptive map position; not an official room title."},
+      "galadon.map.r30c39": {"label":"Central rectangle - northeast junction","basis":"Descriptive map position; not an official room title."},
+      "galadon.map.r32c33": {"label":"Central rectangle - west middle","basis":"Descriptive map position; not an official room title."},
+      "galadon.map.r32c36": {"label":"Central rectangle - center","basis":"Descriptive map position; not an official room title."},
+      "galadon.map.r32c39": {"label":"Central rectangle - east middle","basis":"Descriptive map position; not an official room title."},
+      "galadon.map.r34c33": {"label":"Central rectangle - southwest junction","basis":"Descriptive map position; not an official room title."},
+      "galadon.map.r34c36": {"label":"Central rectangle - south junction","basis":"Descriptive map position; not an official room title."},
+      "galadon.map.r34c39": {"label":"Central rectangle - southeast junction","basis":"Descriptive map position; not an official room title."},
+      "galadon.map.r40c29": {"label":"Trade Road - west approach to M","basis":"Descriptive position on the published TRADE ROAD line; not an official room title."},
+      "galadon.map.r40c42": {"label":"Trade Road - first room east of M","basis":"Descriptive position on the published TRADE ROAD line; not an official room title."},
+      "galadon.map.r40c48": {"label":"Trade Road - Warrior's Guild crossing","basis":"Descriptive position below the source legend's R marker; not an official room title."},
+      "galadon.map.r40c54": {"label":"Trade Road - east-central junction","basis":"Descriptive map position; not an official room title."},
+      "galadon.map.r40c59": {"label":"Trade Road - inner East Gate approach","basis":"Descriptive position immediately west of the source legend's E marker; not an official room title."},
+      "galadon.map.r40c67": {"label":"Trade Road - outer East Gate room","basis":"Descriptive position immediately east of the source legend's E marker; not an official room title."},
+      "galadon.map.r47c33": {"label":"South district - northwest of AP label","basis":"Descriptive map position; not an official room title."},
+      "galadon.map.r47c36": {"label":"South district - north of AP approach","basis":"Descriptive map position; not an official room title."},
+      "galadon.map.r47c39": {"label":"South district - northeast of AP label","basis":"Descriptive map position; not an official room title."},
+      "galadon.map.r51c32": {"label":"AP Guild approach","basis":"Descriptive position directly below the published AP label; not an official room title."},
+      "galadon.map.r51c36": {"label":"Southern road - AP approach junction","basis":"Descriptive map position beside the published AP label; not an official room title."}
+    },
     "landmarks": [
       {"id":"galadon.map.northern-roads.north","name":"Northern Roads (north)","aliases":["north northern roads"],"row":1,"start_column":27,"end_column":39,"port_column":32,"kind":"linked-area"},
       {"id":"galadon.map.outskirts.north","name":"Galadon Outskirts (north)","aliases":["north outskirts"],"row":3,"start_column":25,"end_column":40,"port_column":32,"kind":"linked-area"},
@@ -285,9 +307,23 @@
       {"id":"galadon.map.voralia","name":"Voralia's Tears","aliases":["Voralia"],"row":55,"start_column":53,"end_column":66,"port_column":53,"kind":"linked-area"},
       {"id":"galadon.map.guild.shapeshifter","name":"Shapeshifters Guild (s)","aliases":["shapeshifter guild"],"row":59,"start_column":30,"kind":"guild"},
       {"id":"galadon.map.guild.conjurer","name":"Conjurer's Guild (c)","aliases":["conjurer guild"],"row":59,"start_column":42,"kind":"guild"},
+      {"id":"galadon.map.guild.paladin","name":"Paladin's Guild (P)","aliases":["Paladin's Guild","paladin guild"],"row":36,"start_column":32,"kind":"legend-room","name_kind":"source-legend"},
+      {"id":"galadon.map.spire","name":"Spire","aliases":["the Spire"],"row":36,"start_column":38,"end_column":42,"port_column":38,"kind":"map-label","name_kind":"source-map-label"},
+      {"id":"galadon.map.guild.invoker","name":"Invoker's Guild (V)","aliases":["invoker guild"],"row":36,"start_column":57,"kind":"legend-room","name_kind":"source-legend"},
+      {"id":"galadon.map.guild.warrior","name":"Warrior's Guild (R)","aliases":["warrior guild"],"row":38,"start_column":48,"kind":"legend-room","name_kind":"source-legend"},
+      {"id":"galadon.map.guild.assassin","name":"Assassin's Guild (G)","aliases":["assassin guild"],"row":38,"start_column":57,"kind":"legend-room","name_kind":"source-legend"},
+      {"id":"galadon.map.guild.transmuter","name":"Transmuter's Guild (T)","aliases":["transmuter guild"],"row":42,"start_column":24,"kind":"legend-room","name_kind":"source-legend"},
+      {"id":"galadon.map.healer.south","name":"Healer (H) - south district","aliases":["south healer"],"row":45,"start_column":42,"kind":"legend-room","name_kind":"source-legend"},
+      {"id":"galadon.map.guild.thieves","name":"Thieves' Guild (I)","aliases":["thieves guild"],"row":49,"start_column":53,"kind":"legend-room","name_kind":"source-legend"},
       {"id":"galadon.map.gate.south","name":"South Gate (S)","aliases":["S gate","south gate"],"row":62,"start_column":36,"kind":"gate"},
       {"id":"galadon.map.outskirts.south","name":"Galadon Outskirts (south)","aliases":["south outskirts"],"row":67,"start_column":29,"end_column":44,"port_column":36,"kind":"linked-area"},
       {"id":"galadon.map.silverwood","name":"Silverwood","aliases":["Silverwood south"],"row":69,"start_column":32,"end_column":41,"port_column":36,"kind":"linked-area"}
+    ],
+    "observation_priorities": [
+      {"priority":1,"area":"M and the central Trade Road","nodes":["galadon.map.marker.m","galadon.map.r40c29","galadon.map.r40c42"],"needed":"At each listed node, record the exact in-game room title and visible exits. One observation at M plus one step west and one step east is enough to determine whether any is Market Square."},
+      {"priority":2,"area":"Central rectangle","nodes":["galadon.map.r30c33","galadon.map.r30c36","galadon.map.r32c36","galadon.map.r34c36","galadon.map.r34c39"],"needed":"Follow the short map route e, s, s, e and record the exact room title and exits after each single move. Five observations name the tested rectangle path."},
+      {"priority":3,"area":"AP Guild approach","nodes":["galadon.map.r47c36","galadon.map.r51c32","galadon.map.r51c36"],"needed":"Record the exact title and exits at the room under the AP label and the adjacent southern-road junction; note which exit actually enters AP's Guild."},
+      {"priority":4,"area":"East Gate transition","nodes":["galadon.map.r40c59","galadon.map.gate.east","galadon.map.r40c67"],"needed":"Record the exact room title and exits immediately west of E, at E, and immediately east. Three observations confirm the gate transition without mapping the district."}
     ],
     "ambiguities": [
       "Diagonal / and \\ links are displayed but not routed until their endpoints are manually traced.",
