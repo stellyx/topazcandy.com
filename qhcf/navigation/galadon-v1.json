@@ -15,8 +15,8 @@
     "coordinate_system": "1-based Unicode character row and column in the preserved preformatted map. Coordinates are evidence locators, not movement counts."
   },
   "contract": {
-    "resolver": "resolve_room(name, actual_observation) returns one stable node ID or an explicit ambiguity/unknown result.",
-    "planner": "plan_route(start_id, goal_id, graph_version) traverses only directed edges with validation=validated and executable=true.",
+    "resolver": "resolve_room(name) returns one stable node ID or an explicit ambiguity/unknown result. Requested names never prove current character location.",
+    "planner": "plan_route(start_id, goal_id, graph_version, actual_observation) uses command-weighted shortest paths over directed edges with validation=validated and executable=true, and requires the observed current room title to match the resolved start before OK or ALREADY_THERE.",
     "counts": "movement_count counts emitted movement commands. plus_cells_crossed separately records literal + evidence when known. They are never substituted for one another.",
     "execution": "This rescue reference never controls a character. A separate authorized play agent may execute only an executable plan, after announcing it, verifying every movement, and stopping on stale localization, takeover, failure, or an unresolved special exit."
   },
@@ -109,12 +109,14 @@
       "from": "galadon.room.market-square",
       "to": "galadon.room.graveyard",
       "directed": true,
-      "validation": "validated",
-      "executable": true,
-      "commands": ["n", "n", "n", "n", "w", "w", "n", "w", "w", "w", "n"],
-      "movement_count": 11,
+      "validation": "historical-directions-unverified",
+      "executable": false,
+      "commands": [],
+      "candidate_commands": ["n", "n", "n", "n", "w", "w", "n", "w", "w", "w", "n"],
+      "movement_count": null,
+      "candidate_movement_count": 11,
       "plus_cells_crossed": null,
-      "expected_observations": ["Arrival should be the Galadon graveyard; stop if room output does not confirm a graveyard."],
+      "expected_observations": [],
       "special_exit": false,
       "source_evidence": [
         {
@@ -123,7 +125,12 @@
           "statement": "From market square, head 4n, 2w, n, 3w, and north."
         }
       ],
-      "reverse_edge_status": "not-added-without-independent-evidence"
+      "reverse_edge_status": "not-added-without-independent-evidence",
+      "blockers": [
+        "Market Square is named in the guide but not anchored to the Galadon ASCII map or current room output.",
+        "The 2019 prose supplies no intermediate expected room observations for the 11 movements.",
+        "Current-world validity has not been confirmed."
+      ]
     }
   ],
   "localization_rules": [
@@ -135,6 +142,16 @@
       "reason": "The preserved Galadon map has an undefined M marker and does not label Market Square or Center of Market Square. Literal + cells do not establish movement commands across E, Outsk, or the linked area boundary.",
       "focused_step": "Obtain actual room output for Market Square and the result of one manually issued north command, including the exact next room title and exits. Do not have this rescue task issue the command.",
       "forbidden_inference": "Do not route north through Academy. Do not equate M with Market Square until room evidence anchors it."
+    },
+    {
+      "id": "galadon.validate.market-square-to-graveyard",
+      "from": "galadon.room.market-square",
+      "to": "galadon.room.graveyard",
+      "status": "NEEDS_VALIDATION",
+      "reason": "A 2019 guide gives 4n, 2w, n, 3w, n, but the start room is not anchored to current observed room output and the guide provides no intermediate landmarks for safe step verification.",
+      "focused_step": "Capture the exact current Market Square room title and exits, then validate the historical sequence one movement at a time outside this rescue task while recording each resulting room title.",
+      "forbidden_inference": "Historical directions are candidate evidence, not an executable route.",
+      "candidate_edge_id": "galadon.edge.market-square.to.graveyard.radenecro"
     }
   ],
   "conditional_traces": [
@@ -174,7 +191,7 @@
     "No reverse edge without evidence.",
     "No zero-command teleport between adjacent labels.",
     "E, NE, NW, N, S, and W map tokens are landmarks unless an edge explicitly supplies commands.",
-    "Only validated executable edges participate in BFS."
+    "Only validated executable edges with an observed-start contract participate in command-weighted routing."
   ]
 }
 
