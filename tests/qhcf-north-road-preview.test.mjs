@@ -34,4 +34,5 @@ for(const id of ['map','viewport','from','to','flip','fit','fit-route','copy','c
 assert.ok(page.includes('matching entrance rooms unverified'));
 assert.ok(page.includes('href="/qhcf/world-map.html"'));
 assert.ok(page.includes('href="/qhcf/areas/northernroads.html"'));
+assert.ok(readFileSync(new URL('../qhcf/north-road-preview.mjs',import.meta.url),'utf8').includes('`${route.moves} moves`'));
 console.log('Northern Roads revision, exact spine and bend, reverse counts, plus rooms, map links and controls passed.');

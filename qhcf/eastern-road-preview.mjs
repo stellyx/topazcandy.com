@@ -3,8 +3,8 @@
 const named = [
   ['a','Galadon Outskirts junction (A)',5,9],['b1','Beyond Galadon Outskirts (B west)',5,11],['b2','Beyond Galadon Outskirts (B east)',5,13],
   ['along','Along the Eastern Road',5,16],['s','S · source marker',5,42],
-  ['eastern','Eastern Road center',5,46],['c','Large Crossroads (C)',5,70],['east-e','Aldevari turnoff (E)',5,77],
-  ['east-one','West Grove branch approach (1) · crossing unresolved',5,84],['south-one','Hamsah-bound continuation (1) · route unresolved',14,18],
+  ['eastern','Eastern Road center',5,46],['c','Large Crossroads (C)',5,70],['east-e','Aldevari north turnoff (E)',5,77],
+  ['east-one','West Grove turnoff approach (1) · join unresolved',5,84],['south-one','West Grove turnoff (1) · crossing unresolved',14,18],
   ...[20,22,24].map((col,i)=>[`lower-top-${i}`,`E (southern road ${i+1})`,14,col]),
   ...[24,26,28,30,32,34,36,38].map((col,i)=>[`lower-${i}`,`E (lower road ${i+1})`,16,col]),
   ['lower-east','E (southeast road)',18,45],['hamsah-east','E (toward Hamsah) · route unresolved',20,45],['i','I · Bridge over the River Khalid',20,55]
