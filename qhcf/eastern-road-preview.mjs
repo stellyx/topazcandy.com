@@ -50,6 +50,11 @@ export function sourceSegments(source){
   }));
   return segments;
 }
+export function sourceCountNotes(source){
+  return source.lines.flatMap((line,index)=>[...line.matchAll(/\([^)]*\)/g)].map(match=>({
+    row:index+1,column:match.index+1+(match[0].length-1)/2,label:match[0]
+  })));
+}
 export function routeBetween(model,from,to){
   if(!model.nodes.some(n=>n.id===from)||!model.nodes.some(n=>n.id===to))return null;
   if(from===to)return {nodes:[from],commands:[],runs:[],moves:0};
@@ -75,7 +80,7 @@ if(typeof document!=='undefined'){
   const source=await fetch('/qhcf/data/areas/the-eastern-road.json').then(r=>{if(!r.ok)throw Error('Source unavailable');return r.json()});
   const model=buildModel(source),byId=new Map(model.nodes.map(n=>[n.id,n]));
   const svg=document.querySelector('#map'),view=document.querySelector('#viewport'),NS='http://www.w3.org/2000/svg';
-  const W=1250,H=580,X=c=>30+c*14,Y=r=>22+r*25;
+  const W=1310,H=580,X=c=>30+c*14,Y=r=>22+r*25;
   svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
   const add=(tag,attrs={},parent=svg)=>{const e=document.createElementNS(NS,tag);for(const [key,value] of Object.entries(attrs))e.setAttribute(key,String(value));parent.append(e);return e};
   const defs=add('defs'),marker=add('marker',{id:'east-arrow',viewBox:'0 0 10 10',refX:8,refY:5,markerWidth:6,markerHeight:6,orient:'auto'},defs);add('path',{d:'M 1 1 L 9 5 L 1 9 z',fill:'#162420'},marker);
@@ -85,6 +90,10 @@ if(typeof document!=='undefined'){
   // misleading chain of disconnected dots. This is a visual corridor, not a
   // movement edge: only the explicit numbered spans below yield commands.
   add('line',{x1:X(1),y1:Y(5),x2:X(84),y2:Y(5),class:'road main-corridor','aria-hidden':'true'},roads);
+  // The road continues toward Hamsah, but the source does not identify the
+  // exact room-to-room handoff. The dashed arrow is wayfinding, not a route.
+  add('line',{x1:X(84)+14,y1:Y(5),x2:W-22,y2:Y(5),class:'road continuation','aria-hidden':'true'},roads);
+  add('text',{x:W-24,y:Y(5)+65,class:'continuation-label','text-anchor':'end','aria-hidden':'true'},roads).textContent='Toward Hamsah · handoff unverified';
   for(const {row,column,glyph} of sourceSegments(source)){
     const horizontal=glyph==='-';
     add('line',{
@@ -98,11 +107,18 @@ if(typeof document!=='undefined'){
   for(const [id,label,above] of [
     ['eastern.map.along','Along the Eastern Road',false],
     ['eastern.map.eastern','Eastern Road',false],
-    ['eastern.map.c','C · 7E →',true],
+    ['eastern.map.c','C',false],
     ['eastern.map.east-one','East end',false]
   ]){
     const n=byId.get(id);
     add('text',{x:X(n.column),y:Y(n.row)+(above?-23:35),class:'corridor-label','text-anchor':n.column>78?'end':'middle','aria-hidden':'true'},roads).textContent=label;
+  }
+  // The source has many more distance notes than the two modelled route spans.
+  // Print every one at its captured position; these labels are evidence, not
+  // executable edges until both endpoint rooms are established.
+  for(const note of sourceCountNotes(source)){
+    const offset=note.row===5?-30:note.row===6?27:-9;
+    add('text',{x:X(note.column),y:Y(note.row)+offset,class:'source-count','text-anchor':'middle','aria-hidden':'true'},roads).textContent=note.label;
   }
   const note=document.querySelector('#map-note'),defaultNote=note.textContent;
   const showNote=value=>{note.textContent=value},resetNote=()=>{note.textContent=defaultNote};
@@ -117,7 +133,7 @@ if(typeof document!=='undefined'){
   for(const field of [fromField,toField])for(const n of sorted){const option=document.createElement('option');option.value=n.id;option.textContent=n.name;field.append(option)}
   function show(){fromField.value=start||'';toField.value=goal||'';document.querySelector('#start-chip').textContent=start?`① ${byId.get(start).name}`:'① Click starting point';document.querySelector('#goal-chip').textContent=goal?`② ${byId.get(goal).name}`:'② Click destination';document.querySelector('#flip').disabled=!(start&&goal);for(const g of points.children){g.classList.toggle('start',g.dataset.room===start);g.classList.toggle('goal',g.dataset.room===goal);g.classList.toggle('selected',g.dataset.room===selected)}active.replaceChildren();spanEls.forEach(el=>el.classList.remove('active'));route=start&&goal?routeBetween(model,start,goal):null;const result=document.querySelector('#result'),fitRoute=document.querySelector('#fit-route');result.hidden=!route;fitRoute.disabled=!route||route.nodes.length<2;document.querySelector('#copy-feedback').textContent='';
     if(start&&goal&&!route){status.textContent=`${byId.get(start).name} → ${byId.get(goal).name}: connection or step count unresolved in revision 5027. No commands offered.`;return}
-    if(route){document.querySelector('#summary').textContent=`${route.moves} moves · ${byId.get(start).name} → ${byId.get(goal).name}`;document.querySelector('#grouped').textContent=route.runs.join(' · ')||'Already there';document.querySelector('#commands').value=route.commands.join(';;');status.textContent='Source-counted map route; live travel and boundary entrances unverified.';for(let i=1;i<route.nodes.length;i++){const a=byId.get(route.nodes[i-1]),b=byId.get(route.nodes[i]),index=model.spans.findIndex(s=>s.from===a.id&&s.to===b.id||s.to===a.id&&s.from===b.id);spanEls[index]?.classList.add('active');add('line',{x1:X(a.column)+(X(b.column)-X(a.column))*.4,y1:Y(a.row),x2:X(a.column)+(X(b.column)-X(a.column))*.76,y2:Y(b.row),class:'route-arrow','marker-end':'url(#east-arrow)'},active)}return}
+    if(route){document.querySelector('#summary').textContent=`${route.moves} moves${route.moves ? " on the C → east-end section" : ""} · ${byId.get(start).name} → ${byId.get(goal).name}`;document.querySelector('#grouped').textContent=route.runs.join(' · ')||'Already there';document.querySelector('#commands').value=route.commands.join(';;');status.textContent='Partial source-counted section only. Earlier Eastern Road spans and live boundary entrances remain unmodelled.';for(let i=1;i<route.nodes.length;i++){const a=byId.get(route.nodes[i-1]),b=byId.get(route.nodes[i]),index=model.spans.findIndex(s=>s.from===a.id&&s.to===b.id||s.to===a.id&&s.from===b.id);spanEls[index]?.classList.add('active');add('line',{x1:X(a.column)+(X(b.column)-X(a.column))*.4,y1:Y(a.row),x2:X(a.column)+(X(b.column)-X(a.column))*.76,y2:Y(b.row),class:'route-arrow','marker-end':'url(#east-arrow)'},active)}return}
     status.textContent=start?`${byId.get(start).name}. Click a destination; only explicitly counted spans can route.`:'Click a room or place for details.';
   }
   function select(n){selected=n.id;const mode=document.querySelector('#click-mode').value;if(mode==='start')start=n.id;else if(mode==='goal')goal=n.id;else if(!start||goal){start=n.id;goal=null}else goal=n.id;show()}

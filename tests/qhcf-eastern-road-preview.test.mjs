@@ -1,10 +1,14 @@
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
-import {buildModel,routeBetween,sourceSegments} from '../qhcf/eastern-road-preview.mjs';
+import {buildModel,routeBetween,sourceSegments,sourceCountNotes} from '../qhcf/eastern-road-preview.mjs';
 
 const source=JSON.parse(readFileSync(new URL('../qhcf/data/areas/the-eastern-road.json',import.meta.url)));
 const model=buildModel(source);
 const segments=sourceSegments(source);
+const notes=sourceCountNotes(source);
+assert.deepEqual(notes.filter(n=>n.row===4).map(n=>n.label),['(13E)','(6E)','(10E)','(3)']);
+assert.deepEqual(notes.filter(n=>n.row===5).map(n=>n.label),['(7E)','(5E)']);
+assert.equal(notes.length,11);
 assert.equal(segments.length,76);
 assert.equal(segments.length,source.lines.join('').split('').filter(c=>c==='-'||c==='|').length);
 for(const {row,column,glyph} of segments)assert.equal(source.lines[row-1][column-1],glyph);
