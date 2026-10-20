@@ -14,7 +14,7 @@ const areas = [
   {name:'Galadon',slug:'galadon',preview:'/qhcf/galadon-preview.html',row:5,column:1},
   {name:'Outskirts of Galadon',slug:'outskirts-of-galadon',row:2,column:9},
   {name:'Outskirts of Galadon',slug:'outskirts-of-galadon',row:8,column:9},
-  {name:'Bramblefield Road',slug:'bramblefield-road',row:1,column:63},
+  {name:'Bramblefield Road',slug:'bramblefield-road',preview:'/qhcf/bramblefield-preview.html',row:1,column:63},
   {name:"Voralia’s Tears",slug:'voralia-s-tears',row:3,column:37},
   {name:"Voralia’s Tears",slug:'voralia-s-tears',row:7,column:35},
   {name:'Aldevari',slug:'aldevari',preview:'/qhcf/aldevari-preview.html',row:3,column:75},
