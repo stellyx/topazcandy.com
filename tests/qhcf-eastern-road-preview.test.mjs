@@ -26,10 +26,16 @@ const aldevari=turnoffs.find(t=>t.name==='Aldevari');
 assert.deepEqual([aldevari.section,aldevari.column,aldevari.direction,aldevari.href],['upper',77,'north','/qhcf/areas/aldevari.html']);
 assert.ok(!model.nodes.find(n=>n.id==='eastern.map.east-e').name.includes('Along the Eastern Road'));
 assert.equal(model.nodes.find(n=>n.id==='eastern.map.c').name,'Large Crossroads (C)');
-assert.equal(turnoffs.length,14);
+assert.equal(turnoffs.length,15);
 assert.equal(turnoffs.find(t=>t.name.startsWith('Ostalagiah')).href,'/qhcf/areas/the-ruins-of-ostalagiah.html');
 assert.equal(turnoffs.find(t=>t.name==='A Thick Copse of Trees').href,null);
 assert.equal(turnoffs.find(t=>t.name.startsWith('Drogan Hills')).href,'/qhcf/areas/the-drogran-hills.html');
+assert.deepEqual(turnoffs.filter(t=>t.slug==='the-drogran-hills').map(t=>[t.column,t.name,t.direction]),[
+  [24,'Drogan Hills · west branch','south'],
+  [32,'Drogan Hills · east branch','south']
+]);
+assert.equal(source.lines[16][23],'|');
+assert.equal(source.lines[16][31],'|');
 assert.deepEqual(turnoffs.filter(t=>t.slug==='the-grove').map(t=>[t.column,t.name,t.href]),[
   [18,'The Grove · west turnoff','/qhcf/areas/the-grove.html'],
   [34,'The Grove · east turnoff','/qhcf/areas/the-grove.html']
@@ -51,6 +57,11 @@ const outbound=routeBetween(model,id('c'),id('east-one'));
 assert.equal(outbound.moves,12);
 assert.deepEqual(outbound.runs,['7e','5e']);
 assert.equal(outbound.commands.join(';;'),Array(12).fill('e').join(';;'));
+assert.deepEqual(routeBetween(model,id('south-one'),id('lower-top-2')).commands,['e','e','e']);
+assert.deepEqual(routeBetween(model,id('lower-0'),id('lower-4')).commands,['e','e','e','e']);
+assert.deepEqual(routeBetween(model,id('lower-4'),id('lower-0')).commands,['w','w','w','w']);
+assert.equal(routeBetween(model,id('east-one'),id('south-one')),null);
+assert.equal(routeBetween(model,id('lower-top-2'),id('lower-0')),null);
 assert.equal(model.nodes.find(n=>n.id===id('east-one')).name,'West Grove turnoff approach (1) · join unresolved');
 assert.equal(model.nodes.find(n=>n.id===id('south-one')).name,'West Grove turnoff (1) · crossing unresolved');
 assert.ok(!model.spans.some(s=>s.from===id('east-one')&&s.to===id('south-one')));
@@ -71,7 +82,7 @@ assert.ok(page.includes('href="/qhcf/areas/the-eastern-road.html"'));
 assert.ok(page.includes('Galadon crossing and matching entrance unverified'));
 assert.ok(page.includes('no crossing step is routed'));
 assert.ok(page.includes('12 east from C total'));
-assert.ok(page.includes('second/east Grove turnoff'));
+assert.ok(page.includes('second is 4 east'));
 assert.ok(page.includes('<details class="handoff">'));
 assert.ok(page.includes('class="map-stage"'));
 assert.ok(page.includes('class="key-exits"'));
@@ -91,7 +102,7 @@ assert.ok(!script.includes('[[9,2,5]'));
 assert.ok(!script.includes('class:\'area-link\''));
 assert.ok(script.includes("add('rect',{x:x-width/2"));
 assert.ok(script.includes("const keyIds=new Set("));
-assert.ok(script.includes("['a','c','east-e','east-one'].map"));
+assert.ok(script.includes("['a','c','east-e','east-one','south-one','lower-top-2','lower-0','lower-4'].map"));
 assert.ok(page.includes('id="turnoff-links"'));
 assert.ok(script.includes("item.href=a.preview||`/qhcf/areas/${a.slug}.html`"));
 assert.ok(script.includes("item.addEventListener('focus',()=>showNote(descriptor))"));

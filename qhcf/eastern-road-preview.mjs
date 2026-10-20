@@ -1,12 +1,13 @@
 // Isolated preview model. Coordinates locate evidence in the captured chart; they
-// never determine command counts. Only the two explicitly numbered spans route.
+// never determine command counts. Upper and lower counted spans route independently;
+// the printed upper 1 → lower 1 join remains unresolved.
 const named = [
   ['a','Galadon Outskirts junction (A)',5,9],['b1','Beyond Galadon Outskirts (B west)',5,11],['b2','Beyond Galadon Outskirts (B east)',5,13],
   ['along','Along the Eastern Road',5,16],['s','S · source marker',5,42],
   ['eastern','Eastern Road center',5,46],['c','Large Crossroads (C)',5,70],['east-e','Aldevari north turnoff (E)',5,77],
   ['east-one','West Grove turnoff approach (1) · join unresolved',5,84],['south-one','West Grove turnoff (1) · crossing unresolved',14,18],
-  ...[20,22,24].map((col,i)=>[`lower-top-${i}`,`E (southern road ${i+1})`,14,col]),
-  ...[24,26,28,30,32,34,36,38].map((col,i)=>[`lower-${i}`,`E (lower road ${i+1})`,16,col]),
+  ...[20,22,24].map((col,i)=>[`lower-top-${i}`,i===2?'South turn to lower Eastern Road (E)':`E (southern road ${i+1})`,14,col]),
+  ...[24,26,28,30,32,34,36,38].map((col,i)=>[`lower-${i}`,i===0?'Drogan Hills west south branch (E)':i===4?'Drogan Hills east south branch (E)':`E (lower road ${i+1})`,16,col]),
   ['lower-east','E (southeast road)',18,45],['hamsah-east','E (toward Hamsah) · route unresolved',20,45],['i','I · Bridge over the River Khalid',20,55]
 ].map(([key,name,row,column])=>({id:`eastern.map.${key}`,name,row,column,kind:'letter'}));
 const areas = [
@@ -43,14 +44,17 @@ export const turnoffs = [
   {area:6,section:'upper',column:77,direction:'north',lane:0},
   {area:11,name:'The Grove · west turnoff',section:'lower',column:18,direction:'north',lane:1},
   {area:12,name:'The Grove · east turnoff',section:'lower',column:34,direction:'north',lane:0},
-  {area:13,section:'lower',column:24,direction:'south',lane:0}
+  {area:13,name:'Drogan Hills · west branch',section:'lower',column:24,direction:'south',lane:0},
+  {area:13,name:'Drogan Hills · east branch',section:'lower',column:32,direction:'south',lane:1}
 ].map(t=>({...t,name:t.name||areas[t.area].name,slug:t.area===undefined?null:areas[t.area].slug,
   href:t.area===undefined||!areas[t.area].slug?null:areas[t.area].preview||`/qhcf/areas/${areas[t.area].slug}.html`,
   sourceRow:t.area===undefined?null:areas[t.area].row,
   sourceColumn:t.area===undefined?null:areas[t.area].column}));
 const spans = [
   {from:'eastern.map.c',to:'eastern.map.east-e',count:7,evidence:'(7E) on source row 5'},
-  {from:'eastern.map.east-e',to:'eastern.map.east-one',count:5,evidence:'(5E) on source row 5'}
+  {from:'eastern.map.east-e',to:'eastern.map.east-one',count:5,evidence:'(5E) on source row 5'},
+  {from:'eastern.map.south-one',to:'eastern.map.lower-top-2',count:3,evidence:'1-E-E-E on source row 14'},
+  {from:'eastern.map.lower-0',to:'eastern.map.lower-4',count:4,evidence:'E-E-E-E-E on source row 16'}
 ];
 export function buildModel(source){
   if(source.slug!=='the-eastern-road'||source.source?.revision_id!==5027)throw Error('Unexpected source revision');
@@ -122,7 +126,7 @@ if(typeof document!=='undefined'){
   }
   for(const t of turnoffs){
     const x=t.section==='upper'?U(t.column):L(t.column),north=t.direction==='north';
-    const displayName=t.name.startsWith('Drogan Hills')?'Drogan Hills':t.name==='Unidentified southern spur'?'Unknown spur':t.name;
+    const displayName=t.name==='Unidentified southern spur'?'Unknown spur':t.name;
     const y=north?90-t.lane*43:285+t.lane*42,width=Math.min(220,Math.max(106,displayName.length*7.5+38));
     add('line',{x1:x,y1:BASE,x2:x,y2:north?y+14:y-14,class:'road branch-stub','aria-hidden':'true'},roads);
     const sign=add(t.href?'a':'g',t.href?{href:t.href,class:'turn-sign'}:{class:'turn-sign unresolved',tabindex:'0',role:'note'},roads);
@@ -146,7 +150,10 @@ if(typeof document!=='undefined'){
   for(const [id,label,above] of [
     ['eastern.map.a','Galadon Outskirts junction',true],
     ['eastern.map.c','Large Crossroads',true],
-    ['eastern.map.east-one','West Grove branch (1)',false]
+    ['eastern.map.east-one','West Grove branch (1)',false],
+    ['eastern.map.lower-top-2','South turn',true],
+    ['eastern.map.lower-0','Drogran west branch',false],
+    ['eastern.map.lower-4','Drogran east branch',true]
   ]){
     const n=byId.get(id);
     const p=P(n.row,n.column);add('text',{x:p.x,y:p.y+(above?-23:35),class:'corridor-label','text-anchor':n.column>78?'end':'middle','aria-hidden':'true'},roads).textContent=label;
@@ -160,7 +167,7 @@ if(typeof document!=='undefined'){
   }
   const note=document.querySelector('#map-note'),defaultNote=note.textContent;
   const showNote=value=>{note.textContent=value},resetNote=()=>{note.textContent=defaultNote};
-  const keyIds=new Set(['a','c','east-e','east-one'].map(key=>`eastern.map.${key}`));
+  const keyIds=new Set(['a','c','east-e','east-one','south-one','lower-top-2','lower-0','lower-4'].map(key=>`eastern.map.${key}`));
   for(const n of model.nodes){
     const p=P(n.row,n.column),key=keyIds.has(n.id);
     if(!key){if(n.kind==='plus')add('text',{x:p.x,y:p.y+4,'text-anchor':'middle',class:'source-plus','aria-hidden':'true'},points).textContent='+';continue}
@@ -183,7 +190,7 @@ if(typeof document!=='undefined'){
   for(const field of [fromField,toField])for(const n of sorted){const option=document.createElement('option');option.value=n.id;option.textContent=n.name;field.append(option)}
   function show(){fromField.value=start||'';toField.value=goal||'';document.querySelector('#start-chip').textContent=start?`① ${byId.get(start).name}`:'① Click starting point';document.querySelector('#goal-chip').textContent=goal?`② ${byId.get(goal).name}`:'② Click destination';document.querySelector('#flip').disabled=!(start&&goal);for(const g of points.children){g.classList.toggle('start',g.dataset.room===start);g.classList.toggle('goal',g.dataset.room===goal);g.classList.toggle('selected',g.dataset.room===selected)}active.replaceChildren();spanEls.forEach(el=>el.classList.remove('active'));route=start&&goal?routeBetween(model,start,goal):null;const result=document.querySelector('#result'),fitRoute=document.querySelector('#fit-route');result.hidden=!route;fitRoute.disabled=!route||route.nodes.length<2;document.querySelector('#copy-feedback').textContent='';
     if(start&&goal&&!route){status.textContent=`${byId.get(start).name} → ${byId.get(goal).name}: connection or step count unresolved in revision 5027. No commands offered.`;return}
-    if(route){document.querySelector('#summary').textContent=`${route.moves} moves${route.moves ? " on the C → east-end section" : ""} · ${byId.get(start).name} → ${byId.get(goal).name}`;document.querySelector('#grouped').textContent=route.runs.join(' · ')||'Already there';document.querySelector('#commands').value=route.commands.join(';;');status.textContent='Partial source-counted section only. Earlier Eastern Road spans and live boundary entrances remain unmodelled.';for(let i=1;i<route.nodes.length;i++){const a=byId.get(route.nodes[i-1]),b=byId.get(route.nodes[i]),index=model.spans.findIndex(s=>s.from===a.id&&s.to===b.id||s.to===a.id&&s.from===b.id);spanEls[index]?.classList.add('active');add('line',{x1:P(a.row,a.column).x+(P(b.row,b.column).x-P(a.row,a.column).x)*.4,y1:BASE,x2:P(a.row,a.column).x+(P(b.row,b.column).x-P(a.row,a.column).x)*.76,y2:BASE,class:'route-arrow','marker-end':'url(#east-arrow)'},active)}return}
+    if(route){document.querySelector('#summary').textContent=`${route.moves} moves on this chart segment · ${byId.get(start).name} → ${byId.get(goal).name}`;document.querySelector('#grouped').textContent=route.runs.join(' · ')||'Already there';document.querySelector('#commands').value=route.commands.join(';;');status.textContent='Partial source-counted section only. Earlier Eastern Road spans and live boundary entrances remain unmodelled.';for(let i=1;i<route.nodes.length;i++){const a=byId.get(route.nodes[i-1]),b=byId.get(route.nodes[i]),index=model.spans.findIndex(s=>s.from===a.id&&s.to===b.id||s.to===a.id&&s.from===b.id);spanEls[index]?.classList.add('active');add('line',{x1:P(a.row,a.column).x+(P(b.row,b.column).x-P(a.row,a.column).x)*.4,y1:BASE,x2:P(a.row,a.column).x+(P(b.row,b.column).x-P(a.row,a.column).x)*.76,y2:BASE,class:'route-arrow','marker-end':'url(#east-arrow)'},active)}return}
     status.textContent=start?`${byId.get(start).name}. Click a destination; only explicitly counted spans can route.`:'Click a room or place for details.';
   }
   function select(n){selected=n.id;const mode=document.querySelector('#click-mode').value;if(mode==='start')start=n.id;else if(mode==='goal')goal=n.id;else if(!start||goal){start=n.id;goal=null}else goal=n.id;show()}
