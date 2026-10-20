@@ -59,6 +59,8 @@ test('historical archive is complete, credited, and visibly non-current',()=>{
  }
  assert.match(galadon,/wiki\.qhcf\.net\/index\.php\?title=Galadon&amp;oldid=5044/);
  assert.match(galadon,/Stable ID: qhcf\.area\.galadon/);
+ assert.match(landing,/<link rel="canonical" href="https:\/\/topazcandy\.com\/warp\/maps\/archive\/cf\/">/);
+ assert.doesNotMatch(landing,/rel="canonical" href="[^"]*index\.html"/);
 });
 
 test('archive root-absolute local links resolve',()=>{

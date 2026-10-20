@@ -6,7 +6,8 @@ const root=path.resolve(import.meta.dirname,'..');
 const qhcf=path.join(root,'qhcf');
 const warp=path.join(root,'warp','maps');
 const archive=path.join(warp,'archive','cf');
-const sourceRoot='C:/Users/drewd/Documents/Codex/2026-10-20/task/generated';
+const sourceRoot=process.env.WARP_SEALED_EXPORT_ROOT;
+if(!sourceRoot)throw Error('Set WARP_SEALED_EXPORT_ROOT to the reviewed sealed-export generated directory');
 const sourceTopology=path.join(sourceRoot,'topology-v3.json');
 const sourceStatus=path.join(sourceRoot,'v4.1.4-complete-content-final-status.json');
 const sourceDirections=path.join(sourceRoot,'v4.1.4-directions-compatibility-analysis.json');
@@ -102,7 +103,7 @@ function copyArchiveDirectory(sourceDir,targetDir,relative=''){
     .replaceAll('/__KEEP_QHCF_RANKING_ITEMS__','/qhcf/references/ranking-items')
     .replaceAll('/__KEEP_QHCF_ACADEMY__','/qhcf/academy-temple-coverage.html');
   if(ext==='.html'){
-   const canonical='https://topazcandy.com/warp/maps/archive/cf/'+rel.split(path.sep).join('/');
+   const canonical=rel==='index.html'?'https://topazcandy.com/warp/maps/archive/cf/':'https://topazcandy.com/warp/maps/archive/cf/'+rel.split(path.sep).join('/');
    text=text.replace('</head>',`<link rel="canonical" href="${canonical}"></head>`);
    text=text.replace(/<body([^>]*)>/,`<body$1><aside class="notice" data-archive-notice><strong>Historical Carrion Fields archive.</strong> Preserved source material; not verified as current WARP gameplay. <a href="/warp/maps/">Open WARP Maps</a>.</aside>`);
   }
