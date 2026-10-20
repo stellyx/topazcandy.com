@@ -1,5 +1,5 @@
 import { buildAsciiMapGraph } from './navigation/route-engine.mjs';
-import { EASTERN_ANCHORS, planTwoAreaRoute } from './cross-area-route.mjs';
+import { EASTERN_ANCHORS, guildThresholds, planTwoAreaRoute } from './cross-area-route.mjs';
 
 const fromField = document.querySelector('#from'), toField = document.querySelector('#to');
 const buttons = [...document.querySelectorAll('[data-anchor]')];
@@ -12,11 +12,16 @@ function addChoice(field, group, node) {
   group.append(option);
 }
 function populate() {
-  const named = buildAsciiMapGraph(graph).nodes.filter(node => node.kind !== 'plus-room' && node.kind !== 'linked-area');
-  const crossroads = buildAsciiMapGraph(graph).nodes.find(node => node.id === 'galadon.map.r51c36');
+  const map = buildAsciiMapGraph(graph);
+  const named = map.nodes.filter(node => node.kind !== 'plus-room' && node.kind !== 'linked-area');
+  const crossroads = map.nodes.find(node => node.id === 'galadon.map.r51c36');
   const galadon = [...named.filter(node => node.id === 'galadon.map.marker.m' || node.id === 'galadon.map.gate.east' || node.id.startsWith('galadon.map.guild.')), crossroads];
-  names = new Map([...named, crossroads, ...EASTERN_ANCHORS].map(node => [node.id, node.name]));
+  names = new Map([...map.nodes, ...EASTERN_ANCHORS].map(node => [node.id, node.name]));
   names.set('galadon.map.r51c36', 'Large Crossroads');
+  for (const [guildId, threshold] of guildThresholds(map)) {
+    const guild = names.get(guildId)?.replace(/ \([^)]*\)$/, '') || 'Guild';
+    names.set(threshold.outside, `Outside ${guild}`);
+  }
   for (const field of [fromField, toField]) {
     const city = document.createElement('optgroup'); city.label = 'Galadon';
     const road = document.createElement('optgroup'); road.label = 'Eastern Road (entrance unknown)';
@@ -49,10 +54,10 @@ function render() {
   document.querySelector('#selection').textContent = !start ? 'First click sets Start.' : !destination ? `Start: ${label(start)}. Choose Destination.` : `${label(start)} → ${label(destination)}. Another click starts a new pair.`;
   if (!graph || !start || !destination) { summary.textContent = 'Choose a start and destination.'; return; }
   const result = planTwoAreaRoute(graph, start, destination);
-  summary.textContent = result.status === 'PARTIAL' ? `${result.known_moves} known Galadon moves + unknown crossing/remainder · no end-to-end total` : result.status === 'MAP_ROUTE' ? `${result.known_moves} map-derived moves · live travel unverified` : result.reason || 'No supported route calculated.';
+  summary.textContent = result.status === 'PARTIAL' ? `${result.known_moves} known Galadon ${result.known_moves === 1 ? 'move' : 'moves'} + unknown crossing/remainder · no end-to-end total` : result.status === 'MAP_ROUTE' ? `${result.known_moves} map-derived ${result.known_moves === 1 ? 'move' : 'moves'} · live travel unverified` : result.reason || 'No supported route calculated.';
   for (const leg of result.legs) {
     const section = document.createElement('section'); section.className = 'leg';
-    const title = document.createElement('strong'); title.textContent = `${label(leg.from)} → ${label(leg.to)} · ${leg.moves} moves · ${leg.grouped}`;
+    const title = document.createElement('strong'); title.textContent = `${label(leg.from)} → ${label(leg.to)} · ${leg.moves} ${leg.moves === 1 ? 'move' : 'moves'} · ${leg.grouped}`;
     const evidence = document.createElement('p'); evidence.textContent = `Captured Galadon map, revision ${leg.source_revision}. Not live verified.`;
     const code = document.createElement('code'); code.textContent = leg.copy_commands;
     const button = document.createElement('button'); button.type = 'button'; button.textContent = 'Copy this leg'; button.addEventListener('click', () => copy(leg.copy_commands, 'Leg'));
