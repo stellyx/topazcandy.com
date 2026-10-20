@@ -22,7 +22,7 @@ const areas = [
   {name:'Ostalagiah · The Ruins',slug:'the-ruins-of-ostalagiah',row:9,column:57},
   {name:'Dwarf Forest',slug:'the-dwarf-forest',row:10,column:69},
   {name:'A Thick Copse of Trees',slug:null,row:8,column:23},
-  {name:'The Grove',slug:'the-grove',row:12,column:18},
+  {name:'The Grove',slug:'the-grove',preview:'/qhcf/grove-preview.html',row:12,column:18},
   {name:'The Grove',slug:'the-grove',row:14,column:35},
   {name:'Drogan Hills · The Drogran Hills',slug:'the-drogran-hills',row:18,column:24},
   {name:'Outside Hamsah Mu’tazz',slug:'outside-hamsah-mu-tazz',row:20,column:64},
