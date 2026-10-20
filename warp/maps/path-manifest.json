@@ -18,6 +18,16 @@
       "sha256": "9C07E866993E659C496A69874716DFB21A53D91A3C2CC7F4539EFFD96F6CA641"
     },
     {
+      "path": "warp/maps/archive/cf/ancient-emerald-forest-map.mjs",
+      "bytes": 5854,
+      "sha256": "AA99AAC13D98703D67BDD39CF75B0ED106FF8322CE52CAF35CD3016668064758"
+    },
+    {
+      "path": "warp/maps/archive/cf/ancient-emerald-forest.css",
+      "bytes": 1908,
+      "sha256": "76EEF8F68F8C29CDE7C0C5C5CDC92D483634758A8CE86605FCCA11AF8AAA1C3C"
+    },
+    {
       "path": "warp/maps/archive/cf/areas/a-dry-riverbed.html",
       "bytes": 30192,
       "sha256": "5631020EE2E8DC2C0710F8C140DB2298380324154E2F70D0958C596EE457760A"
@@ -59,8 +69,8 @@
     },
     {
       "path": "warp/maps/archive/cf/areas/ancient-emerald-forest.html",
-      "bytes": 135247,
-      "sha256": "6EEAD77947DCB9976E94CAB79356AD5067E41BC304801E6A3BDFA6E7CC738AD4"
+      "bytes": 8821,
+      "sha256": "CCA77FF7E098651E58FF2F72464E1FC6BB733D1700EA96B0DC4AE6F555734243"
     },
     {
       "path": "warp/maps/archive/cf/areas/ar-atouldain.html",
