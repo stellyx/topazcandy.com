@@ -38,6 +38,6 @@ test('legacy overview lands in historical archive while current WARP remains sep
  const overview=manifest.redirects.find(record=>record.legacy_path==='/qhcf/index.html');
  assert.equal(overview.destination,'/warp/maps/archive/cf/');
  const current=fs.readFileSync(path.join(root,'warp','maps','index.html'),'utf8');
- assert.match(current,/Galadon structural candidate/);
- assert.match(current,/No executable directions/);
+ assert.match(current,/Galadon graphical candidate/);
+ assert.match(current,/never control the game/);
 });

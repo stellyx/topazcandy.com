@@ -23,7 +23,7 @@ test('public WARP candidate preserves the sealed topology contract',()=>{
 });
 
 test('public export exposes only reviewed public-town structure fields',()=>{
- const allowed=['exits','id','position','source_kind','source_label_for_reference_only','source_node_id'];
+ const allowed=['description','exits','id','position','source_kind','source_label_for_reference_only','source_node_id','title'];
  for(const room of data.rooms){
   assert.deepEqual(Object.keys(room).sort(),allowed);
   assert.deepEqual(Object.keys(room.position).sort(),['x','y','z']);
@@ -33,17 +33,21 @@ test('public export exposes only reviewed public-town structure fields',()=>{
  for(const forbidden of ['password','auth_token','player_record','family_tree','private_home','timeline_event'])assert.equal(text.includes(forbidden),false,forbidden);
 });
 
-test('WARP-facing page has no QHCF branding and no executable route UI',()=>{
+test('WARP-facing page separates offline route previews from executable gameplay',()=>{
  const html=fs.readFileSync(path.join(warp,'index.html'),'utf8');
  const css=fs.readFileSync(path.join(warp,'maps.css'),'utf8');
+ const module=fs.readFileSync(path.join(warp,'map.mjs'),'utf8');
  const qhcfMentions=[...html.matchAll(/\bQHCF\b/g)];
  assert.equal(qhcfMentions.length,2,'only the intentionally retained reference label and source credit may name QHCF');
  assert.match(html,/>QHCF ranking &amp; items<\/a>/);
  assert.match(html,/QHCF \/ DIKU-WIKI contributors/);
  assert.match(html,/WARP Maps/);
- assert.match(html,/No executable directions/);
- assert.doesNotMatch(html,/<button[^>]*>\s*Copy/i);
- assert.doesNotMatch(html,/route planner/i);
+ assert.match(html,/Offline candidate, not installed-game proof/);
+ assert.match(html,/id="copy-route"[^>]*disabled/);
+ assert.match(html,/Double-semicolon command text/);
+ assert.match(module,/planCandidateRoute/);
+ assert.match(module,/Not live-game verified or executable/);
+ assert.doesNotMatch(module,/send\(|WebSocket|Mudlet/i);
  assert.match(html,/http:\/\/wiki\.qhcf\.net\/index\.php\?title=Galadon/);
  assert.match(css,/\.map-shell>\*\{min-width:0\}/,'wide SVG must stay inside its scroll pane on phones');
 });

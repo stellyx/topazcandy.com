@@ -41,7 +41,9 @@
       "exits": {
         "south": "WarpGaladonSeed#1"
       },
-      "source_label_for_reference_only": "Northern Roads (north)"
+      "source_label_for_reference_only": "Northern Roads (north)",
+      "title": "Training Road Threshold",
+      "description": "The training yard remains visible through the open way north. South, a maintained road descends toward a stone orientation marker, Quarry Road, and the town beyond. A painted board names one nearby objective: WINDCLOCK CARDS — four moves south."
     },
     {
       "id": "WarpGaladonSeed#1",
@@ -56,7 +58,9 @@
         "north": "WarpGaladonSeed#0",
         "south": "WarpGaladonSeed#2"
       },
-      "source_label_for_reference_only": "Galadon Outskirts (north)"
+      "source_label_for_reference_only": "Galadon Outskirts (north)",
+      "title": "Roadside Orientation Stone",
+      "description": "A waist-high stone stands beside the north-south road. Its north face carries a training-yard symbol. Its south face shows a falling pebble, a gate, and a clock card in that order. Raised arrows and plain text repeat the same sequence."
     },
     {
       "id": "WarpGaladonSeed#2",
@@ -71,7 +75,9 @@
         "north": "WarpGaladonSeed#1",
         "south": "WarpGaladonSeed#3"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Quarry Road",
+      "description": "Pale dust coats the road between cut banks. Pebbles patter down one side beneath a red warning ribbon that moves despite the still air. A cracked shelf above the fresh stone fan makes the next danger plain before it falls."
     },
     {
       "id": "WarpGaladonSeed#3",
@@ -86,7 +92,9 @@
         "north": "WarpGaladonSeed#2",
         "south": "WarpGaladonSeed#9"
       },
-      "source_label_for_reference_only": "North Gate (N)"
+      "source_label_for_reference_only": "North Gate (N)",
+      "title": "North Gate",
+      "description": "A broad stone gate marks the first civic edge on the road. Quarry dust lies north; painted wind-clock cards hang beneath the southern arch. The gate is open, ordinary, and not a safety claim."
     },
     {
       "id": "WarpGaladonSeed#4",
@@ -100,7 +108,9 @@
       "exits": {
         "east": "WarpGaladonSeed#5"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Dewglass End",
+      "description": "A curved wall of thick glass holds beads of morning dew that refuse to slide down, even after the stone beneath them dries. A broad tactile arrow points EAST toward Dewglass Walk."
     },
     {
       "id": "WarpGaladonSeed#5",
@@ -116,7 +126,9 @@
         "south": "WarpGaladonSeed#13",
         "west": "WarpGaladonSeed#4"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Dewglass Walk",
+      "description": "Morning light breaks into small rainbows along a public walk surfaced with dry gray stone. WEST ends at Dewglass End. EAST reaches Prism Nook. SOUTH descends toward Rainletter Cross."
     },
     {
       "id": "WarpGaladonSeed#6",
@@ -130,7 +142,9 @@
       "exits": {
         "west": "WarpGaladonSeed#5"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Prism Nook",
+      "description": "A stone nook contains three clear prisms bolted above a bench-height ledge. Sunlight gives each prism a different stripe across the floor. WEST returns to Dewglass Walk."
     },
     {
       "id": "WarpGaladonSeed#7",
@@ -144,7 +158,9 @@
       "exits": {
         "east": "WarpGaladonSeed#8"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Gust-Card Alcove",
+      "description": "Weather cards hang beneath a shallow awning, each card punched with a pattern for calm, breeze, gust, or gale. They remain still today. EAST opens onto Gust-Card Walk."
     },
     {
       "id": "WarpGaladonSeed#8",
@@ -159,7 +175,9 @@
         "east": "WarpGaladonSeed#9",
         "west": "WarpGaladonSeed#7"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Gust-Card Walk",
+      "description": "A line of punched weather cards turns gently above the paving, making the faintest wind visible. WEST reaches Gust-Card Alcove. EAST reaches Windclock Crossing."
     },
     {
       "id": "WarpGaladonSeed#9",
@@ -176,7 +194,9 @@
         "south": "WarpGaladonSeed#17",
         "west": "WarpGaladonSeed#8"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Windclock Crossing",
+      "description": "Four paved ways meet beneath a clock that measures ordinary minutes with one hand and gusts with another. Paper weather cards flap from a brass rail. Each names what the sky is doing in words, symbols, and raised marks."
     },
     {
       "id": "WarpGaladonSeed#10",
@@ -191,7 +211,9 @@
         "east": "WarpGaladonSeed#11",
         "west": "WarpGaladonSeed#9"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Minutehand Walk",
+      "description": "Thin brass strips set into the paving count ordinary minutes away from Windclock Crossing without claiming to alter them. WEST returns to the crossing. EAST enters the Clockmaker's Quiet."
     },
     {
       "id": "WarpGaladonSeed#11",
@@ -205,7 +227,9 @@
       "exits": {
         "west": "WarpGaladonSeed#10"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Clockmaker's Quiet",
+      "description": "Stopped clock faces cover one sheltered wall, each set to a different harmless mistake: early lunch, late rain, or yesterday afternoon. WEST returns to Minutehand Walk."
     },
     {
       "id": "WarpGaladonSeed#12",
@@ -219,7 +243,9 @@
       "exits": {
         "east": "WarpGaladonSeed#13"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Rainletter End",
+      "description": "A row of stone mail slots sits beneath a roof where raindrops briefly form letters before falling apart. No slot accepts parcels here. EAST reaches Rainletter Cross."
     },
     {
       "id": "WarpGaladonSeed#13",
@@ -236,7 +262,9 @@
         "south": "WarpGaladonSeed#20",
         "west": "WarpGaladonSeed#12"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Rainletter Cross",
+      "description": "Four gutters meet around a dry stone basin while stray drops tap visible letter shapes into its dust. NORTH climbs to Dewglass Walk. SOUTH reaches Downspout Court. EAST reaches Dry-Ink Nook. WEST ends at Rainletter End."
     },
     {
       "id": "WarpGaladonSeed#14",
@@ -250,7 +278,9 @@
       "exits": {
         "west": "WarpGaladonSeed#13"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Dry-Ink Nook",
+      "description": "A sheltered writing ledge holds sheets printed with water-resistant ink tests, all fixed beneath clear covers. WEST returns to Rainletter Cross."
     },
     {
       "id": "WarpGaladonSeed#15",
@@ -264,7 +294,9 @@
       "exits": {
         "east": "WarpGaladonSeed#16"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Chalkdust End",
+      "description": "A blank brick wall gathers colored chalk dust into tiny drifts without forming a door or symbol. The only open public way leads EAST to Chalkdust Walk."
     },
     {
       "id": "WarpGaladonSeed#16",
@@ -279,7 +311,9 @@
         "east": "WarpGaladonSeed#17",
         "west": "WarpGaladonSeed#15"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Chalkdust Walk",
+      "description": "Faint chalk footprints cross a paved walk and stop politely before the walls. WEST ends at Chalkdust End. EAST reaches Chalk Door Square."
     },
     {
       "id": "WarpGaladonSeed#17",
@@ -296,7 +330,9 @@
         "south": "WarpGaladonSeed#28",
         "west": "WarpGaladonSeed#16"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Chalk Door Square",
+      "description": "A small square is ringed by doors painted directly on blank walls. Most are children's chalk drawings. One has a real brass knob, but the brick behind it remains brick and says so on a municipal inspection tag."
     },
     {
       "id": "WarpGaladonSeed#18",
@@ -311,7 +347,9 @@
         "east": "WarpGaladonSeed#19",
         "west": "WarpGaladonSeed#17"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Knobmaker Walk",
+      "description": "A display rail carries brass, wood, ceramic, and glass door handles, each attached to a labeled block rather than a door. WEST returns to Chalk Door Square. EAST reaches Handle End."
     },
     {
       "id": "WarpGaladonSeed#19",
@@ -325,7 +363,9 @@
       "exits": {
         "west": "WarpGaladonSeed#18"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Handle End",
+      "description": "A sheltered recess holds one enormous porcelain handle mounted on a solid inspection plinth. A plain notice confirms that it is not attached to a door. WEST returns to Knobmaker Walk."
     },
     {
       "id": "WarpGaladonSeed#20",
@@ -340,7 +380,9 @@
         "east": "WarpGaladonSeed#21",
         "north": "WarpGaladonSeed#13"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Downspout Court",
+      "description": "Tin downspouts descend around a square court and pour even a light rain into labeled stone channels. NORTH returns to Rainletter Cross. EAST reaches Channel End."
     },
     {
       "id": "WarpGaladonSeed#21",
@@ -354,7 +396,9 @@
       "exits": {
         "west": "WarpGaladonSeed#20"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Channel End",
+      "description": "Shallow stone channels converge beneath a copper leaf that turns runoff into a neat spiral before releasing it to a covered drain. WEST returns to Downspout Court."
     },
     {
       "id": "WarpGaladonSeed#22",
@@ -368,7 +412,9 @@
       "exits": {
         "south": "WarpGaladonSeed#26"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Bellweather Loft",
+      "description": "A public stair ends at a covered loft full of bell ropes, wind vanes, and labeled jars of rain. Nothing here controls the weather. The attendants simply record what the weather claims it intended to do."
     },
     {
       "id": "WarpGaladonSeed#23",
@@ -382,7 +428,9 @@
       "exits": {
         "south": "WarpGaladonSeed#30"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Rain-Jar Landing",
+      "description": "A covered landing displays sealed jars labeled mist, drizzle, downpour, and weather that reconsidered. Nothing inside controls the sky. SOUTH descends toward Ledger Cross."
     },
     {
       "id": "WarpGaladonSeed#24",
@@ -396,7 +444,9 @@
       "exits": {
         "south": "WarpGaladonSeed#31"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Vane-Repair Landing",
+      "description": "Bent weather vanes hang from padded hooks beside diagrams of ordinary pivots and bearings. The display has no active tools or repair task. SOUTH descends to the east side of Ledger Cross."
     },
     {
       "id": "WarpGaladonSeed#25",
@@ -410,7 +460,9 @@
       "exits": {
         "south": "WarpGaladonSeed#29"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Bookwind Stair",
+      "description": "A short public stair is lined with metal pages that lift slightly whenever the library doors move below. Each page carries one large directional word. SOUTH descends to Ledger Cross."
     },
     {
       "id": "WarpGaladonSeed#26",
@@ -425,7 +477,9 @@
         "north": "WarpGaladonSeed#22",
         "south": "WarpGaladonSeed#37"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Bellrope Passage",
+      "description": "A narrow passage runs between Bellweather Loft and Umbrella Mendery beneath retired bell ropes tied safely overhead. NORTH climbs to Bellweather Loft. SOUTH descends to Umbrella Mendery."
     },
     {
       "id": "WarpGaladonSeed#27",
@@ -439,7 +493,9 @@
       "exits": {
         "east": "WarpGaladonSeed#28"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Bookmark End",
+      "description": "Ribbon bookmarks trail from a sealed return bin and lie in tidy loops across a low display shelf. No books or ribbons can be taken here. EAST reaches Library Return Steps."
     },
     {
       "id": "WarpGaladonSeed#28",
@@ -456,7 +512,9 @@
         "south": "WarpGaladonSeed#40",
         "west": "WarpGaladonSeed#27"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Library Return Steps",
+      "description": "Wide stone steps lead past a night-return slot. Books arrive there on their own schedules, some carried by readers and some walking on ribbon bookmarks. A chalkboard lists overdue titles without listing overdue people."
     },
     {
       "id": "WarpGaladonSeed#29",
@@ -473,7 +531,9 @@
         "west": "WarpGaladonSeed#28",
         "south": "WarpGaladonSeed#202"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Ledger Cross",
+      "description": "Four public walks meet around a stone ledger opened to a weatherproof page of civic directions. NORTH climbs Bookwind Stair. WEST reaches Library Return Steps. EAST enters Pageweight Cross. SOUTH leads to City Hall."
     },
     {
       "id": "WarpGaladonSeed#30",
@@ -490,7 +550,9 @@
         "south": "WarpGaladonSeed#46",
         "west": "WarpGaladonSeed#29"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Pageweight Cross",
+      "description": "Smooth pageweights shaped like sleeping birds hold public notices flat against the breeze. WEST returns to Ledger Cross. EAST reaches Binding Turn. NORTH climbs to Rain-Jar Landing. SOUTH follows the civic walk."
     },
     {
       "id": "WarpGaladonSeed#31",
@@ -506,7 +568,9 @@
         "south": "WarpGaladonSeed#42",
         "west": "WarpGaladonSeed#30"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Binding Turn",
+      "description": "Wide cloth bindings wrap the corners of a stone arcade, protecting both books and shoulders from hard edges. WEST returns to Pageweight Cross. NORTH climbs to Vane-Repair Landing. SOUTH continues along the civic arcade."
     },
     {
       "id": "WarpGaladonSeed#32",
@@ -520,7 +584,9 @@
       "exits": {
         "east": "WarpGaladonSeed#33"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Envelope Fold",
+      "description": "A sheltered recess displays envelopes folded into birds, boats, and one structurally doubtful hat. Every example is fixed to a labeled board. EAST reaches Inkwing Post."
     },
     {
       "id": "WarpGaladonSeed#33",
@@ -536,7 +602,9 @@
         "south": "WarpGaladonSeed#43",
         "west": "WarpGaladonSeed#32"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Inkwing Post",
+      "description": "A public posting wall is crowded with notices, receipts, and paper birds folded from misprinted envelopes. Three ink-winged birds keep exchanging the same route tags and becoming progressively more certain they are correct."
     },
     {
       "id": "WarpGaladonSeed#34",
@@ -550,7 +618,9 @@
       "exits": {
         "west": "WarpGaladonSeed#33"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Postmark Nook",
+      "description": "Round postmarks cover a stone wall in weatherproof ink, recording rain, wind, and ordinary delivery delays without naming anyone. WEST returns to Inkwing Post."
     },
     {
       "id": "WarpGaladonSeed#35",
@@ -564,7 +634,9 @@
       "exits": {
         "south": "WarpGaladonSeed#45"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Pipe-Gauge Landing",
+      "description": "A warm pipe rises through a tiled landing beside three pressure gauges with plain-language labels. The needles hold steady and request no adjustment. SOUTH descends to Warm Pipe Alley."
     },
     {
       "id": "WarpGaladonSeed#36",
@@ -578,7 +650,9 @@
       "exits": {
         "east": "WarpGaladonSeed#37"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Umbrella-Hook Walk",
+      "description": "Bent umbrella hooks form a harmless metal border along a dry paved walk, each tagged with the weather that defeated it. EAST reaches Umbrella Mendery."
     },
     {
       "id": "WarpGaladonSeed#37",
@@ -595,7 +669,9 @@
         "south": "WarpGaladonSeed#75",
         "west": "WarpGaladonSeed#36"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Umbrella Mendery",
+      "description": "Bent umbrellas hang by their handles above a counter padded with old towels. A hand-painted sign says WET FIRST, WIND SECOND, SUN LAST, unless the umbrella is already dry, in which case the sign recommends common sense."
     },
     {
       "id": "WarpGaladonSeed#38",
@@ -609,7 +685,9 @@
       "exits": {
         "west": "WarpGaladonSeed#37"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Drip-Test End",
+      "description": "A retired test frame holds patched umbrella cloth above a row of dry measuring cups. A notice records that every patch eventually met stronger rain. WEST returns to Umbrella Mendery."
     },
     {
       "id": "WarpGaladonSeed#39",
@@ -623,7 +701,9 @@
       "exits": {
         "southwest": "WarpGaladonSeed#62"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Slant-Rain Overlook",
+      "description": "A high stone overlook is striped by old rain marks running at an impossible angle across the parapet. The only public descent runs SOUTHWEST toward the lower civic streets."
     },
     {
       "id": "WarpGaladonSeed#40",
@@ -639,7 +719,9 @@
         "south": "WarpGaladonSeed#56",
         "east": "WarpGaladonSeed#202"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Library-Hall Cross",
+      "description": "Three civic walks meet beneath a carved lintel showing a book, a hall, and a drain channel in equal seriousness. NORTH reaches Library Return Steps. EAST enters City Hall. SOUTH follows the civic drain walk."
     },
     {
       "id": "WarpGaladonSeed#41",
@@ -654,7 +736,9 @@
         "south": "WarpGaladonSeed#51",
         "west": "WarpGaladonSeed#202"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Civic-Notice Landing",
+      "description": "A narrow landing carries public notices beneath clear rain covers, with expired sheets crossed out rather than quietly removed. WEST enters City Hall. SOUTH descends to Notice Cellar."
     },
     {
       "id": "WarpGaladonSeed#42",
@@ -668,7 +752,9 @@
       "exits": {
         "north": "WarpGaladonSeed#31"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Binding Loft",
+      "description": "Cloth, thread, and paste samples sit beneath glass in a small loft explaining how public ledgers survive damp weather. NORTH returns to Binding Turn."
     },
     {
       "id": "WarpGaladonSeed#43",
@@ -684,7 +770,9 @@
         "north": "WarpGaladonSeed#33",
         "south": "WarpGaladonSeed#52"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Inkwing Junction",
+      "description": "Paper birds circle a waist-high post and settle whenever a real person needs the crossing. NORTH reaches Inkwing Post. SOUTH reaches Pig Blossom Conservatory. EAST enters Sorting-Table Turn."
     },
     {
       "id": "WarpGaladonSeed#44",
@@ -699,7 +787,9 @@
         "south": "WarpGaladonSeed#54",
         "west": "WarpGaladonSeed#43"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Sorting-Table Turn",
+      "description": "A fixed table displays canceled envelopes sorted by paper weight, water damage, and how convincingly they once resembled birds. WEST returns to Inkwing Junction. SOUTH descends to Blossom Service Cross."
     },
     {
       "id": "WarpGaladonSeed#45",
@@ -714,7 +804,9 @@
         "north": "WarpGaladonSeed#35",
         "south": "WarpGaladonSeed#57"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Warm Pipe Alley",
+      "description": "Copper service pipes cross a narrow brick passage at shoulder height. One radiates honest boiler heat. Another carries cold water and complains about it in small knocks. Sooty pawprints circle both valves but never cross the yellow safety line."
     },
     {
       "id": "WarpGaladonSeed#46",
@@ -728,7 +820,9 @@
       "exits": {
         "north": "WarpGaladonSeed#30"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Ledger Stair",
+      "description": "A broad stair has civic account categories carved into each riser: WATER, ROADS, ROOFS, and UNEXPECTED BIRD COSTS. NORTH climbs to Pageweight Cross."
     },
     {
       "id": "WarpGaladonSeed#47",
@@ -742,7 +836,9 @@
       "exits": {
         "south": "WarpGaladonSeed#60"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Cloudhook Landing",
+      "description": "Empty copper hooks hang beneath a roof painted with careful diagrams of low clouds and safe shelter. No cloud is attached today. SOUTH descends to Windchime Service Cross."
     },
     {
       "id": "WarpGaladonSeed#48",
@@ -757,7 +853,9 @@
         "east": "WarpGaladonSeed#49",
         "south": "WarpGaladonSeed#61"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Rainrail Corner",
+      "description": "A sloped brass rail turns rain into a visible procession of drops along the corner without wetting the walkway. EAST reaches Far Gauge End. SOUTH descends toward the lower weather streets."
     },
     {
       "id": "WarpGaladonSeed#49",
@@ -772,7 +870,9 @@
         "south": "WarpGaladonSeed#62",
         "west": "WarpGaladonSeed#48"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Far-Gauge End",
+      "description": "A tall gauge records old rainfall with bronze bands and plain numbered labels. Its needle has been removed to prevent anyone mistaking history for a forecast. WEST returns to Rainrail Corner. SOUTH descends toward the civic weather walk."
     },
     {
       "id": "WarpGaladonSeed#50",
@@ -786,7 +886,9 @@
       "exits": {
         "north": "WarpGaladonSeed#202"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "City Hall South Steps",
+      "description": "Broad stone steps descend from City Hall between rails polished by ordinary public use. No ceremony or checkpoint blocks the way. NORTH enters City Hall."
     },
     {
       "id": "WarpGaladonSeed#51",
@@ -800,7 +902,9 @@
       "exits": {
         "north": "WarpGaladonSeed#41"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Notice Cellar",
+      "description": "A dry cellar preserves expired public notices in flat drawers, each marked by year and subject rather than by person. NORTH climbs to Civic-Notice Landing."
     },
     {
       "id": "WarpGaladonSeed#52",
@@ -815,7 +919,9 @@
         "east": "WarpGaladonSeed#53",
         "north": "WarpGaladonSeed#43"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Pig Blossom Conservatory",
+      "description": "A warm glass shelter holds big pink flowers with two dark centers like pig noses. Their stems are tied to padded stakes. When the watering cart rattles past, the blossoms oink in offended chorus."
     },
     {
       "id": "WarpGaladonSeed#53",
@@ -829,7 +935,9 @@
       "exits": {
         "west": "WarpGaladonSeed#52"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Conservatory Potting End",
+      "description": "Clean pots and blunt wooden labels sit behind glass beside a diagram of roots, water, and patient waiting. Nothing here can be planted or taken. WEST returns to Pig Blossom Conservatory."
     },
     {
       "id": "WarpGaladonSeed#54",
@@ -845,7 +953,9 @@
         "north": "WarpGaladonSeed#44",
         "south": "WarpGaladonSeed#69"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Blossom Service Cross",
+      "description": "Water pipes, pot rails, and a tiled runoff channel meet beneath a sign shaped like a pink leaf. NORTH returns to Sorting-Table Turn. EAST follows Hose Walk. SOUTH reaches the lower garden service lane."
     },
     {
       "id": "WarpGaladonSeed#55",
@@ -860,7 +970,9 @@
         "east": "WarpGaladonSeed#56",
         "west": "WarpGaladonSeed#54"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Greenhouse Hose Walk",
+      "description": "Coiled hoses rest in wall brackets beneath cards showing safe water pressure in words and raised bars. WEST returns to Blossom Service Cross. EAST reaches Civic Drain Turn."
     },
     {
       "id": "WarpGaladonSeed#56",
@@ -876,7 +988,9 @@
         "north": "WarpGaladonSeed#40",
         "west": "WarpGaladonSeed#55"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Civic Drain Turn",
+      "description": "A broad covered drain turns beneath a junction paved with pale non-slip stone. NORTH climbs to Library-Hall Cross. WEST reaches Hose Walk. EAST reaches Warmwater Junction."
     },
     {
       "id": "WarpGaladonSeed#57",
@@ -893,7 +1007,9 @@
         "south": "WarpGaladonSeed#71",
         "west": "WarpGaladonSeed#56"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Warmwater Junction",
+      "description": "Four service walks meet above warm pipes that keep a painted square free of frost. NORTH reaches Warm Pipe Alley. EAST reaches Listening Court. WEST returns to Civic Drain Turn. SOUTH follows the lower pipe walk."
     },
     {
       "id": "WarpGaladonSeed#58",
@@ -909,7 +1025,9 @@
         "south": "WarpGaladonSeed#73",
         "west": "WarpGaladonSeed#57"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Listening Court",
+      "description": "Flat stones fill a sheltered court between ordinary benches. Some stones ring underfoot; others answer with a vibration too low to hear. Small six-legged orchard animals rest beside the quietest slab with their chins on the ground."
     },
     {
       "id": "WarpGaladonSeed#59",
@@ -924,7 +1042,9 @@
         "south": "WarpGaladonSeed#74",
         "west": "WarpGaladonSeed#58"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Listening Steps",
+      "description": "Shallow steps carry metal strips that translate nearby footsteps into visible ripples beneath protective glass. WEST reaches Listening Court. SOUTH descends toward the lower sound walk."
     },
     {
       "id": "WarpGaladonSeed#60",
@@ -940,7 +1060,9 @@
         "north": "WarpGaladonSeed#47",
         "south": "WarpGaladonSeed#76"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Windchime Service Cross",
+      "description": "Short ceramic chimes hang inside clear guards, each paired with a printed vibration pattern. NORTH climbs to Cloudhook Landing. EAST follows the chime walk. SOUTH descends to the lower weather lane."
     },
     {
       "id": "WarpGaladonSeed#61",
@@ -955,7 +1077,9 @@
         "north": "WarpGaladonSeed#48",
         "west": "WarpGaladonSeed#60"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Chime-Card Corner",
+      "description": "Printed cards beneath guarded chimes translate every tone into a visible pulse pattern. NORTH returns to Rainrail Corner. WEST returns to Windchime Service Cross."
     },
     {
       "id": "WarpGaladonSeed#62",
@@ -971,7 +1095,9 @@
         "south": "WarpGaladonSeed#77",
         "northeast": "WarpGaladonSeed#39"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Far-Weather Junction",
+      "description": "Old rain bands, wind arrows, and one sun-faded snow marker share a three-way junction without predicting anything. NORTH reaches Far-Gauge End. SOUTH reaches Northeast Measure. NORTHEAST climbs to Slant-Rain Overlook."
     },
     {
       "id": "WarpGaladonSeed#63",
@@ -985,7 +1111,9 @@
       "exits": {
         "east": "WarpGaladonSeed#64"
       },
-      "source_label_for_reference_only": "Feanwyyn (northwest)"
+      "source_label_for_reference_only": "Feanwyyn (northwest)",
+      "title": "West Seed End",
+      "description": "A low wall holds ceramic seeds labeled by shape, texture, and the plants they would become if they were real. They are not. EAST reaches Seedlamp Walk."
     },
     {
       "id": "WarpGaladonSeed#64",
@@ -1000,7 +1128,9 @@
         "east": "WarpGaladonSeed#65",
         "west": "WarpGaladonSeed#63"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Seedlamp Walk",
+      "description": "Small glass lamps shaped like seeds light a dry garden path without warming the soil beside it. WEST ends at West Seed End. EAST reaches Rootline Junction."
     },
     {
       "id": "WarpGaladonSeed#65",
@@ -1015,7 +1145,9 @@
         "east": "WarpGaladonSeed#66",
         "west": "WarpGaladonSeed#64"
       },
-      "source_label_for_reference_only": "Northwest Gate (NW)"
+      "source_label_for_reference_only": "Northwest Gate (NW)",
+      "title": "Brass Beetle Gate",
+      "description": "A waist-high public gate stands open beneath three coats of white paint. A brass beetle sleeps across the humid latch, all six legs folded around the warm metal as if it were a branch."
     },
     {
       "id": "WarpGaladonSeed#66",
@@ -1031,7 +1163,9 @@
         "south": "WarpGaladonSeed#82",
         "west": "WarpGaladonSeed#65"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Rootline Junction",
+      "description": "Raised bronze lines trace imaginary roots across a three-way paving diagram. WEST returns to the garden anchor. EAST follows Pottery Walk. SOUTH descends to Root Cellar Stair."
     },
     {
       "id": "WarpGaladonSeed#67",
@@ -1046,7 +1180,9 @@
         "east": "WarpGaladonSeed#68",
         "west": "WarpGaladonSeed#66"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Pottery Walk",
+      "description": "Glazed pots sit upside down on fixed shelves, their painted roots continuing across the wall in practical diagrams. WEST reaches Rootline Junction. EAST reaches Leafprint Walk."
     },
     {
       "id": "WarpGaladonSeed#68",
@@ -1061,7 +1197,9 @@
         "east": "WarpGaladonSeed#69",
         "west": "WarpGaladonSeed#67"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Leafprint Walk",
+      "description": "Leaf prints in washable ink cover a sheltered wall, including one suspiciously shaped like a tiny hand wearing a mitten. WEST returns to Pottery Walk. EAST reaches Garden Service Turn."
     },
     {
       "id": "WarpGaladonSeed#69",
@@ -1077,7 +1215,9 @@
         "south": "WarpGaladonSeed#95",
         "west": "WarpGaladonSeed#68"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Garden Service Turn",
+      "description": "A clean water line bends through a paved service turn beneath labels naming pressure, shutoff ownership, and garden use. NORTH reaches Blossom Service Cross. WEST reaches Leafprint Walk. SOUTH descends toward the central gardens."
     },
     {
       "id": "WarpGaladonSeed#70",
@@ -1092,7 +1232,9 @@
         "east": "WarpGaladonSeed#71",
         "south": "WarpGaladonSeed#85"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Warmstone Turn",
+      "description": "Pale stones hold the last warmth from buried pipes while tiny paper moths choose the coolest joints to sleep in. EAST reaches Pipe-Song Cross. SOUTH descends toward the civic center."
     },
     {
       "id": "WarpGaladonSeed#71",
@@ -1109,7 +1251,9 @@
         "south": "WarpGaladonSeed#86",
         "west": "WarpGaladonSeed#70"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Pipe-Song Cross",
+      "description": "Four insulated pipes hum at different pitches beneath a labeled public crossing, with visible vibration cards beside each line. NORTH reaches Warmwater Junction. EAST reaches Listening Court. WEST reaches Warmstone Turn. SOUTH follows Rippleway."
     },
     {
       "id": "WarpGaladonSeed#72",
@@ -1124,7 +1268,9 @@
         "south": "WarpGaladonSeed#87",
         "west": "WarpGaladonSeed#71"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Brass Route Arcade",
+      "description": "A roofed arcade carries rows of brass plaques shaped like beetle shells. Their etched street lines brighten only after somebody walks the corresponding route. Unvisited branches remain matte and unnamed."
     },
     {
       "id": "WarpGaladonSeed#73",
@@ -1140,7 +1286,9 @@
         "north": "WarpGaladonSeed#58",
         "south": "WarpGaladonSeed#99"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Listening-East Turn",
+      "description": "A padded wall turns echoes into visible lines that fade before reaching the floor. NORTH returns to Listening Court. EAST reaches Echo-Bridge Cross. SOUTH follows the lower listening lane."
     },
     {
       "id": "WarpGaladonSeed#74",
@@ -1157,7 +1305,9 @@
         "south": "WarpGaladonSeed#100",
         "west": "WarpGaladonSeed#73"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Echo-Bridge Cross",
+      "description": "A low metal bridge crosses a dry service trench and answers footsteps with soft visible ripples along its rail. NORTH reaches Listening Steps. WEST reaches Listening-East Turn. EAST reaches Umbrella-Slat Walk. SOUTH reaches the lower civic walk."
     },
     {
       "id": "WarpGaladonSeed#75",
@@ -1173,7 +1323,9 @@
         "north": "WarpGaladonSeed#37",
         "west": "WarpGaladonSeed#74"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Umbrella-Slat Walk",
+      "description": "Narrow slats cut from retired umbrella ribs make a bright fence beside the road. WEST reaches Echo-Bridge Cross. EAST reaches Weatherlane Cross. NORTH returns to Umbrella Mendery."
     },
     {
       "id": "WarpGaladonSeed#76",
@@ -1190,7 +1342,9 @@
         "south": "WarpGaladonSeed#88",
         "west": "WarpGaladonSeed#75"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Weatherlane Cross",
+      "description": "Four weathered paving bands meet beneath a clear shelter labeled for rain, glare, wind, and frost. NORTH reaches Windchime Service Cross. WEST reaches Umbrella-Slat Walk. EAST reaches Northeast Measure. SOUTH reaches the lower weather lane."
     },
     {
       "id": "WarpGaladonSeed#77",
@@ -1207,7 +1361,9 @@
         "south": "WarpGaladonSeed#89",
         "west": "WarpGaladonSeed#76"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Northeast Measure",
+      "description": "A bronze measuring post compares wind, rain, and road slope in plain numbered bands. NORTH reaches Far-Weather Junction. WEST returns to Weatherlane Cross. EAST reaches Open-Sky Gate. SOUTH follows the outer road."
     },
     {
       "id": "WarpGaladonSeed#78",
@@ -1222,7 +1378,9 @@
         "east": "WarpGaladonSeed#79",
         "west": "WarpGaladonSeed#77"
       },
-      "source_label_for_reference_only": "Northeast Gate (NE)"
+      "source_label_for_reference_only": "Northeast Gate (NE)",
+      "title": "Open-Sky Gate",
+      "description": "Two plain stone posts frame the road beneath open sky, carrying wind ribbons and a public boundary plaque without closing the way. WEST returns to Northeast Measure. EAST continues along Verge Marker Walk."
     },
     {
       "id": "WarpGaladonSeed#79",
@@ -1237,7 +1395,9 @@
         "east": "WarpGaladonSeed#80",
         "west": "WarpGaladonSeed#78"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Verge-Marker Walk",
+      "description": "Stone markers stand between paving and long grass, each topped with a different tactile shape for the return route. WEST reaches Open-Sky Gate. EAST reaches Orchard Road."
     },
     {
       "id": "WarpGaladonSeed#80",
@@ -1252,7 +1412,9 @@
         "east": "WarpGaladonSeed#81",
         "west": "WarpGaladonSeed#79"
       },
-      "source_label_for_reference_only": "Outskirts (northeast)"
+      "source_label_for_reference_only": "Outskirts (northeast)",
+      "title": "Orchard Road",
+      "description": "The paved road passes young fruit trees whose ordinary leaves are interrupted by a few green glass ones that ring in the wind. WEST returns to Verge-Marker Walk. EAST continues to Northern Road End."
     },
     {
       "id": "WarpGaladonSeed#81",
@@ -1266,7 +1428,9 @@
       "exits": {
         "west": "WarpGaladonSeed#80"
       },
-      "source_label_for_reference_only": "Northern Roads (east)"
+      "source_label_for_reference_only": "Northern Roads (east)",
+      "title": "Northern Road End",
+      "description": "The road ends at a broad turning circle bordered by grass, ordinary fence posts, and one post wrapped in blue glass thread. WEST returns along Orchard Road."
     },
     {
       "id": "WarpGaladonSeed#82",
@@ -1280,7 +1444,9 @@
       "exits": {
         "north": "WarpGaladonSeed#66"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Root-Cellar Stair",
+      "description": "Cool stone steps descend beside labeled root casts showing how plants share crowded soil without sharing a route. NORTH climbs to Rootline Junction."
     },
     {
       "id": "WarpGaladonSeed#83",
@@ -1295,7 +1461,9 @@
         "east": "WarpGaladonSeed#84",
         "south": "WarpGaladonSeed#90"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Quiet-Paving Turn",
+      "description": "Soft mineral strips damp wheel and foot noise along a clean civic turn. EAST reaches Three-Pulse Cross. SOUTH descends toward the central square roads."
     },
     {
       "id": "WarpGaladonSeed#84",
@@ -1311,7 +1479,9 @@
         "south": "WarpGaladonSeed#91",
         "west": "WarpGaladonSeed#83"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Three-Pulse Cross",
+      "description": "Three brass plates answer passing wheels with one, two, or three visible pulses beneath clear guards. WEST returns to Quiet-Paving Turn. EAST reaches South-Gauge Turn. SOUTH descends to the central road grid."
     },
     {
       "id": "WarpGaladonSeed#85",
@@ -1327,7 +1497,9 @@
         "south": "WarpGaladonSeed#92",
         "west": "WarpGaladonSeed#84"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "South-Gauge Turn",
+      "description": "A low gauge compares pavement warmth above and below the buried pipe line, with both readings stated in plain text. NORTH reaches Warmstone Turn. WEST reaches Three-Pulse Cross. SOUTH continues toward the civic center."
     },
     {
       "id": "WarpGaladonSeed#86",
@@ -1343,7 +1515,9 @@
         "north": "WarpGaladonSeed#71",
         "south": "WarpGaladonSeed#93"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Rippleway Junction",
+      "description": "A shallow covered water line sends visible ripples through a glass strip beside the road. NORTH returns to Pipe-Song Cross. EAST continues along Rippleway. SOUTH descends toward the central district."
     },
     {
       "id": "WarpGaladonSeed#87",
@@ -1359,7 +1533,9 @@
         "south": "WarpGaladonSeed#94",
         "west": "WarpGaladonSeed#86"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Glass-Ripple Corner",
+      "description": "A sealed glass channel turns pipe vibrations into slow silver ripples beside the paving. WEST reaches Rippleway Junction. NORTH reaches the upper listening court. SOUTH descends to Listening-Lantern End."
     },
     {
       "id": "WarpGaladonSeed#88",
@@ -1374,7 +1550,9 @@
         "north": "WarpGaladonSeed#76",
         "south": "WarpGaladonSeed#117"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Weatherlane Steps",
+      "description": "Broad steps show how rain, frost, and glare change the same paving surface, each sample safely sealed under clear guards. NORTH climbs to Weatherlane Cross. SOUTH descends to Weathercoil Cross."
     },
     {
       "id": "WarpGaladonSeed#89",
@@ -1388,7 +1566,9 @@
       "exits": {
         "north": "WarpGaladonSeed#77"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Moonwatch Landing",
+      "description": "A stone landing holds fixed benches and a waist-high model of the moon. Thin white-and-gold lines trace an old global event across its dark face. No telescope points beyond the public sky."
     },
     {
       "id": "WarpGaladonSeed#90",
@@ -1403,7 +1583,9 @@
         "east": "WarpGaladonSeed#91",
         "north": "WarpGaladonSeed#83"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Quietstone Entry",
+      "description": "Dark porous stones soften cart noise at the edge of the central district. NORTH returns to Quiet-Paving Turn. EAST reaches Three-Way Civic Cross."
     },
     {
       "id": "WarpGaladonSeed#91",
@@ -1420,7 +1602,9 @@
         "south": "WarpGaladonSeed#96",
         "west": "WarpGaladonSeed#90"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Three-Way Civic Cross",
+      "description": "Four paths meet around three bronze plaques explaining water, weather, and public noise. NORTH reaches Three-Pulse Cross. WEST reaches Quietstone Entry. EAST reaches Warmth-Record End. SOUTH reaches the central plaza route."
     },
     {
       "id": "WarpGaladonSeed#92",
@@ -1435,7 +1619,9 @@
         "north": "WarpGaladonSeed#85",
         "west": "WarpGaladonSeed#91"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Warmth-Record End",
+      "description": "A tiled alcove records old pavement temperatures as rows of raised numbers beside faded color bands. NORTH climbs to South-Gauge Turn. WEST returns to Three-Way Civic Cross."
     },
     {
       "id": "WarpGaladonSeed#93",
@@ -1450,7 +1636,9 @@
         "east": "WarpGaladonSeed#94",
         "north": "WarpGaladonSeed#86"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Ripple Archive Turn",
+      "description": "Transparent plates preserve sample ripple patterns from pipes, footsteps, rain, and one unidentified sneeze. NORTH returns to Rippleway Junction. EAST reaches Listening-Lantern End."
     },
     {
       "id": "WarpGaladonSeed#94",
@@ -1465,7 +1653,9 @@
         "north": "WarpGaladonSeed#87",
         "west": "WarpGaladonSeed#93"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Listening-Lantern End",
+      "description": "Paper lanterns brighten when the protected listening panels detect vibration, then fade without keeping a record. NORTH climbs to Glass-Ripple Corner. WEST returns to Ripple Archive Turn."
     },
     {
       "id": "WarpGaladonSeed#95",
@@ -1480,7 +1670,9 @@
         "east": "WarpGaladonSeed#96",
         "north": "WarpGaladonSeed#69"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Garden-Ledger Turn",
+      "description": "A stone ledger lists public watering dates beside pressed leaves protected under glass. NORTH returns to Garden Service Turn. EAST reaches the central garden anchor."
     },
     {
       "id": "WarpGaladonSeed#96",
@@ -1497,7 +1689,9 @@
         "south": "WarpGaladonSeed#103",
         "west": "WarpGaladonSeed#95"
       },
-      "source_label_for_reference_only": "Central rectangle - northwest junction"
+      "source_label_for_reference_only": "Central rectangle - northwest junction",
+      "title": "Sycamore Bend",
+      "description": "The pavement bends around a sycamore whose pale bark peels in puzzle pieces. Paper birds nest in its branches, each folded from a different piece of junk mail, rustling interest rates whenever the breeze arrives."
     },
     {
       "id": "WarpGaladonSeed#97",
@@ -1513,7 +1707,9 @@
         "south": "WarpGaladonSeed#104",
         "west": "WarpGaladonSeed#96"
       },
-      "source_label_for_reference_only": "Central rectangle - north junction"
+      "source_label_for_reference_only": "Central rectangle - north junction",
+      "title": "Central North Walk",
+      "description": "A broad civic walk carries a tactile compass line between the central garden and the plaza routes. WEST reaches the garden anchor. EAST reaches Compass-Tile Turn. SOUTH reaches the central civic court."
     },
     {
       "id": "WarpGaladonSeed#98",
@@ -1528,7 +1724,9 @@
         "east": "WarpGaladonSeed#99",
         "west": "WarpGaladonSeed#97"
       },
-      "source_label_for_reference_only": "Central rectangle - northeast junction"
+      "source_label_for_reference_only": "Central rectangle - northeast junction",
+      "title": "Compass-Tile Turn",
+      "description": "Black and white tiles form an oversized compass that admits the street does not align perfectly with it. WEST returns to Central North Walk. EAST reaches Listening-Map Walk."
     },
     {
       "id": "WarpGaladonSeed#99",
@@ -1544,7 +1742,9 @@
         "north": "WarpGaladonSeed#73",
         "west": "WarpGaladonSeed#98"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Listening-Map Walk",
+      "description": "A long relief map shows only the immediate public walks, while a copper edge carries nearby vibration as a visible pulse. NORTH reaches Listening-East Turn. WEST reaches Compass-Tile Turn. EAST reaches Four-Court Junction."
     },
     {
       "id": "WarpGaladonSeed#100",
@@ -1561,7 +1761,9 @@
         "south": "WarpGaladonSeed#106",
         "west": "WarpGaladonSeed#99"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Four-Court Junction",
+      "description": "Four civic courts meet around a low rain shelter whose posts carry clear route names. NORTH reaches Echo-Bridge Cross. WEST reaches Listening-Map Walk. EAST reaches East-Ledger End. SOUTH reaches Care-Route North."
     },
     {
       "id": "WarpGaladonSeed#101",
@@ -1576,7 +1778,9 @@
         "west": "WarpGaladonSeed#100",
         "south": "WarpGaladonSeed#203"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "East-Ledger End",
+      "description": "A fixed slate ledger records repairs to drains, roofs, and public signs in concise rows. WEST returns to Four-Court Junction. SOUTH descends toward the care-route annex."
     },
     {
       "id": "WarpGaladonSeed#102",
@@ -1590,7 +1794,9 @@
       "exits": {
         "east": "WarpGaladonSeed#103"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "West Civic Alcove",
+      "description": "A shallow alcove holds a scale model of common public paving repairs, including one patch labeled ACCEPTABLY TEMPORARY since last year. EAST reaches the central civic anchor."
     },
     {
       "id": "WarpGaladonSeed#103",
@@ -1607,7 +1813,9 @@
         "south": "WarpGaladonSeed#109",
         "west": "WarpGaladonSeed#102"
       },
-      "source_label_for_reference_only": "Central rectangle - west middle"
+      "source_label_for_reference_only": "Central rectangle - west middle",
+      "title": "Rain Ledger Court",
+      "description": "A covered court displays yesterday's rainfall in glass tubes beside handwritten reports from gutters, gardens, and one argumentative cloud. A dry bench invites comparison without requiring any task."
     },
     {
       "id": "WarpGaladonSeed#104",
@@ -1623,7 +1831,9 @@
         "south": "WarpGaladonSeed#110",
         "west": "WarpGaladonSeed#103"
       },
-      "source_label_for_reference_only": "Central rectangle - center"
+      "source_label_for_reference_only": "Central rectangle - center",
+      "title": "Civic Lantern Hall",
+      "description": "Rows of unlit public lanterns hang above a tiled hall. The wall explains how one point of light became a crowd, while a practice panel demonstrates Iluminato as history rather than granting or casting the spell."
     },
     {
       "id": "WarpGaladonSeed#105",
@@ -1637,7 +1847,9 @@
       "exits": {
         "south": "WarpGaladonSeed#111"
       },
-      "source_label_for_reference_only": "Central rectangle - east middle"
+      "source_label_for_reference_only": "Central rectangle - east middle",
+      "title": "East Civic Alcove",
+      "description": "A quiet alcove displays tactile examples of street surfaces: dry stone, wet stone, grit, and leaf cover. SOUTH returns to the central civic anchor."
     },
     {
       "id": "WarpGaladonSeed#106",
@@ -1652,7 +1864,9 @@
         "north": "WarpGaladonSeed#100",
         "east": "WarpGaladonSeed#203"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Care-Route North",
+      "description": "A pale route line passes beneath plain cards explaining that information and treatment are different things. NORTH returns to Four-Court Junction. EAST reaches the Care Annex."
     },
     {
       "id": "WarpGaladonSeed#107",
@@ -1666,7 +1880,9 @@
       "exits": {
         "west": "WarpGaladonSeed#203"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Care-East Nook",
+      "description": "A small nook holds sturdy chairs beneath cards describing how to ask clearly for help, with every diagram repeated in words. WEST returns to the Care Annex."
     },
     {
       "id": "WarpGaladonSeed#108",
@@ -1680,7 +1896,9 @@
       "exits": {
         "north": "WarpGaladonSeed#203"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Care-South Landing",
+      "description": "A sheltered landing carries a tactile arrow and plain text toward the Care Annex, without claiming treatment begins here. NORTH reaches the annex."
     },
     {
       "id": "WarpGaladonSeed#109",
@@ -1695,7 +1913,9 @@
         "east": "WarpGaladonSeed#110",
         "north": "WarpGaladonSeed#103"
       },
-      "source_label_for_reference_only": "Central rectangle - southwest junction"
+      "source_label_for_reference_only": "Central rectangle - southwest junction",
+      "title": "Returned Fire Arcade",
+      "description": "A quiet arcade of dark glass panels catches daylight and returns it as gold. The floor diagram shows a shield meeting an incoming arrow, turning it, and leaving a safe path behind the defender."
     },
     {
       "id": "WarpGaladonSeed#110",
@@ -1712,7 +1932,9 @@
         "south": "WarpGaladonSeed#114",
         "west": "WarpGaladonSeed#109"
       },
-      "source_label_for_reference_only": "Central rectangle - south junction"
+      "source_label_for_reference_only": "Central rectangle - south junction",
+      "title": "Bell Line Stop",
+      "description": "A scratched shelter, a bench, and a timetable make this a bus stop. Beneath the bench, a gray creature with ears like tied grocery bags is eating SATURDAY from an expired schedule one letter at a time."
     },
     {
       "id": "WarpGaladonSeed#111",
@@ -1727,7 +1949,9 @@
         "north": "WarpGaladonSeed#105",
         "west": "WarpGaladonSeed#110"
       },
-      "source_label_for_reference_only": "Central rectangle - southeast junction"
+      "source_label_for_reference_only": "Central rectangle - southeast junction",
+      "title": "Public Seeker Dock",
+      "description": "Compact seekers rest in padded wall cradles while charging indicators count in numbers and raised bars. A mechanic's board lists ordinary faults: bent guard, dirty sensor, loose strap, tree."
     },
     {
       "id": "WarpGaladonSeed#112",
@@ -1741,7 +1965,9 @@
       "exits": {
         "east": "WarpGaladonSeed#113"
       },
-      "source_label_for_reference_only": "Paladin's Guild (P)"
+      "source_label_for_reference_only": "Paladin's Guild (P)",
+      "title": "Sunshield Alcove",
+      "description": "Layered cloth and glass samples demonstrate shade, glare reduction, and ordinary weather protection behind sealed covers. EAST reaches Receipt-Kite Walk."
     },
     {
       "id": "WarpGaladonSeed#113",
@@ -1756,7 +1982,9 @@
         "east": "WarpGaladonSeed#114",
         "west": "WarpGaladonSeed#112"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Receipt-Kite Walk",
+      "description": "A covered walk traps warm air and the smell of printer ink. Misprinted receipts have folded themselves into small kites that tug harmlessly at a brass rail. EAST reaches Four-Weather Arcade; WEST follows the upper market walk."
     },
     {
       "id": "WarpGaladonSeed#114",
@@ -1773,7 +2001,9 @@
         "south": "WarpGaladonSeed#123",
         "west": "WarpGaladonSeed#113"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Four-Weather Arcade",
+      "description": "A long civic awning divides the daylight into four honest strips: clear glass, rain-speckled glass, amber shade, and a panel clouded by its own small weather. SOUTH slopes back to the Weatherproof Stall. NORTH, EAST, and WEST continue along the upper market walks."
     },
     {
       "id": "WarpGaladonSeed#115",
@@ -1787,7 +2017,9 @@
       "exits": {
         "west": "WarpGaladonSeed#114"
       },
-      "source_label_for_reference_only": "Spire"
+      "source_label_for_reference_only": "Spire",
+      "title": "Weather Spire",
+      "description": "A narrow public spire rises around a motionless vane, its stairs ending at a ring of sealed observation windows. Labels identify cloud height, wind direction, and visibility in plain text. WEST returns to Four-Weather Arcade."
     },
     {
       "id": "WarpGaladonSeed#116",
@@ -1801,7 +2033,9 @@
       "exits": {
         "east": "WarpGaladonSeed#117"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Glass-Coil End",
+      "description": "A clear coil of thick glass holds a motionless thread of captured light, labeled as an optical sample rather than stored power. EAST reaches Weathercoil Cross."
     },
     {
       "id": "WarpGaladonSeed#117",
@@ -1818,7 +2052,9 @@
         "south": "WarpGaladonSeed#128",
         "west": "WarpGaladonSeed#116"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Weathercoil Cross",
+      "description": "Four ceramic coils hang beneath a roof, each shaped to shed rain, windblown grit, glare, or frost. NORTH climbs Weatherlane Steps. WEST reaches Glass-Coil End. EAST reaches Heatglass Gallery. SOUTH reaches Four-Signal Junction."
     },
     {
       "id": "WarpGaladonSeed#118",
@@ -1832,7 +2068,9 @@
       "exits": {
         "west": "WarpGaladonSeed#117"
       },
-      "source_label_for_reference_only": "Invoker's Guild (V)"
+      "source_label_for_reference_only": "Invoker's Guild (V)",
+      "title": "Heatglass Gallery",
+      "description": "Glass samples show harmless records of heat passing through sand, clay, and water, with every temperature written beside the color. WEST returns to Weathercoil Cross."
     },
     {
       "id": "WarpGaladonSeed#119",
@@ -1846,7 +2084,9 @@
       "exits": {
         "south": "WarpGaladonSeed#134"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Laundry-Service Stair",
+      "description": "A short stair passes beneath clean lines, spare pegs, and an empty frame for safely drying large sheets. SOUTH descends to Four-Basket Cross."
     },
     {
       "id": "WarpGaladonSeed#120",
@@ -1860,7 +2100,9 @@
       "exits": {
         "south": "WarpGaladonSeed#135"
       },
-      "source_label_for_reference_only": "Wizard's Shop"
+      "source_label_for_reference_only": "Wizard's Shop",
+      "title": "Cold-Hearth Workshop",
+      "description": "Shelves of ordinary tools face a cold stone hearth and a laundry basket somebody forgot to collect. A clean sand bucket stands between them beneath a hand-lettered sign: VERY IMPORTANT BUCKET."
     },
     {
       "id": "WarpGaladonSeed#121",
@@ -1874,7 +2116,9 @@
       "exits": {
         "south": "WarpGaladonSeed#136"
       },
-      "source_label_for_reference_only": "Bakery"
+      "source_label_for_reference_only": "Bakery",
+      "title": "Parcel Counter",
+      "description": "Brown-paper parcels wait in patient stacks behind a scarred counter. One parcel near the bell hops three times and falls quiet beneath a notice that says ASK ROUTE FOR AN OPTIONAL DELIVERY ROUND. REPORT finishes a delivered round here."
     },
     {
       "id": "WarpGaladonSeed#122",
@@ -1888,7 +2132,9 @@
       "exits": {
         "east": "WarpGaladonSeed#123"
       },
-      "source_label_for_reference_only": "Vegetable Shop (legend: Vegetable Garden)"
+      "source_label_for_reference_only": "Vegetable Shop (legend: Vegetable Garden)",
+      "title": "Pig-Blossom Garden",
+      "description": "Low municipal beds hold cabbages, beans, and small pink blossoms that snort whenever the leaves are watered. A chalkboard records planting dates rather than prices. EAST returns to the Weatherproof Stall and the central market route."
     },
     {
       "id": "WarpGaladonSeed#123",
@@ -1905,7 +2151,9 @@
         "south": "WarpGaladonSeed#137",
         "west": "WarpGaladonSeed#122"
       },
-      "source_label_for_reference_only": "Central shop intersection (north of Market Square)"
+      "source_label_for_reference_only": "Central shop intersection (north of Market Square)",
+      "title": "Weatherproof Stall",
+      "description": "A market stall shelters bright sacks, folded cloth, and a display bucket. A fist-sized rain cloud hovers over one waterproof sack, leaving it perfectly dry and everything nearby somebody else's problem."
     },
     {
       "id": "WarpGaladonSeed#124",
@@ -1919,7 +2167,9 @@
       "exits": {
         "west": "WarpGaladonSeed#123"
       },
-      "source_label_for_reference_only": "Cartographer's Store"
+      "source_label_for_reference_only": "Cartographer's Store",
+      "title": "Walked Map Archive",
+      "description": "Flat drawers hold maps that begin blank and gain ink only when carried along observed public ways. A clerk stamps completed route cards while paper birds wait above the return tray."
     },
     {
       "id": "WarpGaladonSeed#125",
@@ -1933,7 +2183,9 @@
       "exits": {
         "south": "WarpGaladonSeed#138"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Signal Shelter",
+      "description": "A narrow shelter faces SOUTH toward Signal Yard. Its timetable is printed in deep black type and repeated as raised marks beneath the glass, while a glass-backed beetle sleeps in the dry gutter above it."
     },
     {
       "id": "WarpGaladonSeed#126",
@@ -1947,7 +2199,9 @@
       "exits": {
         "south": "WarpGaladonSeed#139"
       },
-      "source_label_for_reference_only": "Warrior's Guild (R)"
+      "source_label_for_reference_only": "Warrior's Guild (R)",
+      "title": "Red-Rope Gallery",
+      "description": "Padded posts and red ropes form a quiet exhibit about stance, balance, and keeping public paths clear. Nothing here invites a fight. SOUTH returns to Stormglass Arcade and the main east-market route."
     },
     {
       "id": "WarpGaladonSeed#127",
@@ -1961,7 +2215,9 @@
       "exits": {
         "east": "WarpGaladonSeed#128"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Copper Echo Alcove",
+      "description": "Copper bowls line a shallow stone alcove, each holding the fading echo of an ordinary market sound: wheels, rain, paper, or a distant bell. EAST opens into Four-Signal Junction."
     },
     {
       "id": "WarpGaladonSeed#128",
@@ -1978,7 +2234,9 @@
         "south": "WarpGaladonSeed#140",
         "west": "WarpGaladonSeed#127"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Four-Signal Junction",
+      "description": "Four waist-high signal boxes face the four public ways, each showing a word, a shape, and a steady lamp. NORTH climbs toward the upper service lane. SOUTH reaches Glassline Junction. EAST and WEST continue through the market quarter."
     },
     {
       "id": "WarpGaladonSeed#129",
@@ -1992,7 +2250,9 @@
       "exits": {
         "west": "WarpGaladonSeed#128"
       },
-      "source_label_for_reference_only": "Assassin's Guild (G)"
+      "source_label_for_reference_only": "Assassin's Guild (G)",
+      "title": "Quiet-Step Archive",
+      "description": "A narrow archive preserves casts of footprints left by boots, paws, wheels, and creatures that preferred not to be named. The records stay behind glass and make no judgment about their owners. WEST returns to Four-Signal Junction."
     },
     {
       "id": "WarpGaladonSeed#130",
@@ -2006,7 +2266,9 @@
       "exits": {
         "south": "WarpGaladonSeed#141"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Dispatch Balcony",
+      "description": "A sheltered balcony overlooks awnings and courier lines without offering access to either. Blank route tags dry on cords beside a plainly lettered stair. SOUTH descends to Courier Knot."
     },
     {
       "id": "WarpGaladonSeed#131",
@@ -2020,7 +2282,9 @@
       "exits": {
         "east": "WarpGaladonSeed#132"
       },
-      "source_label_for_reference_only": "Feanwyyn (west)"
+      "source_label_for_reference_only": "Feanwyyn (west)",
+      "title": "West Hedge Terminus",
+      "description": "A clipped hedge ends around a round stone marker crowded with ordinary moss and one enamel beetle. The road continues only EAST toward Hedgelight Walk and the public town routes."
     },
     {
       "id": "WarpGaladonSeed#132",
@@ -2035,7 +2299,9 @@
         "east": "WarpGaladonSeed#133",
         "west": "WarpGaladonSeed#131"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Hedgelight Walk",
+      "description": "Glass seed-lamps glow low beneath a clipped hedge, bright enough to show wet paving without pretending it is daylight. EAST reaches Laundry Arch. WEST ends at West Hedge Terminus."
     },
     {
       "id": "WarpGaladonSeed#133",
@@ -2050,7 +2316,9 @@
         "east": "WarpGaladonSeed#134",
         "west": "WarpGaladonSeed#132"
       },
-      "source_label_for_reference_only": "West Gate (W)"
+      "source_label_for_reference_only": "West Gate (W)",
+      "title": "Laundry Arch",
+      "description": "Brick buildings crowd an old steel arch carrying a shared fire escape over the road. Laundry snaps overhead. One fitted sheet contains a moving night sky, repeatedly eclipsed by a pair of pajama pants."
     },
     {
       "id": "WarpGaladonSeed#134",
@@ -2067,7 +2335,9 @@
         "south": "WarpGaladonSeed#150",
         "west": "WarpGaladonSeed#133"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Four-Basket Cross",
+      "description": "Four wicker baskets hang above a broad crossing, filled respectively with clean rags, chalk, folded notices, and nothing at all. EAST leads toward Toolmaker Turn. WEST returns to Laundry Arch. NORTH and SOUTH enter quieter side courts."
     },
     {
       "id": "WarpGaladonSeed#135",
@@ -2084,7 +2354,9 @@
         "south": "WarpGaladonSeed#146",
         "west": "WarpGaladonSeed#134"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Toolmaker Turn",
+      "description": "Wooden templates, blunt gauges, and handles without blades hang beneath a patched awning. NORTH reaches Cold-Hearth Workshop. EAST reaches Lion Walk. WEST returns to Four-Basket Cross. SOUTH enters Changeglass Workshop."
     },
     {
       "id": "WarpGaladonSeed#136",
@@ -2101,7 +2373,9 @@
         "south": "WarpGaladonSeed#151",
         "west": "WarpGaladonSeed#135"
       },
-      "source_label_for_reference_only": "Trade Road - west approach to M"
+      "source_label_for_reference_only": "Trade Road - west approach to M",
+      "title": "Lion Walk",
+      "description": "A broad public walk borders clipped grass damp from sprinklers. Two stone lions on opposite corners are arguing about property lines in voices no louder than shoes tumbling in a dryer."
     },
     {
       "id": "WarpGaladonSeed#137",
@@ -2118,7 +2392,9 @@
         "south": "WarpGaladonSeed#153",
         "west": "WarpGaladonSeed#136"
       },
-      "source_label_for_reference_only": "Market Square (M)"
+      "source_label_for_reference_only": "Market Square (M)",
+      "title": "Central Cross",
+      "description": "Two busy streets meet in a broad square paved with dark blocks. Awnings run in long bands of color around a fountain where silver fish swim just above the spray, turning whenever the traffic signal changes."
     },
     {
       "id": "WarpGaladonSeed#138",
@@ -2135,7 +2411,9 @@
         "south": "WarpGaladonSeed#147",
         "west": "WarpGaladonSeed#137"
       },
-      "source_label_for_reference_only": "Trade Road - first room east of M"
+      "source_label_for_reference_only": "Trade Road - first room east of M",
+      "title": "Signal Yard",
+      "description": "Steel rails braid across gray gravel. Signal lamps blink red and green for trains that are not present, and beetles with glass backs copy each color a half-second late across the wet stones."
     },
     {
       "id": "WarpGaladonSeed#139",
@@ -2152,7 +2430,9 @@
         "south": "WarpGaladonSeed#148",
         "west": "WarpGaladonSeed#138"
       },
-      "source_label_for_reference_only": "Trade Road - Warrior's Guild crossing"
+      "source_label_for_reference_only": "Trade Road - Warrior's Guild crossing",
+      "title": "Stormglass Arcade",
+      "description": "Blue glass panels roof a busy arcade. Each panel shows the same sky with a different useful overlay: wind, rain, glare, and the approximate mood of nearby clouds. A drain channel keeps the floor honestly dry."
     },
     {
       "id": "WarpGaladonSeed#140",
@@ -2168,7 +2448,9 @@
         "north": "WarpGaladonSeed#128",
         "west": "WarpGaladonSeed#139"
       },
-      "source_label_for_reference_only": "Trade Road - east-central junction"
+      "source_label_for_reference_only": "Trade Road - east-central junction",
+      "title": "Glassline Junction",
+      "description": "A blue line of glass bricks runs level with the paving and rings softly under cart wheels. WEST returns to Stormglass Arcade. EAST reaches Courier Knot. NORTH leads to Four-Signal Junction."
     },
     {
       "id": "WarpGaladonSeed#141",
@@ -2185,7 +2467,9 @@
         "south": "WarpGaladonSeed#149",
         "west": "WarpGaladonSeed#140"
       },
-      "source_label_for_reference_only": "Trade Road - inner East Gate approach"
+      "source_label_for_reference_only": "Trade Road - inner East Gate approach",
+      "title": "Courier Knot",
+      "description": "Four delivery lanes meet around a waist-high sorting table. Route tags, parcel marks, and bus notices are tied together with colored string, while a feathered drummer keeps the current dispatch rhythm on the table edge."
     },
     {
       "id": "WarpGaladonSeed#142",
@@ -2200,7 +2484,9 @@
         "east": "WarpGaladonSeed#143",
         "west": "WarpGaladonSeed#141"
       },
-      "source_label_for_reference_only": "East Gate (E)"
+      "source_label_for_reference_only": "East Gate (E)",
+      "title": "Bicycle Library Walk",
+      "description": "The pavement broadens between a quiet stone wall and a row of bicycle racks. Market awnings, a public bell, and distant stacks rise as plain landmarks while odd weather knots itself around the bell."
     },
     {
       "id": "WarpGaladonSeed#143",
@@ -2215,7 +2501,9 @@
         "east": "WarpGaladonSeed#144",
         "west": "WarpGaladonSeed#142"
       },
-      "source_label_for_reference_only": "Trade Road - outer East Gate room"
+      "source_label_for_reference_only": "Trade Road - outer East Gate room",
+      "title": "East Gate Walk",
+      "description": "Stone paving narrows between a bicycle rail and an old gate wall hung with weather ribbons. WEST returns to Bicycle Library Walk. EAST continues toward Windward Verge and the orchard road."
     },
     {
       "id": "WarpGaladonSeed#144",
@@ -2230,7 +2518,9 @@
         "east": "WarpGaladonSeed#145",
         "west": "WarpGaladonSeed#143"
       },
-      "source_label_for_reference_only": "Outskirts (east)"
+      "source_label_for_reference_only": "Outskirts (east)",
+      "title": "Windward Verge",
+      "description": "The town paving gives way to a verge of grass pressed flat by a steady east wind. Glass leaves ring beyond the road. WEST returns to East Gate Walk; EAST reaches the Glass Orchard."
     },
     {
       "id": "WarpGaladonSeed#145",
@@ -2244,7 +2534,9 @@
       "exits": {
         "west": "WarpGaladonSeed#144"
       },
-      "source_label_for_reference_only": "Eastern Road"
+      "source_label_for_reference_only": "Eastern Road",
+      "title": "Glass Orchard",
+      "description": "Rows of neglected fruit trees grow beyond the paved road. Their leaves are green glass thin enough to ring in the wind. Real pears hang among them, bruised and sweet-smelling."
     },
     {
       "id": "WarpGaladonSeed#146",
@@ -2258,7 +2550,9 @@
       "exits": {
         "north": "WarpGaladonSeed#135"
       },
-      "source_label_for_reference_only": "Transmuter's Guild (T)"
+      "source_label_for_reference_only": "Transmuter's Guild (T)",
+      "title": "Changeglass Workshop",
+      "description": "Shelves display ordinary materials beside harmless samples showing how heat, pressure, and patience can change their shape. Every sample remains behind glass. NORTH returns to Toolmaker Turn."
     },
     {
       "id": "WarpGaladonSeed#147",
@@ -2272,7 +2566,9 @@
       "exits": {
         "north": "WarpGaladonSeed#138"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Rain-Sump Court",
+      "description": "Rainwater from the signal roofs gathers in a tiled court and turns a row of little brass cups before slipping into a covered drain. Transparent frogs sit beside the cups, feeling each distant rail vibration through their feet. NORTH returns to Signal Yard."
     },
     {
       "id": "WarpGaladonSeed#148",
@@ -2286,7 +2582,9 @@
       "exits": {
         "north": "WarpGaladonSeed#139"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Rail-Sound Court",
+      "description": "A paved court beneath the signal quarter preserves the hum of passing rails in four taut metal strings. Printed cards describe each vibration pattern. NORTH returns to Stormglass Arcade."
     },
     {
       "id": "WarpGaladonSeed#149",
@@ -2300,7 +2598,9 @@
       "exits": {
         "north": "WarpGaladonSeed#141"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Folded-Shade Yard",
+      "description": "Triangular shade cloths hang over a clean service yard, each folded into a different shelter shape. Chalk outlines show where carts turn without striking the ropes. NORTH returns to Courier Knot."
     },
     {
       "id": "WarpGaladonSeed#150",
@@ -2314,7 +2614,9 @@
       "exits": {
         "north": "WarpGaladonSeed#134"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Bramble-Basket Court",
+      "description": "Blackberry canes climb a wall behind baskets woven to keep thorns away from passing sleeves. A large gray feather is caught safely above reach. NORTH returns to Four-Basket Cross."
     },
     {
       "id": "WarpGaladonSeed#151",
@@ -2328,7 +2630,9 @@
       "exits": {
         "north": "WarpGaladonSeed#136"
       },
-      "source_label_for_reference_only": "Butcher Shop"
+      "source_label_for_reference_only": "Butcher Shop",
+      "title": "Snailwright Court",
+      "description": "A blue enamel knight works at a low bench beneath an oilcloth awning, polishing a tiny saddle buckle while its snail waits under a lettuce leaf. The court opens only NORTH to Lion Walk."
     },
     {
       "id": "WarpGaladonSeed#152",
@@ -2342,7 +2646,9 @@
       "exits": {
         "east": "WarpGaladonSeed#153"
       },
-      "source_label_for_reference_only": "Pet Shop (legend 14: Training Room)"
+      "source_label_for_reference_only": "Pet Shop (legend 14: Training Room)",
+      "title": "Mediation Antechamber",
+      "description": "Low benches, broad perches, and one damp stone provide waiting places for citizens of inconveniently different sizes. Route tiles lie sorted behind glass. EAST enters the Creature Arbitration Court, where today's displayed case is closed for rearrangement."
     },
     {
       "id": "WarpGaladonSeed#153",
@@ -2359,7 +2665,9 @@
         "south": "WarpGaladonSeed#162",
         "west": "WarpGaladonSeed#152"
       },
-      "source_label_for_reference_only": "South road intersection (between Pet and General stores)"
+      "source_label_for_reference_only": "South road intersection (between Pet and General stores)",
+      "title": "Creature Arbitration Court",
+      "description": "A low public table displays a snail route, a brass beetle's warm sleeping place, and two stone lion witness statements. The mediation case is closed for rearrangement in this build. The scene may be examined, but no decision command is currently active."
     },
     {
       "id": "WarpGaladonSeed#154",
@@ -2373,7 +2681,9 @@
       "exits": {
         "west": "WarpGaladonSeed#153"
       },
-      "source_label_for_reference_only": "General Store"
+      "source_label_for_reference_only": "General Store",
+      "title": "Civic Supply Gallery",
+      "description": "Glass-fronted cases display chalk, twine, shade cloth, and smooth route markers used in old public mediation cases. Each label describes the object's civic use and states that the display is not a shop. WEST returns to the Creature Arbitration Court."
     },
     {
       "id": "WarpGaladonSeed#155",
@@ -2387,7 +2697,9 @@
       "exits": {
         "south": "WarpGaladonSeed#157"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Northside Clinic Garden",
+      "description": "Mint, rosemary, and ordinary grass fill a quiet garden beside the clinic wall. Paper moths sleep on sun-warmed bricks without hiding the route. SOUTH enters the City Clinic."
     },
     {
       "id": "WarpGaladonSeed#156",
@@ -2401,7 +2713,9 @@
       "exits": {
         "east": "WarpGaladonSeed#157"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Quiet Intake Nook",
+      "description": "A shallow alcove holds three sturdy chairs, a cool handrail, and plain-text cards explaining what the clinic can actually do. EAST enters the City Clinic; the nook itself offers no treatment."
     },
     {
       "id": "WarpGaladonSeed#157",
@@ -2418,7 +2732,9 @@
         "south": "WarpGaladonSeed#164",
         "west": "WarpGaladonSeed#156"
       },
-      "source_label_for_reference_only": "Healer (H) - south district"
+      "source_label_for_reference_only": "Healer (H) - south district",
+      "title": "City Clinic",
+      "description": "The clinic smells of soap, mint, and singed wool. Ordinary chairs line one wall beneath ordinary forms. Along the other, translucent diagrams explain bruises and mana strain in calm layers, each paired with a plain-text card. CHECK IN records current vitals; REST begins recovery. Movement cancels recovery while retaining restored vitals."
     },
     {
       "id": "WarpGaladonSeed#158",
@@ -2432,7 +2748,9 @@
       "exits": {
         "west": "WarpGaladonSeed#157"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Wool-Drying Court",
+      "description": "Clean wool blankets hang from waist-high rails above warm paving, carrying the clinic's familiar trace of soap, mint, and singed fibers. The drying court is only a work area; recovery begins inside the City Clinic to the WEST."
     },
     {
       "id": "WarpGaladonSeed#159",
@@ -2446,7 +2764,9 @@
       "exits": {
         "south": "WarpGaladonSeed#165"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Biscuit-Tin Balcony",
+      "description": "A narrow balcony overlooks the service yard beside Seeker Repair Bay. Empty biscuit tins have been flattened into bright weather guards along the rail. SOUTH descends into the repair bay."
     },
     {
       "id": "WarpGaladonSeed#160",
@@ -2460,7 +2780,9 @@
       "exits": {
         "south": "WarpGaladonSeed#166"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Red-Tag Landing",
+      "description": "A sheltered landing holds racks of red maintenance tags, all punched through the corner to show they have been canceled. SOUTH leads to Service-Wire Junction and the repair routes."
     },
     {
       "id": "WarpGaladonSeed#161",
@@ -2475,7 +2797,9 @@
         "east": "WarpGaladonSeed#162",
         "south": "WarpGaladonSeed#167"
       },
-      "source_label_for_reference_only": "South district - northwest of AP label"
+      "source_label_for_reference_only": "South district - northwest of AP label",
+      "title": "Lantern Lane",
+      "description": "Paper lanterns stretch between rain gutters, each carrying a printed weather word as well as a band of color. EAST reaches Night Market Rest. SOUTH leads into Threadcard Court."
     },
     {
       "id": "WarpGaladonSeed#162",
@@ -2492,7 +2816,9 @@
         "south": "WarpGaladonSeed#178",
         "west": "WarpGaladonSeed#161"
       },
-      "source_label_for_reference_only": "South district - north of AP approach"
+      "source_label_for_reference_only": "South district - north of AP approach",
+      "title": "Night Market Rest",
+      "description": "A sheltered row of tables sits beside closed stalls and one quiet kettle. For an active Route Tag round, SHOW TAG is the only implemented activity command here. The tables, kettle, and thread cards are atmosphere in this build; no rest, drink, or thread-summary mechanic is promised."
     },
     {
       "id": "WarpGaladonSeed#163",
@@ -2508,7 +2834,9 @@
         "south": "WarpGaladonSeed#179",
         "west": "WarpGaladonSeed#162"
       },
-      "source_label_for_reference_only": "South district - northeast of AP label"
+      "source_label_for_reference_only": "South district - northeast of AP label",
+      "title": "Clinic Turn",
+      "description": "A mint-painted line turns east beneath a row of ordinary streetlamps. WEST returns to Night Market Rest. EAST follows the mint line toward Clinic Approach and the City Clinic. SOUTH rejoins the road by Pinebreak Crossroads."
     },
     {
       "id": "WarpGaladonSeed#164",
@@ -2523,7 +2851,9 @@
         "north": "WarpGaladonSeed#157",
         "west": "WarpGaladonSeed#163"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Clinic Approach",
+      "description": "Soap, mint, and a trace of singed wool drift from the entrance directly NORTH. A cool green diagram glows behind the clinic window. WEST returns to Clinic Turn, Night Market Rest, and Central Cross."
     },
     {
       "id": "WarpGaladonSeed#165",
@@ -2539,7 +2869,9 @@
         "north": "WarpGaladonSeed#159",
         "south": "WarpGaladonSeed#171"
       },
-      "source_label_for_reference_only": "Boatmaker's Shop (Nicholas)"
+      "source_label_for_reference_only": "Boatmaker's Shop (Nicholas)",
+      "title": "Seeker Repair Bay",
+      "description": "A mechanic sits over a seeker strapped into a padded cradle. It keeps turning its eye toward a biscuit tin. The mechanic keeps turning it back toward a bent guard and a red isolated-power tag."
     },
     {
       "id": "WarpGaladonSeed#166",
@@ -2555,7 +2887,9 @@
         "south": "WarpGaladonSeed#172",
         "west": "WarpGaladonSeed#165"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Service-Wire Junction",
+      "description": "Color-coded service wires pass through labeled ceramic sleeves beneath a high protective cover. WEST reaches Seeker Repair Bay. NORTH climbs to Red-Tag Landing. SOUTH descends toward Cradle Ramp."
     },
     {
       "id": "WarpGaladonSeed#167",
@@ -2569,7 +2903,9 @@
       "exits": {
         "north": "WarpGaladonSeed#161"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Threadcard Court",
+      "description": "A small court behind the night market holds worktables swept clean for the evening. Finished civic thread cards sit beneath glass: a repaired sign, a returned parcel, a creature route settled without force. NORTH returns to Lantern Lane and Night Market Rest."
     },
     {
       "id": "WarpGaladonSeed#168",
@@ -2583,7 +2919,9 @@
       "exits": {
         "south": "WarpGaladonSeed#175"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Blackberry Upper Landing",
+      "description": "A sheltered landing overlooks blackberry canes trained safely behind wicker guards. The berries remain on the plants and nothing large blocks the path. SOUTH descends toward Bramble Walk."
     },
     {
       "id": "WarpGaladonSeed#169",
@@ -2597,7 +2935,9 @@
       "exits": {
         "south": "WarpGaladonSeed#176"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Blackberry-Rain Landing",
+      "description": "A narrow landing catches rain from a roof edge and guides it away from blackberry canes in a copper channel. The berries stay behind wicker guards. SOUTH descends to Bramble Cross."
     },
     {
       "id": "WarpGaladonSeed#170",
@@ -2611,7 +2951,9 @@
       "exits": {
         "east": "WarpGaladonSeed#171"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Padded-Parts Alcove",
+      "description": "Foam-lined shelves hold labeled housings, guards, and harmless mock components used to explain seeker repairs. EAST opens into Seeker Service Cross."
     },
     {
       "id": "WarpGaladonSeed#171",
@@ -2628,7 +2970,9 @@
         "south": "WarpGaladonSeed#180",
         "west": "WarpGaladonSeed#170"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Seeker Service Cross",
+      "description": "Four service lanes meet around an inactive cradle painted with a wide safety boundary. NORTH reaches Seeker Repair Bay. EAST reaches Cradle Ramp. SOUTH reaches Culvert Junction. WEST enters the parts alcove."
     },
     {
       "id": "WarpGaladonSeed#172",
@@ -2644,7 +2988,9 @@
         "south": "WarpGaladonSeed#181",
         "west": "WarpGaladonSeed#171"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Cradle Ramp",
+      "description": "A broad ramp bears parallel wheel grooves and a handrail marked at regular intervals. NORTH rises to Service-Wire Junction. WEST reaches Seeker Service Cross. SOUTH continues into the lower service lane."
     },
     {
       "id": "WarpGaladonSeed#173",
@@ -2658,7 +3004,9 @@
       "exits": {
         "south": "WarpGaladonSeed#182"
       },
-      "source_label_for_reference_only": "Thieves' Guild (I)"
+      "source_label_for_reference_only": "Thieves' Guild (I)",
+      "title": "Quiet-Ledger Loft",
+      "description": "A small loft preserves blank ledger formats beneath glass, showing how to record deliveries without exposing names or contents. SOUTH descends to Quiet-Ledger Turn."
     },
     {
       "id": "WarpGaladonSeed#174",
@@ -2672,7 +3020,9 @@
       "exits": {
         "south": "WarpGaladonSeed#177"
       },
-      "source_label_for_reference_only": "Anti-Paladin Guild (AP)"
+      "source_label_for_reference_only": "Anti-Paladin Guild (AP)",
+      "title": "Shade-Study Loft",
+      "description": "Layered screens demonstrate how cloth, slats, leaves, and ordinary walls make different kinds of shade. The samples remain behind clear guards. SOUTH descends to Bramble-East Walk."
     },
     {
       "id": "WarpGaladonSeed#175",
@@ -2687,7 +3037,9 @@
         "east": "WarpGaladonSeed#176",
         "north": "WarpGaladonSeed#168"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Bramble-West Walk",
+      "description": "Blackberry canes lean over a wicker fence while dry pine needles march in tiny organized groups along the curb. NORTH climbs to Blackberry Upper Landing. EAST reaches Bramble Cross."
     },
     {
       "id": "WarpGaladonSeed#176",
@@ -2703,7 +3055,9 @@
         "north": "WarpGaladonSeed#169",
         "west": "WarpGaladonSeed#175"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Bramble Cross",
+      "description": "Three public ways meet around a clipped blackberry mound where a gray feather is pinned by thorns well above reach. NORTH climbs to Blackberry-Rain Landing. WEST reaches Bramble-West Walk. EAST reaches Bramble-East Walk."
     },
     {
       "id": "WarpGaladonSeed#177",
@@ -2719,7 +3073,9 @@
         "north": "WarpGaladonSeed#174",
         "west": "WarpGaladonSeed#176"
       },
-      "source_label_for_reference_only": "Anti-Paladin Guild approach (west of Large Crossroads)"
+      "source_label_for_reference_only": "Anti-Paladin Guild approach (west of Large Crossroads)",
+      "title": "Bramble-East Walk",
+      "description": "A broad paved walk passes beneath shade cloth patterned with leaves and thorns, while the real brambles remain safely behind a low wall. WEST reaches Bramble Cross. NORTH climbs to Shade-Study Loft. EAST reaches Pinebreak Crossroads."
     },
     {
       "id": "WarpGaladonSeed#178",
@@ -2736,7 +3092,9 @@
         "south": "WarpGaladonSeed#187",
         "west": "WarpGaladonSeed#177"
       },
-      "source_label_for_reference_only": "Large Crossroads"
+      "source_label_for_reference_only": "Large Crossroads",
+      "title": "Pinebreak Crossroads",
+      "description": "Several paved ways divide around a triangle of blackberry canes. A reliable water tower rises beyond the pines. Something bulky breathes behind the thorns, slow and close enough to study; its collar tag jingles."
     },
     {
       "id": "WarpGaladonSeed#179",
@@ -2752,7 +3110,9 @@
         "north": "WarpGaladonSeed#163",
         "west": "WarpGaladonSeed#178"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "East Spur Junction",
+      "description": "A brass route beetle walks a shallow groove around the junction and pauses wherever the road changes purpose. WEST reaches Pinebreak Crossroads. NORTH follows the clinic markings to Clinic Turn. EAST continues into the service streets."
     },
     {
       "id": "WarpGaladonSeed#180",
@@ -2769,7 +3129,9 @@
         "south": "WarpGaladonSeed#183",
         "west": "WarpGaladonSeed#179"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Culvert Junction",
+      "description": "A covered culvert carries clean runoff beneath a four-way service crossing. NORTH reaches Seeker Service Cross. WEST returns to East Spur Junction. EAST enters the lower service lane. SOUTH follows the culvert road."
     },
     {
       "id": "WarpGaladonSeed#181",
@@ -2785,7 +3147,9 @@
         "north": "WarpGaladonSeed#172",
         "west": "WarpGaladonSeed#180"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Lower-Service Cross",
+      "description": "Three service lanes meet around a rack of empty padded cradles, all locked flat after inspection. NORTH climbs to Cradle Ramp. WEST returns to Culvert Junction. EAST reaches Quiet-Ledger Turn."
     },
     {
       "id": "WarpGaladonSeed#182",
@@ -2800,7 +3164,9 @@
         "north": "WarpGaladonSeed#173",
         "west": "WarpGaladonSeed#181"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Quiet-Ledger Turn",
+      "description": "A fixed writing shelf displays canceled maintenance forms with every name and serial number removed. NORTH climbs to Quiet-Ledger Loft. WEST returns to Lower-Service Cross."
     },
     {
       "id": "WarpGaladonSeed#183",
@@ -2815,7 +3181,9 @@
         "north": "WarpGaladonSeed#180",
         "south": "WarpGaladonSeed#189"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Culvert-South Walk",
+      "description": "A paved walk follows the sound of runoff beneath bolted stone covers, with every channel repeated as a raised line along the curb. NORTH returns to Culvert Junction. SOUTH reaches Watermark Cross."
     },
     {
       "id": "WarpGaladonSeed#184",
@@ -2829,7 +3197,9 @@
       "exits": {
         "east": "WarpGaladonSeed#185"
       },
-      "source_label_for_reference_only": "Feanwyyn (southwest)"
+      "source_label_for_reference_only": "Feanwyyn (southwest)",
+      "title": "Reedstone End",
+      "description": "A patch of dry reeds grows through square openings in a low stone planter, rustling against labels that name each ordinary species. EAST reaches Reedstone Walk."
     },
     {
       "id": "WarpGaladonSeed#185",
@@ -2844,7 +3214,9 @@
         "east": "WarpGaladonSeed#186",
         "west": "WarpGaladonSeed#184"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Reedstone Walk",
+      "description": "Square stone planters separate a dry civic walk from a line of whispering reeds. WEST ends at Reedstone End. EAST reaches Bridge-West Approach."
     },
     {
       "id": "WarpGaladonSeed#186",
@@ -2859,7 +3231,9 @@
         "east": "WarpGaladonSeed#187",
         "west": "WarpGaladonSeed#185"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Bridge-West Approach",
+      "description": "Bronze studs in the paving grow closer together toward Storm Grate Bridge, giving the approach a tactile rhythm. WEST returns to Reedstone Walk. EAST reaches the bridge."
     },
     {
       "id": "WarpGaladonSeed#187",
@@ -2876,7 +3250,9 @@
         "south": "WarpGaladonSeed#192",
         "west": "WarpGaladonSeed#186"
       },
-      "source_label_for_reference_only": "Bridge (b)"
+      "source_label_for_reference_only": "Bridge (b)",
+      "title": "Storm Grate Bridge",
+      "description": "Water whispers below an iron service grate set beside the bridge rail. Candy wrappers cling upstream. A footstool-sized crab squats in the gutter wearing a parking cone and sorting bottle tops by color."
     },
     {
       "id": "WarpGaladonSeed#188",
@@ -2891,7 +3267,9 @@
         "east": "WarpGaladonSeed#189",
         "west": "WarpGaladonSeed#187"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Bridge-East Approach",
+      "description": "Wet-brick patterns are pressed into dry paving beside a covered municipal channel. WEST reaches Storm Grate Bridge. EAST reaches Watermark Cross."
     },
     {
       "id": "WarpGaladonSeed#189",
@@ -2907,7 +3285,9 @@
         "north": "WarpGaladonSeed#183",
         "west": "WarpGaladonSeed#188"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Watermark Cross",
+      "description": "Three civic roads meet around a bronze column etched with old high-water marks and dates. NORTH follows Culvert-South Walk. WEST reaches Bridge-East Approach. EAST reaches Bellstone Walk."
     },
     {
       "id": "WarpGaladonSeed#190",
@@ -2922,7 +3302,9 @@
         "east": "WarpGaladonSeed#191",
         "west": "WarpGaladonSeed#189"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Bellstone Walk",
+      "description": "Flat stones hold faint bell-shaped mineral patterns beneath a quiet stretch of civic road. WEST returns to Watermark Cross. EAST reaches the existing eastern road anchor."
     },
     {
       "id": "WarpGaladonSeed#191",
@@ -2936,7 +3318,9 @@
       "exits": {
         "west": "WarpGaladonSeed#190"
       },
-      "source_label_for_reference_only": "Voralia's Tears"
+      "source_label_for_reference_only": "Voralia's Tears",
+      "title": "Reed Causeway",
+      "description": "A raised strip of asphalt crosses wet ground. Reeds knock together beside brown water sliding through square culverts. Every few seconds, something underneath says boat in a hopeful voice."
     },
     {
       "id": "WarpGaladonSeed#192",
@@ -2951,7 +3335,9 @@
         "north": "WarpGaladonSeed#187",
         "south": "WarpGaladonSeed#195"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Bridge Road",
+      "description": "The road carries a faint rhythm of water, curb taps, and bridge vibration. NORTH reaches Storm Grate Bridge and the routes toward Central Cross. SOUTH continues to South Gate Approach."
     },
     {
       "id": "WarpGaladonSeed#193",
@@ -2965,7 +3351,9 @@
       "exits": {
         "east": "WarpGaladonSeed#194"
       },
-      "source_label_for_reference_only": "Shapeshifters Guild (s)"
+      "source_label_for_reference_only": "Shapeshifters Guild (s)",
+      "title": "Shape-Study End",
+      "description": "A fixed wall exhibit compares silhouettes changed by distance, light, water, and folded mirrors, with every example labeled as optics. EAST reaches West Gate-Side Walk."
     },
     {
       "id": "WarpGaladonSeed#194",
@@ -2980,7 +3368,9 @@
         "east": "WarpGaladonSeed#195",
         "west": "WarpGaladonSeed#193"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "West Gate-Side Walk",
+      "description": "Bronze flood numbers continue along a west side walk beneath fixed mirror tiles that make the open road easier to see. WEST reaches Shape-Study End. EAST returns to South Gate Approach."
     },
     {
       "id": "WarpGaladonSeed#195",
@@ -2997,7 +3387,9 @@
         "south": "WarpGaladonSeed#198",
         "west": "WarpGaladonSeed#194"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "South Gate Approach",
+      "description": "Bronze flood numbers are set into the paving, decreasing toward the civic gate. SOUTH reaches South Gate and its visible outside-town warning. NORTH returns by Bridge Road. EAST and WEST remain public side streets."
     },
     {
       "id": "WarpGaladonSeed#196",
@@ -3012,7 +3404,9 @@
         "east": "WarpGaladonSeed#197",
         "west": "WarpGaladonSeed#195"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "East Gate-Side Walk",
+      "description": "The east side walk follows bronze flood numbers past a row of empty weather-vessel brackets. WEST returns to South Gate Approach. EAST reaches Weather-Vessel End."
     },
     {
       "id": "WarpGaladonSeed#197",
@@ -3026,7 +3420,9 @@
       "exits": {
         "west": "WarpGaladonSeed#196"
       },
-      "source_label_for_reference_only": "Conjurer's Guild (c)"
+      "source_label_for_reference_only": "Conjurer's Guild (c)",
+      "title": "Weather-Vessel End",
+      "description": "Sealed glass vessels display ordinary samples of rainwater, hail melt, dust, and clean snowmelt behind a clear guard. WEST returns to East Gate-Side Walk."
     },
     {
       "id": "WarpGaladonSeed#198",
@@ -3041,7 +3437,9 @@
         "north": "WarpGaladonSeed#195",
         "south": "WarpGaladonSeed#199"
       },
-      "source_label_for_reference_only": "South Gate (S)"
+      "source_label_for_reference_only": "South Gate (S)",
+      "title": "South Gate",
+      "description": "The road passes beneath a gatehouse broad enough for wagons and a city bus. The air smells of wet rope and sun-warmed mud. A bronze flood gauge beside the arch is presently arguing with the river in numbers. SOUTH - OUTSIDE TOWN. Town patrol and clinic guarantees do not extend beyond this gate. NORTH and the clinic remain available by the existing road."
     },
     {
       "id": "WarpGaladonSeed#199",
@@ -3056,7 +3454,9 @@
         "north": "WarpGaladonSeed#198",
         "south": "WarpGaladonSeed#200"
       },
-      "source_label_for_reference_only": null
+      "source_label_for_reference_only": null,
+      "title": "Last Paved Mile",
+      "description": "The South Gate stands plainly NORTH. Patched pavement narrows toward pine shade SOUTH, where dry needles wait at the painted edge. You are OUTSIDE TOWN here; ordinary retreat north remains open and no combat is forced."
     },
     {
       "id": "WarpGaladonSeed#200",
@@ -3071,7 +3471,9 @@
         "north": "WarpGaladonSeed#199",
         "south": "WarpGaladonSeed#201"
       },
-      "source_label_for_reference_only": "Galadon Outskirts (south)"
+      "source_label_for_reference_only": "Galadon Outskirts (south)",
+      "title": "Pinewall Road",
+      "description": "A paved service road narrows between a long wall and a stand of pines. Dry needles skitter over the shoulder in organized groups, pause at the painted line, and cross together."
     },
     {
       "id": "WarpGaladonSeed#201",
@@ -3085,7 +3487,9 @@
       "exits": {
         "north": "WarpGaladonSeed#200"
       },
-      "source_label_for_reference_only": "Silverwood"
+      "source_label_for_reference_only": "Silverwood",
+      "title": "Pineglass End",
+      "description": "The paved road ends beneath tall pines where a few fallen needles have turned clear as green glass. The trees continue, but the public route does not. NORTH returns toward town."
     },
     {
       "id": "WarpGaladonSeed#202",
@@ -3102,7 +3506,9 @@
         "south": "WarpGaladonSeed#50",
         "west": "WarpGaladonSeed#40"
       },
-      "source_label_for_reference_only": "City Hall"
+      "source_label_for_reference_only": "City Hall",
+      "title": "City Hall",
+      "description": "A high public hall contains route boards, maintenance ledgers, and ordinary benches beneath windows that make every posted word easy to read. NORTH reaches Ledger Cross. EAST reaches Civic-Notice Landing. SOUTH reaches the south steps. WEST reaches Library-Hall Cross."
     },
     {
       "id": "WarpGaladonSeed#203",
@@ -3119,7 +3525,25 @@
         "south": "WarpGaladonSeed#108",
         "west": "WarpGaladonSeed#106"
       },
-      "source_label_for_reference_only": "Healer"
+      "source_label_for_reference_only": "Healer",
+      "title": "Public Care Annex",
+      "description": "A quiet public annex displays plain-language cards about seeking help, describing symptoms, and finding the City Clinic without claiming treatment happens here. NORTH reaches East-Ledger End. EAST reaches Care-East Nook. SOUTH reaches Care-South Landing. WEST reaches Care-Route North."
     }
-  ]
+  ],
+  "content_contract": {
+    "source_candidate": "WARP Galadon v4.1.4 sealed offline complete-content candidate",
+    "source_cmroom_sha256": "247DAF4E203BD6697CCA57EE7C8A3B819398C6EDAFDF515B0AD2C2F6F3E3FA25",
+    "sanitized_room_content_sha256": "94E8729D1A5ED80B948F87E911F0F7A8BED0E9842E273BBC97C9736BCF287262",
+    "authored_room_count": 204,
+    "content_pending_rooms": 0,
+    "live_gameplay_verified": false,
+    "protected_rooms_modified": 0
+  },
+  "route_previews": {
+    "available": true,
+    "separator": ";;",
+    "live_gameplay_verified": false,
+    "executable": false,
+    "note": "Routes are shortest paths inside the sealed offline candidate only. They do not prove the installed game matches this graph."
+  }
 }

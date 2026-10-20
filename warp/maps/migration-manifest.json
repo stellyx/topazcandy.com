@@ -12,6 +12,10 @@
     "topology_sha256": "0B1A909AF1190F33FD61E0822BE6A57E9ACEC3178E43C3A16A93AD81D5095C53",
     "rooms": 204,
     "directed_exits": 440,
+    "authored_room_descriptions": 204,
+    "sanitized_room_content_sha256": "94E8729D1A5ED80B948F87E911F0F7A8BED0E9842E273BBC97C9736BCF287262",
+    "graphical_room_inspection": true,
+    "offline_route_previews": true,
     "executable": false,
     "status": "SEALED_OFFLINE_CONTENT_CANDIDATE_AWAITING_DIRECTION_CONFIG_AND_INTEGRATOR_ACCEPTANCE"
   },
@@ -31,5 +35,5 @@
     "/qhcf/references/ranking-items.csv",
     "/qhcf/references/ranking-items-SOURCE-NOTES.md"
   ],
-  "legacy_redirects_installed": false
+  "legacy_redirects_installed": true
 }
