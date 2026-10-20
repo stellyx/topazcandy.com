@@ -1,7 +1,8 @@
 // The Past Grove revision 4972: source glyphs and explicit straight connectors.
 // Text labels and the external Void/road/canyon crossings are excluded.
 export const anchors=[
- {id:'void',row:19,col:33,label:'The Void · eastern marker'},
+ {id:'void-north',row:17,col:30,label:'The Void - northern marker'},
+ {id:'void-east',row:19,col:33,label:'The Void - eastern marker'},
  {id:'woods',row:19,col:30,label:'Clearing in the Woods'},
  {id:'moss',row:21,col:15,label:'Moss-covered Clearing'},
  {id:'canyon',row:15,col:15,label:'Edge of the Rock-Faced Canyon'},

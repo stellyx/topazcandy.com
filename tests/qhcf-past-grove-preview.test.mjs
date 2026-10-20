@@ -21,5 +21,9 @@ test('neighbor links exist, with unknown boundary crossing explicitly stated',()
  for(const path of ['/qhcf/grove-preview.html','/qhcf/areas/the-plains-of-arendyl.html','/qhcf/areas/a-wagon-marked-road.html']){
   assert.ok(page.includes(`href="${path}"`));assert.ok(fs.existsSync(new URL(`..${path}`,import.meta.url)));
  }
- assert.match(page,/matching arrival room are unresolved/);assert.doesNotMatch(page,/target="_blank"/);
+ assert.equal(anchors.filter(a=>a.id.startsWith('void-')).length,2);
+ assert.match(page,/two distinct Void markers/);assert.match(page,/no arrival is preselected/);
+ const script=fs.readFileSync(new URL('../qhcf/past-grove-preview.mjs',import.meta.url),'utf8');
+ assert.match(script,/location\.hash==='#void-markers'/);assert.doesNotMatch(script,/choose\('19:33'\)/);
+ assert.doesNotMatch(page,/target="_blank"/);
 });

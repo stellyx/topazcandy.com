@@ -37,8 +37,8 @@ assert.deepEqual(turnoffs.filter(t=>t.slug==='the-drogran-hills').map(t=>[t.colu
 assert.equal(source.lines[16][23],'|');
 assert.equal(source.lines[16][31],'|');
 assert.deepEqual(turnoffs.filter(t=>t.slug==='the-grove').map(t=>[t.column,t.name,t.href]),[
-  [18,'The Grove · first entrance (Rangers Guild side)','/qhcf/grove-preview.html'],
-  [34,'The Grove · second entrance (Void side)','/qhcf/grove-preview.html']
+  [18,'The Grove - west/first turnoff','/qhcf/grove-preview.html#eastern-road-west-exit'],
+  [34,'The Grove - east/second turnoff','/qhcf/grove-preview.html#eastern-road-east-exit']
 ]);
 assert.equal(turnoffs.find(t=>t.column===64).href,null);
 for(const t of turnoffs.filter(t=>t.href))assert.ok(existsSync(new URL(`../${t.href.slice(1)}`,import.meta.url)),t.name);
@@ -93,6 +93,10 @@ assert.ok(page.includes('id="place-list"'));
 assert.ok(page.includes('id="map-note"'));
 assert.ok(page.includes('e;;e;;w'));
 assert.ok(page.includes('id="copy-feedback" role="status"'));
+assert.ok(page.includes('two distinct Void rooms'));
+assert.ok(page.includes('grove-preview.html#eastern-road-exits'));
+assert.ok(!page.includes('Rangers Guild side'));
+assert.ok(!page.includes('Void side'));
 const script=readFileSync(new URL('../qhcf/eastern-road-preview.mjs',import.meta.url),'utf8');
 assert.ok(script.includes('for(const {row,column,glyph} of sourceSegments(source))'));
 assert.ok(script.includes('class:\'road marked-continuation\''));
@@ -101,6 +105,7 @@ assert.ok(!script.includes('line(5,8,84)'));
 assert.ok(!script.includes('[[9,2,5]'));
 assert.ok(!script.includes('class:\'area-link\''));
 assert.ok(script.includes("add('rect',{x:x-width/2"));
+assert.ok(script.includes("if(t.id)signAttrs.id=t.id"));
 assert.ok(script.includes("const keyIds=new Set("));
 assert.ok(script.includes("['a','c','east-e','east-one','south-one','lower-top-2','lower-0','lower-4'].map"));
 assert.ok(page.includes('id="turnoff-links"'));

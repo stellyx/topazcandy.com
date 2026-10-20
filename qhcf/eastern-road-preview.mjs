@@ -42,12 +42,12 @@ export const turnoffs = [
   {area:3,section:'upper',column:70,direction:'north',lane:1},
   {area:9,section:'upper',column:70,direction:'south',lane:1},
   {area:6,section:'upper',column:77,direction:'north',lane:0},
-  {area:11,name:'The Grove · first entrance (Rangers Guild side)',section:'lower',column:18,direction:'north',lane:1},
-  {area:12,name:'The Grove · second entrance (Void side)',section:'lower',column:34,direction:'north',lane:0},
+  {id:'grove-west-turnoff',area:11,name:'The Grove - west/first turnoff',section:'lower',column:18,direction:'north',lane:1,preview:'/qhcf/grove-preview.html#eastern-road-west-exit'},
+  {id:'grove-east-turnoff',area:12,name:'The Grove - east/second turnoff',section:'lower',column:34,direction:'north',lane:0,preview:'/qhcf/grove-preview.html#eastern-road-east-exit'},
   {area:13,name:'Drogan Hills · west branch',section:'lower',column:24,direction:'south',lane:0},
   {area:13,name:'Drogan Hills · east branch',section:'lower',column:32,direction:'south',lane:1}
 ].map(t=>({...t,name:t.name||areas[t.area].name,slug:t.area===undefined?null:areas[t.area].slug,
-  href:t.area===undefined||!areas[t.area].slug?null:areas[t.area].preview||`/qhcf/areas/${areas[t.area].slug}.html`,
+  href:t.area===undefined||!areas[t.area].slug?null:t.preview||areas[t.area].preview||`/qhcf/areas/${areas[t.area].slug}.html`,
   sourceRow:t.area===undefined?null:areas[t.area].row,
   sourceColumn:t.area===undefined?null:areas[t.area].column}));
 const spans = [
@@ -129,7 +129,10 @@ if(typeof document!=='undefined'){
     const displayName=t.name==='Unidentified southern spur'?'Unknown spur':t.name;
     const y=north?90-t.lane*43:285+t.lane*42,width=Math.min(220,Math.max(106,displayName.length*7.5+38));
     add('line',{x1:x,y1:BASE,x2:x,y2:north?y+14:y-14,class:'road branch-stub','aria-hidden':'true'},roads);
-    const sign=add(t.href?'a':'g',t.href?{href:t.href,class:'turn-sign'}:{class:'turn-sign unresolved',tabindex:'0',role:'note'},roads);
+    const signAttrs=t.href?{href:t.href,class:'turn-sign'}:{class:'turn-sign unresolved',tabindex:'0',role:'note'};
+    if(t.id)signAttrs.id=t.id;
+    const sign=add(t.href?'a':'g',signAttrs,roads);
+    if(t.id&&location.hash===`#${t.id}`)sign.classList.add('targeted');
     const descriptor=`${t.direction} turnoff to ${t.name} · road column ${t.column}${t.sourceRow?`; source label r${t.sourceRow}c${t.sourceColumn}`:''} · ${t.href?'open destination map; matching entrance unverified':'destination map unresolved'}`;
     sign.setAttribute('aria-label',descriptor);
     add('rect',{x:x-width/2,y:y-15,width,height:30,rx:8},sign);

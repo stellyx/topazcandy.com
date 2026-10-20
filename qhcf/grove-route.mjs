@@ -1,9 +1,11 @@
-// Conservative central-grid transcription of The Grove, revision 4971.
-// This excludes caves, teleports, diagonal guild passages, the Void and
-// boundary crossings; their matching rooms/commands are not established.
+// Source-exact transcription of The Grove, revision 4971.
+// Straight '-' and '|' room links are routable. Diagonals, arrows, secret
+// passages, and every area-boundary crossing are drawn but never converted to
+// movement commands without separate evidence.
 export const anchors=[
- {id:'south',row:30,col:33,label:'West Grove entrance · Eastern Road'},
- {id:'camp',row:18,col:33,label:'Traveler’s Camp'},
+ {id:'west-road',row:30,col:33,label:'Eastern Road - west exit (c33)'},
+ {id:'east-road',row:30,col:55,label:'Eastern Road - east exit (c55)'},
+ {id:'camp',row:18,col:33,label:"Traveler's Camp"},
  {id:'ash',row:14,col:36,label:'Great Ash Tree'},
  {id:'circle',row:14,col:39,label:'Before the Circle of Stones'},
  {id:'willow',row:16,col:36,label:'Great Willow Tree'},
@@ -11,27 +13,58 @@ export const anchors=[
  {id:'hickory',row:20,col:42,label:'Great Hickory Tree'},
  {id:'earth',row:18,col:48,label:'Altar to Earth'},
  {id:'birch',row:14,col:51,label:'Great Birch Tree'},
- {id:'ranger',row:26,col:57,label:'Ranger Guild approach'}
+ {id:'ranger',row:26,col:57,label:'Rangers Guild approach (U)'},
+ {id:'void-clearing',row:8,col:63,label:'Clearing below The Void (+)'},
+ {id:'secret-tunnel',row:10,col:61,label:'Secret Tunnel (+)'}
 ];
 export const roomKey=(row,col)=>`${row}:${col}`;
-const rowSet=[12,14,16,18,20,22,24,26,28,30],columns=[33,36,39,42,45,48,51,53,54,55,57];
-const glyphs=new Set('ABCDEFGHIJKLMNOPQRSTUVWXYZ+tU');
+
+// Coordinates are explicit so prose such as "The Tool Maker's Wagon" cannot
+// accidentally become rooms. Every literal '+' is added from plus_cells.
+const sourceRooms=[
+ [1,45],[1,48],[1,53,'*'],[3,45],[3,48],
+ [5,33],[5,36],[5,39],[5,42],[5,45],[5,48],
+ [7,31],[7,38],[7,44],
+ [8,7],[8,10],[8,13],
+ [9,30],[9,33],[9,36,'G1'],[9,39],[9,42],[9,45],[9,48],[9,51],[9,53,'*'],
+ [11,4,'@'],[11,7],[11,10,'G1'],[11,28,'@'],[11,31],
+ [12,32,'G2'],[12,36],[12,39],[12,42],[12,45],[12,48],[12,51],[12,54],[12,61],
+ [13,7,'G2'],
+ [14,33],[14,36],[14,39],[14,42],[14,45],[14,48],[14,51],[14,54],
+ [16,33],[16,36],[16,39],[16,42],[16,45],[16,48],[16,51],[16,54],
+ [18,33],[18,36],[18,39],[18,42],[18,45],[18,48],[18,51],[18,54],
+ [20,36],[20,39],[20,42],[20,45],[20,48],
+ [22,39],[22,42],[22,45],[22,48],[22,57],
+ [26,57]
+];
+
 export function sourceGraph(data){
  if(data.slug!=='the-grove'||data.source?.revision_id!==4971)throw Error('Unexpected Grove source revision');
  const at=(r,c)=>data.lines[r-1]?.[c-1]||' ',rooms=new Map(),edges=[];
- for(const row of rowSet)for(const col of columns){const ch=at(row,col);if(row===20&&col===53)continue; // T begins the Tool Maker's Wagon label
-  if(glyphs.has(ch))rooms.set(roomKey(row,col),{row,col,ch,id:`qhcf.area.the-grove.r${row}c${col}`})}
- // The 2 at r12c33 is the second glyph of G2, an actual source room.
- rooms.set('12:33',{row:12,col:33,ch:'G2',id:'qhcf.area.the-grove.r12c33'});
+ for(const [row,col,override] of sourceRooms){
+  const ch=override||at(row,col);
+  rooms.set(roomKey(row,col),{row,col,ch,id:`qhcf.area.the-grove.r${row}c${col}`});
+ }
+ for(const {row,column:col} of data.plus_cells)rooms.set(roomKey(row,col),{row,col,ch:'+',id:`qhcf.area.the-grove.r${row}c${col}`});
  for(const n of rooms.values()){
-  const sameRow=[...rooms.values()].filter(v=>v.row===n.row&&v.col>n.col).sort((a,b)=>a.col-b.col)[0];
-  if(sameRow&&Array.from({length:sameRow.col-n.col-1},(_,i)=>at(n.row,n.col+i+1)).join('').match(/^-+$/))edges.push({from:roomKey(n.row,n.col),to:roomKey(sameRow.row,sameRow.col),command:'e'});
-  const sameColumn=[...rooms.values()].filter(v=>v.col===n.col&&v.row>n.row).sort((a,b)=>a.row-b.row)[0];
-  if(sameColumn&&Array.from({length:sameColumn.row-n.row-1},(_,i)=>at(n.row+i+1,n.col)).join('').match(/^\|+$/))edges.push({from:roomKey(n.row,n.col),to:roomKey(sameColumn.row,sameColumn.col),command:'s'});
+  const right=[...rooms.values()].filter(v=>v.row===n.row&&v.col>n.col).sort((a,b)=>a.col-b.col)[0];
+  const width=n.ch.length;
+  if(right&&Array.from({length:right.col-n.col-width},(_,i)=>at(n.row,n.col+width+i)).join('').match(/^-+$/))edges.push({from:roomKey(n.row,n.col),to:roomKey(right.row,right.col),command:'e'});
+  const below=[...rooms.values()].filter(v=>v.col===n.col&&v.row>n.row).sort((a,b)=>a.row-b.row)[0];
+  if(below&&Array.from({length:below.row-n.row-1},(_,i)=>at(n.row+i+1,n.col)).join('').match(/^\|+$/))edges.push({from:roomKey(n.row,n.col),to:roomKey(below.row,below.col),command:'s'});
  }
  for(const a of anchors)if(!rooms.has(roomKey(a.row,a.col)))throw Error(`Missing ${a.id}`);
  return {rooms,edges};
 }
+
+export function sourceConnectorSegments(data){
+ const arrowV=new Set(['10:10','12:7']);
+ return data.lines.slice(0,31).flatMap((line,index)=>[...line.slice(0,63)].flatMap((glyph,column)=>{
+  const key=`${index+1}:${column+1}`;
+  return '-|/\\>'.includes(glyph)||glyph==='v'&&arrowV.has(key)?[{row:index+1,column:column+1,glyph}]:[];
+ }));
+}
+
 export function route(graph,from,to){
  if(!graph.rooms.has(from)||!graph.rooms.has(to))return null;
  const neighbors=new Map();for(const e of graph.edges)for(const [a,b,d] of [[e.from,e.to,e.command],[e.to,e.from,{e:'w',s:'n'}[e.command]]])neighbors.set(a,[...(neighbors.get(a)||[]),{to:b,d}]);

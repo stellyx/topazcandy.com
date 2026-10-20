@@ -39,7 +39,7 @@ function render(data){
  }
  fromField.addEventListener('change',()=>{start=fromField.value||null;selected=start;draw()});toField.addEventListener('change',()=>{goal=toField.value||null;selected=goal;draw()});document.querySelector('#flip').addEventListener('click',()=>{[start,goal]=[goal,start];selected=start;draw()});
  document.querySelector('#copy').addEventListener('click',async()=>{const box=document.querySelector('#commands'),feedback=document.querySelector('#copy-feedback');box.select();try{await navigator.clipboard.writeText(box.value);feedback.textContent='Copied. Paste to confirm your device accepted the commands.'}catch{feedback.textContent='Commands selected; press Ctrl+C or use Copy on your device.'}});
- if(location.hash==='#void')choose('19:33');
+ if(location.hash==='#void-markers')note.textContent='This source chart has two distinct Void rooms (r17c30 and r19c33). The arrival from the present Grove is unresolved; choose either marker explicitly.';
  const boundaries=[{text:'Plains of Arendyl ↑',href:'/qhcf/areas/the-plains-of-arendyl.html',x:18,y:32},{text:'The Grove via Void ↗',href:'/qhcf/grove-preview.html',x:776,y:440},{text:'Wagon-Marked Road ↓',href:'/qhcf/areas/a-wagon-marked-road.html',x:15,y:940}];
  for(const b of boundaries){const a=element('a',{href:b.href,class:'edge-link','aria-label':`${b.text}, open map; crossing unresolved`}),t=element('text',{x:b.x,y:b.y,class:'edge-label'});t.textContent=b.text;a.append(t);svg.append(a)}
  function resize(){svg.style.width=`${1050*scale}px`;svg.style.height=`${960*scale}px`;svg.style.marginLeft=1050*scale<viewport.clientWidth?'auto':'0';svg.style.marginRight=1050*scale<viewport.clientWidth?'auto':'0';svg.style.marginTop=`${Math.max(0,(viewport.clientHeight-960*scale)/2)}px`}
