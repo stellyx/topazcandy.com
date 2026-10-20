@@ -84,4 +84,8 @@ test('source inventories and destination links remain source-backed', () => {
   assert.match(readFileSync(new URL('../qhcf/galadon-preview.html', import.meta.url), 'utf8'), /withEastGateAction\(p.node_ids,p.commands\)/);
   assert.match(html, /id="copy-all"[^>]*disabled/);
   assert.match(ui, /result.status === 'REPORTED_ROUTE'/);
+  assert.match(html, /inside East Gate is five east from Market Square/);
+  assert.match(html, /Galadon Large Crossroads/);
+  assert.match(html, /Eastern Road Large Crossroads \(C\)/);
+  assert.match(ui, /includes\('open east'\)/);
 });

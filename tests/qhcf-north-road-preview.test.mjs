@@ -5,7 +5,7 @@ import {sourceRooms,northRoadSpine,routeBetween,routeStops,verifiedMapLinks} fro
 const source=JSON.parse(readFileSync(new URL('../qhcf/data/areas/northernroads.json',import.meta.url)));
 assert.equal(source.source.revision_id,4989);
 const captured=readFileSync(new URL('../qhcf/data/areas/northernroads.txt',import.meta.url),'utf8');
-assert.ok(captured.includes('NorthernRoads\n============='));
+assert.match(captured,/NorthernRoads\r?\n=============/);
 assert.ok(captured.includes('oldid=4989'));
 const rooms=sourceRooms(source),pluses=rooms.filter(n=>n.glyph==='+');
 assert.equal(pluses.length,source.plus_cells.length);

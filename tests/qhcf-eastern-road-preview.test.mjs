@@ -37,8 +37,8 @@ assert.deepEqual(turnoffs.filter(t=>t.slug==='the-drogran-hills').map(t=>[t.colu
 assert.equal(source.lines[16][23],'|');
 assert.equal(source.lines[16][31],'|');
 assert.deepEqual(turnoffs.filter(t=>t.slug==='the-grove').map(t=>[t.column,t.name,t.href]),[
-  [18,'The Grove · west turnoff','/qhcf/areas/the-grove.html'],
-  [34,'The Grove · east turnoff','/qhcf/areas/the-grove.html']
+  [18,'The Grove · first entrance (Rangers Guild side)','/qhcf/grove-preview.html'],
+  [34,'The Grove · second entrance (Void side)','/qhcf/grove-preview.html']
 ]);
 assert.equal(turnoffs.find(t=>t.column===64).href,null);
 for(const t of turnoffs.filter(t=>t.href))assert.ok(existsSync(new URL(`../${t.href.slice(1)}`,import.meta.url)),t.name);

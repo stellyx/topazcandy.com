@@ -27,7 +27,7 @@ test('Western Road and command routes remain unasserted',()=>{
 
 test('top tabs filter one shared note list and preserve a search query',()=>{
  const js=read('western-shadow-sorcery-preview.mjs');
- const declaration=js.match(/export const filteredEntries=.*?;\n/)[0].replace('export const ','const ');
+ const declaration=js.match(/export const filteredEntries=.*?;\r?\n/)[0].replace('export const ','const ');
  const filtered=runInNewContext(declaration+'filteredEntries',{});
  assert.equal(filtered(ledger.entries,'grove').length,10);
  assert.equal(filtered(ledger.entries,'tower').length,25);
@@ -45,5 +45,6 @@ test('every note has a stable line target and only verified matching area links'
   if(entry.area_link){assert.ok(existsSync(resolve(root,'.'+entry.area_link)),entry.area_link);assert.match(entry.link_status,/unverified/);assert.ok([...linked].some(name=>entry.source_text.includes(name)),entry.source_text)}
  }
  const fean=ledger.entries.find(e=>e.label==='Feanwyyn');assert.ok(fean);assert.equal(fean.area_link,undefined);
+ const html=read('western-shadow-sorcery-preview.html');assert.match(html,/href="\/qhcf\/western-shadow-sorcery-preview\.html#source-grove-L16"[^>]*>See the original note at line 19/);assert.match(html,/href="\/qhcf\/western-shadow-sorcery-preview\.html#source-grove-L12"[^>]*>See the Tower label/);
  const js=read('western-shadow-sorcery-preview.mjs');assert.match(js,/row\.id=`source-\$\{active\}-L\$\{index\+1\}`/);assert.match(js,/Source line ↗/);assert.match(js,/Focus chart/);
 });

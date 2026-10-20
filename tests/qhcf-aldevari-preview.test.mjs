@@ -12,7 +12,7 @@ test('Aldevari retains all captured plus rooms and stable coordinates',()=>{
  assert.match(script,/qhcf\.area\.aldevari\.r\$\{row\}c\$\{col\}/);
 });
 test('edge links are real same-frame links with unresolved crossing status',()=>{
- for(const href of ['/qhcf/eastern-road-preview.html','/qhcf/areas/bramblefield-road.html','/qhcf/areas/the-grove.html']){
+ for(const href of ['/qhcf/eastern-road-preview.html','/qhcf/bramblefield-preview.html','/qhcf/grove-preview.html']){
   assert.ok(page.includes(`href="${href}"`));
   assert.ok(fs.existsSync(new URL(`..${href}`,import.meta.url)));
  }

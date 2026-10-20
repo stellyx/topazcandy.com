@@ -17,7 +17,7 @@ function populate() {
   const crossroads = map.nodes.find(node => node.id === 'galadon.map.r51c36');
   const galadon = [...named.filter(node => node.id === 'galadon.map.marker.m' || node.id === 'galadon.map.gate.east' || node.id.startsWith('galadon.map.guild.')), map.nodes.find(node => node.id === OUTSIDE_EAST_GATE), crossroads];
   names = new Map([...map.nodes, ...EASTERN_ANCHORS].map(node => [node.id, node.name]));
-  names.set('galadon.map.r51c36', 'Large Crossroads');
+  names.set('galadon.map.r51c36', 'Galadon Large Crossroads');
   names.set(OUTSIDE_EAST_GATE, 'Outside East Gate');
   for (const [guildId, threshold] of guildThresholds(map)) {
     const guild = names.get(guildId)?.replace(/ \([^)]*\)$/, '') || 'Guild';
@@ -59,7 +59,7 @@ function render() {
   for (const leg of result.legs) {
     const section = document.createElement('section'); section.className = 'leg';
     const title = document.createElement('strong'); title.textContent = `${label(leg.from)} → ${label(leg.to)} · ${leg.moves} ${leg.moves === 1 ? 'move' : 'moves'} · ${leg.grouped}`;
-    const evidence = document.createElement('p'); evidence.textContent = leg.source_revision ? `Captured Galadon map, revision ${leg.source_revision}. Door action: open east at the inside gate before crossing; it may fail while the gate is closed for the night.` : 'Player-reported 34 east; intermediate room IDs and live gate state are not verified.';
+    const evidence = document.createElement('p'); evidence.textContent = leg.source_revision ? leg.copy_commands.split(';;').includes('open east') ? `Captured Galadon map, revision ${leg.source_revision}. Door action: open east at the inside gate before crossing; it may fail while the gate is closed for the night.` : `Captured Galadon map, revision ${leg.source_revision}. No gate action occurs on this leg.` : 'Player-reported 34 east; intermediate room IDs and live gate state are not verified.';
     const code = document.createElement('code'); code.textContent = leg.copy_commands;
     const button = document.createElement('button'); button.type = 'button'; button.textContent = 'Copy this leg'; button.addEventListener('click', () => copy(leg.copy_commands, 'Leg'));
     section.append(title, evidence, code, button); legs.append(section);

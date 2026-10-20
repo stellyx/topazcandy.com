@@ -2,7 +2,7 @@ import { buildAsciiMapGraph, planMapRoute } from './navigation/route-engine.mjs'
 import { EAST_GATE, OUTSIDE_EAST_GATE, withEastGateAction } from './gate-commands.mjs';
 
 export const EASTERN_ANCHORS = [
-  { id: 'eastern.map.c', name: 'C (Eastern Road)', area: 'eastern', source_revision: 5027 },
+  { id: 'eastern.map.c', name: 'Eastern Road Large Crossroads (C)', area: 'eastern', source_revision: 5027 },
   { id: 'eastern.map.east-one', name: '1 (east end of Eastern Road)', area: 'eastern', source_revision: 5027 }
 ];
 export { EAST_GATE, OUTSIDE_EAST_GATE };
