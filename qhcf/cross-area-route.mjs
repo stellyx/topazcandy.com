@@ -1,14 +1,16 @@
 import { buildAsciiMapGraph, planMapRoute } from './navigation/route-engine.mjs';
+import { EAST_GATE, OUTSIDE_EAST_GATE, withEastGateAction } from './gate-commands.mjs';
 
 export const EASTERN_ANCHORS = [
   { id: 'eastern.map.c', name: 'C (Eastern Road)', area: 'eastern', source_revision: 5027 },
   { id: 'eastern.map.east-one', name: '1 (east end of Eastern Road)', area: 'eastern', source_revision: 5027 }
 ];
-export const EAST_GATE = 'galadon.map.gate.east';
+export { EAST_GATE, OUTSIDE_EAST_GATE };
+export const OUTSIDE_TO_C_MOVES = 34;
 export const UNKNOWN_BOUNDARY = Object.freeze({
-  from: EAST_GATE, toward_area: 'the-eastern-road',
-  reason: 'Crossing command and matching Eastern Road entrance are unverified.',
-  map_url: '/qhcf/eastern-road-preview.html?v=dd5ff06'
+  from: OUTSIDE_EAST_GATE, toward_area: 'the-eastern-road',
+  reason: 'Beyond the outside East Gate room, intermediate road rooms are not individually verified.',
+  map_url: '/qhcf/eastern-road-preview.html?v=bbbdc14'
 });
 const opposite = { n: 's', s: 'n', e: 'w', w: 'e' };
 const isEastern = id => EASTERN_ANCHORS.some(anchor => anchor.id === id);
@@ -48,20 +50,32 @@ export function planTwoAreaRoute(graph, from, to) {
   if (fromEastern) return { status: 'PARTIAL', legs: [], copy_all: null, known_moves: 0,
     stop: { ...UNKNOWN_BOUNDARY, reverse: true, reason: 'Return crossing and matching Galadon entrance are unverified.' },
     next_map_url: '/qhcf/galadon-preview.html' };
-  const target = toEastern ? EAST_GATE : outside(to);
+  const target = toEastern ? OUTSIDE_EAST_GATE : outside(to);
   const route = planMapRoute(graph, outside(from), target);
   if (route.status !== 'MAP_ROUTE') return { status: 'UNRESOLVED_MAP_ROUTE', legs: [], copy_all: null, known_moves: 0,
     reason: route.reason || 'No supported Galadon cardinal path reaches this anchor.' };
+  const gateCommands = withEastGateAction(route.node_ids, route.commands);
   const legs = route.movement_count ? [{
     area: 'galadon', from: outside(from), to: target, commands: route.commands,
-    copy_commands: route.copy_commands, grouped: route.compressed_commands,
+    copy_commands: gateCommands.join(';;'), grouped: route.compressed_commands,
     moves: route.movement_count, node_ids: route.node_ids, evidence: 'captured Galadon map',
     source_revision: route.source_revision, live_verified: false
   }] : [];
+  if (to === 'eastern.map.c') {
+    const road = Array(OUTSIDE_TO_C_MOVES).fill('e');
+    legs.push({area:'eastern-road',from:OUTSIDE_EAST_GATE,to,commands:road,
+      copy_commands:road.join(';;'),grouped:`${OUTSIDE_TO_C_MOVES}e`,moves:OUTSIDE_TO_C_MOVES,
+      node_ids:[],evidence:'player-reported outside East Gate → Large Crossroads distance',
+      source_revision:null,live_verified:false});
+    return {status:'REPORTED_ROUTE',legs,known_moves:route.movement_count+OUTSIDE_TO_C_MOVES,
+      mapped_moves:route.movement_count,reported_moves:OUTSIDE_TO_C_MOVES,
+      copy_all:[...gateCommands,...road].join(';;'),
+      note:'Open east is sent at the inside gate even when already open. If the gate refuses to open, travel stops; the 34 east road run is player-reported and its intermediate rooms are not mapped.'};
+  }
   if (toEastern) return { status: 'PARTIAL', legs, known_moves: route.movement_count,
     copy_all: null, stop: UNKNOWN_BOUNDARY, next_map_url: UNKNOWN_BOUNDARY.map_url,
     note: 'Known Galadon moves plus unknown crossing and remainder. No end-to-end total.' };
   return { status: 'MAP_ROUTE', legs, known_moves: route.movement_count,
-    copy_all: route.copy_commands, threshold: thresholdNote, live_verified: false,
+    copy_all: gateCommands.join(';;'), threshold: thresholdNote, live_verified: false,
     note: 'Calculated from captured map revision 5044; live rooms are not verified.' };
 }
