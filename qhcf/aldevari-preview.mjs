@@ -45,6 +45,7 @@ function render(data){
  document.querySelector('#fit').addEventListener('click',()=>{fit();viewport.scrollTo(0,0)});
  document.querySelector('#larger').addEventListener('click',()=>{scale=Math.min(2.5,scale*1.3);resize()});
  document.querySelector('#smaller').addEventListener('click',()=>{scale=Math.max(.35,scale/1.3);resize()});
+ window.addEventListener('resize',fit);
  fit();
 }
 fetch('/qhcf/data/areas/aldevari.json').then(r=>{if(!r.ok)throw Error(`HTTP ${r.status}`);return r.json()}).then(render).catch(()=>{note.textContent='Graphical data unavailable. Open the captured source map or text record using the links at right.'});
