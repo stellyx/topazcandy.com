@@ -1,13 +1,13 @@
 // Isolated preview model. Coordinates locate evidence in the captured chart; they
 // never determine command counts. Only the two explicitly numbered spans route.
 const named = [
-  ['a','A (west)',5,9],['b1','B (west)',5,11],['b2','B (east)',5,13],
+  ['a','A · The Eastern Crossroads',5,9],['b1','B · Beyond the outskirts of Galadon (west)',5,11],['b2','B · Beyond the outskirts of Galadon (east)',5,13],
   ['along','Along the Eastern Road',5,16],['s','S',5,42],
-  ['eastern','Eastern Road',5,46],['c','C',5,70],['east-e','E (east of C)',5,77],
+  ['eastern','Eastern Road',5,46],['c','C · The large crossroads',5,70],['east-e','E · Along the Eastern Road (east of C)',5,77],
   ['east-one','1 (east end)',5,84],['south-one','1 (southern road)',14,18],
   ...[20,22,24].map((col,i)=>[`lower-top-${i}`,`E (southern road ${i+1})`,14,col]),
   ...[24,26,28,30,32,34,36,38].map((col,i)=>[`lower-${i}`,`E (lower road ${i+1})`,16,col]),
-  ['lower-east','E (southeast road)',18,45],['hamsah-east','E (toward Hamsah)',20,45],['i','I',20,55]
+  ['lower-east','E (southeast road)',18,45],['hamsah-east','E (toward Hamsah)',20,45],['i','I · Bridge over the River Khalid',20,55]
 ].map(([key,name,row,column])=>({id:`eastern.map.${key}`,name,row,column,kind:'letter'}));
 const areas = [
   {name:'Galadon',slug:'galadon',preview:'/qhcf/galadon-preview.html',row:5,column:1},
@@ -80,7 +80,7 @@ if(typeof document!=='undefined'){
   const source=await fetch('/qhcf/data/areas/the-eastern-road.json').then(r=>{if(!r.ok)throw Error('Source unavailable');return r.json()});
   const model=buildModel(source),byId=new Map(model.nodes.map(n=>[n.id,n]));
   const svg=document.querySelector('#map'),view=document.querySelector('#viewport'),NS='http://www.w3.org/2000/svg';
-  const W=1310,H=580,X=c=>30+c*14,Y=r=>22+r*25;
+  const W=1350,H=580,X=c=>30+c*14,Y=r=>22+r*25;
   svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
   const add=(tag,attrs={},parent=svg)=>{const e=document.createElementNS(NS,tag);for(const [key,value] of Object.entries(attrs))e.setAttribute(key,String(value));parent.append(e);return e};
   const defs=add('defs'),marker=add('marker',{id:'east-arrow',viewBox:'0 0 10 10',refX:8,refY:5,markerWidth:6,markerHeight:6,orient:'auto'},defs);add('path',{d:'M 1 1 L 9 5 L 1 9 z',fill:'#162420'},marker);
@@ -90,10 +90,15 @@ if(typeof document!=='undefined'){
   // misleading chain of disconnected dots. This is a visual corridor, not a
   // movement edge: only the explicit numbered spans below yield commands.
   add('line',{x1:X(1),y1:Y(5),x2:X(84),y2:Y(5),class:'road main-corridor','aria-hidden':'true'},roads);
-  // The road continues toward Hamsah, but the source does not identify the
-  // exact room-to-room handoff. The dashed arrow is wayfinding, not a route.
-  add('line',{x1:X(84)+14,y1:Y(5),x2:W-22,y2:Y(5),class:'road continuation','aria-hidden':'true'},roads);
-  add('text',{x:W-24,y:Y(5)+65,class:'continuation-label','text-anchor':'end','aria-hidden':'true'},roads).textContent='Toward Hamsah · handoff unverified';
+  // The user's marked copy joins the two printed '1' markers: the upper
+  // east end wraps around into the lower Hamsah-bound line. Show that
+  // continuity without inventing a movement command for the join.
+  add('path',{d:`M ${X(84)} ${Y(5)} C 1330 155 1340 250 1250 276 C 950 310 520 284 293 302 C 205 309 180 380 ${X(18)} ${Y(14)}`,class:'road marked-continuation','aria-hidden':'true'},roads);
+  add('text',{x:W-65,y:268,class:'continuation-label','text-anchor':'end','aria-hidden':'true'},roads).textContent='The two “1” markers join here · command unresolved';
+  // The lower sketch carries on through its printed E rooms to Hamsah.
+  // These strokes follow visible chart adjacency; they are not route edges.
+  add('path',{d:`M ${X(18)} ${Y(14)} H ${X(24)} V ${Y(16)} H ${X(38)} V ${Y(18)} H ${X(45)} V ${Y(20)} H ${X(76)}`,class:'road lower-corridor','aria-hidden':'true'},roads);
+  add('text',{x:X(76),y:Y(20)+39,class:'corridor-label','text-anchor':'end','aria-hidden':'true'},roads).textContent='Hamsah Mu’tazz';
   for(const {row,column,glyph} of sourceSegments(source)){
     const horizontal=glyph==='-';
     add('line',{
@@ -107,7 +112,7 @@ if(typeof document!=='undefined'){
   for(const [id,label,above] of [
     ['eastern.map.along','Along the Eastern Road',false],
     ['eastern.map.eastern','Eastern Road',false],
-    ['eastern.map.c','C',false],
+    ['eastern.map.c','C · crossroads',false],
     ['eastern.map.east-one','East end',false]
   ]){
     const n=byId.get(id);
