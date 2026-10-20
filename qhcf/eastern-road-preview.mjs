@@ -157,7 +157,7 @@ if(typeof document!=='undefined'){
   // Print every one at its captured position; these labels are evidence, not
   // executable edges until both endpoint rooms are established.
   for(const note of sourceCountNotes(source)){
-    const p=P(note.row,note.column),offset=note.row===6?54:note.row===4||note.row===5?-32:-34;
+    const p=P(note.row,note.column),offset=note.row===6?31:note.row===4||note.row===5?-32:-34;
     add('text',{x:p.x,y:p.y+offset,class:'source-count','text-anchor':'middle','aria-hidden':'true'},roads).textContent=note.label;
   }
   const note=document.querySelector('#map-note'),defaultNote=note.textContent;
