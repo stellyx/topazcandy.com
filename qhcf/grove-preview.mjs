@@ -1,4 +1,4 @@
-import {anchors,roomKey,sourceGraph,route} from './grove-route.mjs';
+import {anchors,roomKey,sourceGraph,route} from './grove-route.mjs?v=2';
 const NS='http://www.w3.org/2000/svg',svg=document.querySelector('#map'),viewport=document.querySelector('#viewport'),note=document.querySelector('#room-note');
 const names={G:'The Grove',G2:'The Grove (G2)',B:'Before the Circle of Stones',C:'The Great Ash Tree',D:'Druid’s Guild',E:'The Altar to Earth',F:'The Altar to Fire',I:'The Great Hickory Tree',K:'The Great Elm Tree',L:'The Altar to Air',A:'The Gathering Place',Q:'The Great Beech Tree',T:'The Great Willow Tree',W:'The Altar to Water',Z:'The Great Birch Tree',t:'Traveler’s Camp',u:'Rangers Guild',U:'Rangers Guild approach'};
 const position=(r,c)=>({x:60+(c-30)*32,y:78+(r-12)*35});
