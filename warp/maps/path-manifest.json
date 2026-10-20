@@ -914,13 +914,13 @@
     },
     {
       "path": "warp/maps/archive/cf/cross-area-preview.html",
-      "bytes": 4946,
-      "sha256": "280BF0160E184994EC7132BBE9077191D4B6BBA37E365BADF768C8F6D26FFA6F"
+      "bytes": 5537,
+      "sha256": "B47B144EEFA824DA22D1A6C9A894EE9FE5E9D81C5F22D4525B635DE837217088"
     },
     {
       "path": "warp/maps/archive/cf/cross-area-preview.mjs",
-      "bytes": 7786,
-      "sha256": "5D641D425C0EC8F0FA7888E5D0F56881D3D70A360FB966C3CFC15A450B2AB73D"
+      "bytes": 7798,
+      "sha256": "E37D8C4CDBBC745BCDC18BB330A6707AE00FD8996941CB725D94A84CCDCA03B6"
     },
     {
       "path": "warp/maps/archive/cf/cross-area-route.mjs",
@@ -2669,8 +2669,8 @@
     },
     {
       "path": "warp/maps/archive/cf/eastern-road-preview.html",
-      "bytes": 8689,
-      "sha256": "F2AA03BA8B810FDDD497B890CD7C9BF4C4A4F2B5B30AD5D18FA1772FE3BBEBA1"
+      "bytes": 9072,
+      "sha256": "D5C7D51D0A33A590E393669AB285B345EDF588FE82A462EE3D7C3094D0A9A754"
     },
     {
       "path": "warp/maps/archive/cf/eastern-road-preview.mjs",
@@ -2684,8 +2684,8 @@
     },
     {
       "path": "warp/maps/archive/cf/galadon-preview.html",
-      "bytes": 30880,
-      "sha256": "1BFFA0F4F4435EE001B2D5CFCAA34F6A292E005BF195B4179A777DB0D84776E6"
+      "bytes": 31420,
+      "sha256": "6704EC7E4D94A3A09856E169E1790E7B2232C6B2CC1F668B317B3768750740C2"
     },
     {
       "path": "warp/maps/archive/cf/galadonian-settlement-preview.html",
@@ -2739,8 +2739,8 @@
     },
     {
       "path": "warp/maps/archive/cf/index.html",
-      "bytes": 3827,
-      "sha256": "21404788AEAB8DD18775C2DFB40BD294E95142447336DC29FA32FD614ACD9786"
+      "bytes": 3879,
+      "sha256": "CF9FFE9FD7F8C1401B54F8E74348F5C4BF90F62AAC3E186609C97A8A5985B169"
     },
     {
       "path": "warp/maps/archive/cf/manifest.json",
@@ -2764,13 +2764,13 @@
     },
     {
       "path": "warp/maps/archive/cf/navigation/index.html",
-      "bytes": 12817,
-      "sha256": "AD701A0A2C133358A44E6825B09F0BD1EB42EBF4731F7F7F3C38C75A4EF7539F"
+      "bytes": 13122,
+      "sha256": "E58E0642C72BE5C240DDFC2D632A3D59CD623013FB792F7458924D7196756AFC"
     },
     {
       "path": "warp/maps/archive/cf/navigation/route-engine.mjs",
-      "bytes": 19787,
-      "sha256": "1DE59E2EA985C4B3CA1105255F772707C608A32FD176C23A8349200CCCC6A3B4"
+      "bytes": 19793,
+      "sha256": "DC2DA253077AD68C73E4175A0A9582E4E6F4BF1548B710709FB73891DEE4B224"
     },
     {
       "path": "warp/maps/archive/cf/north-road-preview.css",

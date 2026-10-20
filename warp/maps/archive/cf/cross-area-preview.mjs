@@ -55,13 +55,13 @@ function render() {
   document.querySelector('#selection').textContent = !start ? 'First click sets Start.' : !destination ? `Start: ${label(start)}. Choose Destination.` : `${label(start)} → ${label(destination)}. Another click starts a new pair.`;
   if (!graph || !start || !destination) { summary.textContent = 'Choose a start and destination.'; return; }
   const result = planTwoAreaRoute(graph, start, destination);
-  summary.textContent = result.status === 'REPORTED_ROUTE' ? `${result.known_moves} moves: ${result.mapped_moves} on the Galadon map + ${result.reported_moves} east reported from outside East Gate · gate action adds no move` : result.status === 'PARTIAL' ? `${result.known_moves} mapped Galadon ${result.known_moves === 1 ? 'move' : 'moves'} + unresolved remainder` : result.status === 'MAP_ROUTE' ? `${result.known_moves} map-derived ${result.known_moves === 1 ? 'move' : 'moves'} · live travel unverified` : result.reason || 'No supported route calculated.';
+  summary.textContent = result.status === 'REPORTED_ROUTE' ? `${result.known_moves} moves: ${result.mapped_moves} on the Galadon map + ${result.reported_moves} east reported from outside East Gate · gate action adds no move` : result.status === 'PARTIAL' ? `${result.known_moves} mapped Galadon ${result.known_moves === 1 ? 'move' : 'moves'} + unresolved remainder` : result.status === 'MAP_ROUTE' ? `${result.known_moves} CF source-derived ${result.known_moves === 1 ? 'move' : 'moves'} - live travel unverified` : result.reason || 'No supported route calculated.';
   for (const leg of result.legs) {
     const section = document.createElement('section'); section.className = 'leg';
     const title = document.createElement('strong'); title.textContent = `${label(leg.from)} → ${label(leg.to)} · ${leg.moves} ${leg.moves === 1 ? 'move' : 'moves'} · ${leg.grouped}`;
     const evidence = document.createElement('p'); evidence.textContent = leg.source_revision ? leg.copy_commands.split(';;').includes('open east') ? `Captured Galadon map, revision ${leg.source_revision}. Door action: open east at the inside gate before crossing; it may fail while the gate is closed for the night.` : `Captured Galadon map, revision ${leg.source_revision}. No gate action occurs on this leg.` : 'Player-reported 34 east; intermediate room IDs and live gate state are not verified.';
     const code = document.createElement('code'); code.textContent = leg.copy_commands;
-    const button = document.createElement('button'); button.type = 'button'; button.textContent = 'Copy this leg'; button.addEventListener('click', () => copy(leg.copy_commands, 'Leg'));
+    const button = document.createElement('button'); button.type = 'button'; button.textContent = 'Copy CF leg'; button.addEventListener('click', () => copy(leg.copy_commands, 'Leg'));
     section.append(title, evidence, code, button); legs.append(section);
   }
   if (result.stop) {
@@ -81,7 +81,7 @@ function render() {
   if ((result.status === 'MAP_ROUTE' || result.status === 'REPORTED_ROUTE') && result.copy_all) {
     all.value = result.copy_all; copyAll.disabled = false;
   }
-  copyAll.textContent = result.status === 'REPORTED_ROUTE' ? 'Copy reported route' : 'Copy all commands';
+  copyAll.textContent = result.status === 'REPORTED_ROUTE' ? 'Copy CF reported route' : 'Copy CF source commands';
 }
 
 fromField.addEventListener('change', () => { start = fromField.value; render(); });

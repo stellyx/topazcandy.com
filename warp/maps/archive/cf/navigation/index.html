@@ -12,12 +12,12 @@
 .world-switch{display:inline-flex;align-items:center;gap:.15rem;padding:.2rem;border:1px solid #66877c;border-radius:.65rem;background:#102a2a;white-space:nowrap}.world-switch a{display:inline-flex;align-items:center;min-height:2.4rem;padding:.35rem .75rem;border-radius:.4rem;color:#e8f4e8;text-decoration:none;font-weight:700}.world-switch a:hover,.world-switch a:focus-visible,.world-switch a[aria-current=page]{background:#b48c52;color:#10201e;outline-offset:2px}@media(max-width:740px){header .world-switch{order:3;width:100%;justify-content:center}.world-switch a{flex:1;justify-content:center}}
 </style>
 <link rel="canonical" href="https://topazcandy.com/warp/maps/archive/cf/navigation/index.html"></head>
-<body><aside class="notice" data-archive-notice><strong>Historical Carrion Fields archive.</strong> Preserved source material; not verified as current WARP gameplay. <a href="/warp/maps/">Open WARP Maps</a>.</aside>
+<body><aside class="notice" data-archive-notice><strong>Historical Carrion Fields archive.</strong> Preserved CF source material; not live-game verified. <a href="/warp/maps/" aria-label="Leave the Carrion Fields archive and open the separate WARP offline candidate">Open separate WARP offline candidate</a>.</aside>
 <nav class="world-switch" aria-label="World views"><a href="/warp/maps/archive/cf/">World Overview</a><a href="/warp/maps/archive/cf/world-map.html">World Map</a></nav>
 <main>
   <p><a href="../">&larr; QHCF Graphical Reference</a></p>
-  <h1>Galadon map route planner</h1>
-  <p class="notice"><strong>Practical map calculation.</strong> Choose any mapped <code>+</code> room or named landmark. Each transition to the next room or landmark counts as one movement. Results come from the preserved Galadon revision 5044 map; they do not control the game or guarantee that the live world has not changed.</p>
+  <h1>Galadon source-derived route tool</h1>
+  <p class="notice" id="route-context"><strong>Carrion Fields archive context.</strong> Choose any mapped <code>+</code> room or named landmark. Each transition to the next room or landmark counts as one movement. Results transcribe preserved Galadon revision 5044; they do not control or verify the live game.</p>
   <form id="route-form">
     <label>Starting map node<select id="from"></select></label>
     <label>Destination<select id="to"></select></label>
@@ -39,7 +39,8 @@
       <p id="status" class="status">Loading Galadon map.</p>
       <p id="summary"></p>
       <div id="route-details" hidden>
-        <h2>Copy commands</h2>
+        <h2>CF source-derived commands</h2>
+        <p class="muted"><strong>Before copying:</strong> use only for Carrion Fields revision 5044 context. Stop at unresolved boundaries; this output is not a WARP route and not live verified.</p>
         <div class="copy-row">
           <textarea id="copy-output" class="copybox" rows="2" readonly spellcheck="false" aria-label="Commands separated by two semicolons"></textarea>
           <button id="copy-button" type="button">Copy</button>

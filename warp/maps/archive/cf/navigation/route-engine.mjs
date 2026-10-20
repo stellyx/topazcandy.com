@@ -119,7 +119,7 @@ export function buildAsciiMapGraph(graph) {
       const description = source.descriptive_labels?.[id];
       nodes.push({
         id,
-        name: description?.label ? `${description.label} (+ r${row}c${column})` : `Unnamed map room (+ r${row}c${column})`,
+        name: description?.label ? `${description.label} (+ r${row}c${column})` : `Map room at row ${row}, column ${column} (+)`,
         short_name: `+ r${row}c${column}`,
         aliases: [`r${row}c${column}`, `${row},${column}`, ...(description?.aliases || [])],
         kind: 'plus-room', row, start_column: column, end_column: column, port_column: column,
