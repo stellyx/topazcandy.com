@@ -23,7 +23,7 @@ assert.equal(source.lines[4].slice(71,75),'(7E)');
 assert.equal(source.lines[4][76],'E');
 assert.equal(source.lines[3][76],'|');
 const aldevari=turnoffs.find(t=>t.name==='Aldevari');
-assert.deepEqual([aldevari.section,aldevari.column,aldevari.direction,aldevari.href],['upper',77,'north','/qhcf/areas/aldevari.html']);
+assert.deepEqual([aldevari.section,aldevari.column,aldevari.direction,aldevari.href],['upper',77,'north','/qhcf/aldevari-preview.html']);
 assert.ok(!model.nodes.find(n=>n.id==='eastern.map.east-e').name.includes('Along the Eastern Road'));
 assert.equal(model.nodes.find(n=>n.id==='eastern.map.c').name,'Large Crossroads (C)');
 assert.equal(turnoffs.length,15);

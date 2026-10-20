@@ -17,7 +17,7 @@ const areas = [
   {name:'Bramblefield Road',slug:'bramblefield-road',row:1,column:63},
   {name:"Voralia’s Tears",slug:'voralia-s-tears',row:3,column:37},
   {name:"Voralia’s Tears",slug:'voralia-s-tears',row:7,column:35},
-  {name:'Aldevari',slug:'aldevari',row:3,column:75},
+  {name:'Aldevari',slug:'aldevari',preview:'/qhcf/aldevari-preview.html',row:3,column:75},
   {name:'Blackclaw Village',slug:'blackclaw-village',row:8,column:46},
   {name:'Ostalagiah · The Ruins',slug:'the-ruins-of-ostalagiah',row:9,column:57},
   {name:'Dwarf Forest',slug:'the-dwarf-forest',row:10,column:69},
