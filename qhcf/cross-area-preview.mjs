@@ -8,7 +8,7 @@ let graph, names = new Map(), start = '', destination = '';
 function label(id) { return names.get(id) || id; }
 function addChoice(field, group, node) {
   const option = document.createElement('option');
-  option.value = node.id; option.textContent = node.name;
+  option.value = node.id; option.textContent = label(node.id);
   group.append(option);
 }
 function populate() {
