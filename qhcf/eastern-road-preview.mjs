@@ -77,7 +77,7 @@ if(typeof document!=='undefined'){
   const svg=document.querySelector('#map'),view=document.querySelector('#viewport'),NS='http://www.w3.org/2000/svg';
   const W=1250,H=580,X=c=>30+c*14,Y=r=>22+r*25;
   svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
-  const add=(tag,attrs,parent=svg)=>{const e=document.createElementNS(NS,tag);for(const [key,value] of Object.entries(attrs))e.setAttribute(key,String(value));parent.append(e);return e};
+  const add=(tag,attrs={},parent=svg)=>{const e=document.createElementNS(NS,tag);for(const [key,value] of Object.entries(attrs))e.setAttribute(key,String(value));parent.append(e);return e};
   const defs=add('defs'),marker=add('marker',{id:'east-arrow',viewBox:'0 0 10 10',refX:8,refY:5,markerWidth:6,markerHeight:6,orient:'auto'},defs);add('path',{d:'M 1 1 L 9 5 L 1 9 z',fill:'#162420'},marker);
   const roads=add('g'),active=add('g'),points=add('g'),areaLayer=add('g');
   for(const {row,column,glyph} of sourceSegments(source)){
