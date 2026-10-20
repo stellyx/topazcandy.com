@@ -4,7 +4,7 @@ const named = [
   ['a','Galadon Outskirts junction (A)',5,9],['b1','Beyond Galadon Outskirts (B west)',5,11],['b2','Beyond Galadon Outskirts (B east)',5,13],
   ['along','Along the Eastern Road',5,16],['s','S · source marker',5,42],
   ['eastern','Eastern Road center',5,46],['c','Large Crossroads (C)',5,70],['east-e','Aldevari turnoff (E)',5,77],
-  ['east-one','The Grove approach (1) · crossing unresolved',5,84],['south-one','Hamsah-bound continuation (1) · route unresolved',14,18],
+  ['east-one','West Grove branch approach (1) · crossing unresolved',5,84],['south-one','Hamsah-bound continuation (1) · route unresolved',14,18],
   ...[20,22,24].map((col,i)=>[`lower-top-${i}`,`E (southern road ${i+1})`,14,col]),
   ...[24,26,28,30,32,34,36,38].map((col,i)=>[`lower-${i}`,`E (lower road ${i+1})`,16,col]),
   ['lower-east','E (southeast road)',18,45],['hamsah-east','E (toward Hamsah) · route unresolved',20,45],['i','I · Bridge over the River Khalid',20,55]
@@ -41,8 +41,8 @@ export const turnoffs = [
   {area:3,section:'upper',column:70,direction:'north',lane:1},
   {area:9,section:'upper',column:70,direction:'south',lane:1},
   {area:6,section:'upper',column:77,direction:'north',lane:0},
-  {area:11,section:'lower',column:18,direction:'north',lane:1},
-  {area:12,section:'lower',column:34,direction:'north',lane:0},
+  {area:11,name:'The Grove · west turnoff',section:'lower',column:18,direction:'north',lane:1},
+  {area:12,name:'The Grove · east turnoff',section:'lower',column:34,direction:'north',lane:0},
   {area:13,section:'lower',column:24,direction:'south',lane:0}
 ].map(t=>({...t,name:t.name||areas[t.area].name,slug:t.area===undefined?null:areas[t.area].slug,
   href:t.area===undefined||!areas[t.area].slug?null:areas[t.area].preview||`/qhcf/areas/${areas[t.area].slug}.html`,
@@ -146,7 +146,7 @@ if(typeof document!=='undefined'){
   for(const [id,label,above] of [
     ['eastern.map.a','Galadon Outskirts junction',true],
     ['eastern.map.c','Large Crossroads',true],
-    ['eastern.map.east-one','The Grove approach (1)',false]
+    ['eastern.map.east-one','West Grove branch (1)',false]
   ]){
     const n=byId.get(id);
     const p=P(n.row,n.column);add('text',{x:p.x,y:p.y+(above?-23:35),class:'corridor-label','text-anchor':n.column>78?'end':'middle','aria-hidden':'true'},roads).textContent=label;
