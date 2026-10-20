@@ -15,15 +15,17 @@ function render(data){
  }
  // The map key starts after the chart. Only inspect coordinate-aligned glyph runs.
  for(const node of nodes.values()){
-  for(const [dr,dc,pattern] of [[0,3,'--'],[3,0,'||']]){
+  for(const [dr,dc,pattern] of [[0,3,'--'],[3,0,'||'],[2,-2,'/']]){
    const other=nodes.get(key(node.row+dr,node.col+dc));if(!other)continue;
-   let actual='';for(let k=1;k<3;k++)actual+=(dr?lines[node.row-1+k]?.[node.col-1]:lines[node.row-1]?.[node.col-1+k])||' ';
+   let actual='';
+   if(pattern==='/')actual=lines[node.row]?.[node.col-2]||' ';
+   else for(let k=1;k<3;k++)actual+=(dr?lines[node.row-1+k]?.[node.col-1]:lines[node.row-1]?.[node.col-1+k])||' ';
    if(actual===pattern)edges.push([node,other]);
   }
  }
  svg.setAttribute('viewBox','0 0 1150 800');
  const wires=cell('g',{'aria-hidden':'true'});svg.append(wires);
- for(const [a,b] of edges){const p=pos(a.row,a.col),q=pos(b.row,b.col);wires.append(cell('line',{x1:p.x,y1:p.y,x2:q.x,y2:q.y,class:'connector'}))}
+ for(const [a,b] of edges){const p=pos(a.row,a.col),q=pos(b.row,b.col);wires.append(cell('line',{x1:p.x,y1:p.y,x2:q.x,y2:q.y,class:`connector${a.row+2===b.row?' diagonal':''}`}))}
  let selected;
  for(const n of nodes.values()){
   const p=pos(n.row,n.col),label=n.ch==='+'?'Unnamed source room':names[n.ch];
@@ -38,8 +40,8 @@ function render(data){
  }
  const boundaries=[{text:'Bramblefield Road ↖',href:'/qhcf/areas/bramblefield-road.html',x:18,y:32},{text:'The Grove →',href:'/qhcf/areas/the-grove.html',x:925,y:625},{text:'Eastern Road ↓',href:'/qhcf/eastern-road-preview.html',x:200,y:765}];
  for(const b of boundaries){const a=cell('a',{href:b.href,class:'edge-link','aria-label':`${b.text}, open map; crossing unresolved`});const t=cell('text',{x:b.x,y:b.y,class:'edge-label'});t.textContent=b.text;a.append(t);svg.append(a)}
- let scale=1;function fit(){scale=Math.min(1,Math.max(.42,(viewport.clientWidth-12)/1150));resize()}
- function resize(){svg.style.width=`${1150*scale}px`;svg.style.height=`${800*scale}px`}
+ let scale=1;function fit(){scale=Math.min(1,(viewport.clientWidth-12)/1150,(viewport.clientHeight-12)/800);resize();viewport.scrollTo(0,0)}
+ function resize(){svg.style.width=`${1150*scale}px`;svg.style.height=`${800*scale}px`;svg.style.marginLeft=scale*1150<viewport.clientWidth?'auto':'0';svg.style.marginRight=scale*1150<viewport.clientWidth?'auto':'0';svg.style.marginTop=`${Math.max(0,(viewport.clientHeight-800*scale)/2)}px`}
  document.querySelector('#fit').addEventListener('click',()=>{fit();viewport.scrollTo(0,0)});
  document.querySelector('#larger').addEventListener('click',()=>{scale=Math.min(2.5,scale*1.3);resize()});
  document.querySelector('#smaller').addEventListener('click',()=>{scale=Math.max(.35,scale/1.3);resize()});
