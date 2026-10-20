@@ -1,0 +1,66 @@
+The Drogran Hills
+=================
+
+WORK IN PROGRESS:
+Missing:
+1) the bottom level
+
+Copyright 2001.
+Approved for use by Carrionfields Mud only.
+All other rights reserved by the author.
+
+
+
+                                       Eastern             Eastern
+                                        Road                Road
+                                          |                   |
+                                          +                   +
+                                          |                   |
+                                          +                   +
+                                          |                   |
+                           S----S----S----A----A----A----a----a----a
+                           |    | 1  | 2  | C  |    |    |    | C--|-C
+                           |    |/   |/   |/   |    |    |    |/   |/
+                  +--+--+--S----B----B----B----+----E<---a--->B----B
+                  |        | C  |      3  | 6  |    |\   | 7  | 8  |
+       Lord       |        |/   |     /   |/   |    |    |/   |/  |
+     Tabershaw's--+        B----S----B----B----E----A<---B--->B----a
+       Keep                |    |    | 4  | 5  |\   | 0       | 9  |
+                           |    |    |/   |/   |    |/        |/   |
+                           S----E----B----B----E----B         B----a
+                           | C  |\   |    |    |\   |      10 |    |
+                           |/|  |    |    |    |    |     /   |    |
+                           B----S----S----E----A----A    B    a----a
+                           | C  |    |     \   |    | 12 | 11 |    |
+  Lord                     |/   |    |         |    |/   |/   |    |
+Tabershaw's  --+--+--+     B----S----E         E----B<---B--->a----a--+--+SandsOfSorrow
+  Keep               |     |    |    |\        |\   | 13 |    |    |
+                     |     |    |    |         |    |/   |    |    |
+                     +--+--S----S----E----E    E----B<---a--->E----a
+                           |    |   /|    |\   |    |    |   /|    |
+                           |   \|    |/   |    |    |    |    |    |
+                           S----B----B----A----E----A<---E--->E----a
+                           |    |    |    |   /|    |   /|   /|    |
+                           |    |    |   \|    |/   |    v    |    |
+                           S----S----S----B----B----+----a----a----a
+                                                    |
+a - Among the arid brush                            +
+A - Among the dry trees                             |
+B - At the base of a hill                           +
+E - At the edge of a large sinkhole                 |
+S - In the stunted forest                           |
+                                           Dry River Bed
+
+
+                              C----C             C----C         C----C
+                             /    /|            /|   /|        /|     \
+                            1    2 |           7 |  8 |       12|      11
+                                   C----C   C----C----C         C
+                                  /|   /|    \   |   /         /
+                                 3 |  6 |     0  |  9         13
+                                   C    C        C
+                                  /    /          \
+                                 4    5            10
+
+Source: http://wiki.qhcf.net/index.php?title=The_Drogran_Hills&oldid=5041
+Revision: 5041

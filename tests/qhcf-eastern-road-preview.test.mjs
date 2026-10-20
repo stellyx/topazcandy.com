@@ -21,7 +21,7 @@ assert.equal(model.nodes.find(n=>n.id==='eastern.map.c').name,'Large Crossroads 
 assert.equal(turnoffs.length,14);
 assert.equal(turnoffs.find(t=>t.name.startsWith('Ostalagiah')).href,'/qhcf/areas/the-ruins-of-ostalagiah.html');
 assert.equal(turnoffs.find(t=>t.name==='A Thick Copse of Trees').href,null);
-assert.equal(turnoffs.find(t=>t.name==='Drogan Hills').href,null);
+assert.equal(turnoffs.find(t=>t.name.startsWith('Drogan Hills')).href,'/qhcf/areas/the-drogran-hills.html');
 assert.equal(turnoffs.find(t=>t.column===64).href,null);
 for(const t of turnoffs.filter(t=>t.href))assert.ok(existsSync(new URL(`../${t.href.slice(1)}`,import.meta.url)),t.name);
 assert.equal(model.nodes.find(n=>n.id==='eastern.map.i').name,'I · Bridge over the River Khalid');

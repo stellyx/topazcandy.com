@@ -1,6 +1,6 @@
 # QHCF Carrion Fields map reference
 
-Built 2026-10-19T22:28:45.943Z. 169 verified map transcriptions; 1 bounded candidates remain missing.
+Built 2026-10-19T22:28:45.943Z. 170 captured map transcriptions; A Thick Copse of Trees remains missing.
 
 These are map transcriptions, not validated playable routes. Do not infer movement from spacing, labels, + counts, crossings, doors, boundaries, or special exits.
 
@@ -12700,4 +12700,75 @@ Maze 1 From: swe
 
 Maze 2 To: nenwwn
 Maze 2 From: wes
+```
+
+## The Drogran Hills
+
+Status: Current capture; source marks bottom level missing.
+Source: http://wiki.qhcf.net/index.php?title=The_Drogran_Hills&oldid=5041
+Source/capture date: This page was last modified on 9 October 2026, at 03:37.
+Content SHA-256: 293C83CCDAD6CC7013A044DC9CBA49860D2C31FF972F2B179AECFC02CDD9DBAE
+Routing status: incomplete chart; no verified inter-area entrance or playable route.
+
+```text
+WORK IN PROGRESS:
+Missing:
+1) the bottom level
+
+Copyright 2001.
+Approved for use by Carrionfields Mud only.
+All other rights reserved by the author.
+
+
+
+                                       Eastern             Eastern
+                                        Road                Road
+                                          |                   |
+                                          +                   +
+                                          |                   |
+                                          +                   +
+                                          |                   |
+                           S----S----S----A----A----A----a----a----a
+                           |    | 1  | 2  | C  |    |    |    | C--|-C
+                           |    |/   |/   |/   |    |    |    |/   |/
+                  +--+--+--S----B----B----B----+----E<---a--->B----B
+                  |        | C  |      3  | 6  |    |\   | 7  | 8  |
+       Lord       |        |/   |     /   |/   |    |    |/   |/  |
+     Tabershaw's--+        B----S----B----B----E----A<---B--->B----a
+       Keep                |    |    | 4  | 5  |\   | 0       | 9  |
+                           |    |    |/   |/   |    |/        |/   |
+                           S----E----B----B----E----B         B----a
+                           | C  |\   |    |    |\   |      10 |    |
+                           |/|  |    |    |    |    |     /   |    |
+                           B----S----S----E----A----A    B    a----a
+                           | C  |    |     \   |    | 12 | 11 |    |
+  Lord                     |/   |    |         |    |/   |/   |    |
+Tabershaw's  --+--+--+     B----S----E         E----B<---B--->a----a--+--+SandsOfSorrow
+  Keep               |     |    |    |\        |\   | 13 |    |    |
+                     |     |    |    |         |    |/   |    |    |
+                     +--+--S----S----E----E    E----B<---a--->E----a
+                           |    |   /|    |\   |    |    |   /|    |
+                           |   \|    |/   |    |    |    |    |    |
+                           S----B----B----A----E----A<---E--->E----a
+                           |    |    |    |   /|    |   /|   /|    |
+                           |    |    |   \|    |/   |    v    |    |
+                           S----S----S----B----B----+----a----a----a
+                                                    |
+a - Among the arid brush                            +
+A - Among the dry trees                             |
+B - At the base of a hill                           +
+E - At the edge of a large sinkhole                 |
+S - In the stunted forest                           |
+                                           Dry River Bed
+
+
+                              C----C             C----C         C----C
+                             /    /|            /|   /|        /|     \
+                            1    2 |           7 |  8 |       12|      11
+                                   C----C   C----C----C         C
+                                  /|   /|    \   |   /         /
+                                 3 |  6 |     0  |  9         13
+                                   C    C        C
+                                  /    /          \
+                                 4    5            10
 ```

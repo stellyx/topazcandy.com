@@ -23,7 +23,7 @@ const areas = [
   {name:'A Thick Copse of Trees',slug:null,row:8,column:23},
   {name:'The Grove',slug:'the-grove',row:12,column:18},
   {name:'The Grove',slug:'the-grove',row:14,column:35},
-  {name:'Drogan Hills',slug:null,row:18,column:24},
+  {name:'Drogan Hills · The Drogran Hills',slug:'the-drogran-hills',row:18,column:24},
   {name:'Outside Hamsah Mu’tazz',slug:'outside-hamsah-mu-tazz',row:20,column:64},
   {name:'Hamsah Mu’tazz',slug:'hamsah-mu-tazz',row:20,column:76}
 ];
@@ -115,7 +115,7 @@ if(typeof document!=='undefined'){
   add('line',{x1:U(84),y1:BASE,x2:L(18),y2:BASE,class:'road marked-continuation','aria-hidden':'true'},roads);
   add('line',{x1:L(18),y1:BASE,x2:L(76),y2:BASE,class:'road lower-corridor','aria-hidden':'true'},roads);
   add('text',{x:L(18)+8,y:BASE-57,class:'continuation-label','aria-hidden':'true'},roads).textContent='1 → 1 join · command unresolved';
-  for(const [a,x,y,width,label] of [[areas[0],U(1)+49,BASE+55,104,'← Galadon'],[areas[14],L(64),BASE-60,154,'Hamsah Outskirts'],[areas[15],L(76)-35,BASE+55,150,'Hamsah Mu’tazz →']]){
+  for(const [a,x,y,width,label] of [[areas[14],L(64),BASE-60,154,'Hamsah Outskirts'],[areas[15],L(76)-35,BASE+55,150,'Hamsah Mu’tazz →']]){
     const href=a.preview||`/qhcf/areas/${a.slug}.html`,sign=add('a',{href,class:'turn-sign endpoint','aria-label':`${a.name} · open area map; matching entrance unverified`},roads);
     add('rect',{x:x-width/2,y:y-15,width,height:30,rx:8},sign);add('text',{x,y:y+5,'text-anchor':'middle'},sign).textContent=label;
     add('title',{},sign).textContent=`Open ${a.name} map · matching entrance unverified`;
@@ -146,7 +146,7 @@ if(typeof document!=='undefined'){
     ['eastern.map.a','Eastern Crossroads',true],
     ['eastern.map.along','Along the Eastern Road',false],
     ['eastern.map.eastern','Eastern Road',false],
-    ['eastern.map.c','Large Crossroads',false],
+    ['eastern.map.c','Large Crossroads',true],
     ['eastern.map.east-one','Continuation (1)',false]
   ]){
     const n=byId.get(id);
