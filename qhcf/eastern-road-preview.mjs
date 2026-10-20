@@ -32,12 +32,12 @@ const areas = [
 export const turnoffs = [
   {area:1,section:'upper',column:9,direction:'north',lane:0},
   {area:2,section:'upper',column:9,direction:'south',lane:0},
-  {area:10,section:'upper',column:23,direction:'south',lane:0},
+  {area:10,section:'upper',column:23,direction:'south',lane:1},
   {area:4,section:'upper',column:44,direction:'north',lane:0},
   {area:5,section:'upper',column:44,direction:'south',lane:0},
   {area:7,section:'upper',column:52,direction:'south',lane:1},
-  {area:8,section:'upper',column:58,direction:'south',lane:0},
-  {name:'Unidentified southern spur',section:'upper',column:64,direction:'south',lane:2},
+  {area:8,section:'upper',column:58,direction:'south',lane:2},
+  {name:'Unidentified southern spur',section:'upper',column:64,direction:'south',lane:0},
   {area:3,section:'upper',column:70,direction:'north',lane:1},
   {area:9,section:'upper',column:70,direction:'south',lane:1},
   {area:6,section:'upper',column:77,direction:'north',lane:0},
@@ -122,7 +122,7 @@ if(typeof document!=='undefined'){
   }
   for(const t of turnoffs){
     const x=t.section==='upper'?U(t.column):L(t.column),north=t.direction==='north';
-    const y=north?90-t.lane*43:320+t.lane*38,width=Math.min(184,Math.max(106,t.name.length*7+34));
+    const y=north?90-t.lane*43:285+t.lane*42,width=Math.min(184,Math.max(106,t.name.length*7+34));
     add('line',{x1:x,y1:BASE,x2:x,y2:north?y+14:y-14,class:'road branch-stub','aria-hidden':'true'},roads);
     const sign=add(t.href?'a':'g',t.href?{href:t.href,class:'turn-sign'}:{class:'turn-sign unresolved',tabindex:'0',role:'note'},roads);
     const descriptor=`${t.direction} turnoff to ${t.name} · road column ${t.column}${t.sourceRow?`; source label r${t.sourceRow}c${t.sourceColumn}`:''} · ${t.href?'open destination map; matching entrance unverified':'destination map unresolved'}`;
