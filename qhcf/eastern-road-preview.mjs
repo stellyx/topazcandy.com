@@ -1,10 +1,10 @@
 // Isolated preview model. Coordinates locate evidence in the captured chart; they
 // never determine command counts. Only the two explicitly numbered spans route.
 const named = [
-  ['a','Eastern Crossroads (A)',5,9],['b1','Beyond Galadon Outskirts (B west)',5,11],['b2','Beyond Galadon Outskirts (B east)',5,13],
+  ['a','Galadon Outskirts junction (A)',5,9],['b1','Beyond Galadon Outskirts (B west)',5,11],['b2','Beyond Galadon Outskirts (B east)',5,13],
   ['along','Along the Eastern Road',5,16],['s','S · source marker',5,42],
-  ['eastern','Eastern Road center',5,46],['c','Large Crossroads (C)',5,70],['east-e','Along the Eastern Road · east of Large Crossroads (E)',5,77],
-  ['east-one','Eastern road continuation (1)',5,84],['south-one','Hamsah-bound continuation (1) · route unresolved',14,18],
+  ['eastern','Eastern Road center',5,46],['c','Large Crossroads (C)',5,70],['east-e','Aldevari turnoff (E)',5,77],
+  ['east-one','The Grove approach (1) · crossing unresolved',5,84],['south-one','Hamsah-bound continuation (1) · route unresolved',14,18],
   ...[20,22,24].map((col,i)=>[`lower-top-${i}`,`E (southern road ${i+1})`,14,col]),
   ...[24,26,28,30,32,34,36,38].map((col,i)=>[`lower-${i}`,`E (lower road ${i+1})`,16,col]),
   ['lower-east','E (southeast road)',18,45],['hamsah-east','E (toward Hamsah) · route unresolved',20,45],['i','I · Bridge over the River Khalid',20,55]
@@ -144,11 +144,9 @@ if(typeof document!=='undefined'){
   // Counted spans are geometric only for display; movement comes from (7E)/(5E).
   const spanEls=model.spans.map(s=>{const a=P(byId.get(s.from).row,byId.get(s.from).column),b=P(byId.get(s.to).row,byId.get(s.to).column);return add('line',{x1:a.x,y1:a.y,x2:b.x,y2:b.y,class:'road counted'},roads)});
   for(const [id,label,above] of [
-    ['eastern.map.a','Eastern Crossroads',true],
-    ['eastern.map.along','Along the Eastern Road',false],
-    ['eastern.map.eastern','Eastern Road',false],
+    ['eastern.map.a','Galadon Outskirts junction',true],
     ['eastern.map.c','Large Crossroads',true],
-    ['eastern.map.east-one','Continuation (1)',false]
+    ['eastern.map.east-one','The Grove approach (1)',false]
   ]){
     const n=byId.get(id);
     const p=P(n.row,n.column);add('text',{x:p.x,y:p.y+(above?-23:35),class:'corridor-label','text-anchor':n.column>78?'end':'middle','aria-hidden':'true'},roads).textContent=label;
@@ -162,7 +160,7 @@ if(typeof document!=='undefined'){
   }
   const note=document.querySelector('#map-note'),defaultNote=note.textContent;
   const showNote=value=>{note.textContent=value},resetNote=()=>{note.textContent=defaultNote};
-  const keyIds=new Set(['a','b2','along','eastern','c','east-e','east-one','south-one','hamsah-east','i'].map(key=>`eastern.map.${key}`));
+  const keyIds=new Set(['a','c','east-e','east-one'].map(key=>`eastern.map.${key}`));
   for(const n of model.nodes){
     const p=P(n.row,n.column),key=keyIds.has(n.id);
     if(!key){if(n.kind==='plus')add('text',{x:p.x,y:p.y+4,'text-anchor':'middle',class:'source-plus','aria-hidden':'true'},points).textContent='+';continue}
