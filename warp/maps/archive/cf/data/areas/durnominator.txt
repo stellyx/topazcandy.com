@@ -1,0 +1,82 @@
+DurNominator
+============
+
+         MAP OF THERA                                           [[AncientRoad]]-------[[RoadToBlight|Road to]]                                            MAP OF THERA
+                                                    [[PineForest]]-/                   [[RoadToBlight|the]]
+                                                                 [[FoothillsPath|Foothills]]-[[FoothillsPath|Path]]--[[RoadToBlight|Wastes]]-----[[Hillcrest]]
+                                                                 |      +  ~        |
+                                  +-----[[MountCalandaryl]]-----[[IcewindDale|Icewind]]     [[Udgaard|U]]  ~ [[PlainsOfUdgaard]]
+                                  |                             [[IcewindDale|Dale]]----[[Udgaard|D]]  ~            |
+                                  |            [[ShadarLogoth|Shadar]]       **    |     [[Udgaard|G]]  ~~Nanthor~~  [[HighPass|High]]
+                               [[Darsylon]]        [[ShadarLogoth|Logoth]]         \   |     [[Udgaard|A]]            ~     |
+                                  |             |      [[ArialCity|Arial]]  [[AbandonedMines|Abandoned]] [[Udgaard|A]]--[[PlainsOfUdgaard|Plains of]] ~     [[HighPass|P]]
+                                  |  [[WhitecloakEncampment|Whitecloak]]-M       [[ArialCity|City]]    [[AbandonedMines|Mines]]   [[Udgaard|R]]   [[PlainsOfUdgaard|Udgaard]]  ~     [[HighPass|a]]
+                                  |  [[WhitecloakEncampment|Encampment]] i         \       |     [[Udgaard|D]]        |   ~~~~~~[[HighPass|s]]
+                                  |      |      s         [[Traveller|The---Pass----+-Gamepath]]         [[HighPass|s]]       [[EvermoonHollow]]
+                   [[BlackwaterSwamp|Blackwater]]---[[TheValeofArendyl|Vale of]]  |      t  Cons-  | \                    \_[[TroglodyteCaverns|TrogCav]] |          |
+                      [[BlackwaterSwamp|Swamp]]      [[TheValeofArendyl|Arendyl]] |      s ortium  | [[SlaveMinesOfSitran|Slave Mines of Sitran]]          |          |   [[BanditEncampment|Bandit]]                        UNDERGROUND
+                        |              | |      |   |     |                         +------[[Aratouldain]]--[[BanditEncampment|Stronghold]]
+                        [[TheShire|Halfling Lands]] +------[[NorthernRoads|Open-+--North]]   +------[[GolGalath|GolGalath]]------+            |                                     [[KtengLab|Kteng's]]
+                                     | |------------+++++-e---+                                 [[VelkynOloth|Velkyn]]                [[AbandonedMines|Abandoned Mines]]    [[KtengLab|Lab]]     [[North Of TarValon|NorthTValon]]
+                                     | |------------+[[TirTalath|TIR]]+-r         [[RuinsOfDelarTol|Ruins]]              [[CastleAkan|Castle]]   [[VelkynOloth|Oloth]]-**                          \      |      /
+                    [[DranetyWoods|Dranettie Wood]]   +++-----------N++[[TirTalath|TA]]+-n     +---[[RuinsOfDelarTol|Delar]]  [[AzureMain]]   [[CastleAkan|of Akan]]                       [[BlingdenStone|Cragstone]]--[[Underdark|The-Underdark(**)]]--[[UnderdarkSea|Underdark]]
+                            |         |-------P----o-+ [[TirTalath|L]]+-|     |   [[RuinsOfDelarTol|Tol]]        |              \                                     /         |           [[UnderdarkSea|Sea]]
+         [[ChessmastersTower|Chessmaster's]]      |         |-------l----r-++[[TirTalath|A]]+-F [[RedhornMountains|Redhorn]]------[[RiverErinin]]  [[Mortorn]]  \  [[StonesEmbrace|Stones]]                          [[Sewers|The]]      [[TethAzeleth]]
+          /  [[ChessmastersTower|Tower]]          |         |-------a----t +[[TirTalath|TH]]+-o    |          ~       \  /       \  | [[StonesEmbrace|Embrace]]    [[ImperialLands|Imperial]]            [[Sewers|Sewers(*)]]
+      [[HamsahMutaz|Hamsah]]  |             |         |-------i----h ++++-othills~~~~     ~        ** [[LochGrynmear|LochGry]] \ |  |          [[ImperialLands|Lands]]
+            [[StrangeIsland|Strange]]       [[Dagdan]]      |-------n----|   |  |||||||   ~~~~~~~~~~~~~       |     -[[Akan]]-            |
+             [[StrangeIsland|Island]]           |       |-------s----|  [[NorthernRoads|Jualdhe-Road]]--~ [[VoralianCity|VORALIAN]]  ~--[[LuagdeRoad|Luagde Rd]]   |           [[KeepOfRighteous|KoR]]--[[Balator|B]]
+               |              |       |------------R           |    ~   +---+   ~     |        /--[[GrinningSkulls|Grinning]]      [[Balator|a]]                          [[ForestofProsemy]]
+      [[Ysigrath]]-+------+       +-------+--[[NorthernRoads|WD---Rd---o----ED---Road]]---~           ~--[[DaghainRoad|Daghain Road]]    [[GrinningSkulls|Skull]]        [[Balator|l]]                               |
+               |[[SeaOfDespair|Sea of]]+-[[SouthDairein|South]] | [[Cragstone|CRAG]]  |            a           |    ~   +---+   ~     |                         [[Balator|a]]                               |
+ [[SilverTower|Silver Tower]]  |[[SeaOfDespair|Despair]] [[SouthDairein|Dairein]] [[Cragstone|STONE]] |      [[Mausoleum|Mauso]] d------[[NorthernRoads|NA Road]]---~   [[VoralianCity|CITY]]    ~--[[OsendrelleFields|Osenrein]]      [[DarkWoods|Dark]]           [[Balator|t]]                  [[Dra'Melkhur]]--+--[[Basilica]]
+            |  |~~~~\~|       |       |      [[Mausoleum|-leum]] |           |    ~~~~~~~~~~~~~     |            [[DarkWoods|Wood]]~        [[Balator|o]]-[[FieldsOfBalator]]               [[Arkham|A]]
+ [[OnyxTower|Onyx Tower]] |  ++---[[RuinsOfTheDeep|Ruins of]]  +-----[[AzrethForest|Azreth]]      |  |           |          ~     ~~~Road   TO PAST+     ~        [[Balator|r]]          |                    [[Arkham|r]]--[[BaroviaForest|Village of]]
+        |   |   |   [[RuinsOfTheDeep|the Deep]]  |     [[AzrethForest|Forest]]  +---|--+------+    S          ~        |  |          |     ~        |          |                    [[Arkham|k]]   [[BaroviaForest|Barovia]]
+      [[Arboria]]   |             |             |[[GaladonOutskirts|O]]+-|--+----+[[GaladonOutskirts|O]]|    A          ~        |  ++         [[TheGrove|The]]   ~        |          |        [[VDramirsCove|V'dramir's]]--[[Arkham|h]]       |
+       |        |             |      [[Kobold]] |[[GaladonOutskirts|u]]|[[Graveyard|GY]]|  |[[TheCopehamInn|Cpm]]|[[GaladonOutskirts|u]]| [[Haunted Woods|HW]] |   ~~~~~~~~        |   |      +-[[TheGrove|Grove]]  K +------+------+   |  [[IslandOfCorte|Is.]]       [[VDramirsCove|Cove]]    [[Arkham|a]]\    [[CastleofBarovia|Keep of]]
+       |     [[AshesOfNoWhere|Ashes of NoWhere]]-+      [[Kobold|Warrens]]|[[GaladonOutskirts|t]]|--+  +---|[[GaladonOutskirts|t]]+[[NorthernRoads|--Road]]  ~               |  [[Camelot|Aldevari]]-   |  ~~h |             |   | [[IslandOfCorte|of Corte]]     |     [[Arkham|m]] [[ForgottenCrypts|FC]]  [[CastleofBarovia|Barovia]]
+       |     |                |         |   |[[GaladonOutskirts|s]]|         |[[GaladonOutskirts|s]]|        ~               |    |         |  | a |   [[HamsahMutaz|HAMSAH]]    |   |       \      |     |
+ [[HighTowerOfSorcery|Tower of]]    |       +--------+---------+---+[[GaladonOutskirts|k]]+ [[Galadon|GALADON]] +[[GaladonOutskirts|k]]+------[[Crossroads|The---+---Eastern-+----+---Road]]--+--+-l-+   [[HamsahMutaz|MU'TAZZ]]   +-+----[[DragonSea|The----Dragon]]---[[Arkham]]---[[OutlyingVillages|Outlying]]
+[[HighTowerOfSorcery|High Sorcery]] |   [[Feanwyyn|Fean]]|    [[Feanwyyn]]        ~~|[[GaladonOutskirts|i]]|~~~~~~~~~|[[GaladonOutskirts|i]]|~~~~~~~~    |    |  |   |         |  |      i |             |  \         [[DragonSea|S  +++  S]]           [[OutlyingVillages|Villages]]
+         |   |  [[Feanwyyn|Weald]]|         [[Feanwyyn|Weald]]      ~ |[[GaladonOutskirts|r]]|--+   +--|[[GaladonOutskirts|r]]|       ~    |    [[Ostalagiah|Ruins]]  [[DwarfForest|D]]        +--[[Ugruk|Dr-H]]    d~+~River~~~~~~~|~~[[WotDeep]]~~~[[DragonSea|e  +++  e]]
+[[DragonTower|Dragon]]--[[Shadow|Shadow]]--+----+        ~~~~~~~~~~~~~ |[[GaladonOutskirts|t]]|[[Sewers|?*]]|   |[[Lumberyard|LY]]|[[GaladonOutskirts|t]]|       ~    |     [[Ostalagiah|of]]    [[DwarfForest|w]]        |   [[Ugruk|o-i]]      +------+------+            [[DragonSea|a-------a]]  [[Veran|Valley of Veran]]
+  [[DragonTower|Tower]]  [[Shadow|Grove]]  |       ~~~~~~[[Feanwyyn]]      |[[GaladonOutskirts|s]]+----+----+[[GaladonOutskirts|s]]|      [[Blackclaw]]  [[Ostalagiah|Osta]]---[[DwarfForest|a]]--[[TabershawsKeep|LT Keep]]   [[Ugruk|g-l]]             |      [[TahrilMountains|M]]    [[CoralHead|Coral]]    ||||||| \_/
+          |     |       ~     |     [[Feanwyyn|Weald]]-+ +------+------+        [[Blackclaw|Village]]   [[Ostalagiah|lag]]   [[DwarfForest|r]]        |   [[Ugruk|r-l]]--[[SandsOfSorrow|Sands]]   [[DesertOfAraile|Desert]]    [[TahrilMountains|t]]      [[CoralHead|Head]]---||The||  \_[[MountKiadanaRah|Mt. Kiadana Rah]]
+          |     [[GlaurukSpawningGround|Glauruk]]~~     |           |        |                         [[Ostalagiah|iah]]   [[DwarfForest|v]]        +--[[Ugruk|an-s]]    [[SandsOfSorrow|of]]      [[DesertOfAraile|of]]      [[TahrilMountains|s]]             |[[ArythOcean|Aryth]]|\
+    [[ElementalTemple|Elemental]]   [[GlaurukSpawningGround|Spawning]]      |           +-----[[Silverwood]]----[[GoblinVillage|Goblin]]               [[DwarfForest|e]]           |     [[SandsOfSorrow|Sorrow]]--[[DesertOfAraile|Araile]]--[[TahrilMountains|Tahril]]          ||||||| \__[[CoralPalace]]
+      [[ElementalTemple|Temple]]  +-[[GlaurukSpawningGround|Ground]]        [[LightForest|+Forest]]           |      |  |       [[GoblinVillage|Village]]          [[DwarfForest|n-----F]]     |        |    |   |     |            [[ArythOcean|O-c-e-a-n]]
+              |    |                |           |      |  |                        |     [[DwarfForest|o]]     |  [[PyramidOfAzhan|Pyramid of]] |  [[OryxSteppes|Oryx]]   | [[CrystalIsland|Crystal Is]]  ||||||| \_[[KuoToaLair|Kuo-Toa lair]]
+              | [[HighLords|High Lord's]]         [[LightForest|R]]           |      |  |   _[[MoudrilarMonastery|Moud Monastery]]     ++     [[DwarfForest|r]]     |     [[PyramidOfAzhan|Azhan]]   | [[OryxSteppes|Steppes]] |    |        ||S-I||            \
+  [[WhistlewoodSwamp|Whistlewood]]-+    [[HighLords|Keep]]             [[LightForest|d]]     [[Emerald]]      |  |  /                    |      [[DwarfForest|e]]     |             |         |   [[WesternAryth|WA Ocean]]--|||||||  [[VillageOfLallenyha|Village]]    [[UnderdarkSea|UDS]]
+    [[WhistlewoodSwamp|Swamp]]          |                |      [[Emerald|Forest]]      |  [[Manor|The Manor]]---[[StuntedForest|Virgin Forest]]      [[DwarfForest|s]]---[[TheDryRiverBed|A--Dry Riverbed]]-+         |     O       [[CoastalPlains|Coastal]]  [[VillageOfLallenyha|Lallenyha]]
+           [[Maltrakis|Village of]]          [[LochTerradian|Loch]]-+-+-+    |  |      |                                 [[DwarfForest|t]]                             |     c      -++++++   |
+           [[Maltrakis|Maltrakis]]       [[LochTerradian|Terradian]]  | |    | [[VioletWoodland|The Violet Woodland]]                       |        [[MinesOfZakiim|Mines]]----- [[TalshidarCaves|Talshidar]]-+   __e     / [[CoastalPlains|Plains]]---[[JadeMountains]]
+                                      | |    |                                          [[FrigidWastelands|Frigid]]     [[MinesOfZakiim|Zakiim]]       [[TalshidarCaves|Caves]]     /  a  [[XvartLair|Xvart]]  |                  |
+                                      | +-[[SpiderHauntwoods|Spiderhaunt]]                                  [[FrigidWastelands|Wasteland]]                         /   n   [[XvartLair|Lair]]  |               [[WastesOfNoveil|Wastes of]]
+                                      |    [[SpiderHauntwoods|Woods]]                                         |                 [[ShipGraveyard]]     |         |                [[WastesOfNoveil|Nonveil]]
+                                    [[RuinedKeep|Ruined]]                                             [[FelarEncampment|Felar]]                              [[SeantrynHarbor|Seantryn]]--[[SeantrynModan|SEANTRYN]]
+                                     [[RuinedKeep|Keep]]                                             [[FelarEncampment|Encampment]]                [[CoastalWetlands|Coastal]]---[[SeantrynHarbor|Harbor]]------[[SeantrynModan|MODAN]] \_[[SeantrynSewers|Sewers of SM]]
+                                                                                                               [[CoastalWetlands|Wetlands]]                 |
+                                                                                                                                      [[Aturi]]
+                                                                                                                                        +----[[CeawlinKeep|Keep of Ceawlin]]
+                                                                                                                                        |
+                                                                                                                                      [[HardanWood]]
+THE PAST
+
+                            [[Maethien]]----[[PlainsOfArendyl]]--[[DelarTol|Delar-Tol]]
+       [[ForestOfNoWhere|Forest of]]                |          |
+       [[ForestOfNoWhere|NoWhere]]                  |       [[TheGrovePast|Past Grove]]--[[TheGrove|Present Grove]]
+[[OldShadow|Past]]       |                    |          |
+[[OldShadow|Shadow]]--[[HiddenForest|Hidden]]--[[GaladonianSettlement|Galadonian]]--[[WagonMarkedRoad|A Wagon-Marked Road]]
+[[OldShadow|Grove]]   [[HiddenForest|Forest]]  [[GaladonianSettlement|Settlement]]        |  |
+                                [[OstalagiahPast|Citadel of]]
+                                [[OstalagiahPast|Ostalagiah]]
+                               /
+                    [[Battlefield|The Battlefield]]
+
+Original map by [[RobertDunn]]
+Ported by [[Zendrac]]
+
+Source: http://wiki.qhcf.net/index.php?title=DurNominator&oldid=291
+Revision: 291

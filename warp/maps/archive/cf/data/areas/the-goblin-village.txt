@@ -1,0 +1,32 @@
+The Goblin Village
+==================
+
+This area was written by Jormungandr, January 1995.
+Heavily modified by Gherian in 2004 exclusively for Carrion Fields LLC. No
+unauthorized distribution or copying in whole or part.
+--------------------------------------------------------------------------------
+
+
+                        B     B     B                 T
+                        |     |     |                 |
+Silverwood--+--+        +     +     +              N--N--N     E
+               |        |     |     |              |     |     |
+               +--+--+--+--+--+--+--+--+--+        W--W--W     I
+                        |     |     |     |        |  |  |     |
+                        +     +     +     +--+--I--W--W--W--N--I--C
+                        |     |     |              |  |  |     |
+                        B     B     B              W--W--W     I
+                                                   |     |     |
+B - A goblin bedroom                               N--N--N     S
+E - elven prisoner (silver amulet)
+S - goblin Shaman (shaman's robe, shaman's mace)
+C - troll commander (wide bronze belt, cruel battle axe)
+I - Inside the Cave
+T - an orc taskmaster (blood-stained furs, iron-tusked mask, frayed leather whip)
+W - Within the Cavern
+N - A Narrow Passage
+
+    orc guards, lumbering orcs, large orcs (orcish leggings, shield, sword)
+
+Source: http://wiki.qhcf.net/index.php?title=The_Goblin_Village&oldid=5075
+Revision: 5075

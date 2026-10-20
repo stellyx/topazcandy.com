@@ -1,0 +1,69 @@
+Felar Encampment
+================
+
+                      FrigidWastelands
+                              | 
+                              +
+                              |
+                              +--+ pass
+FrigidWastelands     clearing    |
+        |           G------+     + pass   +
+        |  ice cave |      |     |        |
+        V     +     +>2  1<2--+--+--+--+--+  Forest
+        |     |     |      ^  ^  |     |  |
+        T     +--+--1<          >+     +--+--+
+        |        |  ^            |     |  | Within 
+        T--T     P<              S     +--+  the
+           |     |  v                  |    small 
+           T--P--P--P<        S  S--+--+   Forest
+           |        |    v    |     
+           P        P----P----P
+           |  v               |
+        +--+--P               +
+              |               |
+              P<              +--+ Before the Gates 
+              |                  |^
+           +--T-----T            |+
+           |        |            v|           
+        W--+        +         M--M--M  +=+  Messhall
+                    |         |  |  |  |
+                    +----+----M--b--M--+--+
+                    |         |  |  |  |  |
+                    d         M--M--M  +  + 
+                    |            |     =  |
+                    d------d   +=+=+   t  + Before a small dock
+                           |     =        |
+                           d     C        + Upon a small dock
+                           |              |
+                           s--s        i--i
+                              |        |
+                              i--i--i--i
+                                     
+b - Before the Fire Pit
+C - The felar chief is using:
+    <worn around neck>  a brown-furred cloak
+    <worn on head>      (Glowing) a circlet of cold steel
+    <worn on hindpaws>  rear-claw extensions
+    <worn on forepaws>  a pair of spiked gauntlets
+    <worn about body>   a fur-lined poncho
+    <mainhand wielded>  (Glowing) a flaming bardiche
+d - A Small Dirt Trail That Leads Around the Encampment
+G - Graghok the Winter Lord is using:
+    <worn on head>      a battle helm made of a mammoth's skull
+    <worn about body>   a cloak made of a felar hide
+    <mainhand wielded>  a twin-edge battle axe called 'Arctic Fury'
+i - Upon the Icy Waters of the Gulf
+M - A crude marketplace (food, weapons, armor)
+P - Upon the frozen plains of the tundra
+S - Within a blinding snowstorm (semi-maze)
+s - Upon the Shores of the Icy Gulf
+T - A well worn trail through the tundra
+t - Within a Crude Tanner's Tent
+V - Valley Through the Mountains
+W - woolly mammoth (aggro)
+
+Credits
+The Felar Encampment by Vahlen, 2001.
+
+Source: http://wiki.qhcf.net/index.php?title=Felar_Encampment&oldid=5127
+Revision: 5127

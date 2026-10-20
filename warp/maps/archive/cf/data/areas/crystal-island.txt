@@ -1,0 +1,72 @@
+Crystal Island
+==============
+
+                 T
+                 |
+           +--+--+--+--+
+              |  |  |
+              +--+--+
+                 |
+           +--+--+
+           |  |  |
+           +--+  +
+                 |
+           4--+--+
+          /
+
+
+
+           +--+
+           |  |
+           2--+
+          /
+
+        +--+--+--+
+        |     |  |
+        +  +  +  +
+        |  |     |
+        +  +--+--+
+        |        |
+        +--+     3
+        | 4     /|
+        |/       |
+        +  +--+--+
+                 |
+                 +-D
+
+
+                      2
+                     /
+                 +--+--+
+                 |     |
+                 +--+  +
+                 |  |  |
+WA --+--+--#--+--+  +--+--+--+--+
+        |  |  |     |  | 3|  |  |  |
+        |  |  |     |  |/ |  |  |  |
+        +--+--+  +--+  +--+--+  +--+
+           |  |  |     |  |  |  |  |
+           +--+  +--+  +--+--+  +--+
+           |           |  |  |  |  |
+           +--+--+--+--+  +--+  +--+
+                                  /
+                                 1
+
+
+
+                        /
+                    +--1
+
+
+WA = WesternAryth
+T = Titan 
+D = Death trap
+# = Golden Pearl drop-off
+
+Credits
+Simple block letters proclaim: "This area designed by Eryndorial strictly
+for the use of Carrion Fields."  At one point in time there was other
+writing, but it is lost to the ages.
+
+Source: http://wiki.qhcf.net/index.php?title=Crystal_Island&oldid=5119
+Revision: 5119

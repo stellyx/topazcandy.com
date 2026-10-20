@@ -1,0 +1,56 @@
+High Lord's Keep
+================
+
+Level 35-50
+
+There are big aggro mobs at the gate and beyond. Watch out pre-40ish.
+
+            GlaurukSpawningGround
+                     |           
+                     =                                        S - Fire Salamander
+                   +-+-+                                      Q - Quaggoth
+                   | | |                                      u - Unicorn
+                   +=+=+                         +
+                     |                           =
+                   +_+_+                       S=+=+
+                   | | |                         |
+                  +--+--+                      +=+=Q
+                  |  |\ |                        |
+                  |  | 3|                      +-3-+
+                  +--+--+                        =
+         balcony  |  |  |   balcony              u
+              \   |  |  |   /                    =
+               +--+--+--+--+             1    +  +  +    2
+                \    |      \             \   |  |  |   /
+                 1 +-+-+     2             +--+--+--+--+
+                   | |                        |  |  |   
+                   +-+-+                      +  +  +   
+                     =
+                     +
+                     =
+                     |
+             GlaurukSpawningGround
+
+
+           Tower
+            /
+     +--+--+--+--+                               
+     |  |  |  |  |
+     +--+--S--+--+ 
+     |Art Gallery|
+     +           +                        +                 +
+     |           |                        =                 =
+     +           +                      +=+=+    Tower    +=+=+
+     |           |                        =\    +  +  +    /=     H - Highlord
+     +           +                        H \   | /|  |   / +
+     |\ Balcony  |\                          +--+--+--+--+           
+     +--+--+--+--+                              |  |  |   
+                                                +  +  +   
+S - Granite statue                               
+
+
+TODO:
+Map made from memory, needs editing and mobs added
+
+Source: http://wiki.qhcf.net/index.php?title=High_Lord%27s_Keep&oldid=5083
+Revision: 5083

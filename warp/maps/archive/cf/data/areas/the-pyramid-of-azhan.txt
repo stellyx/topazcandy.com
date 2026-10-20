@@ -1,0 +1,206 @@
+The Pyramid of Azhan
+====================
+
+                                    SandsOfSorrow                                                      
+                                          |                                               
+                                          +                                               
+                                          |                                               
+                                          |                                               
+                                          +                                               
+                                          |                                               
+                                          |                                               
+                                          S                                               
+                                                                                         
+                                                       A                                  
+                                                      /                                   
+                                                     /                                    
+                                                  +-+--+                                     
+                                                 /    /                                   
+                                                /    /                                    
+                                             +-+    +--+                                    
+                                            /         /                                   
+                                           /         /                                    
+                                        +-+         +--+                                  
+                                       /              /                                   
+                                      /              /                                    
+                                  +--+              +--+                                    
+                                 /                    /                                   
+                                /                    /                                    
+                            +--+                    +--+                                    
+                           /     sands of sorrow      /                                    
+                          /          |               /                                     
+                         +--+--+--+--+--+--+--+--+--+                                        
+                         |                          |                                     
+                         |                          |                                      
+                         +                          +                                      
+                         |                          |                                      
+                         |                          |                                      
+                         +                          +                                      
+                         |                          |                                      
+                         |                          |       A                              
+                         +                          +      /                               
+                         |                          |     /                                
+                         |                          | +--+--+                               
+                         +                          +/     /                                
+                         |                        E |     /                                 
+                         |                        |/|    /                                  
+                         +                    +---+ +   +-+                                 
+                         |                   /      |    /                                  
+                         |                  /       |   /                                   
+                         +              +--+        +  +-+                                  
+                         |             /            |   /                                   
+                         |            /             |  /                                    
+                         +        +--+              + +-+                                   
+                         |       /                  |  /                                    
+                         |      /                   | /                                     
+                         +  +--+                    ++-+                                    
+                         | /                        | /                 
+                         |/                         |/                 
+                         +--+--+--+--+--+--+--+--+--+                                           
+                                                                                         
+                                                                                         
+S - Ancient sphinx with a riddle transport to x
+A - top of the pyramid, all exits lead back down
+                                                                          
+                                              +                           
+                                             v|                           
+                                            D |                           
+                                           +--+--+                        
+                                           |     |                        
+                                           |     |                        
+                                           +--+--+                        
+                                              |                           
+                                              |                           
+                                              +
+                                              |                            
+                                              |                            
+                                     +--+     +     +--+                       
+                                     |  |     |     |  |                     
+                                     |  |     |     |  |                     
+                                     +--+     +     +--+                            
+                                     |  |     |     |  |                   
+                                     |  |     |     |  |                   
+                                     +--+--I--+--I--+--+                       
+                                     |  |     |     |  |                   
+                                     |  |     |     |  |                   
+                                     +--+     +     +--+                   
+                                     |  |     |     |  |                   
+                                     |  |     |     |  |                   
+                                     +--+     +     +--+                   
+                                              |                            
+                                              |                            
+                                              +                            
+                                              |                            
+                                              |                            
+                                              +                            
+                                              |                            
+                                              |                            
+                                              +                            
+                                              |                            
+                                              |                            
+                                              E                            
+                                                                          
+I - inscription                                                                          
+D - Down to the next level
+
+                                                                         
+                                              D                          
+                                             /                           
+                                            /                            
+                                           +                             
+                                          /                              
+                                         /                               
+                                        +                                
+                                       /                                 
+                                      /                                  
+                                     +                                   
+                                    /                                    
+                                   /                                     
+                                  +       out                            
+                                 /         ^                             
+                                v          |                             
+                               +           +                             
+                               |           |                             
+                               |           |                             
+                               +--+  +--+  +--+                          
+                                  |     |     |                          
+                                  |     |     |                          
+                               +--+  +--+     +                          
+                                  |  |  |     |                          
+                                  |  |  |     |                          
+                                  +--+--+--+--+                          
+                                        |     |                          
+                                        |  +--+                          
+                                     +--+  |                             
+                                     |     +                             
+                                     |     |                             
+                                     +--+--+                             
+                                        |                                
+                                        |
+                                        +                          
+                                         \                         
+                                          \                        
+                                           H                       
+                                                                   
+Semi-Maze - If you look in the direction you wan't to go, it actually says which direction it is.
+
+H - down to next level                                       
+                                                               
+                                                               
+                                     +--C--+                   
+                                     | /|  |                   
+                                     |G |  |                   
+                                     +--+--+                   
+                                        |                      
+                                        |                      
+                                        +                      
+                                        |                      
+                                        |                      
+                               S--S     +     S--S
+                               |  |     |     |  |
+                               |  |     |     |  |
+                               S--S--+--+--+--S--S
+                               |  |     |     |  |
+                               |  |     |     |  |
+                               S--S     +     S--+
+                                        |                    
+                                        |             
+                                     S--+--S       
+                                        |             
+                                        |                       
+                                        +      
+                                        |               
+                                        |           
+                                     s--+--s 
+                                        |        
+                                        |                        
+                                        +              
+                                        |
+                                        |
+                                     S--+--S                       
+                                        |                          
+                                        |                          
+                                        +                          
+                                        |                          
+                                        |                          
+                                     S--+--S                       
+                                        |                          
+                                        |                          
+                                        +                          
+                                        |                          
+                                        |                          
+                                     S--+--S                       
+                                        |                          
+                                        |                          
+                                        +                          
+                                        |                          
+                                        |                          
+                                        H                          
+                                                                   
+                                                                   
+S - stone sarcophagus                                              
+C - statue with plague on [trap door down] leads to c              
+G - Gold sarcophagus [the mummy of Sekhtan-Rah (amulet of Sekhtan-Rah, mask of Sekhtan-Rah)]
+
+Source: http://wiki.qhcf.net/index.php?title=The_Pyramid_of_Azhan&oldid=2403
+Revision: 2403

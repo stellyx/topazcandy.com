@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QHCF Atlas - Outskirts of Galadon</title>
+<style>
+:root{color-scheme:dark;--bg:#101918;--panel:#172523;--ink:#e9f2e8;--muted:#a9bbb5;--accent:#e6b95c;--line:#4d7268}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,sans-serif}main{width:min(100%,72rem);margin:auto;padding:1rem}.panel{background:var(--panel);border:1px solid var(--line);border-radius:.8rem;padding:1rem;margin:.8rem 0}a{color:#9fd8ff}h1,h2{line-height:1.15}select,button,textarea{font:inherit;max-width:100%}select,button{padding:.55rem}.controls{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}.controls label{display:grid;gap:.25rem}.buttons{display:flex;gap:.5rem;flex-wrap:wrap;margin:.75rem 0}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}textarea{width:100%;min-height:4rem}pre{overflow:auto;max-width:100%;padding:1rem;background:#09100f;border-radius:.5rem;font:12px/1.25 ui-monospace,monospace}.warning{border-left:.35rem solid var(--accent);padding-left:.8rem;color:#fff4cf}@media(max-width:390px){main{padding:.55rem}.controls{grid-template-columns:1fr}pre{font-size:10px;padding:.5rem}}
+</style>
+<link rel="canonical" href="https://topazcandy.com/warp/maps/archive/cf/outskirts-preview.html"></head>
+<body><aside class="notice" data-archive-notice><strong>Historical Carrion Fields archive.</strong> Preserved source material; not verified as current WARP gameplay. <a href="/warp/maps/">Open WARP Maps</a>.</aside><main>
+<p><a href="/warp/maps/archive/cf/">← QHCF World Atlas</a></p>
+<h1>Outskirts of Galadon</h1>
+<p>Source transcription: <strong>GaladonOutskirts, revision 5047</strong>. Map by Vassagon; Copyright 1997, H. Beres; for Carrion Fields MUD.</p>
+<nav class="panel" aria-label="Source references">
+  <a href="/warp/maps/archive/cf/areas/outskirts-of-galadon.html">Captured graphical source</a> �
+  <a href="/warp/maps/archive/cf/data/areas/outskirts-of-galadon.txt">Readable text reference</a> �
+  <a href="/warp/maps/archive/cf/data/areas/outskirts-of-galadon.json">Source JSON</a> �
+  <a href="http://wiki.qhcf.net/index.php?title=Outskirts_of_Galadon&amp;oldid=5047">Original revision</a>
+</nav>
+<section class="panel warning" aria-live="polite">
+  <strong>Topology only.</strong> The old-trail directional glyphs and printed connectors are preserved, but the source gives no legend proving an edge-by-edge command orientation. Boundary labels are not cross-area joins. No copyable movement route is inferred.
+</section>
+<section class="panel">
+  <h2>Inspect preserved topology</h2>
+  <div class="controls"><label>Start source node<select id="from"></select></label><label>Destination source node<select id="to"></select></label></div>
+  <div class="buttons"><button type="button" id="inspect">Inspect</button><button type="button" id="flip">Flip</button><button type="button" id="copy" disabled>Copy commands (unavailable)</button></div>
+  <p id="summary" aria-live="polite">Choose two source nodes.</p>
+  <textarea id="commands" readonly aria-label="Copyable commands"></textarea>
+</section>
+<section class="panel"><h2>Source diagram</h2><pre id="map" tabindex="0" aria-label="Outskirts of Galadon source diagram"></pre></section>
+<section class="panel"><h2>Source-labeled boundary stubs</h2><div id="stubs"></div></section>
+<script type="module" src="./outskirts-preview.mjs"></script>
+</main></body></html>
+

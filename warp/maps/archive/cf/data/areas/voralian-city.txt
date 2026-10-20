@@ -1,0 +1,99 @@
+Voralian City
+=============
+
+                   V  o  r  a  l  i  a  '  s  T  e  a  r  s   
+                     | |              Iv              | |
+                     | |              /               | |
+       Northharbor   +-+-------------+----------------+-+=+   Northharbor
+          Docks      | |             |                | |     Shipping Office
+                     + + 3         1-+-2           4  + +
+                         |  Knight   |    Street   |          
+                     5---+----------DR-------------+----6 
+                         |         R |             |      
+                     7   8   9     e |   B    10  11   12      
+                     |       | C   d |   a  C |         |    
+Shepherds --NW--WC--SF-------+ h   e +   +----+--------KR---EC--NE-- Silverpine    
+  Row                |       | a   m |   n  h |         |               Road
+                     | R     | r   p |   k  a |         |           
+                13---+---14  | i   t |      r | + + +=--+--=+   Beneath                
+                     | e     | t   i |      i |  \|     |   |                
+                15---+---16  | y   o |      t |   + +---+---He  the Cathedral
+             Butcher | t     |     n |      y |    \|   | F                               
+                     | r     +--+----+----+---+    *H*  | a     Buttresses                    
+                     | i     |  Tranquility   |     |   | i                    
+                     | b     +  +---------+   +  Sh-+---+---+                        
+                     | u     |  |         |   |         | t   
+E. Sumner ---W--WF--CL-------+--+ Gardens +-+ +--------HB---EF---E-- Eaststride    
+  Road               | t     |  |         |   |         | h             Road
+                17---+---18  +  +---------+   +    Cj---+---Ss     
+                     | i     |  Tranquility   |         |  
+                19---+ o     +--+----+----+---+    Tr---+--=+    *H* = Healer &
+                     | n             |                  |                Pit
+                20---+---Th          | T            +=--+---Wa
+                     | A        21=--+---=22            | A
+                     | v  T      =   | e   =            | v
+                     | e  |      |   | m   |  Hope      | e    
+N.Suther- --SW--WH--KC----+------+--GP-----+--------+--UB---EH--SE-- Bramblefield    
+spring Rd            |    |      |   | p        Ave     |               Road
+                     |    | Ba  Pa   | e              F |                 
+                     |    |/         | r              a |               (to 
+                23---+---24     25---+---26           i +                  
+                     |    =          | a              t |              Eastern
+                     |    +     27---+---28           h +                       
+                     |               | n                |               Road)
+                29---+---30          | c                + A                 
+                     | General       | e                | v                 
+                     |  Store        |    As            | e
+                     |               |     |            | 
+       Southharbor   +----+----+-----+-----+-----+----+=+   Southharbor
+          Docks      |    |    |     |     |     |    |     Shipping Office
+                     |    |    |     |     |     |    |
+                  V  o  r  a  l  i  a  '  s  T  e  a  r  s
+
+Plazas & Squares				Gates
+-----					-----
+CL Square of the Clarion			WC West Charity Gate
+DR Plaza of the Darkened Rose		EC East Charity Gate
+GP Great Square of the Pheonix		WF West Fortitude Gate
+HB Plaza of the Hummingbird			EF East Fortitude Gate
+KC Plaza of the Kara Chal			WH Western Gate of Hope
+KR Square of the Ki-Rin			EH Eastern Gate of Hope
+SF Plaza of the Shining Fount
+UB Square of the Unbreakable Blade		
+
+Shops 					Guilds
+-----					-----
+1  The Holy Rest				As Assassins Guild
+2  The Heavenly Wench			Ba Bard Guild
+3  The Good Maiden				Cj Conjie Guild
+4  The Jolly Good Sir			He Healers Guild 
+5  Keiiahs Apothecary and Charms		Iv Invokers Guild
+6  The Long Voyage				Pa Paladins Guild
+7  Master Finigans Toys			Sh Shamans Guild
+8  The Sailors Fathom			Ss Shifter Guild
+9  The Divine				Th Thieves Guild 
+10 The Lonely Saint			Tr Transmuter Guild
+11 The Elvenhome				Wa Warrior Guild
+12 North Harbor Imports (exotics)
+13 Guldencratz and Sons (jeweler)              T Blood Tribunal
+14 Lord Vindar's Timepieces (Clockmaker)
+15 River City Butchery 
+16 Lady Voralia's Clergy Shop
+17 The Noble Harvest 
+18 Roral's Blessed Market 
+19 Stronghammer's (armory/weapons)
+20 The Knights Table
+21 Peacekeeper Headquarters
+22 Guiding Light Cartography (maps)
+23 The Phoenix's Blessing
+24 Knight's Crest
+25 Dragon's Tooth 
+26 Gundards Woodworking Shop
+27 Azure Vineyard (wine)
+28 Wind's Harness (boats)
+29 Crows Nest
+30 The Light Supplies
+*H* Healer & Pit
+
+Source: http://wiki.qhcf.net/index.php?title=Voralian_City&oldid=5015
+Revision: 5015

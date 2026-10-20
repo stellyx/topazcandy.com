@@ -1,0 +1,54 @@
+The Coastal Plains
+==================
+
+This area, the Coastal Plains, found by Pico, Immortal of Thera.  June 1996.
+A small section was added to it in 2004 by Soucivi.  For exclusive use by
+Carrion Fields, LLC.  No unauthorized distribution or use in whole or part.
+
+~~~~~~~~Aryth Ocean~~~~~~
+|  |  |  |  |  |  |  |  |
+L--B--B--E--E--E--E--E--L
+|  |  |  |  |  |  |  |  |
+L--B--B--E--E--E--E--L--L
+|  |  |  |  |  |  |  |  |
+L--C--E--E--E--E--E--L--L
+   |  |  |  |  |  |  |  |
+   L--E--E--E--E--E--L--L---- JadeMountains
+   |  |  |  |  |  |  |  |
+   L--N--N--N--N--N--L--L
+   |  |  |  |  |  |  |  |
+J--L--L--L--L--L--L--L--L--D
+|     |  |  |  |           |                         ORC - Orc Palisade
+|     L--L--L--L--M        D-----D
+|     |     |     |        |  O  |                          6----7----8
+D     X     D     M  D--D--D  |  |                          |  2      |
+|           |        |  |     W  |                          |   \     |
+D--D  D--Z--D        D  D     |  D                          5    1----9     1 - A Tall Cypress
+   |  |  |    ORC       |     S  |                          |         |     2 - The Flet (Druthezesh the orc)
+   |  |  |     |        |     |  |                          |         |     3 - Guard Post
+   D--D  D--D--D--D--D--D  D--D  D--- JadeMountains         4----3----10    4 - Refuse Pit
+   |     |           |     |  |  |                               |          5 - Slave Pens
+   D--D  D           D-----D  D--D                               +          6 - Animal Den
+         |                       |                               |          7 - Forge
+         D                       D                            D--D          8 - Sleeping Area
+                                 |                            |             9 - Cooking Area
+                                 D                            D            10 - The Pig Pens
+                                 |                            |
+                                 L                          --D--
+                                 |
+                           SeantrynModan
+
+L - Light Forest
+D - Dark Forest
+e - Meadow (plains)
+X - Down to the XvartLair
+M - A Large Cave
+B - In a Bay
+C - Cove
+Z - moss cloak, on floor (con -1, hp 20, w40)
+S - Silent Clearing
+W - Wagon
+O - Organia
+
+Source: http://wiki.qhcf.net/index.php?title=The_Coastal_Plains&oldid=5113
+Revision: 5113

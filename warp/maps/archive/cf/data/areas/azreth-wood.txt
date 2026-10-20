@@ -1,0 +1,86 @@
+Azreth Wood
+===========
+
+Azreth Wood
+Suggested Levels: 10-30
+
+Azreth Wood was written by Braerus for use
+in Carrion Fields.  Use of this area in any
+other situation is prohibited without the
+expressed written permission from the author.
+
+The forest:
+             NorthernRoads
+                  | |
+                  +-+
+                  | |
+                  +-+
+                  | |
+                  +-+
+                  | |
+              +-+-+-+-T-T-C
+              | | | | | |
+              +-+-+-+-T-T-T
+              | | | | | | |
+ SouthDairein-+-+-+-+-+-+-+
+              | | | | | | |
+              +-S-S-S-S-S-+
+              | | | | | | |
+              +-S-P-P-P-S-+
+              | | | | | | |
+              +-S-P-P-P-S-+
+              | | | | | | |
+              +-S-P-P-P-S-+
+              | | | | | | |
+              +-S-S-S-S-S-+
+
+In the pool:
+                   /  /  /                   U
+                  +--+--+                    |
+                  |  |  |                    U
+                  |/ |/ |/                   |
+                  +--+--+                    U
+                  |  |\ |                    |
+                  |  | U|                    U
+                  |  |  |                    |
+                  |/ |/ |/               A   U-A
+                  +--+--+                |   | |
+                                         A-A-U-A-A
+                                             |
+                                             U
+                                             |
+                                             U
+                                             |
+                                    Kobold-B U
+                                            \|
+                                             U
+                                             |
+                                             U
+                                             |
+                                             U
+                                             |
+                                             U
+                                             |
+                                             U
+                                             |
+                                             U
+                                             |
+                                             U
+                                            /
+                                          |v
+                                          E
+                                          |
+                                          E
+                                          |
+                                     Feanwyyn
+
+A - An Underground Cavern
+C - Inside a Crude Shack (Amadus)
+E - The End of the Underground River
+P - Surface of the pool (Each room has exit down to "In the Pool" section)
+S - On the Shore of the Pool
+T - The Tresnore Camp
+U - Underground river (current drags you south, swimming north is impossible)
+
+Source: http://wiki.qhcf.net/index.php?title=Azreth_Wood&oldid=5055
+Revision: 5055

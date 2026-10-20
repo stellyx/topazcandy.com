@@ -1,0 +1,58 @@
+The Dranettie Wood
+==================
+
+                              Atop the Canopy+                                                                            
+                                             |                                                                            
+                               Semi Maze   --+--                                                                          
+                                             |  |                                                                         
+                                       +-- --+--+--+                                                                      
+                        W is web.      |  |  |  |  |                                                                      
+                         Bigger     +--+--+--G--+--+--+                                                                   
+                          than 1       |  |  |  |  |                                                                      
+                                        --+--W--+-- \                                                                     
+                                       /  |  |  |  \                                                                      
+                                          +--+--+                                                                         
+                                             |                                                                            
+                                             +                                                                            
+                                            /                                                                             
+                                           +                                                                              
+                                          /                                                                               
+                           A  +  H       +                                                                                
+                           |  |  |      /                                                                                 
+                     +--+--+--+--+--+--+                                                                                  
+                      \    |  |  |                                                                                        
+                       L   G  P  C                                                                                        
+                        \                         +                                                                                                                                          
+                         \                        |                                                                                                                        
+                          \                  3----+                                                                                                                                            
+                           \                 ^    |                                                                                                                                           
+                            \      +----+----3----+                                                                               
+                             \     |    |    |    |                                                                               
+                              +----+----+----+----+----+----+                                                                     
+                                   |    |    |    |    |    |                                                                     
+                                   +----+----+----+----+--5<T>2--+----+----+----+----+----+----egg                                
+                                   |    |    |    |    |    |    |                                                                
+                                   +----+----+----+----5----+----2                                                                
+                                        |    |    |    |    |    ~                                                                
+                                        +----+----+----+----+    The Green Lair
+                                             |    |    |                                                                          
+                                             +----+----+                                                                               
+                                             |    |    |                                                                          
+                                             +----+----+                                                                                    
+                                                  |                                                                               
+                                                  +                                                                                         
+                                                  |                                                                               
+                                                  +                                                                                     
+                                                  |                
+                                               Dagdan
+   A&#160;:The Apothecary's shop
+   G&#160;:The General Store
+   P&#160;:A peaceful place
+   H&#160;:A Holy Place
+   C&#160;:The Dranety Chief
+   G&#160;:Giant Spider(Weaver of Doom, hide)
+   l&#160;:Go up to arrive at Landing(L)
+   *C&#160;:Forest colored cloak
+
+Source: http://wiki.qhcf.net/index.php?title=The_Dranettie_Wood&oldid=5060
+Revision: 5060

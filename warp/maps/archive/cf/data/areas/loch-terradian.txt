@@ -1,0 +1,46 @@
+Loch Terradian
+==============
+
+                                      +
+                                     /
+                                    /
+                                   +
+                             +     |
+                            /      |                       +--LightForest
+  +    +    +    +    +----+    +  +                       |
+  |    |    |    |         |    |  |                       +
+  |    |    |    |         |    |  |                       |
+  +----+----+----+----+----+    +  +        +--+--+--+     +
+       |    |    |    |    |   /| /|        |  |  |        |
+       |    |    |    |    |  + |/ |        +--+--+--+--+--+
+  +----+    +    +    +    +----+  R        |  |  |
+       |                   |       |        +--+--+--+
+       |                   |       |        |  |  |
+  +----+----+----D    +----+-------|-----+--+--+--+
+       |                   |       +        |  |  |
+       |                   |      /|        +--+--+--+==+
+  +----+    +    +    +    |     / |  +     |  |  |
+       |    |    |    |    +----+  + /      +--+--+==+
+       |    |    |    |    |    |  |/       |  |  |  |
+  +----+----+----+----+----+    +  +        +--+--+  +
+  |         | +  | +  |    |    |             
+  |         |/   |/   |    |    |             
+  +    +----+    +    +    +    W
+
+
+D - Duke
+Duke Magvallin is using:
+<worn on head>      the Crown of the Storm Giants
+
+R - Rusal
+Rusal, Commander of the Waves is using:
+<worn on body>      a sturdy vest made of kraken hide
+<wielded>           (Humming) a double-bladed axe named 'Shockwave'
+<held>              the banner of Loch Terradian
+
+W - warrior's guild
+the warrior guildguard is using:
+<mainhand wielded>  an ivory polearm named 'Narwhal's Spike'
+
+Source: http://wiki.qhcf.net/index.php?title=Loch_Terradian&oldid=5078
+Revision: 5078

@@ -1,0 +1,101 @@
+Mount Kiadana-Rah
+=================
+
+                +
+                |\
+                | P        DragonSea
+                |  \          #
+ The First      |   P         +
+ Level of       M    \        | 
+ Kiadana-Rah   /|     P       + 
+            + / F      \      |
+            |/   \      P     + 
+         +--+--+  \      \    |
+        /   |      \      P   +-Veran
+       2    +    C--+--+   \  |
+               The   \  \   P +
+             Far Side +--+   \|
+          of the mountain \   +
+     (Exp Mobs)            +
+                       The Bottom of
+                     the Dark Mountain  
+
+C - Suicide Cliff
+P - A Steep and Narrow Path
+M - The Mouth of the Volcano
+F - The Far Side of the Mountain
+
+Paladin Champion [Wandering] (the eternal flame of champions,  mace of holy empowerment, the Ankh of Loch Terradian)
+Storm Giant Commander [Wandering, Assists] (Cape of Lightning, gleaming white sword)
+
+
+   The Second Level
+    of Kiadana-Rah                       of Kiadana-Rah
+
+        +--+                                   +--+--+
+        |  |                                   |  |  |
+     +--+--+--+                             L--+  +--3
+        |  |   \                                  |  |
+     2--+--+--+ 3                           +--+--+--+
+        |  |                                   |
+        +--+                                   +
+                                              /
+                                             4
+
+fire giant patroller [wandering]
+
+L - Frigid Lair, Crystalline Dragon (crystalline shard, crystalline bracelet)
+
+
+
+             +
+             |        HOT AREA!
+       E--+--+--+  +--+--5
+                |  |    
+          +--+--+  +--S--+     L
+          =     |  |           |
+          P     +  +--+--+--B--K
+            4   |  |  |  |
+             +--+--+  T  D--+
+
+
+L - Lord Kiadana-Rah [EQ BURNER] (stuff)
+K - Lady Kiadana (onyx and gold ring, howling blue robe, serpentine dagger)
+S - The Shaman's Chamber, shaman (firestrike whip)
+B - Bahr (blackened iron chain)
+D - Drathgar
+T - Tohr (blazing sword named 'Incinerator', helm of black magic)
+P - Prison (Grahkarr the Tormentor)
+E - Baelius (Nacktin-Rah pendant)
+
+      The Fiery      
+        Chasm +--+  X--+--+          5
+              |  |        |         /
+         The  D  +-----+  +--+  +--+
+      Chasm Lair       |     |\ |
+                    +--+--+--+--+
+                                \    T--C
+                                 \   |
+                                  +--+
+                            The Lower Pits
+                            of Kiadana-Rah (no recall)
+
+
+D - (no recall) the Great Crimson Dragon [BURNER] (stuff)
+C - Circle of Flames, (hide) greater living flame [BURNER] (cape of living flames)
+T - Tana-Rah'Ki (stuff)
+X - Dyghaur the fire ogre (firewalker boots, stuff)
+
+
+Lord Kiadana-Rah is using:
+[worn on finger]    (Red Aura) Kiadana Insignia ring
+[worn on finger]    (Glowing) a fiery ring
+[worn around neck]  (Red Aura) a living Boa Contrictor
+[worn around neck]  (Glowing) a blazing orange cloak
+[worn on body]      (Glowing) searing red chainmail
+[worn on hands]     (Invis) (Red Aura) (Humming) gauntlets of black death
+[wielded]           (Glowing) (Humming) the Battle Axe of Rah
+Lord Kiadana-Rah has a few scratches.
+
+Source: http://wiki.qhcf.net/index.php?title=Mount_Kiadana-Rah&oldid=5102
+Revision: 5102

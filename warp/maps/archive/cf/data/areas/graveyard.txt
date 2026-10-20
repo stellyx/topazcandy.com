@@ -1,0 +1,47 @@
+Graveyard
+=========
+
+This area was written by Shaidar Haran for Carrion Fields.  Permission to
+use this on any other mud must be obtained from the author.
+
+
+         +--+            The       
+         |  |          caretaker   
+         +  +   n         +(keys)   g
+         |  |   =         |         =
+         m  +-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+            |     |       |       |     |
+ Mausoleum  +     +       +       +     +-t
+            |     |       |       |     |
+          T-+   T-+-T     +-t   t-+-T   +
+            |     |       |       |     |
+            +     +   T   +   T   +     +
+            |     |   |   |   |   |     |
+            +-+-+-+-+-+-+-f-+-+-+-+-+-+-+
+            |     |   |   |   |   |     |
+            +     +   T   +   T   +     +
+            |     |       |       |     |
+          T-+   T-+-T   T-+     t-+-t   +-t 
+            |     |       |       |     |   
+            +     +       +       b     +
+            |     |       |       |     |
+            +-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+                          |
+                          +
+                          | 
+                       Holy Road (Galadon)
+
+
+
+f - fountain
+t - inside a tomb
+    zombie (a large leg bone)
+    skeleton (a small pendant)
+T - Like t, but evil
+b - banshee (a strange ring) {wandering?}
+m - Foyer of the mausoleum
+g - Ghost of a king (a Templar's crown)
+n - a mummy
+
+Source: http://wiki.qhcf.net/index.php?title=Graveyard&oldid=5045
+Revision: 5045

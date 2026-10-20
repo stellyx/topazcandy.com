@@ -1,0 +1,68 @@
+Traveller
+=========
+
+== The Beaten Path ==
+== The Pass ==
+
+                    NB                         Udgaard     N: Nhergul the Mad (a hammer named 'Dwarf Ruin',
+                   /                              |              dark flail)
+         Ruined   +                               +        B: Orc Beserker (the twisted black spear 'Khalgoth')
+         Tower   /      Few                       +
+      +-------+=+      Bushes                     +
+      |        /       L----L    +                +        L: Leader of the Ambush [hidden] (silent boots)
+   W  |       +        |    |    |\               |
+   a  |      /         +----+    | +--+    +--~~~---+-+
+   t  |     +          |     \   |     \   |      |/  |
+   e  |    /           |      +--+      +--+  AM--+   |   AM: Abandoned Mines
+   r  |   +            |                          |   |
+   f  |  /             |                          TC  |   TC: Troglodyte Caverns
+   a  +-+              |      +                       |
+   l  |             +-----+  /|                       |
+   l  +             |  | /| + |                       |
+      |             |  |/ |/  |                       |
+      O--+--+--+    |  +  +   |                       |    O: Orc Den (Orcs)
+                \   |         |                       |
+                 +--+     +---+                       |
+                          |Ayr'Trinil (Arials)        |
+                          +          a            +   |
+                          |/        /|           /    |
+                       +--+        / v          +     |    A: Over the Canyon (need fly)
+                      /   |       /  P<-----b  /      |    P: Peak of a Mountain (has 3 random exits which
+         Canyon    +-+    |      +    ^     | +       |          will take you back to either a, b, or c)
+          Path    /       A     /      \    |/        |    I: Ironwood Tree
+               +-+        |    /   O    c   I--+--Z   |    O: Orc Den (Orcs)
+              /           |   /    |     \            |    Z: Cyclops Den (Orcs)
+           +-+         +--+  +--+--+      +           |
+          /           /   | /             |           |
+     +-+-+         +-+    |/              |           |
+  B  |   |        /       +            +--+           |
+  r  |   |     +-+                      \             |
+  i  +   +    /                          \            |
+  d  |   | +-+                            \           |
+  g  |   |/                                +          |
+  e  +-+-+      C-+-+            +-+-+     |          |    C: Cyclops (spiked bracers)
+         |          |            | | |     |          |
+       Sitran       +-+       +--S-+-+-M   |          |    S: Sandy Shore of a Lake
+       Slave          |       |  | | |\    |          |    M: Black Moss Monster (Pile of Black Moss)
+       Mines          +       |  +-+-+ +   |          |
+                      |    +--+            |          |
+                      +    |  |          +-+          |
+                      |\   |  R         /             |
+                O-+-+-+ +--+       +---+              |    O: Orc Den (Orcs)           R: Ranger guild (with underdark entrance)
+                           |       |                  |
+                           +---+---+                  |   +                                R
+                               |                      |  /=                                |
+                               +       +              | / +  Cockatrice                    +
+                              /       /|              |/                                   =
+                             +       + +----------+---+---+                                |
+                             |         |          |                                        +
+                             +--~~~--+-+          +--+-+--+                                 \
+                                    /         Inside the Stone of                            +__+
+                                   +            Tandar Oakcrest                               \
+                                   |                                                           + Underdark (Inside Rothe Farm)
+                             NorthernRoads
+
+NOTE: This map is actually two separate areas pieced together. They connect at the "~~~" symbols.
+
+Source: http://wiki.qhcf.net/index.php?title=Traveller&oldid=4990
+Revision: 4990

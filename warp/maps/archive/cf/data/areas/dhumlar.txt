@@ -1,0 +1,63 @@
+Dhumlar
+=======
+
+        Forest Road
+             |                                                                              The old, oak sign is barely held together by small iron nails.  Many gray
+             |                                                                              splinters stray from the ancient wood.  In a crude common dialect, fresh red
+             +                                                                              blood stains the sign saying "Dhumlar-Ko" with an arrow that now points
+             |                                                                              directly to the ground.
+             |                                                                
+             +                                                                              Welcome to Dhumlar-Ko.  Written by Drehir in 2014 for exclusive use by
+             |                                                                              Carrion Fields, LLC.  No unauthorized distribution or copying in whole or
+             |                                                                +             part.   Many thanks to Destuvius for his continuous advice and drive.
+  Qhabiszan--+--+--+--------------------->+                                   |
+                   |                      |     A-||-+--+                     |             Ruined Keep - this old area
+                   |                      |            /                      +
+                   |                      |           /                       |
+                   |                   +----+--+     /                        |
+                   |                  /   |    |    /       +-||-+            +  +
+                   |                 /    |    |   /             |            | /|
+                   +     +       B  +     |    +--+    +  +      |        L   |/ |
+                   |     |       |  |     |    |       |  |      +       /|   +  |
+                   |     |       |  |     |    |       |  |      |      / =      |
+                   +--+--+--+-||-+--+----------|-------+--+--+   |     /  |      |
+                                    |  +----+--+          |   +--+--+--+--+--+   |    +
+                                    | /   |               |   |      / |     |   |    |
+                                    |/    |               +   |     v  |     |   |    =
+                                    +--+  |                   +  +-+---|-----|---+    |
+                                       |  |                   |    |   +     +--+--+--+
+                                       |  =                   |    v   |           |  |
+                                       +  +             +--+--+    L   |           |  |
+                                      /   |             |              +           +  +--+||+||+
+                                     /    |             |              |
+                                    +--+--+--+--+       +              +--+--+
+                                                |       |              |     |
+                                                |       |              |     |
+                                                +--+-||-+              +     +--+
+                                                |       |              |
+                                                |       |              |
+                                                +       +--+->P<------>+--+--+
+                                                |          |                 |
+                                                |          |                 |
+                                           +-||-+          +                 +--+
+                                                           |                    |
+                                                           |                    |
+                                                           +                    +
+
+ A
+ Cerrakt the Troll Baron Reincarnate 
+&#160;:Cerrakt the Troll Baron Reincarnateis using:
+&#160;:<worn around neck>  (Illusionary) (Glowing) The Heart of Dhumlar
+&#160;:<worn around neck>  the fang of a cavefisher
+&#160;:<worn on legs>      bulky steel platemail leggings
+&#160;:<worn about body>   a cloak of blood-stained furs
+&#160;:<mainhand wielded>  a runed frost-covered flail
+&#160;:<worn as shield>    a kite shield emblazoned with "Dhumlar"
+
+ B
+ Balhger the Shadowbane is using:
+ <worn about body>   (Illusionary) a ragged dark-gray cloak
+ <mainhand wielded>  an iron-banded oak club
+
+Source: http://wiki.qhcf.net/index.php?title=Dhumlar&oldid=5080
+Revision: 5080

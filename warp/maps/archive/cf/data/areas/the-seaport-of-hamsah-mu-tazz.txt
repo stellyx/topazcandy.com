@@ -1,0 +1,31 @@
+The Seaport of Hamsah Mu'tazz
+=============================
+
+                  Canopy
+                B---C---D
+                |   |   |   Coastguard Dock
+                +---G---+   +---+---[4]
+                |   |   |   |
+                A---F---E   +            Merchant Dock
+                |           |                  DS
+                +---+---+---+                   |
+                +                       +---+---+--[2]
+                |                       |
+                +           +           +      [1]
+                |           |           |       |
+Hamsah Mu'tazz--+---+---+---+---+---+---+---+---+--DS
+                |           |           |
+                +           +           +      [3]
+                |                       |       |
+            H-|-+                       +---+---+
+                |     Jade Warehouse            |
+                +---+---+---+                  DS
+                    |       =             South Dock
+                +---+       I
+                |   |       =
+                +---+       +
+            Merchant’s      =
+             Warehouse     [X]
+
+Source: http://wiki.qhcf.net/index.php?title=The_Seaport_of_Hamsah_Mu%27tazz&oldid=5105
+Revision: 5105

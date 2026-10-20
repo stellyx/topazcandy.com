@@ -1,0 +1,36 @@
+The Rocky Paths
+===============
+
+The Rocky Paths
+Lvls 20 - 30 
+Shokai       
+                                 A Narrow 
+                                   Rocky Path
+                                  +---+---+---K    
+                                 /            |  
+                                /             | Ledge Overlooking 
+                               +              S   a Dark Cavern
+                               |             
+                               |                       
+        Voralia'sTears--+  G---+          Underdark   
+                         \ |    \             | 
+                          \|     \          C | 
+                           +      +         a + 
+                                 /          v |   
+                                /           e |   
+                               +              + 
+                                \             |
+                                 \            |
+                                  +---+---+---O   
+                          A Rocky         |   |
+                           Path Through   |   |  
+                             Sparse Woods +---+
+                                            
+
+G - Voralian Guard
+K - Knocked-out dark-elf, Maichka (mercenary cluster signet, two-handed frost-covered broadsword)
+S - Sorriliana the elven mage (camo) (Circlet with a single moonstone)
+O - Orc (thin black belt hung with many pouches)
+
+Source: http://wiki.qhcf.net/index.php?title=The_Rocky_Paths&oldid=4999
+Revision: 4999

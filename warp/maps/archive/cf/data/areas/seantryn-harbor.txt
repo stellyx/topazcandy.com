@@ -1,0 +1,75 @@
+Seantryn Harbor
+===============
+
+           ArythOcean
+               |
+      Coastal--+
+               |
+     Wetlands--+--+
+                  |
+                  + The Seantryn Bay
+                  |
+                  + 
+                  |
+                  +--+--+
+                        |
+                        +
+                        |
+                        + The Outer Seantryn Harbor
+                        |
+                        +--+ p
+                        |  |/
+                        +--+--+
+                        | The Seantryn 
+                        +   Harbor
+                        |
+    The Seantryn Harbor +
+                        | 
+                        |
+                 Aturi Timberlands
+    
+                                 + The Back of the Shipyard
+               The Northern Pier |
+                        P--+  +--+     B
+                        |  |     |     |
+                        +--+--+--+--+--+--+--nw to SeantrynModan
+                              |     |
+                           C--+     +       
+                   A Mid-Sized      |\     
+                                    | +=SeantrynSewers
+                                    |        
+                                    |  + 
+                                    |  |  The Barracks 
+                     Ship     +--+--+--+
+                            A Pier  |
+                                 +--+--+
+                                    |  | The Barracks
+                                 +--+  +
+            The End              |  |
+             of the  +--+--+--+--+--+--+--+--ww to SeantrynModan
+              Main Pier |        |  |
+                        +--+     +--+  + 
+                    A   |   \       |  | The Barracks
+                  Large +    1      +--+
+                    Ship            | 
+                              +--+--+--+
+                             A Pier |  | The Barracks
+                                    +  + 
+                                    |\
+                                    | +=SeantrynSewers
+                 The End            |
+                 of the +--+--+--+--+--+--+--sw to SeantrynModan
+                Southern   |        |  |
+                  Pier     +--+     +  D
+                        Warehouse   |
+                                    +--+
+
+
+1 - A Richly Furnished Cabin - Windfinder (bowl of winds)
+P - The End of the Northern Pier
+D - The Dockmaster's Office
+B - The Boat Shop
+C - Captain (captain's hat)
+
+Source: http://wiki.qhcf.net/index.php?title=Seantryn_Harbor&oldid=5107
+Revision: 5107

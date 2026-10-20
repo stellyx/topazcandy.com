@@ -1,0 +1,59 @@
+Hidden Forest
+=============
+
+Hidden Forest
+Suggested Levels: 20-35
+
+                  Forest of
+                   NoWhere
+                      |
+                      B--+--+--+--Galadonian Settlement
+                      |     |
+                +--+--+     +
+                |
+                +
+                |
+                +
+                |                Within the Midst
+   Past         +        +--+    of the Woodlands
+   Shadow       |        |  |
+   Grove--+--+  E     +--+  +--------?--+ &#160;? = mixed exits (W=S,E=W,S=E)
+          |     |     |  |           |  |
+          +--+--+--+--+  +           |  |  +--+
+             =      Western          |  |  |  |  Eastern
+                   Woodlands         +--+--+--+ Woodlands
+                                              |
+                                              +
+                                              |
+                                        +--+--C
+                                        |     |
+                                        +     T
+                                        |
+                                 Willow +--+--+<-+
+                                   Tickets    |  |
+                                              +--+       +--+=-S
+                                              |         /
+                                              +--+  +  +     P     M
+                                                 |  |  |     =     =
+                                                 +=-+--+--+--+--+--+=-O
+                                                       | Castle =
+                                                       +--+     A
+                                                  +--+--+ |
+                                                  |     | |
+                                                  F     + +
+                                                        |/
+                                                        +
+
+A - Colossus, the Troll Assassin [Hidden]
+B - A Bend in the Dark Path
+C - An Obscure Clearing
+E - The Entrance to the Forbidden Forest
+F - The Evil Form (ancient black steel key)
+M - Mallon, the Giant Troll(banded copper leg-plates)
+O - One-Eyed troll ((G)shiny bronzed plate)
+P - Prometheus, the Mystical Troll (chest with troll-hide boots, open with key from F)
+S - Trollmaster's Study
+T - Trollmaster ((G)trollmaster's flail)
+
+Source: http://wiki.qhcf.net/index.php?title=Hidden_Forest&oldid=4981
+Revision: 4981

@@ -1,0 +1,65 @@
+The Grove
+=========
+
+                                            F--F--+-*
+                        A Well Shaded Field |  |
+                                            F--F
+     A Cave                                 |  |
+       /                        P--J--4--H--G--G
+      +                        /|  |\ |  |\ |  |            The Void - leads to The Past Grove (in The Past)
+      |/  /                   1 |  | 3|  | 5|  |              |
+      1--3->4                   |  |  |  |  |  |              + Clearing in
+      |  |                   N--P--G1-A--M--O--A--R-*        /        the woods
+     \|  v                  /  /|  |  |  |  |  |  |         + Secret Tunnel
+   @--2->G1                @  2 |  |  |  |  |  |  |        \|
+      v                        G2--G--F--B--B--L--G--G      5
+      G2                        |  |  |  |/ |/ |  |  |
+                                G--C--B--D--D--B--Z--G
+                                |  |  |  |/ |/ |  |  |
+                                G--T--B--D--D--B--Q--G
+                                |  |  |  |  |  |  |  |
+                      Aldevari--t--G--W--B--B--E--G--G
+                                |  |  |  |  |  |  |
+                              W +  G--A--I--K--A--+ The Tool
+                              O |  |  |  |  |  |  |    Maker's Wagon (stuff)
+                              O +  |  G--G--G--G  +     u
+                              D |  |              |     |
+                              L + Thyrrien's      +     +
+                              A |     Shrine      |     |
+                              N + T               +   +-U
+                              D | R               |   |
+                                + A               +-+-+
+                                | I                   +
+                                + L                   +
+                                |                     |
+                           Eastern Road          Eastern Road
+
+* = Secret passages into the undergrowth, leading to Keep of the Righteous
+
+A = The Gathering Place
+B = Before the Circle of Stones
+C = The Great Ash Tree
+D = Druid's guild
+E = The Altar to Earth
+F = The Altar to Fire
+G = The Grove
+H = The Herbary (buy herbs)
+I = The Great Hickory Tree
+J = The Water Wheel
+K = The Great Elm Tree
+L = The Altar to Air
+M = The Great Maple Tree
+N = The Natural Spring
+O = The Great Oak Tree
+P = The Pond
+Q = The Great Beech Tree
+R = The Roasting Pits
+T = The Great Willow Tree
+t = Traveler's Camp
+U = Crawl north to Rangers Guild
+u = Rangers Guild
+W = The Altar to Water
+Z = The Great Birch Tree
+
+Source: http://wiki.qhcf.net/index.php?title=The_Grove&oldid=4971
+Revision: 4971

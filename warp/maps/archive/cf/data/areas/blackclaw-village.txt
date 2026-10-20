@@ -1,0 +1,79 @@
+Blackclaw Village
+=================
+
+=== Blackclaw Fort ===
+
+
+A small sign is nailed to one of the posts:
+        Written by Yanoreth for the exclusive use of Carrion Fields
+        Copyright 1998, all rights reserved by the author.
+        This area MAY NOT be distributed to other muds without
+        express permission of the author. (yanoreth@carrionfields.org)
+
+
+    			      EasternRoad
+                                   |
+                                 F +
+                                 e |
+                                 n +
+                                 c |
+                                 e +
+                                   |
+                                +--+
+                                |
+                                +
+                                |
+                   Wide Path +--+
+                             |
+Voralia'sTears         A  1  +  2  A
+|                      =  |  |  |  =  
++-+--+              4--+--+--+--+--+--5	
+River|                 |     |     |
+     +--+--+--+     3--+ The Fort  +--+            +--+ Ranger's Guild
+      Path    |        |           |               |
+              +--+--+--+           +--+         +--+
+                       |           |     Narrow | Path
+         Temple  +--+--+           +--+---------+
+        and Alter      |           |
+                    +--+--+--+--+--+--+
+                       |  |  |  |  |
+            A-P Guild--+  +  +  +  + Crumbling Wooden Shack    
+		       
+
+                        2nd Lvl	       	               	  
+       	 The Fort     Thieves' Guild   	      3rd Lvl
+             |            |
+      2st B--+--M  3rd +--+--+                +--+--+
+      lvl\|  |  |     \|  |  |                |  |  |
+          +--+--+      +--+--+- Warrior's     +--T--+
+          |  |  |     /|  |  |    Guild      /|  |  |
+          6--+--7   1st+--+--+             2nd+--+--+
+                          |   	    
+		    Assassins' Guild
+
+
+
+
+1 - The Smokehouse
+   *a ball of pemmican, some jerky
+2 - The General Store
+   *a small water flask, a small leather bag, a small covered lantern
+3- Leather Braider's Tent
+   *pair of braided fore&hindpaw wraps, braided leather gloves, braided leather tail wrap,
+   an intricately braided belt, an intricately braided bracelet
+4 - Tavern Of the Red Lion
+   *a bottle of bubbly barkshack ginger mead, a glass of fiery honey wine
+5 - The Poisoned Cup
+   *a mug of bitters, a cup of bitter merlot
+6 - Armor Shop
+   *Padded cloth leggings, plain leather vest
+7 - Weapons Shop
+   *A simple quarterstaff, a plain shortsword
+
+A - The Abondoned House (Ghosts (aggro) enter house at night.)
+B - Bank
+M - Mercenary Captain: martial artist, covert operator, weapons specialist
+T - Trainer
+
+Source: http://wiki.qhcf.net/index.php?title=Blackclaw_Village&oldid=5042
+Revision: 5042

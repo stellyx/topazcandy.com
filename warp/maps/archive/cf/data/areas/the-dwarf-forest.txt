@@ -1,0 +1,69 @@
+The Dwarf Forest
+================
+
+Created by Thror and Pico
+
+                                        Crossroads
+                                             |
+                                 Crossroads--+
+                                             |
+                                             +
+                                             |
+                                             +
+                                             |
+                                             +     +-+-+-+-+ A trail in the
+                                             |     |       | dwarf forest
+                                             +     W       +
+                                             |             |
+                                             +             +  
+                                             |             |
+                                 Ostalagiah--+--+--+       +
+                                             |     |       |
+                                     Virgin Forest +--+--+ +
+                                                          \|
+                                                        O--+--TabershawsKeep
+                                                        |  |
+                                                        +  +
+                                                       /   |
+                                                      +    +
+                                                           |
+                                                           +
+                                                           |
+                                                           +
+                                                           |
+                                                           +
+                                                           |
+                                                           + Paths in
+                                                           | dwarf forest
+                                                           +
+                                                           |
+                                                           +
+                                                           |
+                                                           +
+                                                           |
+                                                           +
+                                                           |
+                                                           +
+                                                           |
+                                                           +
+                                                           |
+                                             +             +
+                                             |\            |
+                                             | \           +
+                                          +--+-T\          |
+                                          |      +--+   +--+--TheDryRiverBed
+                                          |          \  |
+                                          |           \ +
+                            Frozen Gorge--+            \|
+                                         /              +
+                                        +   
+                                        |
+                                        +
+                                        |
+                                  FrigidWastelands
+                      
+O - Exiled Orc Shaman (a demon-headed pendant)
+W - By the beautiful waterfall
+
+Source: http://wiki.qhcf.net/index.php?title=The_Dwarf_Forest&oldid=5028
+Revision: 5028

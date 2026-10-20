@@ -1,0 +1,117 @@
+Darsylon
+========
+
+This area was written in March of 1997 by Laurella.
+The original concept of Darsylon was created by
+Jeff Spurlin, and is used with permission.
+
+This area was designed for use by Carrion Fields
+only.  Any other use without express written consent
+from both the designer and Mr. Spurlin is 
+prohibited.
+
+Special thanks go out to all the Immortal Staff of
+Carrion Fields, for answering my stupid questions
+and such, without which this area wouldn't be possible.
+
+                                                -Laurella
+
+
+                 MountCalandaryl   HIGH
+                 LOW    |        N     S
+                        T         \     \
+           \           \|          +--+--+---+
+            +--+--+-----+          |\    |\  |\
+            |           |          |     |   |
+      T--+--+           +--+       |     |   |    A platform in the
+            |             \|       |     +   |    branches of an
+            +--+--P        +       |     |   |    Ironwood tree
+            |              |       |     |   |
+            |  +--H        +       +-----+   |
+           \|  |          \|       |\    |   |
+      W--+--+--+--A  2     +     I |     | J |
+            |       \|     |      \|     |  \|       + A simple cell
+            +        +     +       +-----+---+       |
+           \|        |     |     B |\     \  |\      + A guard post
+      R--+--+--M--M--C--G--G      \|         |        \
+              \|  |  |  | \|       +---------1         1
+               M--M--C--G--G        \         \
+                     |    
+                     +    
+                     |    
+                     +    
+                     |    
+                     +    
+                     |    
+                     +--E 
+                        | 
+                        + 
+                        |  
+
+                 TheValeofArendyl
+
+2 - To the Palace
+A - The Temple of Darsylon (pit, healer)
+B - Bard's Guild                
+C - The Center of the Grand Marketplace
+E - The entrance to a forest valley        
+G - The Grand Marketplace
+H - Healer's guild                         
+I - Invoker's Guild (Shadow Sword of Scanlon & small Bag of Holding)
+J - Conjurer's Guild
+M - The Grand Marketplace
+N - Transmuter's Guild
+P - Paladin's guild                        
+R - Ranger's Guild
+S - Shapeshifter's Guild
+T - Thieve's guild                         
+W - Warrior's guild                        
+
+
+PALACE, 1st Floor:
+                      /
+                     3 A spiral Staircase
+                    /| 
+        The Royal +--+--+ The Dining Hall
+        Ballroom     |
+                     |  + The Parlor
+                     |  |
+                     +--+--+ The Audience Hall
+                     |  |
+                     +  + The Palace Library
+                     |
+                     2
+
+         The before the gates of Darsylon Palace
+
+
+2nd Floor: 
+
+                       +
+                      /|
+                     3 |
+                    /| |
+                       |
+                    G-=+=-G  G - A Guest Bedroom
+                       |
+                    G-=+=-G  + Princess Elaeriella's Chambers
+                       |     =
+                    G--+-----+=-+ The King's Chambers
+                             =
+                             + Lord Danellan's Chambers
+
+Cellar:                       
+                      /
+                     3
+                    /|
+                   +
+                   |
+     The Palace +--+--+ The Royal Wine Cellar
+     Kitchen       |
+                   + 
+                   = (No magic rooms)
+                   +
+ A guarded Antechamber (chest)(pass door DT!)
+
+Source: http://wiki.qhcf.net/index.php?title=Darsylon&oldid=4985
+Revision: 4985

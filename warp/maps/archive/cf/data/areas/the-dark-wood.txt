@@ -1,0 +1,56 @@
+The Dark Wood
+=============
+
+In a crude hand is carved:
+
+"Inferno" (c) 1995 by Andy Smith
+Inspired by Dante and the art of
+Tom Phillips.
+
+
+            A     D--D
+            |     |  |
+            D--D->D  D
+               |  |
+            D--D  D--D--1--2--3--H-- AnteHell
+            |  |     |
+         D--D  D--D  D
+            |     |  |
+            D  D  D  D--4
+               |  |
+      D--D     D--D  D--D
+      |  |     |  |  |
+      D--D--D--D  D--D  D--D    Trap
+      |        |        |  |     ^
+   S--D     D--D     D--D  D--?--D     D--D
+            |           |     |  |     |  |
+         D--?--D--D  D--D  D--D  D     D  D--E
+         |     |  |  |  |  |              |
+         D--P  D--D--D  D  D     D--D     D
+         |     |           |        |     |
+         D--D--D        D--D--D--D  D--D--D--E
+                        |        |           |
+                     D--D        D--D--D     D--E-- KhalidRiver
+                     |           |  |  |     |      
+                    @C@       D--D  D  D--D--E
+                              |  |
+                              D--D
+
+To entrance from NT recall spot: 3s4e5sd13w2n2unw
+
+? - Randomizers
+C - DEATH TRAP (you lose your life and gear if you go here)
+D - The Dark Wood
+E - Edge of the Dark Wood
+H - Atop a dark hill?
+I - The Infernal Gateway
+P - Stagnant pond
+S - Sunken barrow mound, wight (blessed obulus for Charon)
+A - Lost Alchemist
+1 - Base of a steep hill, agile leopard
+2 - The steep hillside, ravenous lion
+3 -  , wolf
+4 - clearing in the Dark Wood, nomad
+
+Source: http://wiki.qhcf.net/index.php?title=The_Dark_Wood&oldid=5124
+Revision: 5124

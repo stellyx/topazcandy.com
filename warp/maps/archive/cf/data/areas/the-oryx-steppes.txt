@@ -1,0 +1,77 @@
+The Oryx Steppes
+================
+
+    The Oryx Steppes
+    Suggested Levels: 10-51
+    
+    The Oryx Steppes was written for Carrion Fields by Proserpina in the
+    year 2000. Contact the author with queries about its use outside of
+    Carrion Fields. All rights reserved.
+    
+    My gratitude to all the immortals of Carrion Fields for helping the
+    process of bringing this area into fruition through the various stages,
+    especially to the following individuals: Agathocles, Nepenthe,
+    Savraeth.
+    
+    Finishing touches and final revamps, updates and so forth done by Grumorum,
+    also in 2000.
+
+                       +
+                       |
+                  +=+--+
+                    |  | DesertOfAraile
+                  +=+--+     |          
+                 /  |  |     +          
+                + +=+--+     +-+        
+               /       |       |        
+              1   +-+--+     +-R       
+                       |     |          
+                +-+-+  +     +-+        
+                | | |  =       |        
+                + A +  +-+-+-+-+        
+                |   |        |          
+              + +-+-+      +-+-+        
+             /| | |        |   |        
+            2 +-+-+-+      +   +        
+                    |      |   |        
+                    +-+--+ + B-+-+
+                    | |  |   |
+                    + +  +---+-+
+                    |
+                    n-+--+
+                    
+    
+    
+                      +        +
+                      =       /|
+                  +=+-+-+    + +
+                    |   |      |
+                    =   |      +=+-+-+
+                        |        =   |
+                        |        +   |
+                        |            |
+                        1------------+-+ 
+                       /=            | |
+                +     + G-+          + |
+                |     |    \           |
+                O=+   +     +      2---+
+                |     |     |
+                +=S-+-+     +-+
+                              |
+                            +=I
+
+A&#160;:Food Merchant
+R&#160;:Ruqqiyah (?)
+n&#160;:Kessiqa native (a versatile rustic cleaver)
+B&#160;:Bishr (stoneshatter and buffet) (G, H a suit of blue-green jadite, (G) an ornately carved jadite flail)
+O&#160;:Omran ar-Ghazi
+G&#160;:Grand Vizier
+I&#160;:Ifrit (Fire immune)
+
+== TODO ==
+
+Name the rooms, remember how to get down, list any interesting mobs,
+Explain how it all changes at night time.
+
+Source: http://wiki.qhcf.net/index.php?title=The_Oryx_Steppes&oldid=5037
+Revision: 5037

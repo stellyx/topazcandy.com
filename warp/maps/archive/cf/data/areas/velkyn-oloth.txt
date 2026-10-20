@@ -1,0 +1,76 @@
+Velkyn Oloth
+============
+
+Velkyn Oloth
+Suggested Levels: 20 - 51
+
+It is of black rock worn smooth by countless years.  Someone has
+engraved letters to its side:
+What once was Dol Guldur, is no more...
+
+Area redone in 2001 by Mayesha.  Original by ShadowDancer.
+To be used on Carrion Fields only.
+
+
+                       Aratouldain
+                             |
+                             +
+                             | A Path through Ar'atouldain
+                             +--+        (dead tree)
+                                |
+                                +
+                                = Before a Small Hill
+                                +
+                                |
+                               +--+--+
+                              / |   /
+                             1--+--+
+                             |  =  |
+                             +  +  2
+                                /
+                              [1]
+
+
+     K--K--K           E     P           A     A           L
+     |   / |           =     =           |   / |           =
+  M-=+-[1]-+=-E     S-=+--+--+=-X     A--+-[3]-+--A        |
+     |     |           |  /  |           |  |  |           =
+     +--G  +           +[3]  +           +--+--+        +--H=-C
+     |     |           |   / |           |4/|  |        |  |
+  I-=+--+--+=-E     R-=+-[2]-+=-D     A--+--+--+--A     |  | /
+     =  /  =           =     =           |     |        +-[4]
+     T[2]  E           B     W           A     A       /
+                                                      /
+                                                  Underdark
+
+1 - Well
+2 - Corpse
+K - Kitchen
+E - Wood-elven Prisoner (heavy steel manacles)
+T - Imprisoned Thief
+I - Imprisoned Wood-elf Patroller (heavy steel manacles)
+M - Demented Madman
+G - Sub-commander of the Guards (black breastplate, black steel helmet, black iron leggings, pair of
+       fine black leather boots, black silk cape adorned with a blood-red spider, wide black leather
+       belt, black iron broadsword, black iron shortsword)
+W - Wilted Corpse (torn green cape embroidered with silver
+       thread)
+D - Disguised Invoker ((G)diamond dagger named 'Light of Redemption')
+    Disguised Paladin (small pendant in the shape of a silver phoenix , (G)fiery mithril sabre named
+       'Phoenix Edge')
+X - Imprisoned Mercenary (arm bands bearing the insignia of two crossed swords)
+P - Imprisoned Paladin
+S - Imprisoned Shapeshifter (necklace of wolf fangs)
+R - Imprisoned Ranger (wide ring rimmed with razor sharp spikes)
+B - Black Mold
+A - Sleeping Areas: Elite Guards (some sleeping)
+H - High Guard [Assassins X2] (black hooded silk cloak, black studded leather vest, pair of fine black leather boots,
+       black iron shortsword)
+C - Carmnor, the Commander of the Guards (red-trimmed black adamantite plate boots, (H)smooth ruby bracer engraved with
+       a spider, (H)double-bladed battleaxe named 'Scream of the Damned')
+    Saz'udyn, the Mistress of Velkyn Oloth ((G)golden ring with a spider-shaped ruby, pair of high-heeled black leather
+       boots flowing robe of ethereal black silk)
+L - An Infernally Hot Dead-End: A huge magma para-elemental
+
+Source: http://wiki.qhcf.net/index.php?title=Velkyn_Oloth&oldid=5000
+Revision: 5000

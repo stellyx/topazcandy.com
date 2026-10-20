@@ -1,0 +1,86 @@
+Aturi
+=====
+
+                      SeantrynModan
+                           |
+                           +    SeantrynSewers            A
+                           |    =                           t
+                     H     +    +                             u
+                     a     |    |                               r
+                     r     +    +  Smuggler's                     i
+                     d     |    |
+                     a   +-+    +---+  Tunnel
+                     n   |          |
+                         +------O   |                                      O: Old house
+                         |       \  |
+                     R   +        = |
+                     o   +         \|
+                     a   +          +
+                     d   +
+                         |
+              +----+-----+----+---+--Caravans
+              =          |        =
+              |          |        |          +--+
+              |          |        |          |  |
+              |          |        +----------+--+--+
+              |          |        |          |  |  |         + W +         W: wandering knight
+              |          +    +=+=+----------+--+--+--+      = = =              (long titanium spear)
+              |          |    |              |  |  |  |      1-+-+         M: fat merchant
+              |          |    | +    +-+     |  |  |  |     /  = =
+              |          |    |/       =     |  |  |  |        M +
+        +--+--+     +-+  m---=H=+      H-+=+=+--+--+--+--+                 H: Inside a home
+        |  |  |     =    |      |      |        |  |  |  |                 m: Main Street
+        +--+--+     H=---m      +      |        +--+--+--+
+   I    |  |  |     |    |             =        |  |  |             I
+   n    +--+--+--=+=+    m------m------m        +--+--+             n
+           |  |          =      |      |        |  |  |
+           +--+          |      S      m        +--+--+--+--+--+           S: Smithy (armor/weapons)
+           |  |          |             |           |  |  |  |  |
+   T       +--+--+--=+=+-H             |           |  |  |  |  |    T
+   h       |  |  |       =             |           |  |  |  |  |    h
+   e    +--+--+--+       +-+           v    C---A  |  |  |  |  |    e      v: Village Green
+        |  |  |  |                     |    |   |  |  |  |  |  |           A: At the Stage
+        +--+--+--+--+----------=+=+ +  |    | 1 |  +--+--+--+--+--+        B: The Bar (food, drink)
+        |  |  |  |  |             |/   |    |/  |     |  |  |  |           C: The Common Area
+   F    |  |  |  |  |           +=H=---m---=C---B-K   |  |  |  |    F      K: The Kitchen
+   i    |  |  |  |  |           |      |              |  |  |  |    i
+   e    |  |  |  |  |           +      |          +-+ |  |  |  |    e
+   l    |  |  |  |  |                  |          =   |  |  |  |    l
+   d    +--+--+--+--+              G---m--m--m=---H   |  |  |  |    d      G: General store
+   s    |  |  |  |  |                        |    |   |  |  |  |    s
+        |  |  |  |  |                   +-+  |    +=+=+--+--+--+
+        |  |  |  |  |                   =    |           |  |  |
+        +--+--+--+--+                 +-H=---m----+      +--+--+
+           |  |  |  |                 | |         |      =
+           |  |  |  |               +=+ +     T---+      +--w              T: Tannery
+           |  |  |  |               |             |      |
+           +--+--+--+=+-------------+             |      |
+                      |             |             |      |
+                      w             +---+---+-----+---+--+                 w: well
+                           +     +                |
+                           =     |                |
+                       +-+=+--+--+                |   D
+                           =    /|                |   i
+              The          +   / +                |   r
+              Two             /                   |   t
+              Houses     +=+ /                    |
+                           |/                     |   T
+                       +-+=+----+                 +   r
+                       |   =    |                 |   a
+                       +   +    +    Thin Path    |   c
+                                |                 |   k
+                                +--+--+     +--+--+
+                                      |     |     |
+                                      +--+--+     +
+                                                  +  Hardan
+                                                  +   Road
+                                                  +
+                                                  |
+                                                  +---CeawlinKeep
+                                                  |
+                                                  +
+                                                  |
+                                           Aturi Timberlands
+
+Source: http://wiki.qhcf.net/index.php?title=Aturi&oldid=5109
+Revision: 5109

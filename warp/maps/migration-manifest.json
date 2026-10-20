@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "migration": "reviewed-additive-destinations",
+  "generated_at_utc": "2026-10-20T00:00:00Z",
+  "destinations": {
+    "current_candidate": "/warp/maps/",
+    "historical_cf_archive": "/warp/maps/archive/cf/",
+    "qhcf_ranking_items": "/qhcf/references/ranking-items.html"
+  },
+  "current_candidate": {
+    "dataset": "/warp/maps/public-town.json",
+    "topology_sha256": "0B1A909AF1190F33FD61E0822BE6A57E9ACEC3178E43C3A16A93AD81D5095C53",
+    "rooms": 204,
+    "directed_exits": 440,
+    "executable": false,
+    "status": "SEALED_OFFLINE_CONTENT_CANDIDATE_AWAITING_DIRECTION_CONFIG_AND_INTEGRATOR_ACCEPTANCE"
+  },
+  "archive": {
+    "area_pages": 170,
+    "stable_ids": "qhcf.area.* retained inside historical records",
+    "original_source_backlinks": true
+  },
+  "source_files": {
+    "topology_v3_sha256": "D217977F74026F8A4EF90CFFC11DF25AD5AADE90EA8D1E85C73AA0CD2B5DDE60",
+    "final_status_sha256": "47A4A86E80C6264F9865FFBD1BE1CD6C9C96F1E6EA3BFF6D38301957C333EFD0",
+    "directions_analysis_sha256": "55C2750C27AA58CBF2ABEF763E8465DF80DFC3B4605A31400C1938445C476883"
+  },
+  "protected_paths": [
+    "/qhcf/references/ranking-items.html",
+    "/qhcf/references/ranking-items.json",
+    "/qhcf/references/ranking-items.csv",
+    "/qhcf/references/ranking-items-SOURCE-NOTES.md"
+  ],
+  "legacy_redirects_installed": false
+}

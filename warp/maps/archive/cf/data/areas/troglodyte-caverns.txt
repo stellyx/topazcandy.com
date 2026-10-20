@@ -1,0 +1,48 @@
+Troglodyte Caverns
+==================
+
+Roughly etched upon the mountain wall is a message. The message reads as
+follows:
+In the year of 2003, Lord Beroxxus created these lands for the Carrion
+Fields Mud. Use of the Troglodyte Caverns is prohibited without written
+consent of the author.
+
+Traveller
+     |
+     +-+         R-R               D1-B D2/U6 +-+-+
+       |         |                  | | |     |   | 
+       +-+     +-R                  + +-+-+---+ C=E
+         |     |                    | | |     |   |
+        U1-+-+-+-U2-+ q            U5-+ D3/U7 +-+-+
+         |       |  | |
+         |       +  +-+-q
+         |       |    |     
+         +       +--+-+-q                 S
+         |       |    |                   =
+         +-+-+ q-U3   F-F         +-D6  +-E
+             |   |      |         | |   |
+             +   +  F-F F         + +-+-+-+-+-+
+             |   |  | | |         | |     |   |
+           +-+-+-+--F F-F        D5-D7  +-+ +-+
+           |   |                        |   |
+       q-+ +   |                     D8-+ +-+-+
+         | |   U4                         |   |
+         +-+             D4  U8-+         q   q
+                          |   | |
+                          +-A-+ q
+     
+= - Door
+U#- Entrance to up. Leads to entrance to down of same number. 
+D#- Entrance to down. Leads to entrance to up of same number.
+S - Trogdolyte Seer
+q - Sleeping Quarters
+A - Arial Corpse (set of talon guards, set of wing guards)
+F - Fungus Grove
+E - Elite Guard(s)(aggressive)(x2 guarding the Chief)(Bone mask)
+  - Minotaur bodyguard (minotaur gear)
+B - Adventurers
+C - Trogdolyte Chieftain
+R - Refuse Room
+
+Source: http://wiki.qhcf.net/index.php?title=Troglodyte_Caverns&oldid=5012
+Revision: 5012

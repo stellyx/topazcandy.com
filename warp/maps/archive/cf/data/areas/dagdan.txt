@@ -1,0 +1,71 @@
+Dagdan
+======
+
+Dagdan was created for Carrion Fields by Macheath (1999).
+It shan't be used elsewhere without permission from the
+Carrion Fields implementors or from its author.
+
+             Dranettie Wood
+                   |
+                   +
+                   |
+                   +
+                   |
+                   +
+                   |
+                   +                    +-+-+
+                   |                     /
+                   +            +-+-+-A /
+                   |              |    /
+                   +          +   + N-+
+                   |          |   | |
+                   +   B  P   s t + +
+                   |   |  |   | | | |
+      Trails-+-+-+-+---+--+---+-+-+ +
+               |       |  |   | | | |
+               +-+     L Ta M-+-+-+-+-+
+               | |            |       =
+               +-+ R-R-+    +-+-+     +
+               | | | | |      | |     |
+               | | R-R +      +-+     +
+               | | | | |      |       |
+               | | R-R T      S       +
+               | |  /         |       |
+               | | /          +-+-+-+-+
+               | |/           |
+               +-+-+          +
+                   |          |
+                   +          +
+                   |          |
+                   +          +
+                              |
+                              +
+                              |
+                              +-+-+-+-+-+-NorthernRoads
+
+A - Assassins' Guild
+B - Butcher
+L - The Little Vale (cancellation potion)
+M - Mayor's Home
+N - Norman's Bar
+P - Pzandra's Smithy
+R - In the rafters
+S - Dagden's South Gate
+s - Tarni's Smithy
+T - Thieves Guild
+Ta- Tannery
+t - Thistrauk's Bounty Office
+1 - Passage to South Dairen Settlement and to the Sea of Despair
+
+
+Mayor Baram Evir is using:
+  (Glowing) a bright tunic emblazoned with the crest of Dagdan
+  the Cloak of Endurance
+  the golden band of Tanis
+  the silver band of Talis
+  (Humming) a two-bladed sword named 'Dagda' (crumbles shortly after his death)
+
+Gnomish Invoker with potions
+
+Source: http://wiki.qhcf.net/index.php?title=Dagdan&oldid=5059
+Revision: 5059

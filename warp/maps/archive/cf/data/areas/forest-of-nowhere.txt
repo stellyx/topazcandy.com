@@ -1,0 +1,42 @@
+Forest of NoWhere
+=================
+
+Forest of Nowhere
+Suggested Levels: 10-51
+
+The Forest of NoWhere was created by Twist in 1994 and Modified in 1998
+and once again in 2005 by Dreaa for Carrion Fields LLC. No unauthorized
+distribution or copying in whole or part.
+
+               ^--^--^           +--+--+     +
+               |  |  |           |           |
+               ~--~--~           +        +--+
+               |  |  |           |        |  |
+               ~--D--~        +--T--+--+--+--+
+                  |           |     |     |
+                  t           +     +     +
+                  |           |     |     |
+                  t           +     +     +
+                  |           |     |     |
+            +--+--+--+--+--+--+--+--+--+--+--+--+---E--S
+            |    /  /  /  /  /  /  /  /  /  /  /       |
+            +   B--B--B--B--B--B--B--B--B--B--B        S
+            |                                          |
+            +                                     HiddenForest
+            |
+            +--+--+--+--+--+
+            |        |     |
+            +        +     +--+--+--+--+--+--+
+            |        |     |
+            +        +--+--+
+
+B - A Blood-Encrusted Tunnel
+D - The Dock
+E - Entrance to the Forest
+S - A Secluded Path
+T - Tulpebb, Captain of the Forest Burner Faction
+t - A Trail
+~ - The Sea of Despair (redundant rooms)
+
+Source: http://wiki.qhcf.net/index.php?title=Forest_of_NoWhere&oldid=4982
+Revision: 4982

@@ -1,0 +1,111 @@
+Hamsah Mu'tazz
+==============
+
+Hamsah Mu'tazz
+Suggested Levels: All
+
+Hamsah Mu'tazz written by Andy Smith, (c) Jan 2000.  For use by permission
+only.
+
+                                                          
+                                                          Balator                        Fields
+                                                             |                              |
+                                                             |                              |
+                                      +---+---+---+---+---Outskts---+--+--+--+--+--+--+--+--+
+                                      |                      |
+                                      +                      |           C
+                                      |                      |  T        |                
+                                   +--+                    B-z--+--+--+--+-T              
+                                   |                         |        |                   
+                                   +                         |     r--r--r                
+                                   |                       A-+-J   |  |  |                
+                                   +                     +   |     r  r--r                 +
+                                   |                      \  |                             =
+                          Khalid   +                       W-+                             |
+                            River  |     +--+--+---+       | |           +           +     +--=+
+                             |     O        |      |       + |           =           |    /|
+                      +---+--+     u  T     +      +      d  |  N     +  +  c     f--+=T / =        
+                      |      |     t  |     |    j/       |  |  |     |  |  |        |  /  +       
+  EasternRoad---+--+--+---+-----+--s--z-----+------+------+--+--+--e  +--+--+  +--v--+ /       
+                             |     k  |                   |  |  |        |           |/
+                             |     t  |                   |  |  |        |           /
+                             |     s  |       P  h-+      |  |  |        +--S     D /|         
+                             |     |  +        \   |      +--+--+        |        |/ |         
+                             |     +  |      +--+--+      |  |  |    TR--+--+     +--+         
+                             |     |  |      |  |  |      |  |  |        |           |            
+                             |     |  +--+---+  O  +--+---+--+--+--+-----+---+---+---+--+--+--+--+--Seaport
+                             +   +-+  |      |  |  |      |  |  |  |     |           |            
+                             |   |    |      +--+--+      b  +  1  2  M--+-+--m-x g--+           
+                             |   |    +      |               |           |        |  |
+                             |   +    |      +-s             |           |     +--+  +-T
+                             |   |    |                      |        a--+--p     |  |         DragonSea
+                             |   |    +---------+----+----+--+           |  |     |  +             | 
+                             |   |              |         |              |  L     =                | 
+                             +-- q ----K--------w-------- | ------w----- | -------w----------------y--DragonSea
+                                 |                        +              |        =                |  (The Great Reef)
+                                 +--+    u--u--u          |              |        |     t          |
+                                    |    |     |          |              |        |    /        Tahril Mts
+                                    |    u  u--+----+-----+----+----+----+----+---+   +    (A Water-filled Cave)
+                                    |    |  |  |          |              |            |
+                                    |    u--u  u          |        i--+--+--------+---+
+                                    |       =             |              |
+                                    |       +           T-z-T            +
+                                    |       n             |              |
+                                    +--+--+   \           |              k
+                                          |G=+-+          |
+                                          +----+----+--Outskts--+----+----+----+                +
+                                                          |                    |               /
+                                                          |                    +----+----+----+
+                                                    DesertOfAraile       
+                                                           
+                                                                                                     
+
+1 - Ahkeem's Apparel Shop
+2 - Al Abbas Animal Bazaar
+a - Assassin-guild
+A - Armory
+b - Baker
+B - Blacksmith / Forge
+c - Bard Guild
+C - Conjurer's guild (Ifrit responds to questions)
+d - Bank
+D - Drunken Efreeti Inn
+e - Butcher
+f - Fish markede
+g - Boat-shop
+G - The Ghoul Tunnels
+h - Healer Guild
+i - Invoker guild
+j - Jail house
+J - Art Dealer's shop (jeweler)
+k - Ap-guild
+K - KhalidRiver
+L - Alchemist Guild
+m - Mercenary Guild
+M - Metalworkers' Guild
+n - Necromancer guild
+N - Nura's Market
+O - HEALER/ACADEMY
+p - Apothecary
+P - Paladins Guild (somewhere on that floor)
+q - Over the Khalid River (Must be flying to pass)
+r - Garden
+s - Shaman guild
+S - Shapeshifters guild
+t - thief guild
+T - Towers (locked, no-summon)
+TR- Transmuters guild
+u - Graveyard
+v - General store (Water, lamp, sack)
+W - Weapon smith
+w - In the River Canal
+x - Warrior-guild
+y - The Mouth of the River
+z - City-gate. Closed at night, cannot be opened. Can use pass door though.
+
+To Do:
+* Needs to get separated from Outskirts, Eastern Rd, and Khalid River (similar to Galadon map).
+* Proportions need to be updated and more uniform.
+
+Source: http://wiki.qhcf.net/index.php?title=Hamsah_Mu%27tazz&oldid=4967
+Revision: 4967

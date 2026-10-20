@@ -1,0 +1,65 @@
+Outside Hamsah Mu'tazz
+======================
+
+                               Balator                         FieldsOfBalator
+
+                                  |                                   =
+              +---+---+---+---+---Y---+---+---+---+---+---+---+---+---+
+              |                   |
+              | 
+              +              Hamsah Mu'tazz               
+              |            (city gate closed
+              |                at night)
+          +---+
+          |
+          |
+          +
+          |
+          |
+          +
+          |
+          |
+          +
+          |
+Eastern   |        
+ Road  ---B---  Hamsah Mu'tazz
+          |   (city gate closed
+          |       at night)
+          +
+          |
+          |
+      +---+
+      |
+      |
+      +
+      |
+      |
+  ~ ~ K ~ ~ ~ ~ ~ Khalid River ~ ~ ~
+      |
+      |
+      +---+                 
+          |             Hamsah Mu'tazz
+          |           (city gate closed  
+          +---+---+       at night)
+                  |           
+                  |           |
+                  +---+---+---S---+---+---+---+
+                              |   |           |         R
+                                              |        /|
+                            Araile            +---+---+ |
+                            Desert            |         +
+                                            Araile      |     
+                                            Desert      +--+      
+                                                           | Goblin 
+                                                           + Outpost
+                                                           |
+                                                           +
+
+B - Outside the Bahiyaa Gate
+K - Over the Khalid River (Need to be flying)
+R - Where the Ocean Meets the Rocks
+S - Outside the Gate of Sihaam
+Y - Outside the Gate of Yasaar
+
+Source: http://wiki.qhcf.net/index.php?title=Outside_Hamsah_Mu%27tazz&oldid=5036
+Revision: 5036

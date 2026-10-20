@@ -1,0 +1,26 @@
+The Eastern Road
+================
+
+                                                              BramblefieldRoad
+ GaladonOutskirts                                                    |
+        |                           Voralia's Tears                  |   Aldevari
+        |             (13E)                |  (6E)     (10E)      (3)|      |
+Galadon-A-B-B--Along the Eastern Road--+-S-+-Eastern Road+-----+---+-C-(7E)-E-(5E)-1
+        |             |        (6E)        |       |  (3)|  (4)|   | |
+        |             +          Voralia's Tears   |     |     |   +-| 
+ GaladonOutskirts A Thick Copse             Blackclaw    |     |     |
+                    of Trees                           Ostalagiah    |
+                                                                  DwarfForest
+
+             TheGrove
+                 |
+                 1-E-E-E        TheGrove
+                       |         |
+                       E-E-E-E-E-E-E-E
+                       |       |     |
+                    Drogan Hills     E-(5E)-E
+                                            |               Hamsah
+                                            E-(12E)-+-I-+--Outskirts---HamsahMutaz
+
+Source: http://wiki.qhcf.net/index.php?title=The_Eastern_Road&oldid=5027
+Revision: 5027

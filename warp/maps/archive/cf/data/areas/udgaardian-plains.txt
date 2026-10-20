@@ -1,0 +1,69 @@
+Udgaardian Plains
+=================
+
+The Plains of Udgaard was rewritten by Yean for exclusive use by Carrion
+Fields, LLC in 2007.  No distribution in any form is permitted without
+prior consent.  Thanks to all who aided with this project, especially to
+Lyristeon, Rayihn, Ysaloerye and Kastellyn, for their patient mentorship,
+advice and detailed reviews, and to Valguarnera for his superior coding.
+Suggested Levels: 1-15
+ 
+Udgaard Watchtower written by Valguarnera for Carrion Fields in 2002.  It
+is the exclusive property of Carrion Fields, and no permission will be given
+to use it elsewhere. 
+
+                      The Ancient Road to the Wastes
+                           |
+                           |     +    Chief      
+The Plains                 |     =
+ of Udgaard                |   +=+=+                      
+                           |     |             
+                           |   +=+=+  Temple        
+                           |     |    
+                           +   +=+=+        
+                           |     |                            
+                           +     +                
+                           |     |                   
+        ~R~R     +-+-+-+-+-X-+---+     maze S-d-d-d-d--The High Pass
+           ~     | | | | | | |   |    | |     |       
+Udgaard-+-+--+-+-+-+-+-+-+-+-+-R--+-+-E-t-t-t-t-
+           R~R~R~R | |           ||         | | 
+                 ~ | | R~R~R~R<--R|-R      maze                                      
+                 ~ +-+ ~          | R          E - Entrance to the Black Woods (maze)
+                 ~~R | ~          | |          X - Earth Mystic             
+                   ~~|~R-+-+-+-A--+-R-         W - Water Mystic
+                     |   | | | |  | |  maze    A - Air Mystic (roaming)
+                     +---+-+-+-+--+-R-         F - Fire Mystic
+          Encampment |   = = = =  | R          S - Spirit Mystic, A Dead Clearing in the Black Woods (after 9pm, maybe only full moon?)
+                     +---+-+-+-+--+---+-E-     R - River Nanthor (east-west current too complicated to draw)
+                     |   | | | |  | |          ~ - Approximate direction of the river current
+                     +---F-+-+-+--a-R-R-       a - altar
+                     |     | | |  |   | maze   t - A Black Woods Trail
+                     |     B W-+  +-+-R-       B - A Bend in the Narrow Path (see below)                       
+                     |                |        d - A Descending Mountain Pass                          
+                     |        1  The River Nanthor           
+                     |       /             
+        Udgaard      +  + +-+    +-1       
+        Watchtower   |  | | |    | |      
+                     +--+=+-+    +-+       
+                           / 
+                        +=+  
+                                            |
+                                        +-+-B  A Bend in the Narrow Path
+                                        |
+                                  +-+-+-+
+           (separate              |
+              area)         +-+-+-+  A Narrow Gully
+                            |                
+                            +
+                            |      
+                        +-+-+
+			|
+		    +-+-+
+                    | 
+	            +
+	            |
+		    +  A Dark Cave
+
+Source: http://wiki.qhcf.net/index.php?title=Udgaardian_Plains&oldid=4964
+Revision: 4964

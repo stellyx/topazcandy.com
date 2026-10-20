@@ -1,0 +1,464 @@
+{
+  "schema": "qhcf-source-ledger-v1",
+  "scope": "Western Road / Shadow Grove / High Tower of Sorcery",
+  "western_road": {
+    "status": "missing-from-captured-collection",
+    "note": "No map titled Western Road or literal Western Road passage was located in maps.json or reference.txt; no map, route, quest, or item record is invented."
+  },
+  "quest_status": "No quest instructions or quest labels occur in the two captured area records. Item mentions are source notes, not asserted quest rewards.",
+  "routing_status": "No command routes verified for this slice; moving exits and floor transitions remain unresolved.",
+  "areas": {
+    "grove": {
+      "title": "The Shadow Grove",
+      "slug": "the-shadow-grove",
+      "source": {
+        "kind": "current-capture",
+        "url": "http://wiki.qhcf.net/index.php?title=Shadow",
+        "permalink": "http://wiki.qhcf.net/index.php?title=The_Shadow_Grove&oldid=5067",
+        "revision_id": 5067,
+        "last_modified_display": "This page was last modified on 9 October 2026, at 03:42.",
+        "captured_at_utc": "2026-10-19T21:37:24.559Z",
+        "sha256_content": "487B5042097045BE5B732586AFF755B24A7D4FE2CEF4B85D183D6EBC4DC0267E"
+      },
+      "original": "/warp/maps/archive/cf/areas/the-shadow-grove.html",
+      "json": "/warp/maps/archive/cf/data/areas/the-shadow-grove.json",
+      "text": "/warp/maps/archive/cf/data/areas/the-shadow-grove.txt"
+    },
+    "tower": {
+      "title": "The Tower of Sorcery",
+      "slug": "the-tower-of-sorcery",
+      "source": {
+        "kind": "current-capture",
+        "url": "http://wiki.qhcf.net/index.php?title=HighTowerOfSorcery",
+        "permalink": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+        "revision_id": 5068,
+        "last_modified_display": "This page was last modified on 9 October 2026, at 03:43.",
+        "captured_at_utc": "2026-10-19T21:35:05.886Z",
+        "sha256_content": "A0E4600467D6CFCE8E64B979B3FC8C9FA6B1AAA13433CD9EE056BF33730C3FA1"
+      },
+      "original": "/warp/maps/archive/cf/areas/the-tower-of-sorcery.html",
+      "json": "/warp/maps/archive/cf/data/areas/the-tower-of-sorcery.json",
+      "text": "/warp/maps/archive/cf/data/areas/the-tower-of-sorcery.txt"
+    }
+  },
+  "entries": [
+    {
+      "area": "grove",
+      "kind": "named-map-label",
+      "source_lines": [
+        7,
+        7
+      ],
+      "source_text": "           +-+-+-+-+- semi-maze (recurring passages) to Ashes of Nowhere",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Shadow_Grove&oldid=5067",
+      "revision_id": 5067,
+      "label": "Ashes of Nowhere",
+      "area_link": "/warp/maps/archive/cf/areas/the-ashes-of-nowhere.html",
+      "link_status": "Named on captured chart; matching entrance and crossing unverified."
+    },
+    {
+      "area": "grove",
+      "kind": "named-map-label",
+      "source_lines": [
+        12,
+        12
+      ],
+      "source_text": "         | | | |   $  HighTowerOfSorcery",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Shadow_Grove&oldid=5067",
+      "revision_id": 5067,
+      "label": "HighTowerOfSorcery",
+      "area_link": "/warp/maps/archive/cf/areas/the-tower-of-sorcery.html",
+      "link_status": "Named on captured chart; matching entrance and crossing unverified."
+    },
+    {
+      "area": "grove",
+      "kind": "named-map-label",
+      "source_lines": [
+        20,
+        20
+      ],
+      "source_text": "                          Feanwyyn",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Shadow_Grove&oldid=5067",
+      "revision_id": 5067,
+      "label": "Feanwyyn",
+      "link_status": "Feanwyyn Weald is a similarly named captured area, but this chart does not establish an exact area identity or crossing."
+    },
+    {
+      "area": "grove",
+      "kind": "landmark",
+      "source_lines": [
+        22,
+        22
+      ],
+      "source_text": "$ - Room exits move",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Shadow_Grove&oldid=5067",
+      "revision_id": 5067
+    },
+    {
+      "area": "grove",
+      "kind": "landmark",
+      "source_lines": [
+        23,
+        23
+      ],
+      "source_text": "A - Before/out of the maze",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Shadow_Grove&oldid=5067",
+      "revision_id": 5067
+    },
+    {
+      "area": "grove",
+      "kind": "landmark",
+      "source_lines": [
+        24,
+        24
+      ],
+      "source_text": "C - Clearing",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Shadow_Grove&oldid=5067",
+      "revision_id": 5067
+    },
+    {
+      "area": "grove",
+      "kind": "landmark",
+      "source_lines": [
+        25,
+        25
+      ],
+      "source_text": "D - DragonTowerRuins",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Shadow_Grove&oldid=5067",
+      "revision_id": 5067
+    },
+    {
+      "area": "grove",
+      "kind": "landmark",
+      "source_lines": [
+        26,
+        26
+      ],
+      "source_text": "e - The edge of the Shadow Grove",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Shadow_Grove&oldid=5067",
+      "revision_id": 5067
+    },
+    {
+      "area": "grove",
+      "kind": "landmark",
+      "source_lines": [
+        27,
+        27
+      ],
+      "source_text": "E - ElementalTemple ",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Shadow_Grove&oldid=5067",
+      "revision_id": 5067,
+      "area_link": "/warp/maps/archive/cf/areas/elemental-temple.html",
+      "link_status": "ElementalTemple matches existing captured area title; crossing unverified."
+    },
+    {
+      "area": "grove",
+      "kind": "landmark",
+      "source_lines": [
+        28,
+        28
+      ],
+      "source_text": "L - At the edge of Land's End",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Shadow_Grove&oldid=5067",
+      "revision_id": 5067
+    },
+    {
+      "area": "tower",
+      "kind": "items",
+      "source_lines": [
+        30,
+        31
+      ],
+      "source_text": "A - A-P's (a storm giant ribcage, a storm giant skull, steel reinforced elf-skin leggings, steel reinforced dwarf-\n           skin  boots, studded elf-skin gloves, steel reinforced elf-skin armguards, a belt made from elf scalps)",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "items",
+      "source_lines": [
+        32,
+        32
+      ],
+      "source_text": "    Wicked A-P ((Humming) a monstrous axe crafted from bone)",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "items",
+      "source_lines": [
+        33,
+        33
+      ],
+      "source_text": "    Foul A-P (a disgusting dwarf-skull ball-and-chain)",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "items",
+      "source_lines": [
+        34,
+        34
+      ],
+      "source_text": "B - Bar:  a fine crystal goblet of wine(50), a steel shot of firebreather(50), steel tankard of ale(25)",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "landmark",
+      "source_lines": [
+        35,
+        35
+      ],
+      "source_text": "D - Drunken Transmuter",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "landmark",
+      "source_lines": [
+        36,
+        36
+      ],
+      "source_text": "F - Frail Man",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "landmark",
+      "source_lines": [
+        37,
+        37
+      ],
+      "source_text": "G - Diamond Golem (blocks upstairs *)",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "landmark",
+      "source_lines": [
+        38,
+        38
+      ],
+      "source_text": "M - Mirror",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "items",
+      "source_lines": [
+        39,
+        39
+      ],
+      "source_text": "N - Staves: Faerie Fog(6500), Return(20000), Invisibility(5000)",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "items",
+      "source_lines": [
+        40,
+        40
+      ],
+      "source_text": "O - Potions: Flight(100), Invisibility(250), Armor(500), Return(6000)",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "items",
+      "source_lines": [
+        41,
+        41
+      ],
+      "source_text": "P - Pills: Cancellation (5000), Water Breathing(2500), Detect Magic(500)",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "items",
+      "source_lines": [
+        42,
+        42
+      ],
+      "source_text": "S - Scrolls: Infravision (100), Translucence (2000), Return (2250)",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "items",
+      "source_lines": [
+        43,
+        43
+      ],
+      "source_text": "s - Minor Shoppies: Food, Pen&Paper, Pipes, etc.",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "items",
+      "source_lines": [
+        44,
+        44
+      ],
+      "source_text": "W - Wands: Continual Light(2500}, Return(20000), Wall of Fire(5000)",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "landmark",
+      "source_lines": [
+        45,
+        45
+      ],
+      "source_text": "x - Xenodochium",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "named-map-label",
+      "source_lines": [
+        78,
+        78
+      ],
+      "source_text": "   +  +     +     +  +                +  s     +     +  c    Eil Shaeria",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068,
+      "label": "Eil Shaeria",
+      "area_link": "/warp/maps/archive/cf/areas/eil-shaeria.html",
+      "link_status": "Named on captured chart; matching entrance and crossing unverified."
+    },
+    {
+      "area": "tower",
+      "kind": "items",
+      "source_lines": [
+        86,
+        86
+      ],
+      "source_text": "c - Catdog (studded black leather collar)",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "landmark",
+      "source_lines": [
+        87,
+        87
+      ],
+      "source_text": "s - Minor shadow demon",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "items",
+      "source_lines": [
+        96,
+        96
+      ],
+      "source_text": "A - Archmage ((Glowing) a multi-faceted prism, iridescent robes of the finest silk, (G) a glyph of major warding)",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "items",
+      "source_lines": [
+        97,
+        97
+      ],
+      "source_text": "C - Master Conjurer ((G)the mask of Arg'har Ul'vaah, a robe of fine blue silk, a sash of fine blue silk)",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "items",
+      "source_lines": [
+        98,
+        98
+      ],
+      "source_text": "I - Master Invoker (a robe of fine red silk, a sash of fine red silk, (G)(H) the orb of the elements)",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "items",
+      "source_lines": [
+        99,
+        100
+      ],
+      "source_text": "L - Librarian (an embroidered green robe, thick-covered grimoire, well-used book, thick tome, dark and sinister book,\n       ancient book, relatively new book, dust-covered tome, very lengthy book)",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "items",
+      "source_lines": [
+        101,
+        101
+      ],
+      "source_text": "N - Master Necromancer (a robe of fine black silk, a sash of fine black silk, (H)dark blade etched with runes)",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "items",
+      "source_lines": [
+        102,
+        102
+      ],
+      "source_text": "S - Master Shapeshifter (a robe of fine green silk, a sash of fine green silk, (G)(H)a runed staff)",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    },
+    {
+      "area": "tower",
+      "kind": "landmark",
+      "source_lines": [
+        103,
+        103
+      ],
+      "source_text": "T - Tiamat's Lair",
+      "source_url": "http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068",
+      "revision_id": 5068
+    }
+  ],
+  "related_maps": [
+    {
+      "from": "grove",
+      "label": "HighTowerOfSorcery",
+      "href": "/warp/maps/archive/cf/areas/the-tower-of-sorcery.html",
+      "status": "named on source chart; crossing and matching entrance unverified"
+    },
+    {
+      "from": "tower",
+      "label": "Shadow Grove",
+      "href": "/warp/maps/archive/cf/areas/the-shadow-grove.html",
+      "status": "named on source chart; crossing and matching entrance unverified"
+    },
+    {
+      "from": "tower",
+      "label": "Eil Shaeria",
+      "href": "/warp/maps/archive/cf/areas/eil-shaeria.html",
+      "status": "named on source chart; crossing and matching entrance unverified"
+    }
+  ]
+}

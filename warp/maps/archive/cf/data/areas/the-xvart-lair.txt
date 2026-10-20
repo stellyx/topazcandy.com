@@ -1,0 +1,74 @@
+The Xvart Lair
+==============
+
+You see some words carved into a smooth rock by the wall.
+ 
+Area discovered by Pico, Implementor of Thera, September, 1999.
+
+Suggested levels:  10 - 25
+
+                                                                                   C        
+                                                                                  /
+                                       +----T----+           +            [A]    B--L
+                                      /          |           |    +       /      |
+                            +--O--+--+           |   P--P----+   /|      +       +
+                            |  |        +-----+  +   |  |    / [A]|     /        |
+Ocean Floor of             SPN—P        |    /   |   |  |   +-----+    +----+----PT
+ArythOcean                  |  |        W   +----+   |  |
+      |                  +--+--+        |   |    /   |  |    T         CoastalPlains
+      +    +            /        R*--+--+   O   +----P--PT  /|                 |
+      |   /| +         /                    |              / P--P              +
+      +--+ |/|     +--+----CS               +--B--O--O----+  |  |        +--+ /
+           U |       /     |                      |          P--P--+    /   |/ 
+         R2--+      /      O                      +                |   /    +
+             |  T--+       |        S--X          |                +--+
+             + /   |  +    S--+    /              +              
+             |/    + /|       |   /               |
+             +     |/ +--+    +--+                +--R1
+                   T     |    |  |
+                         R    S--+ 
+                                /
+                               /
+                              J
+                              |
+                              Y
+
+
+B – Boulder
+C – Xvart Chief (tigerseye pendant, compact iron flail)
+    w/ Lockbox (Trapped[Poison for 20 hrs] - carved garnet, silver bar, small pile of
+                 copper coins, tiny blue-white diamond, pale blue gem
+                 sparkling green gem)
+J – Jade Elf Youth (pair of crude chains, pair of crude chains)
+L – Xvart Lieutenant (hatchet)
+N – Gold Nugget – Shock Trap
+O – Stocky Xvart (small, wide-bladed sword)
+P – Pool – Poisoned Water (no – Stat)
+R – Xvart Raider(x2) (dark brown greatcloak, short rapier, burlap sack)
+    Xvart Raid Leader (dark brown greatcloak, officer's insignia armbands,
+                       black steel sword)
+R1- a leather knapsack: invitation from the Empress,map of Western
+                        Seantryn Modan, map of Eastern Seantryn Modan
+R2- Seaweed
+S – Slim Xvart (small leather pouch, small iron dagger)
+T – Stern-Looking Xvart (short rapier)
+U – Underwater
+W - Water
+X – Xvart Shaman (small jade ring, black satin robe, platinum bracelet
+                  set with numerous jewels, copper shortsword)
+    w/ Lockbox (an etched and pitted elven shortsword, white silk purse,
+                little ivory icon, jade figurine)
+Y – Beaten Young Lady (worn silk dress, pair of crude chains, pair of
+                       crude chains)
+
+Evil cousins to the kobolds, these strange creatures have taken up 
+residence in a warren of caves and caverns somewhere around Seantryn 
+Modan. None are really sure where the entrances lie, but the xvart 
+have been known to pop up and conduct lightning quick raids in several 
+places, including the jade mountains and the Aryth Ocean. They make 
+off with gold, jewelry, armor and even people! Hardier than kobolds, 
+the xvart are very protective of their lair, and will attack intruders 
+on sight.
+
+Source: http://wiki.qhcf.net/index.php?title=The_Xvart_Lair&oldid=5117
+Revision: 5117

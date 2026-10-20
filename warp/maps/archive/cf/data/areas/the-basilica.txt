@@ -1,0 +1,81 @@
+The Basilica
+============
+
+        +
+        |           
+      +-+-+           
+       \|             
+        |          u        + + + k
+        |\         |        | | | |
+        | +--------+--------+-+-+-+
+        |          |        | | |                         
+      +-+        +-+-+      + + +
+        |          |          
+      +-+        +-+-+     + +     +
+        |          |       | |    /
+      +-+          +     +-+-+   + 
+        |          |     | | |  /   
+      +-+          +     | + + +     
+        |          |     |     |
+        |      +-+-+-+-+-+-----+
+        |      |   |     |      \
+        |      +   +     +-+     \
+        |      |   |              \
+      +-+-+    | +-+-+       +-+-s-+
+       \|      |   |        
+        |      | +-+-+     
+        |\     |   |      
+        + \    | +-+-+   
+           \   |   |    
+            \  |   |    
+             \ |   |   
+              \|   | 
+               \   | + + +
+               |\  | | | |
+               | +-+-+-+-+-+
+               |   | | | | |
+               |   D + + + G
+               |
+               | +-+-+-+-+
+               | | | | | |
+Forest-+-+-+-+=+-+-+-+-+-+-+         
+Road             | | | |   
+                 +-+-+-+
+
+
+G - Gabriel
+Gabriel is using:
+<worn on body>      (Glowing) a gleaming breastplate
+<worn about body>   (Glowing) a pristine white surcoat
+<worn about waist>  a fine belt of tooled white leather
+<wielded>           a wicked lochaber axe
+
+
+D - Darellon
+Darellon is using:
+<worn on body>      a massive breastplate
+<worn on legs>      some massive steel plated leggings
+<worn on arms>      some massive steel plated armguards
+<wielded>           (Glowing) (Humming) a perfectly crafted mace
+
+s - [hidden] vicious spy (backstabs you when you enter the room)
+The vicious spy is using:
+(wielded)           a slim blade
+(dual wield)        a thin dirk
+
+u - Ulrich
+Vanion is using:
+(worn on body)      (Humming) a black enameled breastplate
+(worn on hands)     (Humming) a pair of black enameled gauntlets
+(worn as shield)    (Humming) a black enameled shield
+(wielded)           (Humming) a Tanic's dress blade
+
+k - komier
+Komier is using:
+(worn on body)      a chainmail tunic
+(worn on head)      an ogre-horned helm
+(worn on legs)      a chainmail skirt
+(wielded)           a huge battle-axe
+
+Source: http://wiki.qhcf.net/index.php?title=The_Basilica&oldid=3572
+Revision: 3572

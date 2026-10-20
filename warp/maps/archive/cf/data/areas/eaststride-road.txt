@@ -1,0 +1,46 @@
+Eaststride Road
+===============
+
+                                                                          +--Akan
+                                                                         /
+                                                                        +
+                                                                        |
+               SilverpineRoad                                        H--H
+                     |                                               |
+                     +                                         H--H--H 
+                     |                                         |       
+                     +                                +  R--R--H
+                     |                                =  |  |
+                     +                       E--E--E--E--R--R
+                     |                       |           |  |
+                     +  C  L  M  E--E--E--E--E           R--R
+                     |  |  |  |  |
+        eastern    --E--E--E--E--+=+ A small,
+        bridge          |  |  |  =    well-lit
+     VoralianCity       +--+  A  T      shrine
+                        |  | 
+                        +--+--+--+
+                        |        Behind the
+                        +          Town hall
+                        |
+                        +
+                        |
+                     +--+
+                     |
+                     +
+                     |
+                     +
+                     |
+               BramblefieldRoad
+
+E - Eaststride Road
+R - In the Rocks and Brambles
+H - Trail Through the Hills
+C - Cooper's Shop
+L - Leather Worker's Shop
+M - Mason's House
+A - Arbor House Inn
+T - Easthaven Town Hall
+
+Source: http://wiki.qhcf.net/index.php?title=Eaststride_Road&oldid=5018
+Revision: 5018

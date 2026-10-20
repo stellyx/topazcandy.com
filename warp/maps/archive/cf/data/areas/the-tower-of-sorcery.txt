@@ -1,0 +1,109 @@
+The Tower of Sorcery
+====================
+
+High Tower of Sorcery
+
+                                           N
+                                           =
+                                       W-=-+-=-O
+                                           |
+                                       P-=-+-=-S
+                                 Tavern    =    Kitchen  
+                                  +--+  x--+--x  +--+
+                                  |  |  |  |/2|  |  |
+                             M/B--D--+-=x--G--x=-+--+=-+
+                                  |  |  |  |  |  |  |
+                                  +--+  x--+--x  +--+ 
+                                        |  |  |
+                                        +--+--+
+                                        |  |  |
+                                        +--+--+ 
+                                           |
+                                           +
+                                           = 
+                                        s--A--s
+                                        |  |  |
+                                        s--+--s
+                                           |
+                                           F
+                                           |
+                                        Shadow
+                                         Grove
+
+A - A-P's (a storm giant ribcage, a storm giant skull, steel reinforced elf-skin leggings, steel reinforced dwarf-
+           skin  boots, studded elf-skin gloves, steel reinforced elf-skin armguards, a belt made from elf scalps)
+    Wicked A-P ((Humming) a monstrous axe crafted from bone)
+    Foul A-P (a disgusting dwarf-skull ball-and-chain)
+B - Bar:  a fine crystal goblet of wine(50), a steel shot of firebreather(50), steel tankard of ale(25)
+D - Drunken Transmuter
+F - Frail Man
+G - Diamond Golem (blocks upstairs *)
+M - Mirror
+N - Staves: Faerie Fog(6500), Return(20000), Invisibility(5000)
+O - Potions: Flight(100), Invisibility(250), Armor(500), Return(6000)
+P - Pills: Cancellation (5000), Water Breathing(2500), Detect Magic(500)
+S - Scrolls: Infravision (100), Translucence (2000), Return (2250)
+s - Minor Shoppies: Food, Pen&Paper, Pipes, etc.
+W - Wands: Continual Light(2500}, Return(20000), Wall of Fire(5000)
+x - Xenodochium
+
+       Second Floor                       Third Floor
+            +                                  +
+            =                                  =
+         +-=+=-+                            +-=+=-+
+            |                                  |
+         +-=+=-+                            +-=+=-+
+            =                                  =
+   +  +  +--+--+  +  +                +  +  +--+--+  +  +
+   =  =  |  |/3|  =  =                =  =  |  |/4|  =  =
++-=+--+-=+--+--+=-+--+=-+          +-=+--+-=+--+--+=-+--+=-+
+   =  =  |1/|  |  =  =                =  =  |2/|  |  =  =
+   +  +  +--+--+  +  +                +  +  +--+--+  +  +
+            =                                  =
+         +-=+=-+                            +-=+=-+
+            |                                  |
+         +-=+=-+                            +-=+=-+
+            =                                  =
+            +                                  +
+
+
+       Fourth Floor                        Fifth Floor   
+            +                                  +
+            =                                  =
+         +-=+=-+                            +-=+=-+
+            |                                  |
+         +-=+=-+                            +-=+=-+
+            =                                  =
+   +  +     +     +  +                +  +     +     +  +
+   =  =     |/5   =  =                =  =     |/6   =  =
++-=+--+-=+--+--+=-+--+=-+          +-=+--+-=+--+--+=-+--+=-+
+   =  =   3/|     =  =                =  =   4/|     =  =   \
+   +  +     +     +  +                +  s     +     +  c    Eil Shaeria
+            =                                  =
+         +-=+=-+                            +-=+=-+
+            |                                  |
+         +-=+=-+                            +-=+=-+
+            =                                  =
+            +                                  +
+
+c - Catdog (studded black leather collar)
+s - Minor shadow demon
+
+       Sixth Floor (Library)               Seventh Floor
+            L                               S--+ A N
+            =/7                                =/  |
+         +--+--+                          +---=+=--+
+          5/|                             | T /=
+            +                             |/ 6 +--I
+                                          C
+A - Archmage ((Glowing) a multi-faceted prism, iridescent robes of the finest silk, (G) a glyph of major warding)
+C - Master Conjurer ((G)the mask of Arg'har Ul'vaah, a robe of fine blue silk, a sash of fine blue silk)
+I - Master Invoker (a robe of fine red silk, a sash of fine red silk, (G)(H) the orb of the elements)
+L - Librarian (an embroidered green robe, thick-covered grimoire, well-used book, thick tome, dark and sinister book,
+       ancient book, relatively new book, dust-covered tome, very lengthy book)
+N - Master Necromancer (a robe of fine black silk, a sash of fine black silk, (H)dark blade etched with runes)
+S - Master Shapeshifter (a robe of fine green silk, a sash of fine green silk, (G)(H)a runed staff)
+T - Tiamat's Lair
+
+Source: http://wiki.qhcf.net/index.php?title=The_Tower_of_Sorcery&oldid=5068
+Revision: 5068

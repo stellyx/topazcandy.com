@@ -1,0 +1,78 @@
+Kuo-Toa Lair
+============
+
+Kuo-toa Lair
+
+         G
+        /|
+       + |
+       | |
+       + |
+         |
+         |           + A storage room (Recall)
+         |           =
+         |     A--A--A--+---------+
+         |     |                   \
+         |     A                    1
+         |     |     
+    evil E--+--A     +--+  The
+     shrine    |     |  |Spawning
+               A     +--+ Pool 	 
+               |     | (under water)
+ Fields  +-+-+-A     +  
+of kelp  | |   |     | 
+ and  +--+-+   +--+--+
+Fungi |  |     | Crude       
+      +--2     + Tunnel      
+   slaves      =
+            L--W  UnderdarkSea
+         S     |   |
+        /|     +   | +--+--+
+       V |     |   | |     |
+       2 |     +-+-+-+     +-------+ (Dry land)
+         |       |         |      /
+       +-+--+    +      C--+   +-+
+            |    |             |
+            +--+-+             +
+                               |   Undersea Tunnel
+                               +-+-+
+                                    \
+                                     +         ArythOcean
+                                      \       /
+                                       +-+-+-+
+	  
+	  
+	  
+A - An ancient tunnel	  
+E - An evil shrine, priest
+L - Kuo-toa lieutenant + 2 warriors (gate key)
+W - Kuo-toa whip + 2 warriors
+G - A statue with the name ()
+S - Sharasen
+
+                             1                             
+                            /                              
+                           =                               
+                          /                                
+                         +                                
+                      |  |  |                              
+                      |  |  |                              
+                   +--+--+--+                              
+                   |  |  |  |                              
+                   |  |  |  |                             
+                   +--+--+--+--+--+                                   
+                   |              |                         
+                   |              |                        
+                   +              +     K                  
+                   |              |     |                 
+                   |              |     |                  
+                   +--S--H        +--+--+                        
+                                                          
+
+
+K - King (Humansunder, crown of kuo-toa) (chest med defiance mithril shield)                            
+S - [Aggro, Camo] Shambling mound (poncho made from shambling mound remains)                                                       
+H - Kuo-toa high priest (plain phylactery, pincer staff)
+
+Source: http://wiki.qhcf.net/index.php?title=Kuo-Toa_Lair&oldid=5087
+Revision: 5087

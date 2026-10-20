@@ -1,0 +1,134 @@
+Keep of the Righteous
+=====================
+
+A granite stone lies here buried partially into the earth. Several
+traveler runes cover the stone, leaving a message. The message reads:
+
+Karithia created this area in 2002 for the Carrion Fields Mud. Use of this
+area is restricted without written consent.
+
+
+
++-----------------+-----------------+
+|                                   |
+|                                   |
+|                   M   B   B   B   |
+|                   |   |   |   |   |
+|           S   S   M   +   +   +   |
+|           =   =   =   =   =   =   |
+|           +---+---+---T---T---T   |
+|                   =   |   |   |   |
+|       Qa  Q   +-=-Kb  T---T---T 2 |
+|       |   |   | 1/=   |   |   |/  |
+|   Q---+---+---+---+   T---Tc--T   |
+|       |   |   =   |   |       |   |
+|       Q   Q   G-=-+   |       | G |
+|                   |   |       | A |
++           C---+-=-+---F-------I-=-O---w---+---+---+---x---+---Balator
+|                   |   |       | T |
+|     3             |   |       + E |
+|    /              |   |       |   |
+|   +---+---+---H---+   |   e---+   |
+|   |   |   |   |   =   |   |   |   |
+|   Wf  A   U   Ug  U   |   +   +   |
+|   |   |               |           |
+|   +---h               | 4         |
+|       |               |/          |        
+|   +-+-R---+-----------+           |        
+|   Archery Range                   |
+|                                   |
++-----------------+-----------------+
+|
+|
+Out to TheGrove (open bushes, crawl)
+
+
+                           Pj
+                           =
+    +---+---+          +-=-+---+-=-k
+    |       |                  |
+    +       i          +---l-=-+
+    |     2/|                  |
+    +---+---+          +---+---+-=-m
+   /                  /        =
+  4                  3         n
+
+
+M – Mess Hall
+B – Barracks
+S – Servant’s Quarters
+T – Training Grounds
+Q – Officer’s Quarters
+K – Kitchen
+G – General Store: a metal canteen (33)
+                   a small lantern (22)
+                   a leather backpack (110)
+                   soft dry rations (33)
+                   a brown hooded cloak (275)
+     Traveler (steel rapier, steel main-gauche)
+C – Chapel
+     Young Paladin (dove shaped pendant, studded leather vest, steel
+                    longsword)
+F – Before The Keep Door
+I – Inside the Gate
+O – Outside the Gate
+w – Woman and Horse
+x – Boy
+H – Hidden Assassin
+W – Weaponsmith: a large two-handed sword (1375)
+                 a large double headed maul (1210)
+                 a steel tipped spear (1100)
+                 a steel-shod staff (935)
+                 a steel battleaxe (1045)
+                 a steel dagger (550)
+                 a steel shortsword (660)
+                 a steel longsword (1100)
+A – Armor Store: a pair of steel chain gloves (550)
+                 a pair of steel chain boots (550)
+                 a pair of steel chain sleeves (715)
+                 a pair of steel chain leggings (880)
+                 a steel open-faced helm (550)
+                 a steel kite shield (825)
+                 a steel chainmail hauberk (2750)
+U – Guest’s Quarters
+R – Archers
+     Arial archer (red-oak bow)
+     Elven archer (red-oak bow)
+P – Paladins
+     Elven paladin (light blue ribbon)
+     Human paladin (dove shaped pendant)
+
+a – Shaimio (white silk gi embroidered with a green dragon, white ribbons
+             with a green streak down the middle, silver-bladed slim sword,
+             iron-bound sheath)
+b – Chez the Cook
+c – Lauthwin (studded leather vest, iron-shod staff)
+e – Tigemirs (steel chainmail hauberk, steel tail blade, steel open-
+              faced helm, pair of steel chain leggings, pair of steel
+              chain clawed boots, pair of steel chain clawed gauntlets,
+              pair of steel chain sleeves, blue tabard embroidered with
+              a golden lion, steel tipped spear)
+f – Parlimous the Weaponsmith
+g – Syris (simple wooden lute)
+h – Kharis
+i – Mysiero (round blue medallion, steel chainmail hauberk, pair of
+             steel chain leggings, steel kite shield, long flowing blue
+             cape, mithril saber)
+j – Prathemis (mithril longsword)
+k – Daurin (mithril battle axe)
+l – Gharis (signet ring engraved with a phoenix, steel chainmail hauberk,
+            long flowing blue cape, (G)mithril claymore named "Vigilance")
+m – Darius (small brown book)
+n – Phacia (blue-white gown, mithril morningstar)
+
+Other:
+Well armed guard (steel chainmail hauberk, steel open-faced helm, pair
+                  of steel chain boots, steel kite shield, blue tabard
+                  embroidered with a golden lion, steel longsword)
+
+Battlement guard (steel chainmail hauberk, steel open-faced helm, a
+                  blue tabard embroidered with a golden lion, light
+                  crossbow)
+
+Source: http://wiki.qhcf.net/index.php?title=Keep_of_the_Righteous&oldid=4970
+Revision: 4970

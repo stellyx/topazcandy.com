@@ -1,0 +1,40 @@
+Island of Corte
+===============
+
+Suggested levels:  40-51
+Be wary of aggro soldiers, all warrior specs
+
+
+               DragonSea                          +
+                  |                              /|   +-+-+
+               v--v--v                          / |   | | 
+               |  |  |                         /  |   A-+-+
+               v--v--v                        /   |     |
+               |  |  |                       /    +     +
+               v--v--v                      /     |    /
+               |  |  |                     /      |   /
+               +--+--+                    /       |  /
+               |  |  |                   /  +-+   + /
+               O--+--+                  /   | |   |/
+                  |                    /    + |   /
+   H + + +  +--+--+--+  +  +  +--+ +-+ +    | |  /|
+   | | | |        |     |  |  |  | | | |    + + / +
+   H-+-+-+-+   +--+--+--+  +  +--+ +-+ +    | |/  |
+     |         |  |        |  |  | | | |    + +   |
+   +-+-D    +--+--+--+--+--+  +--+ +-+ +    |     |
+     |      |  |  |  |     |  |    |   |    +--+--+
+   +-+-+-+--+--+--+--+--+--+--G----+-+-+
+   | | | |  |  |  |  |  |          |     
+   +-+ +-+  1  +--+--+  +-I        +
+
+D - DEATHTRAP, building collapses. Can recall/teleport out however.
+v - In the harbor
+O - The Customs house (full of officers, with weapons, gear, etc)
+1 - Goes up, to cliffs.
+I - Partially collapsed in (Captain)
+H - Healers guild
+G - Black Gate (entrance to tower)
+A - Arch-mage
+
+Source: http://wiki.qhcf.net/index.php?title=Island_of_Corte&oldid=5104
+Revision: 5104

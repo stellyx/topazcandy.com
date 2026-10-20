@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>QHCF Atlas - Galadonian Settlement</title>
+<style>
+:root{color-scheme:dark;--bg:#15120f;--panel:#241e18;--ink:#f6eee3;--muted:#c2b5a5;--accent:#e3b866;--line:#6e5b46}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,sans-serif}main{width:min(100%,74rem);margin:auto;padding:1rem}.panel{background:var(--panel);border:1px solid var(--line);border-radius:.8rem;padding:1rem;margin:.8rem 0}a{color:#adddff}h1,h2{line-height:1.15}select,button,textarea{font:inherit;max-width:100%}select,button{padding:.55rem}.controls{display:grid;grid-template-columns:1fr 1fr;gap:.75rem}.controls label{display:grid;gap:.25rem}.buttons,.anchors{display:flex;gap:.5rem;flex-wrap:wrap;margin:.75rem 0}.anchor.start{box-shadow:0 0 0 3px #82c8ff}.anchor.goal{box-shadow:0 0 0 3px var(--accent)}button:focus-visible,a:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}textarea{width:100%;min-height:4rem}code{overflow-wrap:anywhere}pre{overflow:auto;max-width:100%;padding:1rem;background:#0c0a08;border-radius:.5rem;font:12px/1.25 ui-monospace,monospace}.warning{border-left:.35rem solid var(--accent);padding-left:.8rem;color:#fff2ce}@media(max-width:390px){main{padding:.55rem}.controls{grid-template-columns:1fr}pre{font-size:9px;padding:.45rem}.panel{padding:.7rem}}
+</style>
+<link rel="canonical" href="https://topazcandy.com/warp/maps/archive/cf/galadonian-settlement-preview.html"></head>
+<body><aside class="notice" data-archive-notice><strong>Historical Carrion Fields archive.</strong> Preserved source material; not verified as current WARP gameplay. <a href="/warp/maps/">Open WARP Maps</a>.</aside><main>
+<p><a href="/warp/maps/archive/cf/">← QHCF World Atlas</a></p>
+<h1>Galadonian Settlement</h1>
+<p>Source transcription: <strong>GaladonianSettlement, revision 4980</strong>. Attribution: QHCF / DIKU-WIKI, credited map authors, and contributors.</p>
+<nav class="panel" aria-label="Source references">
+  <a href="/warp/maps/archive/cf/areas/galadonian-settlement.html">Captured graphical source</a> �
+  <a href="/warp/maps/archive/cf/data/areas/galadonian-settlement.txt">Readable text reference</a> �
+  <a href="/warp/maps/archive/cf/data/areas/galadonian-settlement.json">Source JSON</a> �
+  <a href="http://wiki.qhcf.net/index.php?title=Galadonian_Settlement&amp;oldid=4980">Original revision</a>
+</nav>
+<section class="panel warning"><strong>Source-derived directions only.</strong> Routes use only explicit printed <code>-</code>, <code>=</code>, <code>|</code>, and <code>/</code> connectors. Slash steps remain diagonal. No live traversal or cross-area boundary is asserted.</section>
+<section class="panel">
+  <h2>Plan between named source anchors</h2>
+  <div class="controls"><label>Start<select id="from"></select></label><label>Destination<select id="to"></select></label></div>
+  <div class="anchors" id="anchors" aria-label="Clickable named anchors"></div>
+  <div class="buttons"><button type="button" id="flip">Flip</button><button type="button" id="copy" disabled>Copy directions</button></div>
+  <p id="selection">First anchor click sets Start.</p>
+  <p id="summary" aria-live="polite">Choose a start and destination.</p>
+  <p><code id="grouped"></code></p>
+  <textarea id="commands" readonly aria-label="Double-semicolon copyable commands"></textarea>
+  <p id="copy-status" aria-live="polite"></p>
+</section>
+<section class="panel"><h2>Source diagram</h2><pre id="map" tabindex="0" aria-label="Galadonian Settlement source diagram"></pre></section>
+<section class="panel"><h2>Boundary and uncertainty</h2><ul><li>HiddenForest: source-labeled west stub only; crossing and matching entrance unverified.</li><li>WagonMarkedRoad: source-labeled east stub only; crossing and matching entrance unverified.</li><li>Two "Inn" labels remain annotations because their precise attachment is unclear.</li><li>The lower V/R/J/C component remains disconnected: the source prints no connector between r30c48 and the separate r30c55 plus.</li></ul></section>
+<script type="module" src="./galadonian-settlement-preview.mjs"></script>
+</main></body></html>
+

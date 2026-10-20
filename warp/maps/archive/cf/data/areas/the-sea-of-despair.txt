@@ -1,0 +1,59 @@
+The Sea of Despair
+==================
+
+                                           &#160;?     
+                    Some Rocky Foothills   /
+                                          /       
+                 +---+---+---+---+---+---+-- Trails
+                 |   |   |   |   |   |   | 
+                 |   |   |   |   |   |   |   
+     ~---~---~---R---R---R---R---b---B---+                       
+     |   |   |   |   |   |   |   |   |   | 
+     |   |   |   |   |   |   |   |   |   | A
+ X---P---~---~---~---~---~---~---~---B---+ 
+     |   |   | S | e | a |   |   |   |   | 
+     |   |   |   |   |   |   |   |   |   | B
+     ~---~---~---~---~---~---~---~---B---+ i
+         |   |   |   | o | f |   |   |   | g
+         |   |   |   |   |   |   |   |   | 
+         ~---~---~---~---~---~---~---B---+ 
+         | D | e | s | p | a | i | r |   | T
+         |   |   |   |   |   |   |   |   | h
+         ~---~---~---~---~---~---~---B---+ i
+         |   |   | N     | N |   |   |   | c
+         |   |   |/      |/  |   |   |   | k
+         ~---~---~       ~---~---~   C---+ e
+         |   |   |     N |   |   |   |   | t
+         |   |   |    /  |   |   |   |   |
+         ~---~---~---~---~---~---~---B---+
+             |   |   |   |   |   |   |   |
+             |   |   |   |   |   |   |   |
+             ~---~---~---~---~---~---B---+
+             |   |   |   |   |         
+             |   |   |   |   |         
+             ~---~---~---~---~
+                 |   |   |
+                 |   |   |
+                 ~---~---~       
+                 |   |\__|______        
+                 |   |   |      \ 
+                 Ysigrath        +
+                                 | 
+                                 |
+                         Ruins of the Deep
+
+~ - Sea of Despair                
++ - The Black Waters of the Sea
+B - Sandy Beach
+b - Small Bay
+C - Rocky Cliff
+P - Pirate Ship
+R - Rocky Beach
+X - Break in the water
+N - The Nexus Island
+
+TODO
+* Below sea needs a map
+
+Source: http://wiki.qhcf.net/index.php?title=The_Sea_of_Despair&oldid=5061
+Revision: 5061

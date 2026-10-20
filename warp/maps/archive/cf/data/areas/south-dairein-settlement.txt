@@ -1,0 +1,59 @@
+South Dairein Settlement
+========================
+
+Area created by Noldruk.
+
+                                        NorthernRoads
+                                             |
+                                             |
+                                       +-+-+-+
+                                       |
+                                       +
+                                       |
+             + P   T   + U H D C   +   +
+             | |   |   | | | | |   |   |
+ Trails--+-+-+-+-+-+-+-+-+-+-+-+-+-G-+-+
+               |   |     | | | |       |
+               +   +     M + + +       | 
+               |   |       |   |       + South
+               B   +-+   +-+   F       | 
+                   |       |           | 
+                 +-+-+     +           + Daerein
+                   |       |           |
+                 +-W-+     +-+         | 
+                           | |         + Road
+                     grove +-+-+       |
+                             |         |
+                             +         +
+                             |         |    Thin Trail
+                             +         +--+--+--+--+--+--+---AzrethForest
+                             |         | Through the Forest
+                   +-+-+-+-+-+-+-+-+-+-+
+                   |   S Dairein Road  /
+                 A +                   +
+                   |                   |
+             Trail +__+--+--+--+--+--+-+
+                   |
+            Within +
+                   |
+               the +
+                   |
+            Forest +
+                   |
+                   |
+                Feanwyyn
+
+B - Bards Guild
+C - The Trumpets Call
+D - The Dancing Needle
+F - Forge
+G - Gates
+H - The Honeyed Tongue (bakery)
+M - The Bearded Mongoose
+P - Parchment Shop
+T - Temple
+U - The Singing Turkey (butcher)
+W - Whistling Hammer
+
+Source: http://wiki.qhcf.net/index.php?title=South_Dairein_Settlement&oldid=5057
+Revision: 5057

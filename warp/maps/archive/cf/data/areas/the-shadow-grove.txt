@@ -1,0 +1,34 @@
+The Shadow Grove
+================
+
+This area was written in the year 2001, for the Carrion
+Fields Mud.  No unauthorized use is allowed.
+
+
+             +-+-+
+             | | |
+           +-+-+-+-+- semi-maze (recurring passages) to Ashes of Nowhere
+     | | | |   |   $
+ L-e-+-+-+-+-D +-E 5
+     | | | |   |   $
+         4-+-+-+-1-+
+         | | | |   $  HighTowerOfSorcery
+           | | |   2  |
+         4<+-+-+    1<C>3 2 (Shifting exits)
+           | | |      |   $
+           +-+-+------+---A-~~~~~~ (going in look for deepening shadows until you stand at A (3 exits),
+             | |      |     (Maze)  and signs of life and trail to get out.)
+             +-+------3     ~~~~~~
+                              |
+                          Feanwyyn
+
+$ - Room exits move
+A - Before/out of the maze
+C - Clearing
+D - DragonTowerRuins
+e - The edge of the Shadow Grove
+E - ElementalTemple 
+L - At the edge of Land's End
+
+Source: http://wiki.qhcf.net/index.php?title=The_Shadow_Grove&oldid=5067
+Revision: 5067

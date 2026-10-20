@@ -1,0 +1,38 @@
+Glauruk Spawning Ground
+=======================
+
+Level 12-18
+
+           Feanwyyn
+               |
+               +--+
+               |  |
+               B--+--+--P
+               |  |
+               B--+--+--+
+               |  |  |
+               B--B--B--K
+               |     |  |\
+               +     B  M S--S
+                     |
+            NW-+--G--+
+            |     =
+         ---+  HighLords
+         v  |
+W--+--+--+--+
+         ^  |
+         ---+
+            |
+            SW-+--Either to HighLords or Village of Maltrakis
+
+B - Broken Marsh Road
+G - Gargoyle (X2) [AGGRO]
+K - Glauruk Conscript (X2) [AGGRO]
+M - Guktuka the Matriarch of the Brood (a primitive fertility mask)
+    Glauruk Conscript [AGGRO]
+P - Determined Poacher (a glauruk-hide tunic, a pair of glauruk-hide leggings, a pair of glauruk-hide boots, a charged copper prod, a flask of enchanted glauruk blood, a key to the Keep)
+S - Spawning Grounds
+W - WhistlewoodSwamp
+
+Source: http://wiki.qhcf.net/index.php?title=Glauruk_Spawning_Ground&oldid=5069
+Revision: 5069

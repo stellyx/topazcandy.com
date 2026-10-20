@@ -1,0 +1,41 @@
+The Village of Azuremain
+========================
+
+The Village of Azuremain
+Suggested Levels: 25-35
+
+(This area was written by Sabiene for use by Carrion Fields, LLC,
+ copyright 2003, all rights reserved.  Use by other MUDs or organizations
+ is not permitted without prior written consent of the area writer.)
+
+                                              +  +
+                                             /  /
+                                            +  +
+                                            |  |
+                                   +     +--+--+---+
+                                  /      |         |
+                              +  +  +  + |       1 |
+                             /  /  /  /  +      /  |
+                +--+--+     +  +  +  +   |  +--+   +--+
+                |     |     |  |  |  |   |  |  |   |
+    +--+--+--+--+     +--+--+--+--+--+---+--+--+   +--+
+    |                       |  |  |  |   |  |  |   |
+    +                       +  +  +  +   |  +--+   +--+
+    |                                    +      \  |
+    +                                    |       2 |
+    |                                    |         |
+    +                                    +--+--+---+
+    |                                       |  |
+Voralia's Tears                             +  +
+
+
+  Basement                    Roof
+
+      +--+
+      |  |
+    2 +--+
+     \|  |
+      +--+
+
+Source: http://wiki.qhcf.net/index.php?title=The_Village_of_Azuremain&oldid=4998
+Revision: 4998

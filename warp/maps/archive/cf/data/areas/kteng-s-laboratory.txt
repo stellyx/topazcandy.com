@@ -1,0 +1,78 @@
+Kteng's Laboratory
+==================
+
+Underdark
+   |
+   +-k
+   | |
+   +-+
+      \
+       +
+       |
+       +
+       |
+       +-S
+       |
+       +
+       |
+     +-+-+
+     | | |
+   +-+-+-+-+
+     | | |  \
+     +-+-+   \
+       |      \  
+       +       \ 
+       |        P1
+       +        |
+       ^        v
+       |        +
+      P2        |  +
+          E     + /   + 
+          |     |/    |\ 
+    I--+--+-----+-----+-\--G <-- etches your stuff and vaporizes your bags    
+          |    /|     |  +--+
+          +   / |     |     +  +
+          F  W  |     |     |  |
+              V-+-----+--B--+--+   
+                |     |   O |  |
+                D     +  /  +  +
+                      | +
+                      |/ 
+                      +  
+                      | 
+                      +  +
+                      |  |
+                      +--+--+  
+                      |  |  |
+                   +  +  +--+
+                   |  | 
+                   +--+ 
+                   |  | 
+                +--K--+--+--+--+   
+                   |  |  
+                   +  +  
+                      | 
+                      + 
+                      | 
+                      P2 - exit portal 
+                      | 
+                      V
+
+
+S  = Skeleton
+k  = Torch holder
+P1 = one-way portal leading into the lab.
+P2 = one-way portal leading out of the lab.
+
+K - Kteng (a delicate golden tiara, an ethereal robe of silver silk - about)
+O - Observatory - recall from here
+G - Digestion (Dissolution?)
+V - Divination
+D - Distillation - valve
+W - water para-elemental
+I - ice para-elemental
+F - magma para-elemental
+B - Font
+
+Source: http://wiki.qhcf.net/index.php?title=Kteng%27s_Laboratory&oldid=5132
+Revision: 5132

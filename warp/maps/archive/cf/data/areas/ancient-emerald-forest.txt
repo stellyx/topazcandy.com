@@ -1,0 +1,56 @@
+Ancient Emerald Forest
+======================
+
+| 10 - 51 | Strienat - Ancient Emerald Forest
+
+
+    K---+---+                                   K = The knight of Clover Chapel & Maddie the village beauty
+            |
+      Hill  |
+       Top  +   +
+    f---+   |   |
+    |  /    |   |
+    | W     +---+                               W = Marealee the witch-druid
+    |           |   G   m                       G = Clodork, the goblin general
+f---L---f---p   |   |   |\                      L = Witch's Lieutenant
+    |   | Pool  |   |   | \
+    |   |       +---+   m  m
+    f---f---f   |      v|   \
+    |       |   |     1 |    \                  1 = A Small Cave Under the Ravine 
+    |       |   |    v  |     m--Silverwood     o = Outside the Entrance to the Village Clover
+    f   f---f   o---r---g                       r = Razed Signpost at the Entrance to the Emerald Forest
+    |       |       |        +                  g = gibberling (aggro)
+    |       |       |        |
+    f---f---w---f---f---f----R--+               R = Ranger's Guild
+    |   |       |       |    |                  w = At the Entrance to the Witch Wood 
+    |   |       |       |    +
+    f---f---f   f   f---f
+    |   |   |   |   |   |			
+    |   |   |   |   |   |			
+    f---f---f   f---f---f---f---f   p
+        |   |   |   |   |       |   |	
+        |   |   |   |   |       |   |
+        f---f   f   f---f---f---f---p           p = Pond
+            |   |   h       |   |   |    
+   Spiderhaunt  |   ^       |   |   |           h = A Treehouse at the Heart of the Forest (marmalade orb)
+      Woods     f   H---f---f   f   p           H = The Heart of the Forest
+                |           |   |
+                |           |   |
+                f---f---f---f---f
+                |           |   |
+                |           |   |
+            f---e---f---f---f---f               e = Entrance to the Village of the Trees
+            |       |   |   |
+            |       |   |   |
+        +---X       f---f---f---f---S           S = Sir Sorrow
+  Large |   |       |   |       |  Cave         X = cook shopkeeper
+   Hut  |   |       |   |       |
+        s---+   C   f---f       f               C = Chief's Dwelling, Sheeka the Pixie Chief
+            |   |   |         Small             s = The pixie shopkeeper (barter 6AM-9PM)
+            |   |   |         Meadow
+            f---f---f           |
+       Peaceful               Aubade
+       Clearing
+
+Source: http://wiki.qhcf.net/index.php?title=Ancient_Emerald_Forest&oldid=5073
+Revision: 5073

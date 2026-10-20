@@ -1,0 +1,2936 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at_utc": "2026-10-20T00:00:00Z",
+  "files": [
+    {
+      "path": "warp/maps/archive/cf/aldevari-preview.css",
+      "bytes": 2566,
+      "sha256": "BF7C8A5E6467B0718559E2EFBE91BA6BE1C54CB5B9D245607DB1A6B304C565EE"
+    },
+    {
+      "path": "warp/maps/archive/cf/aldevari-preview.html",
+      "bytes": 3381,
+      "sha256": "FC8B99B30A6811ABCAAACDB940CFD8AC27DE29101CFE372689FB8684397531F9"
+    },
+    {
+      "path": "warp/maps/archive/cf/aldevari-preview.mjs",
+      "bytes": 5148,
+      "sha256": "9C07E866993E659C496A69874716DFB21A53D91A3C2CC7F4539EFFD96F6CA641"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/a-dry-riverbed.html",
+      "bytes": 30192,
+      "sha256": "5631020EE2E8DC2C0710F8C140DB2298380324154E2F70D0958C596EE457760A"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/a-northern-trail.html",
+      "bytes": 63162,
+      "sha256": "9C7F96B84693016DF130DE2196B441F66E4C3BEA130EBAA94FA75A9673252E19"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/a-virgin-forest.html",
+      "bytes": 104069,
+      "sha256": "B0B6172CA1672BAC56041E6DB4528C2E7F304EDC9855A2084C3704DCE4362EB4"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/a-wagon-marked-road.html",
+      "bytes": 26004,
+      "sha256": "043EBD0E5E6BA9128C44E82479676E3E0FDC53E4BB68BB97594E2C66C66FCAF7"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/abandoned-mines.html",
+      "bytes": 152075,
+      "sha256": "AAB9FD36AF339F61DEBBA22AA9833A00142754135A8A0808FDAD7589A618C552"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/abandoned-siege-encampment.html",
+      "bytes": 210120,
+      "sha256": "A5FC5924FB907B3600FD4C43310DB21315E36B05034657FCF4BFFDC8DE4C7DF7"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/akan.html",
+      "bytes": 124574,
+      "sha256": "F5350D1564466AF9A974CF5AF6944C70F09DFAFAE8E1763244D6160F6DB7121F"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/aldevari.html",
+      "bytes": 125752,
+      "sha256": "17512E541CCBF855E9BC2B24791C535E378EC4B640E83430CB676ED4F6C389D2"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/ancient-emerald-forest.html",
+      "bytes": 135247,
+      "sha256": "6EEAD77947DCB9976E94CAB79356AD5067E41BC304801E6A3BDFA6E7CC738AD4"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/ar-atouldain.html",
+      "bytes": 116335,
+      "sha256": "CFFA93EC362D179817A83A4FAB7CC768ADC1A4E296C616FE55558DC989CCE56F"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/arkham.html",
+      "bytes": 263408,
+      "sha256": "C14030B69779D0C69733CA7F52FE6962BA0C45721AD21FC8143CF8552653D6CA"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/aturi-timberlands.html",
+      "bytes": 103082,
+      "sha256": "40BC7D83CD74D0B02A1EDE6D5BF1BA2251278EB21B830D35BD96414BAB07E267"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/aturi.html",
+      "bytes": 175554,
+      "sha256": "0772D2181CCE745710B44885477005BC27F09E96777BED4C165287FC7E178B17"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/ayr-trinil.html",
+      "bytes": 234872,
+      "sha256": "EBFFCACBBA6D6E9B35D2547DCB8B043221942F584AA3703142181E1A0A8D64D7"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/azreth-wood.html",
+      "bytes": 109638,
+      "sha256": "A95D637DA166FE4B1FB43CF46EB8E21382FC2E0CB5A524D4792CC2575BC88927"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/balator.html",
+      "bytes": 183664,
+      "sha256": "8E19A14CD86C36D26EB7ECDEB3A8A451E6501EE3D73EB1AA10E30AE9BCB9F19B"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/blackclaw-village.html",
+      "bytes": 179869,
+      "sha256": "9BF75C88070EFFE927420A5CC3CBB2C20890E56D9C532E849C943FD5CC3949C1"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/blackwater-swamp.html",
+      "bytes": 99045,
+      "sha256": "3D97A4738C6C7E299D99337D750F3FE55DA5F166FD534ED507FD7C67FF8C69A1"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/bramblefield-road.html",
+      "bytes": 100863,
+      "sha256": "3098C24B93E43317A1ACD01CA518AAAB545B4553190A8B89B13E11AF119A2DBC"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/caravans-of-the-jhaana.html",
+      "bytes": 59341,
+      "sha256": "2DCFE24C46B35FE63BB17E063D0410A6479A1D072BA697D62946EFB23E4D1EDB"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/castle-of-akan.html",
+      "bytes": 84817,
+      "sha256": "57A5BD172081CF1CC229FE2738742BB4C3CBDADE8A68B1D983268449ECA41F74"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/coastal-wetlands.html",
+      "bytes": 190866,
+      "sha256": "24402B5B0CA126320156BABFB0671707A9EA533024D5AEC67819FE3A90E83A04"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/copeham-inn.html",
+      "bytes": 71642,
+      "sha256": "CB825AAAEB4BB1E8917F4F57928E6635D84BDD4258DB07D62DB64C1971C482D6"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/coral-palace.html",
+      "bytes": 167683,
+      "sha256": "BF1566BF5BBF67D9445EB484E3CF9519B3089B05895590CCE256738D36029716"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/coven-of-dralkar-wood.html",
+      "bytes": 354343,
+      "sha256": "71CA5D79AF1BA0962C89029736BC938612CA1520AD3DAA39438EDB576D74438B"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/crystal-island.html",
+      "bytes": 71467,
+      "sha256": "8A82A3931C195BFE6260DB4D50DCD5ABE06634AFCCCC669B76599B6E943F46A1"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/dagdan.html",
+      "bytes": 120285,
+      "sha256": "9E27A039996D7B597B3FF9A34F44EF9B047306041037F05C646BE9331DD30F75"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/darsylon.html",
+      "bytes": 205906,
+      "sha256": "06320606D7A81741873806C1805B24713BA973C1A4C60C778048B02ECAA9A4A9"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/delar-tol.html",
+      "bytes": 218190,
+      "sha256": "B0EE28B4E0FC0EA80EFFF45346E9870AA394DF0C1DCF5B5D04F9339BD31B7F61"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/desert-of-araile.html",
+      "bytes": 245876,
+      "sha256": "EB6D3D521E67D77BDB2991ED64595CA8E4DA03500E6540D8FBB32A0968F34895"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/dhumlar.html",
+      "bytes": 179132,
+      "sha256": "ED89E7CF1B21CC4FBEE7EC1B49411D691775AA5961E02E09E4D75F18955FF994"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/dra-melkhur.html",
+      "bytes": 172520,
+      "sha256": "673B19764942E32114460A77667929CBCB0B37DF7D4195722C2BA608BCF1E19D"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/durnominator.html",
+      "bytes": 1071973,
+      "sha256": "BE477BCE8146A720A8F78ED5A84BB985676507BBACFE74BA22B1CFE134C00612"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/eaststride-road.html",
+      "bytes": 58344,
+      "sha256": "64313BB95D7A36DC05A6B8181938BE6D549F46868AA2E47824197FFC7DC94E75"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/eil-shaeria.html",
+      "bytes": 94375,
+      "sha256": "5A1D3FAFCFCE8395DD8557F937F89BB0EB2C673244EBB2D75D79ECF9FCEC5C3F"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/elemental-temple.html",
+      "bytes": 149704,
+      "sha256": "0C17DFDD0EB0C82B4A7A20547A6BFB979DE7DE2E2501B787C7E47AB7C9FE623E"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/enpolad-s-game-garden.html",
+      "bytes": 115803,
+      "sha256": "2A8867AD99A6A2CF82578C530661FF422EE4B80E752C9540DBCFF5DD48C0C21F"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/evergrove-outpost.html",
+      "bytes": 35912,
+      "sha256": "23A0B55591932B744912D621BC04B2D4EAA6D02F073EBC1C4451D4ED4B830ADD"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/evermoon-hollow.html",
+      "bytes": 286049,
+      "sha256": "9C23E9720D9E2FFBAC70C171414B468DD96D69ED9A1F967B17BBE417F1CB8BB9"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/feanwyyn-weald.html",
+      "bytes": 200006,
+      "sha256": "E5F40C8BADD8CA441192E50DBC12B5B01B6FB2570C4E8E2F0760489DC0241AFA"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/felar-encampment.html",
+      "bytes": 160379,
+      "sha256": "195E4E95E6BE522D00D5DBE92825DBE71B7757ACC0321B45311292A9433A2E16"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/forest-of-nowhere.html",
+      "bytes": 84044,
+      "sha256": "D5E1AEE8AFDFE0B60D60C849CB56A400AE86893E8663AB70FED166886A03C433"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/forest-of-prosimy.html",
+      "bytes": 97738,
+      "sha256": "99FA1F18EE5FA6704A8C8E51F137163CEC8D23FDEC113CFC5406A30749E1DBE7"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/forest-road-2.html",
+      "bytes": 79670,
+      "sha256": "69E2D78D1DB516B39C5A80C8C46F092DBEABB5D7BFA2045818BDAFA8B8D31BAF"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/forest-road.html",
+      "bytes": 79662,
+      "sha256": "98A05A1CEA6501E865CB23068752D4DC1337E899AF0DCEADD8F926B3F98257DA"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/forgotten-crypts.html",
+      "bytes": 70798,
+      "sha256": "AE3D3A2B8548105013F55209A466782F1C2D10F005878AF199484106C1BDFD4F"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/galadon.html",
+      "bytes": 280913,
+      "sha256": "7A5FB026C20163314323819425B2DA1A8C1676FA0123139A2F0970E8C74641F3"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/galadonian-settlement.html",
+      "bytes": 247153,
+      "sha256": "F5CFCEFE6E14CAF7CCD7C2586B7338C2E447945E75342F6AF85AB3FDE7BC78A5"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/glauruk-spawning-ground.html",
+      "bytes": 71548,
+      "sha256": "7FB00D3F86FB53B1B31D222089AF12AF668FC3447E93F3BBB808FC96F4062361"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/goblin-outpost.html",
+      "bytes": 24750,
+      "sha256": "50A7DCE0F664AC472BEF67A71C899EC069C9D058BFFA8682CF44DF21F638C80B"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/gol-galath.html",
+      "bytes": 133649,
+      "sha256": "0F9B5C9B018EACB3D70401CD5D9AE4DC9AD4BBD97E6FCC2B235A190362CAAC2E"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/graveyard.html",
+      "bytes": 79485,
+      "sha256": "514403B4BB8680F33CEAD53A9881C9F91C8DB7ACCDCE86A8853168DAC9002D42"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/grinning-skull-village.html",
+      "bytes": 101908,
+      "sha256": "D2F6B0835BF7CA93CE13C7B27D5C5426BE9E3EDE7C737A45BDFEE8A178EB4D04"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/hamsah-mu-tazz.html",
+      "bytes": 269372,
+      "sha256": "25E680AA9D1EB53DFD024016C9D8D4A282379FFB991A69C04763F283921436FC"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/hidden-forest.html",
+      "bytes": 108213,
+      "sha256": "CC2D44C8A18893FEF95CCDBBF09C3C5A875CE69B7922587C5D2571EDAFE0B809"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/high-lord-s-keep.html",
+      "bytes": 77009,
+      "sha256": "54ACB352DA0EA84D6386176A4638A2FD2D0EBCA1F92A3EA138321709758CDFAA"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/hillcrest.html",
+      "bytes": 162316,
+      "sha256": "98844972D49D9D03AEB4969C9FCD19EB2DE6D0C1544A19E49700FB3A42F7E9DC"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/island-of-corte.html",
+      "bytes": 87413,
+      "sha256": "CC159483E63C326D8675A4ED7E1E274A2C8F07A5ADB26A3DFF5A9CE35A5E8A17"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/keep-of-ceawlin.html",
+      "bytes": 64321,
+      "sha256": "B8F7FBE9CA46E980A1B24FD13E7098D0DF2B5FF7F0E2C3B55F8C2193DD3D86A3"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/keep-of-the-fhalaugash.html",
+      "bytes": 131562,
+      "sha256": "364B44F0B604D40B69E0C72048CC62A895C85115C5AA0247F61D2794429042FE"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/keep-of-the-righteous.html",
+      "bytes": 354630,
+      "sha256": "63350D190C6DDACDA46E20D0F0A2912779C78A987EE1C2C1A8E3815FB1CAE9C2"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/khalid-river.html",
+      "bytes": 39031,
+      "sha256": "EB305393B1FA63E313C97DCBA0F73A653520729CB049036B89CA7267ACC6B2A4"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/kteng-s-laboratory.html",
+      "bytes": 82383,
+      "sha256": "112BF440F3F427B3CF1E060C150D221AAA8E35829D51244D66C6ECFB671C008C"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/kuharin-plains.html",
+      "bytes": 27537,
+      "sha256": "9130B59329F6EC73869656170AB276E1AD470CE1319BE15D9E1BC5A4769CC576"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/kuo-toa-lair.html",
+      "bytes": 104239,
+      "sha256": "D5A72F12523A78DD44B137D0CD054498253A48C0998BD00C95EF3CAB132D3FC8"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/loch-terradian.html",
+      "bytes": 95447,
+      "sha256": "0CF348732BF32502CE0D4E8B2B7F7D961F6EF71898719844A7241132B3D3D089"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/lord-tabershaw-s-keep.html",
+      "bytes": 107561,
+      "sha256": "6EA7F394F2D804486D950BAF4A5BF5A65A7C523C9B5A311A029A5D5FD09FD659"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/lower-cragstone.html",
+      "bytes": 259178,
+      "sha256": "09AFA7816193073013839998077E70AB1C72E5E510ADC2E4162DA32E25057C23"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/maethien.html",
+      "bytes": 171771,
+      "sha256": "1F3E7B31DA8773BDBE8CF60E0C078625AC98387430D50DB6CC2BFF5A9EAB31ED"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/mansion-of-twilight.html",
+      "bytes": 129003,
+      "sha256": "5DD1761662744318604798397F5DD71B67831245A8273023C29EA911CD8DA45A"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/mausoleum.html",
+      "bytes": 124957,
+      "sha256": "1CFAEC82C4A6B11DD903F6143FC6DCB21F97C7B3EE6AE7EBDB8E1CA4A8126CE1"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/mines-of-zakiim.html",
+      "bytes": 43910,
+      "sha256": "5D8FB75696F8AE1ABE8327145916232165F09D83D14A643370164C70B275E144"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/mortorn.html",
+      "bytes": 427918,
+      "sha256": "39EAF3748B77C4F3B2444F35072C286643CAE6F5FCCEF031C0348D86CED297F4"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/moudrilar-s-monastery.html",
+      "bytes": 282406,
+      "sha256": "8DDDA9D2C8615A00C1A0FDF85724455333A35C5EEC2B48C307C63702341E2ACC"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/mount-calandaryl.html",
+      "bytes": 78804,
+      "sha256": "934A4ACAB5CC55C6027D7D7A48299CBDC283C820AB4ECB82B37F0E44F6E250F3"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/mount-kiadana-rah.html",
+      "bytes": 230826,
+      "sha256": "70A2FE2F99B6CA494659AF74530679229C64E32FE284D5DFF1183A685FF0E70F"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/northernroads.html",
+      "bytes": 325064,
+      "sha256": "26EFCF3C3B17AEFC68F9B778530C4D87F9A7DFAED06D0FF5CCCFC416BAE84BB3"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/outlying-villages.html",
+      "bytes": 87137,
+      "sha256": "6984DF181A3EE29D757392B4E384AF866213D25A3A41CF672407D4A901073F9F"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/outside-hamsah-mu-tazz.html",
+      "bytes": 75339,
+      "sha256": "01015015035E1A49A0C95396F3412E97D2431EF5D8101861D5AD3AD89946AD1F"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/outskirts-of-galadon.html",
+      "bytes": 77693,
+      "sha256": "F1FC4A851B1D3D3ED6A05006DF4708172D025A5E9BAF87A5E6FB11C7AF08A082"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/pine-forest.html",
+      "bytes": 98291,
+      "sha256": "E569734D6B77AB13757CCD26254B90A2D7AECB87D9AD2751754BF58144CFA446"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/ruins-of-delar-tol.html",
+      "bytes": 217192,
+      "sha256": "D01A865554D62D12A5642E5C70054F14E2786F7E686EFE0333C8A56DE749BC42"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/ruins-of-maethien.html",
+      "bytes": 117077,
+      "sha256": "50D0B9A569E7F736E550E5C84B28F51982F0A5A20CA0FBA8AFAF515B6320DAAC"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/ruins-of-the-deep.html",
+      "bytes": 106256,
+      "sha256": "8A7C55B1DD842C6C386984C0478D2E4FBD4A7F224AAD6ECF1ED4D54298A36D03"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/seantryn-harbor.html",
+      "bytes": 107579,
+      "sha256": "0467CFB504C6A8FBB96E62967A28B72F331B68F9591BCA39BE1D4E7C0EDC1DCC"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/seantryn-modan.html",
+      "bytes": 620691,
+      "sha256": "011A7D9D4B864A2622692B17F797DB721ED5445BF38F115E6FD979286B99405C"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/silverpine-road.html",
+      "bytes": 62554,
+      "sha256": "21132350B8811870132155FAB6BAD956B37D9F2F67179E5CE9FBC72BFAED9619"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/silverwood.html",
+      "bytes": 87649,
+      "sha256": "8A8B8DA1349E07107CA7631879A8199CBF9655923486BB7422DCE0722637CC7B"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/south-dairein-settlement.html",
+      "bytes": 82400,
+      "sha256": "736AD64EB6C305FBDC99507F920D609FAA89214C037610B21126054BC404242C"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/spiderhaunt-woods.html",
+      "bytes": 123599,
+      "sha256": "8B19DADA699BB8BC224325DCD1EF143B6408951436EE6167FBEF56FD853A3EB5"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/strangeisland.html",
+      "bytes": 161062,
+      "sha256": "BAAAC59333E9A968B8DF3754719F7E42B0F552B2B4BF1025283E2A4198DD8361"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/targeth-s-manor.html",
+      "bytes": 274745,
+      "sha256": "39366C4334804BCA16C2A0EA2E15B90D288FA6E89470CDC6598B239DF1F6E903"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/temple-of-loch-grynmear.html",
+      "bytes": 184434,
+      "sha256": "3BDED98ECE6D82A3E83BC988DFD3ED2CD867E56F1875554CCFC8D93A68174E86"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/teth-azeleth.html",
+      "bytes": 105806,
+      "sha256": "0464E98D8340AE19726DD1D7B65DD0800F5951549252A57A72C247F57619FFD3"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-ancient-road-to-the-wastes.html",
+      "bytes": 70781,
+      "sha256": "F3E2EE9CB10C4B3D851843CA90D02CE3513F9F063A12051195843C9482645A1A"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-aryth-ocean.html",
+      "bytes": 209321,
+      "sha256": "CC803298FB13AE33BFE0F28E1FF130EC31F023A49335CD491A33A6420DA7B297"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-ashes-of-nowhere.html",
+      "bytes": 113630,
+      "sha256": "6BE4FD34B8CDAB5EBB25A8A5F4996390AB3D8F50F42FD67BE6F7E0E901359F6C"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-bandit-stronghold.html",
+      "bytes": 57959,
+      "sha256": "12EB3C60D06AD1ADE90891A4ED334DAAA2C791785F5A2D04448A34E8EEA83804"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-basilica.html",
+      "bytes": 149025,
+      "sha256": "0FF86E800451D177DE7A106E4A4D634D9E0386F56032429CFDA0CA4A1FEE305A"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-battlefield.html",
+      "bytes": 241348,
+      "sha256": "69C46355FAE91C762420784893AE06B348C3250739A34E10E696E605AE78062E"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-citadel-of-ostalagiah.html",
+      "bytes": 187714,
+      "sha256": "B7895BAF3F057CD670FD970F915D4F3F9DCE0AFCCEFE64728216561FA60E9606"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-coastal-plains.html",
+      "bytes": 136852,
+      "sha256": "90F089DFCAF4DD4BE5625E0D4120CE136860FB50551E2C3F6A05CAA62837E865"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-consortium.html",
+      "bytes": 117961,
+      "sha256": "0B3FF49429C34848E42D82D30993A9136CDCFDD905DB05382ED26022495F7B22"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-coral-head.html",
+      "bytes": 120969,
+      "sha256": "B2027F393610A1E2923FA61DD3610A6454DC2E9E3A7D7846A4A41D9C0EA41E5D"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-dark-wood.html",
+      "bytes": 104083,
+      "sha256": "128CFD07BC295B2D9329D1D57759AFAAA872FD2DBA524B4B82064D59B6393963"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-dragon-sea.html",
+      "bytes": 198203,
+      "sha256": "4D25E14BBFCC76BF12379563774A508B0AD41AE6ABAD5B90C28DFC266595BCE9"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-dranettie-wood.html",
+      "bytes": 93667,
+      "sha256": "8906E600806B86FD12DA94D69C313B2ADFF960ADF0326461CF352AA670C56BAB"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-drogran-hills.html",
+      "bytes": 21715,
+      "sha256": "FBEE6EAB1476C397F742AF0D9F17B065A3E32882036F13B14BC0007951FA8F6C"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-dwarf-forest.html",
+      "bytes": 56846,
+      "sha256": "BB558A4FE34D01E0972152C2DC13B0D6235FE400037698F853C50B51E6E47E86"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-eastern-road.html",
+      "bytes": 55791,
+      "sha256": "8E5EB0CBD7D8FDA70F8907F5B9B6D0F2D07B8ECE0DA65DEE5C687D2B604F63D5"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-fields-of-balator.html",
+      "bytes": 69080,
+      "sha256": "3F21BAB108710C7F4099A5CCD2ADFF73DC7C5C9EAB94C09D69A6B8313F4E4324"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-frigid-wasteland.html",
+      "bytes": 315745,
+      "sha256": "D9C2B6DBDEAF26E7CB1AE2E9779A7FB03845BF4325FE1036E6B5A4B4B235402A"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-frozen-gorge.html",
+      "bytes": 13597,
+      "sha256": "D758B767922A9CC6452EDB756751484AE557C2047421CED880F83D5A990AE6D8"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-galadon-sewers.html",
+      "bytes": 217583,
+      "sha256": "3057E953BAB6894A58372771732CE25A17BCB048F5DF79F211A754CD05C46CF7"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-goblin-village.html",
+      "bytes": 93719,
+      "sha256": "0BB0F7D28E20C91B2090D2E9D87FB7B164C3B405F18B3FDBC2F3BB96497C5CC3"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-grove.html",
+      "bytes": 144890,
+      "sha256": "0300440E7682C4465D97ABB331385EF6DE18B36FF536FC2E9905D6CAAE1D0709"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-halfling-lands.html",
+      "bytes": 289305,
+      "sha256": "A5785C153E7379ACCB3F9AF848BC329B19575C8497DFE2AA8486C651CB1FB304"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-high-pass.html",
+      "bytes": 25508,
+      "sha256": "0BF62B1371C95619ECFA78DE5882968FDAEC6724C59D333351AF3BFFD679CEE8"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-imperial-lands.html",
+      "bytes": 114066,
+      "sha256": "558AF5388AC1CA93D1C244FC42D484B1013D333FD1B8FC0736D6152AFC9D7E28"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-jade-mountains.html",
+      "bytes": 294511,
+      "sha256": "A94FA8AD2F0D90ADD1E7BA0A36FA9B3CEE3BD08B6C9F866CC8FB04E1031817DC"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-keep-of-barovia.html",
+      "bytes": 369014,
+      "sha256": "2C9415B467E35D6EE5FF2B65B068B629EEF3BAF062CA90A7182DA5402DA43F2C"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-kobold-warrens.html",
+      "bytes": 70696,
+      "sha256": "F2B42929AA19A287772C841210B3A019A90B1AF4F2EE0EFBCF77452F92EFBD30"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-lumberyard.html",
+      "bytes": 100809,
+      "sha256": "075B435D17FAA9855DC221F362D585ABF360BC8417B81453A0CB64EC0D307F02"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-northern-mountains.html",
+      "bytes": 142147,
+      "sha256": "EB03D6BE648E969ED0788E17A80888025203FAA77A8D2B6FAD8459999A7A9B70"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-oryx-steppes.html",
+      "bytes": 141984,
+      "sha256": "F727A2B487483FFFE4A928DEC0736034732B02D848AD641C059043AD0F6096D9"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-outpost-of-tir-talath.html",
+      "bytes": 322763,
+      "sha256": "3E408BDD619F8D3D830D4FC44D36F3141B3532F543A06631C7CB2344E132597F"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-past-grove.html",
+      "bytes": 228961,
+      "sha256": "A1D5E65A8F1A9ACC66301744C49C36F3EA74F36B05D88F3768030D8CC83BE97A"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-past-shadow-grove.html",
+      "bytes": 76995,
+      "sha256": "00A342B10587541639CD4CB4C9B992027F696ED0A3549833405EFA31FDC1C341"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-plains-of-arendyl.html",
+      "bytes": 154281,
+      "sha256": "EE74A013C3235B6122E34D92722BB82EC4654DC3BC9BC65616B3AD5532B4C855"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-pyramid-of-azhan.html",
+      "bytes": 159805,
+      "sha256": "4D00CBA48E8A1291F1E3534BE034C2212709262A7CFB2CC0C01DF17D4D699DFD"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-redhorn-mountains.html",
+      "bytes": 28222,
+      "sha256": "8FBBB7260DDD0C75E6EC41FA0D56638CEFAB2DCD386768BF8D4D7EB4B1E4BB2E"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-river-nanthor.html",
+      "bytes": 23557,
+      "sha256": "F3D9B01578F444D97E8818EE35CA54CEF0A2261786F0913673BCEC8B492F6122"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-rocky-paths.html",
+      "bytes": 56752,
+      "sha256": "E55FB35AF40E79C923420103B768F78F32833DB5040EFA5AE61AB16B05E03499"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-ruins-of-ostalagiah.html",
+      "bytes": 112297,
+      "sha256": "0E5BE88CCA73D9A1CA64D11F21151E99BD482EE7FDEED2E176B6805B6364BB02"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-sea-of-despair.html",
+      "bytes": 98520,
+      "sha256": "FF62C9F19CAA8357926CEDC42F7928443F7F65BABE6D69284AF30ADE17D8987C"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-seaport-of-hamsah-mu-tazz.html",
+      "bytes": 44307,
+      "sha256": "67EF3392912211B4C76BBF98700BBCD4FABB6617192790600C748B3E2C40E8CF"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-sewers-of-seantryn-modan.html",
+      "bytes": 114622,
+      "sha256": "7363241DBDCD932003499CB023E04F9EEDBEC08D07F901F421FC2FC385B804F3"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-shadow-grove.html",
+      "bytes": 71649,
+      "sha256": "ACC0AA81C7A72EE16A1D273BDF40ECD11E86D9A4861F7CD3AD0336423B9119A9"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-skies-above-thera.html",
+      "bytes": 77692,
+      "sha256": "6742E0D5CD646E78C4A11F0628E487EBE173BC424B5925EAD70BF2EAC38CFA1E"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-slave-mines-of-sitran.html",
+      "bytes": 90781,
+      "sha256": "EB83B6E77AC0528A814AA7BBCD8FBE9701B94DB37D100EA202EBE7A5F64ED76D"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-stone-s-embrace.html",
+      "bytes": 135792,
+      "sha256": "953D6A0C29832D30CFDF32421706C586E9B4D9B86341D92F2579B595F25C9B44"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-tahril-mountains.html",
+      "bytes": 71046,
+      "sha256": "5BF6F3E2B8B7C7403E28D3543E38A339E66FBB37D8F64DBF1FA637613FE18224"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-talshidar-caves.html",
+      "bytes": 219703,
+      "sha256": "634E53F8763D7F75C9BF60F4AAF7C6D101D75FD1DA30D0D284CD4A315F6C01BE"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-tower-of-sorcery.html",
+      "bytes": 293818,
+      "sha256": "CE6D8A7CCBF960A17800DB9F1896FD94A01BA7468CC78136B0B7ED1C0F0C8ACE"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-underdark-sea.html",
+      "bytes": 166451,
+      "sha256": "6A0F5870F231AF3B34039CF13431FE30A82AF0409F88EE4CE2BF94F49B050E18"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-vale-of-arendyl.html",
+      "bytes": 136491,
+      "sha256": "088D43854C4B4844849FECDFC601085507E974C1867FFAC8B709723741CDF6F2"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-village-of-azuremain.html",
+      "bytes": 62450,
+      "sha256": "61C0010732460B2E49E63294FD70A31823503537A44C4B300759DD81AB5980F1"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-village-of-barovia.html",
+      "bytes": 120574,
+      "sha256": "9B7252755F0AF3C47FF4C5BF7026645A3D3FEF9068C08CD00D5247EC3331F93C"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-violet-woodland.html",
+      "bytes": 129516,
+      "sha256": "2739E6E4003C7D67ED618F871FF13C98D9609E4CEBBBE9A6E3E6C660E09820A0"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-wastes-of-nonviel.html",
+      "bytes": 181342,
+      "sha256": "1319284913CFA0948B25148C7D699D4C5E0343C6E5A447BC73385796A85EF8E1"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/the-xvart-lair.html",
+      "bytes": 239571,
+      "sha256": "09AA2EADA8F6D70AF2735B2321EDDF6A832B570EF5D11C392B584BF08C50BF96"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/traveller.html",
+      "bytes": 177314,
+      "sha256": "00277FFAA6E33BE9906284706062D1B501316B0B2EF7797C70F10BE95879387A"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/troglodyte-caverns.html",
+      "bytes": 110904,
+      "sha256": "50F33FC5110B67B1699BF60728E2A171D9888BDDEE449EAD9E9292169A5948AB"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/udgaard.html",
+      "bytes": 262797,
+      "sha256": "0194F7C2B89B6AB476DC339533CABAB301852081E6A93DEA252AD926CAE08017"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/udgaardian-plains.html",
+      "bytes": 188548,
+      "sha256": "5D387F17F4BB5F5B52688E6EDF4FECBDDED586573954D6F59DCC38870E602909"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/ugruk.html",
+      "bytes": 127641,
+      "sha256": "B28044D167E29A1CD04AF22131B1E541385E2E9AA4E41A5E3BA1B579778D6E46"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/underdark.html",
+      "bytes": 269789,
+      "sha256": "3E1BECCFAD4101404475786FF6AEE73174B413A8125CF30D98EFB704EC70D0E3"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/upper-cragstone.html",
+      "bytes": 120893,
+      "sha256": "1F759BBB034B059D0810266583AF48719EB772C92EDCE94D3F72CE5BD2F7C81D"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/v-dramir-s-cove.html",
+      "bytes": 101272,
+      "sha256": "22606A640E635BE1EED9D2F5EED9EBB88603E76F5BB627542BEADE7C3245EDFB"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/valley-of-veran.html",
+      "bytes": 108743,
+      "sha256": "55FA8F7255B47C90FC26B4D48F6F01AE8C776DC6C5372624050B3C19A3CCCAA8"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/velkyn-oloth.html",
+      "bytes": 233048,
+      "sha256": "B44C34C1B75D753912C77DB9EB63E9842C9D683560CC44DE329F87979C5B6CB8"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/village-of-lallenyha.html",
+      "bytes": 89109,
+      "sha256": "2D19DB555C6DEF03292FD1C8E725E4ED7DDECD5D7E849B3206B58C827EEBDAD5"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/village-of-mal-trakis.html",
+      "bytes": 63712,
+      "sha256": "A8641754A727BBA7CBBDC2D41B1DE5304ABD14C03C7FB673D9191139F48C0E05"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/voralia-s-tears.html",
+      "bytes": 149816,
+      "sha256": "BD02B2498F685A0F29B1869E7E8047DAA7C9F3C9D2233D2619E1842C84152C97"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/voralian-city.html",
+      "bytes": 318750,
+      "sha256": "CB19ADA0914805B88803877935C87E9C36D42D83CB9896138D031B427904F2C6"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/waters-of-the-deep.html",
+      "bytes": 163810,
+      "sha256": "D42213BE31CEE30FA2D7C9B42DD783607FB73E3DCD38D964D4FF3D253C1AB596"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/western-aryth-ocean.html",
+      "bytes": 270763,
+      "sha256": "30636E36F3A7E3EEBDA4870FA337908B05DA3BA0FF14C13A347ED952B3653D0E"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/whistlewood-swamp.html",
+      "bytes": 329578,
+      "sha256": "D2D12661CB37572929E0B415B61407D35399DD3D1EE984FBE4C4E86F8653E7C7"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/worldmap.html",
+      "bytes": 486277,
+      "sha256": "07C5DFDE86E9923CDE6F41B0400D536A933DB4FCEFAF793A0235362EFBE189C6"
+    },
+    {
+      "path": "warp/maps/archive/cf/areas/ysigrath.html",
+      "bytes": 394463,
+      "sha256": "E7BF8E3697717EA54F05994BF1AFE99ADB856526B86D5A1F6ADC5ABB83631948"
+    },
+    {
+      "path": "warp/maps/archive/cf/assets/academy-preview.mjs",
+      "bytes": 6712,
+      "sha256": "828D7D59C9109009B91C2AE241CACF9B52DFB2A98B634FEFB996C49AC1718F83"
+    },
+    {
+      "path": "warp/maps/archive/cf/assets/galadon-atmosphere.webp",
+      "bytes": 57824,
+      "sha256": "6158B3A686B1FE6087D302DA58303D580B25453EBA1931A5D26AA6EF1D7A952C"
+    },
+    {
+      "path": "warp/maps/archive/cf/assets/world-atmosphere.webp",
+      "bytes": 87600,
+      "sha256": "3DC61D43DEFC88406D0F5F67B3A175933236A1C73C5C611209837750BE99ECF0"
+    },
+    {
+      "path": "warp/maps/archive/cf/atlas.css",
+      "bytes": 3994,
+      "sha256": "FF9FF466C75E1065B4945D145D69A9C66240A47B8D1EB64F6B6683DA4D0BACB6"
+    },
+    {
+      "path": "warp/maps/archive/cf/bramblefield-preview.css",
+      "bytes": 1322,
+      "sha256": "55FDFE5DAD4827D4310BF39B621268D49112C0A70B43180E5549D263F2074DD8"
+    },
+    {
+      "path": "warp/maps/archive/cf/bramblefield-preview.html",
+      "bytes": 4307,
+      "sha256": "4D1D9FF1B27C827DB357F1DEF244A159D3BE26CE7F66202BF3D9873CCB0B2E4C"
+    },
+    {
+      "path": "warp/maps/archive/cf/bramblefield-preview.mjs",
+      "bytes": 7370,
+      "sha256": "BCA79A4EE8245EA6C91C4E303B6CC731CA255584DBC21CECAFF80724A42D980C"
+    },
+    {
+      "path": "warp/maps/archive/cf/bramblefield-route.mjs",
+      "bytes": 2874,
+      "sha256": "E0CE836B2CEE40ECECF0306DFFA0DA9DF747B4087E0C6A5A6465326E93A4E56F"
+    },
+    {
+      "path": "warp/maps/archive/cf/cross-area-preview.css",
+      "bytes": 2509,
+      "sha256": "7AD42B299BF176B8A158D9BA5D61BF1FB57C7D2683D89530F84422C97CB047DB"
+    },
+    {
+      "path": "warp/maps/archive/cf/cross-area-preview.html",
+      "bytes": 4946,
+      "sha256": "280BF0160E184994EC7132BBE9077191D4B6BBA37E365BADF768C8F6D26FFA6F"
+    },
+    {
+      "path": "warp/maps/archive/cf/cross-area-preview.mjs",
+      "bytes": 7786,
+      "sha256": "5D641D425C0EC8F0FA7888E5D0F56881D3D70A360FB966C3CFC15A450B2AB73D"
+    },
+    {
+      "path": "warp/maps/archive/cf/cross-area-route.mjs",
+      "bytes": 5158,
+      "sha256": "3B0816B45BF3AF120683E176F5D7BE09A5EB2BD1BE9965AE47F6ABEBC882DD69"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/academy-source-inventory.json",
+      "bytes": 9837,
+      "sha256": "F37762BF94800BB3B5518F5D4FCBB06F8DA14E8436860B93FBEEDBC13BF9F8AB"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/a-dry-riverbed.json",
+      "bytes": 3171,
+      "sha256": "3A028C2F3790DF18DA46DC15892C3C15066CFC06F4A7E8AD87DA474DC643B26C"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/a-dry-riverbed.txt",
+      "bytes": 1376,
+      "sha256": "B90EC95DEDB054CF07AA273B3A9585274616FBD96B48F024D2890CDF11CD8246"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/a-northern-trail.json",
+      "bytes": 3174,
+      "sha256": "E9B55F51549FAD8BA4B7503920E56EDA38CB3AEFF9D3C809B8616745CCBA2F14"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/a-northern-trail.txt",
+      "bytes": 2077,
+      "sha256": "BD6C7E9111F9BCC5BB4746288EB7FE638C9AFE35492D0E0356B59CDE6BE475AE"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/a-virgin-forest.json",
+      "bytes": 3764,
+      "sha256": "F9844BE99612DDC311FCEACA0C0E047A406AEAF2DD79BB4F3F99ECA84C8A7024"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/a-virgin-forest.txt",
+      "bytes": 2093,
+      "sha256": "0172074B5C11384188ED7C22D6E8F4F411A513A33280922A4A8976D3F37C2515"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/a-wagon-marked-road.json",
+      "bytes": 1781,
+      "sha256": "FC5059E9DF92136AA078A8F2EC49F6E9403095C619739A2232A86F93134D0973"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/a-wagon-marked-road.txt",
+      "bytes": 577,
+      "sha256": "C93E95819F93719541A082AC1E2E494304325B80C2C73464C3A5DF782BDE0352"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/abandoned-mines.json",
+      "bytes": 7079,
+      "sha256": "8BFCACDD4769D593450ECA57D5253916D6B0E7B42A36C8F048D709846235AB58"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/abandoned-mines.txt",
+      "bytes": 4386,
+      "sha256": "51256470E5DB34E2F07F025B9FEF1B2A4741422D6AB10C7CBE65D30BAD9B11C7"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/abandoned-siege-encampment.json",
+      "bytes": 6774,
+      "sha256": "57552669960B424CB83A4E174C6C0595BBE96B3C4B72277211C2424165CB4EAB"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/abandoned-siege-encampment.txt",
+      "bytes": 4615,
+      "sha256": "32D1B994D4710D6C0B5DEF3CF79FA68E3B0B9C0204CF9273E76E2960A49016CE"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/akan.json",
+      "bytes": 6150,
+      "sha256": "9E5618B1F14C3EB0FA7DE17F46BCD4340907A95408FBEA89950AAA0BDFDDCE36"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/akan.txt",
+      "bytes": 2399,
+      "sha256": "9B4A4399A04AB4E72F2556A3A535D1E6446F9AB0EC31B77E917943DB95B694F1"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/aldevari.json",
+      "bytes": 5626,
+      "sha256": "960B1DB067D51DBBA048CD9D5C31DB75378A68FB8B4625C7A333B3565CB36318"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/aldevari.txt",
+      "bytes": 2980,
+      "sha256": "20654F8326C8E3AF41DBF33DA0E9BBA2B830D1769E16FA1BED1357C8589D2350"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/ancient-emerald-forest.json",
+      "bytes": 3738,
+      "sha256": "5F2D01AD79997980B31D75D72D1E66E31B6F1AE9A1E6BFCFF4315E08E333EA76"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/ancient-emerald-forest.txt",
+      "bytes": 2593,
+      "sha256": "38031AA5D64356572A051E73E8FBCEF1092F2CE82C7BDCF32A7D03D99DC2B0E4"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/ar-atouldain.json",
+      "bytes": 3643,
+      "sha256": "B5096AE35090E3B0B9BCDAB3203BFEBEE51C28719F0224529F7624F00AF7AE97"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/ar-atouldain.txt",
+      "bytes": 2123,
+      "sha256": "8C221F4BFFCEA3DB1071C46E2524A69F81E66BC0F0BF4BE72215DA3384252A68"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/arkham.json",
+      "bytes": 13678,
+      "sha256": "0B3CFBDCCDF9EB2471817A038B71E1B88C45664BEEA8F023F8B48C2699D718F7"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/arkham.txt",
+      "bytes": 10125,
+      "sha256": "132D7E409B49FC9832911F93DEBFBBE299806801B8FBF1AE00872A5F20014763"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/aturi-timberlands.json",
+      "bytes": 6279,
+      "sha256": "79658F711EB0790673F695254A45B4A95170B83A06FFF832FEA750EBA292F395"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/aturi-timberlands.txt",
+      "bytes": 3316,
+      "sha256": "98345BD5271A660403106A3846005A50C2B1ADA6FFA600A9A6401B08A5AD82DC"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/aturi.json",
+      "bytes": 10107,
+      "sha256": "C96481E2FBB530BB846C08DE9C2A65DA72F78C01E64893017E77A4B0DC5088E4"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/aturi.txt",
+      "bytes": 5135,
+      "sha256": "C43A22757404ECB481E47F82FDF44ADCB44DB9A5B32345FAD8742032F48589F9"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/ayr-trinil.json",
+      "bytes": 14970,
+      "sha256": "0935821F4BDDFE5F4E0A1E08EFEB4A38C25B97B1B0C9827454B828F161A8260E"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/ayr-trinil.txt",
+      "bytes": 10330,
+      "sha256": "52E4C9D7CDB9265A33D2CC635B776B5FC8D3E7A6E65AC3D056F114AF7CFDAE5F"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/azreth-wood.json",
+      "bytes": 4857,
+      "sha256": "EA97AF68FB8D895233078BC4C5CA75367DF3C8163DC1E652A68E1E72D8850D92"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/azreth-wood.txt",
+      "bytes": 3113,
+      "sha256": "85271976925CF1FDB77DD80B2438E8F073FBD9F517962FB41E990BAA81EA17CA"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/balator.json",
+      "bytes": 6323,
+      "sha256": "02B09B643B83300E6ED7532C501001A441DBCFB1E630C6E81C5AF3F15A996650"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/balator.txt",
+      "bytes": 3902,
+      "sha256": "4E0D23B895682373D614F3B2563C6ACD98780167BCFD68E210EDBB7407DA12C0"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/blackclaw-village.json",
+      "bytes": 5429,
+      "sha256": "EA7554B33290275493AE2B708F6BC9462602FB9BD9819A12DB0BBC0D15F1BFFD"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/blackclaw-village.txt",
+      "bytes": 2903,
+      "sha256": "15EE16C1A1A62FD0221BE7FEB08924E3916CB9F621802948C2C64EB710C62FDE"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/blackwater-swamp.json",
+      "bytes": 4703,
+      "sha256": "232E6258B07AB7B2F1582410180F9865F1E3FA42B465F061A4ADEF11CB1CF88E"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/blackwater-swamp.txt",
+      "bytes": 1806,
+      "sha256": "5F09D5484F488E18CCF4AC979022895D1E67067F17162B8A33ACEF0A76C94BE2"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/bramblefield-road.json",
+      "bytes": 3333,
+      "sha256": "BC6BF74499A34AB78E8AE971A9CFA5BD71A331AA4A16BE7CC186A3F43F9CF92D"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/bramblefield-road.txt",
+      "bytes": 2140,
+      "sha256": "35B901F910D4663BB0B36FFCC9C4637978500DC086551AB3655DF6B5E9AF70E4"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/caravans-of-the-jhaana.json",
+      "bytes": 2984,
+      "sha256": "EFB2E9F4C27100F47A42B966C8A69230E38876C114EB070DDEDE98A09B7BEE15"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/caravans-of-the-jhaana.txt",
+      "bytes": 1276,
+      "sha256": "772991EE26DAEB8D348582F22B5594402A6B847E51DE48AF66C3915573DA776F"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/castle-of-akan.json",
+      "bytes": 2610,
+      "sha256": "3A0B30D55F248C571E112A31CEE08C07209488F0D8CCA8F01F305AA78457209E"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/castle-of-akan.txt",
+      "bytes": 1357,
+      "sha256": "F86289DD5C47F3E3A38F616EBCB490F814AE91D6927331CB80FDA962A8D51A68"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/coastal-wetlands.json",
+      "bytes": 3691,
+      "sha256": "CABC8C3799A3A6B92829B228ADE6408264B975CC1E4CA79B6F2AC37749C9147D"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/coastal-wetlands.txt",
+      "bytes": 2861,
+      "sha256": "FCF224807406A3406B28A5BA248FAEFC70A18527450EF68AF58C11776C6D231B"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/copeham-inn.json",
+      "bytes": 2601,
+      "sha256": "4C7AA467CD89098FEE81C152E504F25FAC757C077CDF91B8CDFFF37C98EB84AE"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/copeham-inn.txt",
+      "bytes": 1133,
+      "sha256": "4F7C1FBB949E4675596D5C656F6D4C4A49D01F5437781F2A9028AF5BE13725D2"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/coral-palace.json",
+      "bytes": 4954,
+      "sha256": "7C04CE795F15F9EA0A968E2486915EC5FAF0FEEB6273ABE4992E81E62146085F"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/coral-palace.txt",
+      "bytes": 2599,
+      "sha256": "DA4DF358AAEB6E29A1760D2A368F191F4B92CB3852DBB2ED67D913171FD31918"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/coven-of-dralkar-wood.json",
+      "bytes": 5992,
+      "sha256": "6CE7B2089784F881AEEA250BBAC967394C5213263E1D01EA73A0C1D8AFFBEF40"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/coven-of-dralkar-wood.txt",
+      "bytes": 4525,
+      "sha256": "EDE1A9B70848A644C1A5FF456ED3802676FB525871B3F432591BB65D0C368B91"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/crystal-island.json",
+      "bytes": 4223,
+      "sha256": "5CF57ACE19F2AFACEA65B895A3BE3F4CF31D3C9F80E4DD1CAF51C515F9EDF9FF"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/crystal-island.txt",
+      "bytes": 1546,
+      "sha256": "BD3B4E1FAAD4A20FBC5FCE20F24C08689D9D6038382D5D41B743BF9B33739BF4"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/dagdan.json",
+      "bytes": 4535,
+      "sha256": "51FB043731773370D690766E567D3FAA93AB17A66E9B9CA3F19D2E64C99B2944"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/dagdan.txt",
+      "bytes": 2208,
+      "sha256": "A0C4C95569EF76BA86A7574136C999C70201BDECAC7321DF2888D23D30931167"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/darsylon.json",
+      "bytes": 6193,
+      "sha256": "9B87E42E41752F8BB845FC3A6AF5E75696EE6F50A23575C1E3E444E91E8F1054"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/darsylon.txt",
+      "bytes": 3874,
+      "sha256": "8591A91B698D59D35E97222CCF035ACAB3A8C7911DE62526E1832B9022DD2C1F"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/delar-tol.json",
+      "bytes": 6802,
+      "sha256": "3539BFF3543118090DE1638B19793A08ABDDF84C8BA04A3D89C0F03AB977C7BA"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/delar-tol.txt",
+      "bytes": 5618,
+      "sha256": "E4D571FA8DA03E51EE1C4790B42A3F6EE49D04A2E54C65532C19A71656CCC565"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/desert-of-araile.json",
+      "bytes": 6956,
+      "sha256": "65FB13B8E34DEF08BB0D10EF2192D8C87E1C82DF3EC4237A4245BD451E383172"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/desert-of-araile.txt",
+      "bytes": 4601,
+      "sha256": "8923A3FBB087C38AB47B6222EE1385833E00FEAA23C42456401A870F59429A2D"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/dhumlar.json",
+      "bytes": 7709,
+      "sha256": "B04F9AB5E1E75C15F76EE68C045B90CDB622D26AFE68B8A2B356FC0DF017AAF1"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/dhumlar.txt",
+      "bytes": 4717,
+      "sha256": "4835860CDB558D5B76398A55AD58B0C4CB9756FCF2FA6F5A3F5EE174BEF60565"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/dra-melkhur.json",
+      "bytes": 4479,
+      "sha256": "39A26A4E9381515ADCFF80647B0C247DF099F515E3B9884BAAC123D5C8D2C370"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/dra-melkhur.txt",
+      "bytes": 2489,
+      "sha256": "6C6BDB878105CED542506825FFC49CE36B99C328E05E70069338DBDA6A1A66A3"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/durnominator.json",
+      "bytes": 17813,
+      "sha256": "44711807E6993F9E4B577B85B88E8A41F0B164E25FF436835A962841554574CF"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/durnominator.txt",
+      "bytes": 14146,
+      "sha256": "E4972D7F285608CA68538EA66C5B72154ACE226A6F78C784612F5F24AE36FFA5"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/eaststride-road.json",
+      "bytes": 3105,
+      "sha256": "BC894E8A9133BCC98E77AEB0CA70EBD37CD46D9337F0001F2D06967BA282D53C"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/eaststride-road.txt",
+      "bytes": 1839,
+      "sha256": "3114871D02B4954D428AE27585484C8C28C0F128C7429A67FF0631B9862ACA3F"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/eil-shaeria.json",
+      "bytes": 4617,
+      "sha256": "9E3D46BA6EABAEFF1FF5278B9489868AE1516603555EDFA5BD0DFD0DC253BEC7"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/eil-shaeria.txt",
+      "bytes": 2492,
+      "sha256": "55D8899C1F5D5C3B69CDC00D3016A0265C04272CA07FBD4127C7B8AC88221513"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/elemental-temple.json",
+      "bytes": 5547,
+      "sha256": "9DAC2FFC1A7626F9F775C5D37576132F27F793582488AAA62F1A3A43BEDBBE9F"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/elemental-temple.txt",
+      "bytes": 3038,
+      "sha256": "FE4F1343E5FD3BC12ECDE427CF41737A56C612E6E73E5CC91D1840733A5838D7"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/enpolad-s-game-garden.json",
+      "bytes": 4006,
+      "sha256": "DDDE6E15C580D4BC5D70CBD422949D997A0AE4208A74422B7A04CB37ABD7D022"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/enpolad-s-game-garden.txt",
+      "bytes": 2126,
+      "sha256": "CC6A34AA44AFC123561525ED4E721402162B987F863DEE69D1A9EDB35E762145"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/evergrove-outpost.json",
+      "bytes": 2578,
+      "sha256": "8ECE9DDF75AE4D87E6415DB0375895BCCAABF98C0CB456B3EE401758FCD57C86"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/evergrove-outpost.txt",
+      "bytes": 1236,
+      "sha256": "35DEE7614E32CD53291304C8D8D5BF784F77B7657249A8EB22FA76049AB3A15A"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/evermoon-hollow.json",
+      "bytes": 10406,
+      "sha256": "4FC0BF3F5E919E4541652DC180D9D2D605A916028FB86D7111A2DE316B86BEF9"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/evermoon-hollow.txt",
+      "bytes": 6360,
+      "sha256": "15CD514BF2D72AB28321AC55D7DF814640956D9B3644D232554913EA15AFADA3"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/feanwyyn-weald.json",
+      "bytes": 4572,
+      "sha256": "2E4A70CB473E7FF297A4C1EB45FFA61F713D338872E2C9DEA97827D3DEAF11F9"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/feanwyyn-weald.txt",
+      "bytes": 3179,
+      "sha256": "6FC292C83CC82444D4C32E1BEDDCADCE5D33CFEA4EF32D854809184F36A668AE"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/felar-encampment.json",
+      "bytes": 4671,
+      "sha256": "22E0614AADEF744A6715F6BF51B31FE18ACF275FE3D19FD143EBC17DAC1D8735"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/felar-encampment.txt",
+      "bytes": 2836,
+      "sha256": "EBF48059F94E94CEA6A6584ABE71158B1E34957D0E65D67747AD78FB2A2A5151"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/forest-of-nowhere.json",
+      "bytes": 3495,
+      "sha256": "E2376EFAC0E58EB21CB0B793AA5ABA28073CEE1753466D89DBD8461E9DBCFFD7"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/forest-of-nowhere.txt",
+      "bytes": 1515,
+      "sha256": "A286E5D0F1847F3C24991563B480194893A8D9EC45ABDDB2130BE2E1E2B922FB"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/forest-of-prosimy.json",
+      "bytes": 6379,
+      "sha256": "917BB39AB4D7E662548F642EB88A60247D1FC98F1CBBBF975545DE4D7F86EAB3"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/forest-of-prosimy.txt",
+      "bytes": 3373,
+      "sha256": "20C676AAD0CBFD5CE5B8456D7A7602D5E1E784AF59B6667B298D38D1BA53FA6E"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/forest-road-2.json",
+      "bytes": 5262,
+      "sha256": "FB822AE23DEFB7287771FDD15DDF40A1329417CFCFD37DFBD0E96C39FB43D7D4"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/forest-road-2.txt",
+      "bytes": 3380,
+      "sha256": "67DD3CE2EA5285F4CCC15DB3AADA52E8F4BCD31EF894872497AB0749E44692E3"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/forest-road.json",
+      "bytes": 5257,
+      "sha256": "E81B28ABD97DB602509663E1B1AED0D462591D482FF85792FE412069B0D111E1"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/forest-road.txt",
+      "bytes": 3380,
+      "sha256": "67DD3CE2EA5285F4CCC15DB3AADA52E8F4BCD31EF894872497AB0749E44692E3"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/forgotten-crypts.json",
+      "bytes": 3872,
+      "sha256": "9A3EBAA1DF3E2AE5B53A41328245A5E7449FB73036C420999FA883DE3D9E9A78"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/forgotten-crypts.txt",
+      "bytes": 1679,
+      "sha256": "97ADFA5AB201B41EB1E407C80F7A9F9D67F70EFDD2BD45D5294B2CE17C031787"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/galadon.json",
+      "bytes": 9735,
+      "sha256": "2A19B63B95A8AAB21504032B888C1289CBE4B03D85FDD7EF714E270666344C6D"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/galadon.txt",
+      "bytes": 5025,
+      "sha256": "70125B74799E1F90EC1FE2C9ADB29DE2B014DF4B2DF27B74E3F65364E78E6E15"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/galadonian-settlement.json",
+      "bytes": 6481,
+      "sha256": "E61BFC0249011E0148636EB182DC2E9EE8ED2101C466B5FB8E1ABB85C7F402D9"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/galadonian-settlement.txt",
+      "bytes": 3908,
+      "sha256": "9E9711D1E4F5D20D6250C52EAC60055AD09574AD98A447752DEF9E957AAED98B"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/glauruk-spawning-ground.json",
+      "bytes": 2271,
+      "sha256": "0FC8AD76F77521373C59AA353981C2AC1D974BD917E4CF9C61602F10BEF2F68E"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/glauruk-spawning-ground.txt",
+      "bytes": 1086,
+      "sha256": "C91F37DF3C2244AB1DF2B688032BF45D8F5E5212A4CDE985CF104B473864E53B"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/goblin-outpost.json",
+      "bytes": 2072,
+      "sha256": "E160EC1E688DCAC90A88066F30F45B3570899A69650C6A4F694B90370FA39200"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/goblin-outpost.txt",
+      "bytes": 920,
+      "sha256": "6465F13BC6632FF0A396F3DC9CF283AF109802A9CD2A13A2205AD44C53AB5021"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/gol-galath.json",
+      "bytes": 4699,
+      "sha256": "5C4D7B02DC0D3A7440EAC3141C6E594CC3F0C7EEC0C2C1BA7A4A71F4F41E86A7"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/gol-galath.txt",
+      "bytes": 3054,
+      "sha256": "A2D6B8E83ADE3E903C3FE9113811CD454CA85EAA81E7ADC67E8B64188FA8A67D"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/graveyard.json",
+      "bytes": 4091,
+      "sha256": "FE2C82EBE49F24CFB460061C31B745BE6ADD5A1F720B420D3DF344BEF78C75AF"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/graveyard.txt",
+      "bytes": 1521,
+      "sha256": "7F268ADB162E38267917092971660B67DB4343A601C3AA9BFD5351695C86EE28"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/grinning-skull-village.json",
+      "bytes": 5393,
+      "sha256": "202547C1D297C699B0F3744260613608CC5D62B356E2EAA5185FC9FAFE36E6B2"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/grinning-skull-village.txt",
+      "bytes": 2510,
+      "sha256": "2CE2303D8F7AEE2B5ABDC988838A3498B3CFD95230F1B1500887184D3D9F8B57"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/hamsah-mu-tazz.json",
+      "bytes": 10468,
+      "sha256": "D5E5D6E135835654234CCBBE9E8609AB711D2B9C9F1C1555C26C6F9A55F0943A"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/hamsah-mu-tazz.txt",
+      "bytes": 6229,
+      "sha256": "36308BCBD74032643BAAA8F335C17CB414375D016FB318C6313767704418051C"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/hidden-forest.json",
+      "bytes": 4708,
+      "sha256": "A47CCC0E26C77C946DF737546790F574011C2F61E2E9DCC4BDC9F4F0E96EAF66"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/hidden-forest.txt",
+      "bytes": 2517,
+      "sha256": "DBAB29DB0D4A03C3CDDEDD292CACD70805A8F3AB9BD0303E9CFB9A108CE51890"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/high-lord-s-keep.json",
+      "bytes": 5004,
+      "sha256": "80829A91937AC5049978D4EC76F568D307DB9A69C0C80101FEBD28D372C19874"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/high-lord-s-keep.txt",
+      "bytes": 2263,
+      "sha256": "EEC39707A6E4C151C6276D6D8EBF9D842CC580653997EA27A09083EE801D0D38"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/hillcrest.json",
+      "bytes": 4844,
+      "sha256": "FCD97680B43686A1DF4B475D09D7FAAD53EC891844676C8C6E394FC80EECF81C"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/hillcrest.txt",
+      "bytes": 2500,
+      "sha256": "0F5868528053A89D898C11D348238B93014F06D151E15A4E0E23A9ED3275AAB4"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/island-of-corte.json",
+      "bytes": 4406,
+      "sha256": "BF3D7B222D9D4855F7F60EBEF0E4B93D6252C8BB213FBF3AFD0A4ADD2350C8EA"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/island-of-corte.txt",
+      "bytes": 1620,
+      "sha256": "4430DEC7401277404AAF3C17E1160C1F77954047AFA8F9B837FA00D2C6A2A835"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/keep-of-ceawlin.json",
+      "bytes": 5333,
+      "sha256": "29E93D73506DAB38C7510F0F6004B096ECE77ACA69466F57652BC5583DF60F31"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/keep-of-ceawlin.txt",
+      "bytes": 2554,
+      "sha256": "D0733A890B65E1D4164948EDD83775477A868558CEDD4EDCDB8460D196843C5D"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/keep-of-the-fhalaugash.json",
+      "bytes": 5812,
+      "sha256": "A5E195E4C4424908BA4520AC913CB28AE90E060728A74ED456C4C79D96935B63"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/keep-of-the-fhalaugash.txt",
+      "bytes": 2887,
+      "sha256": "872762A5348975C2FF41D08F43F886BB94A9FC64252E6E3C7F0AB7DAEB6C22BA"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/keep-of-the-righteous.json",
+      "bytes": 7176,
+      "sha256": "7F01DA65024027BB35D17B75BAB0567E554E29A1C121F3C5A5D6439573D0CD54"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/keep-of-the-righteous.txt",
+      "bytes": 5088,
+      "sha256": "B45230119DA392847264BCBBCDE6947E60ED8F23E56C7039B9EE6B459EB626D6"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/khalid-river.json",
+      "bytes": 2938,
+      "sha256": "6BD43D53AC840E872E5F1BCB7227453FB3A060BA272C03FC09358D9872F21B24"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/khalid-river.txt",
+      "bytes": 1539,
+      "sha256": "43EDEEB75097F0428E69600EBFD655974D392923B6C1A5461A6000F45B1FDFC9"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/kteng-s-laboratory.json",
+      "bytes": 4009,
+      "sha256": "DE6AD4598372D3FA75FF9BF1114D80AB8C92B6B99899CE9200814D609E394A89"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/kteng-s-laboratory.txt",
+      "bytes": 1810,
+      "sha256": "C69651F373663A3E050C372D78867F8F008BDE24E6508551C0DF48F504AD9501"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/kuharin-plains.json",
+      "bytes": 2093,
+      "sha256": "2C3F7D6000DB7C71AD074AD4E0365B4BE9B94FBEBBA45A3EC94802B79825B888"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/kuharin-plains.txt",
+      "bytes": 836,
+      "sha256": "484412480731E547CF94002C6D7ABF41CE12F45558A30D68DC84220A9E084254"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/kuo-toa-lair.json",
+      "bytes": 5326,
+      "sha256": "C41EFA935EB02B20D0A9809A674B5C22C008DEDFF21BC92F6C74CC66DC7D100E"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/kuo-toa-lair.txt",
+      "bytes": 2907,
+      "sha256": "48BFBBC910C36D57BEB0111A9F237155D4B838CCD5986E7A5F3E5E5101E2C838"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/loch-terradian.json",
+      "bytes": 4758,
+      "sha256": "403B64444908779105B15D0BD9EB59EB8F0F1639EBAFADB8F4AFC9C76F9AFA51"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/loch-terradian.txt",
+      "bytes": 1884,
+      "sha256": "E30A179B7651BB070B6F02AC66BFDB4AE5D3E00F71AFCC58CFF64BE9CE81FAD4"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/lord-tabershaw-s-keep.json",
+      "bytes": 3742,
+      "sha256": "1390905FBC7ADAA5F762927995846D628DB4B9EFF19A529BE89BF1276787578A"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/lord-tabershaw-s-keep.txt",
+      "bytes": 2377,
+      "sha256": "3DC64630DCDA835CFF35024BFC640A0947CD19C9B95BA78AEF3DA962B709628D"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/lower-cragstone.json",
+      "bytes": 5554,
+      "sha256": "741F02614233F8E8ADEC398465568BFBB1439767103BF0C2CADC00C74F005E5A"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/lower-cragstone.txt",
+      "bytes": 3167,
+      "sha256": "038633D0C04A81726AD575D0F8F349E9B7E7E7CCB03D26E33A1BA9324563B8AF"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/maethien.json",
+      "bytes": 5971,
+      "sha256": "0AE733DA12531B65CF68D47B7AC82EEDDBC61D38A2C875B4F3A49FEF4A5AE8AF"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/maethien.txt",
+      "bytes": 2984,
+      "sha256": "94FD98D49E2BBF3F75DE87120FBFDBCD077E111E19399CA5F75F2DEBCB04786D"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/mansion-of-twilight.json",
+      "bytes": 7481,
+      "sha256": "F9477C2972C9168BAF20AD1FB4E678E1BAE4DE4E9BA18236A6009CC5674007FD"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/mansion-of-twilight.txt",
+      "bytes": 4574,
+      "sha256": "DD05D5232199121F30597386B64ED90B38F659D29F86406D1E9E79CF247FEB8F"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/mausoleum.json",
+      "bytes": 3041,
+      "sha256": "EC7BDF0E8A66533FBE41A331799C0550A608735F0624836B639F0705C15812BA"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/mausoleum.txt",
+      "bytes": 1710,
+      "sha256": "D2A70A49023681FA52DE18B4876932FF2CD450CC4B2DCF8804E28A43DC7FE52D"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/mines-of-zakiim.json",
+      "bytes": 4531,
+      "sha256": "C505A63C3EB698186E5D365431849E3A1322C3BE9736184538F2146B66CF34E6"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/mines-of-zakiim.txt",
+      "bytes": 1676,
+      "sha256": "4081112C1927C7E20E43111CEFBC5472801342B3F8C5ED1A21F194CF5929F5F0"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/mortorn.json",
+      "bytes": 8233,
+      "sha256": "431470149B876D6E579B3095DEC7ECF92B5EDE4BDE23EF84492456C81DBDB2F8"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/mortorn.txt",
+      "bytes": 6117,
+      "sha256": "364EFC5CD203B7BD79B5AD076EB6486D4A972A0F704307A509E2091A66E8D5AF"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/moudrilar-s-monastery.json",
+      "bytes": 6614,
+      "sha256": "9945F0E2FACE8D99446E2B09118739F760B31E5AA056C33475B9629439583F38"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/moudrilar-s-monastery.txt",
+      "bytes": 4519,
+      "sha256": "7EC207FDB4FC93C6AC8FE5BAB618B7930F4E510C3B233268C3F3FB7CFE008BEA"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/mount-calandaryl.json",
+      "bytes": 3605,
+      "sha256": "B90A5048BDD7FADA08A516A7FC54E90CCD68ADD76E0319C321231D5D0909C1EF"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/mount-calandaryl.txt",
+      "bytes": 1897,
+      "sha256": "4684DC45AE43CD1D49E1723C3D849688AED41E5CB18CD7F089BC8409C3D2E0A3"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/mount-kiadana-rah.json",
+      "bytes": 6040,
+      "sha256": "112E90330C6226B972206E0AB911445BD9247A020D1B1CFE5856AF3AB3EC3374"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/mount-kiadana-rah.txt",
+      "bytes": 3484,
+      "sha256": "B006DC80440FFFF1DA4D32FEA0DCD5E31D40BEB51ABD970185D15B2DFD15EF01"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/northernroads.json",
+      "bytes": 13466,
+      "sha256": "0ABA8F234744EC5A749EA5731A03B0280F999FA179D497095A354C01DE7806DA"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/northernroads.txt",
+      "bytes": 7010,
+      "sha256": "3F33DD127CDF9E0FE7E99D4A1398F738E21AC892B405E6AABF0E0FD80D50B919"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/outlying-villages.json",
+      "bytes": 5410,
+      "sha256": "49BF572509D4A8D30C1C414ED8A7912B7E361AA89FD7FD7D040FE6D099FC3897"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/outlying-villages.txt",
+      "bytes": 3202,
+      "sha256": "6804B55991D11EE3696FAE232983AD193C192FBA8793BD261A6BA32F58F0CE9A"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/outside-hamsah-mu-tazz.json",
+      "bytes": 3803,
+      "sha256": "B7F5AA48979511088DF73B5BEF23E51466A6A43BAEF1A3DA7B51C23E08737531"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/outside-hamsah-mu-tazz.txt",
+      "bytes": 2072,
+      "sha256": "A129FD37DEF47114874304FF693115A0D66D582C713CC82F28C0074BD2E00B1F"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/outskirts-of-galadon.json",
+      "bytes": 3169,
+      "sha256": "B1E1F94A079460F0A6AFEA4521258A7F6249942A6C958C51D69F14D8E3215371"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/outskirts-of-galadon.txt",
+      "bytes": 2359,
+      "sha256": "516D85C5B0E57B9515B8D90B22A874CED2B39E0A1CC3F015F03CAA1000C2AC92"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/pine-forest.json",
+      "bytes": 2747,
+      "sha256": "9DFC7397CC9D92420C38405F450AB963F16B6D3B9609AC1C78972CD137DE0351"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/pine-forest.txt",
+      "bytes": 1438,
+      "sha256": "E2F479002175E8D2DB9AC87915BE8F35FEB13CFDB88F02568B49BF160EE53912"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/ruins-of-delar-tol.json",
+      "bytes": 9189,
+      "sha256": "947BF89E2DD044B5192684C0B232B76E66ADEF0C9755F5B3B7341A96003268A6"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/ruins-of-delar-tol.txt",
+      "bytes": 4543,
+      "sha256": "97BCDEFDCB44CE1C11B0A75F76FAD197919056CF841D4164FECB61705E323746"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/ruins-of-maethien.json",
+      "bytes": 5111,
+      "sha256": "C2DF7E705CD05846C35A92B50FDA0FDBED6C24B48D1243774FC9CE76E5EBFCC4"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/ruins-of-maethien.txt",
+      "bytes": 2400,
+      "sha256": "72210896C654346D460E450D5865767898FA3FB2534545A018E04A319CE205FD"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/ruins-of-the-deep.json",
+      "bytes": 7190,
+      "sha256": "473FB51A5FE613CD54E091696EEA0E40A04BA7BAB7CAA352BE98D68D1B797AC5"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/ruins-of-the-deep.txt",
+      "bytes": 2784,
+      "sha256": "C0563620A637DF3C36377A559F93589B5F805E8DEA4D3F79F3873C1A15E8FDFD"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/seantryn-harbor.json",
+      "bytes": 5251,
+      "sha256": "4C02A466F62B98B4C744D13ED22CDE50B59EF369529C87A3AB2E3E750B38BB67"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/seantryn-harbor.txt",
+      "bytes": 2664,
+      "sha256": "71DB1529BC3BF295A8563F6A9E25EAA5524097C0A1EBE0748DE3518C0926E796"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/seantryn-modan.json",
+      "bytes": 12473,
+      "sha256": "B2FAB3F4C149A612D214F4414BD83AA2A3C20A9AEDFAE878B5AEDAC57E9BE9AD"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/seantryn-modan.txt",
+      "bytes": 8175,
+      "sha256": "62FE925ECD8F54201959C143B8BDC794C10328B83430FD54E89FB91917988712"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/silverpine-road.json",
+      "bytes": 2323,
+      "sha256": "38CDCB6DCAE389558859CB6B9B83A49F157A830F018CD942CEF1BCE4EE0742A6"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/silverpine-road.txt",
+      "bytes": 1168,
+      "sha256": "FD6792A00D803DA28377A00FDFCCF9E7D88B9607CCB97BF2A4C662B750B39FD5"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/silverwood.json",
+      "bytes": 4224,
+      "sha256": "799F63337BA792B3377ABBB9C2179F3D30F4683339FF1C5BC215A1D5636C08B8"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/silverwood.txt",
+      "bytes": 1849,
+      "sha256": "4ADBA2F2DCBF13C12B7199D8975FDBF5ED9E8D8D8814D2D46DA06021402BFF88"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/south-dairein-settlement.json",
+      "bytes": 4664,
+      "sha256": "5ED7CDC26B7D25CE520B5175FF7084AFEC6319403C1C42E418020229A4FD9CE8"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/south-dairein-settlement.txt",
+      "bytes": 1999,
+      "sha256": "8DD6356FB01108B1188275DCCC3C93F5666A32E6784ECCD1A042F65AC090E95A"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/spiderhaunt-woods.json",
+      "bytes": 7206,
+      "sha256": "5B1617BC9DE8D06BBEE93770CC46FF9438C4BC0ECB7F07F2AE073D482E24A344"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/spiderhaunt-woods.txt",
+      "bytes": 4348,
+      "sha256": "16874E1E88E27B70DDA4660879BE5EA60E8AD52E8E067C8A8C49D45FDE354AFB"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/strangeisland.json",
+      "bytes": 9117,
+      "sha256": "882282E63C756706B320E4CE84B22705C28287341AA7C2CCBD6B62053D7C7335"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/strangeisland.txt",
+      "bytes": 3897,
+      "sha256": "853A1434581E7F249970255A5D8DE4DD5644656F2E906560C06122253ED80861"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/targeth-s-manor.json",
+      "bytes": 7304,
+      "sha256": "693E11493784DBFA49F926CF65C2072CA5A5DD9DE2D09E198963E189E0E4972C"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/targeth-s-manor.txt",
+      "bytes": 5515,
+      "sha256": "A8EB4D0C1163B136F662F7AD60F99CAEC4A59B4CA8502F1E481828185CF6C891"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/temple-of-loch-grynmear.json",
+      "bytes": 6933,
+      "sha256": "D7B52156F34BB78FDDF7F487CDA225ED6F66760FC7847C9180A62A93C153D46D"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/temple-of-loch-grynmear.txt",
+      "bytes": 3152,
+      "sha256": "082E4E17EC96066558DF59598C4A215843520AB639E7EA7C0AFE85ED0170B386"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/teth-azeleth.json",
+      "bytes": 4328,
+      "sha256": "C394600AA3795563D1315299DC378E1A8180B4A52584685F9C5A225D52AC907D"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/teth-azeleth.txt",
+      "bytes": 1752,
+      "sha256": "65642142DF8027415D7DE4A1DFF091476938FDA5A8F0473C8D5F23161682E268"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-ancient-road-to-the-wastes.json",
+      "bytes": 6323,
+      "sha256": "EC880999823A8F85B4E9305C2E8B4BEFB2364D620D370829FEFCB4EEB6F65782"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-ancient-road-to-the-wastes.txt",
+      "bytes": 3150,
+      "sha256": "A3351D2FCCE4CE5C512F5665E6BDF374CCA94D72FD9A8800FC3B75F8589EF305"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-aryth-ocean.json",
+      "bytes": 5393,
+      "sha256": "AA85836F357574F1761B3F2E6B6007E73C6544BA48A37F64DC39D9821F24187B"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-aryth-ocean.txt",
+      "bytes": 4428,
+      "sha256": "8158A5E9D0162017297084EDDDAD70E17DE63416FBEECD4516C4F41F60C0A487"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-ashes-of-nowhere.json",
+      "bytes": 2524,
+      "sha256": "A24F34F7DE611F478D034E022CDFE1C24D3B58415CA32F1D9E21127681CA87D6"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-ashes-of-nowhere.txt",
+      "bytes": 1724,
+      "sha256": "7E167954B3B968E00FA774B1CA3BCC0888321BE78938227E15038465F9E406B6"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-bandit-stronghold.json",
+      "bytes": 3718,
+      "sha256": "E359AE5BE2563AB43ABE84934A0F539FED086D4F6F8A52FE50C849EED24947A3"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-bandit-stronghold.txt",
+      "bytes": 1524,
+      "sha256": "6F5DC48074D24E3A751D1C20C16A649809952DAA636AFC502778577733CF3FBE"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-basilica.json",
+      "bytes": 5602,
+      "sha256": "6437D2D0FA31AD4896718AD04EB15940C2E8E4FD9B0BC3C20E5BBBF32E7BA51E"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-basilica.txt",
+      "bytes": 2492,
+      "sha256": "C6293C32F727DA6B3A59CD7D74B25BE098EA967436902A39E4FEA65901983EF5"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-battlefield.json",
+      "bytes": 4942,
+      "sha256": "078ACF553E731D309D70D0A60F80F8DFE13A825EDBECBD28B0DFAD93E79E4A22"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-battlefield.txt",
+      "bytes": 4137,
+      "sha256": "E8B0330B829515F803C424945A40900AD6411890195E927AE7A87ECAAFF8C83D"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-citadel-of-ostalagiah.json",
+      "bytes": 5667,
+      "sha256": "05E1DD138C531A746B22D1E6FEB17C924E9BA5D0614716106B7F1C0531CDD7F1"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-citadel-of-ostalagiah.txt",
+      "bytes": 3477,
+      "sha256": "663730CA47AD89C7DC2BE735C6FF35969CFF855D83D5E98F110F725709DC061E"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-coastal-plains.json",
+      "bytes": 3263,
+      "sha256": "105F22B25480CCB9BC6D4ED3219D0F620F3C7E25D006D47D78E78DDE4F3926DE"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-coastal-plains.txt",
+      "bytes": 2442,
+      "sha256": "7F7316EE27FB07B2AEC00D8593275C31500C37958743AE531AAD838CB6696CDC"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-consortium.json",
+      "bytes": 3562,
+      "sha256": "C5307EB36848F811B2152BB54F48E5763731E275C4492063CA5CD29AF9057806"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-consortium.txt",
+      "bytes": 1933,
+      "sha256": "FF1ADCD083B5321174A0BA4689061C0795DFD8F0D05CC3F60D425D2CAEDDAD2E"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-coral-head.json",
+      "bytes": 5186,
+      "sha256": "2164E0B08A2EF0629FCCC8BF4899F3C8EC6FC64F2CE8A6C80C39B130C141F271"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-coral-head.txt",
+      "bytes": 2676,
+      "sha256": "936FCB858B0A99B40CE8BA506EBDBE263F7BC5D742023856F356EDA551030E10"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-dark-wood.json",
+      "bytes": 2478,
+      "sha256": "8036D9EAA9F9B8055412137A28DA8BABA417B9AD8DBEC9D07E7140D93BBEBF13"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-dark-wood.txt",
+      "bytes": 1689,
+      "sha256": "5614FD3E09B17A2988D020B5DE18E2F54E9066A27A645251B08981C44EACF2B5"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-dragon-sea.json",
+      "bytes": 3883,
+      "sha256": "CC0435214DCF25F9FF3FC19BFF1EAA5E6AE54B46A6C53D051014C47A16C9DCCD"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-dragon-sea.txt",
+      "bytes": 2987,
+      "sha256": "38636B2A24235B54B26E909FED597D3CD207CFF264BE9ACFE7F408653ECC0C2A"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-dranettie-wood.json",
+      "bytes": 8489,
+      "sha256": "9592EEAE836D781D56D0692AA36FF1BD5C58F1C4D02273F269610FB768E28167"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-dranettie-wood.txt",
+      "bytes": 6108,
+      "sha256": "E37E57DC9BEFBDC11ADE67D8FDCE991B394AE994CD8901149697C7F594EB4F9F"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-drogran-hills.json",
+      "bytes": 4782,
+      "sha256": "B679EFA2B916D1332DBCA10E5865D73C591FE9B97D16CDFD47DB442578D83682"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-drogran-hills.txt",
+      "bytes": 3496,
+      "sha256": "E571F6AEE6D8022501E225523C2862AB26C980F1D01D04D00B39B91D6E61799B"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-dwarf-forest.json",
+      "bytes": 5700,
+      "sha256": "79FCBF13730C39D5B01EDA74A4664017D74F4D0B5D58947BD2930E03D68E2107"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-dwarf-forest.txt",
+      "bytes": 3740,
+      "sha256": "DCBA2B68851ED129766112C1BCE91E0CB0C990ACF096924A823135A5CF04EB8C"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-eastern-road.json",
+      "bytes": 2180,
+      "sha256": "BB81EAE4E33935584550F61CD2E8234B592634A7B93ED3C18B17945DD3792B0C"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-eastern-road.txt",
+      "bytes": 1300,
+      "sha256": "9A1B09B846A17C04D37361E9CD0A7A11A8710032556510D9118086BAAAE92431"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-fields-of-balator.json",
+      "bytes": 4263,
+      "sha256": "0D2193B30F1370B6BA31AAECFB37DEC482054172DA00848E466B86D2184732CA"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-fields-of-balator.txt",
+      "bytes": 1854,
+      "sha256": "8CA3A201FEA60760436D793CB446EB59301AAAA6D6C25592CD00ECB6D4CFD1BA"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-frigid-wasteland.json",
+      "bytes": 5431,
+      "sha256": "5C5D4405A0B0BF2A3A7C3728FAAA7AE8E7C330173E54D4A7B853C82543416154"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-frigid-wasteland.txt",
+      "bytes": 4151,
+      "sha256": "9AA72B63E045E96FF426B353315A57DC2F0DF32BB52848675E8119D5AE64908D"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-frozen-gorge.json",
+      "bytes": 1583,
+      "sha256": "C47126EFC0011B79B3D8256C43DD867624A519A36E5960F207477316ED9B30CE"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-frozen-gorge.txt",
+      "bytes": 422,
+      "sha256": "FCE1726B69C09FB3B5EF146C9FC6DAC8FF50A734C9A81EA1A52F34ED323BF526"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-galadon-sewers.json",
+      "bytes": 8134,
+      "sha256": "4263B32E10269E8479F720AC8E8F6550E9115EB030C7178D3AFDFD92CCD08477"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-galadon-sewers.txt",
+      "bytes": 3624,
+      "sha256": "2A66FE5275C1D932A43DF6CDC3019FA286D9489DEDD454B087E72F540FCEBE39"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-goblin-village.json",
+      "bytes": 2720,
+      "sha256": "E31DBA93CC721373D643EB7E6679EF8C282D8621A61F8754F63F67399A2C79C7"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-goblin-village.txt",
+      "bytes": 1490,
+      "sha256": "6118FC9BD1EA740531404D323AFBEEAEFA1601239BE69425C4711C0FB31BE853"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-grove.json",
+      "bytes": 4000,
+      "sha256": "80167678EFF34C54A1BC784DAC5FE523D32DA747D40BF9DFE4A5D5FF332A11BB"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-grove.txt",
+      "bytes": 2727,
+      "sha256": "CA30E65F25A961FE7FEF07EB1B7F46919C5E87656B5ACAA6C3E39AEAF4AFB31E"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-halfling-lands.json",
+      "bytes": 6882,
+      "sha256": "C210D2701AE9DF6E219C7FA84E8DF05EFE4C231168F401E09D0D3A2A1BDEE339"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-halfling-lands.txt",
+      "bytes": 4378,
+      "sha256": "C9AB2F5FD6F75CD3D5393CD12F7E1301AFB6DB516ACC324E2555FBBC7B02B338"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-high-pass.json",
+      "bytes": 2888,
+      "sha256": "7941E68B502886C3DB10E04031519803FE85DB0A7ECFEFB968F8539B11C1954B"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-high-pass.txt",
+      "bytes": 1339,
+      "sha256": "65ED5B46A6C4ADA47B7FFC53DECF8ADDBFDB499E0D6389B733F1C701BF4965A1"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-imperial-lands.json",
+      "bytes": 4450,
+      "sha256": "402B44ED15F62C103E251653F0D788F48450E6372310169F42ECE62BD0EF6F01"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-imperial-lands.txt",
+      "bytes": 2978,
+      "sha256": "966BB5A247872D76845738C5352201029C2EC0463AA70509EDE3EBBE6A557C33"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-jade-mountains.json",
+      "bytes": 12355,
+      "sha256": "913F001BEF650BD46F70DA04886E3B546E5FF5788208F67CC33180ACA146C6FC"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-jade-mountains.txt",
+      "bytes": 9184,
+      "sha256": "49B07540B3096B55698AE220444710BAC9321F56B0DB778497A5CB8C37831C47"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-keep-of-barovia.json",
+      "bytes": 8075,
+      "sha256": "D71251A276165C15F2D6C9B3A9934AE6C9AE225D37692DFFEAC3CDC920919179"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-keep-of-barovia.txt",
+      "bytes": 5005,
+      "sha256": "AA8FE988B684D0210ED022D414D4AE197AE386362DF8AD548AFA8D0E5EB8B5F7"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-kobold-warrens.json",
+      "bytes": 4576,
+      "sha256": "4453847ACC32C7516474DAC368C26825259674ADF045C33835411FF55BEBC98B"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-kobold-warrens.txt",
+      "bytes": 2270,
+      "sha256": "D5F4EBD200F6508A3AD0A331516A4A5B7857EC98DBE727E99AF5B89F477581FE"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-lumberyard.json",
+      "bytes": 4519,
+      "sha256": "F8CFFD58A1CDE5A52D2BAB49112E52381CF3DCA25330EA86A044E6571BED1734"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-lumberyard.txt",
+      "bytes": 1827,
+      "sha256": "A3D0262ECF7E56F2B801050CAF74E82178753E22F62142686A63A620AA7F5533"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-northern-mountains.json",
+      "bytes": 5654,
+      "sha256": "5A552B676786836ABB0BC46CEE7731DCE2947B5D6BB4E49E75C2D61BE58857C0"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-northern-mountains.txt",
+      "bytes": 2718,
+      "sha256": "5F7359FA9F96376920CDEFA749737AE584C870007BE1E5BC7DA1039A7FDE6478"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-oryx-steppes.json",
+      "bytes": 5464,
+      "sha256": "66EBB44B546656FF0523BFA44366B59C0986DAF49F2F66C0D16FD9B3C9783C8C"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-oryx-steppes.txt",
+      "bytes": 2670,
+      "sha256": "40D817675E0050C3F3AC000B6A8F6875AD31F7950A8E1E859AA064047C298CE7"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-outpost-of-tir-talath.json",
+      "bytes": 8398,
+      "sha256": "C5931932DA5B87F0637420ED06D4EEB558DB1E31CB3113BCDA3B1B841C3038CC"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-outpost-of-tir-talath.txt",
+      "bytes": 4180,
+      "sha256": "E2C8D915396D30629D3C458C884D77B282F59220E634090FFC24C967F839A9B5"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-past-grove.json",
+      "bytes": 4604,
+      "sha256": "F239316F122197B941A1F7BC3F10156B20C6075777D22BA61F8C81AA79765C34"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-past-grove.txt",
+      "bytes": 3803,
+      "sha256": "7CB2B8C77496723FB86D96B666BBCCF89A27DC7F68AF3F9DF7767D43D5B3E2DA"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-past-shadow-grove.json",
+      "bytes": 2592,
+      "sha256": "2303A9CFE55FE6C0F707BF49E44DC0D0CA0CEE937F7ABE56E1FB80AD6E56D2CF"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-past-shadow-grove.txt",
+      "bytes": 1217,
+      "sha256": "89E84A28A1046FAA5FD2B83E8BEB908C2653AB3A7A9EF052E58B9B10FD57960E"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-plains-of-arendyl.json",
+      "bytes": 4174,
+      "sha256": "9A77E33D742A9D0832D15996640101E5B9E47B4FA39152E75BC73F24A5F8CC4E"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-plains-of-arendyl.txt",
+      "bytes": 2640,
+      "sha256": "EDE2E93F059B694F9741661DB6667B096DDB6E40A7270D494BFBA2A9260F7ACA"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-pyramid-of-azhan.json",
+      "bytes": 20064,
+      "sha256": "FB3E8A36FC367D38A930402F42F573763A8E9D2A7F286C4CA59709148338486F"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-pyramid-of-azhan.txt",
+      "bytes": 15263,
+      "sha256": "D9EB13BEAEC5C9159DAF6FD22015C94D7E72054B3283DA0A6E139C74A8AFA466"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-redhorn-mountains.json",
+      "bytes": 1912,
+      "sha256": "C912185CBA65253E15332BA2CAAEF0ED7972E4AB0FD31412B05F61317C0612A3"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-redhorn-mountains.txt",
+      "bytes": 557,
+      "sha256": "09D928AB8B26FAF1906941B1A4A51C0A4E2353D592220E9BDF2050C3A1D57ADF"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-river-nanthor.json",
+      "bytes": 2045,
+      "sha256": "B820EC953230346256EB710949FA666AA017DC68C4EEDB3E0A7D178D1EEF1101"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-river-nanthor.txt",
+      "bytes": 699,
+      "sha256": "8DCFCDFC6D330E7C46E92CC1653183600EBFF121A7D20ABA3A0194ECA45174E3"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-rocky-paths.json",
+      "bytes": 2701,
+      "sha256": "0EBBAE024E0D14422EEF5760B8D7B11779D5ED5B8EC96A63CE5CC2B63DA9AAC5"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-rocky-paths.txt",
+      "bytes": 1554,
+      "sha256": "215E1CAF46E2A022E571A8C6521ECEA1FCF7DC02F74B5061F5FC501C24D6FAD5"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-ruins-of-ostalagiah.json",
+      "bytes": 3500,
+      "sha256": "62256C59616953CD2561216C84FE0A5307D668ADC60E80D3913AE0FC305D6987"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-ruins-of-ostalagiah.txt",
+      "bytes": 1937,
+      "sha256": "3E2E37B286983BF051030A334FFEF500F9C82FE39235291A29A43B86BA6E56E6"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-sea-of-despair.json",
+      "bytes": 3308,
+      "sha256": "7F49CAFEFF7FD2DA9AFCFB33F2C886D0CC8CA2C498D51D2427C55B21C719959C"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-sea-of-despair.txt",
+      "bytes": 2123,
+      "sha256": "6612119F09021012AAF7AC43620AF9E4C031E7388EA327229DEDCDE52E42F0C7"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-seaport-of-hamsah-mu-tazz.json",
+      "bytes": 3009,
+      "sha256": "F5E9D2384503495E4B58950B10A592FBB95538CE1DEB4641E7C7AE268A2AB323"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-seaport-of-hamsah-mu-tazz.txt",
+      "bytes": 1267,
+      "sha256": "ACAFE1EFB10BDF83F6D272FFB685EF4428B0CEC9B014103489D59E4FCC2BCA17"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-sewers-of-seantryn-modan.json",
+      "bytes": 5414,
+      "sha256": "FB2645CBD7C60F0F110343C7C24DD908D0CB3DD2DC77BE1F934973D8ED2DBF06"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-sewers-of-seantryn-modan.txt",
+      "bytes": 2793,
+      "sha256": "670A9141C591C62C7FE5ADBE1612DDAD67BB18F4DDC8EDD52AEC9695CFC8F73A"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-shadow-grove.json",
+      "bytes": 2388,
+      "sha256": "651A0E8E9F48F07E13FEAEBB1B6FAD5FAA430C3B4AC869A8F75C03F007F2EB62"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-shadow-grove.txt",
+      "bytes": 1043,
+      "sha256": "49A5C0CA4E32E15B23B393400C49863ABB67237BC9CA7AEB1324ED88465AC485"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-skies-above-thera.json",
+      "bytes": 2424,
+      "sha256": "286B2B071D03227BEFD11451D7BAF0068D9F448FE8EBB971482E2AC76850B00B"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-skies-above-thera.txt",
+      "bytes": 1643,
+      "sha256": "14137C2C8C05F72F57CA052A156659AFAC9ACD20EFEA637895BB56C8534BC3E9"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-slave-mines-of-sitran.json",
+      "bytes": 6951,
+      "sha256": "ECA364BFEC3F62BD79608DBCF22D8199FDC9059B2F4BBD5A07FB4B8346387CB2"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-slave-mines-of-sitran.txt",
+      "bytes": 4186,
+      "sha256": "65284F563E10EE78E0627EDD254E9E75C12A7636C39B627AA3CEFCCB9A34C37D"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-stone-s-embrace.json",
+      "bytes": 5118,
+      "sha256": "21FAD474790BA781F168B9382FB47F5B5F2B17EDB350D47D9B048144F8C7D08B"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-stone-s-embrace.txt",
+      "bytes": 2400,
+      "sha256": "D4EDC2B30D4B10239D5BE1ABE7646178181C5598275326B2D80293155B923E32"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-tahril-mountains.json",
+      "bytes": 3349,
+      "sha256": "AB8171A0CF3ACE0AEF5FDF12DA3111681513462BE05024F03CB6114D2E57C975"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-tahril-mountains.txt",
+      "bytes": 1873,
+      "sha256": "35477895DF8C8915F35FDD97F90CB1DEF6A1BA21BEA0BEA2FAFFF2E6E51EF67B"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-talshidar-caves.json",
+      "bytes": 7797,
+      "sha256": "B439110BEED1EAECBC5C8E87EF300E771CE00BD948A77783B4E2F818A4748770"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-talshidar-caves.txt",
+      "bytes": 5215,
+      "sha256": "D557B34B0A4043FA40F3C775F39615B7A94C504832D5A4B436CC8A3EDB8455DE"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-tower-of-sorcery.json",
+      "bytes": 10352,
+      "sha256": "2597322ED1452C90050E785B70909EAED7BF91A5F37A8A5DC16760D0E1BCD17C"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-tower-of-sorcery.txt",
+      "bytes": 5575,
+      "sha256": "D0F4501949A03E9C4DDB29DF58EA7E3029D2252CAE19153EFB7D82BD7FFABFCD"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-underdark-sea.json",
+      "bytes": 5420,
+      "sha256": "D4A73625AC3C9D45E063B0E4B0D29E7859B48B5F95CF14502F35CB202B6524A6"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-underdark-sea.txt",
+      "bytes": 4498,
+      "sha256": "EE0385A0DD7B0E65C27A0237EA8F15ADF6CFB2922C8F1F77E6097F158AC8836B"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-vale-of-arendyl.json",
+      "bytes": 3547,
+      "sha256": "F7D9F76BC7CE61352EB8215C6849D96EFDA67DB08B230BED881A65779B9C586A"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-vale-of-arendyl.txt",
+      "bytes": 2273,
+      "sha256": "95053D2DB0C7F16D3FC2D521DCD3811E47EEBB3E70C1EFF82F857CA75EEFC98B"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-village-of-azuremain.json",
+      "bytes": 3806,
+      "sha256": "BB32451B09EA3261B94A62791F1145B5C1AF571C194C6BDEFB1270645938825C"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-village-of-azuremain.txt",
+      "bytes": 1537,
+      "sha256": "ACF0DEAED3749F7FD19E067987384F98E4AB2961AF672E3A8463405AD8A2E2B6"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-village-of-barovia.json",
+      "bytes": 3995,
+      "sha256": "ED0438D62D3ACCDC9A416B049C994A7D480F7CBC01233CF2A9B1F24988E4BB0A"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-village-of-barovia.txt",
+      "bytes": 1998,
+      "sha256": "B7161F3E4A3E7989CB0AFB7DACD11DCE6B91C7759D3F4BF57EF1589418E36CAE"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-violet-woodland.json",
+      "bytes": 4422,
+      "sha256": "8ABF9254F1F05E0B7E0DABECC7568CFF95D5DAD1A6CFFE52E4ECEEA7FF13CECB"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-violet-woodland.txt",
+      "bytes": 1925,
+      "sha256": "5052B1EBC0248A98A5094FA610502609AF95A994013D5A77B7F38EF89C16A050"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-wastes-of-nonviel.json",
+      "bytes": 4756,
+      "sha256": "8A72B8049225CC74AD82F188285C9957C51192420A36D1E1F5C0E0EEFC99B983"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-wastes-of-nonviel.txt",
+      "bytes": 3762,
+      "sha256": "60D0726E9BC6F66B91EA53BB6089920080BDEC65172889F8F9DFE739518A6A39"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-xvart-lair.json",
+      "bytes": 5879,
+      "sha256": "799305F5E81B2BF5AC23553836FC1E026E70ED21347F86D3BD147AFEE32EFD46"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/the-xvart-lair.txt",
+      "bytes": 3790,
+      "sha256": "8B12AF250959589C8647850579A960E472CE3B7088F796BF55788C3CAD849931"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/traveller.json",
+      "bytes": 8319,
+      "sha256": "1E607119D12916FBB7DC899EE75C3B2AA3826654B237829A70213171F1369EF5"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/traveller.txt",
+      "bytes": 4514,
+      "sha256": "30DBC2E31B1CB8720C22471319B1AACAFDC8F9F0A8B5579E31C579AFD1354C19"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/troglodyte-caverns.json",
+      "bytes": 3974,
+      "sha256": "0758F158FFFC4C18308AF8A0D444B6FD96A3A4E1EF914D866F2FD2F9183EAE45"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/troglodyte-caverns.txt",
+      "bytes": 1779,
+      "sha256": "D42C9129214EE64C2E20E31BB0FCEF7742E7CBF37CFE7A5CFA769BFB361AD6F8"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/udgaard.json",
+      "bytes": 7062,
+      "sha256": "89B2EE37F81044B76FC4BF12044D1398408605D44169654632EC6863A229766B"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/udgaard.txt",
+      "bytes": 4175,
+      "sha256": "1D8D4DA6CF1FDDF6DAAB58EFE9CD7C01FF9734B7F49711F58AC885B43DDEDE8C"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/udgaardian-plains.json",
+      "bytes": 6430,
+      "sha256": "95828746122D260078A6B17273F5840CB5BCBCDDAE63A07F2CD23CABA56E7685"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/udgaardian-plains.txt",
+      "bytes": 3512,
+      "sha256": "4352F5B095C94EA595FB5722D397F44ACEAA1A4653CA058A77D9A3F1612D2B6E"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/ugruk.json",
+      "bytes": 5474,
+      "sha256": "DBD8F95AA444CA52AFE9E1FE78323858D9AB53939D01E557957196F8FCD04D03"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/ugruk.txt",
+      "bytes": 4215,
+      "sha256": "8B2058C8676B300880429AC68117A0E2A0C05E8AE1ABAF54954D16947518AD95"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/underdark.json",
+      "bytes": 10705,
+      "sha256": "F04D67E680C3E53F0500AD0A0E08211E177B632D18546E23F963785C658A5816"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/underdark.txt",
+      "bytes": 6190,
+      "sha256": "29E311859B7790DF9223FEBF4813A6FE1B14F0B3013837739D62890D5B43EC45"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/upper-cragstone.json",
+      "bytes": 5240,
+      "sha256": "1C40D107BAEBF548BC3F497F6BFE98E8EF1C17C948697414FA2533DB8294B0B5"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/upper-cragstone.txt",
+      "bytes": 2783,
+      "sha256": "8781D5C8D24D157FBAB1E7518E244E72B5625E6B6D0F9521893D68CD0C6EB470"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/v-dramir-s-cove.json",
+      "bytes": 3764,
+      "sha256": "63A956BB05A5032475FD6F4CE1D33F237BA4B194E06A977F5EC415ABA7D0A0B8"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/v-dramir-s-cove.txt",
+      "bytes": 1700,
+      "sha256": "0BD67AFA0E7EF0F5D881B65B30B5D8D013114D9DABA4D285CBB3F29F10FBF369"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/valley-of-veran.json",
+      "bytes": 5225,
+      "sha256": "6BA8F041ED9432F8DE2F5779905673DD05D6B643530FA5452A8B9B5E134B03F4"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/valley-of-veran.txt",
+      "bytes": 2775,
+      "sha256": "7464AC7F115F4635DDE7114B54624B677E0D9FE4CDDC439F6027E4D855020A63"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/velkyn-oloth.json",
+      "bytes": 4982,
+      "sha256": "487355E49F62EB12D5FB11C374F3D231E58647F26A029D773B26386CB73CFD21"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/velkyn-oloth.txt",
+      "bytes": 3348,
+      "sha256": "FDD3AD48FBF9A11624B822EEA5D741FA64735C849A50445708EB31630452BFCD"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/village-of-lallenyha.json",
+      "bytes": 4987,
+      "sha256": "F04124601EFADB8DB1277E00F14D4DBE5B2D720F1DA804919B85BABE470618CE"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/village-of-lallenyha.txt",
+      "bytes": 2036,
+      "sha256": "A851A7CC2AF3038192267F6A18FCD02CB5391AE3754E9A0C2AF368BFCD87BDD3"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/village-of-mal-trakis.json",
+      "bytes": 3842,
+      "sha256": "D90895319CDF44E56197CD19223FABEE5613290BE318CBA43135AB8B196EC7A9"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/village-of-mal-trakis.txt",
+      "bytes": 2132,
+      "sha256": "CB791F7537F1F596217A62409290CB5A9C11F836E7967F5DF098F478B7CFFF0B"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/voralia-s-tears.json",
+      "bytes": 10121,
+      "sha256": "06A4E7EB972CCE60D357A133A2B584FD60AD602A4BDEED1860617EBB117C28F8"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/voralia-s-tears.txt",
+      "bytes": 7204,
+      "sha256": "2D7FF41A050BB305624E64A49ED3ED5FE210F5229C6A6003F6F7E762A304DF32"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/voralian-city.json",
+      "bytes": 7902,
+      "sha256": "4BDFA582CCFEB74A79366B890B12D23C02CE549E45DB233E9DD67EBF37391AF0"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/voralian-city.txt",
+      "bytes": 5117,
+      "sha256": "3F205CF73780D5FA0DB2A500DEDC026231D8E4956449BF0264E7272E7FD2EF41"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/waters-of-the-deep.json",
+      "bytes": 5440,
+      "sha256": "598C087D8E9B86FD35917624C9CA4433BD4B7F5BF5D38D43D6926DD643733079"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/waters-of-the-deep.txt",
+      "bytes": 2982,
+      "sha256": "E0A07EB24C25E2D472EC1DFA8F1426319765845B88C16DD00CAED8EF5289346B"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/western-aryth-ocean.json",
+      "bytes": 6309,
+      "sha256": "76A1E2E024DB23117FD62C3B1659B28E27640281585B55196AE3CD7A0A746150"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/western-aryth-ocean.txt",
+      "bytes": 5464,
+      "sha256": "683E0DEAEE0D384F001F59464CCBC26F4B8965160602286E0510F68D984E2111"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/whistlewood-swamp.json",
+      "bytes": 5031,
+      "sha256": "87579E839D63E4BEE0FF96B6FCF5042A83748DF465C1E35949AF002FCD6E7A6A"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/whistlewood-swamp.txt",
+      "bytes": 3882,
+      "sha256": "0C21722DBEEFD25A2628BFD76B8DAE20F4357C0DA5F350AEF77297D9D243BB4D"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/worldmap.json",
+      "bytes": 12751,
+      "sha256": "17139F1F38935E6AD72C63444C233C746DF062C19A0F838A27431EAA169C3E5D"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/worldmap.txt",
+      "bytes": 9393,
+      "sha256": "7E0483564B509F0554EB587E6EDEE933E35E99731D7468B5E35C9999FC55ABCC"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/ysigrath.json",
+      "bytes": 6039,
+      "sha256": "75E4B852F97887281E5C3C5A45E35912C9BC7B63D397D573CD65FB176BE3A095"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/areas/ysigrath.txt",
+      "bytes": 4855,
+      "sha256": "8ABBA5EBC97F3D9A2502C1E75F663391DBBE6FCD62CE73505AB2B85F66F35D53"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/index.json",
+      "bytes": 110151,
+      "sha256": "81AF54674A870215F6411239E39F7379FFF77165221F7D6E7277C254FCA28754"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/navigation/academy-graph.json",
+      "bytes": 3557,
+      "sha256": "8017C64DBC2DAFB29D5A158C133493210DE9450DF41E10D51A0481AFF1F7F945"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/references/academy-SOURCE-NOTES.md",
+      "bytes": 5485,
+      "sha256": "5D04C7ACAF1CD881DEC79510ED33281A49FC78A3740514CF130DCDD11A92DCD2"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/references/temple-coverage-matrix.csv",
+      "bytes": 5144,
+      "sha256": "FF0DA0525342368CB3FB91CE4AD24684E7A8D8EF979CA9EE7A8616C51A2A57E7"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/western-shadow-sorcery-inventory.json",
+      "bytes": 15542,
+      "sha256": "1411F2E04498184614253CF86D595267E31B811570C2F4B108782EA4A35BDD31"
+    },
+    {
+      "path": "warp/maps/archive/cf/data/world-map-links.json",
+      "bytes": 131942,
+      "sha256": "F689A40B624B70EFCAD374D359FC4572CCDB5D70342175CA286102FC627E6636"
+    },
+    {
+      "path": "warp/maps/archive/cf/eastern-road-preview.css",
+      "bytes": 8750,
+      "sha256": "5AF00C131AFE807E026D46ADBEC46D3D6517F84B72E445E443F12201E981D40E"
+    },
+    {
+      "path": "warp/maps/archive/cf/eastern-road-preview.html",
+      "bytes": 8689,
+      "sha256": "F2AA03BA8B810FDDD497B890CD7C9BF4C4A4F2B5B30AD5D18FA1772FE3BBEBA1"
+    },
+    {
+      "path": "warp/maps/archive/cf/eastern-road-preview.mjs",
+      "bytes": 21704,
+      "sha256": "DCB0A6FF6B4373816AED13977ACB79AB93A906999EEFF110DC5C4A034A5E25C9"
+    },
+    {
+      "path": "warp/maps/archive/cf/enhanced-area-links.mjs",
+      "bytes": 4153,
+      "sha256": "5C9ED37215D472FDDDE0348BC9B9BBF18F0B4A0203AEB96618DAAE3431210472"
+    },
+    {
+      "path": "warp/maps/archive/cf/galadon-preview.html",
+      "bytes": 30880,
+      "sha256": "1BFFA0F4F4435EE001B2D5CFCAA34F6A292E005BF195B4179A777DB0D84776E6"
+    },
+    {
+      "path": "warp/maps/archive/cf/galadonian-settlement-preview.html",
+      "bytes": 4284,
+      "sha256": "AB17298B4773AF3A074F74898BB76B0257E65A859D1C78434FEA8649847A6F78"
+    },
+    {
+      "path": "warp/maps/archive/cf/galadonian-settlement-preview.mjs",
+      "bytes": 4026,
+      "sha256": "484EA325E81C3DCE0DE8918E4199207805305D01EBD74EC3CD8E4F006A8B28CC"
+    },
+    {
+      "path": "warp/maps/archive/cf/galadonian-settlement-route.mjs",
+      "bytes": 9144,
+      "sha256": "E7BC46C2E9B7BAA6CB15F96354B3F5007806AF770544F4FCB448C8E9AE6D76D1"
+    },
+    {
+      "path": "warp/maps/archive/cf/gate-commands.mjs",
+      "bytes": 732,
+      "sha256": "0AC3D476ED4118873A9306062F504AF4A0B348CAFB273D00B220E57790F351D7"
+    },
+    {
+      "path": "warp/maps/archive/cf/graveyard-preview.html",
+      "bytes": 3667,
+      "sha256": "1155E4EE7E56B38B472461D7C09D2B2067F4E4AA1E6A6551A9011172E8ED4922"
+    },
+    {
+      "path": "warp/maps/archive/cf/graveyard-preview.mjs",
+      "bytes": 744,
+      "sha256": "67FB4C89BA0FA67BDDA90F555784765621281B3352E6274103EA029BBBE68570"
+    },
+    {
+      "path": "warp/maps/archive/cf/graveyard-route.mjs",
+      "bytes": 3808,
+      "sha256": "974ADDEC3BD38E25D25389A207239A22AD809B0530A35757D546119781DB587A"
+    },
+    {
+      "path": "warp/maps/archive/cf/grove-preview.html",
+      "bytes": 5105,
+      "sha256": "85F37E93BBCC55F14CDDBCDD6D399467F71FD5685D41F21BB23A6745513FB109"
+    },
+    {
+      "path": "warp/maps/archive/cf/grove-preview.mjs",
+      "bytes": 8231,
+      "sha256": "DAD44602F7FEE2349C4F37B19918687F24BC4604F372A5EB1E0CDCEA91DF8F9F"
+    },
+    {
+      "path": "warp/maps/archive/cf/grove-route.mjs",
+      "bytes": 4463,
+      "sha256": "F3F50503FC6EC505E09D7458B9839CF4F481AF9262893ADE5F620463A1B84161"
+    },
+    {
+      "path": "warp/maps/archive/cf/index.html",
+      "bytes": 3837,
+      "sha256": "508491E30E1358B7629F779CEE192580322096A2E5F60404C31A7643F9BA20F0"
+    },
+    {
+      "path": "warp/maps/archive/cf/manifest.json",
+      "bytes": 1335,
+      "sha256": "05F281393DE7F3167AF08B0C37D67E0025A102D0390230557B0F64131F2EE16C"
+    },
+    {
+      "path": "warp/maps/archive/cf/maps.html",
+      "bytes": 5362,
+      "sha256": "B12A97FB50D2DCB41B9B522428AAB1FE69F3AF90EBB2AE19CACEF9A288C6A8E0"
+    },
+    {
+      "path": "warp/maps/archive/cf/maps.json",
+      "bytes": 928353,
+      "sha256": "FC2AB7618AA379465728FB34F16F325DF9AAE504190BB488BE49ECC68ED2801E"
+    },
+    {
+      "path": "warp/maps/archive/cf/navigation/galadon-v1.json",
+      "bytes": 33724,
+      "sha256": "C2A16E025034AECC8991DD770243C56CF03E414D6D79F387023C3151DB939E10"
+    },
+    {
+      "path": "warp/maps/archive/cf/navigation/index.html",
+      "bytes": 12817,
+      "sha256": "AD701A0A2C133358A44E6825B09F0BD1EB42EBF4731F7F7F3C38C75A4EF7539F"
+    },
+    {
+      "path": "warp/maps/archive/cf/navigation/route-engine.mjs",
+      "bytes": 19787,
+      "sha256": "1DE59E2EA985C4B3CA1105255F772707C608A32FD176C23A8349200CCCC6A3B4"
+    },
+    {
+      "path": "warp/maps/archive/cf/north-road-preview.css",
+      "bytes": 1369,
+      "sha256": "85353CA3519BD215F5269DBEDC56172197E91BBB0BA433D530C4770A1E2AF5AF"
+    },
+    {
+      "path": "warp/maps/archive/cf/north-road-preview.html",
+      "bytes": 4851,
+      "sha256": "00D493CCDB0602BE41657BC076E12A125C276E84953B9F1DE2871ABB9ECB18CE"
+    },
+    {
+      "path": "warp/maps/archive/cf/north-road-preview.mjs",
+      "bytes": 9987,
+      "sha256": "876F9E30CC84D0E995C70F54DE050F52E018F4549131496AE1BCA6A9949D49AF"
+    },
+    {
+      "path": "warp/maps/archive/cf/outskirts-preview.html",
+      "bytes": 3575,
+      "sha256": "FF6919945397E2D9B912839C6F975391E2DDC327CFE54907F2A2898A1F378DB8"
+    },
+    {
+      "path": "warp/maps/archive/cf/outskirts-preview.mjs",
+      "bytes": 2231,
+      "sha256": "B8E2BF9C8B5C3F106E0C237B806681A17F41C5DB75F1216557410764AD810B62"
+    },
+    {
+      "path": "warp/maps/archive/cf/outskirts-route.mjs",
+      "bytes": 7490,
+      "sha256": "7289C244FD646BE006177475DC3AE088A6C49512C808DD6A9F5A2394165BBC11"
+    },
+    {
+      "path": "warp/maps/archive/cf/past-grove-preview.html",
+      "bytes": 4464,
+      "sha256": "AD86A2623511B7B0C66A570EC61AC726591A2B74A141C4DE70565E6A922C89DD"
+    },
+    {
+      "path": "warp/maps/archive/cf/past-grove-preview.mjs",
+      "bytes": 8218,
+      "sha256": "202112C0C65E810E4C17ABCF99000CF578398AAEBAF5049B523887F58C899DF2"
+    },
+    {
+      "path": "warp/maps/archive/cf/past-grove-route.mjs",
+      "bytes": 3321,
+      "sha256": "5E6AD9221158C141E22ED45B44B2649C4FBB649509AE49645C478D2C29A266E4"
+    },
+    {
+      "path": "warp/maps/archive/cf/plains-arendyl-preview.html",
+      "bytes": 4033,
+      "sha256": "52D59998205D446F075C4B6241BEE68C3E764C63A4B0B142876D7188D04DDC80"
+    },
+    {
+      "path": "warp/maps/archive/cf/plains-arendyl-preview.mjs",
+      "bytes": 1076,
+      "sha256": "F3DB7C8E3F80DFC4DC11E595716B7CDB5D75607452BEC244E9017C05F7B89381"
+    },
+    {
+      "path": "warp/maps/archive/cf/plains-arendyl-route.mjs",
+      "bytes": 3444,
+      "sha256": "C76354887850E0CD85E38D735126CB985B609F706E28325C33E978B3DE3A2A75"
+    },
+    {
+      "path": "warp/maps/archive/cf/reference.txt",
+      "bytes": 596157,
+      "sha256": "F54C970F9921F09E7694CD2AEEF0820CB4D904CC38878A7D26540CF3010E874C"
+    },
+    {
+      "path": "warp/maps/archive/cf/silverwood-preview.html",
+      "bytes": 4001,
+      "sha256": "A623DC5D7A81129CF9D7C23D699DB1CAAC1BC75531D7AE86A9663293869A5D75"
+    },
+    {
+      "path": "warp/maps/archive/cf/silverwood-preview.mjs",
+      "bytes": 792,
+      "sha256": "A05294080B2AD3345578405AC20946336E7ED74F5945635F2D7EB85225C1CA17"
+    },
+    {
+      "path": "warp/maps/archive/cf/silverwood-route.mjs",
+      "bytes": 3914,
+      "sha256": "4FC06CDB541D55B87A0FDCE699AC7B45931BE2B52FE5834E85EDEB7FB824A48B"
+    },
+    {
+      "path": "warp/maps/archive/cf/source-grid-preview.mjs",
+      "bytes": 6973,
+      "sha256": "90DDAA789E9B577D957E3CC20543AFD69727B17A736E6A5E39C6A2F5CBB6D9D7"
+    },
+    {
+      "path": "warp/maps/archive/cf/udgaard-preview.html",
+      "bytes": 3769,
+      "sha256": "05EF2956366813D6665730B3DBEAE90725F9D7BAF6BDE0EFE35B47D724DFCD70"
+    },
+    {
+      "path": "warp/maps/archive/cf/udgaard-preview.mjs",
+      "bytes": 1658,
+      "sha256": "B08AAEEE47A208B3FBA9261D0A217FC11ABC0DA979D6D7D0E307AC23ADBC1031"
+    },
+    {
+      "path": "warp/maps/archive/cf/udgaard-route.mjs",
+      "bytes": 4031,
+      "sha256": "91AB39D1C03A6AA54027382E6B8DE75DD6956DA361FFF23A370E651CBD4207DE"
+    },
+    {
+      "path": "warp/maps/archive/cf/wagon-road-preview.html",
+      "bytes": 4153,
+      "sha256": "D9078E805E85871F54E0425C87E81D944AF1BFB8A99D0DD76FA28222448045A0"
+    },
+    {
+      "path": "warp/maps/archive/cf/wagon-road-preview.mjs",
+      "bytes": 974,
+      "sha256": "3166FE5416B58A32BA397CA21365C210318F90A3339D4589AA0E7D999F54BF69"
+    },
+    {
+      "path": "warp/maps/archive/cf/wagon-road-route.mjs",
+      "bytes": 2098,
+      "sha256": "10F7BF93510B44CE2D8ED80F032E738B669980E7637B28523BB866C3CD8F5CC0"
+    },
+    {
+      "path": "warp/maps/archive/cf/western-shadow-sorcery-preview.css",
+      "bytes": 3923,
+      "sha256": "01A3B984EDEA6A1E0EF6E30FD32ECCB8BA9918402DF1C6803CC55FA6302ED645"
+    },
+    {
+      "path": "warp/maps/archive/cf/western-shadow-sorcery-preview.html",
+      "bytes": 5542,
+      "sha256": "018116542C3E47BF7F0BFFC827B1010E709A4B4D9EFDCF6FC1C8A565F24BE21F"
+    },
+    {
+      "path": "warp/maps/archive/cf/western-shadow-sorcery-preview.mjs",
+      "bytes": 5378,
+      "sha256": "CB4933F08B739A171DC8A7D6519429C4CD3D9504FF00982CECF1FB1385B37813"
+    },
+    {
+      "path": "warp/maps/archive/cf/world-map.html",
+      "bytes": 9662,
+      "sha256": "1AD9346A974C02B466989C3C1BCE427C6E1DF5DB2CB40BAE4D3440BCE6198AF6"
+    },
+    {
+      "path": "warp/maps/index.html",
+      "bytes": 3031,
+      "sha256": "35E3D40F69127AECA0ACE392E46CB2DDEEB76BC483D65E6112931F59C293F178"
+    },
+    {
+      "path": "warp/maps/map.mjs",
+      "bytes": 2785,
+      "sha256": "35C45488552482D4187AB1A96C8C774AD475F62D50E11BCCC7CFC82492E95383"
+    },
+    {
+      "path": "warp/maps/maps.css",
+      "bytes": 2561,
+      "sha256": "A1091F278066B43B2A658CF2EEFC6F9D3C7894683AE76DC2AF2903F3C925614E"
+    },
+    {
+      "path": "warp/maps/migration-manifest.json",
+      "bytes": 1361,
+      "sha256": "F25FEBF49DE347FBC0A14BC0500F3B77B4C71FDD5BE708526B65A901BA107AB0"
+    },
+    {
+      "path": "warp/maps/public-town.json",
+      "bytes": 76775,
+      "sha256": "F51BE99FEAF78EB72E22DDF1F9797FECE593900208BC54F0E7DE44B7F5F204A8"
+    }
+  ]
+}

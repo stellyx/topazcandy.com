@@ -1,0 +1,34 @@
+Pine Forest
+===========
+
+NOTE: Below is the path into the little town area which begins at "E".
+There are exits in all directions, but only the path is drawn.
+
+           Octagonal Tower  The Ancient Road to the Wastes
+                    |              |
+           @       MAZE2           +
+           |        |              |
+     +     + +     MAZE1           +
+     |     |/       |              |
+  +--+--+  +     +  |        +--+--+
+  |     |  |     |  |        |     
+  E--+  +--+--+--+--+        +--+    
+  |           |                 |
+  |           W                 |
+  |                             |
+  +--------------+--------------+     
+
+ E - Entrance to the town
+ W - Wizard
+                 
+ MAZE1 - A Thick Pine Forest - try nnns to the exit room (can't remember if its random or not)
+         To get through, look for - The forest looks like it gets thinner in this direction.
+         To get out, look for - A faint path appears in this direction.
+
+ MAZE2 - A Thinning Pine Forest - nnnen from one exit to the next exit room (can't remember if its random or not)
+         to leave, The forest looks like it gets thicker here.
+         to enter octagonal tower, There seems to be a small trail this way.
+         Just one step north from the entrace, you can find the Huge Dire Wolf under a log.
+
+Source: http://wiki.qhcf.net/index.php?title=Pine_Forest&oldid=4958
+Revision: 4958

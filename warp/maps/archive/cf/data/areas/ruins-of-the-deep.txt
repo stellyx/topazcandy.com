@@ -1,0 +1,57 @@
+Ruins of the Deep
+=================
+
+                                 SeaOfDespair    (From the dock in Ashes: 4n 1d 1s)
+                                        |		
+                                        +
+                                        |
+                                        +
+                                        |
+                                        +--+       
+                                           |
+                                           +
+                                           |
+                                           +                             Battlements
+                                           |
+                   +     +--+--+          U1 ----->      +--+--+--+--D1--+--+--+--+
+                   |     |  |  |           |
+                   +     +--+--+    *1*    +  2  +  +  +  +
+                   |        |        |     |  |  |  |  |  |	
+                C--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+                         |           |     |  |  |  |
+                   +--+--+--+  +--+  +     +  +  +  +
+                            |  |  |  |     |
+                   +--+--+--+  +--+--+     +      Streets and Houses
+                                           |
+                +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
+                |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+                +--+--+--+--+--+--+--+--+--+--+--+--+--+--+
+                |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+                +  +  +  +  +  +  +  +  +  +  +  +  +  +  +
+                                           |
+                                           +  +  +
+                                           |  |  |
+                                        +  +--+--+--+--+  
+                                        |  |  |  |  |  
+                      +--+--+        +--+  +  +  +  +--+     C-|-4
+                      |     |        |  |  |     |               |
+                      + D2  +--+  +--+--+--+  +--+--+           U2
+                      |  |  |  |        |  |     |
+                      +--+  +--+--+--+--+  +  +--+--+
+                       Altar      |        |     |
+                      +--+--+--+--+        +  +--+--+
+                      |  |  |  |  |        |     |
+                      +  +  +  +  3        +  +--+--+ Inside the Temple
+                                           |
+                                           +
+
+	
+
+1. saying Testing, Master, or Inventory takes you to different rooms. going north without saying anything puts you in a loop.
+2. Electric Eel
+3. Lobster
+4. Eye of the Deep
+C. Chests
+
+Source: https://web.archive.org/web/20191022133619id_/http://wiki.qhcf.net/index.php?title=RuinsOfTheDeep
+Revision: unrecorded

@@ -1,0 +1,57 @@
+Aturi Timberlands
+=================
+
+                           Seantryn_Harbor
+                                |                                  The Aturi Timberlands were written by Ekaerok in 2013/2014, for exclusive 
+                                |                                  use by Carrion Fields, LLC.  Reproduction and distribution without the 
+                                +                                  consent of the author is prohibited.  None of this would have been possible 
+                                |                                  without the support of my wife, mentor Whiysdan, reviewers Strienat and 
+                                |                                  Destuvius, and genius coder Valguarnera.
+                                +--+
+                                   |                                This old area
+                                   |
+                              B    +        Aturi
+                             ^     |          |
+                            /      |          |
+               +--+--+--+--+<--||-----B       +
+              =                    | /|       |
+             /                     |v |       |
+            /           +  +       +  +       +
+           /            |  |       |  |       |
+          /             |  |       v  |       |
+         /              +  +  +    B  +       +
+        /               |  |  |       |       |
+       /                |  |  |       |       |
+      /                 +--+--+------------+--+--+----+                           
+     /                        |       |    |  |  |    | +
+    +--+--+--+                |       |    |  |  |    |/
+    =     =          +--+--+--|--+----+----+--+--+    +
+    |     |                   |            |  |  |    |
+    +     +                   |            |  |  |    |
+                              |            |  |  |    |
+                           +--+--+----+----+--+--+----+
+                           |  |  |    |    |  |  |
+                           |  |  |    |    |  |  |  
+                           |  |  |    |    |  |  | +
+                           |  |  |    |    |  |  |/
+                           +--+--+----+----+--+  +----+
+                              |       |    |     |    |
+                              |       |    |     |    |
+                              +--+----+    +--+--+----+   +--+
+                              | /|            |  | +  |   |
+                              |+ |            |  |/   |   |
+                              +  +----+    +--+  +    +||-+
+                                      |    |     |
+                                      |    |     |
+                                 +----+----+--+--+|-+
+                                /          |       /
+                               /           |      /
+                              +            +     +--+--+
+                                           |           =
+                                           |           |
+                                           +           +-||-+
+                                           =
+                                           +
+
+Source: http://wiki.qhcf.net/index.php?title=Aturi_Timberlands&oldid=5108
+Revision: 5108

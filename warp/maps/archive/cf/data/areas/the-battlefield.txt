@@ -1,0 +1,62 @@
+The Battlefield
+===============
+
+ The                      C---C---C                     B: Thicket of Bushes (also&#160;? rooms)
+ Battlefields             |       |                     C: Creeping Green
+                          |       |                     D: Dusty Crevice            
+                          C       L                     E: Edge of the Desert
+                          |                            ER: Eastern Side of Ridge
+                          |                             F: Fresh, Green Fields
+  R---R---R               C               s---s        FS: Filthy Sewer Drain 
+  |       |               |               |   |         G: Gunner's Gap                                  
+  |       |               |               |   |         H: The Hollow
+  R---5   R       C---C---C---C      NW---N---N---N     L: The Lair
+  |       |       |          /|       |                 M: Muddy Battlefront 
+  |       |       =         = =       |                MD: Moss-covered Depression 
+  R       M---B-\ B        P  B---?<--W                MM: Man-made Cave, Lined with Mud                      
+  |       |   ^ | |               ^   |                 N: Outside the Northern Wall 
+  |       |   |v  |               |   |                NW: Northwestern Corner of the Wall
+  1---2-=-M   M---M---?----?--?---T---W                 P: The Pit
+  |   |   |   |   |   ^   /   ^   |   |                 R: Rocky Passage
+  |   |   |   |   |   |  MD   |   |   |                RW: Rabbit Warren
+  3---4---M---M---M--WR      ER---T---W                 s: Small Clearing
+  |           |   |    \      |   |   |                 S: Outside the Southern Wall
+  |           |   |     \     |   |   |                SD: Bottom of a Sharp Drop
+  R       H   M---M   6  MM  ER---F---W                SE: South End of Ridge  
+  |       =       |   |       |   |   |                SW: Southwestern Corner of the Wall
+  |       |       |   |       |   |   |                 t: Damp Tunnel
+  |       |       |   |       |   |   |                 T: Trampled, Green Fields
+  R---R---R---R---M---M      ER---T---W                 W: Outside the Western Wall 
+      |           |           |   |   |                WR: Western Side of Ridge    
+      |           |           |   |   |                &#160;?: Random exits that take you a room or two away
+      |           |           |   |   |
+      8           G---G--SE  SD---T   W                       OstalagiahPast 
+                         /|       |   |\                     = 
+                        / |       |   | =                   FS
+                       /  |       |   |  \                 =  
+                      D   E---E---T   7   t---t---t---t---t                                                 
+                                  |   |\                                           
+                                  |   | RW                         
+                                  |   |                                                        
+                                  E--SW---S---S---S
+
+
+1 - NW Corner of the Giants' Caravan - Ysbaddaden the Giant Chief (Armageddon, Bracelet of Bifrost, 
+     Shield of the Five Grotesque Heads)
+2 - NE Corner of the Giants' Caravan - Monmouth (Blood-stained Tunic)
+3 - SW Corner of the Giants' Caravan - Ford the Giant General (Helm of Supremacy, 
+     Lifthrasir, the dual-bladed battleaxe)
+4 - SE Corner of the Giants' Garavan - Thorgrimr the Giant Priest (ruby-encrusted collar, Hammer of Muspellsheim) 
+5 - Meeting Place - Sweeney the Mad [hidden] (Girdle of endless space, Feathered Death)
+6 - Recruitment Center - The Recruiter (pracice & train here)
+7 - Outside the Western Wall - Rig the bearded brute (Belt of Strength)
+8 - Dark Entranceway - Tired old mage (dented iron helm)
+
+Roaming
+  Bronstead (Gauntlets of Living Flesh)
+  Pale-skinned giant (Gauntlets of Devilry)
+  Paton (Whetstone Scepter)
+  Vimir (adamantite bracer, The Sword of Wailing Souls)
+
+Source: http://wiki.qhcf.net/index.php?title=The_Battlefield&oldid=4979
+Revision: 4979

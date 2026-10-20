@@ -1,0 +1,3125 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "warp.public-town.galadon-candidate.v1",
+  "status": "SEALED_OFFLINE_CONTENT_CANDIDATE_AWAITING_DIRECTION_CONFIG_AND_INTEGRATOR_ACCEPTANCE",
+  "live_gameplay_verified": false,
+  "executable_routes": false,
+  "generated_at_utc": "2026-10-20T00:00:00Z",
+  "source": {
+    "map_title": "Galadon",
+    "original_wiki_permalink": "http://wiki.qhcf.net/index.php?title=Galadon&oldid=5044",
+    "preserved_source_record": "/warp/maps/archive/cf/areas/galadon.html",
+    "preserved_route_graph": "/warp/maps/archive/cf/navigation/galadon-v1.json",
+    "revision_id": 5044,
+    "captured_on": "2026-10-19",
+    "attribution": "Historical map authors and QHCF / DIKU-WIKI contributors; original notices and credits are retained in the archive."
+  },
+  "contract": {
+    "topology_sha256": "0B1A909AF1190F33FD61E0822BE6A57E9ACEC3178E43C3A16A93AD81D5095C53",
+    "room_count": 204,
+    "directed_internal_exit_count": 440,
+    "components": [
+      196,
+      8
+    ],
+    "direction_configuration": "Decision pending. The authentic reciprocal southwest/northeast pair requires DIRECTIONS=11; no cardinal substitute is asserted.",
+    "source_authentic_diagonal": [
+      "WarpGaladonSeed#39 southwest -> WarpGaladonSeed#62",
+      "WarpGaladonSeed#62 northeast -> WarpGaladonSeed#39"
+    ]
+  },
+  "rooms": [
+    {
+      "id": "WarpGaladonSeed#0",
+      "source_node_id": "galadon.map.northern-roads.north",
+      "source_kind": "linked-area",
+      "position": {
+        "x": 32,
+        "y": -1,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#1"
+      },
+      "source_label_for_reference_only": "Northern Roads (north)"
+    },
+    {
+      "id": "WarpGaladonSeed#1",
+      "source_node_id": "galadon.map.outskirts.north",
+      "source_kind": "linked-area",
+      "position": {
+        "x": 32,
+        "y": -3,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#0",
+        "south": "WarpGaladonSeed#2"
+      },
+      "source_label_for_reference_only": "Galadon Outskirts (north)"
+    },
+    {
+      "id": "WarpGaladonSeed#2",
+      "source_node_id": "galadon.map.r6c32",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 32,
+        "y": -6,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#1",
+        "south": "WarpGaladonSeed#3"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#3",
+      "source_node_id": "galadon.map.gate.north",
+      "source_kind": "gate",
+      "position": {
+        "x": 32,
+        "y": -9,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#2",
+        "south": "WarpGaladonSeed#9"
+      },
+      "source_label_for_reference_only": "North Gate (N)"
+    },
+    {
+      "id": "WarpGaladonSeed#4",
+      "source_node_id": "galadon.map.r10c13",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 13,
+        "y": -10,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#5"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#5",
+      "source_node_id": "galadon.map.r10c16",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 16,
+        "y": -10,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#6",
+        "south": "WarpGaladonSeed#13",
+        "west": "WarpGaladonSeed#4"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#6",
+      "source_node_id": "galadon.map.r10c19",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 19,
+        "y": -10,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#5"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#7",
+      "source_node_id": "galadon.map.r11c26",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 26,
+        "y": -11,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#8"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#8",
+      "source_node_id": "galadon.map.r11c29",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 29,
+        "y": -11,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#9",
+        "west": "WarpGaladonSeed#7"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#9",
+      "source_node_id": "galadon.map.r11c32",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 32,
+        "y": -11,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#10",
+        "north": "WarpGaladonSeed#3",
+        "south": "WarpGaladonSeed#17",
+        "west": "WarpGaladonSeed#8"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#10",
+      "source_node_id": "galadon.map.r11c35",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 35,
+        "y": -11,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#11",
+        "west": "WarpGaladonSeed#9"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#11",
+      "source_node_id": "galadon.map.r11c38",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 38,
+        "y": -11,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#10"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#12",
+      "source_node_id": "galadon.map.r12c13",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 13,
+        "y": -12,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#13"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#13",
+      "source_node_id": "galadon.map.r12c16",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 16,
+        "y": -12,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#14",
+        "north": "WarpGaladonSeed#5",
+        "south": "WarpGaladonSeed#20",
+        "west": "WarpGaladonSeed#12"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#14",
+      "source_node_id": "galadon.map.r12c19",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 19,
+        "y": -12,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#13"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#15",
+      "source_node_id": "galadon.map.r13c26",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 26,
+        "y": -13,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#16"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#16",
+      "source_node_id": "galadon.map.r13c29",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 29,
+        "y": -13,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#17",
+        "west": "WarpGaladonSeed#15"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#17",
+      "source_node_id": "galadon.map.r13c32",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 32,
+        "y": -13,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#18",
+        "north": "WarpGaladonSeed#9",
+        "south": "WarpGaladonSeed#28",
+        "west": "WarpGaladonSeed#16"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#18",
+      "source_node_id": "galadon.map.r13c35",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 35,
+        "y": -13,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#19",
+        "west": "WarpGaladonSeed#17"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#19",
+      "source_node_id": "galadon.map.r13c38",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 38,
+        "y": -13,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#18"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#20",
+      "source_node_id": "galadon.map.r14c16",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 16,
+        "y": -14,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#21",
+        "north": "WarpGaladonSeed#13"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#21",
+      "source_node_id": "galadon.map.r14c22",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 22,
+        "y": -14,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#20"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#22",
+      "source_node_id": "galadon.map.r14c51",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 51,
+        "y": -14,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#26"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#23",
+      "source_node_id": "galadon.map.r15c41",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 41,
+        "y": -15,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#30"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#24",
+      "source_node_id": "galadon.map.r15c46",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 46,
+        "y": -15,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#31"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#25",
+      "source_node_id": "galadon.map.r16c35",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 35,
+        "y": -16,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#29"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#26",
+      "source_node_id": "galadon.map.r16c51",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 51,
+        "y": -16,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#22",
+        "south": "WarpGaladonSeed#37"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#27",
+      "source_node_id": "galadon.map.r17c30",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 30,
+        "y": -17,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#28"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#28",
+      "source_node_id": "galadon.map.r17c32",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 32,
+        "y": -17,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#29",
+        "north": "WarpGaladonSeed#17",
+        "south": "WarpGaladonSeed#40",
+        "west": "WarpGaladonSeed#27"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#29",
+      "source_node_id": "galadon.map.r17c35",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 35,
+        "y": -17,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#30",
+        "north": "WarpGaladonSeed#25",
+        "west": "WarpGaladonSeed#28",
+        "south": "WarpGaladonSeed#202"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#30",
+      "source_node_id": "galadon.map.r17c41",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 41,
+        "y": -17,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#31",
+        "north": "WarpGaladonSeed#23",
+        "south": "WarpGaladonSeed#46",
+        "west": "WarpGaladonSeed#29"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#31",
+      "source_node_id": "galadon.map.r17c46",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 46,
+        "y": -17,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#24",
+        "south": "WarpGaladonSeed#42",
+        "west": "WarpGaladonSeed#30"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#32",
+      "source_node_id": "galadon.map.r18c18",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 18,
+        "y": -18,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#33"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#33",
+      "source_node_id": "galadon.map.r18c21",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 21,
+        "y": -18,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#34",
+        "south": "WarpGaladonSeed#43",
+        "west": "WarpGaladonSeed#32"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#34",
+      "source_node_id": "galadon.map.r18c24",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 24,
+        "y": -18,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#33"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#35",
+      "source_node_id": "galadon.map.r18c39",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 39,
+        "y": -18,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#45"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#36",
+      "source_node_id": "galadon.map.r18c49",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 49,
+        "y": -18,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#37"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#37",
+      "source_node_id": "galadon.map.r18c51",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 51,
+        "y": -18,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#38",
+        "north": "WarpGaladonSeed#26",
+        "south": "WarpGaladonSeed#75",
+        "west": "WarpGaladonSeed#36"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#38",
+      "source_node_id": "galadon.map.r18c53",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 53,
+        "y": -18,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#37"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#39",
+      "source_node_id": "galadon.map.r18c64",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 64,
+        "y": -18,
+        "z": 0
+      },
+      "exits": {
+        "southwest": "WarpGaladonSeed#62"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#40",
+      "source_node_id": "galadon.map.r19c32",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 32,
+        "y": -19,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#28",
+        "south": "WarpGaladonSeed#56",
+        "east": "WarpGaladonSeed#202"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#41",
+      "source_node_id": "galadon.map.r19c37",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 37,
+        "y": -19,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#51",
+        "west": "WarpGaladonSeed#202"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#42",
+      "source_node_id": "galadon.map.r19c46",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 46,
+        "y": -19,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#31"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#43",
+      "source_node_id": "galadon.map.r20c21",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 21,
+        "y": -20,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#44",
+        "north": "WarpGaladonSeed#33",
+        "south": "WarpGaladonSeed#52"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#44",
+      "source_node_id": "galadon.map.r20c26",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 26,
+        "y": -20,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#54",
+        "west": "WarpGaladonSeed#43"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#45",
+      "source_node_id": "galadon.map.r20c39",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 39,
+        "y": -20,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#35",
+        "south": "WarpGaladonSeed#57"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#46",
+      "source_node_id": "galadon.map.r20c41",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 41,
+        "y": -20,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#30"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#47",
+      "source_node_id": "galadon.map.r20c54",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 54,
+        "y": -20,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#60"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#48",
+      "source_node_id": "galadon.map.r20c57",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 57,
+        "y": -20,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#49",
+        "south": "WarpGaladonSeed#61"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#49",
+      "source_node_id": "galadon.map.r20c60",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 60,
+        "y": -20,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#62",
+        "west": "WarpGaladonSeed#48"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#50",
+      "source_node_id": "galadon.map.r21c35",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 35,
+        "y": -21,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#202"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#51",
+      "source_node_id": "galadon.map.r21c37",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 37,
+        "y": -21,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#41"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#52",
+      "source_node_id": "galadon.map.r22c21",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 21,
+        "y": -22,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#53",
+        "north": "WarpGaladonSeed#43"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#53",
+      "source_node_id": "galadon.map.r22c23",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 23,
+        "y": -22,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#52"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#54",
+      "source_node_id": "galadon.map.r22c26",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 26,
+        "y": -22,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#55",
+        "north": "WarpGaladonSeed#44",
+        "south": "WarpGaladonSeed#69"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#55",
+      "source_node_id": "galadon.map.r22c29",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 29,
+        "y": -22,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#56",
+        "west": "WarpGaladonSeed#54"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#56",
+      "source_node_id": "galadon.map.r22c32",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 32,
+        "y": -22,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#57",
+        "north": "WarpGaladonSeed#40",
+        "west": "WarpGaladonSeed#55"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#57",
+      "source_node_id": "galadon.map.r22c39",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 39,
+        "y": -22,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#58",
+        "north": "WarpGaladonSeed#45",
+        "south": "WarpGaladonSeed#71",
+        "west": "WarpGaladonSeed#56"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#58",
+      "source_node_id": "galadon.map.r22c44",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 44,
+        "y": -22,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#59",
+        "south": "WarpGaladonSeed#73",
+        "west": "WarpGaladonSeed#57"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#59",
+      "source_node_id": "galadon.map.r22c48",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 48,
+        "y": -22,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#74",
+        "west": "WarpGaladonSeed#58"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#60",
+      "source_node_id": "galadon.map.r22c54",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 54,
+        "y": -22,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#61",
+        "north": "WarpGaladonSeed#47",
+        "south": "WarpGaladonSeed#76"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#61",
+      "source_node_id": "galadon.map.r22c57",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 57,
+        "y": -22,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#48",
+        "west": "WarpGaladonSeed#60"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#62",
+      "source_node_id": "galadon.map.r22c60",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 60,
+        "y": -22,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#49",
+        "south": "WarpGaladonSeed#77",
+        "northeast": "WarpGaladonSeed#39"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#63",
+      "source_node_id": "galadon.map.feanwyyn.northwest",
+      "source_kind": "linked-area",
+      "position": {
+        "x": 8,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#64"
+      },
+      "source_label_for_reference_only": "Feanwyyn (northwest)"
+    },
+    {
+      "id": "WarpGaladonSeed#64",
+      "source_node_id": "galadon.map.r24c11",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 11,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#65",
+        "west": "WarpGaladonSeed#63"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#65",
+      "source_node_id": "galadon.map.gate.northwest",
+      "source_kind": "gate",
+      "position": {
+        "x": 13,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#66",
+        "west": "WarpGaladonSeed#64"
+      },
+      "source_label_for_reference_only": "Northwest Gate (NW)"
+    },
+    {
+      "id": "WarpGaladonSeed#66",
+      "source_node_id": "galadon.map.r24c17",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 17,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#67",
+        "south": "WarpGaladonSeed#82",
+        "west": "WarpGaladonSeed#65"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#67",
+      "source_node_id": "galadon.map.r24c20",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 20,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#68",
+        "west": "WarpGaladonSeed#66"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#68",
+      "source_node_id": "galadon.map.r24c23",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 23,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#69",
+        "west": "WarpGaladonSeed#67"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#69",
+      "source_node_id": "galadon.map.r24c26",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 26,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#54",
+        "south": "WarpGaladonSeed#95",
+        "west": "WarpGaladonSeed#68"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#70",
+      "source_node_id": "galadon.map.r24c36",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 36,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#71",
+        "south": "WarpGaladonSeed#85"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#71",
+      "source_node_id": "galadon.map.r24c39",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 39,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#72",
+        "north": "WarpGaladonSeed#57",
+        "south": "WarpGaladonSeed#86",
+        "west": "WarpGaladonSeed#70"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#72",
+      "source_node_id": "galadon.map.r24c42",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 42,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#87",
+        "west": "WarpGaladonSeed#71"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#73",
+      "source_node_id": "galadon.map.r24c44",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 44,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#74",
+        "north": "WarpGaladonSeed#58",
+        "south": "WarpGaladonSeed#99"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#74",
+      "source_node_id": "galadon.map.r24c48",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 48,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#75",
+        "north": "WarpGaladonSeed#59",
+        "south": "WarpGaladonSeed#100",
+        "west": "WarpGaladonSeed#73"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#75",
+      "source_node_id": "galadon.map.r24c51",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 51,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#76",
+        "north": "WarpGaladonSeed#37",
+        "west": "WarpGaladonSeed#74"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#76",
+      "source_node_id": "galadon.map.r24c54",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 54,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#77",
+        "north": "WarpGaladonSeed#60",
+        "south": "WarpGaladonSeed#88",
+        "west": "WarpGaladonSeed#75"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#77",
+      "source_node_id": "galadon.map.r24c60",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 60,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#78",
+        "north": "WarpGaladonSeed#62",
+        "south": "WarpGaladonSeed#89",
+        "west": "WarpGaladonSeed#76"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#78",
+      "source_node_id": "galadon.map.gate.northeast",
+      "source_kind": "gate",
+      "position": {
+        "x": 62,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#79",
+        "west": "WarpGaladonSeed#77"
+      },
+      "source_label_for_reference_only": "Northeast Gate (NE)"
+    },
+    {
+      "id": "WarpGaladonSeed#79",
+      "source_node_id": "galadon.map.r24c66",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 66,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#80",
+        "west": "WarpGaladonSeed#78"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#80",
+      "source_node_id": "galadon.map.outskirts.northeast",
+      "source_kind": "linked-area",
+      "position": {
+        "x": 69,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#81",
+        "west": "WarpGaladonSeed#79"
+      },
+      "source_label_for_reference_only": "Outskirts (northeast)"
+    },
+    {
+      "id": "WarpGaladonSeed#81",
+      "source_node_id": "galadon.map.northern-roads.east",
+      "source_kind": "linked-area",
+      "position": {
+        "x": 76,
+        "y": -24,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#80"
+      },
+      "source_label_for_reference_only": "Northern Roads (east)"
+    },
+    {
+      "id": "WarpGaladonSeed#82",
+      "source_node_id": "galadon.map.r26c17",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 17,
+        "y": -26,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#66"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#83",
+      "source_node_id": "galadon.map.r26c30",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 30,
+        "y": -26,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#84",
+        "south": "WarpGaladonSeed#90"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#84",
+      "source_node_id": "galadon.map.r26c33",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 33,
+        "y": -26,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#85",
+        "south": "WarpGaladonSeed#91",
+        "west": "WarpGaladonSeed#83"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#85",
+      "source_node_id": "galadon.map.r26c36",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 36,
+        "y": -26,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#70",
+        "south": "WarpGaladonSeed#92",
+        "west": "WarpGaladonSeed#84"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#86",
+      "source_node_id": "galadon.map.r26c39",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 39,
+        "y": -26,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#87",
+        "north": "WarpGaladonSeed#71",
+        "south": "WarpGaladonSeed#93"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#87",
+      "source_node_id": "galadon.map.r26c42",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 42,
+        "y": -26,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#72",
+        "south": "WarpGaladonSeed#94",
+        "west": "WarpGaladonSeed#86"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#88",
+      "source_node_id": "galadon.map.r27c54",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 54,
+        "y": -27,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#76",
+        "south": "WarpGaladonSeed#117"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#89",
+      "source_node_id": "galadon.map.r27c60",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 60,
+        "y": -27,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#77"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#90",
+      "source_node_id": "galadon.map.r28c30",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 30,
+        "y": -28,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#91",
+        "north": "WarpGaladonSeed#83"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#91",
+      "source_node_id": "galadon.map.r28c33",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 33,
+        "y": -28,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#92",
+        "north": "WarpGaladonSeed#84",
+        "south": "WarpGaladonSeed#96",
+        "west": "WarpGaladonSeed#90"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#92",
+      "source_node_id": "galadon.map.r28c36",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 36,
+        "y": -28,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#85",
+        "west": "WarpGaladonSeed#91"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#93",
+      "source_node_id": "galadon.map.r28c39",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 39,
+        "y": -28,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#94",
+        "north": "WarpGaladonSeed#86"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#94",
+      "source_node_id": "galadon.map.r28c42",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 42,
+        "y": -28,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#87",
+        "west": "WarpGaladonSeed#93"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#95",
+      "source_node_id": "galadon.map.r30c26",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 26,
+        "y": -30,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#96",
+        "north": "WarpGaladonSeed#69"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#96",
+      "source_node_id": "galadon.map.r30c33",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 33,
+        "y": -30,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#97",
+        "north": "WarpGaladonSeed#91",
+        "south": "WarpGaladonSeed#103",
+        "west": "WarpGaladonSeed#95"
+      },
+      "source_label_for_reference_only": "Central rectangle - northwest junction"
+    },
+    {
+      "id": "WarpGaladonSeed#97",
+      "source_node_id": "galadon.map.r30c36",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 36,
+        "y": -30,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#98",
+        "south": "WarpGaladonSeed#104",
+        "west": "WarpGaladonSeed#96"
+      },
+      "source_label_for_reference_only": "Central rectangle - north junction"
+    },
+    {
+      "id": "WarpGaladonSeed#98",
+      "source_node_id": "galadon.map.r30c39",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 39,
+        "y": -30,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#99",
+        "west": "WarpGaladonSeed#97"
+      },
+      "source_label_for_reference_only": "Central rectangle - northeast junction"
+    },
+    {
+      "id": "WarpGaladonSeed#99",
+      "source_node_id": "galadon.map.r30c44",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 44,
+        "y": -30,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#100",
+        "north": "WarpGaladonSeed#73",
+        "west": "WarpGaladonSeed#98"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#100",
+      "source_node_id": "galadon.map.r30c48",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 48,
+        "y": -30,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#101",
+        "north": "WarpGaladonSeed#74",
+        "south": "WarpGaladonSeed#106",
+        "west": "WarpGaladonSeed#99"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#101",
+      "source_node_id": "galadon.map.r30c51",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 51,
+        "y": -30,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#100",
+        "south": "WarpGaladonSeed#203"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#102",
+      "source_node_id": "galadon.map.r32c30",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 30,
+        "y": -32,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#103"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#103",
+      "source_node_id": "galadon.map.r32c33",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 33,
+        "y": -32,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#104",
+        "north": "WarpGaladonSeed#96",
+        "south": "WarpGaladonSeed#109",
+        "west": "WarpGaladonSeed#102"
+      },
+      "source_label_for_reference_only": "Central rectangle - west middle"
+    },
+    {
+      "id": "WarpGaladonSeed#104",
+      "source_node_id": "galadon.map.r32c36",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 36,
+        "y": -32,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#97",
+        "south": "WarpGaladonSeed#110",
+        "west": "WarpGaladonSeed#103"
+      },
+      "source_label_for_reference_only": "Central rectangle - center"
+    },
+    {
+      "id": "WarpGaladonSeed#105",
+      "source_node_id": "galadon.map.r32c39",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 39,
+        "y": -32,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#111"
+      },
+      "source_label_for_reference_only": "Central rectangle - east middle"
+    },
+    {
+      "id": "WarpGaladonSeed#106",
+      "source_node_id": "galadon.map.r32c48",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 48,
+        "y": -32,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#100",
+        "east": "WarpGaladonSeed#203"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#107",
+      "source_node_id": "galadon.map.r32c52",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 52,
+        "y": -32,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#203"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#108",
+      "source_node_id": "galadon.map.r33c51",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 51,
+        "y": -33,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#203"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#109",
+      "source_node_id": "galadon.map.r34c33",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 33,
+        "y": -34,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#110",
+        "north": "WarpGaladonSeed#103"
+      },
+      "source_label_for_reference_only": "Central rectangle - southwest junction"
+    },
+    {
+      "id": "WarpGaladonSeed#110",
+      "source_node_id": "galadon.map.r34c36",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 36,
+        "y": -34,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#111",
+        "north": "WarpGaladonSeed#104",
+        "south": "WarpGaladonSeed#114",
+        "west": "WarpGaladonSeed#109"
+      },
+      "source_label_for_reference_only": "Central rectangle - south junction"
+    },
+    {
+      "id": "WarpGaladonSeed#111",
+      "source_node_id": "galadon.map.r34c39",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 39,
+        "y": -34,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#105",
+        "west": "WarpGaladonSeed#110"
+      },
+      "source_label_for_reference_only": "Central rectangle - southeast junction"
+    },
+    {
+      "id": "WarpGaladonSeed#112",
+      "source_node_id": "galadon.map.guild.paladin",
+      "source_kind": "legend-room",
+      "position": {
+        "x": 32,
+        "y": -36,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#113"
+      },
+      "source_label_for_reference_only": "Paladin's Guild (P)"
+    },
+    {
+      "id": "WarpGaladonSeed#113",
+      "source_node_id": "galadon.map.r36c34",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 34,
+        "y": -36,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#114",
+        "west": "WarpGaladonSeed#112"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#114",
+      "source_node_id": "galadon.map.r36c36",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 36,
+        "y": -36,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#115",
+        "north": "WarpGaladonSeed#110",
+        "south": "WarpGaladonSeed#123",
+        "west": "WarpGaladonSeed#113"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#115",
+      "source_node_id": "galadon.map.spire",
+      "source_kind": "map-label",
+      "position": {
+        "x": 38,
+        "y": -36,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#114"
+      },
+      "source_label_for_reference_only": "Spire"
+    },
+    {
+      "id": "WarpGaladonSeed#116",
+      "source_node_id": "galadon.map.r36c51",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 51,
+        "y": -36,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#117"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#117",
+      "source_node_id": "galadon.map.r36c54",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 54,
+        "y": -36,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#118",
+        "north": "WarpGaladonSeed#88",
+        "south": "WarpGaladonSeed#128",
+        "west": "WarpGaladonSeed#116"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#118",
+      "source_node_id": "galadon.map.guild.invoker",
+      "source_kind": "legend-room",
+      "position": {
+        "x": 57,
+        "y": -36,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#117"
+      },
+      "source_label_for_reference_only": "Invoker's Guild (V)"
+    },
+    {
+      "id": "WarpGaladonSeed#119",
+      "source_node_id": "galadon.map.r38c19",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 19,
+        "y": -38,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#134"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#120",
+      "source_node_id": "galadon.map.r38c24",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 24,
+        "y": -38,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#135"
+      },
+      "source_label_for_reference_only": "Wizard's Shop"
+    },
+    {
+      "id": "WarpGaladonSeed#121",
+      "source_node_id": "galadon.map.r38c29",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 29,
+        "y": -38,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#136"
+      },
+      "source_label_for_reference_only": "Bakery"
+    },
+    {
+      "id": "WarpGaladonSeed#122",
+      "source_node_id": "galadon.map.r38c33",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 33,
+        "y": -38,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#123"
+      },
+      "source_label_for_reference_only": "Vegetable Shop (legend: Vegetable Garden)"
+    },
+    {
+      "id": "WarpGaladonSeed#123",
+      "source_node_id": "galadon.map.r38c36",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 36,
+        "y": -38,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#124",
+        "north": "WarpGaladonSeed#114",
+        "south": "WarpGaladonSeed#137",
+        "west": "WarpGaladonSeed#122"
+      },
+      "source_label_for_reference_only": "Central shop intersection (north of Market Square)"
+    },
+    {
+      "id": "WarpGaladonSeed#124",
+      "source_node_id": "galadon.map.r38c39",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 39,
+        "y": -38,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#123"
+      },
+      "source_label_for_reference_only": "Cartographer's Store"
+    },
+    {
+      "id": "WarpGaladonSeed#125",
+      "source_node_id": "galadon.map.r38c42",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 42,
+        "y": -38,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#138"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#126",
+      "source_node_id": "galadon.map.guild.warrior",
+      "source_kind": "legend-room",
+      "position": {
+        "x": 48,
+        "y": -38,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#139"
+      },
+      "source_label_for_reference_only": "Warrior's Guild (R)"
+    },
+    {
+      "id": "WarpGaladonSeed#127",
+      "source_node_id": "galadon.map.r38c51",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 51,
+        "y": -38,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#128"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#128",
+      "source_node_id": "galadon.map.r38c54",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 54,
+        "y": -38,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#129",
+        "north": "WarpGaladonSeed#117",
+        "south": "WarpGaladonSeed#140",
+        "west": "WarpGaladonSeed#127"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#129",
+      "source_node_id": "galadon.map.guild.assassin",
+      "source_kind": "legend-room",
+      "position": {
+        "x": 57,
+        "y": -38,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#128"
+      },
+      "source_label_for_reference_only": "Assassin's Guild (G)"
+    },
+    {
+      "id": "WarpGaladonSeed#130",
+      "source_node_id": "galadon.map.r38c59",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 59,
+        "y": -38,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#141"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#131",
+      "source_node_id": "galadon.map.feanwyyn.west",
+      "source_kind": "linked-area",
+      "position": {
+        "x": 8,
+        "y": -40,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#132"
+      },
+      "source_label_for_reference_only": "Feanwyyn (west)"
+    },
+    {
+      "id": "WarpGaladonSeed#132",
+      "source_node_id": "galadon.map.r40c11",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 11,
+        "y": -40,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#133",
+        "west": "WarpGaladonSeed#131"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#133",
+      "source_node_id": "galadon.map.gate.west",
+      "source_kind": "gate",
+      "position": {
+        "x": 14,
+        "y": -40,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#134",
+        "west": "WarpGaladonSeed#132"
+      },
+      "source_label_for_reference_only": "West Gate (W)"
+    },
+    {
+      "id": "WarpGaladonSeed#134",
+      "source_node_id": "galadon.map.r40c19",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 19,
+        "y": -40,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#135",
+        "north": "WarpGaladonSeed#119",
+        "south": "WarpGaladonSeed#150",
+        "west": "WarpGaladonSeed#133"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#135",
+      "source_node_id": "galadon.map.r40c24",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 24,
+        "y": -40,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#136",
+        "north": "WarpGaladonSeed#120",
+        "south": "WarpGaladonSeed#146",
+        "west": "WarpGaladonSeed#134"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#136",
+      "source_node_id": "galadon.map.r40c29",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 29,
+        "y": -40,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#137",
+        "north": "WarpGaladonSeed#121",
+        "south": "WarpGaladonSeed#151",
+        "west": "WarpGaladonSeed#135"
+      },
+      "source_label_for_reference_only": "Trade Road - west approach to M"
+    },
+    {
+      "id": "WarpGaladonSeed#137",
+      "source_node_id": "galadon.map.marker.m",
+      "source_kind": "market-square",
+      "position": {
+        "x": 36,
+        "y": -40,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#138",
+        "north": "WarpGaladonSeed#123",
+        "south": "WarpGaladonSeed#153",
+        "west": "WarpGaladonSeed#136"
+      },
+      "source_label_for_reference_only": "Market Square (M)"
+    },
+    {
+      "id": "WarpGaladonSeed#138",
+      "source_node_id": "galadon.map.r40c42",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 42,
+        "y": -40,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#139",
+        "north": "WarpGaladonSeed#125",
+        "south": "WarpGaladonSeed#147",
+        "west": "WarpGaladonSeed#137"
+      },
+      "source_label_for_reference_only": "Trade Road - first room east of M"
+    },
+    {
+      "id": "WarpGaladonSeed#139",
+      "source_node_id": "galadon.map.r40c48",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 48,
+        "y": -40,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#140",
+        "north": "WarpGaladonSeed#126",
+        "south": "WarpGaladonSeed#148",
+        "west": "WarpGaladonSeed#138"
+      },
+      "source_label_for_reference_only": "Trade Road - Warrior's Guild crossing"
+    },
+    {
+      "id": "WarpGaladonSeed#140",
+      "source_node_id": "galadon.map.r40c54",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 54,
+        "y": -40,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#141",
+        "north": "WarpGaladonSeed#128",
+        "west": "WarpGaladonSeed#139"
+      },
+      "source_label_for_reference_only": "Trade Road - east-central junction"
+    },
+    {
+      "id": "WarpGaladonSeed#141",
+      "source_node_id": "galadon.map.r40c59",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 59,
+        "y": -40,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#142",
+        "north": "WarpGaladonSeed#130",
+        "south": "WarpGaladonSeed#149",
+        "west": "WarpGaladonSeed#140"
+      },
+      "source_label_for_reference_only": "Trade Road - inner East Gate approach"
+    },
+    {
+      "id": "WarpGaladonSeed#142",
+      "source_node_id": "galadon.map.gate.east",
+      "source_kind": "gate",
+      "position": {
+        "x": 63,
+        "y": -40,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#143",
+        "west": "WarpGaladonSeed#141"
+      },
+      "source_label_for_reference_only": "East Gate (E)"
+    },
+    {
+      "id": "WarpGaladonSeed#143",
+      "source_node_id": "galadon.map.r40c67",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 67,
+        "y": -40,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#144",
+        "west": "WarpGaladonSeed#142"
+      },
+      "source_label_for_reference_only": "Trade Road - outer East Gate room"
+    },
+    {
+      "id": "WarpGaladonSeed#144",
+      "source_node_id": "galadon.map.outskirts.east",
+      "source_kind": "linked-area",
+      "position": {
+        "x": 70,
+        "y": -40,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#145",
+        "west": "WarpGaladonSeed#143"
+      },
+      "source_label_for_reference_only": "Outskirts (east)"
+    },
+    {
+      "id": "WarpGaladonSeed#145",
+      "source_node_id": "galadon.map.eastern-road",
+      "source_kind": "linked-area",
+      "position": {
+        "x": 77,
+        "y": -40,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#144"
+      },
+      "source_label_for_reference_only": "Eastern Road"
+    },
+    {
+      "id": "WarpGaladonSeed#146",
+      "source_node_id": "galadon.map.guild.transmuter",
+      "source_kind": "legend-room",
+      "position": {
+        "x": 24,
+        "y": -42,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#135"
+      },
+      "source_label_for_reference_only": "Transmuter's Guild (T)"
+    },
+    {
+      "id": "WarpGaladonSeed#147",
+      "source_node_id": "galadon.map.r42c42",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 42,
+        "y": -42,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#138"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#148",
+      "source_node_id": "galadon.map.r42c48",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 48,
+        "y": -42,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#139"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#149",
+      "source_node_id": "galadon.map.r42c59",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 59,
+        "y": -42,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#141"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#150",
+      "source_node_id": "galadon.map.r43c19",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 19,
+        "y": -43,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#134"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#151",
+      "source_node_id": "galadon.map.r43c29",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 29,
+        "y": -43,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#136"
+      },
+      "source_label_for_reference_only": "Butcher Shop"
+    },
+    {
+      "id": "WarpGaladonSeed#152",
+      "source_node_id": "galadon.map.r43c33",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 33,
+        "y": -43,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#153"
+      },
+      "source_label_for_reference_only": "Pet Shop (legend 14: Training Room)"
+    },
+    {
+      "id": "WarpGaladonSeed#153",
+      "source_node_id": "galadon.map.r43c36",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 36,
+        "y": -43,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#154",
+        "north": "WarpGaladonSeed#137",
+        "south": "WarpGaladonSeed#162",
+        "west": "WarpGaladonSeed#152"
+      },
+      "source_label_for_reference_only": "South road intersection (between Pet and General stores)"
+    },
+    {
+      "id": "WarpGaladonSeed#154",
+      "source_node_id": "galadon.map.r43c39",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 39,
+        "y": -43,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#153"
+      },
+      "source_label_for_reference_only": "General Store"
+    },
+    {
+      "id": "WarpGaladonSeed#155",
+      "source_node_id": "galadon.map.r44c42",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 42,
+        "y": -44,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#157"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#156",
+      "source_node_id": "galadon.map.r45c40",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 40,
+        "y": -45,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#157"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#157",
+      "source_node_id": "galadon.map.healer.south",
+      "source_kind": "legend-room",
+      "position": {
+        "x": 42,
+        "y": -45,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#158",
+        "north": "WarpGaladonSeed#155",
+        "south": "WarpGaladonSeed#164",
+        "west": "WarpGaladonSeed#156"
+      },
+      "source_label_for_reference_only": "Healer (H) - south district"
+    },
+    {
+      "id": "WarpGaladonSeed#158",
+      "source_node_id": "galadon.map.r45c44",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 44,
+        "y": -45,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#157"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#159",
+      "source_node_id": "galadon.map.r45c47",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 47,
+        "y": -45,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#165"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#160",
+      "source_node_id": "galadon.map.r45c50",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 50,
+        "y": -45,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#166"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#161",
+      "source_node_id": "galadon.map.r47c33",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 33,
+        "y": -47,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#162",
+        "south": "WarpGaladonSeed#167"
+      },
+      "source_label_for_reference_only": "South district - northwest of AP label"
+    },
+    {
+      "id": "WarpGaladonSeed#162",
+      "source_node_id": "galadon.map.r47c36",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 36,
+        "y": -47,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#163",
+        "north": "WarpGaladonSeed#153",
+        "south": "WarpGaladonSeed#178",
+        "west": "WarpGaladonSeed#161"
+      },
+      "source_label_for_reference_only": "South district - north of AP approach"
+    },
+    {
+      "id": "WarpGaladonSeed#163",
+      "source_node_id": "galadon.map.r47c39",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 39,
+        "y": -47,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#164",
+        "south": "WarpGaladonSeed#179",
+        "west": "WarpGaladonSeed#162"
+      },
+      "source_label_for_reference_only": "South district - northeast of AP label"
+    },
+    {
+      "id": "WarpGaladonSeed#164",
+      "source_node_id": "galadon.map.r47c42",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 42,
+        "y": -47,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#157",
+        "west": "WarpGaladonSeed#163"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#165",
+      "source_node_id": "galadon.map.r47c47",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 47,
+        "y": -47,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#166",
+        "north": "WarpGaladonSeed#159",
+        "south": "WarpGaladonSeed#171"
+      },
+      "source_label_for_reference_only": "Boatmaker's Shop (Nicholas)"
+    },
+    {
+      "id": "WarpGaladonSeed#166",
+      "source_node_id": "galadon.map.r47c50",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 50,
+        "y": -47,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#160",
+        "south": "WarpGaladonSeed#172",
+        "west": "WarpGaladonSeed#165"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#167",
+      "source_node_id": "galadon.map.r48c33",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 33,
+        "y": -48,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#161"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#168",
+      "source_node_id": "galadon.map.r49c24",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 24,
+        "y": -49,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#175"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#169",
+      "source_node_id": "galadon.map.r49c28",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 28,
+        "y": -49,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#176"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#170",
+      "source_node_id": "galadon.map.r49c45",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 45,
+        "y": -49,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#171"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#171",
+      "source_node_id": "galadon.map.r49c47",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 47,
+        "y": -49,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#172",
+        "north": "WarpGaladonSeed#165",
+        "south": "WarpGaladonSeed#180",
+        "west": "WarpGaladonSeed#170"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#172",
+      "source_node_id": "galadon.map.r49c50",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 50,
+        "y": -49,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#166",
+        "south": "WarpGaladonSeed#181",
+        "west": "WarpGaladonSeed#171"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#173",
+      "source_node_id": "galadon.map.guild.thieves",
+      "source_kind": "legend-room",
+      "position": {
+        "x": 53,
+        "y": -49,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#182"
+      },
+      "source_label_for_reference_only": "Thieves' Guild (I)"
+    },
+    {
+      "id": "WarpGaladonSeed#174",
+      "source_node_id": "galadon.map.guild.anti-paladin",
+      "source_kind": "guild",
+      "position": {
+        "x": 32,
+        "y": -50,
+        "z": 0
+      },
+      "exits": {
+        "south": "WarpGaladonSeed#177"
+      },
+      "source_label_for_reference_only": "Anti-Paladin Guild (AP)"
+    },
+    {
+      "id": "WarpGaladonSeed#175",
+      "source_node_id": "galadon.map.r51c24",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 24,
+        "y": -51,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#176",
+        "north": "WarpGaladonSeed#168"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#176",
+      "source_node_id": "galadon.map.r51c28",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 28,
+        "y": -51,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#177",
+        "north": "WarpGaladonSeed#169",
+        "west": "WarpGaladonSeed#175"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#177",
+      "source_node_id": "galadon.map.r51c32",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 32,
+        "y": -51,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#178",
+        "north": "WarpGaladonSeed#174",
+        "west": "WarpGaladonSeed#176"
+      },
+      "source_label_for_reference_only": "Anti-Paladin Guild approach (west of Large Crossroads)"
+    },
+    {
+      "id": "WarpGaladonSeed#178",
+      "source_node_id": "galadon.map.r51c36",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 36,
+        "y": -51,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#179",
+        "north": "WarpGaladonSeed#162",
+        "south": "WarpGaladonSeed#187",
+        "west": "WarpGaladonSeed#177"
+      },
+      "source_label_for_reference_only": "Large Crossroads"
+    },
+    {
+      "id": "WarpGaladonSeed#179",
+      "source_node_id": "galadon.map.r51c39",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 39,
+        "y": -51,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#180",
+        "north": "WarpGaladonSeed#163",
+        "west": "WarpGaladonSeed#178"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#180",
+      "source_node_id": "galadon.map.r51c47",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 47,
+        "y": -51,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#181",
+        "north": "WarpGaladonSeed#171",
+        "south": "WarpGaladonSeed#183",
+        "west": "WarpGaladonSeed#179"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#181",
+      "source_node_id": "galadon.map.r51c50",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 50,
+        "y": -51,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#182",
+        "north": "WarpGaladonSeed#172",
+        "west": "WarpGaladonSeed#180"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#182",
+      "source_node_id": "galadon.map.r51c53",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 53,
+        "y": -51,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#173",
+        "west": "WarpGaladonSeed#181"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#183",
+      "source_node_id": "galadon.map.r53c47",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 47,
+        "y": -53,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#180",
+        "south": "WarpGaladonSeed#189"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#184",
+      "source_node_id": "galadon.map.feanwyyn.southwest",
+      "source_kind": "linked-area",
+      "position": {
+        "x": 25,
+        "y": -55,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#185"
+      },
+      "source_label_for_reference_only": "Feanwyyn (southwest)"
+    },
+    {
+      "id": "WarpGaladonSeed#185",
+      "source_node_id": "galadon.map.r55c28",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 28,
+        "y": -55,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#186",
+        "west": "WarpGaladonSeed#184"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#186",
+      "source_node_id": "galadon.map.r55c31",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 31,
+        "y": -55,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#187",
+        "west": "WarpGaladonSeed#185"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#187",
+      "source_node_id": "galadon.map.bridge.south",
+      "source_kind": "bridge",
+      "position": {
+        "x": 36,
+        "y": -55,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#188",
+        "north": "WarpGaladonSeed#178",
+        "south": "WarpGaladonSeed#192",
+        "west": "WarpGaladonSeed#186"
+      },
+      "source_label_for_reference_only": "Bridge (b)"
+    },
+    {
+      "id": "WarpGaladonSeed#188",
+      "source_node_id": "galadon.map.r55c42",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 42,
+        "y": -55,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#189",
+        "west": "WarpGaladonSeed#187"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#189",
+      "source_node_id": "galadon.map.r55c47",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 47,
+        "y": -55,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#190",
+        "north": "WarpGaladonSeed#183",
+        "west": "WarpGaladonSeed#188"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#190",
+      "source_node_id": "galadon.map.r55c50",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 50,
+        "y": -55,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#191",
+        "west": "WarpGaladonSeed#189"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#191",
+      "source_node_id": "galadon.map.voralia",
+      "source_kind": "linked-area",
+      "position": {
+        "x": 53,
+        "y": -55,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#190"
+      },
+      "source_label_for_reference_only": "Voralia's Tears"
+    },
+    {
+      "id": "WarpGaladonSeed#192",
+      "source_node_id": "galadon.map.r57c36",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 36,
+        "y": -57,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#187",
+        "south": "WarpGaladonSeed#195"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#193",
+      "source_node_id": "galadon.map.guild.shapeshifter",
+      "source_kind": "guild",
+      "position": {
+        "x": 30,
+        "y": -59,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#194"
+      },
+      "source_label_for_reference_only": "Shapeshifters Guild (s)"
+    },
+    {
+      "id": "WarpGaladonSeed#194",
+      "source_node_id": "galadon.map.r59c33",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 33,
+        "y": -59,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#195",
+        "west": "WarpGaladonSeed#193"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#195",
+      "source_node_id": "galadon.map.r59c36",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 36,
+        "y": -59,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#196",
+        "north": "WarpGaladonSeed#192",
+        "south": "WarpGaladonSeed#198",
+        "west": "WarpGaladonSeed#194"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#196",
+      "source_node_id": "galadon.map.r59c39",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 39,
+        "y": -59,
+        "z": 0
+      },
+      "exits": {
+        "east": "WarpGaladonSeed#197",
+        "west": "WarpGaladonSeed#195"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#197",
+      "source_node_id": "galadon.map.guild.conjurer",
+      "source_kind": "guild",
+      "position": {
+        "x": 42,
+        "y": -59,
+        "z": 0
+      },
+      "exits": {
+        "west": "WarpGaladonSeed#196"
+      },
+      "source_label_for_reference_only": "Conjurer's Guild (c)"
+    },
+    {
+      "id": "WarpGaladonSeed#198",
+      "source_node_id": "galadon.map.gate.south",
+      "source_kind": "gate",
+      "position": {
+        "x": 36,
+        "y": -62,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#195",
+        "south": "WarpGaladonSeed#199"
+      },
+      "source_label_for_reference_only": "South Gate (S)"
+    },
+    {
+      "id": "WarpGaladonSeed#199",
+      "source_node_id": "galadon.map.r64c36",
+      "source_kind": "plus-room",
+      "position": {
+        "x": 36,
+        "y": -64,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#198",
+        "south": "WarpGaladonSeed#200"
+      },
+      "source_label_for_reference_only": null
+    },
+    {
+      "id": "WarpGaladonSeed#200",
+      "source_node_id": "galadon.map.outskirts.south",
+      "source_kind": "linked-area",
+      "position": {
+        "x": 36,
+        "y": -67,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#199",
+        "south": "WarpGaladonSeed#201"
+      },
+      "source_label_for_reference_only": "Galadon Outskirts (south)"
+    },
+    {
+      "id": "WarpGaladonSeed#201",
+      "source_node_id": "galadon.map.silverwood",
+      "source_kind": "linked-area",
+      "position": {
+        "x": 36,
+        "y": -69,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#200"
+      },
+      "source_label_for_reference_only": "Silverwood"
+    },
+    {
+      "id": "WarpGaladonSeed#202",
+      "source_node_id": "galadon.map.marker.k.city-hall.r19c35",
+      "source_kind": "source-legend-room",
+      "position": {
+        "x": 35,
+        "y": -19,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#29",
+        "east": "WarpGaladonSeed#41",
+        "south": "WarpGaladonSeed#50",
+        "west": "WarpGaladonSeed#40"
+      },
+      "source_label_for_reference_only": "City Hall"
+    },
+    {
+      "id": "WarpGaladonSeed#203",
+      "source_node_id": "galadon.map.marker.h.healer.r32c51",
+      "source_kind": "source-legend-room",
+      "position": {
+        "x": 51,
+        "y": -32,
+        "z": 0
+      },
+      "exits": {
+        "north": "WarpGaladonSeed#101",
+        "east": "WarpGaladonSeed#107",
+        "south": "WarpGaladonSeed#108",
+        "west": "WarpGaladonSeed#106"
+      },
+      "source_label_for_reference_only": "Healer"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+The Imperial Lands
+==================
+
+--------------
+Imperial Lands
+--------------
+                  The Imperial Palace
+                            |                  
+           +            D   +                  
+          /             |   |                  
+         +      +     s-s-s-+-m-m-m            
+        /      /      |     |     |            
+       2      +       s-2   c-P +-m-h            
+             /        |     |   | |            
+            1         s   1 c-N g-m            
+                      |   | |     |                                
+                      +-q-q-f-q-q-+                         
+                      |     |     |                          
+                      i-T   c   O-v                            
+                      |     |     |                       
+                    +-i A   c   B-v             
+                    | | |   |     |            
+                    + i-i-i-2-v-v-v         
+                    |       |   |              
+                    +       +   +              
+                    |       |                  
+                    +       +                  
+                   /        |                  
+                  +         +-Razed Brewhouse             
+                 /          |                  
+               &#160;?           +                  
+                            |                  
+                            +-+-+-+
+                              |   |
+                     Razed Armory |
+                                  |                           
+                                  |                           
+                         Imperial + Road (9)                      
+                                  |                           
+                                  |                           
+                                + |     +                     
+                               /  |    /                      
+                              +---+---+                       
+                                  |                           
+                               Balator                         
+i - Lane of Intrigue
+v - Lane of Victory
+m - Lane of Black Magic
+c - The Avenue of Conquest
+f - The Imperial Square (fountain)
+q - Avenue of the Imperial Inquisition
+g - The Imperial Graveyard
+s - Lane of the Chosen
+h - Imperial Security Headquarters
+A - Entrance to the Imperial Assassins Guild
+B - Entrance to the Imperial Bards Guild
+P - Entrance to the Imperial Anti-Paladin's Guild
+N - Entrance to the Imperial Necromancer's Guild
+T - Entrance to the Imperial Thieves Guild
+D - The Shrine to the Dark Lords
+1 - Entrance to the North-West Cathedral Tower
+2 - Entrance to the South-East Cathedral Tower
+O - Owl and Thistle - food, drink
+------------------------
+
+Source: http://wiki.qhcf.net/index.php?title=The_Imperial_Lands&oldid=4968
+Revision: 4968

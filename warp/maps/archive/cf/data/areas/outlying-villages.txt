@@ -1,0 +1,62 @@
+Outlying Villages
+=================
+
+                          +  +
+                           \/
+                           GC
+                           |                   
+                     +-h-+-+
+                           | 
+                           +
+                           |
+                       +   +-TM-+                                                      
+                        \  |                                                      
+                      +-DB-+                                                     
+                           |                                                     
+                        fh +-h            &#160;? (needs to be mapped)                                         
+                         | |              /                                        
+                        PP-+-B         +-+-+                                           
+                           |           | | |                                          
+                   +-+     +           +-+-+                                             
+                   | |     |           | | |                                          
+                   +-+-h   +     +-+   +-+-+                                             
+                   | | |   |     | |     "                                              
+    Arkham-+-+-+-+-+-+-+-+-X-+-+ +-+     + F-F=+                                               
+           | | | | |   |   |   | | |     | | |
+           F F F F +-+-h   +   +-+-+-+-+-+-F-F 
+                   | |     |         | | 
+                   +-+   h-+         + +
+                   |       |                                                      
+                   b     h-+-h                                                      
+                           |                                                     
+                        -+-+                                                     
+                         |                                                      
+                         p    
+                         |
+                     Evergrove
+                      Outpost
+                                                                                
+Wondering Paladin - Huge Shield marked with a Templars Cross
+                    (Glowing) Massive Silver-Etched Sword
+                                                                                
+X - Crossroads (N Absalom, E Dale, S Brittleleaf, W Arkham)   
+F - Dark Forest
+h - house
+b - barn                                                                                
+B - Blacksmith                                                                          
+
+PP - Pumpkin Patch      
+fh - Farm House                                                                          
+
+DB - Dusty Bird Inn      
+TM - The Mill                                                         
+GC - Nordewin Church
+GY - Graveyard
+p - Pond
+ 
+TODO
+* Needs Dark Forest figured out.
+* Needs GraveYard in Dale mapped. Locked.
+
+Source: http://wiki.qhcf.net/index.php?title=Outlying_Villages&oldid=5099
+Revision: 5099

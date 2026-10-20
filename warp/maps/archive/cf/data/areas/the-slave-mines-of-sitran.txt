@@ -1,0 +1,81 @@
+The Slave Mines of Sitran
+=========================
+
+    Traveller
+        |                                     
+        +                                 
+         \                                
+          \                               
+           +     +  +                      
+            \     \ |                      
+             \     \|                      
+              +  +--+--+                         
+               \    |\                      
+                \   | \                     
+                 +  +  +                    
+                  \ |                      
+                   \|                      
+              +  +  +                     
+               \ |   \                    
+                \|    \                   
+              +--+--+--+     +  +          
+                 |\     \     \ |           
+                 | \     \     \|           
+                 +  +     +--+--+--+                
+                           \    |\         
+                            \   | \        
+                             +  +  +  Q     
+                             |\       |     
+                             | \   +  |     
+                          C  +  +   \ +     +--+
+                           \ |   \   \|     |
+                            \|    \ +-+--+  |
+                          +--+--+  +  |     +  +        
+                             |\     \ |     | /
+                             | \     \|     |/ 
+                             +  +  +  B--+--W--+     
+                                    \ |      \                            
+                                     \|       \
+                                   +--J--+     +
+                                      |         \
+                                      |          \
+                                      +           +
+                                                  |
+                                                  |
+                                            +--+  +
+                                            |     | 
+                                            |     |                       
+                                      +--+  +  +  D  
+                                         |  |  |  |                      
+                                         |  |  |  |                       
+                                   +--E--+--+--P  |
+                                   |  |  |  |  |  |
+                                   |  |  |  |  |  | 
+                                   +--+--+--+--S  |
+                                      |  |  |  |\ |
+                                      |  |  |  | \|
+                                      +--+--+--++ +
+                                      |  |  |     | 
+                                      |  |  |     | 
+                                   +--+--+  +     + 
+                                                  | 
+                                                  | 
+                                                  + 
+                                                  |      
+                                                  |
+                                                  +                            
+                                                  |
+                                                  |
+                                                  +
+                                                                              
+Q - Slavemaster [wandering] (barbed black-iron whip)                                                                            
+J - Sitran [wandering] (shield of blackest pitch, bloody spiked club)                                                                            
+D - Darinal the rebel leader  (necklace of prayer beads, some blood encrusted shackles)                           
+E - manacled elf
+P - Paladin [wandering] (Udgaardian Holy Avenger)
+S - Two slaves (over water)
+W - Two storm giant rebels (all is underwater from here)
+C - Chest
+
+Source: http://wiki.qhcf.net/index.php?title=The_Slave_Mines_of_Sitran&oldid=5014
+Revision: 5014

@@ -1,0 +1,45 @@
+The Ruins of Ostalagiah
+=======================
+
+ Created by Thror
+ 
+  Crossroads            
+      |                     
+      + An opening in the forest trail                    
+      |                     
+      F     Crossroads                
+      |         |
+      F         + An open clearing in the slaughtering grounds
+      |         |                             P
+      +-F-F     +                             P
+          |     |                             P         C
+          F     + The beginning of the        P        /|        d-d-DwarfForest
+          |     |  slaughtering grounds +-----V---V---+ C        d
+          +     +                       V               C        d
+          =     |Anguish north.Oppress. |               |        |
+        +-+-A-A-A-A-A   A-+--+--+-N-N-N-+         p     v    DDDdd
+        |                 ^ EE  ^       +        /     /|    |
+Village-+     +     +     ^ EE  ^       +-+-+-+-2>1 2<^=-+-1-D
+        |     |     |     |  =  |       +               C
+        +-T-T-T-T-T-T-T-T-+--+--+-W-W-W-+               C 
+               /  |   =                 |               C
+              /   +   +                 V              /
+             /                          +-------V-----+
+      BuriedBattlefield  
+
+ 1 - A path through the stone rubble
+ 2 - The ruined gates of an ancient city
+ A - The ruined streets of Anguish
+ C - The crumbling ramparts
+ D - A stone-covered road through dwarf forest
+ d - A wide road through the dwarf forest
+ E - The empty Arena of Ostalagiah (Rogash, notched axe with a wicked blade)
+ F - A secluded forest trail
+ N - The toppled northern walls of Oppression
+ P - The confines of a putrid alley
+ T - A foul, twisting alley
+ V - The ancient streets of Vassalage
+ W - The toppled walls of Oppression
+
+Source: http://wiki.qhcf.net/index.php?title=The_Ruins_of_Ostalagiah&oldid=5039
+Revision: 5039

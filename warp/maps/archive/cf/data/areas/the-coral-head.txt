@@ -1,0 +1,75 @@
+The Coral Head
+==============
+
+Coral Head, suggested levels 30 to 51.
+
+                        +-+-+-+-+-S
+                        | | | | | |
+                        +-+-+-+-+-+
+                        | | | | | |
+                        +-+-+-D-+-+
+                        | | | | | |
+                        +-+-+-+-+-+-+-+ +-N
+                        | | | | | |    \|
+                        +-+-+-+-+-+     +
+                        | | | | | |   
+                        +-+-+-+-+-+   
+                        |         Edge
+                        +         
+                        |         
+                        E
+                        
+E - Entrance from Aryth Ocean(From Beginning of Aryth Ocean -> Down, west until you can go north)
+D - Down to the village(Need pass door. Update: not true. You can find the entrance if you look carefully)
+S - Shark (shark tooth necklace)           
+N - Necromancer                       
+                                  
+
+     Village                                      
+                           U      
+             +  5 6 7 8 9 /       
+             |  | | | | |/        
+             +--+-+-+-+-+         
+             |  | | | | =         
+             +  4 + + + +             
+             |           \            
+         d   +  + + 3 + + + normal air
+          \  |  | | | | |         
+           + +--+-+-+-+-+         
+            \|  | | | | |         
+             +  + + 2 + +         
+                                  
+          
+d - Up to the coral head                                  
+2 - tinker
+3 - barkeep          
+4 - The armorer's shop
+5 - Assassins guild               
+6 - warriors guild(sahuagin gills(water breathing))
+7 - Altar of Worship
+8 - Sahuagin Priestess(manta skin bracelet)
+9 - guards key to prison
+U - To the lair of the Prince     
+                                  
+                                  
+The Priestess and the females have the right of immediate passage to the
+Prince. If their passage is obstructed in any way, this may result in
+death or duty on the coral head.  
+                                  
+                          
+                          
+                         P--+--+
+                         |  |  |
+                         +--+--+
+                            |
+                            +
+                            |
+                            u
+                           
+                            
+
+P - Prince (ixitxachitl tail whip)        
+u - Down to the village
+
+Source: http://wiki.qhcf.net/index.php?title=The_Coral_Head&oldid=5106
+Revision: 5106

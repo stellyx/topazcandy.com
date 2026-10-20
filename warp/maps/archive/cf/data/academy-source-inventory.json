@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "generatedDate": "2026-10-20",
+  "scope": "QHCF atlas Academy/temple seam evidence only; no WARP content",
+  "standaloneAcademyCapture": {
+    "present": false,
+    "searchedRoot": "qhcf-wiki-rescue/raw",
+    "searchedNames": ["Academy", "AcademyCaverns"],
+    "result": "No standalone raw capture or metadata was found.",
+    "consequence": "Internal Academy geometry is uncaptured and must not be reconstructed from labels, item locations, community memory, or the user report."
+  },
+  "officialHelp": {
+    "academy": {
+      "url": "https://carrionfields.net/helpsearch.php?keywords=academy",
+      "helpId": 1159,
+      "observedDate": "2026-10-20",
+      "confirmed": [
+        "The Academy is for levels 1-5.",
+        "Any character level 5 or lower may enter.",
+        "At level 6 a character is removed and cannot return.",
+        "The help says an entrance is usually near all recall points and directs players to hometown help when lost."
+      ],
+      "notConfirmed": [
+        "A universal DOWN command from every temple.",
+        "A reverse UP exit.",
+        "Return to the originating hometown.",
+        "Any cross-hometown travel through a shared Academy node."
+      ]
+    },
+    "hometowns": {
+      "url": "https://carrionfields.net/helpsearch.php?id=78",
+      "helpId": 78,
+      "observedDate": "2026-10-20",
+      "purpose": "Authoritative current hometown list used for coverage, not topology."
+    },
+    "akan": {
+      "url": "https://carrionfields.net/helpsearch.php?id=1120",
+      "helpId": 1120,
+      "observedDate": "2026-10-20",
+      "confirmed": "The Academy is accessible through the trapdoor in the temple.",
+      "command": null
+    },
+    "hillcrest": {
+      "url": "https://carrionfields.net/helpsearch.php?id=1117",
+      "helpId": 1117,
+      "observedDate": "2026-10-20",
+      "confirmed": "The Academy is reached by heading downward while standing in front of the pit.",
+      "command": "down"
+    }
+  },
+  "commandFormat": {
+    "separator": ";;",
+    "directionCase": "lowercase",
+    "note": "No multi-step executable route is present in this staging package."
+  },
+  "academyApproachCharts": [
+    {
+      "id": "galadon-acad-nw",
+      "sourceChart": {"title": "Galadon", "revision": 5044, "slug": "galadon", "row": 26, "column": 21, "literal": "Acad"},
+      "drawnLocalApproach": "Preserved chart abbreviation embedded west of the central north-south street.",
+      "mechanic": "unknown",
+      "routeEligible": false
+    },
+    {
+      "id": "galadon-acd-north-central",
+      "sourceChart": {"title": "Galadon", "revision": 5044, "slug": "galadon", "row": 28, "column": 50, "literal": "Acd"},
+      "drawnLocalApproach": "Preserved chart abbreviation beside the J chain marker.",
+      "mechanic": "unknown",
+      "routeEligible": false
+    },
+    {
+      "id": "galadon-acd-south-central",
+      "sourceChart": {"title": "Galadon", "revision": 5044, "slug": "galadon", "row": 49, "column": 41, "literal": "Acd"},
+      "drawnLocalApproach": "Preserved chart abbreviation on the southern interior grid.",
+      "mechanic": "unknown",
+      "routeEligible": false
+    },
+    {
+      "id": "evermoon-to-academy",
+      "sourceChart": {"title": "EvermoonHollow", "revision": 5002, "slug": "evermoon-hollow", "row": 14, "column": 12, "literal": "1) To the academy"},
+      "drawnLocalApproach": "Legend key 1 points to a drawn local marker.",
+      "mechanic": "unknown",
+      "routeEligible": false
+    },
+    {
+      "id": "hamsah-healer-academy",
+      "sourceChart": {"title": "HamsahMutaz", "revision": 4967, "slug": "hamsah-mu-tazz", "row": 85, "column": 1, "literal": "O - HEALER/ACADEMY"},
+      "drawnLocalApproach": "Legend key O combines healer and Academy labels.",
+      "mechanic": "unknown",
+      "routeEligible": false
+    },
+    {
+      "id": "jade-pit-down-academy",
+      "sourceChart": {"title": "JadeMountains", "revision": 5114, "slug": "the-jade-mountains", "row": 75, "column": 1, "literal": "A - Pit (down to Academy)"},
+      "drawnLocalApproach": "Legend key A is a pit and explicitly describes down to Academy.",
+      "mechanic": "source chart states down; playable endpoint and return remain unverified",
+      "reportedCommand": "down",
+      "routeEligible": false
+    },
+    {
+      "id": "veran-gates-academy",
+      "sourceChart": {"title": "Veran", "revision": 5103, "slug": "valley-of-veran", "row": 24, "column": 1, "literal": "A: Gates to the Academy"},
+      "drawnLocalApproach": "Legend key A points to the chart's Academy gates.",
+      "mechanic": "unknown",
+      "routeEligible": false
+    },
+    {
+      "id": "teth-warriors-academy-conflict",
+      "sourceChart": {"title": "TethAzeleth", "revision": 3562, "slug": "teth-azeleth", "row": 9, "column": 44, "literal": "Warrior's Academy"},
+      "companionTempleLabel": {"row": 13, "column": 1, "literal": "Temple of Lloth"},
+      "drawnLocalApproach": "The two labels occupy distinct positions on the same chart.",
+      "mechanic": "not established as the shared newbie Academy",
+      "routeEligible": false
+    }
+  ],
+  "literalTempleChartInventory": [
+    {"sourceTitle":"Arkham","revision":5098,"slug":"arkham","row":74,"column":77,"literal":"Temple","classification":"hometown temple label; legend identifies Temple of the Scarab","academyConnection":"unconfirmed"},
+    {"sourceTitle":"Balator","revision":4969,"slug":"balator","row":89,"column":22,"literal":"H - Inside the local temple (healer)","classification":"hometown temple label","academyConnection":"user-report only"},
+    {"sourceTitle":"Blackclaw","revision":5042,"slug":"blackclaw-village","row":33,"column":10,"literal":"Temple  +--+--+","classification":"hometown temple label; following line says 'and Alter' [sic]","academyConnection":"user-report only"},
+    {"sourceTitle":"Darsylon","revision":4985,"slug":"darsylon","row":51,"column":9,"literal":"A - The Temple of Darsylon (pit, healer)","classification":"hometown temple label","academyConnection":"user-report only"},
+    {"sourceTitle":"DesertOfAraile","revision":5032,"slug":"desert-of-araile","row":37,"column":9,"literal":"TR- The Temple of Red Sands (map below)","classification":"religious area, not established hometown recall temple","academyConnection":"none"},
+    {"sourceTitle":"GrinningSkulls","revision":5022,"slug":"grinning-skull-village","row":20,"column":58,"literal":"Temple","classification":"hometown temple label","academyConnection":"official help is hedged; user-report only"},
+    {"sourceTitle":"SeantrynModan","revision":5111,"slug":"seantryn-modan","row":71,"column":19,"literal":"MT: Minotaur temple (closed)","classification":"closed special temple; not promoted","academyConnection":"none"},
+    {"sourceTitle":"SeantrynModan","revision":5111,"slug":"seantryn-modan","row":121,"column":10,"literal":"29: Temple of Neutrality","classification":"hometown temple candidate","academyConnection":"user-report only"},
+    {"sourceTitle":"SouthDairein","revision":5057,"slug":"south-dairein-settlement","row":51,"column":5,"literal":"T - Temple","classification":"hometown temple label","academyConnection":"user-report only"},
+    {"sourceTitle":"TethAzeleth","revision":3562,"slug":"teth-azeleth","row":13,"column":1,"literal":"Temple of Lloth","classification":"religious temple; distinct from Warrior's Academy","academyConnection":"none"},
+    {"sourceTitle":"TirTalath","revision":5008,"slug":"the-outpost-of-tir-talath","row":52,"column":30,"literal":"P - Pit / Recall (Up to 'The Temple Arboretum')","classification":"hometown temple/recall linkage","academyConnection":"user-report only"},
+    {"sourceTitle":"Udgaardian_Plains","revision":4964,"slug":"udgaardian-plains","row":18,"column":39,"literal":"Temple","classification":"approach label; hometown identity not established","academyConnection":"none"},
+    {"sourceTitle":"LochGrynmear","revision":5017,"slug":"temple-of-loch-grynmear","row":1,"column":1,"literal":"Temple of Loch Grynmear","classification":"standalone religious area; excluded","academyConnection":"none"},
+    {"sourceTitle":"ElementalTemple","revision":5126,"slug":"elemental-temple","row":1,"column":1,"literal":"area title","classification":"standalone religious area; excluded","academyConnection":"none"}
+  ],
+  "historicalCommunitySources": [
+    {
+      "title": "NewsArchive",
+      "archiveTimestamp": "20191022134814",
+      "sha256": "not re-derived in this package",
+      "finding": "Mentions Academy (with Caverns) as updated/added; supplies no geometry."
+    },
+    {
+      "title": "SvirfneblinWarriorCreation",
+      "archiveTimestamp": "20191022132357",
+      "sha256": "280723845ee2b0b8570fe6babc19408e9ef43106e73fc0fff3705c827f0f58f7",
+      "finding": "Community guidance says 'go down' and says south was unavailable until completing the Academy fine-leather quest; historical, not current topology."
+    },
+    {
+      "title": "TheerklaRangerFaq",
+      "archiveTimestamp": "20191022142356",
+      "sha256": "26051321e5b00e842b4ef5d86f4c95e017b9820efe7b671be26579707856cc76",
+      "finding": "Lists possible Academy locations while explicitly saying Seantryn is uncertain and that there may be others; not authoritative topology."
+    }
+  ],
+  "sourceFileHashes": {
+    "galadon.json":"2A19B63B95A8AAB21504032B888C1289CBE4B03D85FDD7EF714E270666344C6D",
+    "evermoon-hollow.json":"4FC0BF3F5E919E4541652DC180D9D2D605A916028FB86D7111A2DE316B86BEF9",
+    "hamsah-mu-tazz.json":"D5E5D6E135835654234CCBBE9E8609AB711D2B9C9F1C1555C26C6F9A55F0943A",
+    "the-jade-mountains.json":"913F001BEF650BD46F70DA04886E3B546E5FF5788208F67CC33180ACA146C6FC",
+    "valley-of-veran.json":"6BA8F041ED9432F8DE2F5779905673DD05D6B643530FA5452A8B9B5E134B03F4",
+    "teth-azeleth.json":"C394600AA3795563D1315299DC378E1A8180B4A52584685F9C5A225D52AC907D"
+  }
+}

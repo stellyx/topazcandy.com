@@ -1,0 +1,37 @@
+Caravans of the Jhaana
+======================
+
+                      Seantryn Modan
+                             |
+                             +
+                             |
+                             +--+--+--+--+
+                                         |
+                                         +
+                                         |
+                                      W--+--+
+                                      |  |  |
+                         +-----+---+--+--+--+--Wa
+                         |     |   |  |  |  |  |
+                   +--+--+     +---+  +--+--+--Wa
+                   |     |     |   |  |  |  |
+         Aturi--+--+     |     |   |  +--+--+--+
+                         |     |   |     |  |  |
+                         +--+--R---+--+--+  +--+--+--F
+                            |  |   |  |
+                            +--+---+--+
+
+F - Bonfire
+R - Beneath an Ancient Redwood
+W - Well (water)
+Wa - Inside a Wagon
+Asmeida (cloak, bracelet)
+Shaggy Workhorse (silver horseshoes)
+Thorngrum (Steel spiked armguards)
+Farmer (garden gloves)
+Traveling Merchant (lute, food)
+Garbrin (glasses, leggings)
+Rhyth (cape)
+
+Source: http://wiki.qhcf.net/index.php?title=Caravans_of_the_Jhaana&oldid=5110
+Revision: 5110
