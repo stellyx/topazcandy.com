@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 import {test} from 'node:test';
@@ -11,15 +12,27 @@ const data=JSON.parse(fs.readFileSync(path.join(warp,'public-town.json'),'utf8')
 const manifest=JSON.parse(fs.readFileSync(path.join(warp,'migration-manifest.json'),'utf8'));
 const pathManifest=JSON.parse(fs.readFileSync(path.join(warp,'path-manifest.json'),'utf8'));
 
-test('public WARP candidate preserves the sealed topology contract',()=>{
- assert.equal(data.status,'SEALED_OFFLINE_CONTENT_CANDIDATE_AWAITING_DIRECTION_CONFIG_AND_INTEGRATOR_ACCEPTANCE');
+test('public WARP snapshot matches the reviewed installed-release payload contract',()=>{
+ assert.equal(data.status,'INSTALLED_RELEASE_PUBLIC_MAP_SNAPSHOT');
  assert.equal(data.live_gameplay_verified,false);
  assert.equal(data.executable_routes,false);
- assert.equal(data.contract.topology_sha256,'0B1A909AF1190F33FD61E0822BE6A57E9ACEC3178E43C3A16A93AD81D5095C53');
+ assert.equal(data.release.identity,'warp-integrated-successor-2026-10-20+description-reconcile-DE32B531');
+ assert.equal(data.release.installed_snapshot_verified,true);
+ assert.equal(data.release.live_connection,false);
+ assert.equal(data.release.public_payload_file_sha256,'B1AAE01805B3BE4EE5CAAFFE4AFCFA26CE4269F4D2DC65EA0F9862A1CE860FAD');
+ assert.equal(data.release.public_payload_data_sha256,'D22BD904B4E8B2EFF9D668605BCB5D0E91043DE13102676C43EFB1E97B181A5B');
+ assert.equal(data.release.public_payload_rooms_sha256,'0245C8126EBB5CCE62FD362225CEC1592DE74DF5E60554AAB68F25060815378C');
+ assert.deepEqual(data.release.allowed_directions,['north','south','east','west','up','down']);
+ assert.equal(data.contract.topology_sha256,'D22BD904B4E8B2EFF9D668605BCB5D0E91043DE13102676C43EFB1E97B181A5B');
  assert.equal(data.rooms.length,204);
  assert.equal(new Set(data.rooms.map(room=>room.id)).size,204);
  assert.deepEqual(data.rooms.map(room=>room.id).sort((a,b)=>+a.split('#')[1]-+b.split('#')[1]),Array.from({length:204},(_,i)=>`WarpGaladonSeed#${i}`));
  assert.equal(data.rooms.reduce((sum,room)=>sum+Object.keys(room.exits).length,0),440);
+ const projection=data.rooms.map(({id,title,exits})=>({id,title,exits}));
+ assert.equal(crypto.createHash('sha256').update(JSON.stringify(projection)).digest('hex').toUpperCase(),data.release.public_payload_rooms_sha256);
+ for(const room of data.rooms)for(const direction of Object.keys(room.exits))assert.ok(data.release.allowed_directions.includes(direction),`${room.id}: ${direction}`);
+ assert.equal(data.rooms.find(room=>room.id==='WarpGaladonSeed#39').exits.west,'WarpGaladonSeed#62');
+ assert.equal(data.rooms.find(room=>room.id==='WarpGaladonSeed#62').exits.east,'WarpGaladonSeed#39');
 });
 
 test('public export exposes only reviewed public-town structure fields',()=>{
@@ -33,7 +46,7 @@ test('public export exposes only reviewed public-town structure fields',()=>{
  for(const forbidden of ['password','auth_token','player_record','family_tree','private_home','timeline_event'])assert.equal(text.includes(forbidden),false,forbidden);
 });
 
-test('WARP-facing page separates offline route previews from executable gameplay',()=>{
+test('WARP-facing page separates installed snapshot previews from a live game connection',()=>{
  const html=fs.readFileSync(path.join(warp,'index.html'),'utf8');
  const css=fs.readFileSync(path.join(warp,'maps.css'),'utf8');
  const module=fs.readFileSync(path.join(warp,'map.mjs'),'utf8');
@@ -42,11 +55,11 @@ test('WARP-facing page separates offline route previews from executable gameplay
  assert.match(html,/>QHCF ranking &amp; items<\/a>/);
  assert.match(html,/QHCF \/ DIKU-WIKI contributors/);
  assert.match(html,/WARP Maps/);
- assert.match(html,/Offline candidate, not installed-game proof/);
+ assert.match(html,/Installed-release snapshot, not a live game connection/);
  assert.match(html,/id="copy-route"[^>]*disabled/);
  assert.match(html,/Double-semicolon command text/);
  assert.match(module,/planCandidateRoute/);
- assert.match(module,/Not live-game verified or executable/);
+ assert.match(module,/website is not connected to the running game and cannot execute movement/);
  assert.doesNotMatch(module,/send\(|WebSocket|Mudlet/i);
  assert.match(html,/http:\/\/wiki\.qhcf\.net\/index\.php\?title=Galadon/);
  assert.match(css,/\.map-shell>\*\{min-width:0\}/,'wide SVG must stay inside its scroll pane on phones');

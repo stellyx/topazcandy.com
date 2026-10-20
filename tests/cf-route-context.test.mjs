@@ -19,7 +19,7 @@ test('route geometry and preserved source records are byte-for-byte unchanged', 
     'warp/maps/archive/cf/data/areas/the-eastern-road.json': 'BB81EAE4E33935584550F61CD2E8234B592634A7B93ED3C18B17945DD3792B0C',
     'warp/maps/archive/cf/areas/galadon.html': '7A5FB026C20163314323819425B2DA1A8C1676FA0123139A2F0970E8C74641F3',
     'warp/maps/archive/cf/areas/the-eastern-road.html': '8E5EB0CBD7D8FDA70F8907F5B9B6D0F2D07B8ECE0DA65DEE5C687D2B604F63D5',
-    'warp/maps/public-town.json': '1BCFA1F338017A17BC91D18523A6E5C539C4E751D1024CFA764CDE06803E16A0',
+    'warp/maps/public-town.json': '08D5492A8EF521D28CCB002D47988F98AB1E7F364398B203F2F9EF038B3B75EC',
   };
   for (const [relative, expected] of Object.entries(pinned)) assert.equal(sha(relative), expected, relative);
 });

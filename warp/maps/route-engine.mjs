@@ -1,4 +1,4 @@
-export const DIRECTION_ORDER=['north','northeast','east','southeast','south','southwest','west','northwest','up','down'];
+export const DIRECTION_ORDER=['north','east','south','west','up','down'];
 
 export function buildRoomIndex(data){
  const rooms=new Map(data.rooms.map(room=>[room.id,room]));
@@ -27,5 +27,5 @@ export function planCandidateRoute(data,fromId,toId){
  if(!previous.has(toId))return {status:'UNREACHABLE_COMPONENT',from:fromId,to:toId,steps:[],commands:[],copy_commands:'',movement_count:0,executable:false,live_gameplay_verified:false};
  const steps=[toId],commands=[];let cursor=toId;
  while(cursor!==fromId){const edge=previous.get(cursor);commands.unshift(edge.direction);cursor=edge.room;steps.unshift(cursor)}
- return {status:'CANDIDATE_ROUTE',from:fromId,to:toId,steps,commands,copy_commands:commands.join(';;'),movement_count:commands.length,requires_directions_11:commands.some(command=>command==='southwest'||command==='northeast'),executable:false,live_gameplay_verified:false};
+ return {status:'SNAPSHOT_ROUTE',from:fromId,to:toId,steps,commands,copy_commands:commands.join(';;'),movement_count:commands.length,installed_snapshot_verified:true,executable:false,live_gameplay_verified:false};
 }

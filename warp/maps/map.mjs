@@ -59,16 +59,16 @@ function renderSearch(){
   entry.circle.classList.toggle('match',Boolean(match));const card=roomList.querySelector(`[data-id="${CSS.escape(room.id)}"]`);if(card)card.hidden=Boolean(query&&!match);
   if(match){count++;first??=room}
  }
- if(!query)result.textContent=`${data.rooms.length} WARP candidate rooms shown.`;else if(!count)result.textContent='No WARP room matches that text.';else result.textContent=`${count} match${count===1?'':'es'}; first: ${first.title} — ${first.id}.`;
+ if(!query)result.textContent=`${data.rooms.length} WARP snapshot rooms shown.`;else if(!count)result.textContent='No WARP room matches that text.';else result.textContent=`${count} match${count===1?'':'es'}; first: ${first.title} - ${first.id}.`;
 }
 function clearRoute(){routeLayer.replaceChildren();for(const entry of roomNodes.values())entry.circle.classList.remove('route','route-start','route-end')}
 function renderRoute(){
  clearRoute();const route=planCandidateRoute(data,fromSelect.value,toSelect.value);currentRoute=route;
  routeOutput.value=route.copy_commands;copyRoute.disabled=!route.copy_commands;
  if(route.status==='UNKNOWN_ROOM')routeStatus.textContent='Unknown endpoint; no route produced.';
- else if(route.status==='UNREACHABLE_COMPONENT')routeStatus.textContent='These rooms are in separate sealed components. No connection is invented.';
+ else if(route.status==='UNREACHABLE_COMPONENT')routeStatus.textContent='These rooms are in separate snapshot components. No connection is invented.';
  else if(route.status==='SAME_ROOM')routeStatus.textContent='Start and destination are the same room: 0 movements.';
- else routeStatus.textContent=`Offline candidate route: ${route.movement_count} movement${route.movement_count===1?'':'s'}. Not live-game verified or executable.${route.requires_directions_11?' This path uses the southwest/northeast pair and therefore depends on the pending 11-direction decision.':''}`;
+ else routeStatus.textContent=`Installed-release snapshot route: ${route.movement_count} movement${route.movement_count===1?'':'s'}. Preview only; this website is not connected to the running game and cannot execute movement.`;
  if(!route.steps.length)return;
  route.steps.forEach((id,index)=>{const entry=roomNodes.get(id);entry?.circle.classList.add('route');if(index===0)entry?.circle.classList.add('route-start');if(index===route.steps.length-1)entry?.circle.classList.add('route-end')});
  for(let index=0;index<route.steps.length-1;index++){
@@ -91,9 +91,9 @@ async function copyCandidateRoute(){
  if(navigator.clipboard?.writeText)try{await Promise.race([navigator.clipboard.writeText(text).then(()=>{confirmed=true}),new Promise((_,reject)=>setTimeout(()=>reject(Error('clipboard timeout')),900))])}catch{}
  if(!confirmed){routeOutput.focus();routeOutput.select();fallbackSent=document.execCommand('copy');routeOutput.setSelectionRange(0,0)}
  routeStatus.textContent=confirmed
-  ?`Copied ${currentRoute.movement_count} candidate movements. Not live-game verified.`
+  ?`Copied ${currentRoute.movement_count} snapshot movements. This page cannot execute them.`
   :fallbackSent
-   ?`Copy command sent for ${currentRoute.movement_count} candidate movements; paste to confirm if the browser blocks clipboard access.`
+   ?`Copy command sent for ${currentRoute.movement_count} snapshot movements; paste to confirm if the browser blocks clipboard access.`
    :'Copy was blocked; select the route text manually.';
 }
 

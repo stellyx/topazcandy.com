@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0.0",
-  "dataset_id": "warp.public-town.galadon-candidate.v1",
-  "status": "SEALED_OFFLINE_CONTENT_CANDIDATE_AWAITING_DIRECTION_CONFIG_AND_INTEGRATOR_ACCEPTANCE",
+  "dataset_id": "warp.public-town.galadon-installed-snapshot.2026-10-20",
+  "status": "INSTALLED_RELEASE_PUBLIC_MAP_SNAPSHOT",
   "live_gameplay_verified": false,
   "executable_routes": false,
-  "generated_at_utc": "2026-10-20T00:00:00Z",
+  "generated_at_utc": "2026-10-20T23:00:00Z",
   "source": {
     "map_title": "Galadon",
     "original_wiki_permalink": "http://wiki.qhcf.net/index.php?title=Galadon&oldid=5044",
@@ -15,17 +15,17 @@
     "attribution": "Historical map authors and QHCF / DIKU-WIKI contributors; original notices and credits are retained in the archive."
   },
   "contract": {
-    "topology_sha256": "0B1A909AF1190F33FD61E0822BE6A57E9ACEC3178E43C3A16A93AD81D5095C53",
+    "topology_sha256": "D22BD904B4E8B2EFF9D668605BCB5D0E91043DE13102676C43EFB1E97B181A5B",
     "room_count": 204,
     "directed_internal_exit_count": 440,
     "components": [
       196,
       8
     ],
-    "direction_configuration": "Decision pending. The authentic reciprocal southwest/northeast pair requires DIRECTIONS=11; no cardinal substitute is asserted.",
-    "source_authentic_diagonal": [
-      "WarpGaladonSeed#39 southwest -> WarpGaladonSeed#62",
-      "WarpGaladonSeed#62 northeast -> WarpGaladonSeed#39"
+    "direction_configuration": "Installed release uses north, south, east, west, up, and down only.",
+    "reconciled_cardinal_pair": [
+      "WarpGaladonSeed#39 west -> WarpGaladonSeed#62",
+      "WarpGaladonSeed#62 east -> WarpGaladonSeed#39"
     ]
   },
   "rooms": [
@@ -699,11 +699,11 @@
         "z": 0
       },
       "exits": {
-        "southwest": "WarpGaladonSeed#62"
+        "west": "WarpGaladonSeed#62"
       },
       "source_label_for_reference_only": null,
       "title": "Slant-Rain Overlook",
-      "description": "A high stone overlook is striped by old rain marks running at an impossible angle across the parapet. The only public descent runs SOUTHWEST toward the lower civic streets."
+      "description": "A high stone overlook is striped by old rain marks running at an impossible angle across the parapet. The only public descent runs WEST toward the lower civic streets."
     },
     {
       "id": "WarpGaladonSeed#40",
@@ -1093,11 +1093,11 @@
       "exits": {
         "north": "WarpGaladonSeed#49",
         "south": "WarpGaladonSeed#77",
-        "northeast": "WarpGaladonSeed#39"
+        "east": "WarpGaladonSeed#39"
       },
       "source_label_for_reference_only": null,
       "title": "Far-Weather Junction",
-      "description": "Old rain bands, wind arrows, and one sun-faded snow marker share a three-way junction without predicting anything. NORTH reaches Far-Gauge End. SOUTH reaches Northeast Measure. NORTHEAST climbs to Slant-Rain Overlook."
+      "description": "Old rain bands, wind arrows, and one sun-faded snow marker share a three-way junction without predicting anything. NORTH reaches Far-Gauge End. SOUTH reaches Northeast Measure. EAST climbs to Slant-Rain Overlook."
     },
     {
       "id": "WarpGaladonSeed#63",
@@ -3531,19 +3531,37 @@
     }
   ],
   "content_contract": {
-    "source_candidate": "WARP Galadon v4.1.4 sealed offline complete-content candidate",
+    "source_candidate": "Reviewed sanitized WARP public-town content, synchronized to the installed successor payload",
     "source_cmroom_sha256": "247DAF4E203BD6697CCA57EE7C8A3B819398C6EDAFDF515B0AD2C2F6F3E3FA25",
-    "sanitized_room_content_sha256": "94E8729D1A5ED80B948F87E911F0F7A8BED0E9842E273BBC97C9736BCF287262",
+    "sanitized_room_content_sha256": "4252B422BE78F6364B5B77AA2E343BE0DE9B1F48E2F0790D9C867F050737C097",
     "authored_room_count": 204,
     "content_pending_rooms": 0,
     "live_gameplay_verified": false,
-    "protected_rooms_modified": 0
+    "protected_rooms_modified": 0,
+    "installed_snapshot_verified": true
   },
   "route_previews": {
     "available": true,
     "separator": ";;",
     "live_gameplay_verified": false,
     "executable": false,
-    "note": "Routes are shortest paths inside the sealed offline candidate only. They do not prove the installed game matches this graph."
+    "note": "Routes are shortest paths inside the installed-release public snapshot. The website is not connected to the running game and cannot execute movement.",
+    "installed_snapshot_verified": true
+  },
+  "release": {
+    "identity": "warp-integrated-successor-2026-10-20+description-reconcile-DE32B531",
+    "installed_snapshot_verified": true,
+    "live_connection": false,
+    "public_payload_file_sha256": "B1AAE01805B3BE4EE5CAAFFE4AFCFA26CE4269F4D2DC65EA0F9862A1CE860FAD",
+    "public_payload_data_sha256": "D22BD904B4E8B2EFF9D668605BCB5D0E91043DE13102676C43EFB1E97B181A5B",
+    "public_payload_rooms_sha256": "0245C8126EBB5CCE62FD362225CEC1592DE74DF5E60554AAB68F25060815378C",
+    "allowed_directions": [
+      "north",
+      "south",
+      "east",
+      "west",
+      "up",
+      "down"
+    ]
   }
 }

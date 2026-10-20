@@ -2919,13 +2919,13 @@
     },
     {
       "path": "warp/maps/BUILD.md",
-      "bytes": 1213,
-      "sha256": "EFDEE36E9E5126A6D4DF7EF825BC6924A1A19124604F4C642C3674E312CACB12"
+      "bytes": 1439,
+      "sha256": "30A007F9478B4331D9EC75EC2F245388114213300ACC58839E2AE566ED91FB31"
     },
     {
       "path": "warp/maps/index.html",
-      "bytes": 4812,
-      "sha256": "1692CDF54752AAE51C54D95DD952AE1EAD6221B9BB39BA28D1D19BC8334B3897"
+      "bytes": 5138,
+      "sha256": "91AC934BFB4A7D83F44806205CF16DBC616578F0E1FAB8E8DEB75EB5070B273C"
     },
     {
       "path": "warp/maps/legacy-redirect-manifest.json",
@@ -2934,8 +2934,8 @@
     },
     {
       "path": "warp/maps/map.mjs",
-      "bytes": 9735,
-      "sha256": "14EFE2023D5A37FE077AA465B34820192B25DDA0A78C2FDB6A10F917D17BFC18"
+      "bytes": 9662,
+      "sha256": "531969D59865F69E47BEE377788997424C3CEFC0AE703DE2070BACFE0812C37B"
     },
     {
       "path": "warp/maps/maps.css",
@@ -2944,18 +2944,18 @@
     },
     {
       "path": "warp/maps/migration-manifest.json",
-      "bytes": 1579,
-      "sha256": "E2B9751C9A41DED1669BAB812686617E8B2C440B3290A1AFB1963630B4CAA40E"
+      "bytes": 1975,
+      "sha256": "DB85C49D32E847B871697ECC60B147D306083AC8A36C81B73E687A9DCA8BB427"
     },
     {
       "path": "warp/maps/public-town.json",
-      "bytes": 129455,
-      "sha256": "1BCFA1F338017A17BC91D18523A6E5C539C4E751D1024CFA764CDE06803E16A0"
+      "bytes": 130074,
+      "sha256": "08D5492A8EF521D28CCB002D47988F98AB1E7F364398B203F2F9EF038B3B75EC"
     },
     {
       "path": "warp/maps/route-engine.mjs",
-      "bytes": 2161,
-      "sha256": "A390520D1D01B27564FC07B8822E90901A859C348BC2DE58AD24CD713A2FD7A6"
+      "bytes": 2053,
+      "sha256": "3E87E4D6AFD0A739B7F4B1A547BA929FC3D8F9EC5170433DC587BC957AF403CE"
     }
   ]
 }

@@ -10,9 +10,9 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const warp=path.join(root,'warp','maps');
 const data=JSON.parse(fs.readFileSync(path.join(warp,'public-town.json'),'utf8'));
 
-test('sealed v4.1.4 room content is complete, unique, and provenance-bound',()=>{
+test('sanitized room content is complete, unique, and provenance-bound',()=>{
  assert.equal(data.content_contract.source_cmroom_sha256,'247DAF4E203BD6697CCA57EE7C8A3B819398C6EDAFDF515B0AD2C2F6F3E3FA25');
- assert.equal(data.content_contract.sanitized_room_content_sha256,'94E8729D1A5ED80B948F87E911F0F7A8BED0E9842E273BBC97C9736BCF287262');
+ assert.equal(data.content_contract.sanitized_room_content_sha256,'4252B422BE78F6364B5B77AA2E343BE0DE9B1F48E2F0790D9C867F050737C097');
  assert.equal(data.content_contract.authored_room_count,204);
  assert.equal(data.content_contract.content_pending_rooms,0);
  assert.equal(new Set(data.rooms.map(room=>room.title)).size,204);
@@ -24,16 +24,18 @@ test('sealed v4.1.4 room content is complete, unique, and provenance-bound',()=>
 
 test('route previews preserve exact step counts and double-semicolon output',()=>{
  const south=planCandidateRoute(data,'WarpGaladonSeed#0','WarpGaladonSeed#3');
- assert.equal(south.status,'CANDIDATE_ROUTE');assert.equal(south.movement_count,3);assert.equal(south.copy_commands,'south;;south;;south');assert.equal(south.commands.length,south.steps.length-1);
+ assert.equal(south.status,'SNAPSHOT_ROUTE');assert.equal(south.movement_count,3);assert.equal(south.copy_commands,'south;;south;;south');assert.equal(south.commands.length,south.steps.length-1);
  const north=planCandidateRoute(data,'WarpGaladonSeed#3','WarpGaladonSeed#0');
  assert.equal(north.copy_commands,'north;;north;;north');assert.equal(north.movement_count,3);
  for(const route of [south,north]){assert.equal(route.executable,false);assert.equal(route.live_gameplay_verified,false);assert.ok(!route.copy_commands.endsWith(';;'))}
 });
 
-test('the authentic diagonal is retained and visibly requires the pending direction decision',()=>{
+test('installed release uses the reconciled west/east pair and no diagonal commands',()=>{
  const forward=planCandidateRoute(data,'WarpGaladonSeed#39','WarpGaladonSeed#62'),reverse=planCandidateRoute(data,'WarpGaladonSeed#62','WarpGaladonSeed#39');
- assert.equal(forward.copy_commands,'southwest');assert.equal(reverse.copy_commands,'northeast');assert.equal(forward.requires_directions_11,true);assert.equal(reverse.requires_directions_11,true);
- const ui=fs.readFileSync(path.join(warp,'map.mjs'),'utf8');assert.match(ui,/pending 11-direction decision/);
+ assert.equal(forward.copy_commands,'west');assert.equal(reverse.copy_commands,'east');
+ assert.equal(forward.installed_snapshot_verified,true);assert.equal(reverse.installed_snapshot_verified,true);
+ assert.equal('requires_directions_11' in forward,false);assert.equal('requires_directions_11' in reverse,false);
+ const ui=fs.readFileSync(path.join(warp,'map.mjs'),'utf8');assert.doesNotMatch(ui,/11-direction|southwest|northeast/);
 });
 
 test('disconnected source components remain unreachable and unknown rooms stay inert',()=>{
@@ -68,5 +70,5 @@ test('phone Fit all can show the full graph without illegibly tiny labels',()=>{
 
 test('sanitized public prose excludes private and credential-bearing records',()=>{
  const prose=data.rooms.map(room=>room.title+'\n'+room.description).join('\n').toLowerCase();
- for(const forbidden of ['palace','private home','player record','family tree','timeline event','auth token','password','credential','secret key'])assert.equal(prose.includes(forbidden),false,forbidden);
+ for(const forbidden of ['palace','private home','player record','family tree','timeline event','auth token','password','credential','secret key','williswarpritual'])assert.equal(prose.includes(forbidden),false,forbidden);
 });
