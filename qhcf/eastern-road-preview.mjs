@@ -80,6 +80,11 @@ if(typeof document!=='undefined'){
   const add=(tag,attrs={},parent=svg)=>{const e=document.createElementNS(NS,tag);for(const [key,value] of Object.entries(attrs))e.setAttribute(key,String(value));parent.append(e);return e};
   const defs=add('defs'),marker=add('marker',{id:'east-arrow',viewBox:'0 0 10 10',refX:8,refY:5,markerWidth:6,markerHeight:6,orient:'auto'},defs);add('path',{d:'M 1 1 L 9 5 L 1 9 z',fill:'#162420'},marker);
   const roads=add('g'),active=add('g'),points=add('g');
+  // Row 5 in the captured chart is one east-west road. Its printed room and
+  // area names interrupt the '-' glyphs, so rendering only '-' creates a
+  // misleading chain of disconnected dots. This is a visual corridor, not a
+  // movement edge: only the explicit numbered spans below yield commands.
+  add('line',{x1:X(1),y1:Y(5),x2:X(84),y2:Y(5),class:'road main-corridor','aria-hidden':'true'},roads);
   for(const {row,column,glyph} of sourceSegments(source)){
     const horizontal=glyph==='-';
     add('line',{
@@ -90,6 +95,15 @@ if(typeof document!=='undefined'){
   }
   // Counted spans are geometric only for display; movement comes from (7E)/(5E).
   const spanEls=model.spans.map(s=>{const a=byId.get(s.from),b=byId.get(s.to);return add('line',{x1:X(a.column),y1:Y(a.row),x2:X(b.column),y2:Y(b.row),class:'road counted'},roads)});
+  for(const [id,label,above] of [
+    ['eastern.map.along','Along the Eastern Road',false],
+    ['eastern.map.eastern','Eastern Road',false],
+    ['eastern.map.c','C · 7E →',true],
+    ['eastern.map.east-one','East end',false]
+  ]){
+    const n=byId.get(id);
+    add('text',{x:X(n.column),y:Y(n.row)+(above?-23:35),class:'corridor-label','text-anchor':n.column>78?'end':'middle','aria-hidden':'true'},roads).textContent=label;
+  }
   const note=document.querySelector('#map-note'),defaultNote=note.textContent;
   const showNote=value=>{note.textContent=value},resetNote=()=>{note.textContent=defaultNote};
   for(const n of model.nodes){const g=add('g',{class:`point ${n.kind}`,tabindex:'0',role:'button','aria-label':n.name,'data-room':n.id},points);add('circle',{cx:X(n.column),cy:Y(n.row),r:n.kind==='plus'?11:12},g);if(n.kind==='plus')add('text',{x:X(n.column),y:Y(n.row)+5,'text-anchor':'middle',class:'code'},g).textContent='+';const t=add('title',{},g);t.textContent=n.name;g.addEventListener('click',()=>select(n));g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(n)}});g.addEventListener('pointerenter',()=>showNote(`${n.name} · source r${n.row}c${n.column}`));g.addEventListener('pointerleave',resetNote);g.addEventListener('focus',()=>showNote(`${n.name} · source r${n.row}c${n.column}`));g.addEventListener('blur',resetNote)}
