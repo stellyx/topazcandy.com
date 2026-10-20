@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Academy / Temple Seam Coverage</title>
+  <style>
+    :root{color-scheme:dark;background:#0b1020;color:#edf2ff;font:15px/1.45 system-ui,sans-serif}body{margin:0}header{padding:14px 20px;border-bottom:1px solid #2a3657;background:#11182b}header nav{display:flex;gap:16px;flex-wrap:wrap}main{max-width:1280px;margin:auto;padding:32px 20px 56px}h1{margin:.2rem 0}.lede{max-width:78ch;color:#b9c4dd}.warning{border-left:4px solid #f2b84b;background:#241d0e;padding:12px 16px;margin:20px 0}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:24px 0}.card{background:#141c33;border:1px solid #2a3657;border-radius:10px;padding:14px}.card strong{display:block;color:#f7d27a;font-size:1.4rem}.table-wrap{overflow:auto;border:1px solid #2a3657;border-radius:10px}table{border-collapse:collapse;width:100%;min-width:1100px;background:#10172b}th,td{padding:9px 11px;border-bottom:1px solid #26314f;vertical-align:top;text-align:left}th{position:sticky;top:0;background:#1b2541;color:#f7d27a}tr:nth-child(even) td{background:#121b31}.yes{color:#81d4a3}.no{color:#ff9b9b}a{color:#8ec8ff}.tier{font-size:.82rem;border:1px solid #4b5d86;border-radius:999px;padding:2px 8px;white-space:nowrap}code{background:#1a2440;padding:1px 4px;border-radius:4px}footer{color:#9eabc5;margin-top:24px}
+  </style>
+</head>
+<body>
+<header><nav><a href="/qhcf/">QHCF World Atlas</a><a href="/qhcf/references/ranking-items.html">Historical ranking and items</a><a href="/qhcf/data/academy-source-inventory.json">Evidence inventory</a><a href="/qhcf/data/navigation/academy-graph.json">Non-executable graph data</a><a href="/qhcf/data/references/temple-coverage-matrix.csv">Coverage CSV</a></nav></header>
+<main>
+  <p class="tier">coverage/reference view · non-executable</p>
+  <h1>Academy / temple seam coverage</h1>
+  <p class="lede">This staged view inventories preserved labels and evidence. It is deliberately not an Academy map: no standalone Academy or AcademyCaverns capture survives in the rescue set.</p>
+  <div class="warning"><strong>Routing safety:</strong> source chart labels are not commands. User-reported <code>down</code>, <code>north</code>, and <code>south</code> claims remain separate from source-confirmed topology. No reverse edge or cross-city path is emitted.</div>
+  <section class="cards" id="summary" aria-label="Coverage summary"></section>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Hometown</th><th>Atlas/source anchor</th><th>Evidence</th><th>DOWN report</th><th>Live</th><th>Destination</th><th>Return</th><th>Advertised?</th><th>Notes</th></tr></thead>
+    <tbody id="coverage"><tr><td colspan="9">Loading staged evidence…</td></tr></tbody>
+  </table></div>
+  <footer>Official help observed 2026-10-20 confirms Academy admission for levels 1-5 and removal/no re-entry at level 6. Seam-specific gating and return behavior remain unresolved. Attribution and evidence tiers are preserved in the linked inventory.</footer>
+</main>
+<script type="module" src="/qhcf/assets/academy-preview.mjs?v=1"></script>
+</body>
+</html>

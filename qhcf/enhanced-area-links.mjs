@@ -5,7 +5,9 @@ export const enhancedAreaLinks=new Map([
  ['/qhcf/areas/the-grove.html','/qhcf/grove-preview.html'],
  ['/qhcf/areas/the-past-grove.html','/qhcf/past-grove-preview.html'],
  ['/qhcf/areas/the-plains-of-arendyl.html','/qhcf/plains-arendyl-preview.html'],
- ['/qhcf/areas/a-wagon-marked-road.html','/qhcf/wagon-road-preview.html']
+ ['/qhcf/areas/a-wagon-marked-road.html','/qhcf/wagon-road-preview.html'],
+ ['/qhcf/areas/silverwood.html','/qhcf/silverwood-preview.html'],
+ ['/qhcf/areas/udgaard.html','/qhcf/udgaard-preview.html']
 ]);
 
 export function upgradeEnhancedAreaLinks(root=document){

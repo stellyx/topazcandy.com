@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "graphMode": "evidence-only-non-executable",
+  "routePolicy": {
+    "allowSharedAcademyNode": false,
+    "allowAutomaticReverseEdges": false,
+    "allowCrossOriginPath": false,
+    "allowShortestPathThroughAcademy": false,
+    "commandSeparator": ";;"
+  },
+  "globalAdmission": {
+    "evidenceTier": "official_help",
+    "levelsAllowed": [1,2,3,4,5],
+    "levelSixBehavior": "removed and cannot re-enter",
+    "seamSpecificEnforcement": "unknown"
+  },
+  "userReport": {
+    "evidenceTier": "user_report",
+    "text": "all temples need the academy link which is down from their temple all temples and south to academy githing caverne or north to the newbie traini9ng area and description area",
+    "normalizedClaims": [
+      "down from each hometown temple reaches the Academy",
+      "south leads toward a cavern branch",
+      "north leads toward newbie training and description material"
+    ],
+    "unresolvedName": "The phrase 'githing caverne' is not normalized to 'fighting cavern' without a source.",
+    "liveVerified": false
+  },
+  "descriptiveBranches": [
+    {"direction":"south","reportedDestination":"academy githing caverne","properName":null,"status":"user-report-only","coordinates":null,"edge":null},
+    {"direction":"north","reportedDestination":"newbie training/description area","properName":null,"status":"user-report-only","coordinates":null,"edge":null}
+  ],
+  "seams": [
+    {
+      "id":"akan-temple-academy",
+      "origin":{"atlasSlug":"akan","label":"temple (official help); chart legend has The Holy Altar","sourceIdentity":"partially-resolved"},
+      "boundaryNode":"academy-boundary:akan",
+      "sourceChart":{"title":"Akan","revision":5019,"row":36,"column":6,"literal":"a  - The Holy Altar"},
+      "evidence":{"source_chart":"holy altar only; no Academy command","user_report":"down from temple","official_help":"Academy through trapdoor in temple","live_verified":null},
+      "reportedCommand":"down",
+      "executableCommand":null,
+      "destinationRoom":null,
+      "returnCommand":null,
+      "returnToOrigin":null,
+      "routeEligible":false
+    },
+    {
+      "id":"hillcrest-pit-academy",
+      "origin":{"atlasSlug":"hillcrest","label":"pit","sourceIdentity":"official-help-resolved"},
+      "boundaryNode":"academy-boundary:hillcrest",
+      "sourceChart":null,
+      "evidence":{"source_chart":null,"user_report":"down from temple","official_help":"head downward while standing in front of the pit","live_verified":null},
+      "reportedCommand":"down",
+      "executableCommand":null,
+      "destinationRoom":null,
+      "returnCommand":null,
+      "returnToOrigin":null,
+      "routeEligible":false
+    },
+    {
+      "id":"jade-pit-academy",
+      "origin":{"atlasSlug":"the-jade-mountains","label":"A - Pit","sourceIdentity":"source-chart-resolved"},
+      "boundaryNode":"academy-boundary:jade-mountains",
+      "sourceChart":{"title":"JadeMountains","revision":5114,"row":75,"column":1,"literal":"A - Pit (down to Academy)"},
+      "evidence":{"source_chart":"down to Academy","user_report":"down from temple","official_help":null,"live_verified":null},
+      "reportedCommand":"down",
+      "executableCommand":null,
+      "destinationRoom":null,
+      "returnCommand":null,
+      "returnToOrigin":null,
+      "routeEligible":false
+    }
+  ],
+  "sourceAnchorsWithoutSeams": [
+    "galadon-acad-nw","galadon-acd-north-central","galadon-acd-south-central",
+    "evermoon-to-academy","hamsah-healer-academy","veran-gates-academy",
+    "teth-warriors-academy-conflict"
+  ]
+}
