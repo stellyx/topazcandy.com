@@ -96,8 +96,9 @@ test('unresolved routes are never advertised as verified', () => {
 });
 
 test('manual graphical references remain available', () => {
-  assert.match(html, /coverage\/reference view/i);
-  assert.match(html, /source chart labels are not commands/i);
+  assert.match(html, /Academy reference/i);
+  assert.match(html, /No standalone Academy map survives/i);
+  assert.match(html, /source labels are not movement commands/i);
   assert.match(html, /\/qhcf\/assets\/academy-preview\.mjs/);
 });
 
