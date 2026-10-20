@@ -25,3 +25,9 @@ test('graphical links do not add unverified route commands',()=>{
  assert.match(script,/actual===pattern/);
  assert.match(page,/revision 5026/);
 });
+test('tower diagonals and initial fit follow literal glyphs and viewport',()=>{
+ assert.equal(area.lines[18][37],'/'); // row 19, column 38: southwest tower
+ assert.equal(area.lines[18][49],'/'); // row 19, column 50: southeast tower
+ assert.match(script,/\[2,-2,'\/'\]/);
+ assert.match(script,/viewport\.clientHeight-12/);
+});
