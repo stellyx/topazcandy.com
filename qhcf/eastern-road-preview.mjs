@@ -80,35 +80,39 @@ if(typeof document!=='undefined'){
   const source=await fetch('/qhcf/data/areas/the-eastern-road.json').then(r=>{if(!r.ok)throw Error('Source unavailable');return r.json()});
   const model=buildModel(source),byId=new Map(model.nodes.map(n=>[n.id,n]));
   const svg=document.querySelector('#map'),view=document.querySelector('#viewport'),NS='http://www.w3.org/2000/svg';
-  const W=1350,H=580,X=c=>30+c*14,Y=r=>22+r*25;
+  // Display coordinates deliberately straighten the two source rows. They
+  // carry no movement weight; source row/column and IDs remain unchanged.
+  const W=1580,H=430,BASE=205,U=c=>24+c*9,L=c=>U(84)+14+(c-18)*12;
+  const P=(row,column)=>row<11?{x:U(column),y:BASE+(row-5)*24}:{x:L(column),y:BASE};
   svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
   const add=(tag,attrs={},parent=svg)=>{const e=document.createElementNS(NS,tag);for(const [key,value] of Object.entries(attrs))e.setAttribute(key,String(value));parent.append(e);return e};
   const defs=add('defs'),marker=add('marker',{id:'east-arrow',viewBox:'0 0 10 10',refX:8,refY:5,markerWidth:6,markerHeight:6,orient:'auto'},defs);add('path',{d:'M 1 1 L 9 5 L 1 9 z',fill:'#162420'},marker);
   const roads=add('g'),active=add('g'),points=add('g');
-  // Row 5 in the captured chart is one east-west road. Its printed room and
-  // area names interrupt the '-' glyphs, so rendering only '-' creates a
-  // misleading chain of disconnected dots. This is a visual corridor, not a
-  // movement edge: only the explicit numbered spans below yield commands.
-  add('line',{x1:X(1),y1:Y(5),x2:X(84),y2:Y(5),class:'road main-corridor','aria-hidden':'true'},roads);
-  // The user's marked copy joins the two printed '1' markers: the upper
-  // east end wraps around into the lower Hamsah-bound line. Show that
-  // continuity without inventing a movement command for the join.
-  add('path',{d:`M ${X(84)} ${Y(5)} C 1330 155 1340 250 1250 276 C 950 310 520 284 293 302 C 205 309 180 380 ${X(18)} ${Y(14)}`,class:'road marked-continuation','aria-hidden':'true'},roads);
-  add('text',{x:W-65,y:268,class:'continuation-label','text-anchor':'end','aria-hidden':'true'},roads).textContent='The two “1” markers join here · command unresolved';
-  // The lower sketch carries on through its printed E rooms to Hamsah.
-  // These strokes follow visible chart adjacency; they are not route edges.
-  add('path',{d:`M ${X(18)} ${Y(14)} H ${X(24)} V ${Y(16)} H ${X(38)} V ${Y(18)} H ${X(45)} V ${Y(20)} H ${X(76)}`,class:'road lower-corridor','aria-hidden':'true'},roads);
-  add('text',{x:X(76),y:Y(20)+39,class:'corridor-label','text-anchor':'end','aria-hidden':'true'},roads).textContent='Hamsah Mu’tazz';
+  add('line',{x1:U(1),y1:BASE,x2:U(84),y2:BASE,class:'road main-corridor','aria-hidden':'true'},roads);
+  // User-marked upper '1' and lower '1' are adjacent in this schematic.
+  // The short dashed join is visual continuity, with no invented command.
+  add('line',{x1:U(84),y1:BASE,x2:L(18),y2:BASE,class:'road marked-continuation','aria-hidden':'true'},roads);
+  add('line',{x1:L(18),y1:BASE,x2:L(76),y2:BASE,class:'road lower-corridor','aria-hidden':'true'},roads);
+  add('text',{x:L(18)+8,y:BASE-57,class:'continuation-label','aria-hidden':'true'},roads).textContent='1 → 1 join · command unresolved';
+  add('text',{x:L(76),y:BASE+47,class:'corridor-label','text-anchor':'end','aria-hidden':'true'},roads).textContent='Hamsah Mu’tazz';
+  // Branch stubs follow the source's north/south attachments. They do not
+  // create route edges or change the count on the flattened main line.
+  for(const [column,side,label] of [[18,-1,'The Grove'],[35,-1,'The Grove'],[24,1,'Drogan Hills']]){
+    const x=L(column),y=BASE+side*65;
+    add('line',{x1:x,y1:BASE,x2:x,y2:y,class:'road branch-stub','aria-hidden':'true'},roads);
+    add('text',{x,y:y+side*14,class:'branch-label','text-anchor':'middle','aria-hidden':'true'},roads).textContent=label;
+  }
   for(const {row,column,glyph} of sourceSegments(source)){
+    if(row>10)continue; // lower chart is flattened into the corridor above
     const horizontal=glyph==='-';
     add('line',{
-      x1:X(column)+(horizontal?-7:0),y1:Y(row)+(horizontal?0:-12.5),
-      x2:X(column)+(horizontal?7:0),y2:Y(row)+(horizontal?0:12.5),
+      x1:U(column)+(horizontal?-4.5:0),y1:P(row,column).y+(horizontal?0:-12),
+      x2:U(column)+(horizontal?4.5:0),y2:P(row,column).y+(horizontal?0:12),
       class:'road source-glyph','aria-hidden':'true'
     },roads);
   }
   // Counted spans are geometric only for display; movement comes from (7E)/(5E).
-  const spanEls=model.spans.map(s=>{const a=byId.get(s.from),b=byId.get(s.to);return add('line',{x1:X(a.column),y1:Y(a.row),x2:X(b.column),y2:Y(b.row),class:'road counted'},roads)});
+  const spanEls=model.spans.map(s=>{const a=P(byId.get(s.from).row,byId.get(s.from).column),b=P(byId.get(s.to).row,byId.get(s.to).column);return add('line',{x1:a.x,y1:a.y,x2:b.x,y2:b.y,class:'road counted'},roads)});
   for(const [id,label,above] of [
     ['eastern.map.along','Along the Eastern Road',false],
     ['eastern.map.eastern','Eastern Road',false],
@@ -116,18 +120,18 @@ if(typeof document!=='undefined'){
     ['eastern.map.east-one','East end',false]
   ]){
     const n=byId.get(id);
-    add('text',{x:X(n.column),y:Y(n.row)+(above?-23:35),class:'corridor-label','text-anchor':n.column>78?'end':'middle','aria-hidden':'true'},roads).textContent=label;
+    const p=P(n.row,n.column);add('text',{x:p.x,y:p.y+(above?-23:35),class:'corridor-label','text-anchor':n.column>78?'end':'middle','aria-hidden':'true'},roads).textContent=label;
   }
   // The source has many more distance notes than the two modelled route spans.
   // Print every one at its captured position; these labels are evidence, not
   // executable edges until both endpoint rooms are established.
   for(const note of sourceCountNotes(source)){
-    const offset=note.row===5?-30:note.row===6?27:-9;
-    add('text',{x:X(note.column),y:Y(note.row)+offset,class:'source-count','text-anchor':'middle','aria-hidden':'true'},roads).textContent=note.label;
+    const p=P(note.row,note.column),offset=note.row===6?54:note.row===4||note.row===5?-32:-34;
+    add('text',{x:p.x,y:p.y+offset,class:'source-count','text-anchor':'middle','aria-hidden':'true'},roads).textContent=note.label;
   }
   const note=document.querySelector('#map-note'),defaultNote=note.textContent;
   const showNote=value=>{note.textContent=value},resetNote=()=>{note.textContent=defaultNote};
-  for(const n of model.nodes){const g=add('g',{class:`point ${n.kind}`,tabindex:'0',role:'button','aria-label':n.name,'data-room':n.id},points);add('circle',{cx:X(n.column),cy:Y(n.row),r:n.kind==='plus'?11:12},g);if(n.kind==='plus')add('text',{x:X(n.column),y:Y(n.row)+5,'text-anchor':'middle',class:'code'},g).textContent='+';const t=add('title',{},g);t.textContent=n.name;g.addEventListener('click',()=>select(n));g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(n)}});g.addEventListener('pointerenter',()=>showNote(`${n.name} · source r${n.row}c${n.column}`));g.addEventListener('pointerleave',resetNote);g.addEventListener('focus',()=>showNote(`${n.name} · source r${n.row}c${n.column}`));g.addEventListener('blur',resetNote)}
+  for(const n of model.nodes){const p=P(n.row,n.column),g=add('g',{class:`point ${n.kind}`,tabindex:'0',role:'button','aria-label':n.name,'data-room':n.id},points);add('circle',{cx:p.x,cy:p.y,r:n.kind==='plus'?11:12},g);if(n.kind==='plus')add('text',{x:p.x,y:p.y+5,'text-anchor':'middle',class:'code'},g).textContent='+';const t=add('title',{},g);t.textContent=n.name;g.addEventListener('click',()=>select(n));g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();select(n)}});g.addEventListener('pointerenter',()=>showNote(`${n.name} · source r${n.row}c${n.column}`));g.addEventListener('pointerleave',resetNote);g.addEventListener('focus',()=>showNote(`${n.name} · source r${n.row}c${n.column}`));g.addEventListener('blur',resetNote)}
   // Area labels live in a compact Places control. These are real HTML links,
   // separate from source-positioned rooms and from the routing graph.
   const placeList=document.querySelector('#place-list');
@@ -138,13 +142,13 @@ if(typeof document!=='undefined'){
   for(const field of [fromField,toField])for(const n of sorted){const option=document.createElement('option');option.value=n.id;option.textContent=n.name;field.append(option)}
   function show(){fromField.value=start||'';toField.value=goal||'';document.querySelector('#start-chip').textContent=start?`① ${byId.get(start).name}`:'① Click starting point';document.querySelector('#goal-chip').textContent=goal?`② ${byId.get(goal).name}`:'② Click destination';document.querySelector('#flip').disabled=!(start&&goal);for(const g of points.children){g.classList.toggle('start',g.dataset.room===start);g.classList.toggle('goal',g.dataset.room===goal);g.classList.toggle('selected',g.dataset.room===selected)}active.replaceChildren();spanEls.forEach(el=>el.classList.remove('active'));route=start&&goal?routeBetween(model,start,goal):null;const result=document.querySelector('#result'),fitRoute=document.querySelector('#fit-route');result.hidden=!route;fitRoute.disabled=!route||route.nodes.length<2;document.querySelector('#copy-feedback').textContent='';
     if(start&&goal&&!route){status.textContent=`${byId.get(start).name} → ${byId.get(goal).name}: connection or step count unresolved in revision 5027. No commands offered.`;return}
-    if(route){document.querySelector('#summary').textContent=`${route.moves} moves${route.moves ? " on the C → east-end section" : ""} · ${byId.get(start).name} → ${byId.get(goal).name}`;document.querySelector('#grouped').textContent=route.runs.join(' · ')||'Already there';document.querySelector('#commands').value=route.commands.join(';;');status.textContent='Partial source-counted section only. Earlier Eastern Road spans and live boundary entrances remain unmodelled.';for(let i=1;i<route.nodes.length;i++){const a=byId.get(route.nodes[i-1]),b=byId.get(route.nodes[i]),index=model.spans.findIndex(s=>s.from===a.id&&s.to===b.id||s.to===a.id&&s.from===b.id);spanEls[index]?.classList.add('active');add('line',{x1:X(a.column)+(X(b.column)-X(a.column))*.4,y1:Y(a.row),x2:X(a.column)+(X(b.column)-X(a.column))*.76,y2:Y(b.row),class:'route-arrow','marker-end':'url(#east-arrow)'},active)}return}
+    if(route){document.querySelector('#summary').textContent=`${route.moves} moves${route.moves ? " on the C → east-end section" : ""} · ${byId.get(start).name} → ${byId.get(goal).name}`;document.querySelector('#grouped').textContent=route.runs.join(' · ')||'Already there';document.querySelector('#commands').value=route.commands.join(';;');status.textContent='Partial source-counted section only. Earlier Eastern Road spans and live boundary entrances remain unmodelled.';for(let i=1;i<route.nodes.length;i++){const a=byId.get(route.nodes[i-1]),b=byId.get(route.nodes[i]),index=model.spans.findIndex(s=>s.from===a.id&&s.to===b.id||s.to===a.id&&s.from===b.id);spanEls[index]?.classList.add('active');add('line',{x1:P(a.row,a.column).x+(P(b.row,b.column).x-P(a.row,a.column).x)*.4,y1:BASE,x2:P(a.row,a.column).x+(P(b.row,b.column).x-P(a.row,a.column).x)*.76,y2:BASE,class:'route-arrow','marker-end':'url(#east-arrow)'},active)}return}
     status.textContent=start?`${byId.get(start).name}. Click a destination; only explicitly counted spans can route.`:'Click a room or place for details.';
   }
   function select(n){selected=n.id;const mode=document.querySelector('#click-mode').value;if(mode==='start')start=n.id;else if(mode==='goal')goal=n.id;else if(!start||goal){start=n.id;goal=null}else goal=n.id;show()}
   fromField.onchange=()=>{start=fromField.value||null;selected=start;show()};toField.onchange=()=>{goal=toField.value||null;selected=goal;show()};document.querySelector('#flip').onclick=()=>{[start,goal]=[goal,start];show()};document.querySelector('#copy').onclick=async()=>{const box=document.querySelector('#commands'),feedback=document.querySelector('#copy-feedback');box.select();try{await navigator.clipboard.writeText(box.value);feedback.textContent='Clipboard write reported success. Paste to confirm the commands on your device.'}catch{feedback.textContent='Clipboard access unavailable. Commands selected; use Copy or Ctrl+C.'}};
   function size(){svg.style.width=W*zoom+'px';svg.style.height=H*zoom+'px';svg.style.marginLeft=Math.max(0,(view.clientWidth-W*zoom)/2)+'px';svg.style.marginTop=Math.max(0,(view.clientHeight-H*zoom)/2)+'px'}function fit(){autoFit=true;zoom=Math.min(1,(view.clientWidth-20)/W,(view.clientHeight-20)/H);size();view.scrollLeft=0;view.scrollTop=0}function zoomTo(value){autoFit=false;const old=zoom;zoom=Math.max(.25,Math.min(2.5,value));size();view.scrollLeft=(view.scrollLeft+view.clientWidth/2)*zoom/old-view.clientWidth/2;view.scrollTop=(view.scrollTop+view.clientHeight/2)*zoom/old-view.clientHeight/2}
-  document.querySelector('#fit').onclick=fit;document.querySelector('#zoom-in').onclick=()=>zoomTo(zoom*1.3);document.querySelector('#zoom-out').onclick=()=>zoomTo(zoom/1.3);document.querySelector('#fit-route').onclick=()=>{if(!route||route.nodes.length<2)return;autoFit=false;const xs=route.nodes.map(id=>X(byId.get(id).column)),min=Math.min(...xs),max=Math.max(...xs);zoom=Math.min(2,(view.clientWidth-110)/Math.max(120,max-min));size();view.scrollLeft=(min+max)/2*zoom-view.clientWidth/2;view.scrollTop=Y(5)*zoom-view.clientHeight/2};addEventListener('resize',()=>autoFit?fit():size());fit();
+  document.querySelector('#fit').onclick=fit;document.querySelector('#zoom-in').onclick=()=>zoomTo(zoom*1.3);document.querySelector('#zoom-out').onclick=()=>zoomTo(zoom/1.3);document.querySelector('#fit-route').onclick=()=>{if(!route||route.nodes.length<2)return;autoFit=false;const xs=route.nodes.map(id=>P(byId.get(id).row,byId.get(id).column).x),min=Math.min(...xs),max=Math.max(...xs);zoom=Math.min(2,(view.clientWidth-110)/Math.max(120,max-min));size();view.scrollLeft=(min+max)/2*zoom-view.clientWidth/2;view.scrollTop=BASE*zoom-view.clientHeight/2};addEventListener('resize',()=>autoFit?fit():size());fit();
   let drag=null;view.addEventListener('pointerdown',e=>{if(e.pointerType==='touch'||e.button!==0||e.target.closest('.point'))return;drag={x:e.clientX,y:e.clientY,left:view.scrollLeft,top:view.scrollTop};view.setPointerCapture(e.pointerId)});view.addEventListener('pointermove',e=>{if(!drag)return;view.classList.add('dragging');view.scrollLeft=drag.left+drag.x-e.clientX;view.scrollTop=drag.top+drag.y-e.clientY});view.addEventListener('pointerup',()=>{drag=null;view.classList.remove('dragging')});view.addEventListener('pointercancel',()=>{drag=null;view.classList.remove('dragging')});view.addEventListener('keydown',e=>{if(e.target!==view)return;if(e.key==='+'||e.key==='='){e.preventDefault();zoomTo(zoom*1.3)}if(e.key==='-'){e.preventDefault();zoomTo(zoom/1.3)}});
   const areaSelect=document.querySelector('#area-select');fetch('/qhcf/data/index.json').then(r=>r.json()).then(data=>{areaSelect.options[0].textContent='Choose a map…';for(const a of data.areas){const option=document.createElement('option');option.value=a.slug;option.textContent=a.title;areaSelect.append(option)}}).catch(()=>areaSelect.options[0].textContent='Browse all maps');areaSelect.onchange=()=>{if(areaSelect.value)location.assign(`/qhcf/areas/${encodeURIComponent(areaSelect.value)}.html`)};show();
 }
