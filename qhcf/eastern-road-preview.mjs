@@ -4,10 +4,10 @@ const named = [
   ['a','Eastern Crossroads (A)',5,9],['b1','Beyond Galadon Outskirts (B west)',5,11],['b2','Beyond Galadon Outskirts (B east)',5,13],
   ['along','Along the Eastern Road',5,16],['s','S · source marker',5,42],
   ['eastern','Eastern Road center',5,46],['c','Large Crossroads (C)',5,70],['east-e','Along the Eastern Road · east of Large Crossroads (E)',5,77],
-  ['east-one','Eastern road continuation (1)',5,84],['south-one','Hamsah-bound continuation (1)',14,18],
+  ['east-one','Eastern road continuation (1)',5,84],['south-one','Hamsah-bound continuation (1) · route unresolved',14,18],
   ...[20,22,24].map((col,i)=>[`lower-top-${i}`,`E (southern road ${i+1})`,14,col]),
   ...[24,26,28,30,32,34,36,38].map((col,i)=>[`lower-${i}`,`E (lower road ${i+1})`,16,col]),
-  ['lower-east','E (southeast road)',18,45],['hamsah-east','E (toward Hamsah)',20,45],['i','I · Bridge over the River Khalid',20,55]
+  ['lower-east','E (southeast road)',18,45],['hamsah-east','E (toward Hamsah) · route unresolved',20,45],['i','I · Bridge over the River Khalid',20,55]
 ].map(([key,name,row,column])=>({id:`eastern.map.${key}`,name,row,column,kind:'letter'}));
 const areas = [
   {name:'Galadon',slug:'galadon',preview:'/qhcf/galadon-preview.html',row:5,column:1},
@@ -122,13 +122,14 @@ if(typeof document!=='undefined'){
   }
   for(const t of turnoffs){
     const x=t.section==='upper'?U(t.column):L(t.column),north=t.direction==='north';
-    const y=north?90-t.lane*43:285+t.lane*42,width=Math.min(184,Math.max(106,t.name.length*7+34));
+    const displayName=t.name.startsWith('Drogan Hills')?'Drogan Hills':t.name==='Unidentified southern spur'?'Unknown spur':t.name;
+    const y=north?90-t.lane*43:285+t.lane*42,width=Math.min(220,Math.max(106,displayName.length*7.5+38));
     add('line',{x1:x,y1:BASE,x2:x,y2:north?y+14:y-14,class:'road branch-stub','aria-hidden':'true'},roads);
     const sign=add(t.href?'a':'g',t.href?{href:t.href,class:'turn-sign'}:{class:'turn-sign unresolved',tabindex:'0',role:'note'},roads);
     const descriptor=`${t.direction} turnoff to ${t.name} · road column ${t.column}${t.sourceRow?`; source label r${t.sourceRow}c${t.sourceColumn}`:''} · ${t.href?'open destination map; matching entrance unverified':'destination map unresolved'}`;
     sign.setAttribute('aria-label',descriptor);
     add('rect',{x:x-width/2,y:y-15,width,height:30,rx:8},sign);
-    add('text',{x,y:y+5,'text-anchor':'middle'},sign).textContent=`${north?'↑':'↓'} ${t.name}`;
+    add('text',{x,y:y+5,'text-anchor':'middle'},sign).textContent=`${north?'↑':'↓'} ${displayName}`;
     add('title',{},sign).textContent=descriptor;
   }
   for(const {row,column,glyph} of sourceSegments(source)){
