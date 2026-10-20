@@ -8,7 +8,7 @@ export const EAST_GATE = 'galadon.map.gate.east';
 export const UNKNOWN_BOUNDARY = Object.freeze({
   from: EAST_GATE, toward_area: 'the-eastern-road',
   reason: 'Crossing command and matching Eastern Road entrance are unverified.',
-  map_url: '/qhcf/eastern-road-preview.html'
+  map_url: '/qhcf/eastern-road-preview.html?v=dd5ff06'
 });
 const opposite = { n: 's', s: 'n', e: 'w', w: 'e' };
 const isEastern = id => EASTERN_ANCHORS.some(anchor => anchor.id === id);

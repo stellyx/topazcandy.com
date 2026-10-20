@@ -1,5 +1,5 @@
 import { buildAsciiMapGraph } from './navigation/route-engine.mjs';
-import { EASTERN_ANCHORS, guildThresholds, planTwoAreaRoute } from './cross-area-route.mjs';
+import { EASTERN_ANCHORS, guildThresholds, planTwoAreaRoute } from './cross-area-route.mjs?v=eastern-straight-1';
 
 const fromField = document.querySelector('#from'), toField = document.querySelector('#to');
 const buttons = [...document.querySelectorAll('[data-anchor]')];

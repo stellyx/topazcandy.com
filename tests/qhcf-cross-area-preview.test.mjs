@@ -60,8 +60,8 @@ test('source inventories and destination links remain source-backed', () => {
     assert.ok(existsSync(new URL('..' + path, import.meta.url)), path);
   }
   // The Eastern Road preview belongs to Russell's separate branch until integration.
-  assert.equal(UNKNOWN_BOUNDARY.map_url, '/qhcf/eastern-road-preview.html');
-  assert.match(html, /href="\/qhcf\/eastern-road-preview.html"/);
+  assert.equal(UNKNOWN_BOUNDARY.map_url, '/qhcf/eastern-road-preview.html?v=dd5ff06');
+  assert.match(html, /href="\/qhcf\/eastern-road-preview.html\?v=dd5ff06"/);
   assert.match(html, /data-anchor="eastern.map.c"/);
   assert.match(html, /id="copy-all"[^>]*disabled/);
   assert.match(ui, /result.status === 'MAP_ROUTE' && result.copy_all/);
