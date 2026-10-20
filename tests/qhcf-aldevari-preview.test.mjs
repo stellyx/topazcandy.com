@@ -30,4 +30,5 @@ test('tower diagonals and initial fit follow literal glyphs and viewport',()=>{
  assert.equal(area.lines[18][49],'/'); // row 19, column 50: southeast tower
  assert.match(script,/\[2,-2,'\/'\]/);
  assert.match(script,/viewport\.clientHeight-12/);
+ assert.match(script,/addEventListener\('resize',fit\)/);
 });
