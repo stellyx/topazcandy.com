@@ -2,7 +2,7 @@
 // This excludes caves, teleports, diagonal guild passages, the Void and
 // boundary crossings; their matching rooms/commands are not established.
 export const anchors=[
- {id:'south',row:30,col:33,label:'Western Eastern Road approach'},
+ {id:'south',row:30,col:33,label:'West Grove entrance · Eastern Road'},
  {id:'camp',row:18,col:33,label:'Traveler’s Camp'},
  {id:'ash',row:14,col:36,label:'Great Ash Tree'},
  {id:'circle',row:14,col:39,label:'Before the Circle of Stones'},
