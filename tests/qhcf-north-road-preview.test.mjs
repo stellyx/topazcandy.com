@@ -1,0 +1,37 @@
+import assert from 'node:assert/strict';
+import {readFileSync,existsSync} from 'node:fs';
+import {sourceRooms,northRoadSpine,routeBetween,routeStops,verifiedMapLinks} from '../qhcf/north-road-preview.mjs';
+
+const source=JSON.parse(readFileSync(new URL('../qhcf/data/areas/northernroads.json',import.meta.url)));
+assert.equal(source.source.revision_id,4989);
+const captured=readFileSync(new URL('../qhcf/data/areas/northernroads.txt',import.meta.url),'utf8');
+assert.ok(captured.includes('NorthernRoads\n============='));
+assert.ok(captured.includes('oldid=4989'));
+const rooms=sourceRooms(source),pluses=rooms.filter(n=>n.glyph==='+');
+assert.equal(pluses.length,source.plus_cells.length);
+for(const room of pluses)assert.ok(source.plus_cells.some(p=>p.row===room.row&&p.column===room.column));
+const spine=northRoadSpine(source);
+assert.equal(spine.length,21);
+assert.deepEqual([spine[0].row,spine[0].column],[97,24]);
+assert.deepEqual([spine.at(-1).row,spine.at(-1).column],[59,22]);
+const id=(r,c)=>`north.r${r}c${c}`;
+const north=routeBetween(source,id(97,24),id(61,22));
+assert.equal(north.moves,19);
+assert.deepEqual(north.grouped,[{direction:'n',count:9},{direction:'w',count:1},{direction:'n',count:9}]);
+assert.equal(north.commands.join(';;'),[...Array(9).fill('n'),'w',...Array(9).fill('n')].join(';;'));
+const south=routeBetween(source,id(61,22),id(97,24));
+assert.equal(south.moves,19);
+assert.deepEqual(south.grouped,[{direction:'s',count:9},{direction:'e',count:1},{direction:'s',count:9}]);
+assert.equal(routeBetween(source,id(61,22),id(61,22)).moves,0);
+assert.equal(routeBetween(source,id(97,24),id(61,78)),null);
+assert.deepEqual(routeStops.map(s=>[s.row,s.column]),[[97,24],[79,24],[79,22],[61,22],[59,22]]);
+const links=verifiedMapLinks(source);
+assert.equal(links.length,6);
+for(const link of links){assert.ok(existsSync(new URL(`../${link.href.slice(1)}`,import.meta.url)),link.href);assert.equal(source.lines[link.row-1].slice(link.column-1).startsWith(link.needle),true)}
+assert.deepEqual(links.filter(l=>l.slug==='voralian-city').map(l=>l.row),[53,61,69]);
+const page=readFileSync(new URL('../qhcf/north-road-preview.html',import.meta.url),'utf8');
+for(const id of ['map','viewport','from','to','flip','fit','fit-route','copy','commands','area-select','exit-links'])assert.ok(page.includes(`id="${id}"`),id);
+assert.ok(page.includes('matching entrance rooms unverified'));
+assert.ok(page.includes('href="/qhcf/world-map.html"'));
+assert.ok(page.includes('href="/qhcf/areas/northernroads.html"'));
+console.log('Northern Roads revision, exact spine and bend, reverse counts, plus rooms, map links and controls passed.');

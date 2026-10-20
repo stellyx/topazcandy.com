@@ -1,0 +1,11 @@
+.north .source-chart text{font:20px/1 ui-monospace,SFMono-Regular,Consolas,monospace;fill:#b8ddce;white-space:pre;letter-spacing:0}
+.north .source-chart text:nth-child(even){fill:#95b6aa}
+.north .highlight{fill:none;stroke:#ffd166;stroke-width:12;stroke-linejoin:round;stroke-linecap:round;pointer-events:none;opacity:.72}
+.north .stop{cursor:pointer}.north .stop circle{fill:#ffe3a4;stroke:#17372d;stroke-width:3;opacity:.88}
+.north .stop.start circle{fill:#83e8b8;stroke:#fff}.north .stop.goal circle{fill:#ff9b83;stroke:#fff}
+.north .stop:hover circle,.north .stop:focus-visible circle{stroke:#fff;stroke-width:5;opacity:1}.north .stop:focus-visible{outline:none}
+.north .area-exit rect{fill:#32694f;stroke:#f1d488;stroke-width:2;opacity:.36}
+.north .area-exit:hover rect,.north .area-exit:focus-visible rect{fill:#4cae79;stroke:#fff;opacity:.7}.north .area-exit:focus-visible{outline:none}
+.north .turnoff-links a{padding:.4rem .55rem;border:1px solid #607c70;border-radius:.4rem;background:#1b3a32;color:#ffe2a5;text-decoration:none}
+.north .turnoff-links a:hover,.north .turnoff-links a:focus-visible{background:#35604c;outline:2px solid #ffd166}
+@media(max-width:860px){.north .viewport{height:54vh;min-height:320px}.north .route-strip{font-size:.82rem}.north .route-strip>span:first-child,.north .route-strip>span:nth-child(3){padding:.2rem .35rem}}
