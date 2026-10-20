@@ -2919,8 +2919,8 @@
     },
     {
       "path": "warp/maps/maps.css",
-      "bytes": 2561,
-      "sha256": "A1091F278066B43B2A658CF2EEFC6F9D3C7894683AE76DC2AF2903F3C925614E"
+      "bytes": 2586,
+      "sha256": "39EDF7E03F971D3C05A7CE5065246F3F867380A3288356137A43CA0B650F4E76"
     },
     {
       "path": "warp/maps/migration-manifest.json",

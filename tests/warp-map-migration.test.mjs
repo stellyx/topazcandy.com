@@ -35,6 +35,7 @@ test('public export exposes only reviewed public-town structure fields',()=>{
 
 test('WARP-facing page has no QHCF branding and no executable route UI',()=>{
  const html=fs.readFileSync(path.join(warp,'index.html'),'utf8');
+ const css=fs.readFileSync(path.join(warp,'maps.css'),'utf8');
  const qhcfMentions=[...html.matchAll(/\bQHCF\b/g)];
  assert.equal(qhcfMentions.length,2,'only the intentionally retained reference label and source credit may name QHCF');
  assert.match(html,/>QHCF ranking &amp; items<\/a>/);
@@ -44,6 +45,7 @@ test('WARP-facing page has no QHCF branding and no executable route UI',()=>{
  assert.doesNotMatch(html,/<button[^>]*>\s*Copy/i);
  assert.doesNotMatch(html,/route planner/i);
  assert.match(html,/http:\/\/wiki\.qhcf\.net\/index\.php\?title=Galadon/);
+ assert.match(css,/\.map-shell>\*\{min-width:0\}/,'wide SVG must stay inside its scroll pane on phones');
 });
 
 test('historical archive is complete, credited, and visibly non-current',()=>{
