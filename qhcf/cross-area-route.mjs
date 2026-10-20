@@ -70,7 +70,7 @@ export function planTwoAreaRoute(graph, from, to) {
     return {status:'REPORTED_ROUTE',legs,known_moves:route.movement_count+OUTSIDE_TO_C_MOVES,
       mapped_moves:route.movement_count,reported_moves:OUTSIDE_TO_C_MOVES,
       copy_all:[...gateCommands,...road].join(';;'),
-      note:'Open east is sent at the inside gate even when already open. If the gate refuses to open, travel stops; the 34 east road run is player-reported and its intermediate rooms are not mapped.'};
+      note:'Open east is sent at the inside gate even when already open. The 34 east road run is player-reported and its intermediate rooms are not mapped.'};
   }
   if (toEastern) return { status: 'PARTIAL', legs, known_moves: route.movement_count,
     copy_all: null, stop: UNKNOWN_BOUNDARY, next_map_url: UNKNOWN_BOUNDARY.map_url,
