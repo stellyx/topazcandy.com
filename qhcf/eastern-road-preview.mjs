@@ -42,8 +42,8 @@ export const turnoffs = [
   {area:3,section:'upper',column:70,direction:'north',lane:1},
   {area:9,section:'upper',column:70,direction:'south',lane:1},
   {area:6,section:'upper',column:77,direction:'north',lane:0},
-  {area:11,name:'The Grove · west turnoff',section:'lower',column:18,direction:'north',lane:1},
-  {area:12,name:'The Grove · east turnoff',section:'lower',column:34,direction:'north',lane:0},
+  {area:11,name:'The Grove · first entrance (Rangers Guild side)',section:'lower',column:18,direction:'north',lane:1},
+  {area:12,name:'The Grove · second entrance (Void side)',section:'lower',column:34,direction:'north',lane:0},
   {area:13,name:'Drogan Hills · west branch',section:'lower',column:24,direction:'south',lane:0},
   {area:13,name:'Drogan Hills · east branch',section:'lower',column:32,direction:'south',lane:1}
 ].map(t=>({...t,name:t.name||areas[t.area].name,slug:t.area===undefined?null:areas[t.area].slug,
