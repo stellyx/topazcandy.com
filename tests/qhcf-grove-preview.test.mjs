@@ -1,9 +1,9 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {test} from 'node:test';
-import {anchors,roomKey,sourceConnectorSegments,sourceGraph,route} from '../qhcf/grove-route.mjs';
-const data=JSON.parse(fs.readFileSync(new URL('../qhcf/data/areas/the-grove.json',import.meta.url)));
-const page=fs.readFileSync(new URL('../qhcf/grove-preview.html',import.meta.url),'utf8');
+import {anchors,roomKey,sourceConnectorSegments,sourceGraph,route} from '../warp/maps/archive/cf/grove-route.mjs';
+const data=JSON.parse(fs.readFileSync(new URL('../warp/maps/archive/cf/data/areas/the-grove.json',import.meta.url)));
+const page=fs.readFileSync(new URL('../warp/maps/archive/cf/grove-preview.html',import.meta.url),'utf8');
 const graph=sourceGraph(data);
 test('complete Grove graph counts source rooms and only straight printed route connectors',()=>{
  assert.equal(graph.rooms.size,97);assert.equal(graph.edges.length,123);
@@ -23,8 +23,8 @@ test('connected central anchors route; unresolved compact and special branches s
  assert.equal(route(graph,'30:55','29:55'),null);
 });
 test('special crossings stay outside command graph; all area links resolve locally',()=>{
- for(const slug of ['aldevari-preview','eastern-road-preview'])assert.ok(fs.existsSync(new URL(`../qhcf/${slug}.html`,import.meta.url)));
- for(const slug of ['the-past-grove','keep-of-the-righteous'])assert.ok(fs.existsSync(new URL(`../qhcf/areas/${slug}.html`,import.meta.url)));
+ for(const slug of ['aldevari-preview','eastern-road-preview'])assert.ok(fs.existsSync(new URL(`../warp/maps/archive/cf/${slug}.html`,import.meta.url)));
+ for(const slug of ['the-past-grove','keep-of-the-righteous'])assert.ok(fs.existsSync(new URL(`../warp/maps/archive/cf/areas/${slug}.html`,import.meta.url)));
  assert.match(page,/all 21 literal plus rooms/);assert.match(page,/two distinct southern Eastern Road exits/);
  assert.match(page,/eastern-road-preview\.html#grove-west-turnoff/);assert.match(page,/eastern-road-preview\.html#grove-east-turnoff/);
  assert.doesNotMatch(page,/Void side|Rangers Guild side/);

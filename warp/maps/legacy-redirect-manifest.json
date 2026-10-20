@@ -1,0 +1,1158 @@
+{
+  "schema_version": "1.0.0",
+  "installed_at_utc": "2026-10-20T00:00:00Z",
+  "purpose": "Legacy map-facing HTML compatibility redirects after verified additive WARP deployment",
+  "redirect_count": 190,
+  "protected_unchanged_prefixes": [
+    "/qhcf/references/",
+    "/qhcf/data/"
+  ],
+  "protected_unchanged_paths": [
+    "/qhcf/academy-temple-coverage.html",
+    "/qhcf/maps.json",
+    "/qhcf/manifest.json",
+    "/qhcf/reference.txt"
+  ],
+  "redirects": [
+    {
+      "legacy_path": "/qhcf/aldevari-preview.html",
+      "destination": "/warp/maps/archive/cf/aldevari-preview.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/aldevari-preview.html",
+      "sha256": "FEF61D6D092CC18F2CFC58019B19FAA71E68C64CCFAE78014867804894473927"
+    },
+    {
+      "legacy_path": "/qhcf/areas/a-dry-riverbed.html",
+      "destination": "/warp/maps/archive/cf/areas/a-dry-riverbed.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/a-dry-riverbed.html",
+      "sha256": "9B12770C905256B4EAB18F3A6B364F5D7F503BEFB8655DBBAD1DD34FA7A96D73"
+    },
+    {
+      "legacy_path": "/qhcf/areas/a-northern-trail.html",
+      "destination": "/warp/maps/archive/cf/areas/a-northern-trail.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/a-northern-trail.html",
+      "sha256": "23CC0F645C8598075FA378DEEE2B132C8E6C79D97CD03CB57541B128BA2478C8"
+    },
+    {
+      "legacy_path": "/qhcf/areas/a-virgin-forest.html",
+      "destination": "/warp/maps/archive/cf/areas/a-virgin-forest.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/a-virgin-forest.html",
+      "sha256": "8E6D078293BA47AC2AD7E064FD04E3946F78E884212845DCBAC480323C814063"
+    },
+    {
+      "legacy_path": "/qhcf/areas/a-wagon-marked-road.html",
+      "destination": "/warp/maps/archive/cf/areas/a-wagon-marked-road.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/a-wagon-marked-road.html",
+      "sha256": "C7DF15E1A5454D54F3D7583BA11970966EE7DBADDD0B7A2AFA6C0E1583820789"
+    },
+    {
+      "legacy_path": "/qhcf/areas/abandoned-mines.html",
+      "destination": "/warp/maps/archive/cf/areas/abandoned-mines.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/abandoned-mines.html",
+      "sha256": "7E2F211B2D3C0E4670C78BE290D5AF64D31525BA08569985E8245DD9E2D8847E"
+    },
+    {
+      "legacy_path": "/qhcf/areas/abandoned-siege-encampment.html",
+      "destination": "/warp/maps/archive/cf/areas/abandoned-siege-encampment.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/abandoned-siege-encampment.html",
+      "sha256": "542313168ED0A62C5D3FA63E06DF3E765AFA9074A15389C66C2B3C8C94F8801A"
+    },
+    {
+      "legacy_path": "/qhcf/areas/akan.html",
+      "destination": "/warp/maps/archive/cf/areas/akan.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/akan.html",
+      "sha256": "C2456B50659354A49B93CD8A05C191D4C6618C63AE75F3D5B07B48B1B9EC8536"
+    },
+    {
+      "legacy_path": "/qhcf/areas/aldevari.html",
+      "destination": "/warp/maps/archive/cf/areas/aldevari.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/aldevari.html",
+      "sha256": "0A2AFC007C565E73CFC24E50BD4B4623AF0541BBF2521FF8ACF231788A9C0BA3"
+    },
+    {
+      "legacy_path": "/qhcf/areas/ancient-emerald-forest.html",
+      "destination": "/warp/maps/archive/cf/areas/ancient-emerald-forest.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/ancient-emerald-forest.html",
+      "sha256": "79532A3DFA0E6F5AC8E69D64CC103DE8C72EFAEAA4B0BDFAE33F555F9E2DDC9E"
+    },
+    {
+      "legacy_path": "/qhcf/areas/ar-atouldain.html",
+      "destination": "/warp/maps/archive/cf/areas/ar-atouldain.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/ar-atouldain.html",
+      "sha256": "967703E755D3A51B743FF232808C199E48794B7BB9B7A4B51FE12EE3123D03E1"
+    },
+    {
+      "legacy_path": "/qhcf/areas/arkham.html",
+      "destination": "/warp/maps/archive/cf/areas/arkham.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/arkham.html",
+      "sha256": "19829711AB7B931D01FF45AB8A625FAB87E6EFC739F64DAD60549FF1F2E0C8A6"
+    },
+    {
+      "legacy_path": "/qhcf/areas/aturi-timberlands.html",
+      "destination": "/warp/maps/archive/cf/areas/aturi-timberlands.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/aturi-timberlands.html",
+      "sha256": "0B3DB313FE017A27BB930673C28336237624725D04A3C42C6FD8E10FA18AECF5"
+    },
+    {
+      "legacy_path": "/qhcf/areas/aturi.html",
+      "destination": "/warp/maps/archive/cf/areas/aturi.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/aturi.html",
+      "sha256": "0B01E530D325343E7AFC7CD55BA9D221FD22505BD42E639F23FE4905FAD4664A"
+    },
+    {
+      "legacy_path": "/qhcf/areas/ayr-trinil.html",
+      "destination": "/warp/maps/archive/cf/areas/ayr-trinil.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/ayr-trinil.html",
+      "sha256": "32D0C4C6A21B6A1AA275F797A469F798677B6D58A1C32F75C5B99C3A1276E755"
+    },
+    {
+      "legacy_path": "/qhcf/areas/azreth-wood.html",
+      "destination": "/warp/maps/archive/cf/areas/azreth-wood.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/azreth-wood.html",
+      "sha256": "7022E0430DB78C1C95151AB32B153C0FF3FA52D876A61B3F24A34BBF32A906CC"
+    },
+    {
+      "legacy_path": "/qhcf/areas/balator.html",
+      "destination": "/warp/maps/archive/cf/areas/balator.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/balator.html",
+      "sha256": "A1646F413EACD7050822FDAF080A42D231F90E80797A285B2CE2AD8A6F7736EE"
+    },
+    {
+      "legacy_path": "/qhcf/areas/blackclaw-village.html",
+      "destination": "/warp/maps/archive/cf/areas/blackclaw-village.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/blackclaw-village.html",
+      "sha256": "73DB07F06EBE9E4329244C7B6EEF98C6133D674A4CE2DBEA99492B3D522041D8"
+    },
+    {
+      "legacy_path": "/qhcf/areas/blackwater-swamp.html",
+      "destination": "/warp/maps/archive/cf/areas/blackwater-swamp.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/blackwater-swamp.html",
+      "sha256": "E9AA7817677A714E3ED35FC8415BF0B61B0D3AF34F2110A9FE23C12039867F21"
+    },
+    {
+      "legacy_path": "/qhcf/areas/bramblefield-road.html",
+      "destination": "/warp/maps/archive/cf/areas/bramblefield-road.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/bramblefield-road.html",
+      "sha256": "81B7DE6E7EF8BFFFAAF755E392664A7D99BCA883E886D0C528D96A32294A6D57"
+    },
+    {
+      "legacy_path": "/qhcf/areas/caravans-of-the-jhaana.html",
+      "destination": "/warp/maps/archive/cf/areas/caravans-of-the-jhaana.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/caravans-of-the-jhaana.html",
+      "sha256": "D2573617014C6D4F51B4173CF77F4AAFFD31EF58CD842391513CC06A59D5E0AC"
+    },
+    {
+      "legacy_path": "/qhcf/areas/castle-of-akan.html",
+      "destination": "/warp/maps/archive/cf/areas/castle-of-akan.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/castle-of-akan.html",
+      "sha256": "A7608B841D1AE2E39C1943DE245CE92932E03869014FEC3120E13AC61CF75393"
+    },
+    {
+      "legacy_path": "/qhcf/areas/coastal-wetlands.html",
+      "destination": "/warp/maps/archive/cf/areas/coastal-wetlands.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/coastal-wetlands.html",
+      "sha256": "49E14EB512C0B821DDB2B6E2AC54929AE7D170A27467851A6113DD12C6382836"
+    },
+    {
+      "legacy_path": "/qhcf/areas/copeham-inn.html",
+      "destination": "/warp/maps/archive/cf/areas/copeham-inn.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/copeham-inn.html",
+      "sha256": "CDFAA8B0C405A48E3A5E3F0AB69EBDFE76C31149D29845A9218134430E4FB287"
+    },
+    {
+      "legacy_path": "/qhcf/areas/coral-palace.html",
+      "destination": "/warp/maps/archive/cf/areas/coral-palace.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/coral-palace.html",
+      "sha256": "6D9C02A678D734D87B09D468C9B02BC6188CE80AEF4FD9DE426210F8D00A5EF4"
+    },
+    {
+      "legacy_path": "/qhcf/areas/coven-of-dralkar-wood.html",
+      "destination": "/warp/maps/archive/cf/areas/coven-of-dralkar-wood.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/coven-of-dralkar-wood.html",
+      "sha256": "A2DAA170A8BC0E488D968B5A4AE316EE6FA2259951D098327D4516D31BC37554"
+    },
+    {
+      "legacy_path": "/qhcf/areas/crystal-island.html",
+      "destination": "/warp/maps/archive/cf/areas/crystal-island.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/crystal-island.html",
+      "sha256": "B58D231A2556E53C98B85F515DA4E8FEA0454D97015F9A022256954E4226E510"
+    },
+    {
+      "legacy_path": "/qhcf/areas/dagdan.html",
+      "destination": "/warp/maps/archive/cf/areas/dagdan.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/dagdan.html",
+      "sha256": "7C978A5D018313B13EAD0740DA124E4EE2F8C00D614AC7F624F2B5118DF44C27"
+    },
+    {
+      "legacy_path": "/qhcf/areas/darsylon.html",
+      "destination": "/warp/maps/archive/cf/areas/darsylon.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/darsylon.html",
+      "sha256": "7A6D5F89AAD368C039C0F0F47FD9011C5AF0DE96689FF94CFC53ABDFCBF39D46"
+    },
+    {
+      "legacy_path": "/qhcf/areas/delar-tol.html",
+      "destination": "/warp/maps/archive/cf/areas/delar-tol.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/delar-tol.html",
+      "sha256": "67DEEB41A3116BE307FE73ACE271ED37D0D96FA1BCC1DA33613354C235560EFF"
+    },
+    {
+      "legacy_path": "/qhcf/areas/desert-of-araile.html",
+      "destination": "/warp/maps/archive/cf/areas/desert-of-araile.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/desert-of-araile.html",
+      "sha256": "E651AC50E882D113C94C24F3D412FDCAADCA475446259251BE1576A4CFEA8863"
+    },
+    {
+      "legacy_path": "/qhcf/areas/dhumlar.html",
+      "destination": "/warp/maps/archive/cf/areas/dhumlar.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/dhumlar.html",
+      "sha256": "C2811C21C90C5A46773CE5DDF41AC0F86589049BD7E8FF62A2A11BAAEFA561A6"
+    },
+    {
+      "legacy_path": "/qhcf/areas/dra-melkhur.html",
+      "destination": "/warp/maps/archive/cf/areas/dra-melkhur.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/dra-melkhur.html",
+      "sha256": "EC76D6D38ADAD91CF41284ECC82C48D86AB9730072B0C96A793D718B27D7D5E8"
+    },
+    {
+      "legacy_path": "/qhcf/areas/durnominator.html",
+      "destination": "/warp/maps/archive/cf/areas/durnominator.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/durnominator.html",
+      "sha256": "63E1CA7FE8E73F33B258D6D77E6DA4A15D2001593C1AF253597EF8180660259F"
+    },
+    {
+      "legacy_path": "/qhcf/areas/eaststride-road.html",
+      "destination": "/warp/maps/archive/cf/areas/eaststride-road.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/eaststride-road.html",
+      "sha256": "C58813ED8602ACD0715B16F67E34AA74A85300339143590A594CBACDF9E4665F"
+    },
+    {
+      "legacy_path": "/qhcf/areas/eil-shaeria.html",
+      "destination": "/warp/maps/archive/cf/areas/eil-shaeria.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/eil-shaeria.html",
+      "sha256": "2D1D86891CF7C032EBEE226A7D53CC3970E696450ADD40437A744C1FD5E487EB"
+    },
+    {
+      "legacy_path": "/qhcf/areas/elemental-temple.html",
+      "destination": "/warp/maps/archive/cf/areas/elemental-temple.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/elemental-temple.html",
+      "sha256": "ACA9B3B3086BB9CA09BCAF9A8C414A363DE7176C941E03573DACE92C6B42BE5A"
+    },
+    {
+      "legacy_path": "/qhcf/areas/enpolad-s-game-garden.html",
+      "destination": "/warp/maps/archive/cf/areas/enpolad-s-game-garden.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/enpolad-s-game-garden.html",
+      "sha256": "B70F1CB9E2550C1B425DE5427FF17E6EFF7F6B701302AF4B3C4ACC9518021FDD"
+    },
+    {
+      "legacy_path": "/qhcf/areas/evergrove-outpost.html",
+      "destination": "/warp/maps/archive/cf/areas/evergrove-outpost.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/evergrove-outpost.html",
+      "sha256": "B3EC6DD53FA547ADBA3FB2AA6807F91B741C6605CD8B91F012AF7673AADB77D3"
+    },
+    {
+      "legacy_path": "/qhcf/areas/evermoon-hollow.html",
+      "destination": "/warp/maps/archive/cf/areas/evermoon-hollow.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/evermoon-hollow.html",
+      "sha256": "488F42564388598D40929422D6068DAEE3DFADEA09637F0B6F0652A75A7047D9"
+    },
+    {
+      "legacy_path": "/qhcf/areas/feanwyyn-weald.html",
+      "destination": "/warp/maps/archive/cf/areas/feanwyyn-weald.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/feanwyyn-weald.html",
+      "sha256": "3FE4FEBA645C9E419A48F56D0EB1E110FF74721F78DAE8D490AC718CDD37159F"
+    },
+    {
+      "legacy_path": "/qhcf/areas/felar-encampment.html",
+      "destination": "/warp/maps/archive/cf/areas/felar-encampment.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/felar-encampment.html",
+      "sha256": "D4CB2D1F8AC1E2DDB55378D03FB6C0F4459E891FA90E017F9281E328E6AFC773"
+    },
+    {
+      "legacy_path": "/qhcf/areas/forest-of-nowhere.html",
+      "destination": "/warp/maps/archive/cf/areas/forest-of-nowhere.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/forest-of-nowhere.html",
+      "sha256": "BC596C6976DDB26369530AA7742F8F3760E7C14E832CB88575705148DBBB5D54"
+    },
+    {
+      "legacy_path": "/qhcf/areas/forest-of-prosimy.html",
+      "destination": "/warp/maps/archive/cf/areas/forest-of-prosimy.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/forest-of-prosimy.html",
+      "sha256": "AF11B0478CAD14EFBF19B14F990AF073473F642D078594BE4D892819BC1300BD"
+    },
+    {
+      "legacy_path": "/qhcf/areas/forest-road-2.html",
+      "destination": "/warp/maps/archive/cf/areas/forest-road-2.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/forest-road-2.html",
+      "sha256": "9C0B2AF6F0E58BFE68F78F5CB63AF05D9D691805EE0D8C3001BA27AA63896F4A"
+    },
+    {
+      "legacy_path": "/qhcf/areas/forest-road.html",
+      "destination": "/warp/maps/archive/cf/areas/forest-road.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/forest-road.html",
+      "sha256": "301FCDB2806B4B52C510A4FE3295B2D9ED79D140E7D1E502CF361F9CDD41FEDA"
+    },
+    {
+      "legacy_path": "/qhcf/areas/forgotten-crypts.html",
+      "destination": "/warp/maps/archive/cf/areas/forgotten-crypts.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/forgotten-crypts.html",
+      "sha256": "21DCFACD1C045F0BD56C09ADCD304332DB937D0D7B3B902A026B604587BC6874"
+    },
+    {
+      "legacy_path": "/qhcf/areas/galadon.html",
+      "destination": "/warp/maps/archive/cf/areas/galadon.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/galadon.html",
+      "sha256": "86FE1D5D4ED396321DBC4D165DFD3C663049EAAB3DE5F1538E513F6F1BBA3635"
+    },
+    {
+      "legacy_path": "/qhcf/areas/galadonian-settlement.html",
+      "destination": "/warp/maps/archive/cf/areas/galadonian-settlement.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/galadonian-settlement.html",
+      "sha256": "9F8A077EF7ADE5061A63040B18567A0B900390673D284D1511739BD8191064F4"
+    },
+    {
+      "legacy_path": "/qhcf/areas/glauruk-spawning-ground.html",
+      "destination": "/warp/maps/archive/cf/areas/glauruk-spawning-ground.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/glauruk-spawning-ground.html",
+      "sha256": "CCD3F650730006901EB2555E774CA2288CEC95C0F76A5F107DDAC36D40C0D71B"
+    },
+    {
+      "legacy_path": "/qhcf/areas/goblin-outpost.html",
+      "destination": "/warp/maps/archive/cf/areas/goblin-outpost.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/goblin-outpost.html",
+      "sha256": "077117D7EC654677A33366928FF9CC8FC12A9D7AF329253D4421D657A23CD120"
+    },
+    {
+      "legacy_path": "/qhcf/areas/gol-galath.html",
+      "destination": "/warp/maps/archive/cf/areas/gol-galath.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/gol-galath.html",
+      "sha256": "314D336D959BA1B23BA66151CF015AC2A41D4F963495DDAC067F9B14B8EFF1FD"
+    },
+    {
+      "legacy_path": "/qhcf/areas/graveyard.html",
+      "destination": "/warp/maps/archive/cf/areas/graveyard.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/graveyard.html",
+      "sha256": "D9CADFFFCD4FE5A7ACA8B27721E43850D80C638A1E0CBA54F7FA828BDE6823A5"
+    },
+    {
+      "legacy_path": "/qhcf/areas/grinning-skull-village.html",
+      "destination": "/warp/maps/archive/cf/areas/grinning-skull-village.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/grinning-skull-village.html",
+      "sha256": "B4E0E91B4805E229749EA01C15EB6B5B1EC030E3AB8E99C909CAD78F6F9E5A6F"
+    },
+    {
+      "legacy_path": "/qhcf/areas/hamsah-mu-tazz.html",
+      "destination": "/warp/maps/archive/cf/areas/hamsah-mu-tazz.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/hamsah-mu-tazz.html",
+      "sha256": "E895B606B7D138DE996AC9F0EE8CD58298D2723D77FAB989633F94B93F62092B"
+    },
+    {
+      "legacy_path": "/qhcf/areas/hidden-forest.html",
+      "destination": "/warp/maps/archive/cf/areas/hidden-forest.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/hidden-forest.html",
+      "sha256": "CDC8F725EA13486154B2FD1D7BC4FF3EF9F6EEC2DEC5BC3C2C9FEACB4E934831"
+    },
+    {
+      "legacy_path": "/qhcf/areas/high-lord-s-keep.html",
+      "destination": "/warp/maps/archive/cf/areas/high-lord-s-keep.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/high-lord-s-keep.html",
+      "sha256": "29E66DA46554307AE87464DE5236E68F45D6581BF0BFCFCF33E1045D8678B3D3"
+    },
+    {
+      "legacy_path": "/qhcf/areas/hillcrest.html",
+      "destination": "/warp/maps/archive/cf/areas/hillcrest.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/hillcrest.html",
+      "sha256": "71DDED48FDF6A88247CCE496C480CF5AF73C9897D59B21CDB5D1B7876F78586A"
+    },
+    {
+      "legacy_path": "/qhcf/areas/island-of-corte.html",
+      "destination": "/warp/maps/archive/cf/areas/island-of-corte.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/island-of-corte.html",
+      "sha256": "6526B48BD2359E46FF008CE2F5E3C9B8F57FBCD9AB1C39E53E4DCF13CDC35B03"
+    },
+    {
+      "legacy_path": "/qhcf/areas/keep-of-ceawlin.html",
+      "destination": "/warp/maps/archive/cf/areas/keep-of-ceawlin.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/keep-of-ceawlin.html",
+      "sha256": "10BA788F2D138F84D3CB4001F3F77F2941603F9E9BFE4261D5395526F3BD8607"
+    },
+    {
+      "legacy_path": "/qhcf/areas/keep-of-the-fhalaugash.html",
+      "destination": "/warp/maps/archive/cf/areas/keep-of-the-fhalaugash.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/keep-of-the-fhalaugash.html",
+      "sha256": "A7DC6B0972F24C9DD4E3C3991EAC52342496D1A53240FDB631A58AEDE86D8D77"
+    },
+    {
+      "legacy_path": "/qhcf/areas/keep-of-the-righteous.html",
+      "destination": "/warp/maps/archive/cf/areas/keep-of-the-righteous.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/keep-of-the-righteous.html",
+      "sha256": "9C62EB3651B2813B5ABB9FD05587B096C9128F2B5D0CD4A1EEF5681C8A5866BE"
+    },
+    {
+      "legacy_path": "/qhcf/areas/khalid-river.html",
+      "destination": "/warp/maps/archive/cf/areas/khalid-river.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/khalid-river.html",
+      "sha256": "F528AEC11E61F764C69A2775200EC6559FBDE32DCCCA2165A047D9E24266BAB5"
+    },
+    {
+      "legacy_path": "/qhcf/areas/kteng-s-laboratory.html",
+      "destination": "/warp/maps/archive/cf/areas/kteng-s-laboratory.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/kteng-s-laboratory.html",
+      "sha256": "EDEBD3B67511BB201A6B448FCE8205FF9C070A0AADD7A0C8C0FB035B34018930"
+    },
+    {
+      "legacy_path": "/qhcf/areas/kuharin-plains.html",
+      "destination": "/warp/maps/archive/cf/areas/kuharin-plains.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/kuharin-plains.html",
+      "sha256": "516BA5D58C1300890B52E39152364EE006D13597DC2421D9BE7ACE0AE9045447"
+    },
+    {
+      "legacy_path": "/qhcf/areas/kuo-toa-lair.html",
+      "destination": "/warp/maps/archive/cf/areas/kuo-toa-lair.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/kuo-toa-lair.html",
+      "sha256": "D0711D3B9F85DB4858266DE3090845C1A5921C50E43EDD6EBB67F9A838F9CFFD"
+    },
+    {
+      "legacy_path": "/qhcf/areas/loch-terradian.html",
+      "destination": "/warp/maps/archive/cf/areas/loch-terradian.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/loch-terradian.html",
+      "sha256": "4B5BEF9D46E5D8E8EC3E238B669B29FE3EE3A2BBA28DC368789FA15A4119C01A"
+    },
+    {
+      "legacy_path": "/qhcf/areas/lord-tabershaw-s-keep.html",
+      "destination": "/warp/maps/archive/cf/areas/lord-tabershaw-s-keep.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/lord-tabershaw-s-keep.html",
+      "sha256": "AE51189C11C51C20EBBBB2ECAC81FFAC4D9CB60AF61E8FEBF0CF14DFF6F736AE"
+    },
+    {
+      "legacy_path": "/qhcf/areas/lower-cragstone.html",
+      "destination": "/warp/maps/archive/cf/areas/lower-cragstone.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/lower-cragstone.html",
+      "sha256": "5C03B17B080A06FE07968BE04ECD02625F6B5114BCF724CA7D01E63516AD2E6E"
+    },
+    {
+      "legacy_path": "/qhcf/areas/maethien.html",
+      "destination": "/warp/maps/archive/cf/areas/maethien.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/maethien.html",
+      "sha256": "36037D194445EBEB957F00421C71A569C407D334C818384CB51895FDC72BAF03"
+    },
+    {
+      "legacy_path": "/qhcf/areas/mansion-of-twilight.html",
+      "destination": "/warp/maps/archive/cf/areas/mansion-of-twilight.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/mansion-of-twilight.html",
+      "sha256": "4613AC58CD1A1AC70EF7A0A3393D8FF52D1D5A99B6F564FE2E41E41BCB6F71D3"
+    },
+    {
+      "legacy_path": "/qhcf/areas/mausoleum.html",
+      "destination": "/warp/maps/archive/cf/areas/mausoleum.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/mausoleum.html",
+      "sha256": "7BAE04D12259CB6712E67E9A53E74FEAA2E43B71B4BC3C0503D4D8E0E578BA35"
+    },
+    {
+      "legacy_path": "/qhcf/areas/mines-of-zakiim.html",
+      "destination": "/warp/maps/archive/cf/areas/mines-of-zakiim.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/mines-of-zakiim.html",
+      "sha256": "D6EAA1361526CA2A2645FC79C48D5FA4FAD8D8AF5F9BDA5726BEE03C8624AE59"
+    },
+    {
+      "legacy_path": "/qhcf/areas/mortorn.html",
+      "destination": "/warp/maps/archive/cf/areas/mortorn.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/mortorn.html",
+      "sha256": "4845C23585DED7E63D303582FB5053E78E46D114D3EEE1B29296F9CF44C176BB"
+    },
+    {
+      "legacy_path": "/qhcf/areas/moudrilar-s-monastery.html",
+      "destination": "/warp/maps/archive/cf/areas/moudrilar-s-monastery.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/moudrilar-s-monastery.html",
+      "sha256": "E541969B966A1D72C725C12E06A7685141EB07FD6F10291FA8B30E4620F8A040"
+    },
+    {
+      "legacy_path": "/qhcf/areas/mount-calandaryl.html",
+      "destination": "/warp/maps/archive/cf/areas/mount-calandaryl.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/mount-calandaryl.html",
+      "sha256": "3E4007EC994197DB31E806A50D2DC7336B10C5AAC17BCF0C878D6D0BD3361719"
+    },
+    {
+      "legacy_path": "/qhcf/areas/mount-kiadana-rah.html",
+      "destination": "/warp/maps/archive/cf/areas/mount-kiadana-rah.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/mount-kiadana-rah.html",
+      "sha256": "43768F9DB2F0AA98BA8D01BEBFA57931869EF22C7778F4D4A81EB367664257B8"
+    },
+    {
+      "legacy_path": "/qhcf/areas/northernroads.html",
+      "destination": "/warp/maps/archive/cf/areas/northernroads.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/northernroads.html",
+      "sha256": "B630583D3C1D08F7A445C2354899EB48EA206DB189078BEBB1D2E3581561BB5A"
+    },
+    {
+      "legacy_path": "/qhcf/areas/outlying-villages.html",
+      "destination": "/warp/maps/archive/cf/areas/outlying-villages.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/outlying-villages.html",
+      "sha256": "B2DDCCFA29C2357840A0E4743412F9642B0116B54398D6D39B5FD851A73C7B4F"
+    },
+    {
+      "legacy_path": "/qhcf/areas/outside-hamsah-mu-tazz.html",
+      "destination": "/warp/maps/archive/cf/areas/outside-hamsah-mu-tazz.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/outside-hamsah-mu-tazz.html",
+      "sha256": "E6EB1127E97C742376E96609D3AFA740CA2A1FCD3B43940D2917770E88440775"
+    },
+    {
+      "legacy_path": "/qhcf/areas/outskirts-of-galadon.html",
+      "destination": "/warp/maps/archive/cf/areas/outskirts-of-galadon.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/outskirts-of-galadon.html",
+      "sha256": "3531CFAED75D0EF2699CFFB5BFA3441D531CF7691733F749A52105E88F3AFDC1"
+    },
+    {
+      "legacy_path": "/qhcf/areas/pine-forest.html",
+      "destination": "/warp/maps/archive/cf/areas/pine-forest.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/pine-forest.html",
+      "sha256": "34F7A5610F4A966FFE7D3F466C3ACFFA6D526D5637AF4BE517E876A90B0E96B2"
+    },
+    {
+      "legacy_path": "/qhcf/areas/ruins-of-delar-tol.html",
+      "destination": "/warp/maps/archive/cf/areas/ruins-of-delar-tol.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/ruins-of-delar-tol.html",
+      "sha256": "FB2AA7240719C9A055683CF82F741C88119E81C07C3B880CEC91A132946DABB8"
+    },
+    {
+      "legacy_path": "/qhcf/areas/ruins-of-maethien.html",
+      "destination": "/warp/maps/archive/cf/areas/ruins-of-maethien.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/ruins-of-maethien.html",
+      "sha256": "EF4F48E18B207E3468E873E6AD71E2988528356208BCB38830751ACB79F11D15"
+    },
+    {
+      "legacy_path": "/qhcf/areas/ruins-of-the-deep.html",
+      "destination": "/warp/maps/archive/cf/areas/ruins-of-the-deep.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/ruins-of-the-deep.html",
+      "sha256": "0CC36CD13ED9B72DC963D7D44EF88ACADA6A542F29CC19F04E3FDB724F5A8137"
+    },
+    {
+      "legacy_path": "/qhcf/areas/seantryn-harbor.html",
+      "destination": "/warp/maps/archive/cf/areas/seantryn-harbor.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/seantryn-harbor.html",
+      "sha256": "B99BBD0148D3EFB42D8C501D80DFF1C6DD0EFC5F1756D192E38E8EEC9B52C3C2"
+    },
+    {
+      "legacy_path": "/qhcf/areas/seantryn-modan.html",
+      "destination": "/warp/maps/archive/cf/areas/seantryn-modan.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/seantryn-modan.html",
+      "sha256": "AAB48D7AC8E88816AB1C84FFC60860AF50E18E98EA023AD6CAFC952736AF0064"
+    },
+    {
+      "legacy_path": "/qhcf/areas/silverpine-road.html",
+      "destination": "/warp/maps/archive/cf/areas/silverpine-road.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/silverpine-road.html",
+      "sha256": "AEB8386B9F8C1060AFEA6E783435A599A9FF66E8F5325F907D4A65074B19A287"
+    },
+    {
+      "legacy_path": "/qhcf/areas/silverwood.html",
+      "destination": "/warp/maps/archive/cf/areas/silverwood.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/silverwood.html",
+      "sha256": "C2E0A749B3C5845FDA29265CD0914F098E78C265E538D1F16511C9FA740AF20F"
+    },
+    {
+      "legacy_path": "/qhcf/areas/south-dairein-settlement.html",
+      "destination": "/warp/maps/archive/cf/areas/south-dairein-settlement.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/south-dairein-settlement.html",
+      "sha256": "A431ECC89D6CE60ED4C88E843C89184C3C7C4B7B16314C5DDB9C323134C47FAC"
+    },
+    {
+      "legacy_path": "/qhcf/areas/spiderhaunt-woods.html",
+      "destination": "/warp/maps/archive/cf/areas/spiderhaunt-woods.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/spiderhaunt-woods.html",
+      "sha256": "A78AE6AE28215E5F5B1168D28EAE5062524DF44CF90DC7F80131BC75BBFC56DE"
+    },
+    {
+      "legacy_path": "/qhcf/areas/strangeisland.html",
+      "destination": "/warp/maps/archive/cf/areas/strangeisland.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/strangeisland.html",
+      "sha256": "98C65844723429DDA343F1C08B2536E3823363DE1CBBC48FF3AB33B601C4B80A"
+    },
+    {
+      "legacy_path": "/qhcf/areas/targeth-s-manor.html",
+      "destination": "/warp/maps/archive/cf/areas/targeth-s-manor.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/targeth-s-manor.html",
+      "sha256": "D43F709AB19AC27EE33BA58EDC8D065119A9D27DD77B95C5FE7ACD65827BB8B4"
+    },
+    {
+      "legacy_path": "/qhcf/areas/temple-of-loch-grynmear.html",
+      "destination": "/warp/maps/archive/cf/areas/temple-of-loch-grynmear.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/temple-of-loch-grynmear.html",
+      "sha256": "7547388632951CE25DCF85F7896EC9898F518446183C85F1E7EB6F1B121DA214"
+    },
+    {
+      "legacy_path": "/qhcf/areas/teth-azeleth.html",
+      "destination": "/warp/maps/archive/cf/areas/teth-azeleth.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/teth-azeleth.html",
+      "sha256": "3C4FCAF7440287EC91140F6E747A9D3B741D9F9FB5F319D3BCA6A71F90AE5BA8"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-ancient-road-to-the-wastes.html",
+      "destination": "/warp/maps/archive/cf/areas/the-ancient-road-to-the-wastes.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-ancient-road-to-the-wastes.html",
+      "sha256": "250856585F5B70F983D4EB709018AE46B5B897A5730FE9161F65ED9A958C7EB8"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-aryth-ocean.html",
+      "destination": "/warp/maps/archive/cf/areas/the-aryth-ocean.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-aryth-ocean.html",
+      "sha256": "A0F59BD38A57F70CCB5BCF80132629A79B2B4DFC500BDAAFCA2F597F068FEECF"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-ashes-of-nowhere.html",
+      "destination": "/warp/maps/archive/cf/areas/the-ashes-of-nowhere.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-ashes-of-nowhere.html",
+      "sha256": "A8FB97AEB3EE7D217F7509E276A9DE42F4747DF75D84E3569E64A2FECE59CB02"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-bandit-stronghold.html",
+      "destination": "/warp/maps/archive/cf/areas/the-bandit-stronghold.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-bandit-stronghold.html",
+      "sha256": "5B489E0D79B7E36DB10E9EC9589B712644BF6CF9E60060152445031C5D32DC14"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-basilica.html",
+      "destination": "/warp/maps/archive/cf/areas/the-basilica.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-basilica.html",
+      "sha256": "6233A2CC313CD2CAF6D1CFD0701482CC35FD861F6435A5B594ECAF5D96CB7A0D"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-battlefield.html",
+      "destination": "/warp/maps/archive/cf/areas/the-battlefield.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-battlefield.html",
+      "sha256": "8EE809F493700E94AE010753E493261028B70807FF65304515B3D5414D1F1D63"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-citadel-of-ostalagiah.html",
+      "destination": "/warp/maps/archive/cf/areas/the-citadel-of-ostalagiah.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-citadel-of-ostalagiah.html",
+      "sha256": "AE5B601931DE58AD90DBCBE13835C71D48C0C9FE3CCBC2ED3EAE18ACB4B1A09C"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-coastal-plains.html",
+      "destination": "/warp/maps/archive/cf/areas/the-coastal-plains.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-coastal-plains.html",
+      "sha256": "6B16CD198F5BED26643BB18281C9B8D8D8C7015910331D81B64D1C062470D8DB"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-consortium.html",
+      "destination": "/warp/maps/archive/cf/areas/the-consortium.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-consortium.html",
+      "sha256": "7D1047907E4BB7DC27A40544DCF27FCB5CE59D01BED5F0488E138FBA693F4454"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-coral-head.html",
+      "destination": "/warp/maps/archive/cf/areas/the-coral-head.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-coral-head.html",
+      "sha256": "92B9970C308D037044F1109E924F282D60029126F055F7A639E6DB8CA8D11E94"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-dark-wood.html",
+      "destination": "/warp/maps/archive/cf/areas/the-dark-wood.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-dark-wood.html",
+      "sha256": "CBA98EEC9A067FBAB6714F5C7B38E196C5377622C019E7278AEE34A959B257BC"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-dragon-sea.html",
+      "destination": "/warp/maps/archive/cf/areas/the-dragon-sea.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-dragon-sea.html",
+      "sha256": "E881FD1FAE39529488DB5E06AA6FDAB4E7929B45066C055E97C409BECD770B1B"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-dranettie-wood.html",
+      "destination": "/warp/maps/archive/cf/areas/the-dranettie-wood.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-dranettie-wood.html",
+      "sha256": "E47F8A2B1354B5B79C537DB84024F771C674703BBCA2F74794CF2170A43F070E"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-drogran-hills.html",
+      "destination": "/warp/maps/archive/cf/areas/the-drogran-hills.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-drogran-hills.html",
+      "sha256": "1691EA333C76B3CCB6C124BE33B9B5232587257C01B70E840C6EDD492D354FFE"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-dwarf-forest.html",
+      "destination": "/warp/maps/archive/cf/areas/the-dwarf-forest.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-dwarf-forest.html",
+      "sha256": "26A272A6C9DEDF24AFB1AF54BD3D2BF7129B2B1F3FC7381C205081B744772245"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-eastern-road.html",
+      "destination": "/warp/maps/archive/cf/areas/the-eastern-road.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-eastern-road.html",
+      "sha256": "51BAA3BAACD88BD3818BB1CE002CA828D644EE72EE36BF7050B12D36CBA8563D"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-fields-of-balator.html",
+      "destination": "/warp/maps/archive/cf/areas/the-fields-of-balator.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-fields-of-balator.html",
+      "sha256": "73D31A58CDCC4C43B6FFA7C773D7B8977FB237D2335C363700A5386CFE615CD9"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-frigid-wasteland.html",
+      "destination": "/warp/maps/archive/cf/areas/the-frigid-wasteland.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-frigid-wasteland.html",
+      "sha256": "FE5C7EC91A9492C937DCCED3DB3B6BB4D962A0CF1FEB1AE898C05AF3BB903E1A"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-frozen-gorge.html",
+      "destination": "/warp/maps/archive/cf/areas/the-frozen-gorge.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-frozen-gorge.html",
+      "sha256": "2173822DF31E02F8B3A1773E388CB90E3BEAF496F2CF6E2D2A711FB2701B2992"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-galadon-sewers.html",
+      "destination": "/warp/maps/archive/cf/areas/the-galadon-sewers.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-galadon-sewers.html",
+      "sha256": "0B310BED776AB61330E5FE849B0A2F4E36A4229F46E5EC82003BD7F09CB6223E"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-goblin-village.html",
+      "destination": "/warp/maps/archive/cf/areas/the-goblin-village.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-goblin-village.html",
+      "sha256": "1D5DCC3F6E481DCF390456BAEBDDB099CE7BE3FC8DF31097CFDBE90DE7718963"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-grove.html",
+      "destination": "/warp/maps/archive/cf/areas/the-grove.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-grove.html",
+      "sha256": "EC1F0EE0D1AAD42D04280EEC2A3979183EFA0529B590DC08378B15208A0C1B9B"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-halfling-lands.html",
+      "destination": "/warp/maps/archive/cf/areas/the-halfling-lands.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-halfling-lands.html",
+      "sha256": "F6CDC7D37141534BC7E8FE3B93BB809403AF839D7B01CE7145A8636FD684D3E7"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-high-pass.html",
+      "destination": "/warp/maps/archive/cf/areas/the-high-pass.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-high-pass.html",
+      "sha256": "2D2C56AD90966AC5CC2244051A02588BA6F7665825F328F17961F867ED79DA8F"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-imperial-lands.html",
+      "destination": "/warp/maps/archive/cf/areas/the-imperial-lands.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-imperial-lands.html",
+      "sha256": "A12D3E1BA878F4F5002E843D36805142BF3F7755C0A2010C5C52C7C987D9AD2B"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-jade-mountains.html",
+      "destination": "/warp/maps/archive/cf/areas/the-jade-mountains.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-jade-mountains.html",
+      "sha256": "00BF68966A60E8D69EC5342E309735717FDF2AA129AC3746B11C9E4631BD6441"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-keep-of-barovia.html",
+      "destination": "/warp/maps/archive/cf/areas/the-keep-of-barovia.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-keep-of-barovia.html",
+      "sha256": "561FE4BEB0130A5762C15FB056F687427B5772A9755778160145804CD3EC1164"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-kobold-warrens.html",
+      "destination": "/warp/maps/archive/cf/areas/the-kobold-warrens.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-kobold-warrens.html",
+      "sha256": "3D337BFFA0CF6B234DD11A605748A340944043BF5BC89CAB3F0BEA9FED804CA3"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-lumberyard.html",
+      "destination": "/warp/maps/archive/cf/areas/the-lumberyard.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-lumberyard.html",
+      "sha256": "718C9AD8A42000A0B624EFC740C0865264AD397B03DE537948FF169885CC2BEF"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-northern-mountains.html",
+      "destination": "/warp/maps/archive/cf/areas/the-northern-mountains.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-northern-mountains.html",
+      "sha256": "B3DC2333A9CD2AFC1F5D577A123169D3F6D12E92EB647430854EE08BC059586D"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-oryx-steppes.html",
+      "destination": "/warp/maps/archive/cf/areas/the-oryx-steppes.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-oryx-steppes.html",
+      "sha256": "16202CAD4DFA4DE02B1F0296535072629854FAFE051298D397D30991F8B850A1"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-outpost-of-tir-talath.html",
+      "destination": "/warp/maps/archive/cf/areas/the-outpost-of-tir-talath.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-outpost-of-tir-talath.html",
+      "sha256": "70FF6D5B10E8C4907589EEDB95879EE9A10798BFFA396C2DF4855B1B0A387780"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-past-grove.html",
+      "destination": "/warp/maps/archive/cf/areas/the-past-grove.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-past-grove.html",
+      "sha256": "60DA23837241D7EF92C49ECF6B6B071C98E553EC831E7F1EF95805495594852B"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-past-shadow-grove.html",
+      "destination": "/warp/maps/archive/cf/areas/the-past-shadow-grove.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-past-shadow-grove.html",
+      "sha256": "71B893E56AC21BF84A922A8FDAF434B9BB4E97F1416FDC672532400AA5D50CED"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-plains-of-arendyl.html",
+      "destination": "/warp/maps/archive/cf/areas/the-plains-of-arendyl.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-plains-of-arendyl.html",
+      "sha256": "E3247F2F52085E03455297604AADACE977E648A8C68F6492BD79BC7945945619"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-pyramid-of-azhan.html",
+      "destination": "/warp/maps/archive/cf/areas/the-pyramid-of-azhan.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-pyramid-of-azhan.html",
+      "sha256": "257835B84C2C5FD8C149C5B4CF130494703249303702EBC08DDA58632F1C658B"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-redhorn-mountains.html",
+      "destination": "/warp/maps/archive/cf/areas/the-redhorn-mountains.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-redhorn-mountains.html",
+      "sha256": "2234831B655EDDF434527EF6C700955CD30B5A348DE206BC6A70F24C5E8D3E4F"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-river-nanthor.html",
+      "destination": "/warp/maps/archive/cf/areas/the-river-nanthor.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-river-nanthor.html",
+      "sha256": "005D2E53ECCA41DFC282BF75F8F650F69D4C3635B6DBD2C2FF6A7DDE33C46713"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-rocky-paths.html",
+      "destination": "/warp/maps/archive/cf/areas/the-rocky-paths.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-rocky-paths.html",
+      "sha256": "E72B391994655E9D174DA9BDB4E1001C4A3134941FA0F14F74986D94D0CB0568"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-ruins-of-ostalagiah.html",
+      "destination": "/warp/maps/archive/cf/areas/the-ruins-of-ostalagiah.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-ruins-of-ostalagiah.html",
+      "sha256": "767CE57C8189A7EA9693588BA52D6DFF38B7C4591CB0BFE786CE5D68BEBB6DCB"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-sea-of-despair.html",
+      "destination": "/warp/maps/archive/cf/areas/the-sea-of-despair.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-sea-of-despair.html",
+      "sha256": "989A734DB584CE1E75A117CAE57557EB4F82EC355F2FF19E05AE8B32186BB120"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-seaport-of-hamsah-mu-tazz.html",
+      "destination": "/warp/maps/archive/cf/areas/the-seaport-of-hamsah-mu-tazz.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-seaport-of-hamsah-mu-tazz.html",
+      "sha256": "2D219984A23B63D4272DE4C92F6D512F658929FB737A0A69480721E221FEF2F6"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-sewers-of-seantryn-modan.html",
+      "destination": "/warp/maps/archive/cf/areas/the-sewers-of-seantryn-modan.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-sewers-of-seantryn-modan.html",
+      "sha256": "560DEE95B22CDB0AE06FB43D7F944C8DBE7412DD23911BD006C595E9BC8FF9D6"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-shadow-grove.html",
+      "destination": "/warp/maps/archive/cf/areas/the-shadow-grove.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-shadow-grove.html",
+      "sha256": "880811DDFB61CE254FFB27C82DC54F4D3571A50CF0974ACD990F1BADB9DA640A"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-skies-above-thera.html",
+      "destination": "/warp/maps/archive/cf/areas/the-skies-above-thera.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-skies-above-thera.html",
+      "sha256": "834F866C06FC21E02D16C16D28B58E2B780F9E40289EE8820A9E839EE239F9EA"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-slave-mines-of-sitran.html",
+      "destination": "/warp/maps/archive/cf/areas/the-slave-mines-of-sitran.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-slave-mines-of-sitran.html",
+      "sha256": "42929460BC4690B6F1EDDABB76DFBDA8CD7DFCCE04417DF42B6F7C8AF48F935D"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-stone-s-embrace.html",
+      "destination": "/warp/maps/archive/cf/areas/the-stone-s-embrace.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-stone-s-embrace.html",
+      "sha256": "1B3C9C51DEFAADFE7F8ED46FDE094DD25785F0F1DA14A60C0B9D165DF33F3A14"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-tahril-mountains.html",
+      "destination": "/warp/maps/archive/cf/areas/the-tahril-mountains.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-tahril-mountains.html",
+      "sha256": "B2CE987B292CFA77513F97FB356E9AE9A2DFF97EB761AEA35E965DE9DE2366E4"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-talshidar-caves.html",
+      "destination": "/warp/maps/archive/cf/areas/the-talshidar-caves.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-talshidar-caves.html",
+      "sha256": "03AEC73C786C1FDCB39BA513CE646E6DB2C3A4FD39CE491AACDBC2A08DD9F205"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-tower-of-sorcery.html",
+      "destination": "/warp/maps/archive/cf/areas/the-tower-of-sorcery.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-tower-of-sorcery.html",
+      "sha256": "7C908F4FAD738EA8AE5DDEB4E700B5E87EB9743C771E233627F7019E8B1D6D9D"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-underdark-sea.html",
+      "destination": "/warp/maps/archive/cf/areas/the-underdark-sea.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-underdark-sea.html",
+      "sha256": "732BD5944B1F736ABC96F37DBF0DA32D522C1CF45AE40B1DE096D7715BF4F40B"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-vale-of-arendyl.html",
+      "destination": "/warp/maps/archive/cf/areas/the-vale-of-arendyl.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-vale-of-arendyl.html",
+      "sha256": "30CA8A7BAC3C663BBE360D3A1377F47AA256EC835F1A41FA990A509F8B72FF4A"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-village-of-azuremain.html",
+      "destination": "/warp/maps/archive/cf/areas/the-village-of-azuremain.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-village-of-azuremain.html",
+      "sha256": "A41EE92D9B931163B39520799898F7CD72DD8D48F97E4A2D52D5049ED851CFD2"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-village-of-barovia.html",
+      "destination": "/warp/maps/archive/cf/areas/the-village-of-barovia.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-village-of-barovia.html",
+      "sha256": "64EA2F2AE82A2CED3CDF53D22AD22F659B78F3AA88E1363DA32568F30189C9FA"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-violet-woodland.html",
+      "destination": "/warp/maps/archive/cf/areas/the-violet-woodland.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-violet-woodland.html",
+      "sha256": "E0E44C0945DE48CC1D22570ABA5C24FD1B3EB015F918579AFF6690EADFF4BE7C"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-wastes-of-nonviel.html",
+      "destination": "/warp/maps/archive/cf/areas/the-wastes-of-nonviel.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-wastes-of-nonviel.html",
+      "sha256": "54495DBF13FD90E24F7A2ABEA71B666B03008303E877FFCC374110BD55D18FD0"
+    },
+    {
+      "legacy_path": "/qhcf/areas/the-xvart-lair.html",
+      "destination": "/warp/maps/archive/cf/areas/the-xvart-lair.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/the-xvart-lair.html",
+      "sha256": "857ECCDA9CA737D060E20EEB1C546E115451F3797CD34EC3E0385492E2652B6E"
+    },
+    {
+      "legacy_path": "/qhcf/areas/traveller.html",
+      "destination": "/warp/maps/archive/cf/areas/traveller.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/traveller.html",
+      "sha256": "69E5FB85AF6F060D1968ED395F3D3E283878B1DD95EE2CD22EC8F75F57E5E204"
+    },
+    {
+      "legacy_path": "/qhcf/areas/troglodyte-caverns.html",
+      "destination": "/warp/maps/archive/cf/areas/troglodyte-caverns.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/troglodyte-caverns.html",
+      "sha256": "593A78ACDA5644DADAA80DE2564A9DB5B139D95E4EB7F6126F020244E9356624"
+    },
+    {
+      "legacy_path": "/qhcf/areas/udgaard.html",
+      "destination": "/warp/maps/archive/cf/areas/udgaard.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/udgaard.html",
+      "sha256": "9BA2E1215EA39CE3485A8682C1A655CF76C5A3A1476D40B639C5EF85DC8BAA1C"
+    },
+    {
+      "legacy_path": "/qhcf/areas/udgaardian-plains.html",
+      "destination": "/warp/maps/archive/cf/areas/udgaardian-plains.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/udgaardian-plains.html",
+      "sha256": "DF4C28297C4EBD932BF1F8A5FDE8DA94A9D1B4514BA26B336218B370D4B4E198"
+    },
+    {
+      "legacy_path": "/qhcf/areas/ugruk.html",
+      "destination": "/warp/maps/archive/cf/areas/ugruk.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/ugruk.html",
+      "sha256": "D8CE1E39E87CEFF89A4930F98735445F3C17FF59848DEEF87DCE71460DF2F2CB"
+    },
+    {
+      "legacy_path": "/qhcf/areas/underdark.html",
+      "destination": "/warp/maps/archive/cf/areas/underdark.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/underdark.html",
+      "sha256": "074A0128F50203040BAB2D571F4E1B0442B998CAEA796AD135F8D1A833B641F3"
+    },
+    {
+      "legacy_path": "/qhcf/areas/upper-cragstone.html",
+      "destination": "/warp/maps/archive/cf/areas/upper-cragstone.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/upper-cragstone.html",
+      "sha256": "D483522C60888AF04FDF7E192422FE55FBEB9646EB506CF4888B077C377C74BA"
+    },
+    {
+      "legacy_path": "/qhcf/areas/v-dramir-s-cove.html",
+      "destination": "/warp/maps/archive/cf/areas/v-dramir-s-cove.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/v-dramir-s-cove.html",
+      "sha256": "8ECF5902AF3A458E042D204EFFF37C2A3B3A054826D796D0D492EDB1DA4CCDF4"
+    },
+    {
+      "legacy_path": "/qhcf/areas/valley-of-veran.html",
+      "destination": "/warp/maps/archive/cf/areas/valley-of-veran.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/valley-of-veran.html",
+      "sha256": "C4B08E611A489D577EAB76EFD27AA5F74C96DEBBFED5FF15E5AE886777AFEAC5"
+    },
+    {
+      "legacy_path": "/qhcf/areas/velkyn-oloth.html",
+      "destination": "/warp/maps/archive/cf/areas/velkyn-oloth.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/velkyn-oloth.html",
+      "sha256": "71152867CE736A83E7972A750E1BF8EA2791D38CC3F7AAC032FF86D8D4C20583"
+    },
+    {
+      "legacy_path": "/qhcf/areas/village-of-lallenyha.html",
+      "destination": "/warp/maps/archive/cf/areas/village-of-lallenyha.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/village-of-lallenyha.html",
+      "sha256": "1D089919AB1B991B304DFA6B2E6F40B670089203114B9764BE53172899451B97"
+    },
+    {
+      "legacy_path": "/qhcf/areas/village-of-mal-trakis.html",
+      "destination": "/warp/maps/archive/cf/areas/village-of-mal-trakis.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/village-of-mal-trakis.html",
+      "sha256": "C4E201B5318BC0339AAB6EF734A459DDEEE5383C53A3221310A172083D91B774"
+    },
+    {
+      "legacy_path": "/qhcf/areas/voralia-s-tears.html",
+      "destination": "/warp/maps/archive/cf/areas/voralia-s-tears.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/voralia-s-tears.html",
+      "sha256": "82C2DABBEA208C6ACD51CF3CCAB3C65173599950AFB625DAE9E26F54C95CE6F6"
+    },
+    {
+      "legacy_path": "/qhcf/areas/voralian-city.html",
+      "destination": "/warp/maps/archive/cf/areas/voralian-city.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/voralian-city.html",
+      "sha256": "CD403A4007FB49C974C0999E30523EB1C973C8CAEE9014EF2DF0D32FE9FADFD6"
+    },
+    {
+      "legacy_path": "/qhcf/areas/waters-of-the-deep.html",
+      "destination": "/warp/maps/archive/cf/areas/waters-of-the-deep.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/waters-of-the-deep.html",
+      "sha256": "B2EF2FDA6AD63B6EE9BD5B5031B73469DB6FCE443047C88142BEA5752F8BE1F3"
+    },
+    {
+      "legacy_path": "/qhcf/areas/western-aryth-ocean.html",
+      "destination": "/warp/maps/archive/cf/areas/western-aryth-ocean.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/western-aryth-ocean.html",
+      "sha256": "6C5785CA506FE424CBE317B1C203B2E8D23BD94C0C214E2A456B2D0E229CC270"
+    },
+    {
+      "legacy_path": "/qhcf/areas/whistlewood-swamp.html",
+      "destination": "/warp/maps/archive/cf/areas/whistlewood-swamp.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/whistlewood-swamp.html",
+      "sha256": "4D73CCA4EB74F6579C6927B362049D444387C15DFE5A49842D6E4AA5D5BBAF8E"
+    },
+    {
+      "legacy_path": "/qhcf/areas/worldmap.html",
+      "destination": "/warp/maps/archive/cf/areas/worldmap.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/worldmap.html",
+      "sha256": "D232DC50B04B6834A9D501F627F419D0C5B36A55A890D2CF00C1227E9D439F99"
+    },
+    {
+      "legacy_path": "/qhcf/areas/ysigrath.html",
+      "destination": "/warp/maps/archive/cf/areas/ysigrath.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/areas/ysigrath.html",
+      "sha256": "D11F6C952A1FDB4AD91F3BDE3DABA3C21AA7FDBF6F42CECBEBD8E24B24B9AB9F"
+    },
+    {
+      "legacy_path": "/qhcf/bramblefield-preview.html",
+      "destination": "/warp/maps/archive/cf/bramblefield-preview.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/bramblefield-preview.html",
+      "sha256": "F5B40705159ECFA3FADB2C2CE59C80CFBA9C7CA41690FEF0FAAD8969B4FF8984"
+    },
+    {
+      "legacy_path": "/qhcf/cross-area-preview.html",
+      "destination": "/warp/maps/archive/cf/cross-area-preview.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/cross-area-preview.html",
+      "sha256": "8D559E7C501A3E5CEF41904F5982DE456794A92E0566AEB2C6486D7429DBB7A0"
+    },
+    {
+      "legacy_path": "/qhcf/eastern-road-preview.html",
+      "destination": "/warp/maps/archive/cf/eastern-road-preview.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/eastern-road-preview.html",
+      "sha256": "6B65C508563ACCE2F09734B959997BAE8ED9506671D25E38D0515595B5EB39DE"
+    },
+    {
+      "legacy_path": "/qhcf/galadon-preview.html",
+      "destination": "/warp/maps/archive/cf/galadon-preview.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/galadon-preview.html",
+      "sha256": "8FEF0FE2CD14477AE0B7B757FEEE9F59F2F8B3F2A1C93D6C8A6EEFD2F1249FD2"
+    },
+    {
+      "legacy_path": "/qhcf/galadonian-settlement-preview.html",
+      "destination": "/warp/maps/archive/cf/galadonian-settlement-preview.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/galadonian-settlement-preview.html",
+      "sha256": "9A766189691FE792FCA95B9E9646E94D05D27B28EF718BE7757740F48A07E5B1"
+    },
+    {
+      "legacy_path": "/qhcf/graveyard-preview.html",
+      "destination": "/warp/maps/archive/cf/graveyard-preview.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/graveyard-preview.html",
+      "sha256": "CAA116A892C8BE1A9ED97405639B23FFC179ECD23821397A762DE64678ECFDA8"
+    },
+    {
+      "legacy_path": "/qhcf/grove-preview.html",
+      "destination": "/warp/maps/archive/cf/grove-preview.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/grove-preview.html",
+      "sha256": "071DC96190CDC707A8B01918372EF272E5488EAA54132762E03C27BFA56E4C5B"
+    },
+    {
+      "legacy_path": "/qhcf/index.html",
+      "destination": "/warp/maps/archive/cf/",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/",
+      "sha256": "3FB06CECF1AFDC7D8D3DE0877C1FBE434E70D14F55553BDCAA2D8E5F4B0A082D"
+    },
+    {
+      "legacy_path": "/qhcf/maps.html",
+      "destination": "/warp/maps/archive/cf/maps.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/maps.html",
+      "sha256": "819E476357F21F24B783DFEA12219F71DC9B3AEE44790C60D2661434816AAF50"
+    },
+    {
+      "legacy_path": "/qhcf/navigation/index.html",
+      "destination": "/warp/maps/archive/cf/navigation/index.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/navigation/index.html",
+      "sha256": "9E51F60F700790DD9D1BA10AF47C9A6DFDEBBFB70EAFB7A74417EFA93EC276C5"
+    },
+    {
+      "legacy_path": "/qhcf/north-road-preview.html",
+      "destination": "/warp/maps/archive/cf/north-road-preview.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/north-road-preview.html",
+      "sha256": "0A9A64C25656841AFE4622CA92D9CC4B6EEB8E62E2D2F7B2D29384CE99FC0057"
+    },
+    {
+      "legacy_path": "/qhcf/outskirts-preview.html",
+      "destination": "/warp/maps/archive/cf/outskirts-preview.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/outskirts-preview.html",
+      "sha256": "5864237AF69570DF4BC3D8D1DF207CDEEE8F29540FA42AB2D35C4A2B08A9887F"
+    },
+    {
+      "legacy_path": "/qhcf/past-grove-preview.html",
+      "destination": "/warp/maps/archive/cf/past-grove-preview.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/past-grove-preview.html",
+      "sha256": "55873E11A667E7A47D8C8A228F405A6FDF853E3BB3B77C545195FD4CE49482AD"
+    },
+    {
+      "legacy_path": "/qhcf/plains-arendyl-preview.html",
+      "destination": "/warp/maps/archive/cf/plains-arendyl-preview.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/plains-arendyl-preview.html",
+      "sha256": "8AF67A7F3130CD3D142E725B11F704253E44D0C672443F4A5DA52A1CDFE7301E"
+    },
+    {
+      "legacy_path": "/qhcf/silverwood-preview.html",
+      "destination": "/warp/maps/archive/cf/silverwood-preview.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/silverwood-preview.html",
+      "sha256": "B994AAA6705E4F6E749D481A7BA9EC82358F4D38A57613A85C23CF5773768EBB"
+    },
+    {
+      "legacy_path": "/qhcf/udgaard-preview.html",
+      "destination": "/warp/maps/archive/cf/udgaard-preview.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/udgaard-preview.html",
+      "sha256": "350A27E660F5C23E73A938587B77D5553662F539CE76C6E94FEEF3FD4108500A"
+    },
+    {
+      "legacy_path": "/qhcf/wagon-road-preview.html",
+      "destination": "/warp/maps/archive/cf/wagon-road-preview.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/wagon-road-preview.html",
+      "sha256": "EC583233AA1B3967FD573442E3E7175F2FC95AAB01B53D9F6EAEF7C083C99212"
+    },
+    {
+      "legacy_path": "/qhcf/western-shadow-sorcery-preview.html",
+      "destination": "/warp/maps/archive/cf/western-shadow-sorcery-preview.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/western-shadow-sorcery-preview.html",
+      "sha256": "455A56D2F52B377F14FFFE2FE6D9B8B8BB361EFCB742A94FB4D2792EA98BB661"
+    },
+    {
+      "legacy_path": "/qhcf/world-map.html",
+      "destination": "/warp/maps/archive/cf/world-map.html",
+      "canonical": "https://topazcandy.com/warp/maps/archive/cf/world-map.html",
+      "sha256": "9BD896F08421E89AF3430D51038B0AFF0ABF4B80420E8B65D42002F9A3B4FB55"
+    }
+  ]
+}

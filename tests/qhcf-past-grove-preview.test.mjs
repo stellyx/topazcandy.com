@@ -1,9 +1,9 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {test} from 'node:test';
-import {anchors,roomKey,sourceGraph,route} from '../qhcf/past-grove-route.mjs';
-const data=JSON.parse(fs.readFileSync(new URL('../qhcf/data/areas/the-past-grove.json',import.meta.url)));
-const page=fs.readFileSync(new URL('../qhcf/past-grove-preview.html',import.meta.url),'utf8');
+import {anchors,roomKey,sourceGraph,route} from '../warp/maps/archive/cf/past-grove-route.mjs';
+const data=JSON.parse(fs.readFileSync(new URL('../warp/maps/archive/cf/data/areas/the-past-grove.json',import.meta.url)));
+const page=fs.readFileSync(new URL('../warp/maps/archive/cf/past-grove-preview.html',import.meta.url),'utf8');
 const graph=sourceGraph(data);
 test('Past Grove retains distinct chart rooms and only printed straight edges',()=>{
  assert.equal(graph.rooms.size,106);assert.equal(graph.edges.length,130);
@@ -18,12 +18,12 @@ test('all major anchors route internally with one command per traversed room edg
  assert.equal(route(graph,'15:15','19:33').commands.join(';;'),'s;;s;;e;;e;;e;;e;;e;;e');
 });
 test('neighbor links exist, with unknown boundary crossing explicitly stated',()=>{
- for(const path of ['/qhcf/grove-preview.html','/qhcf/areas/the-plains-of-arendyl.html','/qhcf/areas/a-wagon-marked-road.html']){
+ for(const path of ['/warp/maps/archive/cf/grove-preview.html','/warp/maps/archive/cf/areas/the-plains-of-arendyl.html','/warp/maps/archive/cf/areas/a-wagon-marked-road.html']){
   assert.ok(page.includes(`href="${path}"`));assert.ok(fs.existsSync(new URL(`..${path}`,import.meta.url)));
  }
  assert.equal(anchors.filter(a=>a.id.startsWith('void-')).length,2);
  assert.match(page,/two distinct Void markers/);assert.match(page,/no arrival is preselected/);
- const script=fs.readFileSync(new URL('../qhcf/past-grove-preview.mjs',import.meta.url),'utf8');
+ const script=fs.readFileSync(new URL('../warp/maps/archive/cf/past-grove-preview.mjs',import.meta.url),'utf8');
  assert.match(script,/location\.hash==='#void-markers'/);assert.doesNotMatch(script,/choose\('19:33'\)/);
  assert.doesNotMatch(page,/target="_blank"/);
 });

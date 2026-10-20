@@ -1,10 +1,10 @@
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
-import {sourceRooms,northRoadSpine,routeBetween,routeStops,verifiedMapLinks} from '../qhcf/north-road-preview.mjs';
+import {sourceRooms,northRoadSpine,routeBetween,routeStops,verifiedMapLinks} from '../warp/maps/archive/cf/north-road-preview.mjs';
 
-const source=JSON.parse(readFileSync(new URL('../qhcf/data/areas/northernroads.json',import.meta.url)));
+const source=JSON.parse(readFileSync(new URL('../warp/maps/archive/cf/data/areas/northernroads.json',import.meta.url)));
 assert.equal(source.source.revision_id,4989);
-const captured=readFileSync(new URL('../qhcf/data/areas/northernroads.txt',import.meta.url),'utf8');
+const captured=readFileSync(new URL('../warp/maps/archive/cf/data/areas/northernroads.txt',import.meta.url),'utf8');
 assert.match(captured,/NorthernRoads\r?\n=============/);
 assert.ok(captured.includes('oldid=4989'));
 const rooms=sourceRooms(source),pluses=rooms.filter(n=>n.glyph==='+');
@@ -33,10 +33,10 @@ const links=verifiedMapLinks(source);
 assert.equal(links.length,6);
 for(const link of links){assert.ok(existsSync(new URL(`../${link.href.slice(1)}`,import.meta.url)),link.href);assert.equal(source.lines[link.row-1].slice(link.column-1).startsWith(link.needle),true)}
 assert.deepEqual(links.filter(l=>l.slug==='voralian-city').map(l=>l.row),[53,61,69]);
-const page=readFileSync(new URL('../qhcf/north-road-preview.html',import.meta.url),'utf8');
+const page=readFileSync(new URL('../warp/maps/archive/cf/north-road-preview.html',import.meta.url),'utf8');
 for(const id of ['map','viewport','from','to','flip','fit','fit-route','copy','commands','area-select','exit-links'])assert.ok(page.includes(`id="${id}"`),id);
 assert.ok(page.includes('matching entrance rooms unverified'));
-assert.ok(page.includes('href="/qhcf/world-map.html"'));
-assert.ok(page.includes('href="/qhcf/areas/northernroads.html"'));
-assert.ok(readFileSync(new URL('../qhcf/north-road-preview.mjs',import.meta.url),'utf8').includes('`${route.moves} moves`'));
+assert.ok(page.includes('href="/warp/maps/archive/cf/world-map.html"'));
+assert.ok(page.includes('href="/warp/maps/archive/cf/areas/northernroads.html"'));
+assert.ok(readFileSync(new URL('../warp/maps/archive/cf/north-road-preview.mjs',import.meta.url),'utf8').includes('`${route.moves} moves`'));
 console.log('Northern Roads revision, 19-move Crossroads and 20-move full-spine endpoints, reverse counts, plus rooms, map links and controls passed.');

@@ -1,8 +1,8 @@
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
-import {buildModel,routeBetween,sourceSegments,sourceCountNotes,turnoffs} from '../qhcf/eastern-road-preview.mjs';
+import {buildModel,routeBetween,sourceSegments,sourceCountNotes,turnoffs} from '../warp/maps/archive/cf/eastern-road-preview.mjs';
 
-const source=JSON.parse(readFileSync(new URL('../qhcf/data/areas/the-eastern-road.json',import.meta.url)));
+const source=JSON.parse(readFileSync(new URL('../warp/maps/archive/cf/data/areas/the-eastern-road.json',import.meta.url)));
 const model=buildModel(source);
 const segments=sourceSegments(source);
 const notes=sourceCountNotes(source);
@@ -23,13 +23,13 @@ assert.equal(source.lines[4].slice(71,75),'(7E)');
 assert.equal(source.lines[4][76],'E');
 assert.equal(source.lines[3][76],'|');
 const aldevari=turnoffs.find(t=>t.name==='Aldevari');
-assert.deepEqual([aldevari.section,aldevari.column,aldevari.direction,aldevari.href],['upper',77,'north','/qhcf/aldevari-preview.html']);
+assert.deepEqual([aldevari.section,aldevari.column,aldevari.direction,aldevari.href],['upper',77,'north','/warp/maps/archive/cf/aldevari-preview.html']);
 assert.ok(!model.nodes.find(n=>n.id==='eastern.map.east-e').name.includes('Along the Eastern Road'));
 assert.equal(model.nodes.find(n=>n.id==='eastern.map.c').name,'Large Crossroads (C)');
 assert.equal(turnoffs.length,15);
-assert.equal(turnoffs.find(t=>t.name.startsWith('Ostalagiah')).href,'/qhcf/areas/the-ruins-of-ostalagiah.html');
+assert.equal(turnoffs.find(t=>t.name.startsWith('Ostalagiah')).href,'/warp/maps/archive/cf/areas/the-ruins-of-ostalagiah.html');
 assert.equal(turnoffs.find(t=>t.name==='A Thick Copse of Trees').href,null);
-assert.equal(turnoffs.find(t=>t.name.startsWith('Drogan Hills')).href,'/qhcf/areas/the-drogran-hills.html');
+assert.equal(turnoffs.find(t=>t.name.startsWith('Drogan Hills')).href,'/warp/maps/archive/cf/areas/the-drogran-hills.html');
 assert.deepEqual(turnoffs.filter(t=>t.slug==='the-drogran-hills').map(t=>[t.column,t.name,t.direction]),[
   [24,'Drogan Hills · west branch','south'],
   [32,'Drogan Hills · east branch','south']
@@ -37,8 +37,8 @@ assert.deepEqual(turnoffs.filter(t=>t.slug==='the-drogran-hills').map(t=>[t.colu
 assert.equal(source.lines[16][23],'|');
 assert.equal(source.lines[16][31],'|');
 assert.deepEqual(turnoffs.filter(t=>t.slug==='the-grove').map(t=>[t.column,t.name,t.href]),[
-  [18,'The Grove - west/first turnoff','/qhcf/grove-preview.html#eastern-road-west-exit'],
-  [34,'The Grove - east/second turnoff','/qhcf/grove-preview.html#eastern-road-east-exit']
+  [18,'The Grove - west/first turnoff','/warp/maps/archive/cf/grove-preview.html#eastern-road-west-exit'],
+  [34,'The Grove - east/second turnoff','/warp/maps/archive/cf/grove-preview.html#eastern-road-east-exit']
 ]);
 assert.equal(turnoffs.find(t=>t.column===64).href,null);
 for(const t of turnoffs.filter(t=>t.href))assert.ok(existsSync(new URL(`../${t.href.slice(1)}`,import.meta.url)),t.name);
@@ -72,13 +72,13 @@ assert.equal(inbound.commands.join(';;'),Array(12).fill('w').join(';;'));
 assert.equal(routeBetween(model,id('r5c58'),id('c')),null);
 assert.equal(routeBetween(model,id('south-one'),id('east-one')),null);
 assert.equal(routeBetween(model,id('c'),id('c')).moves,0);
-for(const area of model.areas.filter(a=>a.slug))assert.ok(existsSync(new URL(`../qhcf/areas/${area.slug}.html`,import.meta.url)),area.name);
-assert.equal(model.areas.find(a=>a.name==='Galadon').preview,'/qhcf/galadon-preview.html');
-assert.ok(existsSync(new URL('../qhcf/galadon-preview.html',import.meta.url)));
-const page=readFileSync(new URL('../qhcf/eastern-road-preview.html',import.meta.url),'utf8');
+for(const area of model.areas.filter(a=>a.slug))assert.ok(existsSync(new URL(`../warp/maps/archive/cf/areas/${area.slug}.html`,import.meta.url)),area.name);
+assert.equal(model.areas.find(a=>a.name==='Galadon').preview,'/warp/maps/archive/cf/galadon-preview.html');
+assert.ok(existsSync(new URL('../warp/maps/archive/cf/galadon-preview.html',import.meta.url)));
+const page=readFileSync(new URL('../warp/maps/archive/cf/eastern-road-preview.html',import.meta.url),'utf8');
 for(const id of ['map','viewport','from','to','flip','copy','commands','area-select','fit-route'])assert.ok(page.includes(`id="${id}"`),id);
-assert.ok(page.includes('href="/qhcf/world-map.html"'));
-assert.ok(page.includes('href="/qhcf/areas/the-eastern-road.html"'));
+assert.ok(page.includes('href="/warp/maps/archive/cf/world-map.html"'));
+assert.ok(page.includes('href="/warp/maps/archive/cf/areas/the-eastern-road.html"'));
 assert.ok(page.includes('Galadon crossing and matching entrance unverified'));
 assert.ok(page.includes('no crossing step is routed'));
 assert.ok(page.includes('12 east from C total'));
@@ -86,8 +86,8 @@ assert.ok(page.includes('second is 4 east'));
 assert.ok(page.includes('<details class="handoff">'));
 assert.ok(page.includes('class="map-stage"'));
 assert.ok(page.includes('class="key-exits"'));
-assert.ok(page.includes('href="/qhcf/galadon-preview.html"'));
-assert.ok(page.includes('href="/qhcf/areas/hamsah-mu-tazz.html"'));
+assert.ok(page.includes('href="/warp/maps/archive/cf/galadon-preview.html"'));
+assert.ok(page.includes('href="/warp/maps/archive/cf/areas/hamsah-mu-tazz.html"'));
 assert.ok(page.includes('id="places"'));
 assert.ok(page.includes('id="place-list"'));
 assert.ok(page.includes('id="map-note"'));
@@ -97,7 +97,7 @@ assert.ok(page.includes('two distinct Void rooms'));
 assert.ok(page.includes('grove-preview.html#eastern-road-exits'));
 assert.ok(!page.includes('Rangers Guild side'));
 assert.ok(!page.includes('Void side'));
-const script=readFileSync(new URL('../qhcf/eastern-road-preview.mjs',import.meta.url),'utf8');
+const script=readFileSync(new URL('../warp/maps/archive/cf/eastern-road-preview.mjs',import.meta.url),'utf8');
 assert.ok(script.includes('for(const {row,column,glyph} of sourceSegments(source))'));
 assert.ok(script.includes('class:\'road marked-continuation\''));
 assert.ok(script.includes('class:\'road lower-corridor\''));
@@ -109,9 +109,9 @@ assert.ok(script.includes("if(t.id)signAttrs.id=t.id"));
 assert.ok(script.includes("const keyIds=new Set("));
 assert.ok(script.includes("['a','c','east-e','east-one','south-one','lower-top-2','lower-0','lower-4'].map"));
 assert.ok(page.includes('id="turnoff-links"'));
-assert.ok(script.includes("item.href=a.preview||`/qhcf/areas/${a.slug}.html`"));
+assert.ok(script.includes("item.href=a.preview||`/warp/maps/archive/cf/areas/${a.slug}.html`"));
 assert.ok(script.includes("item.addEventListener('focus',()=>showNote(descriptor))"));
-const css=readFileSync(new URL('../qhcf/eastern-road-preview.css',import.meta.url),'utf8');
+const css=readFileSync(new URL('../warp/maps/archive/cf/eastern-road-preview.css',import.meta.url),'utf8');
 assert.ok(css.includes('.places:not([open]){width:auto}'));
 assert.ok(css.includes('@media(max-width:860px){.intro{margin-bottom:.35rem}'));
 assert.ok(script.includes('Clipboard write reported success. Paste to confirm'));

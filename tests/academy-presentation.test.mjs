@@ -7,7 +7,7 @@ import path from 'node:path';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const html = await readFile(path.join(root, 'qhcf', 'academy-temple-coverage.html'), 'utf8');
 const js = await readFile(path.join(root, 'qhcf', 'assets', 'academy-preview.mjs'), 'utf8');
-const overview = await readFile(path.join(root, 'qhcf', 'index.html'), 'utf8');
+const overview = await readFile(path.join(root, 'warp', 'maps', 'archive', 'cf', 'index.html'), 'utf8');
 
 test('mobile uses cards instead of a shrunken table', () => {
   assert.match(html, /@media\(max-width:820px\).*\.desktop-table\{display:none\}.*\.mobile-list\{display:grid/s);

@@ -3,13 +3,13 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {test} from 'node:test';
-import {anchors,boundaries,roomKey,route,sourceGraph} from '../qhcf/udgaard-route.mjs';
+import {anchors,boundaries,roomKey,route,sourceGraph} from '../warp/maps/archive/cf/udgaard-route.mjs';
 
 const here=path.dirname(fileURLToPath(import.meta.url));
 const auditRoot=process.env.QHCF_AUDIT_ROOT||path.resolve(here,'..');
 const data=JSON.parse(fs.readFileSync(path.join(auditRoot,'qhcf/data/areas/udgaard.json')));
-const html=fs.readFileSync(new URL('../qhcf/udgaard-preview.html',import.meta.url),'utf8');
-const preview=fs.readFileSync(new URL('../qhcf/udgaard-preview.mjs',import.meta.url),'utf8');
+const html=fs.readFileSync(new URL('../warp/maps/archive/cf/udgaard-preview.html',import.meta.url),'utf8');
+const preview=fs.readFileSync(new URL('../warp/maps/archive/cf/udgaard-preview.mjs',import.meta.url),'utf8');
 const shared=fs.readFileSync(path.join(auditRoot,'qhcf/source-grid-preview.mjs'),'utf8');
 const graph=sourceGraph(data);
 
@@ -28,7 +28,7 @@ test('known city route has exact plus-sign step count and symmetric reverse',()=
 });
 test('boundaries and special references remain links only',()=>{
  assert.equal(boundaries.length,4);assert.match(html,/Crossing and matching entrance unresolved/);assert.match(html,/underground-river prose, special exits/);assert.doesNotMatch(html,/target="_blank"/);
- for(const href of ['/qhcf/areas/a-northern-trail.html','/qhcf/areas/the-northern-mountains.html','/qhcf/areas/udgaardian-plains.html','/qhcf/areas/traveller.html'])assert.ok(html.includes(`href="${href}"`));
+ for(const href of ['/warp/maps/archive/cf/areas/a-northern-trail.html','/warp/maps/archive/cf/areas/the-northern-mountains.html','/warp/maps/archive/cf/areas/udgaardian-plains.html','/warp/maps/archive/cf/areas/traveller.html'])assert.ok(html.includes(`href="${href}"`));
 });
 test('preview preserves keyboard, copy fallback/readback, and narrow viewport behavior',()=>{
  assert.match(shared,/event\.key==='Enter'\|\|event\.key===' '/);assert.match(shared,/commands\.join\(';;'\)/);assert.match(shared,/Paste to confirm/);assert.match(shared,/press Ctrl\+C/);assert.match(shared,/viewport\.clientWidth-12/);assert.match(shared,/viewport\.clientHeight-12/);

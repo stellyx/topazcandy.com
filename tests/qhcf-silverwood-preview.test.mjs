@@ -3,13 +3,13 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {test} from 'node:test';
-import {anchors,boundaries,roomKey,route,sourceGraph} from '../qhcf/silverwood-route.mjs';
+import {anchors,boundaries,roomKey,route,sourceGraph} from '../warp/maps/archive/cf/silverwood-route.mjs';
 
 const here=path.dirname(fileURLToPath(import.meta.url));
 const auditRoot=process.env.QHCF_AUDIT_ROOT||path.resolve(here,'..');
 const data=JSON.parse(fs.readFileSync(path.join(auditRoot,'qhcf/data/areas/silverwood.json')));
-const html=fs.readFileSync(new URL('../qhcf/silverwood-preview.html',import.meta.url),'utf8');
-const preview=fs.readFileSync(new URL('../qhcf/silverwood-preview.mjs',import.meta.url),'utf8');
+const html=fs.readFileSync(new URL('../warp/maps/archive/cf/silverwood-preview.html',import.meta.url),'utf8');
+const preview=fs.readFileSync(new URL('../warp/maps/archive/cf/silverwood-preview.mjs',import.meta.url),'utf8');
 const shared=fs.readFileSync(path.join(auditRoot,'qhcf/source-grid-preview.mjs'),'utf8');
 const graph=sourceGraph(data);
 
@@ -20,7 +20,7 @@ test('revision 5048 retains all 73 literal plus rooms and exact graph totals',()
 test('only explicit horizontal and vertical connectors become graph edges',()=>{
  const at=(r,c)=>data.lines[r-1]?.[c-1]||' ';
  for(const edge of graph.edges){const a=graph.rooms.get(edge.from),b=graph.rooms.get(edge.to);assert.ok(a.row===b.row||a.col===b.col);const between=a.row===b.row?data.lines[a.row-1].slice(Math.min(a.col,b.col),Math.max(a.col,b.col)-1):[...Array(Math.abs(a.row-b.row)-1)].map((_,i)=>at(Math.min(a.row,b.row)+i+1,a.col)).join('');assert.ok(/^(-+|\|+)$/.test(between));}
- assert.doesNotMatch(fs.readFileSync(new URL('../qhcf/silverwood-route.mjs',import.meta.url),'utf8'),/command:'(?:ne|nw|se|sw)'/);
+ assert.doesNotMatch(fs.readFileSync(new URL('../warp/maps/archive/cf/silverwood-route.mjs',import.meta.url),'utf8'),/command:'(?:ne|nw|se|sw)'/);
 });
 test('known route includes every printed plus step and reverses symmetrically',()=>{
  const forward=route(graph,roomKey(7,23),roomKey(9,27));assert.equal(forward.moves,3);assert.equal(forward.commands.join(';;'),'e;;e;;s');assert.equal(forward.rooms.length,4);

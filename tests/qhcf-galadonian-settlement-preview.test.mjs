@@ -1,11 +1,11 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { test } from 'node:test';
-import { BOUNDARY_STUBS, SOURCE_IDENTITY, anchorCatalog, formatCopyCommands, route, sourceGraph } from '../qhcf/galadonian-settlement-route.mjs';
+import { BOUNDARY_STUBS, SOURCE_IDENTITY, anchorCatalog, formatCopyCommands, route, sourceGraph } from '../warp/maps/archive/cf/galadonian-settlement-route.mjs';
 
-const data = JSON.parse(fs.readFileSync(new URL('../qhcf/data/areas/galadonian-settlement.json', import.meta.url)));
-const html = fs.readFileSync(new URL('../qhcf/galadonian-settlement-preview.html', import.meta.url), 'utf8');
-const ui = fs.readFileSync(new URL('../qhcf/galadonian-settlement-preview.mjs', import.meta.url), 'utf8');
+const data = JSON.parse(fs.readFileSync(new URL('../warp/maps/archive/cf/data/areas/galadonian-settlement.json', import.meta.url)));
+const html = fs.readFileSync(new URL('../warp/maps/archive/cf/galadonian-settlement-preview.html', import.meta.url), 'utf8');
+const ui = fs.readFileSync(new URL('../warp/maps/archive/cf/galadonian-settlement-preview.mjs', import.meta.url), 'utf8');
 const graph = sourceGraph(data);
 const reverse = Object.freeze({ n: 's', s: 'n', e: 'w', w: 'e', ne: 'sw', sw: 'ne', nw: 'se', se: 'nw' });
 
@@ -76,7 +76,7 @@ test('every stored edge is reversible where the source proves a connector', () =
 });
 
 test('preview preserves source/text links, click/copy behavior, focus and 390px fit guard', () => {
-  for (const path of ['/qhcf/areas/galadonian-settlement.html', '/qhcf/data/areas/galadonian-settlement.txt', '/qhcf/data/areas/galadonian-settlement.json']) assert.ok(html.includes(`href="${path}"`));
+  for (const path of ['/warp/maps/archive/cf/areas/galadonian-settlement.html', '/warp/maps/archive/cf/data/areas/galadonian-settlement.txt', '/warp/maps/archive/cf/data/areas/galadonian-settlement.json']) assert.ok(html.includes(`href="${path}"`));
   assert.match(html, /oldid=4980/);
   assert.match(html, /button:focus-visible/);
   assert.match(html, /@media\(max-width:390px\)/);

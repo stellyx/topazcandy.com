@@ -1,10 +1,10 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {test} from 'node:test';
-import {anchors,roomKey,route,sourceGraph} from '../qhcf/graveyard-route.mjs';
+import {anchors,roomKey,route,sourceGraph} from '../warp/maps/archive/cf/graveyard-route.mjs';
 
-const data=JSON.parse(fs.readFileSync(new URL('../qhcf/data/areas/graveyard.json',import.meta.url)));
-const html=fs.readFileSync(new URL('../qhcf/graveyard-preview.html',import.meta.url),'utf8');
+const data=JSON.parse(fs.readFileSync(new URL('../warp/maps/archive/cf/data/areas/graveyard.json',import.meta.url)));
+const html=fs.readFileSync(new URL('../warp/maps/archive/cf/graveyard-preview.html',import.meta.url),'utf8');
 const graph=sourceGraph(data);
 
 test('revision 5045 retains the exact Graveyard source inventory and topology',()=>{
@@ -40,7 +40,7 @@ test('undocumented gates and the Holy Road boundary never emit guessed commands'
 });
 
 test('the Graveyard area is upgraded to the dedicated readable preview',()=>{
- const links=fs.readFileSync(new URL('../qhcf/enhanced-area-links.mjs',import.meta.url),'utf8');
- assert.match(links,/areas\/graveyard\.html','\/qhcf\/graveyard-preview\.html/);
+ const links=fs.readFileSync(new URL('../warp/maps/archive/cf/enhanced-area-links.mjs',import.meta.url),'utf8');
+ assert.match(links,/areas\/graveyard\.html','\/warp\/maps\/archive\/cf\/graveyard-preview\.html/);
  assert.match(html,/width=device-width/);assert.match(html,/all 79 literal plus rooms remain distinct/);assert.match(html,/commands separated by double semicolons/i);
 });

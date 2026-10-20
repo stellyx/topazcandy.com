@@ -1,11 +1,11 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { test } from 'node:test';
-import { BOUNDARY_STUBS, SOURCE_IDENTITY, formatCopyCommands, inspectPath, sourceGraph } from '../qhcf/outskirts-route.mjs';
+import { BOUNDARY_STUBS, SOURCE_IDENTITY, formatCopyCommands, inspectPath, sourceGraph } from '../warp/maps/archive/cf/outskirts-route.mjs';
 
-const data = JSON.parse(fs.readFileSync(new URL('../qhcf/data/areas/outskirts-of-galadon.json', import.meta.url)));
-const html = fs.readFileSync(new URL('../qhcf/outskirts-preview.html', import.meta.url), 'utf8');
-const ui = fs.readFileSync(new URL('../qhcf/outskirts-preview.mjs', import.meta.url), 'utf8');
+const data = JSON.parse(fs.readFileSync(new URL('../warp/maps/archive/cf/data/areas/outskirts-of-galadon.json', import.meta.url)));
+const html = fs.readFileSync(new URL('../warp/maps/archive/cf/outskirts-preview.html', import.meta.url), 'utf8');
+const ui = fs.readFileSync(new URL('../warp/maps/archive/cf/outskirts-preview.mjs', import.meta.url), 'utf8');
 const graph = sourceGraph(data);
 
 test('revision, credit, capture and content hash remain exact', () => {
@@ -56,7 +56,7 @@ test('boundary labels remain explicit unverified stubs, never cross-area edges',
 });
 
 test('preview preserves source and text links, focus markup and 390px fit guard', () => {
-  for (const path of ['/qhcf/areas/outskirts-of-galadon.html', '/qhcf/data/areas/outskirts-of-galadon.txt', '/qhcf/data/areas/outskirts-of-galadon.json']) assert.ok(html.includes(`href="${path}"`));
+  for (const path of ['/warp/maps/archive/cf/areas/outskirts-of-galadon.html', '/warp/maps/archive/cf/data/areas/outskirts-of-galadon.txt', '/warp/maps/archive/cf/data/areas/outskirts-of-galadon.json']) assert.ok(html.includes(`href="${path}"`));
   assert.match(html, /oldid=5047/);
   assert.match(html, /button:focus-visible/);
   assert.match(html, /@media\(max-width:390px\)/);

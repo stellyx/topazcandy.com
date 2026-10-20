@@ -1,14 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
-import { buildAsciiMapGraph, planMapRoute } from '../qhcf/navigation/route-engine.mjs';
-import { EAST_GATE, OUTSIDE_EAST_GATE, EASTERN_ANCHORS, UNKNOWN_BOUNDARY, guildThresholds, planTwoAreaRoute } from '../qhcf/cross-area-route.mjs';
-import { withEastGateAction } from '../qhcf/gate-commands.mjs';
+import { buildAsciiMapGraph, planMapRoute } from '../warp/maps/archive/cf/navigation/route-engine.mjs';
+import { EAST_GATE, OUTSIDE_EAST_GATE, EASTERN_ANCHORS, UNKNOWN_BOUNDARY, guildThresholds, planTwoAreaRoute } from '../warp/maps/archive/cf/cross-area-route.mjs';
+import { withEastGateAction } from '../warp/maps/archive/cf/gate-commands.mjs';
 
-const graph = JSON.parse(readFileSync(new URL('../qhcf/navigation/galadon-v1.json', import.meta.url)));
-const source = JSON.parse(readFileSync(new URL('../qhcf/data/areas/the-eastern-road.json', import.meta.url)));
-const html = readFileSync(new URL('../qhcf/cross-area-preview.html', import.meta.url), 'utf8');
-const ui = readFileSync(new URL('../qhcf/cross-area-preview.mjs', import.meta.url), 'utf8');
+const graph = JSON.parse(readFileSync(new URL('../warp/maps/archive/cf/navigation/galadon-v1.json', import.meta.url)));
+const source = JSON.parse(readFileSync(new URL('../warp/maps/archive/cf/data/areas/the-eastern-road.json', import.meta.url)));
+const html = readFileSync(new URL('../warp/maps/archive/cf/cross-area-preview.html', import.meta.url), 'utf8');
+const ui = readFileSync(new URL('../warp/maps/archive/cf/cross-area-preview.mjs', import.meta.url), 'utf8');
 
 test('Market Square opens East Gate after five east, then 34 reported east from outside', () => {
   const result = planTwoAreaRoute(graph, 'galadon.map.marker.m', 'eastern.map.c');
@@ -74,14 +74,14 @@ test('source inventories and destination links remain source-backed', () => {
   assert.deepEqual(withEastGateAction([EAST_GATE,OUTSIDE_EAST_GATE],['e']),['open east','e']);
   assert.deepEqual(withEastGateAction([OUTSIDE_EAST_GATE,EAST_GATE],['w']),['w']);
   assert.equal(EASTERN_ANCHORS.length, 2);
-  for (const path of ['/qhcf/galadon-preview.html', '/qhcf/data/areas/the-eastern-road.txt']) {
+  for (const path of ['/warp/maps/archive/cf/galadon-preview.html', '/warp/maps/archive/cf/data/areas/the-eastern-road.txt']) {
     assert.ok(existsSync(new URL('..' + path, import.meta.url)), path);
   }
-  assert.equal(UNKNOWN_BOUNDARY.map_url, '/qhcf/eastern-road-preview.html?v=bbbdc14');
-  assert.match(html, /href="\/qhcf\/eastern-road-preview.html\?v=bbbdc14"/);
+  assert.equal(UNKNOWN_BOUNDARY.map_url, '/warp/maps/archive/cf/eastern-road-preview.html?v=bbbdc14');
+  assert.match(html, /href="\/warp\/maps\/archive\/cf\/eastern-road-preview.html\?v=bbbdc14"/);
   assert.match(html, /data-anchor="eastern.map.c"/);
   assert.match(html, /data-anchor="galadon.map.r40c67"/);
-  assert.match(readFileSync(new URL('../qhcf/galadon-preview.html', import.meta.url), 'utf8'), /withEastGateAction\(p.node_ids,p.commands\)/);
+  assert.match(readFileSync(new URL('../warp/maps/archive/cf/galadon-preview.html', import.meta.url), 'utf8'), /withEastGateAction\(p.node_ids,p.commands\)/);
   assert.match(html, /id="copy-all"[^>]*disabled/);
   assert.match(ui, /result.status === 'REPORTED_ROUTE'/);
   assert.match(html, /inside East Gate is five east from Market Square/);

@@ -4,7 +4,7 @@ import {readFileSync, existsSync} from 'node:fs';
 import {resolve} from 'node:path';
 import {runInNewContext} from 'node:vm';
 const root=resolve(import.meta.dirname,'..');
-const q=resolve(root,'qhcf');
+const q=resolve(root,'warp','maps','archive','cf');
 const read=p=>readFileSync(resolve(q,p),'utf8');
 const ledger=JSON.parse(read('data/western-shadow-sorcery-inventory.json'));
 const sources={grove:JSON.parse(read('data/areas/the-shadow-grove.json')),tower:JSON.parse(read('data/areas/the-tower-of-sorcery.json'))};
@@ -45,6 +45,6 @@ test('every note has a stable line target and only verified matching area links'
   if(entry.area_link){assert.ok(existsSync(resolve(root,'.'+entry.area_link)),entry.area_link);assert.match(entry.link_status,/unverified/);assert.ok([...linked].some(name=>entry.source_text.includes(name)),entry.source_text)}
  }
  const fean=ledger.entries.find(e=>e.label==='Feanwyyn');assert.ok(fean);assert.equal(fean.area_link,undefined);
- const html=read('western-shadow-sorcery-preview.html');assert.match(html,/href="\/qhcf\/western-shadow-sorcery-preview\.html#source-grove-L16"[^>]*>See the original note at line 19/);assert.match(html,/href="\/qhcf\/western-shadow-sorcery-preview\.html#source-grove-L12"[^>]*>See the Tower label/);
+ const html=read('western-shadow-sorcery-preview.html');assert.match(html,/href="\/warp\/maps\/archive\/cf\/western-shadow-sorcery-preview\.html#source-grove-L16"[^>]*>See the original note at line 19/);assert.match(html,/href="\/warp\/maps\/archive\/cf\/western-shadow-sorcery-preview\.html#source-grove-L12"[^>]*>See the Tower label/);
  const js=read('western-shadow-sorcery-preview.mjs');assert.match(js,/row\.id=`source-\$\{active\}-L\$\{index\+1\}`/);assert.match(js,/Source line ↗/);assert.match(js,/Focus chart/);
 });
